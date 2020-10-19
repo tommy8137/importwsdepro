@@ -1,0 +1,18 @@
+.display-table-theme {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #e6e6e6;
+    width: 100%;
+    padding: 1rem;
+}
+
+.display-button-theme {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #87CEEB;
+    width: 100%;
+    height: 6rem;
+    flex-wrap: wrap;
+}

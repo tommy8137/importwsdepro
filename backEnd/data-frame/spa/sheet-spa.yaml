@@ -1,0 +1,28 @@
+sheet:
+  label: SPA
+  tables:
+    - key: spaSummary
+      $Template:
+        - colTable
+      colLength: 4
+      headers:
+        $spa.header-spa.spasummary-excel:
+          - headers
+
+    - key: spaItem
+      $Template:
+        - dynamicHeaderTable
+      headers:
+        $spa.header-spa.spaitem-excel:
+          - headers
+          
+
+    - key: exchangeRateDefault
+      $Template:
+        - traverseTable
+      headers:
+        $eebom-tmp.header-full-bom.fullbomexchange-excel:
+          - headers
+      anchor:
+        x: F
+        y: 1

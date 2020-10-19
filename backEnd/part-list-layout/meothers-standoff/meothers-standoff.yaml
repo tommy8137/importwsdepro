@@ -1,0 +1,27 @@
+version: 2
+showMenu: false
+layout:
+  # Partlist Tab
+  - key: standoffTab
+    $Template:
+      - tab
+    label: StandOff Partlist
+    group:
+      - standoff
+    items:
+      - key: standOffParts
+        $Template:
+          - composite
+        label: 我不應該被顯示出來
+        $meothers-standoff.layout.StandOffParts:
+          - ^multiple
+          - ^items
+        visiable: false
+
+formulas:
+  standoff:
+    $meothers-standoff.formula.standoffFormula:
+      - ^formula
+      - ^output
+      - ^scope
+      - ^constant

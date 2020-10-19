@@ -1,0 +1,1 @@
+insert into wiprocurement.bom_project_edit_type (action_type, part_type, label, label_name, field_type, data_type) values ('ce_parameters', 'meothers-rubber', 'rubberMachineTon', 'Machine/T', 'dropdown', 'String');

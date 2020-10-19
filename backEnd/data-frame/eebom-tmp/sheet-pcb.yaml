@@ -1,0 +1,21 @@
+sheet:
+  label: PCB
+  tables:
+    - key: pcbSummary
+      $Template:
+        - colTable
+      headers:
+        $eebom-tmp.header-pcb.pcbsummary-excel:
+          - headers
+    - key: pcbItem
+      $Template:
+        - rowTable
+      headers:
+        $eebom-tmp.header-pcb.pcbitem-excel:
+          - headers
+    - key: exchangeRateDefault
+      $Template:
+        - traverseTable
+      headers:
+        $eebom-tmp.header-pcb.pcbexchange-excel:
+          - headers

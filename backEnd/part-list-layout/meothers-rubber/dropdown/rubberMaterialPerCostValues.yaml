@@ -1,0 +1,56 @@
+# 材料單價對應表
+values:
+  - material: TPU
+    materialspec: Covestro_UDS70AU
+    rubberMaterialPerCost: 10.8
+  - material: TPU
+    materialspec: Covestro_IT85AU
+    rubberMaterialPerCost: 14.2
+  - material: TPU
+    materialspec: Covestro_8785A
+    rubberMaterialPerCost: 6.2
+  - material: TPU
+    materialspec: Covestro_1070AU
+    rubberMaterialPerCost: 12.3
+  - material: TPU
+    materialspec: Covestro_5377A
+    rubberMaterialPerCost: 14.8
+  - material: TPU
+    materialspec: Covestro_1065AU
+    rubberMaterialPerCost: 6.7
+  - material: TPU
+    materialspec: Huntsman_AVALON 85AE
+    rubberMaterialPerCost: 6.0
+  - material: TPU
+    materialspec: Huntsman_AVALON 80AE
+    rubberMaterialPerCost: 6.1
+  - material: TPU
+    materialspec: Huntsman_AVALON 75AE
+    rubberMaterialPerCost: 6.5
+  - material: TPU
+    materialspec: Huntsman_AVALON 65AE
+    rubberMaterialPerCost: 6.8
+
+  - material:
+    materialspec: Silicon(矽膠)
+    rubberMaterialPerCost: 6.865671641791040000
+
+  - material: Dupont_Hytrel_3046
+    materialspec: TPEE
+    rubberMaterialPerCost: 9.5
+
+  - material: Dupont_Hytrel_3078
+    materialspec: TPEE
+    rubberMaterialPerCost: 9.2
+
+  - material: Dupont_Hytrel_4056
+    materialspec: TPEE
+    rubberMaterialPerCost: 7.5
+
+  - material: Dupont_Hytrel_RS30F7
+    materialspec: TPEE
+    rubberMaterialPerCost: 15.3
+
+  - material: Dupont_Hytrel_RS40F2
+    materialspec: TPEE
+    rubberMaterialPerCost: 15.3

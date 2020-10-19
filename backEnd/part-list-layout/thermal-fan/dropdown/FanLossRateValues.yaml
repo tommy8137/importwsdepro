@@ -1,0 +1,37 @@
+values:
+  - fanSize: 60x60x3.0
+    fanLossRate: 0.03
+  - fanSize: 60x60x3.5
+    fanLossRate: 0.03
+  - fanSize: 60x60x4.0
+    fanLossRate: 0.03
+  - fanSize: 60x60x4.5
+    fanLossRate: 0.015
+  - fanSize: 60x60x5.0
+    fanLossRate: 0.015
+  - fanSize: 60x60x5.5
+    fanLossRate: 0.015
+  - fanSize: 60x60x6.0
+    fanLossRate: 0.015
+  - fanSize: 60x60x6.5
+    fanLossRate: 0.015
+  - fanSize: 60x60x7.0
+    fanLossRate: 0.015
+  - fanSize: 60x60x7.5
+    fanLossRate: 0.015
+  - fanSize: 80x80x8.0
+    fanLossRate: 0.015
+  - fanSize: 80x80x8.5
+    fanLossRate: 0.015
+  - fanSize: 80x80x9.0
+    fanLossRate: 0.015
+  - fanSize: 80x80x9.5
+    fanLossRate: 0.015
+  - fanSize: 80x80x10.0
+    fanLossRate: 0.015
+  - fanSize: 80x80x10.5
+    fanLossRate: 0.015
+  - fanSize: 80x80x11.0
+    fanLossRate: 0.015
+  - fanSize: 80x80x11.5
+    fanLossRate: 0.015

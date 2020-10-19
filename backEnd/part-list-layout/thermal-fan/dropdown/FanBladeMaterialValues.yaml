@@ -1,0 +1,77 @@
+values:
+  - fanBladeMaterial: PBT
+    fanSize: 60*60*3.5
+    fanBladeMaterialPrice: 0
+  - fanBladeMaterial: LCP
+    fanSize: 60*60*3.5
+    fanBladeMaterialPrice: 0.1
+
+  - fanBladeMaterial: PBT
+    fanSize: 60*60*4
+    fanBladeMaterialPrice: 0
+  - fanBladeMaterial: LCP
+    fanSize: 60*60*4
+    fanBladeMaterialPrice: 0.1
+
+  - fanBladeMaterial: PBT
+    fanSize: 60*60*4.5
+    fanBladeMaterialPrice: 0
+  - fanBladeMaterial: LCP
+    fanSize: 60*60*4.5
+    fanBladeMaterialPrice: 0.1
+
+  - fanBladeMaterial: PBT
+    fanSize: 60*60*5
+    fanBladeMaterialPrice: 0
+  - fanBladeMaterial: LCP
+    fanSize: 60*60*5
+    fanBladeMaterialPrice: 0.1
+
+  - fanBladeMaterial: PBT
+    fanSize: 60*60*5.5
+    fanBladeMaterialPrice: 0
+  - fanBladeMaterial: LCP
+    fanSize: 60*60*5.5
+    fanBladeMaterialPrice: 0.1
+
+  - fanBladeMaterial: PBT
+    fanSize: 60*60*6
+    fanBladeMaterialPrice: 0
+  - fanBladeMaterial: LCP
+    fanSize: 60*60*6
+    fanBladeMaterialPrice: 0.15
+
+  - fanBladeMaterial: PBT
+    fanSize: 60*60*6.5
+    fanBladeMaterialPrice: 0
+  - fanBladeMaterial: LCP
+    fanSize: 60*60*6.5
+    fanBladeMaterialPrice: 0.15
+
+  - fanBladeMaterial: PBT
+    fanSize: 60*60*7
+    fanBladeMaterialPrice: 0
+  - fanBladeMaterial: LCP
+    fanSize: 60*60*7
+    fanBladeMaterialPrice: 0.15
+
+  - fanBladeMaterial: PBT
+    fanSize: 60*60*7.5
+    fanBladeMaterialPrice: 0
+  - fanBladeMaterial: LCP
+    fanSize: 60*60*7.5
+    fanBladeMaterialPrice: 0.15
+
+  - fanBladeMaterial: PBT
+    fanSize: 70*70*5
+    fanBladeMaterialPrice: 0
+  - fanBladeMaterial: LCP
+    fanSize: 70*70*5
+    fanBladeMaterialPrice: 0.15
+
+  - fanBladeMaterial: PBT
+    fanSize: 80*80*5
+    fanBladeMaterialPrice: 0
+  - fanBladeMaterial: LCP
+    fanSize: 80*80*5
+    fanBladeMaterialPrice: 0.15

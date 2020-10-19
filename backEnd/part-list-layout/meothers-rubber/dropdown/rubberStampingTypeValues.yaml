@@ -1,0 +1,16 @@
+# 成品沖型 價格對照表
+values:
+  - rubberStampingTypeName: N/A
+    rubberStampingTypePrice: 0
+    rubberStampingTypeCycleTime: 0
+    rubberStampingTypeAmount: 0
+
+  - rubberStampingTypeName: 大版下料
+    rubberStampingTypePrice: 0.0124
+    rubberStampingTypeCycleTime: 10
+    rubberStampingTypeAmount: 1
+
+  - rubberStampingTypeName: 小版下料
+    rubberStampingTypePrice: 0.0124
+    rubberStampingTypeCycleTime: 10
+    rubberStampingTypeAmount: 1

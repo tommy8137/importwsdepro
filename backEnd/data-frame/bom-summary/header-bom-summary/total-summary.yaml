@@ -1,0 +1,34 @@
+headers:
+  part_category1:
+    label: Part Category I
+    subHeader: Total Summary
+    subHeaderSite: 1
+    subHeaderMerge: 5
+    subHeaderColor: true
+    totalColor: true
+    $bom-summary.header-bom-summary.Template:
+      - boldString
+
+  cbg_cost:
+    label: CBG cost
+    totalColor: true
+    $bom-summary.header-bom-summary.Template:
+      - dataFloat
+
+  epro_cost:
+    label: ePro cost
+    totalColor: true
+    $bom-summary.header-bom-summary.Template:
+      - dataFloat
+
+  sourcer_cost:
+    label: Sourcer cost
+    totalColor: true
+    $bom-summary.header-bom-summary.Template:
+      - dataFloat
+
+  gap:
+    label: Gap(ePro-Sourcer)
+    totalColor: true
+    $bom-summary.header-bom-summary.Template:
+      - dataFloat

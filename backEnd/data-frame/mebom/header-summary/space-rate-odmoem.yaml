@@ -1,0 +1,12 @@
+headers:
+  odmoem:
+    label: ODM/OEM
+    subLabel: ODM
+    $mebom.header-summary.Template:
+      - odmString
+
+  level:
+    label: Level
+    subLabel: 2
+    $mebom.header-summary.Template:
+      - odmString

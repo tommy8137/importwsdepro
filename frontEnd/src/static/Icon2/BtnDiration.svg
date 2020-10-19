@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+    <defs>
+        <style>
+            .cls-1{fill:#333}.cls-2{fill:none;stroke:#f7f7f7;stroke-linecap:round;stroke-width:3px}.cls-3{fill:none}
+        </style>
+    </defs>
+    <g id="btn_duration_p" transform="translate(-1238 -209)">
+          <rect id="Rectangle_233" width="30" height="30" class="cls-1" data-name="Rectangle 233" rx="15" transform="translate(1238 209)" />
+          <path id="Path_1173" d="M9764.364 2013.981v8.483l5.413 5.413" class="cls-2" data-name="Path 1173" transform="translate(-8511.364 -1798)" />
+        </g>
+</svg>

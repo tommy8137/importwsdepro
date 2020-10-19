@@ -1,0 +1,45 @@
+output:
+  accessoryCost: fpcSielding_cost
+
+formula:
+# Sielding費用 = (FPC成品最大尺寸L * FPC成品最大尺寸W / 面積轉換常數) * Qty * Sielding單價 * (1 + Shielding loss rate) -------------------------------------------------------------------------------------------------------------------
+  fpcSielding_cost:
+    type: MATH
+    formula: (FPCCableLength * FPCCableWidth / areatransferunit) * FPCShieldingQty * FPCShieldingTypeUnitPrice * (1+ shielding_loss_rate)
+    label:  Sielding費用
+
+global:
+  FPCCableLength:
+    type: VARIABLE
+    label: FPC成品最大尺寸L (mm)
+    bykey: FPCCableLength
+    groups:
+      - cableFPC
+
+  FPCCableWidth:
+    type: VARIABLE
+    label: FPC成品最大尺寸W (mm)
+    bykey: FPCCableWidth
+    groups:
+      - cableFPC
+
+scope:
+  FPCShieldingQty: FPCShieldingQty
+  FPCShieldingTypeUnitPrice: FPCShieldingTypeUnitPrice
+  FPCShieldingType: FPCShieldingType
+
+constant:
+  shielding_loss_rate:
+    label: Shielding loss rate
+    value: 0
+
+  areatransferunit:
+    label: 面積轉換常數
+    ?getFPCCommon:
+      - cable_fpc_auxiliary_materials
+      - area_unit_transfer_constant
+    # value: 1000000
+
+
+
+

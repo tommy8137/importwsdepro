@@ -1,0 +1,45 @@
+values:
+  - cmfProcessListPaintingTypeAndColor: 粉體漆：(一般素色)
+    Customer: null
+    CmfProcessListPaintingPriceUSD: 5.7554
+    CmfProcessListPaintingPriceRMB: 40
+  - cmfProcessListPaintingTypeAndColor: 粉體漆：(特殊顏色)
+    Customer: null
+    CmfProcessListPaintingPriceUSD: 15.8273
+    CmfProcessListPaintingPriceRMB: 110
+  - cmfProcessListPaintingTypeAndColor: 液體漆：(一般顏色)
+    Customer: null
+    CmfProcessListPaintingPriceUSD: 11.5108
+    CmfProcessListPaintingPriceRMB: 80
+  - cmfProcessListPaintingTypeAndColor: 液體漆：(Pike Silver 1 coat PU)
+    Customer: HP/DT
+    CmfProcessListPaintingPriceUSD: 14.3
+    CmfProcessListPaintingPriceRMB: null
+  - cmfProcessListPaintingTypeAndColor: 液體漆：(Shadow Black  1 coat PU with transparency and Black primer)
+    Customer: HP/DT
+    CmfProcessListPaintingPriceUSD: 25.84
+    CmfProcessListPaintingPriceRMB: null
+  - cmfProcessListPaintingTypeAndColor: 液體漆：(Shadow Black 1 coat PU)
+    Customer: HP/DT
+    CmfProcessListPaintingPriceUSD: 13.48
+    CmfProcessListPaintingPriceRMB: null
+  - cmfProcessListPaintingTypeAndColor: 液體漆：(Mineral Silver 1 coat PU)
+    Customer: HP/DT
+    CmfProcessListPaintingPriceUSD: 11.51
+    CmfProcessListPaintingPriceRMB: null
+  - cmfProcessListPaintingTypeAndColor: 液體漆：(Turbo Silver-Ano 1 coat PU)
+    Customer: HP/DT
+    CmfProcessListPaintingPriceUSD: 17.38
+    CmfProcessListPaintingPriceRMB: null
+  - cmfProcessListPaintingTypeAndColor: 液體漆：(Q-Coat Dragonfly Blue)
+    Customer: HP/DT
+    CmfProcessListPaintingPriceUSD: 17.5
+    CmfProcessListPaintingPriceRMB: null
+  - cmfProcessListPaintingTypeAndColor: 液體漆：(Q-Coat Cardinal Red)
+    Customer: HP/DT
+    CmfProcessListPaintingPriceUSD: 28.44
+    CmfProcessListPaintingPriceRMB: null
+  - cmfProcessListPaintingTypeAndColor: 液體漆：(UV soft touch)
+    Customer: null
+    CmfProcessListPaintingPriceUSD: 21.5827
+    CmfProcessListPaintingPriceRMB: 150

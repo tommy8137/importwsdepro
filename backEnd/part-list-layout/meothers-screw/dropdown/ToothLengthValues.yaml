@@ -1,0 +1,15 @@
+# 牙長
+values:
+ - toothLengthValue: 1
+   minToothLength: 0
+   maxToothLength: 2.9
+
+ - toothLengthValue: 3
+   minToothLength: 3
+   maxToothLength: 9.9
+
+ - toothLengthValue: 10.1
+   minToothLength: 10
+   maxToothLength: -1
+
+

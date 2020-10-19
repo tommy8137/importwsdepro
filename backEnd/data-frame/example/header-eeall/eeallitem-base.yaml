@@ -1,0 +1,15 @@
+headers:
+  type1:
+    label: Type1
+    $Template:
+      - dataString
+
+  type2:
+    label: Type2
+    $Template:
+      - dataString
+
+  pcbPNStage:
+    label: PCB P/N - Stage
+    $Template:
+      - dataInt

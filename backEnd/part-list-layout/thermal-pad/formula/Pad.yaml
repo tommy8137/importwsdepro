@@ -1,0 +1,31 @@
+output:
+  total: total
+  unit_price: unit_price
+  qty: thermalPadAmount
+
+formula:
+# thermal pad零件費 = 單價 * 用量 * (1 + thermal pad loss rate) -----------------------------------------------------------------------------------------------------------------
+  total:
+    type: MATH
+    formula: unit_price * thermalPadAmount * (1 + thermal_pad_loss_rate)
+    label: 計算結果
+
+# 單價 = (長 * 寬 * thermalPadPrice / 1000000) -----------------------------------------------------------------------------------------------------------------
+  unit_price:
+    type: MATH
+    formula: (thermalPadLength * thermalPadWidth * thermalPadPrice) / 1000000
+    label: 單價
+
+scope:
+  thermalPadLength: thermalPadLength
+  thermalPadWidth: thermalPadWidth
+  thermalPadPrice: thermalPadPrice
+  thermalPadAmount: thermalPadAmount
+
+constant:
+  thermal_pad_loss_rate:
+    label: thermal pad loss rate
+    ?getThermalCommon:
+      - thermal_module_components
+      - thermal_pad_loss_rate
+    # value: 0.015

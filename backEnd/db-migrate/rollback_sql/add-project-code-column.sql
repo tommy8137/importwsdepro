@@ -1,0 +1,1 @@
+ALTER TABLE wiprocurement.dashboard_version DROP COLUMN project_code;

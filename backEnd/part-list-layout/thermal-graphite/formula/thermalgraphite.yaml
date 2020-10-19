@@ -1,0 +1,21 @@
+output:
+  total: total
+  # FOR GROUP SUM
+  # for debug
+  # graphiteLength: graphiteLength
+  
+
+formula:
+  # 總total
+  total:
+    type: GROUPSUM
+    label: 石墨片總價
+    bykey: total
+    groups:
+      - Graphite
+
+scope:
+  # graphiteLength: graphiteLength
+
+constant:
+  

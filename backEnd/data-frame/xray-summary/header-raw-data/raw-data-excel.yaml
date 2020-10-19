@@ -1,0 +1,3 @@
+headers:
+  $xray-summary.header-raw-data.raw-data-base:
+    - headers

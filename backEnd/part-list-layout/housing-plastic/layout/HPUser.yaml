@@ -1,0 +1,394 @@
+multiple: true
+items:
+  # - key: hpItem
+  #   label: Item
+  #   $Template:
+  #     - inputString
+  #     - ^displayConfig
+
+  - key: hppartname
+    label: Part Name
+    url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+    $Template:
+      - fetchData
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+    constrains:
+      - function: "(val) => val ==='' || val === null"
+        message: "此欄位為必填"
+    require: true
+    emdmKey: emdmBomInfo.wistronPartName
+
+  - key: hppartnumber
+    label: Part Number
+    url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+    $Template:
+      - fetchData
+      - ^displayConfig
+    emdmKey: emdmBomInfo.wpn
+
+  - key: hpuploadimage
+    label: 圖示
+    $Template:
+      - uploadImage
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 2
+      display: true
+    uploadUrl: bom/partlist/uploadImage
+    getUrl: bom/partlist/getImage/:{imageid}
+
+  # - key: hpComponent
+  #   label: Component
+  #   $Template:
+  #     - selectorString
+  #   selectorConfig:
+  #     $Template:
+  #       - selectorConfig
+  #     $housing-plastic.dropdown.HpComponent:
+  #       - ^values
+  #   displayConfig:
+  #     grids: 1
+  #     display: true
+
+  - key: hpProcess
+    label: Process
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: loss_rate_id
+      ?getPlasticMaterial:
+        -
+      # $housing-plastic.dropdown.HpProcess:
+      #   - ^values
+    displayConfig:
+      grids: 1
+      display: true
+    constrains:
+      - function: "(val) => {
+        return val ==='' || val === null;
+      }"
+        message: "此欄位為必填"
+    require: true
+    emdmKey: emdmBomInfo.plasticMaterialLossRateId
+
+  - key: hpMaterialLossRate
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      ?getPlasticMaterial:
+        -
+      # $housing-plastic.dropdown.HpProcess:
+      #   - ^values
+    mapFrom:
+      - hpProcess
+
+  - key: hpPrice
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      ?getHousingPlasticMaterialWithSpec:
+       -
+      # $housing-plastic.dropdown.HpMaterialPrice:
+      #   - ^values
+    mapFrom:
+      - hpmaterial
+
+  - key: hpPrice2
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      ?getHousingPlasticDoubleInjection:
+    mapFrom:
+      - hpmaterial2
+      - hpmaterialspec2
+
+  - key: hpmaterialspec1
+    label: Material Spec 一射 (原料材質)
+    url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+    $Template:
+      - fetchData
+      - ^displayConfig
+    constrains:
+      - function: "(val) => val ==='' || val === null"
+        message: "此欄位為必填"
+    require: true
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      mappedKey: 
+        hpmaterialspec1: hpmaterialspec
+      depends:
+        - type2
+      ?getHousingPlasticMaterialWithSpec:
+    emdmKey: emdmBomInfo.materialspec
+
+
+  - key: hpmaterial
+    label: Material 一射 (牌號)
+    url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+    $Template:
+      - fetchData
+      - ^displayConfig
+    constrains:
+      - function: "(val) => val ==='' || val === null"
+        message: "此欄位為必填"
+    require: true
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      mappedKey:
+        hpmaterial: material
+        hpmaterialspec1: materialSpecName
+      ?getPlasticMaterialDropDownList:
+        -
+      depends: 
+        - hpmaterialspec1
+        - type2
+    emdmKey: emdmBomInfo.material
+
+
+
+  - key: hpmaterialspec2
+    label: Material Spec 二射 (原料材質)
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: material_spec_id
+      ?getHousingPlasticDoubleInjection:
+        -
+      # $housing-plastic.dropdown.HpMaterialPrice2:
+      #   - ^values
+    displayConfig:
+      grids: 1
+      display: true
+      depends:
+        action: lock
+        condition:
+          type2: "(type2, props) => { 
+            const { productType } = props;
+            const isNBPlastic = type2 !== 'Double_Injection';
+            if(isNBPlastic) return false;
+            return true;
+          }"
+    constrains:
+      - function: "(val, props) => {
+          const { type2, productType } = props;
+          const isNull = (val === '' || val === null || val === undefined);
+          const isNBPlastic = type2 === 'Double_Injection';
+          return isNull && isNBPlastic;
+        }"
+        message: "此欄位為必填"
+        params:
+          - type2
+    require: true
+    emdmKey: emdmBomInfo.materialSpecDoubleInjectionId
+
+
+  - key: hpmaterial2
+    label: Material 二射 (牌號)
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: hpmaterial2Id
+      ?getHousingPlasticDoubleInjection:
+      # $housing-plastic.dropdown.HpMaterialPrice2:
+      #   - ^values
+      depends:
+        - hpmaterialspec2
+    displayConfig:
+      grids: 1
+      display: true
+      depends:
+        action: lock
+        condition:
+          hpmaterialspec2: true
+    constrains:
+      - function: "(val, props) => {
+          const { hpmaterialspec2 } = props;
+          const isNull = (val === '' || val === null || val === undefined) && hpmaterialspec2;
+          return isNull;
+        }"
+        message: "此欄位為必填"
+        params:
+          - hpmaterialspec2
+    require: true
+    emdmKey: emdmBomInfo.materialDoubleInjectionId
+
+
+ 
+
+  - key: hpMaterialColor
+    label: Material Color
+    require: false
+    $Template:
+      - inputString
+      - ^displayConfig
+    emdmKey: emdmBomInfo.color
+
+  - key: hpthickness
+    label: Thickness(mm)
+    url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+    $Template:
+      - fetchData
+      - ^displayConfig
+    emdmKey: emdmBomInfo.thickness
+
+  - key: hppartweightone
+    emdmKey: emdmBomInfo.materialWeight
+    label: Part Weight(g)(一射成品)
+    $Template:
+      - inputFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    constrains:
+      - function: "(val) => val ==='' || val === null"
+        message: "此欄位為必填"
+    require: true
+
+  - key: hppartweighttwo
+    label: Part Weight(g)(二射成品)
+    $Template:
+      - inputFloat
+    displayConfig:
+      grids: 1
+      display: true
+      depends:
+        action: lock
+        condition:
+          hpmaterialspec2: true
+    constrains:
+      - function: "(val, props) => {
+          const { hpmaterialspec2 } = props;
+          const isNull = (val === '' || val === null || val === undefined) && hpmaterialspec2;
+          return isNull;
+        }"
+        message: "此欄位為必填"
+        params:
+          - hpmaterialspec2
+    require: true
+    emdmKey: emdmBomInfo.partWeightDoubleInjection
+
+  - key: hppartssizespec
+    label: Part Size/Spec(W*L*M mm)
+    $Template:
+      - compositeInline
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1.5
+      spaceConfig: 
+        after: 1.5
+    items:
+      - key: hppartssizewidth
+        label: 寬度(W)
+        url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+        $Template:
+          - fetchData
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1
+        constrains:
+          - function: "(val) => val ==='' || val === null"
+            message: "此欄位為必填"
+        require: true
+        emdmKey: emdmBomInfo.partWidth
+
+      - key: hppartssizelength
+        label: 長度(L)
+        url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+        $Template:
+          - fetchData
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1
+        constrains:
+          - function: "(val) => val ==='' || val === null"
+            message: "此欄位為必填"
+        require: true
+        emdmKey: emdmBomInfo.partLong
+
+      - key: hppartssizehigh
+        label: 高度(H)
+        url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+        $Template:
+          - fetchData
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1
+        constrains:
+          - function: "(val) => val ==='' || val === null"
+            message: "此欄位為必填"
+        require: true
+        emdmKey: emdmBomInfo.partHeight
+
+  - key: hpMaterialspec1Remark
+    label: Material Spec 一射 (原料材質) Remark
+    $Template:
+      - textarea
+    require: true
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      depends:
+        action: lock
+        condition:
+          hpmaterialspec1: "val => val === 'Other_Fill_ME_Remark'"
+    emdmKey: emdmBomInfo.materialspec1Remark
+
+  - key: hpMaterial1Remark
+    label: Material 一射 (牌號) Remark
+    $Template:
+      - textarea
+    require: true
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      depends:
+        action: lock
+        condition:
+          hpmaterial: "val => val === 'Other_Fill_ME_Remark'"
+    emdmKey: emdmBomInfo.materialRemark
+
+  - key: hpMaterial2Remark
+    label: Material 二射 (牌號) Remark
+    $Template:
+      - textarea
+    require: true
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      depends:
+        action: lock
+        condition:
+          hpmaterial2: "val => val === 'Other_Fill_ME_Remark'"
+    emdmKey: emdmBomInfo.material2Remark

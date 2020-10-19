@@ -1,0 +1,32 @@
+multiple: true
+items:
+  - key: cmfProcessListScreenPrintingCheckBox
+    label: Exist
+    $Template:
+      - checkBox
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListScreenPrintingCheckBox
+
+  - key: cmfProcessListScreenPrintingCount
+    label: 次數
+    $Template:
+      - inputInt
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfProcessListScreenPrintingCheckBox: true
+      grids: 1
+      display: true
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfProcessListScreenPrintingCheckBox)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfProcessListScreenPrintingCheckBox
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListScreenPrintingCount

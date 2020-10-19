@@ -1,0 +1,12 @@
+multiple: true
+items:
+  - key: cmfPPolishStressMarkExist
+    label: Exist
+    $Template:
+      - checkBox
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    emdmKey: emdmBomInfo.cmfForm.cmfPPolishStressMarkExist
+

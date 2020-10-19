@@ -1,0 +1,233 @@
+multiple: true
+items:
+# 可編輯的sub-title --------------------------------------------------------------------------------------------------------------------
+  - key: thPlLabel
+    label: Thermal Plate and Clip Spring
+    $Template:
+      - label
+    editable: true
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+    default: Thermal Plate
+    emdmMultipleKey: emdmBomInfo.cmfForm.thpl
+    emdmKey: thPlLabel
+
+# 用量 --------------------------------------------------------------------------------------------------------------------
+  - key: thPlAmount
+    label: 用量
+    $Template:
+      - inputInt
+      - ^displayConfig
+    default: 0
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.thpl
+    emdmKey: thPlAmount
+
+# 材料 --------------------------------------------------------------------------------------------------------------------
+  - key: thPlMaterial
+    label: 材料
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: material_id
+      ?getThermalPlateMaterialThickness:
+        - thermal_plate
+      # $thermal-module.dropdown.ThermalPlateMaterialThicknessCostPerKilogramValues:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.thpl
+    emdmKey: thPlMaterial
+
+  - key: thPlMaterialThickness
+    label: 材料厚度
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: id
+      ?getThermalPlateMaterialThickness:
+        - thermal_plate
+      # $thermal-module.dropdown.ThermalPlateMaterialThicknessCostPerKilogramValues:
+      #   - ^values
+      depends:
+        - thPlMaterial
+    displayConfig:
+      $Template:
+        - displayConfig
+      depends:
+        action: lock
+        condition:
+          thPlMaterial: true
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.thpl
+    emdmKey: thPlMaterialThickness
+
+  - key: thPlDensity
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      ?getThermalPlateMaterialDensity:
+        - thermal_plate
+      # $thermal-module.dropdown.ThermalPlateMaterialDensity:
+      #   - ^values
+    mapFrom:
+      - thPlMaterial
+
+# 材料單價 --------------------------------------------------------------------------------------------------------------------
+  - key: thPlMaterialCostPerKilogram
+    label: 材料每公斤費用
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      ?getThermalPlateMaterialThickness:
+        - thermal_plate
+      # $thermal-module.dropdown.ThermalPlateMaterialThicknessCostPerKilogramValues:
+      #   - ^values
+    mapFrom:
+      - thPlMaterial
+      - thPlMaterialThickness
+
+ # 成品尺寸 --------------------------------------------------------------------------------------------------------------------
+  - key: thPlProductionSize
+    label: 成品尺寸
+    $Template:
+      - compositeInline
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+    items:
+      # 成品尺寸 - 長度(L)
+      - key: thPlProductionLength
+        label: 長度(L)
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.thpl
+        emdmKey: thPlProductionLength
+
+      # 成品尺寸 - 寬度(W)
+      - key: thPlProductionWidth
+        label: 寬度(W)
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.thpl
+        emdmKey: thPlProductionWidth
+      # 成品尺寸 - 高度(H)
+      - key: thPlProductionHigh
+        label: 高度(H)
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.thpl
+        emdmKey: thPlProductionHigh
+
+# 成品展開尺寸 --------------------------------------------------------------------------------------------------------------------
+  - key: thPlProductionExpandSize
+    label: 成品展開尺寸
+    $Template:
+      - compositeInline
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 2
+    items:
+      # 成品展開尺寸長度(L)) = 長度 + 10
+      - key: thPlProductionExpandLength
+        label: 長度(L)
+        $Template:
+          - realtimeFormulaFloat
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1.5
+        func: "(thPlProductionLength) => {
+                let tppel = +thPlProductionLength + 10;
+                return tppel;
+              }"
+        replaceBy:
+          - thPlProductionLength
+
+      # 成品展開尺寸寬度(W) = 寬度 + 10
+      - key: thPlProductionExpandWidth
+        label: 寬度(W)
+        $Template:
+          - realtimeFormulaFloat
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1.5
+        func: "(thPlProductionWidth) => {
+                let tppew = +thPlProductionWidth + 10;
+                return tppew;
+              }"
+        replaceBy:
+          - thPlProductionWidth
+
+  # 鍍鎳 --------------------------------------------------------------------------------------------------------------------
+  - key: thPlNickelPlating
+    emdmMultipleKey: emdmBomInfo.cmfForm.thpl
+    emdmKey: thPlNickelPlating
+    label: 鍍鎳
+    $Template:
+      - realtimeFormulaBoolean
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    func: "(thPlMaterial) => {
+      switch (thPlMaterial) {
+        case 'CU1100':
+          return false;
+        case 'C18400':
+          return false;
+        case 'SUS301':
+          return false;
+        default:
+          return true;
+      }
+    }"
+    replaceBy:
+      - thPlMaterial
+
+  # 鉚接 --------------------------------------------------------------------------------------------------------------------
+  - key: thPlRiveting
+    emdmMultipleKey: emdmBomInfo.cmfForm.thpl
+    emdmKey: thPlRiveting
+    label: 鉚接
+    $Template:
+      - realtimeFormulaBoolean
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    func: "(thPlMaterial) => {
+      switch (thPlMaterial) {
+        case 'SUS301':
+          return true;
+        default:
+          return false;
+      }
+    }"
+    replaceBy:
+      - thPlMaterial

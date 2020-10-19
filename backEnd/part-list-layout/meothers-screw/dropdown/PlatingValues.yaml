@@ -1,0 +1,23 @@
+# 電鍍判斷式
+values:
+ - plating: 鍍黑鋅
+   platingPrice: 2.647058824
+ - plating: 鍍白鎳
+   platingPrice: 3.676470588
+ - plating: 鍍黑鎳
+   platingPrice: 4.411764706
+ - plating: 鋅鎳合金
+   platingPrice: 5.882352941
+ - plating: 削光鋅鎳合金
+   platingPrice: 8.088235294
+ - plating: 電泳ED
+   platingPrice: 0.032352941
+ - plating: PVD
+   platingPrice: 0.036764706
+
+
+
+
+
+
+

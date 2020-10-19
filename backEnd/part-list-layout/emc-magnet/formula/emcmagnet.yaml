@@ -1,0 +1,205 @@
+output:
+  total: total
+  a_material_cost: a_material_cost
+  b_secondary_processing_cost: b_secondary_processing_cost
+  c_package_cost: c_package_cost
+  d_profit: d_profit
+
+formula:
+  # 總total
+  total:
+    type: MATH
+    formula: a_material_cost + b_secondary_processing_cost + c_package_cost + d_profit
+    label: 成品總價
+
+  a_material_cost:
+    type: MATH
+    formula: materialPrice * production_weight * (1 + material_cost_loss_rate)
+    label: A.材料費
+
+  production_weight:
+    type: MATH
+    formula: production_size * material_density / 1000000
+    label: 成品重量
+
+  b_secondary_processing_cost:
+    type: MATH
+    formula: crop_edge_material_loss_cost + crop_cost + magnetizing_labor_cost + adhesive_cost
+    label: B.二次加工費
+
+  production_size:
+    type: MATH
+    formula: materialLength * materialWidth * materialHeight
+    label: 成品體積
+
+  crop_edge_material_loss_cost:
+    type: MATH
+    formula: a_material_cost * crop_edge_material_loss_Loss_rate
+    label: 裁切邊料耗損
+
+  crop_edge_material_loss_Loss_rate:
+    label: 裁切邊料耗損
+    type: FUNC
+    formula: "
+      (production_size, crop_edge_material_loss_Loss_rate_lt_eq_60, crop_edge_material_loss_Loss_rate_gt_60_and_lt_100, crop_edge_material_loss_Loss_rate_gt_eq_100) => {
+        if (production_size < 60) {
+          return crop_edge_material_loss_Loss_rate_lt_eq_60
+        } else if (production_size >= 60 && production_size <= 100) {
+          return crop_edge_material_loss_Loss_rate_gt_60_and_lt_100
+        } else if (production_size > 100) {
+          return crop_edge_material_loss_Loss_rate_gt_eq_100
+        }
+      }
+    "
+    param:
+     - production_size
+     - crop_edge_material_loss_Loss_rate_lt_eq_60
+     - crop_edge_material_loss_Loss_rate_gt_60_and_lt_100
+     - crop_edge_material_loss_Loss_rate_gt_eq_100
+
+  crop_cost:
+    type: MATH
+    formula: crop_unit_price * production_size
+    label: 裁切加工費
+
+  magnetizing_labor_cost:
+    type: MATH
+    formula: magnetizing_labor_unit_price * magnetizing_labor_process_time
+    label: 充磁費+人工費
+
+  magnetizing_labor_unit_price:
+    label: 充磁費+人工費 單價
+    type: FUNC
+    formula: "
+      (production_size, magnetizing_labor_unit_price_below_200, magnetizing_labor_unit_price_between_200_300, magnetizing_labor_unit_price_greater_than_300) => {
+        if (production_size < 200) {
+          return magnetizing_labor_unit_price_below_200
+        } else if (production_size >= 200 && production_size <= 300) {
+          return magnetizing_labor_unit_price_between_200_300
+        } else if (production_size > 300) {
+          return magnetizing_labor_unit_price_greater_than_300
+        }
+      }
+    "
+    param:
+     - production_size
+     - magnetizing_labor_unit_price_below_200
+     - magnetizing_labor_unit_price_between_200_300
+     - magnetizing_labor_unit_price_greater_than_300
+
+  adhesive_cost:
+    type: MATH
+    formula: adhesive_unit_price * (materialLength * materialWidth / 100) * (1 + adhesive_loss_rate)
+    label: 貼背膠_3M_9448
+
+  c_package_cost:
+    type: MATH
+    formula: a_material_cost * package_cost_percentage
+    label: 運包檢
+
+  d_profit:
+    type: MATH
+    formula: a_material_cost * profit_percentage
+    label: 管銷&利潤
+
+scope:
+  materialLength: materialLength
+  materialWidth: materialWidth
+  materialHeight: materialHeight
+  materialSpecId: materialSpecId
+  materialPrice: materialPrice
+
+constant:
+  package_cost_percentage:
+    label: 運包檢 比例
+    ?getMagnetCommon:
+      - emc_magnet_shipping_check
+      - shipping_check
+    # value: 0.1
+
+  profit_percentage:
+    label: 管銷&利潤 比例
+    ?getMagnetCommon:
+      - emc_magnet_management_and_profit
+      - management_and_profit
+    # value: 0.1
+
+  material_density:
+    label: 材料密度
+    ?getMagnetCommon:
+      - emc_magnet_material
+      - material_density
+    # value: 7.58
+
+  material_cost_loss_rate:
+    label: 材料費loss rate
+    ?getMagnetCommon:
+      - emc_magnet_material
+      - material_loss_rate
+    # value: 0.1
+
+  crop_edge_material_loss_Loss_rate_lt_eq_60:
+    label: 裁切邊料耗損 loss rate
+    ?getMagnetCutLossRate:
+      - '0'
+      - '60'
+    # value: 0.45
+  crop_edge_material_loss_Loss_rate_gt_60_and_lt_100:
+    label: 裁切邊料耗損 loss rate
+    ?getMagnetCutLossRate:
+      - '60'
+      - '100'
+    # value: 0.4
+  crop_edge_material_loss_Loss_rate_gt_eq_100:
+    label: 裁切邊料耗損 loss rate
+    ?getMagnetCutLossRate:
+      - '100'
+      - '0'
+    # value: 0.35
+
+  crop_unit_price:
+    label: 裁切單價
+    ?getMagnetCommon:
+      - emc_magnet_secondary_processing
+      - cut_machining_cost
+    # value: 0.0001
+
+  adhesive_unit_price:
+    label: 貼背膠 單價
+    ?getMagnetCommon:
+      - emc_magnet_secondary_processing
+      - adhesive_cost
+    # value: 0.0012
+
+  adhesive_loss_rate:
+    label: 貼背膠 loss rate
+    ?getMagnetCommon:
+      - emc_magnet_secondary_processing
+      - adhesive_loss_rate
+    # value: 0.1
+
+  magnetizing_labor_unit_price_below_200:
+    label: 充磁費+人工費 單價 體積 小於 200mm^2
+    ?getMagnetManPower:
+      - '0'
+      - '200'
+    # value: 0.007
+  magnetizing_labor_unit_price_between_200_300:
+    label: 充磁費+人工費 單價 體積 介於 200~300mm^2
+    ?getMagnetManPower:
+      - '200'
+      - '300'
+    # value: 0.008
+  magnetizing_labor_unit_price_greater_than_300:
+    label: 充磁費+人工費 單價 體積 大於 300mm^2
+    ?getMagnetManPower:
+      - '300'
+      - '0'
+    # value: 0.01
+
+  magnetizing_labor_process_time:
+    label: 充磁費+人工費 加工時間
+    ?getMagnetCommon:
+      - emc_magnet_secondary_processing
+      - magnet_charger_spend_time
+    # value: 1.66

@@ -1,0 +1,10 @@
+excel:
+  sheets:
+    - $bom-summary.sheet-bom-summary:
+      - sheet
+
+    - $bom-summary.sheet-plastic:
+      - sheet
+
+    - $bom-summary.sheet-metal:
+      - sheet

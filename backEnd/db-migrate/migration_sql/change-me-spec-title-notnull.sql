@@ -1,0 +1,1 @@
+alter table wiprocurement.me_spec_title alter column product_type drop not null

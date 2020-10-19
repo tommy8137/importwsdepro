@@ -1,0 +1,132 @@
+dataFloat:
+  $Template:
+    - dataFloat
+  style:
+    header:
+      $dashboard-me.header-dashboard-me.style:
+        - summary-header
+    value:
+      $dashboard-me.header-dashboard-me.style:
+        - summary-data
+      numberFormat: '#,##0.00000'
+
+dataString:
+  $Template:
+    - dataString
+  style:
+    header:
+      $dashboard-me.header-dashboard-me.style:
+        - summary-header
+    value:
+      $dashboard-me.header-dashboard-me.style:
+        - summary-data
+
+dataInt:
+  $Template:
+    - dataInt
+  style:
+    header:
+      $dashboard-me.header-dashboard-me.style:
+        - summary-header
+    value:
+      $dashboard-me.header-dashboard-me.style:
+        - summary-data
+      numberFormat: '#,##0'
+
+dynamicInt:
+  $Template:
+    - dataInt
+  dynamicSite: 3
+  style:
+    header:
+      fontColor: '000000'
+      fill: FFBB66
+      bold: true
+      fontFamily: arial
+      horizontalAlignment: center
+      border: true      
+    value:
+      border: true
+      numberFormat: '#,##0'
+
+dynamicFloat:
+  $Template:
+    - dataFloat
+  dynamicSite: 20
+  style:
+    header:
+      fontColor: '000000'
+      fill: FFBB66
+      bold: true
+      fontFamily: arial
+      horizontalAlignment: center
+      border: true      
+    value:
+      numberFormat: '#,##0.00000'
+      border: true
+
+meDataInt:
+  $Template:
+    - dataInt
+  style:
+    header:
+      fontColor: 'FFFFFF'
+      fill: '0070C0'
+      border: true
+      bold: true
+      horizontalAlignment: center
+      fontFamily: arial
+    value:
+      fontColor: '000000'
+      numberFormat: '#,##0'
+      borderColor: 'ED7D31'
+      horizontalAlignment: center
+
+meDataString:
+  $Template:
+    - dataString
+  style:
+    header:
+      fontColor: 'FFFFFF'
+      fill: '0070C0'
+      border: true
+      bold: true
+      horizontalAlignment: center
+      fontFamily: arial
+    value:
+      fontColor: '000000'
+      borderColor: 'ED7D31'
+      horizontalAlignment: center
+
+meDataFloat:
+  $Template:
+    - dataFloat
+  style:
+    header:
+      fontColor: 'FFFFFF'
+      fill: '0070C0'
+      border: true
+      bold: true
+      horizontalAlignment: center
+      fontFamily: arial
+    value:
+      numberFormat: '#,##0.00000'
+      fontColor: '000000'
+      borderColor: 'ED7D31'
+      horizontalAlignment: center
+
+
+costHeader:
+  $Template:
+    - mergeCell
+  data: false
+  horizontalDirection: true
+  horizontalWithNoData: true
+  mergeLength: 1
+  style:
+    header:
+      $dashboard-me.header-dashboard-me.style:
+        - cost-header
+    value:
+      $dashboard-me.header-dashboard-me.style:
+        - cost-data

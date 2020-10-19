@@ -1,0 +1,32 @@
+multiple: true
+items:
+  - key: cmfPLaserMarkingCheckBox
+    label: Exist
+    $Template:
+      - checkBox
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    emdmKey: emdmBomInfo.cmfForm.cmfPLaserMarkingCheckBox
+
+  - key: cmfPLaserMarkingCount
+    label: 特徵數量
+    $Template:
+      - inputInt
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfPLaserMarkingCheckBox: true
+      grids: 1
+      display: true
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfPLaserMarkingCheckBox)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfPLaserMarkingCheckBox
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfPLaserMarkingCount

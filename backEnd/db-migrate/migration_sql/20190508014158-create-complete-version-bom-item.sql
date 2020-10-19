@@ -1,0 +1,38 @@
+CREATE TABLE wiprocurement.bom_item_complete_version
+(
+    id integer,
+    customer_pn character varying(64) COLLATE pg_catalog."default",
+    system_cost numeric,
+    source_cost numeric,
+    level character varying(8),
+    parent_level character varying(64) COLLATE pg_catalog."default",
+    rfq_pn character varying(64) COLLATE pg_catalog."default",
+    ref_part_num character varying(64) COLLATE pg_catalog."default",
+    qty integer NOT NULL,
+    part_size_l numeric,
+    part_size_w numeric,
+    part_size_h numeric,
+    part_size_ef numeric,
+    part_size_l2 numeric,
+    part_size_w2 numeric,
+    thickness numeric,
+    part_weight numeric,
+    created_time timestamp without time zone,
+    modified_time timestamp without time zone,
+    parts_ctgy_1 uuid,
+    parts_ctgy_2 uuid,
+    material_spec uuid,
+    material uuid,
+    gb_assy_ctgy uuid,
+    func_ctgy uuid,
+    image_id uuid,
+    supply_type uuid,
+    part_name character varying(40),
+    sub_leve boolean NOT NULL,
+    owner uuid,
+    version_id uuid NOT NULL,
+    part_size_m numeric,
+    extra json
+);
+CREATE INDEX bom_item_complete_version_id_index ON wiprocurement.bom_item_complete_version (version_id);
+

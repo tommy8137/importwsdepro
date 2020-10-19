@@ -1,0 +1,328 @@
+headers:
+  type1:
+    label: Type I
+    $Template:
+      - dataString
+
+  type2:
+    label: Type II
+    $Template:
+      - dataString
+
+  part_number:
+    label: Part Number
+    $Template:
+      - dataString
+
+  description:
+    label: Description
+    $Template:
+      - dataString
+
+  manufacturer:
+    label: Manufacturer
+    $Template:
+      - dataString
+
+  vendor:
+    label: Vendor Name
+    $Template:
+      - dataString
+
+  vendor_part_no:
+    label: Vendor P/N
+    $Template:
+      - dataString
+
+  supply_type:
+    label: Supply Type
+    $Template:
+      - dataString
+
+  supply_type_list:
+    label: All Supply Type List
+    $Template:
+      - dataString
+
+  avap:
+    label: eEDM AVAP
+    $Template:
+      - dataBold
+
+  PcbStageNo:
+    label: PCB No._Stage
+    $Template:
+      - dataString
+
+  parallelBoard:
+    label: Merged
+    $Template:
+      - dataString
+
+  sourcer_cost:
+    label: Sourcer Cost
+    $Template:
+      - dataFloat
+
+  clean_sheet_cost:
+    label: Clean Sheet Cost
+    $Template:
+      - dataFloat
+
+  current_price:
+    label: Price
+    $Template:
+      - dataFloat
+
+  currency:
+    label: Org. Curr.
+    $Template:
+      - dataString
+
+  last_price_currency_price:
+    label: Org. Price
+    $Template:
+      - dataFloat
+
+  valid_from:
+    label: ValidFrom
+    $Template:
+      - dataString
+
+  spa_cost:
+    label: SPA Cost
+    $Template:
+      - dataFloat
+
+  spa_original_currency:
+    label: SPA Org. Curr.
+    $Template:
+      - dataString
+
+  spa_original_price:
+    label: SPA Org. Cost
+    $Template:
+      - dataFloat
+
+  spa_valid_from:
+    label: SPA ValidFrom
+    $Template:
+      - dataString
+
+  spa_part_number:
+    label: SPA P/N
+    $Template:
+      - dataString
+
+  spa_manufacturer:
+    label: SPA Manufacturer
+    $Template:
+      - dataString
+
+  spa_supply_type:
+    label: SPA Supply Type
+    $Template:
+      - dataString
+
+  avl_spa_cost:
+    label: AVL SPA Cost
+    $Template:
+      - keyBold
+
+  avl_spa_org_curr:
+    label: AVL SPA Org. Curr.
+    $Template:
+      - dataString
+
+  avl_spa_org_cost:
+    label: AVL SPA Org. Cost
+    $Template:
+      - dataFloat
+
+  avl_spa_valid_from:
+    label: AVL SPA ValidFrom
+    $Template:
+      - dataString
+
+  avl_spa_pn:
+    label: AVL SPA P/N
+    $Template:
+      - dataString
+
+  avl_spa_manufacturer:
+    label: AVL SPA Manufacturer
+    $Template:
+      - dataString
+
+  avl_spa_supply_type:
+    label: AVL SPA Supply Type
+    $Template:
+      - dataString
+
+  alt_lowest_price:
+    label: ALT. Lowest Cost
+    $Template:
+      - dataFloat
+
+  alt_lowest_partnumber:
+    label: ALT. Lowest  P/N
+    $Template:
+      - dataString
+
+  alt_manufacturer:
+    label: ALT. Lowest Manufacturer
+    $Template:
+      - dataString
+
+  alt_grouping:
+    label: ALT. Grouping
+    $Template:
+      - dataString
+
+  avl_alt_lowest_cost:
+    label: AVL ALT. Lowest Cost
+    $Template:
+      - keyBold
+  avl_alt_lowest_pn:
+    label: AVL ALT. Lowest P/N
+    $Template:
+      - dataString
+  avl_alt_lowest_manufacturer:
+    label: AVL ALT.Lowest Manufacturer
+    $Template:
+      - dataString
+  avl_alt_lowest_grouping:
+    label: AVL ALT.Grouping
+    $Template:
+      - dataString
+
+  lpp:
+    label: LPP Cost
+    $Template:
+      - dataFloat
+
+  currrent_price_adj_percentage:
+    label: CE ADJ %
+    $Template:
+      - dataFloat
+
+  ce_cost:
+    label: CE Cost
+    $Template:
+      - dataFloat
+
+  suggestion_cost:
+    label: Suggestion Cost
+    $Template:
+      - dataFloat
+
+  remark:
+    label: Remark
+    $Template:
+      - dataString
+
+  qty:
+    label: QTY
+    $Template:
+      - dataInt
+
+  sub_total_last_price:
+    label: Sub Total Price
+    $Template:
+      - dataFloat
+
+  sub_total_suggestion_cost:
+    label: Sub Total Suggestion cost
+    $Template:
+      - dataFloat
+
+  obs:
+    label: OBS
+    $Template:
+      - dataBold
+
+  exp:
+    label: EXP.
+    $Template:
+      - dataBold
+
+  spa_is_common_parts:
+    label: SPA P/N CMP
+    $Template:
+      - dataBold
+
+  avl_spa_pn_cmp:
+    label: AVL SPA P/N CMP
+    $Template:
+      - dataBold
+
+  alt_is_common_parts:
+    label: ALT P/N CMP
+    $Template:
+      - dataBold
+
+  avl_alt_is_common_parts:
+    label: AVL ALT P/N CMP
+    $Template:
+      - dataBold
+
+  is_common_parts:
+    label: Org. P/N CMP
+    $Template:
+      - dataBold
+
+  org_pn_avl:
+    label: Org. P/N AVL
+    $Template:
+      - dataBold
+
+  suggestion_is_common_part:
+    label: Sugg. P/N CMP
+    $Template:
+      - dataBold
+
+  sugg_pn_avl:
+    label: Sugg. P/N AVL
+    $Template:
+      - dataBold
+
+  suggestion_part_number:
+    label: Sugg. P/N
+    $Template:
+      - dataString
+
+  costDiff:
+    label: Cost Diff.
+    $Template:
+      - dataFloat
+
+  RBopportunity:
+    label: R&R Opportunity
+    $Template:
+      - dataString
+    style:
+      header:
+        fontColor: 'FFFFFF'
+        fill: 'A6A6A6'
+        border: true
+        bold: true
+      value:
+        fontColor: '000000'
+        border: true
+
+  feedback:
+    label: Feedback
+    $Template:
+      - dataString
+    style:
+      header:
+        fontColor: 'FFFFFF'
+        fill: '92D051'
+        border: true
+        bold: true
+      value:
+        fontColor: '000000'
+        border: true
+
+
+

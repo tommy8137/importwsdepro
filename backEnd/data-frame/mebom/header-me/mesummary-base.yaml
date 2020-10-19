@@ -1,0 +1,68 @@
+headers:
+  export_from:
+    label: Export From
+    $mebom.header-me.meTemplate:
+      - dataString
+
+  customer:
+    label: Customer
+    $mebom.header-me.meTemplate:
+      - dataString
+
+  project_name:
+    label: Project Name
+    $mebom.header-me.meTemplate:
+      - dataString
+  project_code:
+    label: Project Code
+    $mebom.header-me.meTemplate:
+      - dataString
+
+  product:
+    label: Product
+    $mebom.header-me.meTemplate:
+      - dataString
+  site_name:
+    label: Site
+    $mebom.header-me.meTemplate:
+      - dataString
+
+  stage_name:
+    label: Stage
+    $mebom.header-me.meTemplate:
+      - dataString
+  export_date:
+    label: Export Date
+    $mebom.header-me.meTemplate:
+      - dataString
+  sku_select:
+    label: SKU
+    $mebom.header-me.meTemplate:
+      - dataString
+  sku_desc:
+    label: SKU Description
+    $mebom.header-me.meTemplate:
+      - dataString
+  total_bom_items:
+    label: Total BOM Items
+    $mebom.header-me.meTemplate:
+      - dataString
+  sku_cost:
+    label: Total SKU Cost
+    $mebom.header-me.meTemplate:
+      - dataFloat
+
+  emdm_version:
+    label: eMDM Version
+    $mebom.header-me.meTemplate:
+      - dataInt
+
+  version:
+    label: Cost Version
+    $mebom.header-me.meTemplate:
+      - dataString
+
+  export_curr:
+    label: Export Currency
+    $mebom.header-me.meTemplate:
+      - dataString

@@ -1,0 +1,2 @@
+alter table wiprocurement.bom_projects add column if not exists project_source varchar default null;
+alter table wiprocurement.bom_stage_version add column if not exists source_version varchar default null;

@@ -1,0 +1,122 @@
+output:
+  total: total
+  unit_price: unit_price
+  qty: fanAmount
+  appearanceProcess1Qty: fanAppearanceProcess1Qty
+  appearanceProcess2Qty: fanAppearanceProcess2Qty
+  fanLossRate: fanLossRate
+  assemblyTime: assemblyTime
+  # 電壓價格
+  fanVoltagePrice: fanVoltagePrice
+  # mapping
+  # fanLossRateValues: fanLossRateValues
+  fanSize: fanSize
+  poundOut: poundOut
+  fanSizePrice: fanSizePrice
+  fanSizePriceValues: fanSizePriceValues
+
+formula:
+  # fan零件費 = 單價 * 用量 * (1 + fan loss rate)
+  # thermal fan 需要加lossRate, 獨立 fan不用
+  total:
+    type: MATH
+    formula: unit_price * fanAmount * ( 1 + 0 )
+    label: fan零件費
+
+# 單價 = Baseline + 軸承差異 + 扇葉材料差異 + 磁石材料差異 + 馬達差異 + 電壓價格
+  unit_price:
+    type: MATH
+    formula: fanSizePrice + bearingAndSleevePrice + fanBladeMaterialPrice + magnetMaterialAndSizePrice + motorArchitecturePrice + fanVoltagePrice + fanCostAdder
+    label: 單價
+
+  # Fan loss rate
+  fanLossRate:
+    label: FAN loss rate
+    type: FUNC
+    formula: "(fanSize, fanLossRateValues)=>{
+        return fanLossRateValues.values.reduce((prev, curr) =>{
+          if(curr.fanSize === fanSize) {
+            return curr.fanLossRate;
+          }
+          return prev;
+        }, 0)
+    }"
+    param:
+      - fanSize
+      - fanLossRateValues
+
+  # 組裝時間: 獨立fan不處理固定參數
+  assemblyTime:
+    label: Fan 組裝時間
+    type: MATH
+    formula: fanAmount * 12
+
+
+  fanSizePrice:
+    label: Fan unit price
+    type: FUNC
+    formula: "(fanSize, poundOut, fanSizePriceValues) => {
+      const mappingSize = poundOut ? +fanSize - 0.5 : +fanSize;
+      const result = fanSizePriceValues.values.reduce((pre, cur) => {
+        if (+cur.fanSize === mappingSize) {
+          return cur.fanSizePrice;
+        }
+        return pre;
+      }, 0);
+
+      return result;
+    }"
+    param:
+      - fanSize
+      - poundOut
+      - fanSizePriceValues
+
+scope:
+  fanAmount: fanAmount
+  bearingAndSleevePrice: bearingAndSleevePrice
+  fanVoltage: fanVoltage
+  fanSize: fanSize
+  # fanSizePrice: fanSizePrice
+  poundOut: poundOut
+  motorArchitecturePrice: motorArchitecturePrice
+  fanBladeMaterialPrice: fanBladeMaterialPrice
+  magnetMaterialAndSizePrice: magnetMaterialAndSizePrice
+  fanAppearanceProcess1Qty: fanAppearanceProcess1Qty
+  fanAppearanceProcess2Qty: fanAppearanceProcess2Qty
+  fanVoltagePrice: fanVoltagePrice
+  fanCostAdder: fanCostAdder
+
+
+constant:
+  fanSizePriceValues:
+    label: fan size price values
+    value:
+      ?getThermalFanSize:
+        -
+  worktimeSec:
+    label: Assembly組裝工時(sec)
+    ?getThermalCommon:
+      - thermal_module_processing
+      - assembly_spend_time
+    # value: 12
+
+  # fan組裝工時的神秘參數 檢驗x2+組裝x1
+  fanAssemblyTimeNumber:
+    label: 檢驗x2+組裝x1 次數
+    value: 3
+
+  # 原本的loss rate
+  fan_loss_rate:
+    label: fan loss rate
+    ?getThermalCommon:
+      - thermal_module_components
+      - fan_loss_rate
+    # value: 0.015
+
+  # fan loss rate mapping
+  fanLossRateValues:
+    label: fan lower loss rate
+    # value: 0.03
+    value:
+      ?getThermalFamLossRate:
+        -

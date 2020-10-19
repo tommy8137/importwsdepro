@@ -1,0 +1,45 @@
+totalDataFloat:
+  $Template:
+    - dataFloat
+  style:
+    header:
+      $eebom-tmp.header-2nd-summary.style:
+        - lowest-header
+    value:
+      $eebom-tmp.header-2nd-summary.style:
+        - data
+
+
+typeDataFloat:
+  $Template:
+    - dataFloat
+  style:
+    header:
+      $eebom-tmp.header-2nd-summary.style:
+        - high-header
+    value:
+      $eebom-tmp.header-2nd-summary.style:
+        - data
+
+mlccDataFloat:
+  $Template:
+    - dataFloat
+  style:
+    header:
+      $eebom-tmp.header-2nd-summary.style:
+        - mlcc-header
+    value:
+      $eebom-tmp.header-2nd-summary.style:
+        - data
+
+
+wrapFloat:
+  $Template:
+    - dataFloat
+  style:
+    header:
+      $eebom-tmp.header-2nd-summary.style:
+        - wrap-header
+    value:
+      $eebom-tmp.header-2nd-summary.style:
+        - data

@@ -1,0 +1,48 @@
+---
+name: Switch
+---
+
+import { Playground, Props } from 'docz'
+import Switch from '~~elements/Switch'
+
+import { State } from 'react-powerplug';
+import * as styles from '~~styles/_docz-template.scss';
+
+##  引用方式
+```js
+import Button from '~~elements/Switch';
+```
+
+## Props
+
+<Props of={Switch}/>
+
+--- 
+
+## 使用方式
+
+<Playground>
+    <div>
+        <p>1.normal</p>
+        <Switch />
+        <p>2.custom size</p>
+        <Switch width="200"/>
+        <p>3.disabled</p>
+        <Switch disabled/>
+        <p>4.set checked = true</p>
+        <Switch checked/>
+        <p>5.checked by state</p>
+        <State initial={{ checked: false }}>
+            {({ state, setState }) => {
+                const handleChangeSwitch = (e) => {
+                    setState({ checked: !state.checked })
+                }
+                const { checked } = state;
+                return (
+                    <Switch checked={checked} onChange={handleChangeSwitch}/>
+                )
+            }
+            }
+         </State>
+    </div>
+</Playground>

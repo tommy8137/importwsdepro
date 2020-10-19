@@ -1,0 +1,148 @@
+headers:
+  sku_qty:
+    label: SKU (QTY)
+    $mebom.header-me.meTemplate:
+      - currDataFloat
+    dynamicSite: 3
+
+  level:
+    label: Level
+    $mebom.header-me.meTemplate:
+      - currDataInt
+  part_number:
+    label: Part Number
+    $mebom.header-me.meTemplate:
+      - currDataString
+
+  part_name:
+    label: Part Name
+    $mebom.header-me.meTemplate:
+      - currDataString
+
+  ori_curr_last_price:
+    label: Last Price Original Curr.
+    $mebom.header-me.meTemplate:
+      - currDataString
+
+  ori_last_price_up:
+    label: Last Price Original Cost
+    deleteLine: true
+    $mebom.header-me.meTemplate:
+      - currStrikeThrough
+
+  validDate:
+    label: ValidFrom
+    $mebom.header-me.meTemplate:
+      - currDataInt
+
+  ori_curr_clean_sheet_cost:
+    label: CleanSheet Cost (U/P) Original Curr.
+    $mebom.header-me.meTemplate:
+      - currDataString
+
+  ori_clean_sheet_cost_up:
+    label: CleanSheet Cost (U/P) Original Cost
+    $mebom.header-me.meTemplate:
+      - currDataFloat
+
+  ori_curr_spa:
+    label: SPA Cost (U/P) Original Curr.
+    $mebom.header-me.meTemplate:
+      - currDataString
+
+  ori_spa_cost_up:
+    label: SPA Cost (U/P) Original Cost
+    $mebom.header-me.meTemplate:
+      - currDataFloat
+
+  spa_material_name:
+    label: SPA P/N
+    $mebom.header-me.meTemplate:
+      - currDataString
+
+  ori_curr_sourcer:
+    label: Sourcer Cost Original Curr
+    $mebom.header-me.meTemplate:
+      - currDataString
+
+  ori_sourcer_shipping:
+    label: Sourcer 運包 Original Cost
+    $mebom.header-me.meTemplate:
+      - currDataFloat
+  ori_sourcer_pl:
+    label: Sourcer P/L Original Cost
+    $mebom.header-me.meTemplate:
+      - currDataFloat
+  
+  ori_sourcer_assembly:
+    label: Sourcer 組工 Original Cost
+    $mebom.header-me.meTemplate:
+      - currDataFloat
+
+  ori_sourcer_cost_up:
+    label: Sourcer Cost (U/P) Original Cost
+    $mebom.header-me.meTemplate:
+      - currDataFloat
+    
+  ori_sourcer_cost_sku_amount:
+    label: Sourcer Cost (SKU Amount) Original Cost
+    $mebom.header-me.meTemplate:
+      - currDataFloat
+    dynamicSite: 17
+  
+  sourcer_remark:
+    label: Sourcer Remark
+    $mebom.header-me.meTemplate:
+      - currDataFloat
+
+
+  ori_curr_ce:
+    label: CE Cost Original Curr.
+    $mebom.header-me.meTemplate:
+      - currDataString
+
+  ori_ce_shipping:
+    label: CE 運包 Original Cost
+    $mebom.header-me.meTemplate:
+      - currDataFloat
+
+  ori_ce_pl:
+    label: CE P/L Original Cost
+    $mebom.header-me.meTemplate:
+      - currDataFloat
+  
+  ori_ce_assembly:
+    label: CE 組工 Original Cost
+    $mebom.header-me.meTemplate:
+      - currDataFloat
+
+  ori_inquiry_cost_up:
+    label: Inquiry Cost (U/P) Original Cost
+    $mebom.header-me.meTemplate:
+      - currDataFloat
+
+  ori_ce_cost_up:
+    label: CE Cost (U/P) Original Cost
+    $mebom.header-me.meTemplate:
+      - currDataFloat
+
+  ori_ce_cost_sku_amount:
+    label: CE Cost (SKU Amount) Original Cost
+    $mebom.header-me.meTemplate:
+      - currDataFloat
+    dynamicSite: 12
+  
+  ce_remark:
+    label: CE Remark
+    $mebom.header-me.meTemplate:
+      - currDataString
+
+  update_time:
+    label: Update Time (月/日/年)
+    $mebom.header-me.meTemplate:
+      - currDataString
+
+  id:
+    label: UUID
+    $mebom.header-me.meTemplate:
+      - currDataString

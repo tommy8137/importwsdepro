@@ -1,0 +1,18 @@
+headers:
+  exchange_rate:
+    label: SAP Exchange Rate
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - exchangeHeader
+
+  RMB:
+    label: RMB-USD
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - exchangeData
+  NTD:
+    label: NTD-USD
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - exchangeData
+  JPY:
+    label: JPY-USD
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - exchangeData

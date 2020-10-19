@@ -1,0 +1,351 @@
+header:
+  fontColor: 'FFFFFF'
+  fill: '0070C0'
+  border: true
+  bold: true
+
+valueString:
+  fieldType: value
+  dataType: string
+  format: null
+  value: null
+  style:
+    header:
+      fontColor: '000000'
+    value:
+      fontColor: '000000'
+
+valueFloat:
+  fieldType: value
+  dataType: float
+  format: 0.00
+  value: null
+  style:
+    header:
+      fontColor: '000000'
+    value:
+      fontColor: '000000'
+
+valueInt:
+  fieldType: value
+  dataType: int
+  format: 0
+  value: null
+  style:
+    header:
+      fontColor: '000000'
+    value:
+      fontColor: '000000'
+
+formula:
+  fieldType: formula
+  dataType: string
+  format: 0
+  value: null
+  style:
+    header:
+      fontColor: '000000'
+    value:
+      fontColor: '000000'
+
+dataString:
+  fieldType: data
+  dataType: string
+  format: null
+  style:
+    header:
+      $Template:
+        - header
+    value:
+      fontColor: '000000'
+      border: true
+dataArray:
+  fieldType: array
+  dataType: string
+  format: null
+  style:
+    header:
+      $Template:
+        - header
+    value:
+      fontColor: '000000'
+      border: true
+
+dataFloat:
+  fieldType: data
+  dataType: float
+  format: 0.00
+  style:
+    header:
+      $Template:
+        - header
+    value:
+      numberFormat: '#,##0.00000'
+      fontColor: '000000'
+      border: true
+
+dataInt:
+  fieldType: data
+  dataType: int
+  format: 0
+  style:
+    header:
+      $Template:
+        - header
+    value:
+      fontColor: '000000'
+      border: true
+      numberFormat: '#,##0'
+
+dataPercent:
+  fieldType: data
+  dataType: int
+  format: 0
+  style:
+    header:
+      $Template:
+        - header
+    value:
+      fontColor: '000000'
+      border: true
+      numberFormat: '#,##0.00%'
+
+dataPercentWithoutFloat:
+  fieldType: data
+  dataType: int
+  format: 0
+  style:
+    header:
+      $Template:
+        - header
+    value:
+      fontColor: '000000'
+      border: true
+      numberFormat: '#,##0%'
+
+dataPercentWithoutSign:
+  fieldType: data
+  dataType: int
+  format: 0
+  style:
+    header:
+      $Template:
+        - header
+    value:
+      fontColor: '000000'
+      border: true
+      numberFormat: '#,##0.00'
+
+dataBold:
+  fieldType: boldChange
+  dataType: string
+  format: null
+  style:
+    header:
+      $Template:
+        - header
+    value:
+      thick:
+        fontColor: '000000'
+        border: true
+        bold: true
+      thin:
+        fontColor: '000000'
+        border: true
+keyBold:
+  fieldType: keyBold
+  dataType: string
+  format: null
+  style:
+    header:
+      $Template:
+        - header
+    value:
+      thick:
+        fontColor: '000000'
+        border: true
+        bold: true
+        numberFormat: '#,##0.00000'
+      thin:
+        fontColor: '000000'
+        border: true
+        numberFormat: '#,##0.00000'
+strikeThrough:
+  fieldType: strikethrough
+  dataType: float
+  format: null
+  style:
+    header:
+      $Template:
+        - header
+    value:
+      delete:
+        strikethrough: true
+        numberFormat: '#,##0.00000'
+        fontColor: '000000'
+        border: true
+        borderColor: 'ED7D31'
+      non_delete:
+        numberFormat: '#,##0.00000'
+        fontColor: '000000'
+        border: true
+        borderColor: 'ED7D31'
+        
+serial:
+  fieldType: serial
+  dataType: int
+  format: 0
+  style:
+    header:
+      fontColor: '000000'
+    value:
+      fontColor: '000000'
+fontRed:
+  fieldType: fontToRed
+  dataType: string
+  format: null
+  style:
+    header:
+      $Template:
+        - header
+    value:
+      exist:
+        fontColor: 'FF0000'
+        border: true
+      no_exist:
+        fontColor: '000000'
+        border: true
+
+mergeCell:
+  fieldType: merged
+  dataType: string
+  verticalDirection: false
+  horizontalDirection: false
+  horizontalWithNoData: false
+  mergeLength: 1
+  format: 0
+  style:
+    header:
+      border: true
+    value:
+      border: true
+      numberFormat: '#,##0.00000'
+
+rowTable:
+  tableType: rowtable
+  autoFilter: true
+  anchor:
+    x: A
+    y: 9
+
+colTable:
+  tableType: columntable
+  colLength: 7
+  anchor:
+    x: A
+    y: 1
+
+valTable:
+  tableType: valuetable
+  colLength: 1
+  anchor:
+    x: A
+    y: 1
+
+traverseTable:
+  tableType: traversetable
+  colLength: 1
+  anchor:
+    x: H
+    y: 1
+
+listTable:
+  tableType: listtable
+  colLength: 1
+  anchor:
+    x: G
+    y: 1
+
+spaTable:
+  tableType: spatable
+  colLength: 1
+  autoFilter: true
+  anchor:
+    x: A
+    y: 6
+
+xraySummaryTable:
+  tableType: xraysummarytable
+  colLength: 1
+  autoFilter: false
+  totalMergeLength: 3
+  anchor:
+    x: A
+    y: 4
+
+unitTable:
+  tableType: unittable
+  autoFilter: false
+  anchor:
+    x: G
+    y: 3
+
+dynamicHeaderTable:
+  tableType: dynamicheadertable
+  autoFilter: true
+  anchor:
+    x: A
+    y: 8
+
+rowtable2nd:
+  tableType: rowtable2nd
+  autoFilter: true
+  anchor:
+    x: A
+    y: 11
+
+summaryfor2nd:
+  tableType: summaryfor2nd
+  autoFilter: false
+  anchor:
+    x: A
+    y: 12
+
+newOpportunityTable:
+  tableType: newOpportunityTable
+  autoFilter: false
+  colLength: 6
+  anchor:
+    x: E
+    y: 1
+
+spaceRateTable:
+  tableType: spaceRateTable
+  autoFilter: false
+  anchor:
+    x: B
+    y: 3
+
+spaceRateCostTable:
+  tableType: spaceRateCostTable
+  anchor:
+    x: B
+    y: 17
+
+odmoem:
+  tableType: odmoemTable
+  anchor:
+    x: A
+    y: 1
+
+wsdTable:
+  tableType: wsdTable
+  anchor:
+    x: A
+    y: 1
+
+calGapTable:
+  tableType: calGapTable
+  anchor:
+    x: D
+    y: 2

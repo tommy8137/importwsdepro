@@ -1,0 +1,6 @@
+excel:
+  sheets:
+    - $spa.sheet-spa:
+      - sheet
+    - $eebom-tmp.sheet-exchange-rate:
+      - sheet

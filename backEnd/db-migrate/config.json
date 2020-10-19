@@ -1,0 +1,57 @@
+{
+  "local": {
+    "driver": "pg",
+    "user": "swpc-user",
+    "password": "eprocurement",
+    "host": "localhost",
+    "port": 5432,
+    "database": "docker",
+    "schema": "wiprocurement"
+  }, 
+  "dev": {
+    "driver": "pg",
+    "user": "swpc-user",
+    "password": "eprocurement",
+    "host": "192.168.100.234",
+    "port": 5432,
+    "database": "docker",
+    "schema": "wiprocurement"
+  },
+  "qt": {
+    "driver": "pg",
+    "user":  {"ENV": "DB_MIGRATE_USERNAME"},
+    "password":  {"ENV": "DB_MIGRATE_PASSWORD"},
+    "host":  {"ENV": "DB_MIGRATE_HOST"},
+    "port": 5432,
+    "database": "docker",
+    "schema": "wiprocurement"
+ },
+ "sit": {
+  "driver": "pg",
+  "user":  {"ENV": "DB_MIGRATE_USERNAME"},
+  "password":  {"ENV": "DB_MIGRATE_PASSWORD"},
+  "host":  {"ENV": "DB_MIGRATE_HOST"},
+  "port": 5432,
+  "database": "docker",
+  "schema": "wiprocurement"
+ },
+ "testbom": {
+  "driver": "pg",
+  "user":  {"ENV": "DB_MIGRATE_USERNAME"},
+  "password":  {"ENV": "DB_MIGRATE_PASSWORD"},
+  "host":  {"ENV": "DB_MIGRATE_HOST"},
+  "port": 3000,
+  "database": "docker",
+  "schema": "wiprocurement"
+ },
+  "prd": {
+    "driver": "pg",
+    "user":  {"ENV": "DB_MIGRATE_USERNAME"},
+    "password":  {"ENV": "DB_MIGRATE_PASSWORD"},
+    "host":  {"ENV": "DB_MIGRATE_HOST"},
+    "port": 5432,
+    "database": "docker",
+    "schema": "wiprocurement"
+ }
+
+}

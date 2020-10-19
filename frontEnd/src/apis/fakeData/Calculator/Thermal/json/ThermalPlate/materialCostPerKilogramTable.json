@@ -1,0 +1,116 @@
+{
+  "header": [
+    {
+      "key": "material",
+      "name": "材料",
+      "typeof": "string"
+    },
+    {
+      "key": "materialThickness",
+      "name": "材料厚度",
+      "typeof": "number"
+    },
+    {
+      "key": "materialCostPerKilogram",
+      "name": "材料每公斤費用",
+      "typeof": "number"
+    }
+  ],
+  "data": [
+    {
+      "material": "CU1100",
+      "materialThickness": 0.5,
+      "materialCostPerKilogram": 4.5
+    },
+    {
+      "material": "CU1100",
+      "materialThickness": 0.6,
+      "materialCostPerKilogram": 4.5
+    },
+    {
+      "material": "CU1100",
+      "materialThickness": 0.8,
+      "materialCostPerKilogram": 4.5
+    },
+    {
+      "material": "C18400",
+      "materialThickness": 0.3,
+      "materialCostPerKilogram": 4.5
+    },
+    {
+      "material": "KU400",
+      "materialThickness": 0.5,
+      "materialCostPerKilogram": 1.5
+    },
+    {
+      "material": "KU400",
+      "materialThickness": 0.6,
+      "materialCostPerKilogram": 1.5
+    },
+    {
+      "material": "SGCC",
+      "materialThickness": 0.5,
+      "materialCostPerKilogram": 1.4
+    },
+    {
+      "material": "SGCC",
+      "materialThickness": 0.6,
+      "materialCostPerKilogram": 1.37
+    },
+    {
+      "material": "SGCC",
+      "materialThickness": 0.8,
+      "materialCostPerKilogram": 1
+    },
+    {
+      "material": "SGCC",
+      "materialThickness": 1,
+      "materialCostPerKilogram": 1.35
+    },
+    {
+      "material": "SGCC",
+      "materialThickness": 1.2,
+      "materialCostPerKilogram": 1.36
+    },
+    {
+      "material": "SECC",
+      "materialThickness": 0.5,
+      "materialCostPerKilogram": 1.39
+    },
+    {
+      "material": "SECC",
+      "materialThickness": 0.6,
+      "materialCostPerKilogram": 1.37
+    },
+    {
+      "material": "SPCC",
+      "materialThickness": 0.5,
+      "materialCostPerKilogram": 0.95
+    },
+    {
+      "material": "SPCC",
+      "materialThickness": 0.6,
+      "materialCostPerKilogram": 0.9
+    },
+    {
+      "material": "SPCC",
+      "materialThickness": 0.8,
+      "materialCostPerKilogram": 0.8
+    },
+    {
+      "material": "SPCC",
+      "materialThickness": 1,
+      "materialCostPerKilogram": 0.8
+    },
+    {
+      "material": "SPCC",
+      "materialThickness": 1.2,
+      "materialCostPerKilogram": 0.8
+    },
+    {
+      "material": "SPCC",
+      "materialThickness": 1.6,
+      "materialCostPerKilogram": 0.8
+    }
+  ]
+}

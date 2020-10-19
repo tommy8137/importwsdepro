@@ -1,0 +1,8 @@
+# 加工內容
+values:
+ - workProcessing: 單封邊
+   workProcessingPrice: 0.0378
+ - workProcessing: 雙封邊
+   workProcessingPrice: 0.0567
+ - workProcessing: 特殊裁切
+   workProcessingPrice: 0.0189

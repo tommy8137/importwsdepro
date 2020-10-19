@@ -1,0 +1,1 @@
+DROP TABLE wiprocurement.bom_item_complete_version;

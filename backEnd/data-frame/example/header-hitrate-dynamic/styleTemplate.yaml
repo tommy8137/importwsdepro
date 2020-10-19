@@ -1,0 +1,18 @@
+hc:
+  style:
+    header:
+      $example.header-hitrate-dynamic.style:
+        - ht-header
+    value:
+      $example.header-hitrate-dynamic.style:
+        - ht-catagory
+hd:
+  style:
+    header:
+      $example.header-hitrate-dynamic.style:
+        - ht-header
+    value:
+      $example.header-hitrate-dynamic.style:
+        - ht-data
+
+  

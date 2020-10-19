@@ -1,0 +1,357 @@
+multiple: true
+items:
+# 可編輯的sub-title --------------------------------------------------------------------------------------------------------------------
+  - key: fanLabel
+    label: Fan
+    $Template:
+      - label
+    editable: true
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+    default: Fan
+    emdmMultipleKey: emdmBomInfo.cmfForm.fan
+    emdmKey: fanLabel
+
+# 用量 --------------------------------------------------------------------------------------------------------------------
+  - key: fanAmount
+    $Template:
+      - inputInt
+      - ^displayConfig
+    label: 用量
+    default: 0
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.fan
+    emdmKey: fanAmount
+
+# 風扇型式 --------------------------------------------------------------------------------------------------------------------
+  - key: fanType
+    $Template:
+      - selectorString
+      - ^displayConfig
+    label: 風扇型式
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: id
+      ?getThermalFanType:
+        -
+      # $thermal-fan.dropdown.FanTypeValues:
+      #     - ^values
+    displayConfig:
+      $Template:
+      - displayConfig
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.fan
+    emdmKey: fanType
+
+# Size --------------------------------------------------------------------------------------------------------------------
+  - key: fanSizePanel
+    label: Fan size
+    $Template:
+      - compositeInline
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+    items:
+      - key: fanSizeX
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        label: X
+        default: 0
+        decimal: 2
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.fan
+        emdmKey: fanSizeX
+
+      - key: fanSizeY
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        label: Y
+        default: 0
+        decimal: 2
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.fan
+        emdmKey: fanSizeY
+
+      - key: fanSize
+        label: Z
+        $Template:
+          - selectorString
+        selectorConfig:
+          $Template:
+            - selectorConfig
+          idKey: id
+          ?getThermalFanSize:
+            -
+          # $thermal-fan.dropdown.FanSizeValues:
+          #   - ^values
+        displayConfig:
+          $Template:
+            - displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.fan
+        emdmKey: fanSize
+
+      - key: fanSizePrice
+        $Template:
+          - mappedValueFloat
+        displayConfig:
+          $Template:
+            - displayConfig
+          display: false
+        selectorConfig:
+          $Template:
+            - selectorConfig
+          ?getThermalFanSize:
+            -
+          # $thermal-fan.dropdown.FanSizeValues:
+          #   - ^values
+        mapFrom:
+          - fanSize
+
+      - key: fanArea
+        $Template:
+          - realtimeFormulaFloat
+        label: 風扇面積
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1.5
+          display: false
+        func: "(fanSizeX, fanSizeY)=>{
+          return +fanSizeX * +fanSizeY;
+        }"
+        replaceBy:
+          - fanSizeX
+          - fanSizeY
+
+      - key: fanCostAdder
+        $Template:
+          - realtimeFormulaFloat
+        label: 風扇cost增加
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1.5
+          display: false
+        func: "(fanSizeX, fanSizeY)=>{
+          if ((+fanSizeX * +fanSizeY) > 7225 || +fanSizeX >= 100 || +fanSizeY >= 100) {
+            return 0.1;
+          }
+          return 0;
+        }"
+        replaceBy:
+          - fanSizeX
+          - fanSizeY
+
+
+# 馬達架構 --------------------------------------------------------------------------------------------------------------------
+  - key: motorArchitecture
+    label: 馬達架構
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: motor_id
+      ?getThermalFanMotor:
+        -
+      # $thermal-fan.dropdown.MotorArchitectureValues:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.fan
+    emdmKey: motorArchitecture
+
+  - key: motorArchitecturePrice
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      ?getThermalFanMotor:
+        -
+      # $thermal-fan.dropdown.MotorArchitectureValues:
+      #   - ^values
+    mapFrom:
+      - motorArchitecture
+      - fanSize
+
+# 軸承和套筒 --------------------------------------------------------------------------------------------------------------------
+  - key: bearingAndSleeve
+    label: 軸承和套筒
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: bearing_id
+      ?getThermalBearingAndSleeveFan:
+        -
+      # $thermal-fan.dropdown.BearingAndSleeveValues:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.fan
+    emdmKey: bearingAndSleeve
+
+  - key: bearingAndSleevePrice
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      ?getThermalBearingAndSleeveFan:
+        -
+      # $thermal-fan.dropdown.BearingAndSleeveValues:
+      #   - ^values
+    mapFrom:
+      - bearingAndSleeve
+      - fanSize
+
+# 扇葉材料 --------------------------------------------------------------------------------------------------------------------
+  - key: fanBladeMaterial
+    label: 扇葉材料
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: material_id
+      ?getFanBladeMaterial:
+        -
+      # $thermal-fan.dropdown.FanBladeMaterialValues:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.fan
+    emdmKey: fanBladeMaterial
+
+  - key: fanBladeMaterialPrice
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      ?getFanBladeMaterial:
+        -
+      # $thermal-fan.dropdown.FanBladeMaterialValues:
+      #   - ^values
+    mapFrom:
+      - fanBladeMaterial
+      - fanSize
+
+# 磁石材料及尺寸 --------------------------------------------------------------------------------------------------------------------
+  - key: magnetMaterialAndSize
+    label: 磁石材料及尺寸
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: magnet_id
+      ?getThermalFanMagnet:
+        -
+      # $thermal-fan.dropdown.MagnetMaterialAndSizeValues:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.fan
+    emdmKey: magnetMaterialAndSize
+
+  - key: magnetMaterialAndSizePrice
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      ?getThermalFanMagnet:
+        -
+      # $thermal-fan.dropdown.MagnetMaterialAndSizeValues:
+      #   - ^values
+    mapFrom:
+      - magnetMaterialAndSize
+      - fanSize
+
+# 磁石材料及尺寸 --------------------------------------------------------------------------------------------------------------------
+  - key: fanVoltage
+    label: 電壓
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: fanVoltageId
+      # $thermal-fan.dropdown.FanVoltageValues:
+      #   - ^values
+      ?getThermalFanVoltage:
+        -
+    displayConfig:
+      $Template:
+        - displayConfig
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.fan
+    emdmKey: fanVoltage
+
+  - key: fanVoltagePrice
+    label: 電壓單價
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      # $thermal-fan.dropdown.FanVoltageValues:
+      #   - ^values
+      ?getThermalFanVoltage:
+        -
+    mapFrom:
+      - fanVoltage
+
+# 有鹵 --------------------------------------------------------------------------------------------------------------------
+  - key: hasHalogen
+    label: 有鹵
+    $Template:
+      - checkBox
+      - ^displayConfig
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    emdmMultipleKey: emdmBomInfo.cmfForm.fan
+    emdmKey: hasHalogen
+
+# 打凸 --------------------------------------------------------------------------------------------------------------------
+  - key: poundOut
+    label: 打凸
+    $Template:
+      - checkBox
+      - ^displayConfig
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    emdmMultipleKey: emdmBomInfo.cmfForm.fan
+    emdmKey: poundOut

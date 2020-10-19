@@ -1,0 +1,26 @@
+values:
+  - SPEC19: 2PLY
+  - SPEC19: 6L/T=1.6mm
+  - SPEC19: Back drill
+  - SPEC19: D+8
+  - SPEC19: D+9
+  - SPEC19: Intel CPU
+  - SPEC19: PP Sheet*1
+  - SPEC19: PP Sheet*2
+  - SPEC19: PP Sheet*4
+  - SPEC19: PP Sheet*8
+  - SPEC19: Thickness tolerance +/-8%
+  - SPEC19: V-CUT
+  - SPEC19: V16R8
+  - SPEC19: V18R8
+  - SPEC19: V20R10
+  - SPEC19: VIPPO
+  - SPEC19: VLP
+  - SPEC19: VOP
+  - SPEC19: 一片一鑽
+  - SPEC19: 塞孔
+  - SPEC19: 斷層金手指
+  - SPEC19: 無導線電鍍金
+  - SPEC19: 綜橫比>10
+  - SPEC19: 葫蘆孔
+  - SPEC19: 阻抗

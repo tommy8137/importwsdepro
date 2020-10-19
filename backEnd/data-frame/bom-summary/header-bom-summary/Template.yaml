@@ -1,0 +1,71 @@
+dataFloat:
+  $Template:
+    - dataFloat
+  style:
+    header:
+      $bom-summary.header-bom-summary.style:
+        - summary-header
+    value:
+      $bom-summary.header-bom-summary.style:
+        - summary-data
+      numberFormat: '#,##0.00000'
+    total_color:
+      $bom-summary.header-bom-summary.style:
+        - total-data
+      numberFormat: '#,##0.00000'
+
+dataString:
+  $Template:
+    - dataString
+  style:
+    header:
+      $bom-summary.header-bom-summary.style:
+        - summary-header
+    value:
+      $bom-summary.header-bom-summary.style:
+        - summary-data
+    sub_color:
+      $bom-summary.header-bom-summary.style:
+        - sub-data
+    total_color:
+      $bom-summary.header-bom-summary.style:
+        - total-data
+boldString:
+  $Template:
+    - dataString
+  style:
+    header:
+      $bom-summary.header-bom-summary.style:
+        - summary-header
+    value:
+      $bom-summary.header-bom-summary.style:
+        - bold-data
+    sub_color:
+      $bom-summary.header-bom-summary.style:
+        - sub-data
+    total_color:
+      $bom-summary.header-bom-summary.style:
+        - total-data
+
+bomDataFloat:
+  $Template:
+    - dataFloat
+  style:
+    header:
+      $bom-summary.header-bom-summary.style:
+        - bom-summary-header
+    value:
+      $bom-summary.header-bom-summary.style:
+        - summary-data
+      numberFormat: '#,##0.00000'
+
+bomDataString:
+  $Template:
+    - dataString
+  style:
+    header:
+      $bom-summary.header-bom-summary.style:
+        - bom-summary-header
+    value:
+      $bom-summary.header-bom-summary.style:
+        - summary-data

@@ -1,0 +1,795 @@
+const quotationSetting = require('../../cleanSheetQuotation/dt/cable-ffc')
+
+module.exports = {
+  cleansheet: [
+    {
+      label: 'A.材料費:',
+      byKey: 'partlistprice.prices.cableFFC.A_materialCost',
+      style: {
+        color: '0000FF',
+        bold: true,
+        border: {
+          topBorderStyle: 'thick',
+        },
+      },
+      contents: [
+        {
+          label: '銅線',
+          byKey: 'partlistprice.prices.cableFFC.A_1_copperWireCost',
+          style: {
+            color: null,
+            bold: false,
+            border: {
+
+            },
+          },
+          contents: [
+
+          ],
+        },
+        {
+          label: '皮膜',
+          byKey: 'partlistprice.prices.cableFFC.A_2_coatingCost',
+          style: {
+            color: null,
+            bold: false,
+            border: {
+
+            },
+          },
+          contents: [
+
+          ],
+        },
+      ],
+    },
+    {
+      label: 'B.二次加工費:',
+      byKey: 'partlistprice.prices.cableFFC.B_secondaryProcessingCost',
+      style: {
+        color: '0000FF',
+        bold: true,
+        border: {
+          topBorderStyle: 'thick',
+          bottomBorderStyle: 'thick',
+        },
+      },
+      contents: [
+
+      ],
+    },
+    {
+      label: '貼合分條及導通裁切',
+      byKey: 'partlistprice.prices.cableFFC.B_1_pastingCost',
+      style: {
+        color: null,
+        bold: false,
+        border: {
+
+        },
+      },
+      contents: [
+
+      ],
+    },
+    {
+      label: '停止線',
+      byKey: 'partlistprice.prices.cableFFC.B_2_stopLineCost',
+      style: {
+        color: null,
+        bold: false,
+        border: {
+
+        },
+      },
+      contents: [
+
+      ],
+    },
+    {
+      label: '印刷',
+      byKey: 'partlistprice.prices.cableFFC.B_3_prittingCost',
+      style: {
+        color: null,
+        bold: false,
+        border: {
+
+        },
+      },
+      contents: [
+
+      ],
+    },
+    {
+      label: '金手指掛鍍',
+      byKey: 'partlistprice.prices.cableFFC.B_4_goldPlatingCost',
+      style: {
+        color: null,
+        bold: false,
+        border: {
+
+        },
+      },
+      contents: [
+
+      ],
+    },
+    {
+      label: '沖型',
+      byKey: 'partlistprice.prices.cableFFC.B_5_flushCost',
+      style: {
+        color: null,
+        bold: false,
+        border: {
+
+        },
+      },
+      contents: [
+
+      ],
+    },
+    {
+      label: '折彎',
+      byKey: 'partlistprice.prices.cableFFC.B_6_bendCost',
+      style: {
+        color: null,
+        bold: false,
+        border: {
+
+        },
+      },
+      contents: [
+
+      ],
+    },
+    {
+      label: '噴碼',
+      byKey: 'partlistprice.prices.cableFFC.B_7_sprayCodeCost',
+      style: {
+        color: null,
+        bold: false,
+        border: {
+
+        },
+      },
+      contents: [
+
+      ],
+    },
+    {
+      label: '組裝',
+      byKey: 'partlistprice.prices.cableFFC.B_8_assemblyCost',
+      style: {
+        color: null,
+        bold: false,
+        border: {
+
+        },
+      },
+      contents: [
+
+      ],
+    },
+    {
+      label: 'C.零件費:',
+      byKey: 'partlistprice.prices.cableFFC.C_componentsCost',
+      style: {
+        color: '0000FF',
+        bold: true,
+        border: {
+          topBorderStyle: 'thick',
+          bottomBorderStyle: 'thick',
+        },
+      },
+      contents: [
+
+      ],
+    },
+    {
+      label: '補強板 - 1',
+      byKey: 'partlistprice.prices.cableFFC.reinforcingPlateCost1',
+      style: {
+        color: null,
+        border: {
+
+        },
+      },
+      contents: [
+
+      ],
+    },
+    {
+      label: '補強板 - 2',
+      byKey: 'partlistprice.prices.cableFFC.reinforcingPlateCost2',
+      style: {
+        color: null,
+        border: {
+
+        },
+      },
+      contents: [
+
+      ],
+    },
+    {
+      label: 'Connector',
+      groupIdPath: 'partlistprice.prices.cableFFC.connectorGroupValues',
+      byKey: 'total',
+      style: {
+        color: null,
+        border: {
+
+        },
+      },
+      contents: [
+
+      ],
+    },
+    {
+      label: '輔料',
+      groupIdPath: 'partlistprice.prices.cableFFC.accessoryGroupsTotal',
+      byKey: 'total',
+      style: {
+        color: null,
+        border: {
+
+        },
+      },
+      contents: [
+
+      ],
+    },
+    {
+      label: 'D.管銷&利潤:',
+      byKey: 'partlistprice.forDebug.summary.cableFFC.D_profitCost',
+      style: {
+        color: '0000FF',
+        bold: true,
+        border: {
+          topBorderStyle: 'thick',
+          bottomBorderStyle: 'thick',
+        },
+      },
+      contents: [
+
+      ],
+    },
+    {
+      label: 'E.成品總價:',
+      byKey: 'partlistprice.forDebug.summary.cableFFC.total',
+      style: {
+        color: '0000FF',
+        bold: true,
+        border: {
+          topBorderStyle: 'thick',
+          bottomBorderStyle: 'thick',
+        },
+      },
+      contents: [
+
+      ],
+    },
+  ],
+  partlist: [
+    {
+      label: '材料',
+      contents: [
+        {
+          label: '銅線Spec',
+          byKey: 'partlistvalue.formData.FFCTab.FFCMaterial.FFCCopperWire.FFCCopperWireSpec',
+          style: {
+            color: null,
+            border: {
+
+            },
+          },
+          contents: [
+
+          ],
+        },
+        {
+          label: '銅線Pin',
+          byKey: 'partlistprice.forDebug.debugInfo.cableFFC.FFCPin.value',
+          style: {
+            color: null,
+            border: {
+
+            },
+          },
+          contents: [
+
+          ],
+        },
+        {
+          label: '銅線Pitch',
+          byKey: 'partlistprice.forDebug.debugInfo.cableFFC.FFCPitch.value',
+          style: {
+            color: null,
+            border: {
+
+            },
+          },
+          contents: [
+
+          ],
+        },
+        {
+          label: '銅線/皮膜L(mm)',
+          byKey: 'partlistprice.forDebug.debugInfo.cableFFC.FFCLength.value',
+          style: {
+            color: null,
+            border: {
+
+            },
+          },
+          contents: [
+
+          ],
+        },
+        {
+          label: '皮膜Spec',
+          byKey: 'partlistvalue.Price.cableFFC.FFCCoatingSpec',
+          style: {
+            color: null,
+            border: {
+
+            },
+          },
+          contents: [
+
+          ],
+        },
+      ],
+    },
+    {
+      label: '二次加工',
+      contents: [
+        {
+          label: '貼合分條及導通裁切(sec)',
+          byKey: 'partlistprice.forDebug.debugInfo.cableFFC.pastingCount.value',
+          style: {
+            color: null,
+            border: {
+              bottomBorderStyle: 'thick',
+            },
+          },
+          contents: [
+
+          ],
+        },
+        {
+          label: '停止線(條)',
+          byKey: 'partlistprice.forDebug.debugInfo.cableFFC.FFCStopLine.value',
+          style: {
+            color: null,
+            border: {
+              bottomBorderStyle: 'thick',
+            },
+          },
+          contents: [
+
+          ],
+        },
+        {
+          label: '印刷(面)',
+          byKey: 'partlistprice.forDebug.debugInfo.cableFFC.FFCPrintArea.value',
+          style: {
+            color: null,
+            border: {
+              bottomBorderStyle: 'thick',
+            },
+          },
+          contents: [
+
+          ],
+        },
+        {
+          label: '金手指掛鍍-鍍金(um)',
+          byKey: 'partlistprice.forDebug.debugInfo.cableFFC.FFCGoldPlating.value',
+          style: {
+            color: null,
+            border: {
+              bottomBorderStyle: 'thick',
+            },
+          },
+          contents: [
+
+          ],
+        },
+        {
+          label: '沖型(次)',
+          byKey: 'partlistprice.forDebug.debugInfo.cableFFC.FFCFlushCount.value',
+          style: {
+            color: null,
+            border: {
+              bottomBorderStyle: 'thick',
+            },
+          },
+          contents: [
+
+          ],
+        },
+        {
+          label: '折彎(次)',
+          byKey: 'partlistprice.forDebug.debugInfo.cableFFC.FFCBendTImes.value',
+          style: {
+            color: null,
+            border: {
+              bottomBorderStyle: 'thick',
+            },
+          },
+          contents: [
+
+          ],
+        },
+        {
+          label: '噴碼(數量)',
+          byKey: 'partlistprice.forDebug.debugInfo.cableFFC.FFCSprayCodeCount.value',
+          style: {
+            color: null,
+            border: {
+              bottomBorderStyle: 'thick',
+            },
+          },
+          contents: [
+
+          ],
+        },
+        {
+          label: '組裝(sec)',
+          byKey: 'partlistprice.forDebug.summary.cableFFC.assyTimeTotal',
+          style: {
+            color: null,
+            border: {
+              bottomBorderStyle: 'thick',
+            },
+          },
+          contents: [
+
+          ],
+        },
+      ],
+    },
+    {
+      label: 'Connector',
+      contents: [
+        {
+          label: '規格',
+          byKey: 'FFCConnectorType',
+          parentKey: 'Connector',
+          parent: 'partlistvalue.Price.cableFFC.cableFfcConnector',
+          groupIdPath: 'partlistvalue.formData.FFCTab.FFCConnector',
+          style: {
+            color: null,
+            border: {
+              bottomBorderStyle: 'thick',
+            },
+          },
+          contents: [
+
+          ],
+        },
+        {
+          label: '規格 Remark',
+          byKey: 'FFCConnectorTypeRemark',
+          parentKey: 'Connector',
+          parent: 'partlistvalue.Price.cableFFC.cableFfcConnector',
+          groupIdPath: 'partlistvalue.formData.FFCTab.FFCConnector',
+          style: {
+            color: null,
+            border: {
+              bottomBorderStyle: 'thick',
+            },
+          },
+          contents: [
+
+          ],
+        },
+        {
+          label: '組裝方式',
+          byKey: 'FFCConnectorAssemblyType',
+          parentKey: 'Connector',
+          parent: 'partlistvalue.Price.cableFFC.cableFfcConnector',
+          groupIdPath: 'partlistvalue.formData.FFCTab.FFCConnector',
+          style: {
+            color: null,
+            border: {
+              bottomBorderStyle: 'thick',
+            },
+          },
+          contents: [
+
+          ],
+        },
+        {
+          label: 'Pitch',
+          parentKey: 'Connector',
+          parent: 'partlistvalue.Price.cableFFC.cableFfcConnector',
+          groupIdPath: 'partlistvalue.formData.FFCTab.FFCConnector',
+          byKey: 'FFCConnectorPitch',
+          style: {
+            color: null,
+            border: {
+              bottomBorderStyle: 'thick',
+            },
+          },
+          contents: [
+
+          ],
+        },
+        {
+          label: 'Row',
+          parentKey: 'Connector',
+          parent: 'partlistvalue.Price.cableFFC.cableFfcConnector',
+          groupIdPath: 'partlistvalue.formData.FFCTab.FFCConnector',
+          byKey: 'FFCConnectorRow',
+          style: {
+            color: null,
+            border: {
+              bottomBorderStyle: 'thick',
+            },
+          },
+          contents: [
+
+          ],
+        },
+        {
+          label: 'Pin',
+          byKey: 'FFCConnectorPin',
+          parentKey: 'Connector',
+          parent: 'partlistvalue.Price.cableFFC.cableFfcConnector',
+          groupIdPath: 'partlistvalue.formData.FFCTab.FFCConnector',
+          style: {
+            color: null,
+            border: {
+              bottomBorderStyle: 'thick',
+            },
+          },
+          contents: [
+
+          ],
+        },
+        {
+          label: '數量',
+          byKey: 'FFCConnectorQty',
+          parentKey: 'Connector',
+          parent: 'partlistvalue.Price.cableFFC.cableFfcConnector',
+          groupIdPath: 'partlistvalue.formData.FFCTab.FFCConnector',
+          style: {
+            color: null,
+            border: {
+              bottomBorderStyle: 'thick',
+            },
+          },
+          contents: [
+
+          ],
+        },
+        {
+          label: 'Vendor',
+          byKey: 'FFCConnectorQty',
+          parentKey: 'Connector',
+          parent: 'partlistvalue.Price.cableFFC.cableFfcConnector',
+          groupIdPath: 'partlistvalue.formData.FFCTab.FFCConnector',
+          style: {
+            color: null,
+            border: {
+              bottomBorderStyle: 'thick',
+            },
+          },
+          contents: [
+
+          ],
+        },
+        {
+          label: 'P/N',
+          byKey: 'FFCConnectorVendorPn',
+          parentKey: 'Connector',
+          parent: 'partlistvalue.Price.cableFFC.cableFfcConnector',
+          groupIdPath: 'partlistvalue.formData.FFCTab.FFCConnector',
+          style: {
+            color: null,
+            border: {
+              bottomBorderStyle: 'thick',
+            },
+          },
+          contents: [
+
+          ],
+        },
+      ],
+    },
+    {
+      label: '補強板 - 1',
+      contents: [
+        {
+          label: 'Spec',
+          byKey: 'partlistvalue.Price.cableFFC.FFCReinforcingPlateSpec1',
+          style: {
+            color: null,
+            border: {
+              bottomBorderStyle: 'thick',
+            },
+          },
+          contents: [
+
+          ],
+        },
+        {
+          label: 'L(mm)',
+          byKey: 'partlistprice.forDebug.debugInfo.cableFFC.FFCReinforcingPlateLength1.value',
+          style: {
+            color: null,
+            border: {
+              bottomBorderStyle: 'thick',
+            },
+          },
+          contents: [
+
+          ],
+        },
+        {
+          label: '數量',
+          byKey: 'partlistprice.forDebug.debugInfo.cableFFC.FFCReinforcingPlateQty1.value',
+          style: {
+            color: null,
+            border: {
+              bottomBorderStyle: 'thick',
+            },
+          },
+          contents: [
+
+          ],
+        },
+      ],
+    },
+    {
+      label: '補強板 - 2',
+      contents: [
+        {
+          label: 'Spec',
+          byKey: 'partlistvalue.Price.cableFFC.FFCReinforcingPlateSpec2',
+          style: {
+            color: null,
+            border: {
+              bottomBorderStyle: 'thick',
+            },
+          },
+          contents: [
+
+          ],
+        },
+        {
+          label: 'L(mm)',
+          byKey: 'partlistprice.forDebug.debugInfo.cableFFC.FFCReinforcingPlateLength2.value',
+          style: {
+            color: null,
+            border: {
+              bottomBorderStyle: 'thick',
+            },
+          },
+          contents: [
+
+          ],
+        },
+        {
+          label: '數量',
+          byKey: 'partlistprice.forDebug.debugInfo.cableFFC.FFCReinforcingPlateQty2.value',
+          style: {
+            color: null,
+            border: {
+              bottomBorderStyle: 'thick',
+            },
+          },
+          contents: [
+
+          ],
+        },
+      ],
+    },
+    {
+      label: '輔料',
+      contents: [
+        {
+          parentKey: '輔料',
+          label: 'Spec',
+          byKey: 'FFCAccessorySpec',
+          parent: 'partlistvalue.Price.cableFFC.cableFfcAccessory',
+          groupIdPath: 'partlistvalue.formData.FFCTab.FFCAccessory',
+          style: {
+            color: null,
+            border: {
+
+            },
+          },
+          contents: [
+
+          ],
+        },
+        {
+          parentKey: '輔料',
+          label: '主料/次料',
+          byKey: 'FFCAccessoryMaterialType',
+          parent: 'partlistvalue.Price.cableFFC.cableFfcAccessory',
+          groupIdPath: 'partlistvalue.formData.FFCTab.FFCAccessory',
+          style: {
+            color: null,
+            border: {
+
+            },
+          },
+          contents: [
+
+          ],
+        },
+        {
+          parentKey: '輔料',
+          label: '組裝方式',
+          byKey: 'FFCAccessoryAssemblyType',
+          parent: 'partlistvalue.Price.cableFFC.cableFfcAccessory',
+          groupIdPath: 'partlistvalue.formData.FFCTab.FFCAccessory',
+          style: {
+            color: null,
+            border: {
+
+            },
+          },
+          contents: [
+
+          ],
+        },
+        {
+          parentKey: '輔料',
+          label: 'L(mm)',
+          byKey: 'FFCAccessoryLength',
+          parent: 'partlistvalue.Price.cableFFC.cableFfcAccessory',
+          groupIdPath: 'partlistvalue.formData.FFCTab.FFCAccessory',
+          style: {
+            color: null,
+            border: {
+
+            },
+          },
+          contents: [
+
+          ],
+        },
+        {
+          parentKey: '輔料',
+          label: 'W(mm)',
+          byKey: 'FFCAccessoryWidth',
+          parent: 'partlistvalue.Price.cableFFC.cableFfcAccessory',
+          groupIdPath: 'partlistvalue.formData.FFCTab.FFCAccessory',
+          style: {
+            color: null,
+            border: {
+
+            },
+          },
+          contents: [
+
+          ],
+        },
+        {
+          parentKey: '輔料',
+          label: '數量',
+          byKey: 'FFCAccessoryQty',
+          parent: 'partlistvalue.Price.cableFFC.cableFfcAccessory',
+          groupIdPath: 'partlistvalue.formData.FFCTab.FFCAccessory',
+          style: {
+            color: null,
+            border: {
+
+            },
+          },
+          contents: [
+
+          ],
+        },
+      ],
+    },
+  ],
+
+  quotation: quotationSetting,
+}
+

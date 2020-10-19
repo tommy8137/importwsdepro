@@ -1,0 +1,16 @@
+# 材料有關
+values:
+ - material: 低碳鋼18A
+   materialUnitPrice: 2.14
+   materialDensity: 7.85
+   materialHeatingUnitPrice: 0.735294117647059
+
+ - material: 快削鋼
+   materialUnitPrice: 2.14
+   materialDensity: 7.85
+   materialHeatingUnitPrice: 0.74
+
+ - material: SUS410
+   materialUnitPrice: 4.41
+   materialDensity: 7.93
+   materialHeatingUnitPrice: 2.64705882352941

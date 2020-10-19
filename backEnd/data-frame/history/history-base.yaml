@@ -1,0 +1,20 @@
+headers:
+  edit_user_name:
+    label: Modify by
+    $history.Template:
+      - dataString
+
+  edit_time:
+    label: Edit time
+    $history.Template:
+      - dataString
+
+  cost_version:
+    label: Cost Version
+    $history.Template:
+      - dataString
+
+  item:
+    label: Item
+    $history.Template:
+      - dataString

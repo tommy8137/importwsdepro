@@ -1,0 +1,70 @@
+values:
+  - productType: NB
+    type2: Plastic
+    cmfPPrintingWorkers: 12
+  - productType: DT
+    type2: Painting
+    cmfPPrintingWorkers: 12
+  - productType: Others
+    type2: Painting
+    cmfPPrintingWorkers: 12
+
+  - productType: NB
+    type2: Painting
+    cmfPPrintingWorkers: 12
+  - productType: DT
+    type2: Painting
+    cmfPPrintingWorkers: 12
+  - productType: Others
+    type2: Painting
+    cmfPPrintingWorkers: 12
+
+  - productType: NB
+    type2: Double_Injection
+    cmfPPrintingWorkers: 12
+  - productType: DT
+    type2: Double_Injection
+    cmfPPrintingWorkers: 12
+  - productType: Others
+    type2: Double_Injection
+    cmfPPrintingWorkers: 10
+
+  - productType: NB
+    type2: Insert_Molding
+    cmfPPrintingWorkers: 17
+  - productType: DT
+    type2: Insert_Molding
+    cmfPPrintingWorkers: 15
+  - productType: Others
+    type2: Insert_Molding
+    cmfPPrintingWorkers: 15
+
+  - productType: NB
+    type2: RHCM
+    cmfPPrintingWorkers: 9
+  - productType: DT
+    type2: RHCM
+    cmfPPrintingWorkers: 12
+  - productType: Others
+    type2: RHCM
+    cmfPPrintingWorkers: 12
+
+  - productType: NB
+    type2: IMR
+    cmfPPrintingWorkers: 0
+  - productType: DT
+    type2: IMR
+    cmfPPrintingWorkers: 0
+  - productType: Others
+    type2: IMR
+    cmfPPrintingWorkers: 0
+
+  - productType: NB
+    type2: NCVM
+    cmfPPrintingWorkers: 3
+  - productType: DT
+    type2: NCVM
+    cmfPPrintingWorkers: 0
+  - productType: Others
+    type2: NCVM
+    cmfPPrintingWorkers: 0

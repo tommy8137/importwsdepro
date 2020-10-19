@@ -1,0 +1,155 @@
+items:
+  - key: paintingAreaLengthAllowance
+    label: 噴塗面積寬放(L)
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    default:  # 0
+      ?getCommon: # FIXME: 這裡要換成Metal
+        byKey: value
+        params:
+          - housing_metal_painting
+          - paint_top_area_L
+
+  - key: paintingAreaWidthAllowance
+    label: 噴塗面積寬放(W)
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    default: # 0
+      ?getCommon: # FIXME: 這裡要換成Metal
+        byKey: value
+        params:
+          - housing_metal_painting
+          - paint_top_area_W
+
+  - key: NCVMAreaLengthAllowance
+    label: NCVM面積寬放(L)
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    default: # 0
+      ?getCommon: # FIXME: 這裡要換成Metal
+        byKey: value
+        params:
+          - housing_metal_secondary_processing
+          - NCVM_paint_top_area_L
+
+  - key: NCVMAreaWidthAllowance
+    label: NCVM面積寬放(W)
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    default: # 0
+      ?getCommon: # FIXME: 這裡要換成Metal
+        byKey: value
+        params:
+          - housing_metal_secondary_processing
+          - NCVM_paint_top_area_W
+
+  - key: cmfPaintingCycleTime
+    $Template:
+      - inputFloat
+    label: 噴塗 Cycle Time
+    displayConfig:
+      grids: 1
+      display: true
+    default:
+      ?getCommon: # FIXME: 這裡要換成Metal
+        byKey: value
+        params:
+          - housing_metal_painting
+          - paint_cycle_time
+
+  - key: paintingLossRate
+    label: 噴漆塗料耗損(%)
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    defaultCalc: "(val) => { return val * 100; }"
+    default:
+      ?getCommon: # FIXME: 這裡要換成Metal
+        byKey: value
+        params:
+          - housing_metal_painting
+          - paint_single_finishing_loss_rate
+    displayConfig:
+      $Template:
+        - displayConfig
+
+  #  一次可噴成品數量 (pcs)
+  # if (成品尺寸H = 0) { return 0; } else { return (吊掛線高度mm - 吊掛間距mm) / (成品尺寸H + 吊掛間距mm) * 掛具排數row; }
+  - key: cmfPPaintingPcs
+    label: 一次可噴成品數量 (pcs)
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    defaultCalc: "(params, partItemInfo) => {
+      const { hangingLineHeight: { value: hangingLineHeight }, hangingDistance: { value: hangingDistance }, rackRow: { value: rackRow } } = params;
+      const { h } = partItemInfo;
+      if (!Number(h)) {
+        return 0;
+      }
+      return Math.floor((hangingLineHeight - hangingDistance) / (+h + hangingDistance)) * rackRow;
+    }"
+    # hangingLineHeight: 吊掛線高度 ， hangingDistance: 吊掛間距 ， rackRow: 掛具排數
+    default: 
+      ?getMultiCommon:
+        - key:hangingLineHeight
+        - housing_metal_painting
+        - hanging_hight
+        - key:hangingDistance
+        - housing_metal_painting
+        - hanging_gap
+        - key:rackRow
+        - housing_metal_painting
+        - hanging_row
+    displayConfig:
+      $Template:
+        - displayConfig
+
+
+  - key: cmfPaintingMachineType
+    $Template:
+      - selectorString
+    label: 機台類型
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      # $housing-metal.dropdown.CmfPaintingMachineType:
+      #   - ^values
+      ?getMetalPainMachine: # FIXME: 這裡要換成Metal
+        -
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfPPaintingCheckBox: true
+      grids: 1
+      display: true
+    default: N/A
+    require: true
+
+  - key: cmfPaintingMachinePrice
+    label: 噴漆機台費用單價
+    $Template:
+      - mappedValueString
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getMetalPainMachine: # FIXME: 這裡要換成Metal
+        -
+        # $housing-metal.dropdown.CmfPaintingMachineType:
+      # - ^values
+    mapFrom:
+      - cmfPaintingMachineType
+
+
+
+
+
+

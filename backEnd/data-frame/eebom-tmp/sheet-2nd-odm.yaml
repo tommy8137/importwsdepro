@@ -1,0 +1,57 @@
+sheet:
+  label: ODM BOM Raw Data
+  tables:
+    - key: odmPartSummary_2nd
+      $Template:
+        - colTable
+      colLength: 11
+      headers:
+        $eebom-tmp.header-2nd-summary.odm-bom-summary:
+          - headers
+
+    - key: odmPartNewOpportunity
+      $Template:
+        - newOpportunityTable
+      headers:
+        $eebom-alternative.alternative-new-opportunity:
+          - headers
+
+    - key: odmPartItem_2nd
+      $Template:
+        - rowtable2nd
+      anchor:
+        x: A
+        y: 12
+      headers:
+        $eebom-tmp.header-2nd-bom.2nd-bomitems-base:
+          - headers
+
+    - key: exchangeRateDefault_2nd
+      $Template:
+        - traverseTable
+      headers:
+        $eebom-tmp.header-full-bom.fullbomexchange-excel:
+          - headers
+      anchor:
+        x: E
+        y: 7
+
+    - key: costFilter_2nd
+      $Template:
+        - listTable
+      anchor:
+        x: G
+        y: 1
+      headers:
+        $eebom-tmp.header-2nd-bom.2nd-bomcost-base:
+          - headers
+
+    - key: opportunityFilter_2nd
+      $Template:
+        - listTable
+      anchor:
+        x: H
+        y: 1
+      headers:
+        $eebom-tmp.header-2nd-bom.2nd-bomopportunity-base:
+          - headers

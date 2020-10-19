@@ -1,0 +1,50 @@
+values:
+  - hmToolingProgressiveDiePress: 0T
+    hmToolingProgressiveDieModule2Cost: 0
+    hmToolingProgressiveDieModule4Cost: 0
+  - hmToolingProgressiveDiePress: 25T
+    hmToolingProgressiveDieModule2Cost: 0.0099009900990099
+    hmToolingProgressiveDieModule4Cost: 0.0099009900990099
+  - hmToolingProgressiveDiePress: 35T
+    hmToolingProgressiveDieModule2Cost: 0.0099009900990099
+    hmToolingProgressiveDieModule4Cost: 0.0099009900990099
+  - hmToolingProgressiveDiePress: 45T
+    hmToolingProgressiveDieModule2Cost: 0.0099009900990099
+    hmToolingProgressiveDieModule4Cost: 0.0099009900990099
+  - hmToolingProgressiveDiePress: 60T
+    hmToolingProgressiveDieModule2Cost: 0.0099009900990099
+    hmToolingProgressiveDieModule4Cost: 0.0099009900990099
+  - hmToolingProgressiveDiePress: 80T
+    hmToolingProgressiveDieModule2Cost: 0.0132013201320132
+    hmToolingProgressiveDieModule4Cost: 0.0132013201320132
+  - hmToolingProgressiveDiePress: 110T
+    hmToolingProgressiveDieModule2Cost: 0.0132013201320132
+    hmToolingProgressiveDieModule4Cost: 0.0132013201320132
+  - hmToolingProgressiveDiePress: 160T
+    hmToolingProgressiveDieModule2Cost: 0.0198019801980198
+    hmToolingProgressiveDieModule4Cost: 0.0198019801980198
+  - hmToolingProgressiveDiePress: 200T
+    hmToolingProgressiveDieModule2Cost: 0.0198019801980198
+    hmToolingProgressiveDieModule4Cost: 0.0198019801980198
+  - hmToolingProgressiveDiePress: 250T
+    hmToolingProgressiveDieModule2Cost: 0.0181518151815182
+    hmToolingProgressiveDieModule4Cost: 0.0181518151815182
+  - hmToolingProgressiveDiePress: 300T
+    hmToolingProgressiveDieModule2Cost: 0.0181518151815182
+    hmToolingProgressiveDieModule4Cost: 0.0181518151815182
+  - hmToolingProgressiveDiePress: 400T
+    hmToolingProgressiveDieModule2Cost: 0.0181518151815182
+    hmToolingProgressiveDieModule4Cost: 0.0181518151815182
+  - hmToolingProgressiveDiePress: 600T
+    hmToolingProgressiveDieModule2Cost: 0.0181518151815182
+    hmToolingProgressiveDieModule4Cost: 0.0181518151815182
+  - hmToolingProgressiveDiePress: 800T
+    hmToolingProgressiveDieModule2Cost: 0.0181518151815182
+    hmToolingProgressiveDieModule4Cost: 0.0181518151815182
+
+
+moduleMapping:
+  - hmToolingProgressiveDieModule: Module 1
+    productType: NB
+  - hmToolingProgressiveDieModule: Module 2
+    productType: DT

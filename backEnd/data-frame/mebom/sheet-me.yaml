@@ -1,0 +1,21 @@
+sheet:
+  label: ME
+  tables:
+    - key: meSummary
+      $Template:
+        - colTable
+      colLength: 7
+      headers:
+        $mebom.header-me.mesummary-excel:
+          - headers
+
+    - key: meItem
+      $Template:
+        - rowTable
+      autoFilter: true
+      anchor:
+        x: A
+        y: 12
+      headers:
+        $mebom.header-me.meitem-excel:
+          - headers

@@ -1,0 +1,6 @@
+values:
+  # module 1
+  - hmStampingMouldType: 工程模
+    hmStampingMouldTypeId: A0001
+  - hmStampingMouldType: 連續模
+    hmStampingMouldTypeId: A0002

@@ -1,0 +1,2 @@
+/* Replace with your SQL commands */
+update formula.part_category_material set disable_time = null where material_id in (select id from formula.material m where m.material_name = 'Other_Fill_ME_Remark');

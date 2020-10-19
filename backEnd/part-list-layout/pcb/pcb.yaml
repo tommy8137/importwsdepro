@@ -1,0 +1,41 @@
+version: 2
+layout :
+  - key: pcbTab
+    label: pcbLabel
+    group:
+      - pcb
+    $Template:
+      - tab
+    items:
+      - key: PcbPartNumber
+        $Template:
+          - composite
+        $pcb.layout.PcbPartNumber:
+          - ^multiple
+          - ^items
+        visiable: false
+
+      - key: PcbManufacturer
+        $Template:
+          - composite
+        label: 選擇Manufacturer
+        $pcb.layout.PcbManufacturer:
+          - ^multiple
+          - ^items
+
+      - key: PcbContent
+        $Template:
+          - composite
+        label: 選擇或調整Spec內容
+        $pcb.layout.PcbContent:
+          - ^multiple
+          - ^items
+
+      - key: PcbRemarks
+        $Template:
+          - composite
+        label: 備註
+        $pcb.layout.PcbRemarks:
+          - ^multiple
+          - ^items
+fomulas: []

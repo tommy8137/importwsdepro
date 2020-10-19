@@ -1,0 +1,1 @@
+alter table wiprocurement.bom_item_complete_version add column if not exists inquiry_cost_up numeric;

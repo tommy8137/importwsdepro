@@ -1,0 +1,2 @@
+alter table wiprocurement.bom_item_upload_temp add column if not exists need_tooling bool default false;
+alter table wiprocurement.bom_item_upload_temp add column if not exists has_child bool default false;

@@ -1,0 +1,32 @@
+multiple: true
+items:
+  - key: cmfProcessListMultiTappingCheckBox
+    $Template:
+      - checkBox
+    label: Exist
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListMultiTappingCheckBox
+
+  - key: cmfProcessListMultiTappingCount
+    $Template:
+      - inputInt
+    label: 數量
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfProcessListMultiTappingCheckBox: true
+      grids: 1
+      display: true
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfProcessListMultiTappingCheckBox)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfProcessListMultiTappingCheckBox
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListMultiTappingCount

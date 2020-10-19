@@ -1,0 +1,22 @@
+dataFloat:
+  $Template:
+    - dataFloat
+  style:
+    header:
+      $eebom-alternative.style:
+        - summary-header
+    value:
+      $eebom-alternative.style:
+        - summary-data
+      numberFormat: '#,##0.00000'
+
+dataString:
+  $Template:
+    - dataString
+  style:
+    header:
+      $eebom-alternative.style:
+        - summary-header
+    value:
+      $eebom-alternative.style:
+        - summary-data

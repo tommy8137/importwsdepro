@@ -1,0 +1,93 @@
+values:
+  - thermalPlateMaterial: CR1015
+    thermalPlateMaterialThickness: 0.5
+    materialCostPerMM: 0.98
+  - thermalPlateMaterial: CR1015
+    thermalPlateMaterialThickness: 0.8
+    materialCostPerMM: 1.15
+  - thermalPlateMaterial: CR1015
+    thermalPlateMaterialThickness: 1
+    materialCostPerMM: 1.31
+  - thermalPlateMaterial: CR1015
+    thermalPlateMaterialThickness: 1.5
+    materialCostPerMM: 2.62
+  - thermalPlateMaterial: CR1015
+    thermalPlateMaterialThickness: 2
+    materialCostPerMM: 2.62
+  - thermalPlateMaterial: CR1015
+    thermalPlateMaterialThickness: 2.5
+    materialCostPerMM: 3.93
+  - thermalPlateMaterial: CR1015
+    thermalPlateMaterialThickness: 3
+    materialCostPerMM: 3.93
+  - thermalPlateMaterial: CR1015
+    thermalPlateMaterialThickness: 4
+    materialCostPerMM: 5.25
+  - thermalPlateMaterial: CR1015
+    thermalPlateMaterialThickness: 5
+    materialCostPerMM: 6.56
+  - thermalPlateMaterial: SM55
+    thermalPlateMaterialThickness: 2
+    materialCostPerMM: 4.43
+  - thermalPlateMaterial: SM55
+    thermalPlateMaterialThickness: 2.5
+    materialCostPerMM: 4.59
+  - thermalPlateMaterial: SM55
+    thermalPlateMaterialThickness: 3
+    materialCostPerMM: 4.75
+  - thermalPlateMaterial: SM55
+    thermalPlateMaterialThickness: 4
+    materialCostPerMM: 5.74
+  - thermalPlateMaterial: SM55
+    thermalPlateMaterialThickness: 4.5
+    materialCostPerMM: 6.23
+  - thermalPlateMaterial: SM55
+    thermalPlateMaterialThickness: 5
+    materialCostPerMM: 7.38
+  - thermalPlateMaterial: 藍色PMP1800
+    thermalPlateMaterialThickness: 1
+    materialCostPerMM: 5.9
+  - thermalPlateMaterial: 藍色PMP1800
+    thermalPlateMaterialThickness: 1.5
+    materialCostPerMM: 6.56
+  - thermalPlateMaterial: 藍色PMP1800
+    thermalPlateMaterialThickness: 2
+    materialCostPerMM: 6.56
+  - thermalPlateMaterial: 藍色PMP1800
+    thermalPlateMaterialThickness: 2.5
+    materialCostPerMM: 7.87
+  - thermalPlateMaterial: 黑色PMP1800
+    thermalPlateMaterialThickness: 1
+    materialCostPerMM: 5.9
+  - thermalPlateMaterial: 黑色PMP1800
+    thermalPlateMaterialThickness: 2
+    materialCostPerMM: 6.5
+  - thermalPlateMaterial: 黑色PMP1800
+    thermalPlateMaterialThickness: 3
+    materialCostPerMM: 8.2
+  - thermalPlateMaterial: E4382
+    thermalPlateMaterialThickness: 0.5
+    materialCostPerMM: 4.92
+  - thermalPlateMaterial: E4382
+    thermalPlateMaterialThickness: 1
+    materialCostPerMM: 4.92
+  - thermalPlateMaterial: E4382
+    thermalPlateMaterialThickness: 1.5
+    materialCostPerMM: 7.38
+  - thermalPlateMaterial: E4382
+    thermalPlateMaterialThickness: 2.5
+    materialCostPerMM: 12.3
+  - thermalPlateMaterial: E4382
+    thermalPlateMaterialThickness: 3.5
+    materialCostPerMM: 17.21
+  - thermalPlateMaterial: E4382
+    thermalPlateMaterialThickness: 4.5
+    materialCostPerMM: 22.13
+
+
+
+
+
+
+
+

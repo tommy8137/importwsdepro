@@ -1,0 +1,143 @@
+multiple: false
+label: Die Cut part list info
+items:
+  # partnumber 由bom得來
+  - key: partname
+    label: Part Name
+    url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+    $Template:
+      - fetchData
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 2
+    emdmKey: emdmBomInfo.wistronPartName
+
+  # partnumber 由bom得來
+  - key: partnumber
+    label: Part Number
+    url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+    $Template:
+      - fetchData
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    emdmKey: emdmBomInfo.wpn
+
+  # 除屑清理/排廢料
+  - key: debrisCleaning
+    label: 除屑清理/排廢料
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: id
+      ?getDiecutDebriscleaning:
+        -
+      # $die-cut.dropdown.debrisCleaningValues:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    constrains:
+      - function: "(val) => {
+          return (val ==='' || val === null);
+        }"
+        message: "此欄位為必填"
+    require: true
+    default: "N"
+    emdmKey: emdmBomInfo.cmfForm.debrisCleaning
+
+  # 除屑清理
+  - key: debrisCleaningCount
+    label: 除屑清理/排廢料數量
+    $Template:
+      - mappedValueFloat
+    mapFrom:
+      - debrisCleaning
+    selectorConfig:
+      ?getDiecutDebriscleaning:
+        -
+      # $die-cut.dropdown.debrisCleaningValues:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    emdmKey: emdmBomInfo.cmfForm.debrisCleaningCount
+
+  # 離型紙/膜種類
+  - key: releasePaperType
+    label: 離型紙/膜種類
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: id
+      ?getDiecutReleasePaper:
+        -
+      # $die-cut.dropdown.releasePaperTypeValues:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    default: "材料自帶離型紙"
+    require: true
+    constrains:
+      - function: "(val) => {
+          return (val ==='' || val === null);
+        }"
+        message: "此欄位為必填"
+    emdmKey: emdmBomInfo.cmfForm.releasePaperType
+
+  # 離型紙/膜種類 單價
+  - key: releasePaperTypePrice
+    $Template:
+      - mappedValueFloat
+    mapFrom:
+      - releasePaperType
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getDiecutReleasePaper:
+        -
+      # $die-cut.dropdown.releasePaperTypeValues:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+
+  # 印刷次數
+  - key: printingCount
+    label: 印刷次數
+    description: T/P 普通銀色/黑3次，特殊顏色4次以上
+    $Template:
+      - inputInt
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    require: true
+    constrains:
+      - function: "(val) => {
+          return (val ==='' || val === null);
+        }"
+        message: "此欄位為必填"
+    emdmKey: emdmBomInfo.cmfForm.printingCount
+
+  - key: dieCutRemark
+    label: 備註
+    require: false
+    $Template:
+      - textarea
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1.5
+    emdmKey: emdmBomInfo.cmfForm.dieCutRemark

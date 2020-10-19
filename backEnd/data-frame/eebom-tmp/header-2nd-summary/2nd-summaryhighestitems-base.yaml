@@ -1,0 +1,39 @@
+headers:
+  odm_highest:
+    label: BU View - ODM Highest
+    $Template:
+      - dataString
+  odm_highest_1:
+    label: BU View - ODM Highest
+    $Template:
+      - dataString
+
+  total_cost:
+    label: Total Cost
+    $eebom-tmp.header-2nd-summary.2ndTemplate:
+      - totalDataFloat
+
+  connector:
+    label: Connector
+    $eebom-tmp.header-2nd-summary.2ndTemplate:
+      - typeDataFloat
+
+  power:
+    label: Power
+    $eebom-tmp.header-2nd-summary.2ndTemplate:
+      - typeDataFloat
+
+  others:
+    label: Others
+    $eebom-tmp.header-2nd-summary.2ndTemplate:
+      - typeDataFloat
+
+  rtc_bty:
+    label: RTC Bty
+    $eebom-tmp.header-2nd-summary.2ndTemplate:
+      - typeDataFloat
+
+  pcb:
+    label: PCB
+    $eebom-tmp.header-2nd-summary.2ndTemplate:
+      - typeDataFloat

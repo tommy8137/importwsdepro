@@ -1,0 +1,189 @@
+multiple: Add Connector
+items:
+  - key: FFCConnectorLabel
+    label: Connector
+    $Template:
+      - label
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+      display: true
+
+  - key: FFCConnectorFunctionName
+    label: Function Name
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: type_id
+      ?getCableWireFfcConnector:
+        -
+      # $cable-ffc.nb.dropdown.FFCConnectorInfo:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+    require: true
+    constrains:
+      - function: "(val) => val === null || val === ''"
+        message: "此欄位為必選"
+    emdmMultipleKey: emdmBomInfo.cmfForm.ffcConnector
+    emdmKey: FFCConnectorFunctionName
+
+  - key: FFCConnectorType
+    label: Connector Type
+    $Template:
+      - selectorString
+      - ^displayConfig
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: vendor_id
+      depends:
+        - FFCConnectorFunctionName
+      ?getCableWireFfcConnector:
+        -
+      # $cable-ffc.nb.dropdown.FFCConnectorInfo:
+      #   - ^values
+    require: true
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          FFCConnectorFunctionName: "(val, props) => {
+            const otherFillMeRemarkText = 'Other_Fill_ME_Remark';
+            const isEmpty = (val ==='' || val === null);
+            const isOtherFillMeRemark = (val === otherFillMeRemarkText);
+            return !isOtherFillMeRemark;
+          }"
+      grids: 1
+      display: true
+    constrains:
+      - function: "(val, props) => {
+          const { FFCConnectorFunctionName } = props;
+          const otherFillMeRemarkText = 'Other_Fill_ME_Remark';
+          const isOtherFillMeRemark = FFCConnectorFunctionName === otherFillMeRemarkText;
+          const isEmpty = (val ==='' || val === null);
+          return isEmpty && !isOtherFillMeRemark
+        }"
+        message: "此欄位為必填"
+        params:
+          - FFCConnectorFunctionName
+    emdmMultipleKey: emdmBomInfo.cmfForm.ffcConnector
+    emdmKey: FFCConnectorType
+
+  - key: FFCConnectorVendorPn
+    label: Vendor PN
+    $Template:
+      - selectorString
+      - ^displayConfig
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: vendor_id
+      ?getCableWireFfcConnector:
+        -
+      # $cable-ffc.nb.dropdown.FFCConnectorInfo:
+      #   - ^values
+      depends:
+        - FFCConnectorFunctionName
+    require: true
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          FFCConnectorType: "(FFCConnectorType, props) => {
+            const { FFCConnectorFunctionName } = props;
+            const otherFillMeRemarkText = 'Other_Fill_ME_Remark';
+            const isOtherFillMeRemark = FFCConnectorType === otherFillMeRemarkText || FFCConnectorFunctionName === otherFillMeRemarkText;
+            return !isOtherFillMeRemark;
+          }"
+          FFCConnectorFunctionName: true
+      grids: 1
+      display: true
+    constrains:
+      - function: "(val, props) => {
+          const { FFCConnectorType } = props;
+          const otherFillMeRemarkText = 'Other_Fill_ME_Remark';
+          const isOtherFillMeRemark = FFCConnectorType === otherFillMeRemarkText;
+          return (val ==='' || val === null) && !isOtherFillMeRemark
+        }"
+        message: "此欄位為必填"
+        params:
+          - FFCConnectorType
+    emdmMultipleKey: emdmBomInfo.cmfForm.ffcConnector
+    emdmKey: FFCConnectorVendorPn
+
+  - key: processtime
+    label: Connect Assy Time (Sec)
+    $Template:
+      - mappedValueFloat
+    mapFrom:
+      - FFCConnectorFunctionName
+      - FFCConnectorVendorPn
+      - FFCConnectorType
+    selectorConfig:
+      ?getCableWireFfcConnector:
+        -
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+
+  - key: FFCConnectorUnitPrice
+    $Template:
+      - mappedValueFloat
+    mapFrom:
+      - FFCConnectorFunctionName
+      - FFCConnectorVendorPn
+      - FFCConnectorType
+    selectorConfig:
+      ?getCableWireFfcConnector:
+        -
+      # $cable-ffc.nb.dropdown.FFCConnectorInfo:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+
+  - key: FFCConnectorNameRemark
+    label: Function Name Remark
+    $Template:
+      - textarea
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      depends:
+        action: lock
+        condition:
+          FFCConnectorFunctionName: "val => val === 'Other_Fill_ME_Remark'"
+    emdmMultipleKey: emdmBomInfo.cmfForm.ffcConnector
+    emdmKey: FFCConnectorNameRemark
+
+  - key: FFCConnectorTypeRemark
+    label: Function Type Remark
+    $Template:
+      - textarea
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      depends:
+        action: lock
+        condition:
+          FFCConnectorType: "val => val === 'Other_Fill_ME_Remark'"
+    emdmMultipleKey: emdmBomInfo.cmfForm.ffcConnector
+    emdmKey: FFCConnectorTypeRemark
+
+  - key: FFCConnectorQty
+    label: QTY
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.ffcConnector
+    emdmKey: FFCConnectorQty

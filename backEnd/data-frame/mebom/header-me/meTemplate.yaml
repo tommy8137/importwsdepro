@@ -1,0 +1,149 @@
+dataFloat:
+  $Template:
+    - dataFloat
+  style:
+    header:
+      $mebom.header-me.style:
+        - summary-header
+    value:
+      $mebom.header-me.style:
+        - summary-data
+      numberFormat: '#,##0.00000'
+
+dataString:
+  $Template:
+    - dataString
+  style:
+    header:
+      $mebom.header-me.style:
+        - summary-header
+    value:
+      $mebom.header-me.style:
+        - summary-data
+
+dataInt:
+  $Template:
+    - dataInt
+  style:
+    header:
+      $mebom.header-me.style:
+        - summary-header
+    value:
+      $mebom.header-me.style:
+        - summary-data
+      numberFormat: '#,##0'
+
+dynamicInt:
+  $Template:
+    - dataInt
+  dynamicSite: 3
+  style:
+    header:
+      $mebom.header-me.style:
+        - item-header
+    value:
+      $mebom.header-me.style:
+        - me-data
+      numberFormat: '#,##0'
+
+dynamicFloat:
+  $Template:
+    - dataFloat
+  dynamicSite: 20
+  style:
+    header:
+      $mebom.header-me.style:
+        - item-header
+    value:
+      numberFormat: '#,##0.00000'
+      $mebom.header-me.style:
+        - me-data
+
+meDataInt:
+  $Template:
+    - dataInt
+  style:
+    header:
+      $mebom.header-me.style:
+        - item-header
+    value:
+      $mebom.header-me.style:
+        - me-data
+      numberFormat: '#,##0'
+
+meDataString:
+  $Template:
+    - dataString
+  style:
+    header:
+      $mebom.header-me.style:
+        - item-header
+    value:
+      $mebom.header-me.style:
+        - me-data
+
+meDataFloat:
+  $Template:
+    - dataFloat
+  style:
+    header:
+      $mebom.header-me.style:
+        - item-header
+    value:
+      numberFormat: '#,##0.00000'
+      strikethrough: false
+      $mebom.header-me.style:
+        - me-data
+
+currDataInt:
+  $Template:
+    - dataInt
+  style:
+    header:
+      $mebom.header-me.style:
+        - item-header
+    value:
+      $mebom.header-me.style:
+        - summary-data
+      numberFormat: '#,##0'
+
+currDataString:
+  $Template:
+    - dataString
+  style:
+    header:
+      $mebom.header-me.style:
+        - item-header
+    value:
+      $mebom.header-me.style:
+        - summary-data
+
+currDataFloat:
+  $Template:
+    - dataFloat
+  style:
+    header:
+      $mebom.header-me.style:
+        - item-header
+    value:
+      numberFormat: '#,##0.00000'
+      $mebom.header-me.style:
+        - summary-data
+
+currStrikeThrough:
+  $Template:
+    - strikeThrough
+  style:
+    header:
+      $mebom.header-me.style:
+        - item-header
+    value:
+      delete:
+        strikethrough: true
+        numberFormat: '#,##0.00000'
+        fontColor: '000000'
+        border: true
+      non_delete:
+        numberFormat: '#,##0.00000'
+        fontColor: '000000'
+        border: true

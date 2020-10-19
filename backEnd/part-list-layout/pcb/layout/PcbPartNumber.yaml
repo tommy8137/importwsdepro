@@ -1,0 +1,41 @@
+multiple: false
+label: 選擇或調整內容
+items:
+  - key: wistronpn
+    label: Wistron P/N
+    $Template:
+      - realtimeFormulaString
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: true
+    # require: true
+    func: "(wistronpn)=>{
+      return wistronpn;
+    }"
+    replaceBy:
+      - wistronpn
+
+  - key: typeii
+    label: Type II
+    url: /eeBom/pcb/type2
+    $Template:
+      - fetchSelector
+      - ^displayConfig
+    require: true
+    responseKey: type2
+    constrains:
+      - function: "(val) => val == null"
+        message: "此欄位為必選"
+
+  - key: supply_type
+    label: Supply Type
+    url: /utils/supplyTypeDropDownList
+    $Template:
+      - fetchSelector
+      - ^displayConfig
+    require: true
+    default: 'W'
+    constrains:
+      - function: "(val) => val == null"
+        message: "此欄位為必選"

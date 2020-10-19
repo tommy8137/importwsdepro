@@ -1,0 +1,76 @@
+headers:
+  type1:
+    label: TYPE1
+    $Template:
+      - dataString
+    style:
+      header:
+        $example.header-hitrate.style:
+          - ht-header
+      value:
+        $example.header-hitrate.style:
+          - ht-catagory
+
+  type2:
+    label: TYPE2
+    $Template:
+      - dataString
+    style:
+      header:
+        $example.header-hitrate.style:
+          - ht-header
+      value:
+        $example.header-hitrate.style:
+          - ht-catagory
+
+  spec01:
+    label: Spec01
+    $Template:
+      - dataString
+    style:
+      header:
+        $example.header-hitrate.style:
+          - ht-header
+      value:
+        $example.header-hitrate.style:
+          - ht-catagory
+
+
+  bomPartCount:
+    label: BOM Part Count
+    $Template:
+      - dataInt
+    style:
+      header:
+        $example.header-hitrate.style:
+          - ht-header
+      value:
+        $example.header-hitrate.style:
+          - ht-catagory
+
+
+  commonPartsList:
+    label: Common Parts List
+    $Template:
+      - dataInt
+    style:
+      header:
+        $example.header-hitrate.style:
+          - ht-header
+      value:
+        $example.header-hitrate.style:
+          - ht-data
+
+
+  hitRate:
+    label: Hit-Rate %
+    $Template:
+      - dataFloat
+    style:
+      header:
+        $example.header-hitrate.style:
+          - ht-header
+      value:
+        $example.header-hitrate.style:
+          - ht-data
+

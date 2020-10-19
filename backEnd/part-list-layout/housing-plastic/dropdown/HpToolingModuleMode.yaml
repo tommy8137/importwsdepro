@@ -1,0 +1,13 @@
+values:
+  - hpToolingModuleMode: 熱膠道正灌開放式
+  - hpToolingModuleMode: 熱膠道正灌針筏式
+  - hpToolingModuleMode: 熱膠道倒灌開放式
+  - hpToolingModuleMode: 熱膠道倒灌針筏式
+  - hpToolingModuleMode: IMR_倒灌開放式
+  - hpToolingModuleMode: IMR_倒灌針筏式
+  - hpToolingModuleMode: RHCM
+  - hpToolingModuleMode: 兩板模
+  - hpToolingModuleMode: 三板模
+  - hpToolingModuleMode: 雙射模
+  - hpToolingModuleMode: 壓鑄模
+  - hpToolingModuleMode: Rubber

@@ -1,0 +1,16 @@
+sheet:
+  label: Metal
+  tables:
+    - key: metal
+      $Template:
+        - wsdTable
+      headers:
+        $bom-summary.header-metal.metal:
+          - headers
+
+    - key: metal
+      $Template:
+        - calGapTable
+      headers:
+        $bom-summary.header-metal.cal-gap:
+          - headers

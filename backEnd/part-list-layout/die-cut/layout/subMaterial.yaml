@@ -1,0 +1,241 @@
+multiple: 新增輔料
+label: 輔料
+items:
+  - key: subMaterialLabel
+    label: 輔料
+    $Template:
+      - label
+    level: 2
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+      display: false
+
+  - key: subType2
+    label: Part Category II from db
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: subCategory_2_id
+      ?getDiecutMaterial:
+        -
+      # $die-cut.dropdown.materialPerCostValues:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.dieCutSub
+    emdmKey: subType2
+
+
+  - key: subMaterialspec
+    label: Material Spec.
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: subMaterial_spec_id
+      ?getDiecutMaterial:
+        -
+      # $die-cut.dropdown.materialPerCostValues:
+      #   - ^values
+      depends:
+        - subType2
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      depends:
+        action: lock
+        condition:
+          subType2: true
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.dieCutSub
+    emdmKey: subMaterialspec
+
+
+  - key: subMaterial
+    label: Material
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: subMaterial_id
+      ?getDiecutMaterial:
+        -
+      # $die-cut.dropdown.materialPerCostValues:
+      #   - ^values
+      depends:
+        - subType2
+        - subMaterialspec
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      depends:
+        action: lock
+        condition:
+          subType2: true
+          # subMaterialspec: true
+          subMaterialspec: "(subMaterialspec, props) => {
+            const { FFCConnectorFunctionName } = props;
+            const otherFillMeRemarkText = 'Other_Fill_ME_Remark';
+            const isOtherFillMeRemark = subMaterialspec === otherFillMeRemarkText;
+            return !isOtherFillMeRemark;
+          }"
+          # subType2: (subType2) => { return subType2 !== 'Gasket'; }
+    require: true
+    constrains:
+      - function: "(val, props) => {
+          const { subMaterialspec } = props;
+          const otherFillMeRemarkText = 'Other_Fill_ME_Remark';
+          const isOtherFillMeRemark = subMaterialspec === otherFillMeRemarkText;
+          return (val ==='' || val === null) && !isOtherFillMeRemark
+        }"
+        message: "此欄位為必填"
+        params:
+          - subMaterialspec
+    emdmMultipleKey: emdmBomInfo.cmfForm.dieCutSub
+    emdmKey: subMaterial
+
+  - key: materialSize
+    label: 輔料尺寸
+    $Template:
+      - compositeInline
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1.5
+    items:
+      - key: subPartssizelength
+        label: L(mm)
+        $Template:
+          - inputFloat
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.dieCutSub
+        emdmKey: subPartssizelength
+
+
+      - key: subPartssizewidth
+        label: W(mm)
+        $Template:
+          - inputFloat
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.dieCutSub
+        emdmKey: subPartssizewidth
+
+      # 只有gasket需要填寫高度
+      - key: subPartssizehigh
+        label: H(mm)
+        $Template:
+          - inputFloat
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1
+          depends:
+            action: lock
+            condition:
+              subType2: "(subType2, props) => {
+                const subMaterialspec = props.subMaterialspec;
+                const result = subType2 !== 'Gasket' || (subMaterialspec === 'Non_UL_Eco_Form' || subMaterialspec === 'UL_Eco_Form');
+                return !result;
+              }"
+              subMaterialspec: true
+        require: true
+        enableDefault: false
+        emdmMultipleKey: emdmBomInfo.cmfForm.dieCutSub
+        emdmKey: subPartssizehigh
+
+
+  - key: assyCount
+    label: 數量
+    $Template:
+      - inputInt
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+      spaceConfig: 
+        after: 1
+    default: 1
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.dieCutSub
+    emdmKey: assyCount
+
+
+  - key: subMaterialRemark
+    label: 備註
+    $Template:
+      - textarea
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    require: false
+    emdmMultipleKey: emdmBomInfo.cmfForm.dieCutSub
+    emdmKey: subMaterialRemark
+
+  - key: subMaterialPerCost
+    label: 輔料材料單價
+    $Template:
+      - mappedValueFloat
+    mapFrom:
+      - subMaterial
+      - subMaterialspec
+    selectorConfig:
+      # $die-cut.dropdown.materialPerCostValues:
+      #   - ^values
+      ?getDiecutMaterial:
+        -
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+
+  - key: subMaterialspecRemark
+    label: Material Spec Remark
+    $Template:
+      - textarea
+    require: true
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      depends:
+        action: lock
+        condition:
+          subMaterialspec: "val => val === 'Other_Fill_ME_Remark'"
+    emdmMultipleKey: emdmBomInfo.cmfForm.dieCutSub
+    emdmKey: subMaterialspecRemark
+
+  - key: subMaterialOtherFillMeRemark
+    label: Material Remark
+    $Template:
+      - textarea
+    require: true
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      depends:
+        action: lock
+        condition:
+          subMaterial: "val => val === 'Other_Fill_ME_Remark'"
+    emdmMultipleKey: emdmBomInfo.cmfForm.dieCutSub
+    emdmKey: subMaterialOtherFillMeRemark

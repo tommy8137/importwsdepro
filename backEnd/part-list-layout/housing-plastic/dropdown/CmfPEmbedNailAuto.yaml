@@ -1,0 +1,5 @@
+values:
+  - cmfPEmbedNailAuto: 人工
+    cmfPEmbedNailPrice: 0.004
+  - cmfPEmbedNailAuto: 自動
+    cmfPEmbedNailPrice: 0.004

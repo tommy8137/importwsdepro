@@ -1,0 +1,201 @@
+values: 
+  - hpToolingMachineTon: N/A
+    Bolster area(L*W): null
+    Die height: null
+    module1: 0
+    module2: null
+    module3: null
+  - hpToolingMachineTon: 50T
+    Bolster area(L*W): null
+    Die height: null
+    module1: 0.0706
+    module2: 0.1694 
+    module3: 0.1412
+  - hpToolingMachineTon: 80T
+    Bolster area(L*W): null
+    Die height: null
+    module1: 0.0706 
+    module2: 0.2118 
+    module3: 0.1765
+  - hpToolingMachineTon: 100T
+    Bolster area(L*W): null
+    Die height: null
+    module1: 0.0882 
+    module2: 0.2118 
+    module3: 0.1765
+  - hpToolingMachineTon: 130T
+    Bolster area(L*W): null
+    Die height: null
+    module1: 0.1059 
+    module2: 0.2541 
+    module3: 0.2118
+  - hpToolingMachineTon: 150T
+    Bolster area(L*W): null
+    Die height: null
+    module1: 0.1059 
+    module2: 0.2541 
+    module3: 0.2118
+  - hpToolingMachineTon: 160T
+    Bolster area(L*W): null
+    Die height: null
+    module1: 0.1059 
+    module2: 0.2541 
+    module3: 0.2118
+  - hpToolingMachineTon: 180T
+    Bolster area(L*W): null
+    Die height: null
+    module1: 0.1235 
+    module2: 0.2965 
+    module3: 0.2471
+  - hpToolingMachineTon: 190T
+    Bolster area(L*W): null
+    Die height: null
+    module1: 0.1235 
+    module2: 0.2965 
+    module3: 0.2471
+  - hpToolingMachineTon: 210T
+    Bolster area(L*W): null
+    Die height: null
+    module1: 0.1235 
+    module2: 0.2965 
+    module3: 0.2471
+  - hpToolingMachineTon: 240T
+    Bolster area(L*W): null
+    Die height: null
+    module1: 0.1412 
+    module2: 0.3388 
+    module3: 0.2824
+  - hpToolingMachineTon: 250T
+    Bolster area(L*W): null
+    Die height: null
+    module1: 0.1412 
+    module2: 0.3388 
+    module3: 0.2824
+  - hpToolingMachineTon: 290T
+    Bolster area(L*W): null
+    Die height: null
+    module1: 0.1588 
+    module2: 0.3812 
+    module3: 0.3176
+  - hpToolingMachineTon: 300T
+    Bolster area(L*W): null
+    Die height: null
+    module1: 0.1588 
+    module2: 0.3812 
+    module3: 0.3176
+  - hpToolingMachineTon: 350T
+    Bolster area(L*W): null
+    Die height: null
+    module1: 0.1765 
+    module2: 0.4235 
+    module3: 0.3529
+  - hpToolingMachineTon: 450T
+    Bolster area(L*W): null
+    Die height: null
+    module1: 0.2118 
+    module2: 0.5082 
+    module3: 0.4235
+  - hpToolingMachineTon: 500T
+    Bolster area(L*W): null
+    Die height: null
+    module1: 0.2294 
+    module2: 0.5506 
+    module3: 0.4588
+  - hpToolingMachineTon: 550T
+    Bolster area(L*W): null
+    Die height: null
+    module1: 0.2471 
+    module2: 0.3812 
+    module3: 0.4941
+  - hpToolingMachineTon: 600T
+    Bolster area(L*W): null
+    Die height: null
+    module1: 0.2850 
+    module2: 0.3812 
+    module3: 0.4941
+  - hpToolingMachineTon: 650T
+    Bolster area(L*W): null
+    Die height: null
+    module1: 0.3170 
+    module2: 0.6776 
+    module3: 0.5647
+  - hpToolingMachineTon: 800T
+    Bolster area(L*W): null
+    Die height: null
+    module1: 0.3800 
+    module2: 0.8329 
+    module3: 0.6635
+  - hpToolingMachineTon: 850T
+    Bolster area(L*W): null
+    Die height: null
+    module1: 0.4120 
+    module2: 0.8894 
+    module3: 0.7059
+  - hpToolingMachineTon: 1000T
+    Bolster area(L*W): null
+    Die height: null
+    module1: 0.4440 
+    module2: null
+    module3: null
+  - hpToolingMachineTon: 1100T
+    Bolster area(L*W): null
+    Die height: null
+    module1: 0.4750 
+    module2: null
+    module3: null
+  - hpToolingMachineTon: 1200T
+    Bolster area(L*W): null
+    Die height: null
+    module1: 0.5470 
+    module2: null
+    module3: null
+  - hpToolingMachineTon: 1300T
+    Bolster area(L*W): null
+    Die height: null
+    module1: 0.5700 
+    module2: null
+    module3: null
+  - hpToolingMachineTon: 1400T
+    Bolster area(L*W): null
+    Die height: null
+    module1: 0.6340 
+    module2: null
+    module3: null
+  - hpToolingMachineTon: 1600T
+    Bolster area(L*W): null
+    Die height: null
+    module1: 0.6870 
+    module2: null
+    module3: null
+  - hpToolingMachineTon: 1680T
+    Bolster area(L*W): null
+    Die height: null
+    module1: 0.6870 
+    module2: null
+    module3: null
+  - hpToolingMachineTon: 1800T
+    Bolster area(L*W): null
+    Die height: null
+    module1: 0.7360 
+    module2: null
+    module3: null
+  - hpToolingMachineTon: 2000T
+    Bolster area(L*W): null
+    Die height: null
+    module1: 0.8660 
+    module2: null
+    module3: null
+
+  - hpToolingMachineTon: 2200T
+    Bolster area(L*W): null
+    Die height: null
+    module1: 0.9170 
+    module2: null
+    module3: null
+
+  - hpToolingMachineTon: 2500T
+    Bolster area(L*W): null
+    Die height: null
+    module1: 0.9790 
+    module2: null
+    module3: null

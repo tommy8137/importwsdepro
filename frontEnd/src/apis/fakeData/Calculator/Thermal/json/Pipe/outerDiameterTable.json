@@ -1,0 +1,20 @@
+{
+  "header": [
+    {
+      "key": "outerDiameter",
+      "name": "外徑直徑",
+      "typeof": "string"
+    }
+  ],
+  "data": [
+    {
+      "outerDiameter": "D4_"
+    },
+    {
+      "outerDiameter": "D6_"
+    },
+    {
+      "outerDiameter": "D8_"
+    }
+  ]
+}

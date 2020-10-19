@@ -1,0 +1,56 @@
+{
+  "header": [
+    {
+      "key": "fanSize",
+      "name": "Size",
+      "typeof": "string"
+    },
+    {
+      "key": "price",
+      "name": "價格",
+      "typeof": "number"
+    }
+  ],
+  "data": [
+    {
+      "fanSize": "60*60*3.5",
+      "price": 5.5
+    },
+    {
+      "fanSize": "60*60*4",
+      "price": 3.7
+    },
+    {
+      "fanSize": "60*60*4.5",
+      "price": 3.5
+    },
+    {
+      "fanSize": "60*60*5",
+      "price": 2.5
+    },
+    {
+      "fanSize": "60*60*5.5",
+      "price": 2.1
+    },
+    {
+      "fanSize": "60*60*6",
+      "price": 1.75
+    },
+    {
+      "fanSize": "60*60*6.5",
+      "price": 1.65
+    },
+    {
+      "fanSize": "60*60*7",
+      "price": 1.4
+    },
+    {
+      "fanSize": "60*60*7.5",
+      "price": 1.4
+    },
+    {
+      "fanSize": "80*80*5.5",
+      "price": 2.2
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+INSERT INTO wiprocurement.drop_down_item (id, item_name, path, field_name, layout_name, create_time, update_time, memo) VALUES ('4fb15200-af4e-11e9-b313-0242ac110002', 'Painting', 'HOUSING.PAINTING', 'parts_ctgy_2', 'bom_item', '2019-07-26 10:37:29.083782+08', NULL, NULL);
+INSERT INTO wiprocurement.drop_down_item (id, item_name, path, field_name, layout_name, create_time, update_time, memo) VALUES ('11d6b4ec-af4f-11e9-b313-0242ac110002', 'Others', 'HOUSING.OTHERS', 'parts_ctgy_2', 'bom_item', '2019-07-26 10:42:54.806716+08', NULL, NULL);

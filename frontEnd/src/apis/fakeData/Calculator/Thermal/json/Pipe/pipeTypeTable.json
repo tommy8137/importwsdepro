@@ -1,0 +1,23 @@
+{
+  "header": [
+    {
+      "key": "pipeType",
+      "name": "pipe形式",
+      "typeof": "string"
+    }
+  ],
+  "data": [
+    {
+      "pipeType": "Powder(結燒管)"
+    },
+    {
+      "pipeType": "Groove(溝槽管)"
+    },
+    {
+      "pipeType": "Complex(複合管)"
+    },
+    {
+      "pipeType": "VC(均熱管)"
+    }
+  ]
+}

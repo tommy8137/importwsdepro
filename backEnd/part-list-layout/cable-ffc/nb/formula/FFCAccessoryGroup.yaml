@@ -1,0 +1,496 @@
+output:
+  accessoryAssyTime: accessoryAssyTime
+  accessoryCost: accessoryCost
+
+formula:
+  accessoryAssyTime:
+    type: MATH
+    formula: (FFCAlFoilQty + FFCReinforcingPlateQty) * ffcAlFoil_ReinforcingPlate_assy_time + (FFCLabel1Qty + FFCLabel2Qty + FFCConductiveClothQty + FFCAceticAcidClothQty + FFCKaptonQty + FFCDoubleSideTapeQty + FFCConductiveDoubleSideTapeQty + FFCMylarCY28Pet005Qty + FFCMylarPet6027D01Qty) * ffc_common_assy_time
+    label: 輔料組裝時間
+
+  accessoryCost:
+    type: MATH
+    formula: ffcAlFoil_cost + ffcReinforcingPlate_cost + ffcLabel1_cost + ffcLabel2_cost + ffcConductiveCloth_cost + ffcAceticAcidCloth_cost + ffcKapton_cost + ffcDoubleSideTape_cost + ffcConductiveDoubleSideTape_cost + ffcFFCMylarCY28Pet005_cost + ffcMylarPet6027D01_cost
+    label: 輔料組裝時間
+
+  ffcAlFoil_cost:
+    type: MATH
+    formula: FFCAlFoilQty * ffcAlFoil_unit_price * ((FFCAlFoilLength + ffcal_foil_l_side_constant ) * ( ffc_size_width + ffcal_foil_w_side_constant ) / ffcedge_materia_area_trans_constant ) * ( 1 + ffcal_foil_loss_rate)
+    label:  ffcAlFoil費用
+  ffcReinforcingPlate_cost:
+    type: MATH
+    formula: FFCReinforcingPlateQty * ffcReinforcingPlate_unit_price * ((FFCReinforcingPlateLength + ffcstiffener_l_side_constant ) * ( ffc_size_width + ffcstiffener_w_side_constant ) / ffcedge_materia_area_trans_constant ) * ( 1 + ffcstiffener_loss_rate)
+    label: 補強板費用
+  ffcLabel1_cost:
+    type: MATH
+    formula: FFCLabel1Qty * ffcLabel1_unit_price
+    label: label1費用
+  ffcLabel2_cost:
+    type: MATH
+    formula: FFCLabel2Qty * ffcLabel2_unit_price
+    label: label2費用
+  ffcConductiveCloth_cost:
+    type: MATH
+    formula: FFCConductiveClothQty * ffcConductiveCloth_unit_price * ((FFCConductiveClothLength + ffcconductive_fabric_l_side_constant ) * ( ffc_size_width + ffcconductive_fabric_w_side_constant ) / ffcedge_materia_area_trans_constant )
+    label: 導電布費用
+
+  ffcAceticAcidCloth_cost:
+    type: MATH
+    formula: FFCAceticAcidClothQty * ffcAceticAcidCloth_unit_price * ((FFCAceticAcidClothLength + ffcacetate_cloth_l_side_constant ) * ( ffc_size_width + ffcacetate_cloth_w_side_constant ) / ffcedge_materia_area_trans_constant )
+    label: 醋酸布費用
+
+  ffcKapton_cost:
+    type: MATH
+    formula: FFCKaptonQty * ffcKapton_unit_price * ((FFCKaptonLength + ffckapton_l_side_constant ) * ( ffc_size_width + ffckapton_w_side_constant ) / ffcedge_materia_area_trans_constant )
+    label: KAPTON費用
+
+  ffcDoubleSideTape_cost:
+    type: MATH
+    formula: FFCDoubleSideTapeQty * ffcDoubleSideTape_unit_price * ((FFCDoubleSideTapeLength + ffcdouble_sided_tape_l_side_constant ) * ( ffc_size_width + ffcdouble_sided_tape_w_side_constant ) / ffcedge_materia_area_trans_constant )
+    label: 雙面膠費用
+
+  ffcConductiveDoubleSideTape_cost:
+    type: MATH
+    formula: FFCConductiveDoubleSideTapeQty * ffcConductiveDoubleSideTape_unit_price * ((FFCConductiveDoubleSideTapeLength + ffcconductive_double_sided_tape_l_side_constant ) * ( ffc_size_width + ffcconductive_double_sided_tape_w_side_constant ) / ffcedge_materia_area_trans_constant )
+    label: 導電雙面膠費用
+
+  ffcFFCMylarCY28Pet005_cost:
+    type: MATH
+    formula: FFCMylarCY28Pet005Qty * ffcmylar_cy28_pet_t_005_unit_price * ((FFCMylarCY28Pet005Length + ffcmylar_cy28_pet_t_005_l_side_constant) * ( ffc_size_width + ffcmylar_cy28_pet_t_005_w_side_constant ) / ffcedge_materia_area_trans_constant )
+    label: Mylar(CY28_PET) T=0.05費用
+
+  ffcMylarPet6027D01_cost:
+    type: MATH
+    formula: FFCMylarPet6027D01Qty * ffcmylar_pet_6027d_t_01_unit_price * ((FFCMylarPet6027D01Length + ffcmylar_pet_6027d_t_01_l_side_constant) * ( ffc_size_width + ffcmylar_pet_6027d_t_01_w_side_constant ) / ffcedge_materia_area_trans_constant )
+    label: Mylar(PET_6027D) T=0.1費用
+  ffc_size_width:
+    type: MATH
+    formula:  (FFCPin +1) * FFCPitch
+    label: FFC尺寸(W)
+
+global:
+  FFCPin:
+    type: VARIABLE
+    label: FFC Pin
+    bykey: FFCPin
+    groups:
+      - cableFFC
+  FFCPitch:
+    type: VARIABLE
+    label: FFC Pitch
+    bykey: FFCPitch
+    groups:
+      - cableFFC
+
+scope:
+  # FFCPin: FFCPin
+  # FFCPitch: FFCPitch
+  FFCCableLength: FFCCableLength
+  FFCFlush: FFCFlush
+
+  FFCAlFoilLength: FFCAlFoilLength
+  FFCAlFoilQty: FFCAlFoilQty
+  FFCReinforcingPlateQty: FFCReinforcingPlateQty
+
+  FFCLabel1Qty: FFCLabel1Qty
+  FFCLabel2Qty: FFCLabel2Qty
+
+  FFCConductiveClothLength: FFCConductiveClothLength
+  FFCConductiveClothQty: FFCConductiveClothQty
+
+  FFCAceticAcidClothLength: FFCAceticAcidClothLength
+  FFCAceticAcidClothwidth: FFCAceticAcidClothwidth
+  FFCAceticAcidClothQty: FFCAceticAcidClothQty
+
+  FFCKaptonQty: FFCKaptonQty
+  FFCKaptonLength: FFCKaptonLength
+  FFCKaptonwidth: FFCKaptonwidth
+
+  FFCDoubleSideTapeLength: FFCDoubleSideTapeLength
+  FFCDoubleSideTapewidth: FFCDoubleSideTapewidth
+  FFCDoubleSideTapeQty: FFCDoubleSideTapeQty
+
+  FFCConductiveDoubleSideTapeLength: FFCConductiveDoubleSideTapeLength
+  FFCConductiveDoubleSideTapewidth: FFCConductiveDoubleSideTapewidth
+  FFCConductiveDoubleSideTapeQty: FFCConductiveDoubleSideTapeQty
+
+  FFCMylarCY28Pet005Length: FFCMylarCY28Pet005Length
+  FFCMylarCY28Pet005width: FFCMylarCY28Pet005width
+  FFCMylarCY28Pet005Qty: FFCMylarCY28Pet005Qty
+
+  FFCMylarPet6027D01Length: FFCMylarPet6027D01Length
+  FFCMylarPet6027D01width: FFCMylarPet6027D01width
+  FFCMylarPet6027D01Qty: FFCMylarPet6027D01Qty
+
+  FFCBendTImes: FFCBendTImes
+  FFCPrint: FFCPrint
+  FFCGoldPlating: FFCGoldPlating
+  FFCStopLine: FFCStopLine
+constant:
+  material_unit_price:
+    label: 材料單價
+    ?getFFCCommon:
+      - cable_ffc_material
+      - material_cost
+    # value: 26.6
+  material_loss_rate:
+    label: 材料 loss rate
+    ?getFFCCommon:
+      - cable_ffc_material
+      - material_loss_rate
+    # value: 0.03
+  ffcBend_unit_price:
+    label: 折彎單價
+    ?getFFCCommon:
+      - cable_ffc_secondary_processing
+      - knee_bend_cost
+    # value: 0.0080
+  ffcPrint_unit_price:
+    label: 印刷單價
+    ?getFFCCommon:
+      - cable_ffc_secondary_processing
+      - print_cost
+    # value: 0.0060
+  ffcFlush_unit_price:
+    label: 沖型單價
+    ?getFFCCommon:
+      - cable_ffc_secondary_processing
+      - punching_cost
+    # value: 0.016
+  ffcStopLine_unit_price:
+    label: 停止線單價
+    ?getFFCCommon:
+      - cable_ffc_secondary_processing
+      - stop_line_cost
+    # value: 0.008
+  ffcComponent_0015_loss_rate:
+    label: 零件費 (1.5%)loss rate
+    value: 0.015
+  ffcComponent_0005_loss_rate:
+    label: 零件費 (0.5%)loss rate
+    value: 0.005
+  ffcComponent_001_loss_rate:
+    label: 零件費 (1%)loss rate
+    value: 0.01
+  ffcComponent_003loss_rate:
+    label: 零件費 (3%)loss rate
+    value: 0.03
+  ffcAlFoil_unit_price:
+    label: Al foil 單價
+    ?getFFCCommon:
+      - cable_ffc_components
+      - al_foil_cost
+    # value: 2.97
+  ffcReinforcingPlate_unit_price:
+    label: 補強板單價
+    ?getFFCCommon:
+      - cable_ffc_components
+      - stiffener_cost
+    # value: 2.6090
+  ffcLabel1_unit_price:
+    label: label1(料號標籤)單價
+    ?getFFCCommon:
+      - cable_ffc_components
+      - label_1_cost
+    # value: 0.0015
+  ffcLabel1_assy_time:
+    label: label1(料號標籤)組裝時間
+    ?getFFCCommon:
+      - cable_ffc_components
+      - label_1_assembly
+    # value: 5
+  ffcLabel2_unit_price:
+    label: label2(白底黑字)單價
+    ?getFFCCommon:
+      - cable_ffc_components
+      - label_2_cost
+    # value: 0.001
+  ffcLabel2_assy_time:
+    label: label2(白底黑字)組裝時間
+    ?getFFCCommon:
+      - cable_ffc_components
+      - label_2_assembly
+    # value: 5
+  ffcConductiveCloth_unit_price:
+    label: 導電布單價
+    ?getFFCCommon:
+      - cable_ffc_components
+      - conductive_fabric_cost
+    # value: 19.5
+  ffcAceticAcidCloth_unit_price:
+    label: 醋酸布單價
+    ?getFFCCommon:
+      - cable_ffc_components
+      - acetate_cloth_cost
+    # value: 4.044
+  ffcKapton_unit_price:
+    label: KAPTON單價
+    ?getFFCCommon:
+      - cable_ffc_components
+      - kapton_cost
+    # value: 1.1527
+  ffcDoubleSideTape_unit_price:
+    label: 雙面膠單價
+    ?getFFCCommon:
+      - cable_ffc_components
+      - double_sided_tape_cost
+    # value: 1.875
+  ffcConductiveDoubleSideTape_unit_price:
+    label: 導電雙面膠單價
+    ?getFFCCommon:
+      - cable_ffc_components
+      - conductive_double_sided_tape_cost
+    # value: 3.6764
+  package_cost:
+    label: 運包檢
+    value: 0
+  FFCReinforcingPlateLength:
+    label: 補強板長度
+    value: 10
+  ffcAlFoil_ReinforcingPlate_assy_time:
+    label: AL_FOIL和加強板組裝時間
+    ?getFFCCommon:
+      - cable_ffc_components
+      - al_foil_assembly
+    # value: 12
+  ffc_common_assy_time:
+    label: 其他輔料組裝時間
+    value: 5
+  ffcedge_materia_area_trans_constant:
+    label: FFC 面積單位換算
+    ?getFFCCommon:
+      - cable_ffc_components
+      - area_unit_transfer_constant
+    # value: 1000000
+  ffcal_foil_l_side_constant:
+    label: Al foil L 邊料常數
+    ?getFFCCommon:
+      - cable_ffc_components
+      - al_foil_l_side_constant
+    # value: 6
+  ffcal_foil_w_side_constant:
+    label: Al foil W 邊料常數
+    ?getFFCCommon:
+      - cable_ffc_components
+      - al_foil_w_side_constant
+    # value: 6
+  ffcal_foil_loss_rate:
+    label: Al foil loss rate
+    ?getFFCCommon:
+      - cable_ffc_components
+      - al_foil_loss_rate
+    # value: 0.01
+  ffcal_foil_assy_time:
+    label: Al foil 組裝時間
+    ?getFFCCommon:
+      - cable_ffc_components
+      - al_foil_assembly
+    # value: 5
+  ffcstiffener_l_side_constant:
+    label: 補強板 L 邊料常數
+    ?getFFCCommon:
+      - cable_ffc_components
+      - stiffener_l_side_constant
+    # value: 6
+  ffcstiffener_w_side_constant:
+    label: 補強板 W 邊料常數
+    ?getFFCCommon:
+      - cable_ffc_components
+      - stiffener_w_side_constant
+    # value: 6
+  ffcstiffener_loss_rate:
+    label: 補強板 loss rate
+    ?getFFCCommon:
+      - cable_ffc_components
+      - stiffener_loss_rate
+    # value: 0.01
+  ffcstiffener_assy_time:
+    label: 補強板組裝時間
+    ?getFFCCommon:
+      - cable_ffc_components
+      - stiffener_assembly
+    # value: 5
+  ffcconductive_fabric_l_side_constant:
+    label: 導電布 L 邊料常數
+    ?getFFCCommon:
+      - cable_ffc_components
+      - conductive_fabric_l_side_constant
+    # value: 6
+  ffcconductive_fabric_w_side_constant:
+    label: 導電布 W 邊料常數
+    ?getFFCCommon:
+      - cable_ffc_components
+      - conductive_fabric_w_side_constant
+    # value: 6
+  ffcconductive_fabric_loss_rate:
+    label: 導電布 loss rate
+    ?getFFCCommon:
+      - cable_ffc_components
+      - conductive_fabric_loss_rate
+    # value: 0
+  conductive_assy_time:
+    label: 導電布組裝時間
+    ?getFFCCommon:
+      - cable_ffc_components
+      - stiffener_assembly
+    # value: 5
+  ffcacetate_cloth_l_side_constant:
+    label: 醋酸布 L 邊料常數
+    ?getFFCCommon:
+      - cable_ffc_components
+      - acetate_cloth_l_side_constant
+    # value: 6
+  ffcacetate_cloth_w_side_constant:
+    label: 醋酸布 W 邊料常數
+    ?getFFCCommon:
+      - cable_ffc_components
+      - acetate_cloth_w_side_constant
+    # value: 6
+  ffcacetate_cloth_loss_rate:
+    label: 醋酸布loss rate
+    ?getFFCCommon:
+      - cable_ffc_components
+      - acetate_cloth_loss_rate
+    # value: 0
+  ffcacetate_assy_time:
+    label: 醋酸布組裝時間
+    ?getFFCCommon:
+      - cable_ffc_components
+      - acetate_cloth_assembly
+    # value: 5
+  ffckapton_l_side_constant:
+    label: kapton L 邊料常數
+    ?getFFCCommon:
+      - cable_ffc_components
+      - kapton_l_side_constant
+    # value: 6
+  ffckapton_w_side_constant:
+    label: kapton W 邊料常數
+    ?getFFCCommon:
+      - cable_ffc_components
+      - kapton_w_side_constant
+    # value: 6
+  ffckapton_loss_rate:
+    label: kapton loss rate
+    ?getFFCCommon:
+      - cable_ffc_components
+      - kapton_loss_rate
+    # value: 0
+  ffckapton_assy_time:
+    label: kapton組裝時間
+    ?getFFCCommon:
+      - cable_ffc_components
+      - kapton_assembly
+    # value: 5
+  ffcconductive_double_sided_tape_l_side_constant:
+    label: 導電雙面膠 L 邊料常數
+    ?getFFCCommon:
+      - cable_ffc_components
+      - conductive_double_sided_tape_l_side_constant
+    # value: 6
+  ffcconductive_double_sided_tape_w_side_constant:
+    label: 導電雙面膠 W 邊料常數
+    ?getFFCCommon:
+      - cable_ffc_components
+      - conductive_double_sided_tape_w_side_constant
+    # value: 6
+  ffcconductive_double_sided_tape_loss_rate:
+    label: 導電雙面膠loss rate
+    ?getFFCCommon:
+      - cable_ffc_components
+      - conductive_double_sided_tape_loss_rate
+    # value: 0
+  ffcconductive_double_sided_tape_assy_time:
+    label: 導電雙面膠組裝時間
+    ?getFFCCommon:
+      - cable_ffc_components
+      - conductive_double_sided_tape_assembly
+  ffcdouble_sided_tape_l_side_constant:
+    label: 雙面膠 L 邊料常數
+    ?getFFCCommon:
+      - cable_ffc_components
+      - double_sided_tape_l_side_constant
+    # value: 6
+  ffcdouble_sided_tape_w_side_constant:
+    label: 雙面膠 w 邊料常數
+    ?getFFCCommon:
+      - cable_ffc_components
+      - double_sided_tape_w_side_constant
+    # value: 6
+  ffcdouble_sided_tape_loss_rate:
+    label: 雙面膠 loss rate
+    ?getFFCCommon:
+      - cable_ffc_components
+      - double_sided_tape_loss_rate
+    # value: 0
+  ffcdouble_sided_tape_assy_time:
+    label: 雙面膠組裝時間
+    ?getFFCCommon:
+      - cable_ffc_components
+      - double_sided_tape_assembly
+  ffcmylar_cy28_pet_t_005_l_side_constant:
+    label: Mylar(CY28_PET) T=0.05  L 邊料常數
+    ?getFFCCommon:
+      - cable_ffc_components
+      - mylar_cy28_pet_t_0.05_l_side_constant
+    # value: 6
+  ffcmylar_cy28_pet_t_005_w_side_constant:
+    label: Mylar(CY28_PET) T=0.05  W 邊料常數
+    ?getFFCCommon:
+      - cable_ffc_components
+      - mylar_cy28_pet_t_0.05_w_side_constant
+    # value: 6
+  ffcmylar_cy28_pet_t_005_loss_rate:
+    label: Mylar(CY28_PET) T=0.05  W loss rate
+    ?getFFCCommon:
+      - cable_ffc_components
+      - mylar_cy28_pet_t_0.05_loss_rate
+    # value: 0
+
+  ffcmylar_cy28_pet_t_005_unit_price:
+    label: Mylar(CY28_PET) T=0.05 unit price
+    ?getFFCCommon:
+      - cable_ffc_components
+      - mylar_cy28_pet_t_0.05_cost
+    # value: 0.5117
+  ffcmylar_cy28_pet_t_005_assy_time:
+    label: Mylar(CY28_PET) T=0.05 組裝時間
+    ?getFFCCommon:
+      - cable_ffc_components
+      - mylar_cy28_pet_t_0.05_assembly
+    # value: 5
+  ffcmylar_pet_6027d_t_01_l_side_constant:
+    label: Mylar(PET_6027D) T=0.1  L 邊料常數
+    ?getFFCCommon:
+      - cable_ffc_components
+      - mylar_pet_6027d_t_0.1_l_side_constant
+    # value: 6
+  ffcmylar_pet_6027d_t_01_w_side_constant:
+    label: Mylar(PET_6027D) T=0.1  W 邊料常數
+    ?getFFCCommon:
+      - cable_ffc_components
+      - mylar_pet_6027d_t_0.1_w_side_constant
+    # value: 6
+  ffcmylar_pet_6027d_t_01_loss_rate:
+    label: Mylar(PET_6027D) T=0.1  loss rate
+    ?getFFCCommon:
+      - cable_ffc_components
+      - mylar_pet_6027d_t_0.1_loss_rate
+    # value: 0
+
+  ffcmylar_pet_6027d_t_01_unit_price:
+    label: Mylar(PET_6027D) T=0.1 unit price
+    ?getFFCCommon:
+      - cable_ffc_components
+      - mylar_pet_6027d_t_0.1_cost
+    # value: 0.5764
+  ffcmylar_pet_6027d_t_01_assy_time:
+    label: Mylar(PET_6027D) T=0.1 組裝時間
+    ?getFFCCommon:
+      - cable_ffc_components
+      - mylar_pet_6027d_t_0.1_assembly
+    # value: 5
+
+
+
+

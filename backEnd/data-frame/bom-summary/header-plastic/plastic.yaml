@@ -1,0 +1,89 @@
+headers:
+  title:
+    label: null
+    dataKey: ['epro', 'sourcer', 'gap']
+    data: ['ePro', 'Sourcer', 'Gap']
+    $bom-summary.header-metal.Template:
+      - keyString
+
+  part_name:
+    label: Part Name
+    needMerge: true
+    $bom-summary.header-metal.Template:
+      - dataString
+
+  part_number:
+    label: Part Number
+    needMerge: true
+    $bom-summary.header-metal.Template:
+      - dataString
+
+  currency:
+    label: Currency
+    needMerge: true
+    $bom-summary.header-metal.Template:
+      - dataString
+
+  part_category1:
+    label: Part Category I
+    needMerge: true
+    $bom-summary.header-metal.Template:
+      - dataString
+
+  part_category2:
+    label: Part Category II
+    needMerge: true
+    $bom-summary.header-metal.Template:
+      - dataString
+
+  material_cost:
+    label: A.材料費
+    $bom-summary.header-metal.Template:
+      - dataFloat
+
+  forming_cost:
+    label: B.成型費
+    $bom-summary.header-metal.Template:
+      - dataFloat
+
+  painting_cost:
+    label: C.塗裝噴漆費
+    $bom-summary.header-metal.Template:
+      - dataFloat
+
+  
+
+  second_process_cost:
+    label: C.二次加工費
+    $bom-summary.header-metal.Template:
+      - dataFloat
+
+  percent:
+    label: 管銷利潤比重
+    $bom-summary.header-metal.Template:
+      - dataFloat
+
+  profit:
+    label: D.管銷&利潤
+    $bom-summary.header-metal.Template:
+      - dataFloat
+
+  transfer_cost:
+    label: E.運包檢
+    $bom-summary.header-metal.Template:
+      - dataFloat
+
+  total_cost:
+    label: F. 成品總價
+    $bom-summary.header-metal.Template:
+      - dataFloat
+
+  module_cost:
+    label: G. 模具費
+    $bom-summary.header-metal.Template:
+      - dataFloat
+
+  remark:
+    label: Remark
+    $bom-summary.header-metal.Template:
+      - dataString

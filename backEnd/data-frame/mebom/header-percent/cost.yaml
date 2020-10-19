@@ -1,0 +1,33 @@
+headers:
+  divcleansheet:
+    $Template:
+      - formula
+    value: =IFERROR(D18/(B18-C18),#N/A)
+    mergeSiteX: 2
+    mergeSiteY: 0
+    ySite: 2
+    xSite: 0
+    style:
+      header:
+        $mebom.header-percent.style:
+          - header
+      value:
+        $mebom.header-percent.style:
+          - value-not-top
+
+
+  divsourcercost:
+    $Template:
+      - formula
+    value: =IFERROR((C12-E12)/ C12,#N/A)
+    ySite: 0
+    xSite: 3
+    mergeSiteX: 2
+    mergeSiteY: 2
+    style:
+      header:
+        $mebom.header-percent.style:
+          - header
+      value:
+        $mebom.header-percent.style:
+          - value-not-top

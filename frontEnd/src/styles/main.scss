@@ -1,0 +1,39 @@
+// 全站統一的部分
+body {
+    // @import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC|Roboto');
+    @import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC|Roboto&display=swap');
+    font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+    background-color: #e6e6e6;
+
+    input:disabled {
+        background-color: transparent;
+    }
+
+}
+
+
+/* width */
+
+
+/* Track */
+::-webkit-scrollbar-track {
+  border: solid 1px #e8e8e8;
+  background-color: #fafafa;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c0c0c0; 
+  border-radius: 0;
+}
+
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 12px;
+}
+
+

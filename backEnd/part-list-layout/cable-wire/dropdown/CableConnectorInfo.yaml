@@ -1,0 +1,290 @@
+values:
+  # CCD connector
+  - cableConnectorName: CCD connector
+    cableConnectorType: CCD connector(4 pin)
+    cableConnectorVendorPn: WL:0601-H-4-G
+    cableConnectorUnitPrice: 0.03
+    cableConnectorWorkingTime: 44
+  - cableConnectorName: CCD connector
+    cableConnectorType: CCD connector(5 pin)
+    cableConnectorVendorPn: WL:0601-H-5-G
+    cableConnectorUnitPrice: 0.032
+    cableConnectorWorkingTime: 46
+  - cableConnectorName: CCD connector
+    cableConnectorType: CCD connector(6 pin)
+    cableConnectorVendorPn: WL:0601-H-6-G
+    cableConnectorUnitPrice: 0.034
+    cableConnectorWorkingTime: 48
+  - cableConnectorName: CCD connector
+    cableConnectorType: CCD connector(8 pin)
+    cableConnectorVendorPn: WL:0601-H-8-G
+    cableConnectorUnitPrice: 0.0475
+    cableConnectorWorkingTime: 44
+  - cableConnectorName: CCD connector
+    cableConnectorType: CCD connector(14 pin)
+    cableConnectorVendorPn: WL:0601-H-14-G
+    cableConnectorUnitPrice: 0.068
+    cableConnectorWorkingTime: 66
+
+  # Panel connector
+  - cableConnectorName: Panel connector
+    cableConnectorType: Panel connector(with pull bar/30 pin)
+    cableConnectorVendorPn: LWC：LV03130-21201
+    cableConnectorUnitPrice: 0.1128
+    cableConnectorWorkingTime: 179
+  - cableConnectorName: Panel connector
+    cableConnectorType: Panel connector(without pull bar/40 pin)
+    cableConnectorVendorPn: YDY：051A-101-40P-802
+    cableConnectorUnitPrice: 0.075
+    cableConnectorWorkingTime: 210
+  - cableConnectorName: Panel connector
+    cableConnectorType: WTB焊接式LCD conn(50pin)
+    cableConnectorVendorPn: LWC：LV03150-21201
+    cableConnectorUnitPrice: 0.2963
+    cableConnectorWorkingTime: 234
+  - cableConnectorName: Panel connector
+    cableConnectorType: WTB焊接式LCD conn(40pin)
+    cableConnectorVendorPn: LWC：LV03140-21201
+    cableConnectorUnitPrice: 0.1146
+    cableConnectorWorkingTime: 221
+  - cableConnectorName: Panel connector
+    cableConnectorType: Panel connector 30 pin
+    cableConnectorVendorPn: LWC：LV03130-21201
+    cableConnectorUnitPrice: 0.1128
+    cableConnectorWorkingTime: 179
+
+  # MB connector
+  - cableConnectorName: MB connector
+    cableConnectorType: WTB焊接式MB conn(50pin)
+    cableConnectorVendorPn: LV06150-23102
+    cableConnectorUnitPrice: 0.24
+    cableConnectorWorkingTime: 275
+  - cableConnectorName: MB connector
+    cableConnectorType: WTB焊接式MB conn(40pin)
+    cableConnectorVendorPn: LV06140-23102
+    cableConnectorUnitPrice: 0.14
+    cableConnectorWorkingTime: 260
+  - cableConnectorName: MB connector
+    cableConnectorType: FPC 30PIN
+    cableConnectorVendorPn: NA
+    cableConnectorUnitPrice: 0.105
+    cableConnectorWorkingTime: 200
+  - cableConnectorName: MB connector
+    cableConnectorType: MB conn 40 pin
+    cableConnectorVendorPn: null
+    cableConnectorUnitPrice: 0.11
+    cableConnectorWorkingTime: 240
+  - cableConnectorName: MB connector
+    cableConnectorType: MB conn 50 pin
+    cableConnectorVendorPn: null
+    cableConnectorUnitPrice: 0.32
+    cableConnectorWorkingTime: 245
+
+  # Touch connector
+  - cableConnectorName: Touch connector
+    cableConnectorType: Touch connector(10 pin)
+    cableConnectorVendorPn: WL:0601-H-10-G
+    cableConnectorUnitPrice: 0.03
+    cableConnectorWorkingTime: 25
+
+  # FPC金手指
+  - cableConnectorName: FPC金手指
+    cableConnectorType: null
+    cableConnectorVendorPn: FPC 10PIN
+    cableConnectorUnitPrice: 0.04
+    cableConnectorWorkingTime: 126
+  - cableConnectorName: FPC金手指
+    cableConnectorType: null
+    cableConnectorVendorPn: FPC 12PIN
+    cableConnectorUnitPrice: 0.042
+    cableConnectorWorkingTime: 131
+  - cableConnectorName: FPC金手指
+    cableConnectorType: null
+    cableConnectorVendorPn: FPC 16PIN
+    cableConnectorUnitPrice: 0.053
+    cableConnectorWorkingTime: 147
+  - cableConnectorName: FPC金手指
+    cableConnectorType: null
+    cableConnectorVendorPn: FPC 30PIN
+    cableConnectorUnitPrice: 0.0859
+    cableConnectorWorkingTime: 174
+  - cableConnectorName: FPC金手指
+    cableConnectorType: null
+    cableConnectorVendorPn: FPC 40PIN
+    cableConnectorUnitPrice: 0.100
+    cableConnectorWorkingTime: 188
+
+  # Wire to board connector
+  - cableConnectorName: Wire to board connector
+    cableConnectorType: WTB(8 pin)
+    cableConnectorVendorPn: ACESS： 50233-008H0H0-001
+    cableConnectorUnitPrice: 0.0078
+    cableConnectorWorkingTime: 55
+  - cableConnectorName: Wire to board connector
+    cableConnectorType: WTB(50 pin/鐵殼穿黑色拉帶)
+    cableConnectorVendorPn: STACONN： 111H50-100000=G2-R1
+    cableConnectorUnitPrice: 0.2031
+    cableConnectorWorkingTime: 191
+  - cableConnectorName: Wire to board connector
+    cableConnectorType: WTB(10 pin)
+    cableConnectorVendorPn: ACESS： 50459-010H0M0-001
+    cableConnectorUnitPrice: 0.065
+    cableConnectorWorkingTime: 60
+  - cableConnectorName: Wire to board connector
+    cableConnectorType: WTB(10 pin)
+    cableConnectorVendorPn: TYU： TU2013HN0-10-B2
+    cableConnectorUnitPrice: 0.021
+    cableConnectorWorkingTime: 118
+  - cableConnectorName: Wire to board connector
+    cableConnectorType: WTB(8 pin)
+    cableConnectorVendorPn: ACESS： 51329-00811-002
+    cableConnectorUnitPrice: 0.128
+    cableConnectorWorkingTime: 174
+  - cableConnectorName: Wire to board connector
+    cableConnectorType: WTB(60 pin/with pull bar)
+    cableConnectorVendorPn: LWS： LV19160-23000
+    cableConnectorUnitPrice: 0.464
+    cableConnectorWorkingTime: 191
+  - cableConnectorName: Wire to board connector
+    cableConnectorType: WTB(10 pin)
+    cableConnectorVendorPn: TYU： TU2013HNO-10P-B2
+    cableConnectorUnitPrice: 0.021
+    cableConnectorWorkingTime: 52
+  - cableConnectorName: Wire to board connector
+    cableConnectorType: WTB(8 pin)
+    cableConnectorVendorPn: WL： 1010-H-8P-HF
+    cableConnectorUnitPrice: 0.0063
+    cableConnectorWorkingTime: 50
+  - cableConnectorName: Wire to board connector
+    cableConnectorType: WTB(6 pin)
+    cableConnectorVendorPn: WL： 0601-H-6-G
+    cableConnectorUnitPrice: 0.0202
+    cableConnectorWorkingTime: 45
+  - cableConnectorName: Wire to board connector
+    cableConnectorType: WTB(10 pin)
+    cableConnectorVendorPn: WL： 0601-H-10-G
+    cableConnectorUnitPrice: 0.0253
+    cableConnectorWorkingTime: 52
+  - cableConnectorName: Wire to board connector
+    cableConnectorType: WTB(14 pin)
+    cableConnectorVendorPn: WL： 0601-H-14-G
+    cableConnectorUnitPrice: 0.0552
+    cableConnectorWorkingTime: 59
+  - cableConnectorName: Wire to board connector
+    cableConnectorType: WTB(10 pin)
+    cableConnectorVendorPn: WL： 0800-H-10P-G34
+    cableConnectorUnitPrice: 0.034
+    cableConnectorWorkingTime: 56
+  - cableConnectorName: Wire to board connector
+    cableConnectorType: WTB(14 pin)
+    cableConnectorVendorPn: WL： 0800-H-14P-G34
+    cableConnectorUnitPrice: 0.0566
+    cableConnectorWorkingTime: 59
+
+  # DC in Jack
+  - cableConnectorName: DC in Jack
+    cableConnectorType: DC in Jack
+    cableConnectorVendorPn: 信音:2DC3069-002114F
+    cableConnectorUnitPrice: 0.16
+    cableConnectorWorkingTime: 68
+  - cableConnectorName: DC in Jack
+    cableConnectorType: DC in Jack
+    cableConnectorVendorPn: 信音:2DC3165-006114F
+    cableConnectorUnitPrice: 0.285
+    cableConnectorWorkingTime: 68
+  - cableConnectorName: DC in Jack
+    cableConnectorType: DC in Jack
+    cableConnectorVendorPn: 德鵬:PJCS0036-1B12H
+    cableConnectorUnitPrice: 0.15
+    cableConnectorWorkingTime: 63
+  - cableConnectorName: DC in Jack
+    cableConnectorType: DC in Jack
+    cableConnectorVendorPn: 信音:2DC3127-000511F
+    cableConnectorUnitPrice: 0.2817
+    cableConnectorWorkingTime: 68
+  - cableConnectorName: DC in Jack
+    cableConnectorType: DC in Jack
+    cableConnectorVendorPn: 信音:2DC3127-000111F
+    cableConnectorUnitPrice: 0.2817
+    cableConnectorWorkingTime: 68
+  - cableConnectorName: DC in Jack
+    cableConnectorType: DC in Jack
+    cableConnectorVendorPn: 信音:2DC2024-000121
+    cableConnectorUnitPrice: 0.2
+    cableConnectorWorkingTime: 68
+  - cableConnectorName: DC in Jack
+    cableConnectorType: DC in Jack
+    cableConnectorVendorPn: 信音:2DC2024-001121F
+    cableConnectorUnitPrice: 0.2
+    cableConnectorWorkingTime: 68
+  - cableConnectorName: DC in Jack
+    cableConnectorType: DC in Jack
+    cableConnectorVendorPn: 信音:2DC2024-002111F
+    cableConnectorUnitPrice: 0.2
+    cableConnectorWorkingTime: 68
+
+  # Battery Connector
+  - cableConnectorName: Battery Connector
+    cableConnectorType: BTY CN(10 pin)TU2013HNO-10P-B2
+    cableConnectorVendorPn: TU2013HNO-10P-B2
+    cableConnectorUnitPrice:  0.035
+    cableConnectorWorkingTime: 70
+  - cableConnectorName: Battery Connector
+    cableConnectorType: MB CN(10 pin)2008-10P-HL
+    cableConnectorVendorPn: 2008-10P-HL
+    cableConnectorUnitPrice:  0.0221
+    cableConnectorWorkingTime: 70
+  - cableConnectorName: Battery Connector
+    cableConnectorType: MB CN(10 pin)2009-10P-HF
+    cableConnectorVendorPn: 2009-10P-HF
+    cableConnectorUnitPrice:  0.0338
+    cableConnectorWorkingTime: 70
+  - cableConnectorName: Battery Connector
+    cableConnectorType: MB CN(10 pin)1256-H-10P-HF
+    cableConnectorVendorPn: 1256-H-10P-HF
+    cableConnectorUnitPrice:  0.0182
+    cableConnectorWorkingTime: 70
+  - cableConnectorName: Battery Connector
+    cableConnectorType: BTY CN(10 pin)TU2013HNO-10B-B2
+    cableConnectorVendorPn: TU2013HNO-10B-B2
+    cableConnectorUnitPrice:  0.035
+    cableConnectorWorkingTime: 70
+  - cableConnectorName: Battery Connector
+    cableConnectorType: MB CN(10 pin)50280-010H0H0-001 ACES
+    cableConnectorVendorPn: ACES 50280-010H0H0-001(1.25 PITCH)
+    cableConnectorUnitPrice:  0.041
+    cableConnectorWorkingTime: 70
+  - cableConnectorName: Battery Connector
+    cableConnectorType: BTY CN(10 pin)50280-010H0H0-001 ACES
+    cableConnectorVendorPn: ACES 50280-010H0H0-001(2.0 PITCH)
+    cableConnectorUnitPrice:  0.079
+    cableConnectorWorkingTime: 70
+  - cableConnectorName: Battery Connector
+    cableConnectorType: BTY CN(10 pin)50270-010H0H0-001 ACES
+    cableConnectorVendorPn: ACES 50270-010H0H0-001(2.0 PITCH)
+    cableConnectorUnitPrice:  0.03
+    cableConnectorWorkingTime: 75
+
+  # HDD Connector
+  - cableConnectorName: HDD Connector
+    cableConnectorType: MB CN 50407-02011-001
+    cableConnectorVendorPn: 50407-02011-001
+    cableConnectorUnitPrice: 0.094
+    cableConnectorWorkingTime: 190
+  - cableConnectorName: HDD Connector
+    cableConnectorType: HDD CN 062B-101-(7+15)P-802
+    cableConnectorVendorPn: 062B-101-(7+15)P-802
+    cableConnectorUnitPrice: 0.108
+    cableConnectorWorkingTime: 170
+  - cableConnectorName: HDD Connector
+    cableConnectorType: HDD CN FFC ST13113-11101
+    cableConnectorVendorPn: ST13113-11101
+    cableConnectorUnitPrice: 0.136
+    cableConnectorWorkingTime: 75
+
+  # ODD Connector
+  - cableConnectorName: ODD Connector
+    cableConnectorType: ODD CN FFC ST12113G41100
+    cableConnectorVendorPn: ST12113G41100
+    cableConnectorUnitPrice: 0.117
+    cableConnectorWorkingTime: 75

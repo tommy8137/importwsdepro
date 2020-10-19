@@ -1,0 +1,52 @@
+values:
+ - finMaterial: AL1050
+   finDensity: 2.75
+ - finMaterial: AL5052
+   finDensity: 2.75
+ - finMaterial: SUS301
+   finDensity: 7.93
+ - finMaterial: SUS304
+   finDensity: 7.93
+ - finMaterial: SUS403
+   finDensity: 7.93
+ - finMaterial: SUS430
+   finDensity: 7.93
+ - finMaterial: SECC
+   finDensity: 7.85
+ - finMaterial: SGCC
+   finDensity: 7.85
+ - finMaterial: SPCC
+   finDensity: 7.85
+ - finMaterial: SGLD
+   finDensity: 7.85
+ - finMaterial: SPTE
+   finDensity: 7.85
+ - finMaterial: Cu3604
+   finDensity: 8.9
+ - finMaterial: 低碳鋼1018
+   finDensity: 7.85
+ - finMaterial: 快削鋼
+   finDensity: 7.85
+ - finMaterial: SUS410
+   finDensity: 7.93
+ - finMaterial: 磷青銅
+   finDensity: 8.9
+ - finMaterial: PH-CU
+   finDensity: 8.9
+ - finMaterial: CU1100
+   finDensity: 8.9
+ - finMaterial: CU01
+   finDensity: 8.9
+ - finMaterial: C18400
+   finDensity: 8.8
+ - finMaterial: AL6061
+   finDensity: 2.75
+ - finMaterial: AL6063
+   finDensity: 2.75
+ - finMaterial: KU400
+   finDensity: 7.85
+ - finMaterial: KU400i
+   finDensity: 7.85
+ - finMaterial: 皮銅
+   finDensity: 8.8
+

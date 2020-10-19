@@ -1,0 +1,56 @@
+# 工程模 凸包
+values:
+  - hmToolingConvexHullPress: 0T
+    hmToolingConvexHullModule2Cost: 0
+    hmToolingConvexHullModule4Cost: 0
+  - hmToolingConvexHullPress: 25T
+    hmToolingConvexHullModule2Cost: 0.0099009900990099
+    hmToolingConvexHullModule4Cost: 0.0099009900990099
+  - hmToolingConvexHullPress: 35T
+    hmToolingConvexHullModule2Cost: 0.0099009900990099
+    hmToolingConvexHullModule4Cost: 0.0099009900990099
+  - hmToolingConvexHullPress: 45T
+    hmToolingConvexHullModule2Cost: 0.0099009900990099
+    hmToolingConvexHullModule4Cost: 0.0099009900990099
+  - hmToolingConvexHullPress: 60T
+    hmToolingConvexHullModule2Cost: 0.0099009900990099
+    hmToolingConvexHullModule4Cost: 0.0099009900990099
+  - hmToolingConvexHullPress: 80T
+    hmToolingConvexHullModule2Cost: 0.0132013201320132
+    hmToolingConvexHullModule4Cost: 0.0132013201320132
+  - hmToolingConvexHullPress: 110T
+    hmToolingConvexHullModule2Cost: 0.0132013201320132
+    hmToolingConvexHullModule4Cost: 0.0132013201320132
+  - hmToolingConvexHullPress: 160T
+    hmToolingConvexHullModule2Cost: 0.0198019801980198
+    hmToolingConvexHullModule4Cost: 0.0198019801980198
+  - hmToolingConvexHullPress: 200T
+    hmToolingConvexHullModule2Cost: 0.0198019801980198
+    hmToolingConvexHullModule4Cost: 0.0198019801980198
+  - hmToolingConvexHullPress: 250T
+    hmToolingConvexHullModule2Cost: 0.0181518151815182
+    hmToolingConvexHullModule4Cost: 0.0181518151815182
+  - hmToolingConvexHullPress: 300T
+    hmToolingConvexHullModule2Cost: 0.0181518151815182
+    hmToolingConvexHullModule4Cost: 0.0181518151815182
+  - hmToolingConvexHullPress: 400T
+    hmToolingConvexHullModule2Cost: 0.0181518151815182
+    hmToolingConvexHullModule4Cost: 0.0181518151815182
+  - hmToolingConvexHullPress: 600T
+    hmToolingConvexHullModule2Cost: 0.0181518151815182
+    hmToolingConvexHullModule4Cost: 0.0181518151815182
+  - hmToolingConvexHullPress: 800T
+    hmToolingConvexHullModule2Cost: 0.0181518151815182
+    hmToolingConvexHullModule4Cost: 0.0181518151815182
+  # - hmToolingConvexHullPress: 1000T
+  #   hmToolingConvexHullModule2Cost: 0.0210
+  #   hmToolingConvexHullModule4Cost: 0.0210
+  # - hmToolingConvexHullPress: 1200T
+  #   hmToolingConvexHullModule2Cost: 0.0260
+  #   hmToolingConvexHullModule4Cost: 0.0260
+
+moduleMapping:
+  - hmToolingConvexHullModule: Module 1
+    productType: NB
+  - hmToolingConvexHullModule: Module 2
+    productType: DT

@@ -1,0 +1,51 @@
+space-sub-header-1:
+  fill: 9BC2E6
+  bold: true
+  fontFamily: arial
+  horizontalAlignment: center
+  verticalAlignment: middle
+  border: true
+
+space-sub-header-2:
+  fill: B4C6E7
+  bold: true
+  fontFamily: arial
+  horizontalAlignment: center
+  verticalAlignment: middle
+  border: true
+
+space-main-header:
+  fill: 0070C0
+  fontColor: 'FFFFFF'
+  fontFamily: arial
+  horizontalAlignment: center
+  verticalAlignment: middle
+  border: true
+  bold: true
+
+space-header:
+  fill: DDEBD7
+  border: true
+  horizontalAlignment: center
+  verticalAlignment: middle
+
+
+space-data:
+  border: true
+  bold: false
+  numberFormat: '#,##0.00000'
+
+space-data-bold:
+  border: true
+  bold: true
+
+odm-header:
+  bold: true
+  border: true
+  fill: 'FFBB66'
+  horizontalAlignment: center
+  verticalAlignment: middle
+
+odm-data:
+  border: true
+  bold: false

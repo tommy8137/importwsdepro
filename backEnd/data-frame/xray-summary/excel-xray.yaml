@@ -1,0 +1,13 @@
+excel:
+  sheets:
+    - $xray-summary.sheet-type:
+      - sheet
+    - $xray-summary.sheet-vendor:
+      - sheet
+
+    - $xray-summary.sheet-pn:
+      - sheet
+    - $xray-summary.sheet-raw-data:
+      - sheet
+    - $eebom-tmp.sheet-exchange-rate:
+      - sheet

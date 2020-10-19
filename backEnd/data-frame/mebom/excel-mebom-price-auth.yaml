@@ -1,0 +1,12 @@
+excel:
+  sheets:
+    - $mebom.sheet-space-rate-summary:
+      - sheet
+    - $mebom.sheet-space-rate-percent:
+      - sheet
+    - $mebom.sheet-me:
+      - sheet
+    - $mebom.sheet-orginal-currency:
+      - sheet
+    - $eebom-tmp.sheet-exchange-rate:
+      - sheet

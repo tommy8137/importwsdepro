@@ -1,0 +1,223 @@
+values:
+  - hmmaterial: AL1050
+    hmthickness: 0.15
+    hmmaterialprice: 3.6
+  - hmmaterial: AL1050
+    hmthickness: 0.20
+    hmmaterialprice: 2.9
+  - hmmaterial: AL1050
+    hmthickness: 0.30
+    hmmaterialprice: 4.5
+  - hmmaterial: AL1050
+    hmthickness: 0.40
+    hmmaterialprice: 4.5
+  - hmmaterial: AL1050
+    hmthickness: 0.50
+    hmmaterialprice: 4.3
+  - hmmaterial: AL1050
+    hmthickness: 0.60
+    hmmaterialprice: 4.3
+  - hmmaterial: AL1050
+    hmthickness: 0.80
+    hmmaterialprice: 4.1
+  - hmmaterial: AL1050
+    hmthickness: 1.00
+    hmmaterialprice: 4.1
+  - hmmaterial: AL1050
+    hmthickness: 1.20
+    hmmaterialprice: 4
+  - hmmaterial: AL1050
+    hmthickness: 1.50
+    hmmaterialprice: 4
+  - hmmaterial: AL1050
+    hmthickness: 1.60
+    hmmaterialprice: 4
+  - hmmaterial: AL1050
+    hmthickness: 2.00
+    hmmaterialprice: 4
+  - hmmaterial: AL1050
+    hmthickness: 3.00
+    hmmaterialprice: 4
+  - hmmaterial: AL5052
+    hmthickness: 0.30
+    hmmaterialprice: 4.6
+  - hmmaterial: AL5052
+    hmthickness: 0.40
+    hmmaterialprice: 4.6
+  - hmmaterial: AL5052
+    hmthickness: 0.50
+    hmmaterialprice: 4.5
+  - hmmaterial: AL5052
+    hmthickness: 0.60
+    hmmaterialprice: 4.5
+  - hmmaterial: AL5052
+    hmthickness: 0.80
+    hmmaterialprice: 4.4
+  - hmmaterial: AL5052
+    hmthickness: 1.00
+    hmmaterialprice: 4.4
+  - hmmaterial: AL5052
+    hmthickness: 1.20
+    hmmaterialprice: 4.3
+  - hmmaterial: AL5052
+    hmthickness: 1.50
+    hmmaterialprice: 4.3
+  - hmmaterial: AL5052
+    hmthickness: 1.60
+    hmmaterialprice: 4.2
+  - hmmaterial: AL5052
+    hmthickness: 2.00
+    hmmaterialprice: 4.2
+  - hmmaterial: AL5052
+    hmthickness: 3.00
+    hmmaterialprice: 4.2
+  - hmmaterial: AL6063
+    hmthickness: 1.00
+    hmmaterialprice: 4
+  - hmmaterial: SGCC
+    hmthickness: 0.50
+    hmmaterialprice: 1.15
+  - hmmaterial: SGCC
+    hmthickness: 0.60
+    hmmaterialprice: 1.13
+  - hmmaterial: SGCC
+    hmthickness: 0.80
+    hmmaterialprice: 1.1
+  - hmmaterial: SGCC
+    hmthickness: 1.00
+    hmmaterialprice: 1.05
+  - hmmaterial: SGCC
+    hmthickness: 1.20
+    hmmaterialprice: 1.05
+  - hmmaterial: SGCC
+    hmthickness: 1.60
+    hmmaterialprice: 1.37
+  - hmmaterial: SGCC
+    hmthickness: 2.00
+    hmmaterialprice: 1.37
+  - hmmaterial: SECC
+    hmthickness: 0.50
+    hmmaterialprice: 1.15
+  - hmmaterial: SECC
+    hmthickness: 0.60
+    hmmaterialprice: 1.13
+  - hmmaterial: SECC
+    hmthickness: 0.80
+    hmmaterialprice: 1.1
+  - hmmaterial: SECC
+    hmthickness: 1.00
+    hmmaterialprice: 1.05
+  - hmmaterial: SECC
+    hmthickness: 1.20
+    hmmaterialprice: 1.05
+  - hmmaterial: SECC
+    hmthickness: 1.60
+    hmmaterialprice: 1.35
+  - hmmaterial: SECC
+    hmthickness: 2.00
+    hmmaterialprice: 1.35
+  - hmmaterial: SPCC
+    hmthickness: 0.50
+    hmmaterialprice: 1.1
+  - hmmaterial: SPCC
+    hmthickness: 0.60
+    hmmaterialprice: 1.08
+  - hmmaterial: SPCC
+    hmthickness: 0.80
+    hmmaterialprice: 1.05
+  - hmmaterial: SPCC
+    hmthickness: 1.00
+    hmmaterialprice: 1
+  - hmmaterial: SPCC
+    hmthickness: 1.20
+    hmmaterialprice: 1
+  - hmmaterial: SPCC
+    hmthickness: 1.60
+    hmmaterialprice: 0.95
+  - hmmaterial: SPTE
+    hmthickness: 0.15
+    hmmaterialprice: 2.3
+  - hmmaterial: SPTE
+    hmthickness: 0.20
+    hmmaterialprice: 1.9
+  - hmmaterial: SPTE
+    hmthickness: 0.30
+    hmmaterialprice: 1.7
+  - hmmaterial: SPTE
+    hmthickness: 0.50
+    hmmaterialprice: 1.6
+  - hmmaterial: PH-CU
+    hmthickness: 0.10
+    hmmaterialprice: 14.4
+  - hmmaterial: PH-CU
+    hmthickness: 0.15
+    hmmaterialprice: 12
+  - hmmaterial: PH-CU
+    hmthickness: 0.20
+    hmmaterialprice: 10.8
+  - hmmaterial: PH-CU
+    hmthickness: 0.30
+    hmmaterialprice: 8.4
+  - hmmaterial: CU1100
+    hmthickness: 0.10
+    hmmaterialprice: 8.6
+  - hmmaterial: CU1100
+    hmthickness: 0.20
+    hmmaterialprice: 8.2
+  - hmmaterial: CU1100
+    hmthickness: 0.30
+    hmmaterialprice: 8.2
+  - hmmaterial: CU1100
+    hmthickness: 0.50
+    hmmaterialprice: 8.2
+  - hmmaterial: CU1100
+    hmthickness: 0.60
+    hmmaterialprice: 8.2
+  - hmmaterial: CU1100
+    hmthickness: 0.80
+    hmmaterialprice: 8.2
+  - hmmaterial: KU400
+    hmthickness: 0.50
+    hmmaterialprice: 1.5
+  - hmmaterial: KU400
+    hmthickness: 0.80
+    hmmaterialprice: 1.5
+  - hmmaterial: KU400
+    hmthickness: 1.00
+    hmmaterialprice: 1.5
+  - hmmaterial: KU400
+    hmthickness: 1.20
+    hmmaterialprice: 1.5
+  - hmmaterial: KU400
+    hmthickness: 1.50
+    hmmaterialprice: 1.5
+  - hmmaterial: KU400
+    hmthickness: 2.00
+    hmmaterialprice: 1.5
+  - hmmaterial: SUS301
+    hmthickness: 0.15
+    hmmaterialprice: 5.8
+  - hmmaterial: SUS301
+    hmthickness: 0.30
+    hmmaterialprice: 4.7
+  - hmmaterial: SUS301
+    hmthickness: 0.50
+    hmmaterialprice: 4.4
+  - hmmaterial: SUS301
+    hmthickness: 1.00
+    hmmaterialprice: 4.4
+  - hmmaterial: SUS304
+    hmthickness: 0.15
+    hmmaterialprice: 5.5
+  - hmmaterial: SUS304
+    hmthickness: 0.20
+    hmmaterialprice: 5.1
+  - hmmaterial: SUS304
+    hmthickness: 0.30
+    hmmaterialprice: 4.8
+  - hmmaterial: SUS304
+    hmthickness: 0.50
+    hmmaterialprice: 4.7
+  - hmmaterial: SUS304
+    hmthickness: 1.00
+    hmmaterialprice: 4.5

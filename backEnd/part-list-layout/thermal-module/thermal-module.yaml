@@ -1,0 +1,293 @@
+version: 2
+layout:
+  - key: thermal-module
+    group:
+      - thermalModule
+    label: default
+    visiable: false
+    $Template:
+      - tab
+    items:
+      # $XXX(ex, $Fan) need first than $template-composite
+      - key: Process
+        $Template:
+          - composite
+        label: 二次加工
+        $thermal-module.layout.Process:
+          - ^items
+        minGroupCount: 0
+
+      - key: Fan
+        $Template:
+          - composite
+        label: Fan
+        group:
+          - Fan
+        $thermal-module.layout.Fan:
+          - ^multiple
+          - ^items
+        minGroupCount: 0
+
+      - key: Pipe
+        $Template:
+          - composite
+        label: Pipe
+        group:
+          - Pipe
+        $thermal-module.layout.Pipe:
+          - ^multiple
+          - ^items
+        minGroupCount: 0
+
+      - key: Fin
+        $Template:
+          - composite
+        label: Fin
+        group:
+          - Fin
+        $thermal-module.layout.Fin:
+          - ^multiple
+          - ^items
+        minGroupCount: 0
+
+      - key: ThermalPlate
+        $Template:
+          - composite
+        label: Thermal Plate and Clip Spring
+        group:
+          - ThermalPlate
+        $thermal-module.layout.ThermalPlate:
+          - ^multiple
+          - ^items
+        minGroupCount: 0
+
+      - key: ThermalBlock
+        $Template:
+          - composite
+        label: Thermal Block
+        group:
+          - ThermalBlock
+        $thermal-module.layout.ThermalBlock:
+          - ^multiple
+          - ^items
+        minGroupCount: 0
+
+      - key: Screw
+        $Template:
+          - composite
+        label: Screw
+        group:
+          - Screw
+        $thermal-module.layout.Screw:
+          - ^multiple
+          - ^items
+        minGroupCount: 0
+
+      - key: Spring
+        $Template:
+          - composite
+        label: Spring
+        group:
+          - Spring
+        $thermal-module.layout.Spring:
+          - ^multiple
+          - ^items
+        minGroupCount: 0
+
+      - key: ORing
+        $Template:
+          - composite
+        label: O-Ring
+        group:
+          - ORing
+        $thermal-module.layout.ORing:
+          - ^multiple
+          - ^items
+        minGroupCount: 0
+
+    # ## [[ 屬於DT ]]
+    #   - key: Clip
+    #     $Template:
+    #       - composite
+    #     label: Clip for DT
+    #     group:
+    #       - Clip
+    #     $thermal-module.layout.Clip:
+    #       - ^multiple
+    #       - ^items
+    #     minGroupCount: 0
+
+    #  ## [[ 屬於DT ]]
+    #   - key: PushPin
+    #     $Template:
+    #       - composite
+    #     label: Push Pin for DT
+    #     group:
+    #       - PushPin
+    #     $thermal-module.layout.PushPin:
+    #       - ^multiple
+    #       - ^items
+    #     minGroupCount: 0
+
+      - key: Label
+        $Template:
+          - composite
+        label: Label
+        group:
+          - Label
+        $thermal-module.layout.Label:
+          - ^multiple
+          - ^items
+        minGroupCount: 0
+
+      - key: Sponge
+        $Template:
+          - composite
+        label: Sponge
+        group:
+          - Sponge
+        $thermal-module.layout.Sponge:
+          - ^multiple
+          - ^items
+        minGroupCount: 0
+
+      - key: Mylar
+        $Template:
+          - composite
+        label: Mylar
+        group:
+          - Mylar
+        $thermal-module.layout.Mylar:
+          - ^multiple
+          - ^items
+        minGroupCount: 0
+
+      - key: Grease
+        $Template:
+          - composite
+        label: Grease
+        group:
+          - Grease
+        $thermal-module.layout.Grease:
+          - ^multiple
+          - ^items
+        minGroupCount: 0
+
+      - key: ThermalPadMultiImage
+        $Template:
+          - compositeMultiUpload
+        label: Image
+        group:
+          - ThermalPadMultiImage
+        $thermal-module.layout.Image:
+          - ^items
+        minGroupCount: 0
+
+
+
+formulas:
+  Fan:
+    $thermal-module.formula.Fan:
+      - ^formula
+      - ^scope
+      - ^constant
+      - ^output
+
+  Fin:
+    $thermal-module.formula.Fin:
+      - ^formula
+      - ^scope
+      - ^constant
+      - ^output
+
+  Screw:
+    $thermal-module.formula.Screw:
+      - ^formula
+      - ^scope
+      - ^constant
+      - ^output
+
+  Clip:
+    $thermal-module.formula.Clip:
+      - ^formula
+      - ^scope
+      - ^constant
+      - ^output
+
+  Grease:
+    $thermal-module.formula.Grease:
+      - ^formula
+      - ^scope
+      - ^constant
+      - ^output
+
+  Label:
+    $thermal-module.formula.Label:
+      - ^formula
+      - ^scope
+      - ^constant
+      - ^output
+
+  ORing:
+    $thermal-module.formula.ORing:
+      - ^formula
+      - ^scope
+      - ^constant
+      - ^output
+
+  Pipe:
+    $thermal-module.formula.Pipe:
+      - ^formula
+      - ^scope
+      - ^constant
+      - ^output
+
+  PushPin:
+    $thermal-module.formula.PushPin:
+      - ^formula
+      - ^scope
+      - ^constant
+      - ^output
+
+  Sponge:
+    $thermal-module.formula.Sponge:
+      - ^formula
+      - ^scope
+      - ^constant
+      - ^output
+
+  Mylar:
+    $thermal-module.formula.Mylar:
+      - ^formula
+      - ^scope
+      - ^constant
+      - ^output
+
+  Spring:
+    $thermal-module.formula.Spring:
+      - ^formula
+      - ^scope
+      - ^constant
+      - ^output
+
+  ThermalBlock:
+    $thermal-module.formula.ThermalBlock:
+      - ^formula
+      - ^scope
+      - ^constant
+      - ^output
+
+  ThermalPlate:
+    $thermal-module.formula.ThermalPlate:
+      - ^formula
+      - ^scope
+      - ^constant
+      - ^output
+
+  thermalModule:
+    $thermal-module.formula.ThermalModule:
+      - ^formula
+      - ^constant
+      - ^output
+      - ^scope
+

@@ -1,0 +1,44 @@
+output:
+  total: total
+  unit_price: label_unit_price
+  qty: labelAmount
+  assemblyTime: assemblyTime
+
+
+formula:
+# label零件費 = 單價 * 用量 * (1 + label loss rate) -----------------------------------------------------------------------------------------------------------------
+  total:
+    type: MATH
+    formula: label_unit_price * labelAmount * (1 + label_loss_rate) 
+    label: label零件費
+
+  # 組裝時間
+  assemblyTime:
+    label: label 組裝時間
+    type: MATH
+    formula: labelAmount * worktimeSec
+  
+scope:
+  labelAmount: labelAmount
+
+constant:
+  worktimeSec:
+    label: Assembly組裝工時(sec)
+    ?getThermalCommon:
+      - thermal_module_processing
+      - assembly_spend_time
+    # value: 12
+    
+  label_unit_price:
+    label: label單價
+    ?getThermalCommon:
+      - thermal_module_components
+      - label_cost
+    # value: 0.001
+
+  label_loss_rate:
+    label: label loss rate
+    ?getThermalCommon:
+      - thermal_module_components
+      - label_loss_rate
+    # value: 0.015

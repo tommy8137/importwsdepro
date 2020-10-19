@@ -1,0 +1,61 @@
+dataInt:
+  $Template:
+    - dataInt
+  fieldType: noStyle
+  style:
+    header:
+      $xray-summary.header-raw-data.style:
+        - item-header
+    value:
+      $xray-summary.header-raw-data.style:
+        - item-data
+      # numberFormat: '#,##0'
+
+dataFloat:
+  $Template:
+    - dataFloat
+  fieldType: noStyle
+  style:
+    header:
+      $xray-summary.header-raw-data.style:
+        - item-header
+    value:
+      $xray-summary.header-raw-data.style:
+        - item-data
+      # numberFormat: '#,##0.00000'
+
+dataString:
+  $Template:
+    - dataString
+  fieldType: noStyle
+  style:
+    header:
+      $xray-summary.header-raw-data.style:
+        - item-header
+    value:
+      $xray-summary.header-raw-data.style:
+        - item-data
+dataBold:
+  $Template:
+    - dataBold
+  fieldType: noStyle
+  style:
+    header:
+      $xray-summary.header-raw-data.style:
+        - item-header
+    value:
+      $xray-summary.header-raw-data.style:
+        - bold-data
+
+specString:
+  $Template:
+    - dataString
+  fieldType: noStyle
+  style:
+    header:
+      $xray-summary.header-raw-data.style:
+        - spec-header
+    value:
+      $xray-summary.header-raw-data.style:
+        - item-data
+

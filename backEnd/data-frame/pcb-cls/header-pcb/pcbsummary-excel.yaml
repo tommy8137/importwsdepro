@@ -1,0 +1,15 @@
+headers:
+  export_from:
+    label: Export From
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - dataString
+
+  export_date:
+    label: Export Date
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - dataString
+
+  item:
+    label: Item
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - dataString

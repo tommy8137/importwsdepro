@@ -1,0 +1,137 @@
+headers:
+  part_name:
+    label: Part Name
+    needMerge: true
+    $bom-summary.header-metal.Template:
+      - dataString
+
+  part_number:
+    label: Part Number
+    needMerge: true
+    $bom-summary.header-metal.Template:
+      - dataString
+
+  currency:
+    label: Currency
+    needMerge: true
+    $bom-summary.header-metal.Template:
+      - dataString
+
+  part_category1:
+    label: Part Category I
+    needMerge: true
+    $bom-summary.header-metal.Template:
+      - dataString
+
+  part_category2:
+    label: Part Category II
+    needMerge: true
+    $bom-summary.header-metal.Template:
+      - dataString
+
+  material_cost:
+    $Template:
+      - formula
+    value: =IFERROR((_first_temp-_second_temp)/(_first_temp),#N/A)
+    style:
+      header:
+        $bom-summary.header-metal.style:
+          - summary-header
+      value:
+        $bom-summary.header-metal.style:
+          - percent-data
+
+  forming_cost:
+    $Template:
+      - formula
+    value: =IFERROR((_first_temp-_second_temp)/(_first_temp),#N/A)
+    style:
+      header:
+        $bom-summary.header-metal.style:
+          - summary-header
+      value:
+        $bom-summary.header-metal.style:
+          - percent-data
+
+  painting_cost:
+    $Template:
+      - formula
+    value: =IFERROR((_first_temp-_second_temp)/(_first_temp),#N/A)
+    style:
+      header:
+        $bom-summary.header-metal.style:
+          - summary-header
+      value:
+        $bom-summary.header-metal.style:
+          - percent-data
+        
+
+  second_process_cost:
+    $Template:
+      - formula
+    value: =IFERROR((_first_temp-_second_temp)/(_first_temp),#N/A)
+    style:
+      header:
+        $bom-summary.header-metal.style:
+          - summary-header
+      value:
+        $bom-summary.header-metal.style:
+          - percent-data
+
+  percent:
+    $Template:
+      - formula
+    value: =IFERROR((_first_temp-_second_temp)/(_first_temp),#N/A)
+    style:
+      header:
+        $bom-summary.header-metal.style:
+          - summary-header
+      value:
+        $bom-summary.header-metal.style:
+          - percent-data
+
+  profit:
+    $Template:
+      - formula
+    value: =IFERROR((_first_temp-_second_temp)/(_first_temp),#N/A)
+    style:
+      header:
+        $bom-summary.header-metal.style:
+          - summary-header
+      value:
+        $bom-summary.header-metal.style:
+          - percent-data
+
+  transfer_cost:
+    $Template:
+      - formula
+    value: =IFERROR((_first_temp-_second_temp)/(_first_temp),#N/A)
+    style:
+      header:
+        $bom-summary.header-metal.style:
+          - summary-header
+      value:
+        $bom-summary.header-metal.style:
+          - percent-data
+
+  total_cost:
+    $Template:
+      - formula
+    value: =IFERROR((_first_temp-_second_temp)/(_first_temp),#N/A)
+    style:
+      header:
+        $bom-summary.header-metal.style:
+          - summary-header
+      value:
+        $bom-summary.header-metal.style:
+          - percent-data
+
+  module_cost:
+    label: G. 模具費
+    $bom-summary.header-metal.Template:
+      - dataFloat
+
+  remark:
+    label: Remark
+    $bom-summary.header-metal.Template:
+      - dataString

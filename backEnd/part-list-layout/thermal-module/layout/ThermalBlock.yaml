@@ -1,0 +1,185 @@
+multiple: true
+items:
+  # 可編輯的sub-title --------------------------------------------------------------------------------------------------------------------
+  - key: thBlLabel
+    label: Thermal Block
+    $Template:
+      - label
+    editable: true
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+    default: Thermal Block
+    emdmMultipleKey: emdmBomInfo.cmfForm.thbl
+    emdmKey: thBlLabel
+
+  # 用量 --------------------------------------------------------------------------------------------------------------------
+  - key: thBlAmount
+    label: 用量
+    $Template:
+      - inputInt
+      - ^displayConfig
+    default: 0
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.thbl
+    emdmKey: thBlAmount
+
+  # 材料 --------------------------------------------------------------------------------------------------------------------
+  - key: thBlMaterial
+    label: 材料
+    $Template:
+      - selectorString
+      - ^displayConfig
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: material_id
+      ?getThermalBlockMaterialThickness:
+        - thermal_block
+      # $thermal-module.dropdown.ThermalBlockMaterialThicknessCostPerKilogramValues:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.thbl
+    emdmKey: thBlMaterial
+
+  - key: thBlMaterialThickness
+    label: 材料厚度
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: id
+      ?getThermalBlockMaterialThickness:
+        - thermal_block
+      # $thermal-module.dropdown.ThermalBlockMaterialThicknessCostPerKilogramValues:
+      #   - ^values
+      depends:
+        - thBlMaterial
+    displayConfig:
+      $Template:
+        - displayConfig
+      depends:
+        action: lock
+        condition:
+          thBlMaterial: true
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.thbl
+    emdmKey: thBlMaterialThickness
+
+  - key: thBlDensity
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      ?getThermalBlockMaterialDensity:
+        - thermal_block
+      # $thermal-module.dropdown.ThermalBlockMaterialDensity:
+      #   - ^values
+    mapFrom:
+      - thBlMaterial
+
+  # 材料單價 --------------------------------------------------------------------------------------------------------------------
+  - key: thBlMaterialCostPerKilogram
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      ?getThermalBlockMaterialThickness:
+        - thermal_block
+      # $thermal-module.dropdown.ThermalBlockMaterialThicknessCostPerKilogramValues:
+      #   - ^values
+    mapFrom:
+      - thBlMaterial
+      - thBlMaterialThickness
+
+  # 成品尺寸 --------------------------------------------------------------------------------------------------------------------
+  - key: thBlProductionSize
+    label: 成品尺寸
+    $Template:
+      - compositeInline
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 2
+    items:
+      # 成品尺寸 - 長度(L)
+      - key: thBlProductionLength
+        label: 長度(L)
+        $Template:
+          - inputFloat
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1.5
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.thbl
+        emdmKey: thBlProductionLength
+
+      # 成品尺寸 - 寬度(W)
+      - key: thBlProductionWidth
+        label: 寬度(W)
+        $Template:
+          - inputFloat
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1.5
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.thbl
+        emdmKey: thBlProductionWidth
+
+  # 鍍鎳 --------------------------------------------------------------------------------------------------------------------
+  - key: thBlNickelPlating
+    label: 鍍鎳
+    $Template:
+      - checkBox
+      - ^displayConfig
+    emdmMultipleKey: emdmBomInfo.cmfForm.thbl
+    emdmKey: thBlNickelPlating
+
+  # 成品展開尺寸 --------------------------------------------------------------------------------------------------------------------
+  - key: thBlProductionExpandSize
+    label: 成品展開尺寸
+    $Template:
+      - compositeInline
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 2
+    items:
+      # 成品展開尺寸 長度(L) = 長度 + 10
+      - key: thBlProductionExpandLength
+        label: 長度(L)
+        $Template:
+          - realtimeFormulaFloat
+          - ^displayConfig
+        func: "(thBlProductionLength) => {
+          let tppel = +thBlProductionLength + 10;
+          return tppel;
+          }"
+        replaceBy:
+          - thBlProductionLength
+
+      # 成品展開尺寸 寬度(W) = 寬度 + 10
+      - key: thBlProductionExpandWidth
+        label: 寬度(W)
+        $Template:
+          - realtimeFormulaFloat
+          - ^displayConfig
+        func: "(thBlProductionWidth) => {
+          let tppew = +thBlProductionWidth + 10;
+          return tppew;
+          }"
+        replaceBy:
+          - thBlProductionWidth

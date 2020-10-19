@@ -1,0 +1,682 @@
+values:
+  - hpToolingModule: Module_1
+    hpToolingMachinePrice: 0.1059
+    hpToolingMachineTon: 50T
+  - hpToolingModule: Module_1
+    hpToolingMachinePrice: 0.1059
+    hpToolingMachineTon: 80T
+  - hpToolingModule: Module_1
+    hpToolingMachinePrice: 0.1059
+    hpToolingMachineTon: 100T
+  - hpToolingModule: Module_1
+    hpToolingMachinePrice: 0.1271
+    hpToolingMachineTon: 130T
+  - hpToolingModule: Module_1
+    hpToolingMachinePrice: 0.1271
+    hpToolingMachineTon: 150T
+  - hpToolingModule: Module_1
+    hpToolingMachinePrice: 0.1271
+    hpToolingMachineTon: 160T
+  - hpToolingModule: Module_1
+    hpToolingMachinePrice: 0.1482
+    hpToolingMachineTon: 180T
+  - hpToolingModule: Module_1
+    hpToolingMachinePrice: 0.1482
+    hpToolingMachineTon: 190T
+  - hpToolingModule: Module_1
+    hpToolingMachinePrice: 0.1482
+    hpToolingMachineTon: 210T
+  - hpToolingModule: Module_1
+    hpToolingMachinePrice: 0.1694
+    hpToolingMachineTon: 240T
+  - hpToolingModule: Module_1
+    hpToolingMachinePrice: 0.1694
+    hpToolingMachineTon: 250T
+  - hpToolingModule: Module_1
+    hpToolingMachinePrice: 0.1906
+    hpToolingMachineTon: 290T
+  - hpToolingModule: Module_1
+    hpToolingMachinePrice: 0.1906
+    hpToolingMachineTon: 300T
+  - hpToolingModule: Module_1
+    hpToolingMachinePrice: 0.2118
+    hpToolingMachineTon: 350T
+  - hpToolingModule: Module_1
+    hpToolingMachinePrice: 0.2541
+    hpToolingMachineTon: 450T
+  - hpToolingModule: Module_1
+    hpToolingMachinePrice: 0.2753
+    hpToolingMachineTon: 500T
+  - hpToolingModule: Module_1
+    hpToolingMachinePrice: 0.2965
+    hpToolingMachineTon: 550T
+  - hpToolingModule: Module_1
+    hpToolingMachinePrice: 0.3172
+    hpToolingMachineTon: 600T
+  - hpToolingModule: Module_1
+    hpToolingMachinePrice: 0.3388
+    hpToolingMachineTon: 650T
+  - hpToolingModule: Module_1
+    hpToolingMachinePrice: 0.3800
+    hpToolingMachineTon: 800T
+  - hpToolingModule: Module_1
+    hpToolingMachinePrice: 0.4120
+    hpToolingMachineTon: 850T
+  - hpToolingModule: Module_1
+    hpToolingMachinePrice: 0.4440
+    hpToolingMachineTon: 1000T
+  - hpToolingModule: Module_1
+    hpToolingMachinePrice: 0.4750
+    hpToolingMachineTon: 1100T
+  - hpToolingModule: Module_1
+    hpToolingMachinePrice: 0.5470
+    hpToolingMachineTon: 1200T
+  - hpToolingModule: Module_1
+    hpToolingMachinePrice: 0.5700
+    hpToolingMachineTon: 1300T
+  - hpToolingModule: Module_1
+    hpToolingMachinePrice: 0.6340
+    hpToolingMachineTon: 1400T
+  - hpToolingModule: Module_1
+    hpToolingMachinePrice: 0.6870
+    hpToolingMachineTon: 1600T
+  - hpToolingModule: Module_1
+    hpToolingMachinePrice: 0.6870
+    hpToolingMachineTon: 1680T
+  - hpToolingModule: Module_1
+    hpToolingMachinePrice: 0.7360
+    hpToolingMachineTon: 1800T
+  - hpToolingModule: Module_1
+    hpToolingMachinePrice: 0.8660
+    hpToolingMachineTon: 2000T
+  - hpToolingModule: Module_1
+    hpToolingMachinePrice: 0.9170
+    hpToolingMachineTon: 2200T
+  - hpToolingModule: Module_1
+    hpToolingMachinePrice: 0.9790
+    hpToolingMachineTon: 2500T
+
+
+  - hpToolingModule: Module_2
+    hpToolingMachinePrice: 0.0790
+    hpToolingMachineTon: 50T
+  - hpToolingModule: Module_2
+    hpToolingMachinePrice: 0.0790
+    hpToolingMachineTon: 80T
+  - hpToolingModule: Module_2
+    hpToolingMachinePrice: 0.0950
+    hpToolingMachineTon: 100T
+  - hpToolingModule: Module_2
+    hpToolingMachinePrice: 0.1110
+    hpToolingMachineTon: 130T
+  - hpToolingModule: Module_2
+    hpToolingMachinePrice: 0.1270
+    hpToolingMachineTon: 150T
+  - hpToolingModule: Module_2
+    hpToolingMachinePrice: 0.1270
+    hpToolingMachineTon: 160T
+  - hpToolingModule: Module_2
+    hpToolingMachinePrice: 0.1270
+    hpToolingMachineTon: 180T
+  - hpToolingModule: Module_2
+    hpToolingMachinePrice: 0.1270
+    hpToolingMachineTon: 190T
+  - hpToolingModule: Module_2
+    hpToolingMachinePrice: 0.1270
+    hpToolingMachineTon: 210T
+  - hpToolingModule: Module_2
+    hpToolingMachinePrice: 0.1580
+    hpToolingMachineTon: 240T
+  - hpToolingModule: Module_2
+    hpToolingMachinePrice: 0.1580
+    hpToolingMachineTon: 250T
+  - hpToolingModule: Module_2
+    hpToolingMachinePrice: 0.1588
+    hpToolingMachineTon: 290T
+  - hpToolingModule: Module_2
+    hpToolingMachinePrice: 0.1588
+    hpToolingMachineTon: 300T
+  - hpToolingModule: Module_2
+    hpToolingMachinePrice: 0.1900
+    hpToolingMachineTon: 350T
+  - hpToolingModule: Module_2
+    hpToolingMachinePrice: 0.2530
+    hpToolingMachineTon: 450T
+  - hpToolingModule: Module_2
+    hpToolingMachinePrice: 0.2850
+    hpToolingMachineTon: 500T
+  - hpToolingModule: Module_2
+    hpToolingMachinePrice: 0.2850
+    hpToolingMachineTon: 550T
+  - hpToolingModule: Module_2
+    hpToolingMachinePrice: 0.2850
+    hpToolingMachineTon: 600T
+  - hpToolingModule: Module_2
+    hpToolingMachinePrice: 0.3170
+    hpToolingMachineTon: 650T
+  - hpToolingModule: Module_2
+    hpToolingMachinePrice: 0.3800
+    hpToolingMachineTon: 800T
+  - hpToolingModule: Module_2
+    hpToolingMachinePrice: 0.4120
+    hpToolingMachineTon: 850T
+  - hpToolingModule: Module_2
+    hpToolingMachinePrice: 0.4440
+    hpToolingMachineTon: 1000T
+  - hpToolingModule: Module_2
+    hpToolingMachinePrice: 0.4750
+    hpToolingMachineTon: 1100T
+  - hpToolingModule: Module_2
+    hpToolingMachinePrice: 0.5470
+    hpToolingMachineTon: 1200T
+  - hpToolingModule: Module_2
+    hpToolingMachinePrice: 0.5700
+    hpToolingMachineTon: 1300T
+  - hpToolingModule: Module_2
+    hpToolingMachinePrice: 0.6340
+    hpToolingMachineTon: 1400T
+  - hpToolingModule: Module_2
+    hpToolingMachinePrice: 0.6870
+    hpToolingMachineTon: 1600T
+  - hpToolingModule: Module_2
+    hpToolingMachinePrice: 0.6870
+    hpToolingMachineTon: 1680T
+  - hpToolingModule: Module_2
+    hpToolingMachinePrice: 0.7360
+    hpToolingMachineTon: 1800T
+  - hpToolingModule: Module_2
+    hpToolingMachinePrice: 0.8660
+    hpToolingMachineTon: 2000T
+  - hpToolingModule: Module_2
+    hpToolingMachinePrice: 0.9170
+    hpToolingMachineTon: 2200T
+  - hpToolingModule: Module_2
+    hpToolingMachinePrice: 0.9790
+    hpToolingMachineTon: 2500T
+
+
+  - hpToolingModule: Module_3
+    hpToolingMachinePrice: 0.0754
+    hpToolingMachineTon: 50T
+  - hpToolingModule: Module_3
+    hpToolingMachinePrice: 0.0754
+    hpToolingMachineTon: 80T
+  - hpToolingModule: Module_3
+    hpToolingMachinePrice: 0.0908
+    hpToolingMachineTon: 100T
+  - hpToolingModule: Module_3
+    hpToolingMachinePrice: 0.1062
+    hpToolingMachineTon: 130T
+  - hpToolingModule: Module_3
+    hpToolingMachinePrice: 0.1215
+    hpToolingMachineTon: 150T
+  - hpToolingModule: Module_3
+    hpToolingMachinePrice: 0.1215
+    hpToolingMachineTon: 160T
+  - hpToolingModule: Module_3
+    hpToolingMachinePrice: 0.1215
+    hpToolingMachineTon: 180T
+  - hpToolingModule: Module_3
+    hpToolingMachinePrice: 0.1215
+    hpToolingMachineTon: 190T
+  - hpToolingModule: Module_3
+    hpToolingMachinePrice: 0.1215
+    hpToolingMachineTon: 210T
+  - hpToolingModule: Module_3
+    hpToolingMachinePrice: 0.1508
+    hpToolingMachineTon: 240T
+  - hpToolingModule: Module_3
+    hpToolingMachinePrice: 0.1508
+    hpToolingMachineTon: 250T
+  - hpToolingModule: Module_3
+    hpToolingMachinePrice: 0.1508
+    hpToolingMachineTon: 290T
+  - hpToolingModule: Module_3
+    hpToolingMachinePrice: 0.1508
+    hpToolingMachineTon: 300T
+  - hpToolingModule: Module_3
+    hpToolingMachinePrice: 0.1815
+    hpToolingMachineTon: 350T
+  - hpToolingModule: Module_3
+    hpToolingMachinePrice: 0.2431
+    hpToolingMachineTon: 450T
+  - hpToolingModule: Module_3
+    hpToolingMachinePrice: 0.2723
+    hpToolingMachineTon: 500T
+  - hpToolingModule: Module_3
+    hpToolingMachinePrice: 0.2723
+    hpToolingMachineTon: 550T
+  - hpToolingModule: Module_3
+    hpToolingMachinePrice: 0.2723
+    hpToolingMachineTon: 600T
+  - hpToolingModule: Module_3
+    hpToolingMachinePrice: 0.3031
+    hpToolingMachineTon: 650T
+  - hpToolingModule: Module_3
+    hpToolingMachinePrice: 0.3631
+    hpToolingMachineTon: 800T
+  - hpToolingModule: Module_3
+    hpToolingMachinePrice: 0.3938
+    hpToolingMachineTon: 850T
+  - hpToolingModule: Module_3
+    hpToolingMachinePrice: 0.4246
+    hpToolingMachineTon: 1000T
+  - hpToolingModule: Module_3
+    hpToolingMachinePrice: 0.4538
+    hpToolingMachineTon: 1100T
+  - hpToolingModule: Module_3
+    hpToolingMachinePrice: 0.5231
+    hpToolingMachineTon: 1200T
+  - hpToolingModule: Module_3
+    hpToolingMachinePrice: 0.5446
+    hpToolingMachineTon: 1300T
+  - hpToolingModule: Module_3
+    hpToolingMachinePrice: 0.6062
+    hpToolingMachineTon: 1400T
+  - hpToolingModule: Module_3
+    hpToolingMachinePrice: 0.6569
+    hpToolingMachineTon: 1600T
+  - hpToolingModule: Module_3
+    hpToolingMachinePrice: 0.6569
+    hpToolingMachineTon: 1680T
+  - hpToolingModule: Module_3
+    hpToolingMachinePrice: 0.7031
+    hpToolingMachineTon: 1800T
+  - hpToolingModule: Module_3
+    hpToolingMachinePrice: 0.8277
+    hpToolingMachineTon: 2000T
+  - hpToolingModule: Module_3
+    hpToolingMachinePrice: 0.8769
+    hpToolingMachineTon: 2200T
+  - hpToolingModule: Module_3
+    hpToolingMachinePrice: 0.9354
+    hpToolingMachineTon: 2500T
+
+
+  - hpToolingModule: Module_4
+    hpToolingMachinePrice: 0.1694
+    hpToolingMachineTon: 50T
+  - hpToolingModule: Module_4
+    hpToolingMachinePrice: 0.2118
+    hpToolingMachineTon: 80T
+  - hpToolingModule: Module_4
+    hpToolingMachinePrice: 0.2118
+    hpToolingMachineTon: 100T
+  - hpToolingModule: Module_4
+    hpToolingMachinePrice: 0.2541
+    hpToolingMachineTon: 130T
+  - hpToolingModule: Module_4
+    hpToolingMachinePrice: 0.2541
+    hpToolingMachineTon: 150T
+  - hpToolingModule: Module_4
+    hpToolingMachinePrice: 0.2541
+    hpToolingMachineTon: 160T
+  - hpToolingModule: Module_4
+    hpToolingMachinePrice: 0.2965
+    hpToolingMachineTon: 180T
+  - hpToolingModule: Module_4
+    hpToolingMachinePrice: 0.2965
+    hpToolingMachineTon: 190T
+  - hpToolingModule: Module_4
+    hpToolingMachinePrice: 0.2965
+    hpToolingMachineTon: 210T
+  - hpToolingModule: Module_4
+    hpToolingMachinePrice: 0.3388
+    hpToolingMachineTon: 240T
+  - hpToolingModule: Module_4
+    hpToolingMachinePrice: 0.3388
+    hpToolingMachineTon: 250T
+  - hpToolingModule: Module_4
+    hpToolingMachinePrice: 0.3812
+    hpToolingMachineTon: 290T
+  - hpToolingModule: Module_4
+    hpToolingMachinePrice: 0.3812
+    hpToolingMachineTon: 300T
+  - hpToolingModule: Module_4
+    hpToolingMachinePrice: 0.4235
+    hpToolingMachineTon: 350T
+  - hpToolingModule: Module_4
+    hpToolingMachinePrice: 0.5082
+    hpToolingMachineTon: 450T
+  - hpToolingModule: Module_4
+    hpToolingMachinePrice: 0.5506
+    hpToolingMachineTon: 500T
+  - hpToolingModule: Module_4
+    hpToolingMachinePrice: 0.5812
+    hpToolingMachineTon: 550T
+  - hpToolingModule: Module_4
+    hpToolingMachinePrice: 0.5812
+    hpToolingMachineTon: 600T
+  - hpToolingModule: Module_4
+    hpToolingMachinePrice: 0.6776
+    hpToolingMachineTon: 650T
+  - hpToolingModule: Module_4
+    hpToolingMachinePrice: 0.8329
+    hpToolingMachineTon: 800T
+  - hpToolingModule: Module_4
+    hpToolingMachinePrice: 0.8894
+    hpToolingMachineTon: 850T
+  - hpToolingModule: Module_4
+    hpToolingMachinePrice: null
+    hpToolingMachineTon: 1000T
+  - hpToolingModule: Module_4
+    hpToolingMachinePrice: null
+    hpToolingMachineTon: 1100T
+  - hpToolingModule: Module_4
+    hpToolingMachinePrice: null
+    hpToolingMachineTon: 1200T
+  - hpToolingModule: Module_4
+    hpToolingMachinePrice: null
+    hpToolingMachineTon: 1300T
+  - hpToolingModule: Module_4
+    hpToolingMachinePrice: null
+    hpToolingMachineTon: 1400T
+  - hpToolingModule: Module_4
+    hpToolingMachinePrice: null
+    hpToolingMachineTon: 1600T
+  - hpToolingModule: Module_4
+    hpToolingMachinePrice: null
+    hpToolingMachineTon: 1680T
+  - hpToolingModule: Module_4
+    hpToolingMachinePrice: null
+    hpToolingMachineTon: 1800T
+  - hpToolingModule: Module_4
+    hpToolingMachinePrice: null
+    hpToolingMachineTon: 2000T
+  - hpToolingModule: Module_4
+    hpToolingMachinePrice: null
+    hpToolingMachineTon: 2200T
+  - hpToolingModule: Module_4
+    hpToolingMachinePrice: null
+    hpToolingMachineTon: 2500T
+
+  - hpToolingModule: Module_5
+    hpToolingMachinePrice: null
+    hpToolingMachineTon: 50T
+  - hpToolingModule: Module_5
+    hpToolingMachinePrice: null
+    hpToolingMachineTon: 80T
+  - hpToolingModule: Module_5
+    hpToolingMachinePrice: null
+    hpToolingMachineTon: 100T
+  - hpToolingModule: Module_5
+    hpToolingMachinePrice: null
+    hpToolingMachineTon: 130T
+  - hpToolingModule: Module_5
+    hpToolingMachinePrice: null
+    hpToolingMachineTon: 150T
+  - hpToolingModule: Module_5
+    hpToolingMachinePrice: null
+    hpToolingMachineTon: 160T
+  - hpToolingModule: Module_5
+    hpToolingMachinePrice: null
+    hpToolingMachineTon: 180T
+  - hpToolingModule: Module_5
+    hpToolingMachinePrice: null
+    hpToolingMachineTon: 190T
+  - hpToolingModule: Module_5
+    hpToolingMachinePrice: null
+    hpToolingMachineTon: 210T
+  - hpToolingModule: Module_5
+    hpToolingMachinePrice: null
+    hpToolingMachineTon: 240T
+  - hpToolingModule: Module_5
+    hpToolingMachinePrice: 0.3431
+    hpToolingMachineTon: 250T
+  - hpToolingModule: Module_5
+    hpToolingMachinePrice: 0.3431
+    hpToolingMachineTon: 290T
+  - hpToolingModule: Module_5
+    hpToolingMachinePrice: 0.3431
+    hpToolingMachineTon: 300T
+  - hpToolingModule: Module_5
+    hpToolingMachinePrice: 0.3738
+    hpToolingMachineTon: 350T
+  - hpToolingModule: Module_5
+    hpToolingMachinePrice: 0.5815
+    hpToolingMachineTon: 450T
+  - hpToolingModule: Module_5
+    hpToolingMachinePrice: 0.6108
+    hpToolingMachineTon: 500T
+  - hpToolingModule: Module_5
+    hpToolingMachinePrice: 0.6108
+    hpToolingMachineTon: 550T
+  - hpToolingModule: Module_5
+    hpToolingMachinePrice: 0.6108
+    hpToolingMachineTon: 600T
+  - hpToolingModule: Module_5
+    hpToolingMachinePrice: 0.6415
+    hpToolingMachineTon: 650T
+  - hpToolingModule: Module_5
+    hpToolingMachinePrice: 0.7015
+    hpToolingMachineTon: 800T
+  - hpToolingModule: Module_5
+    hpToolingMachinePrice: 0.7323
+    hpToolingMachineTon: 850T
+  - hpToolingModule: Module_5
+    hpToolingMachinePrice: 0.8769
+    hpToolingMachineTon: 1000T
+  - hpToolingModule: Module_5
+    hpToolingMachinePrice: 0.9062
+    hpToolingMachineTon: 1100T
+  - hpToolingModule: Module_5
+    hpToolingMachinePrice: 0.9754
+    hpToolingMachineTon: 1200T
+  - hpToolingModule: Module_5
+    hpToolingMachinePrice: 0.9969
+    hpToolingMachineTon: 1300T
+  - hpToolingModule: Module_5
+    hpToolingMachinePrice: 1.0585
+    hpToolingMachineTon: 1400T
+  - hpToolingModule: Module_5
+    hpToolingMachinePrice: 1.1092
+    hpToolingMachineTon: 1600T
+  - hpToolingModule: Module_5
+    hpToolingMachinePrice: 1.1092
+    hpToolingMachineTon: 1680T
+  - hpToolingModule: Module_5
+    hpToolingMachinePrice: 1.1554
+    hpToolingMachineTon: 1800T
+  - hpToolingModule: Module_5
+    hpToolingMachinePrice: 1.2800
+    hpToolingMachineTon: 2000T
+  - hpToolingModule: Module_5
+    hpToolingMachinePrice: 1.3292
+    hpToolingMachineTon: 2200T
+  - hpToolingModule: Module_5
+    hpToolingMachinePrice: 1.3877
+    hpToolingMachineTon: 2500T
+
+  - hpToolingModule: Module_6
+    hpToolingMachinePrice: 0.1412
+    hpToolingMachineTon: 50T
+  - hpToolingModule: Module_6
+    hpToolingMachinePrice: 0.1765
+    hpToolingMachineTon: 80T
+  - hpToolingModule: Module_6
+    hpToolingMachinePrice: 0.1765
+    hpToolingMachineTon: 100T
+  - hpToolingModule: Module_6
+    hpToolingMachinePrice: 0.2118
+    hpToolingMachineTon: 130T
+  - hpToolingModule: Module_6
+    hpToolingMachinePrice: 0.2118
+    hpToolingMachineTon: 150T
+  - hpToolingModule: Module_6
+    hpToolingMachinePrice: 0.2118
+    hpToolingMachineTon: 160T
+  - hpToolingModule: Module_6
+    hpToolingMachinePrice: 0.2471
+    hpToolingMachineTon: 180T
+  - hpToolingModule: Module_6
+    hpToolingMachinePrice: 0.2471
+    hpToolingMachineTon: 190T
+  - hpToolingModule: Module_6
+    hpToolingMachinePrice: 0.2471
+    hpToolingMachineTon: 210T
+  - hpToolingModule: Module_6
+    hpToolingMachinePrice: 0.2824
+    hpToolingMachineTon: 240T
+  - hpToolingModule: Module_6
+    hpToolingMachinePrice: 0.2824
+    hpToolingMachineTon: 250T
+  - hpToolingModule: Module_6
+    hpToolingMachinePrice: 0.3176
+    hpToolingMachineTon: 290T
+  - hpToolingModule: Module_6
+    hpToolingMachinePrice: 0.3176
+    hpToolingMachineTon: 300T
+  - hpToolingModule: Module_6
+    hpToolingMachinePrice: 0.3529
+    hpToolingMachineTon: 350T
+  - hpToolingModule: Module_6
+    hpToolingMachinePrice: 0.4235
+    hpToolingMachineTon: 450T
+  - hpToolingModule: Module_6
+    hpToolingMachinePrice: 0.4588
+    hpToolingMachineTon: 500T
+  - hpToolingModule: Module_6
+    hpToolingMachinePrice: 0.4941
+    hpToolingMachineTon: 550T
+  - hpToolingModule: Module_6
+    hpToolingMachinePrice: 0.4941
+    hpToolingMachineTon: 600T
+  - hpToolingModule: Module_6
+    hpToolingMachinePrice: 0.5647
+    hpToolingMachineTon: 650T
+  - hpToolingModule: Module_6
+    hpToolingMachinePrice: 0.6635
+    hpToolingMachineTon: 800T
+  - hpToolingModule: Module_6
+    hpToolingMachinePrice: 0.7059
+    hpToolingMachineTon: 850T
+  - hpToolingModule: Module_6
+    hpToolingMachinePrice: null
+    hpToolingMachineTon: 1000T
+  - hpToolingModule: Module_6
+    hpToolingMachinePrice: null
+    hpToolingMachineTon: 1100T
+  - hpToolingModule: Module_6
+    hpToolingMachinePrice: null
+    hpToolingMachineTon: 1200T
+  - hpToolingModule: Module_6
+    hpToolingMachinePrice: null
+    hpToolingMachineTon: 1300T
+  - hpToolingModule: Module_6
+    hpToolingMachinePrice: null
+    hpToolingMachineTon: 1400T
+  - hpToolingModule: Module_6
+    hpToolingMachinePrice: null
+    hpToolingMachineTon: 1600T
+  - hpToolingModule: Module_6
+    hpToolingMachinePrice: null
+    hpToolingMachineTon: 1680T
+  - hpToolingModule: Module_6
+    hpToolingMachinePrice: null
+    hpToolingMachineTon: 1800T
+  - hpToolingModule: Module_6
+    hpToolingMachinePrice: null
+    hpToolingMachineTon: 2000T
+  - hpToolingModule: Module_6
+    hpToolingMachinePrice: null
+    hpToolingMachineTon: 2200T
+  - hpToolingModule: Module_6
+    hpToolingMachinePrice: null
+    hpToolingMachineTon: 2500T
+
+  - hpToolingModule: Module_7
+    hpToolingMachinePrice: 0.2118
+    hpToolingMachineTon: 50T
+  - hpToolingModule: Module_7
+    hpToolingMachinePrice: 0.2118
+    hpToolingMachineTon: 80T
+  - hpToolingModule: Module_7
+    hpToolingMachinePrice: 0.2118
+    hpToolingMachineTon: 100T
+  - hpToolingModule: Module_7
+    hpToolingMachinePrice: 0.2542
+    hpToolingMachineTon: 130T
+  - hpToolingModule: Module_7
+    hpToolingMachinePrice: 0.2542
+    hpToolingMachineTon: 150T
+  - hpToolingModule: Module_7
+    hpToolingMachinePrice: 0.2542
+    hpToolingMachineTon: 160T
+  - hpToolingModule: Module_7
+    hpToolingMachinePrice: 0.2964
+    hpToolingMachineTon: 180T
+  - hpToolingModule: Module_7
+    hpToolingMachinePrice: 0.2964
+    hpToolingMachineTon: 190T
+  - hpToolingModule: Module_7
+    hpToolingMachinePrice: 0.2964
+    hpToolingMachineTon: 210T
+  - hpToolingModule: Module_7
+    hpToolingMachinePrice: 0.3388
+    hpToolingMachineTon: 240T
+  - hpToolingModule: Module_7
+    hpToolingMachinePrice: 0.3388
+    hpToolingMachineTon: 250T
+  - hpToolingModule: Module_7
+    hpToolingMachinePrice: 0.3812
+    hpToolingMachineTon: 290T
+  - hpToolingModule: Module_7
+    hpToolingMachinePrice: 0.3812
+    hpToolingMachineTon: 300T
+  - hpToolingModule: Module_7
+    hpToolingMachinePrice: 0.4236
+    hpToolingMachineTon: 350T
+  - hpToolingModule: Module_7
+    hpToolingMachinePrice: 0.5082
+    hpToolingMachineTon: 450T
+  - hpToolingModule: Module_7
+    hpToolingMachinePrice: 0.5506
+    hpToolingMachineTon: 500T
+  - hpToolingModule: Module_7
+    hpToolingMachinePrice: 0.5930
+    hpToolingMachineTon: 550T
+  - hpToolingModule: Module_7
+    hpToolingMachinePrice: 0.6344
+    hpToolingMachineTon: 600T
+  - hpToolingModule: Module_7
+    hpToolingMachinePrice: 0.6776
+    hpToolingMachineTon: 650T
+  - hpToolingModule: Module_7
+    hpToolingMachinePrice: 0.7600
+    hpToolingMachineTon: 800T
+  - hpToolingModule: Module_7
+    hpToolingMachinePrice: 0.8240
+    hpToolingMachineTon: 850T
+  - hpToolingModule: Module_7
+    hpToolingMachinePrice: 0.8880
+    hpToolingMachineTon: 1000T
+  - hpToolingModule: Module_7
+    hpToolingMachinePrice: 0.9500
+    hpToolingMachineTon: 1100T
+  - hpToolingModule: Module_7
+    hpToolingMachinePrice: 1.0940
+    hpToolingMachineTon: 1200T
+  - hpToolingModule: Module_7
+    hpToolingMachinePrice: 1.1400
+    hpToolingMachineTon: 1300T
+  - hpToolingModule: Module_7
+    hpToolingMachinePrice: 1.2680
+    hpToolingMachineTon: 1400T
+  - hpToolingModule: Module_7
+    hpToolingMachinePrice: 1.3740
+    hpToolingMachineTon: 1600T
+  - hpToolingModule: Module_7
+    hpToolingMachinePrice: 1.3740
+    hpToolingMachineTon: 1680T
+  - hpToolingModule: Module_7
+    hpToolingMachinePrice: 1.4720
+    hpToolingMachineTon: 1800T
+  - hpToolingModule: Module_7
+    hpToolingMachinePrice: 1.7320
+    hpToolingMachineTon: 2000T
+  - hpToolingModule: Module_7
+    hpToolingMachinePrice: 1.8340
+    hpToolingMachineTon: 2200T
+  - hpToolingModule: Module_7
+    hpToolingMachinePrice: 1.9580
+    hpToolingMachineTon: 2500T

@@ -1,0 +1,40 @@
+headers:
+  dive12c12:
+    $Template:
+      - formula
+    value: =IFERROR((E12/C12),#N/A)
+    borderAdjust: true
+    style:
+      header:
+        $mebom.header-percent.style:
+          - header
+      value:
+        $mebom.header-percent.style:
+          - value
+
+  divrdspace:
+    $Template:
+       - formula
+    value: =IFERROR((F4)/(B18-C18),#N/A)
+    borderAdjust: true
+    style:
+      header:
+        $mebom.header-percent.style:
+          - header
+      value:
+        $mebom.header-percent.style:
+          - value
+
+  divnewmaterial:
+    $Template:
+      - formula
+    value: =IFERROR((G4)/(B18-C18),#N/A)
+    borderAdjust: true
+    style:
+      header:
+        $mebom.header-percent.style:
+          - header
+      value:
+        $mebom.header-percent.style:
+          - value
+

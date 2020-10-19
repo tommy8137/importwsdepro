@@ -1,0 +1,63 @@
+
+items:
+# 全週4週邊鑽切
+  - key: cmfProcessListDrillCutFourSidesExist
+    label: Exist
+    $Template:
+      - checkBox
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListDrillCutFourSidesExist
+
+  - key: cmfProcessListDrillCutFourSidesType
+    $Template:
+      - selectorString
+    label: 加工特徵
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: metal_material_drill_feature_id
+      ?getMetalDrill:
+        - housing_metal_secondary_processing
+        - drill_cutting_loss_rate
+        - allside_cutting
+      # $housing-metal.dropdown.CmfProcessListDrillCutFourSidesType:
+      #   - ^values
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfProcessListDrillCutFourSidesExist: true
+      grids: 1
+      display: true
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfProcessListDrillCutFourSidesExist)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfProcessListDrillCutFourSidesExist
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListDrillCutFourSidesType
+
+  - key: cmfProcessListDrillCutFourSidesCost
+    $Template:
+      - mappedValueFloat
+    mapFrom:
+      - cmfProcessListDrillCutFourSidesType
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getMetalDrill:
+        - housing_metal_secondary_processing
+        - drill_cutting_loss_rate
+        - allside_cutting
+      # $housing-metal.dropdown.CmfProcessListDrillCutFourSidesType:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+

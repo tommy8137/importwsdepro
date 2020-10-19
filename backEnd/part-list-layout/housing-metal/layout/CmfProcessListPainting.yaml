@@ -1,0 +1,151 @@
+multiple: true
+items:
+  - key: cmfProcessListPaintingCheckBox
+    $Template:
+      - checkBox
+    label: Exist
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListPaintingCheckBox
+
+  - key: cmfProcessListPaintingTypeAndColor
+    $Template:
+      - selectorString
+    label: Type and color
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: cmfProcessListPaintingId
+      ?getMetalPaint:
+        -
+      # $housing-metal.dropdown.CmfProcessListPaintingTypeAndColor:
+      #   - ^values
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfProcessListPaintingCheckBox: true
+      grids: 1
+      display: true
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfProcessListPaintingCheckBox)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfProcessListPaintingCheckBox
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListPaintingTypeAndColor
+
+  - key: CmfProcessListPaintingPriceUSD
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getMetalPaint:
+        -
+      # $housing-metal.dropdown.CmfProcessListPaintingTypeAndColor:
+      #   - ^values
+    mapFrom:
+      - cmfProcessListPaintingTypeAndColor
+
+  - key: CmfProcessListPaintingPriceRMB
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getMetalPaint:
+        -
+      # $housing-metal.dropdown.CmfProcessListPaintingTypeAndColor:
+      #   - ^values
+    mapFrom:
+      - cmfProcessListPaintingTypeAndColor
+
+  - key: cmfProcessListPaintingArea
+    $Template:
+      - inputFloat
+    label: 噴塗面積
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfProcessListPaintingCheckBox: true
+      grids: 1
+      display: true
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfProcessListPaintingCheckBox)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfProcessListPaintingCheckBox
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListPaintingArea
+
+  - key: cmfProcessListPaintingFilmThickness
+    $Template:
+      - inputFloat
+    label: 膜厚(mm)
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfProcessListPaintingCheckBox: true
+      grids: 1
+      display: true
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfProcessListPaintingCheckBox)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfProcessListPaintingCheckBox
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListPaintingFilmThickness
+
+  - key: cmfProcessListPaintingCount
+    $Template:
+      - inputInt
+    label: 噴塗次數
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfProcessListPaintingCheckBox: true
+      grids: 1
+      display: true
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfProcessListPaintingCheckBox)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfProcessListPaintingCheckBox
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListPaintingCount
+
+  - key: cmfProcessListPaintingColor
+    $Template:
+      - inputString
+    label: Color
+    require: false
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfProcessListPaintingCheckBox: true
+      grids: 1
+      display: true
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListPaintingColor

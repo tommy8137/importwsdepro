@@ -1,0 +1,43 @@
+output:
+  total: total
+  unit_price: push_pin_unit_price
+  qty: pupiAmount
+  assemblyTime: assemblyTime
+
+formula:
+# push pin零件費 = 單價 * 用量 * (1 + push pin loss rate) -----------------------------------------------------------------------------------------------------------------
+  total:
+    type: MATH
+    formula: push_pin_unit_price * pupiAmount * (1 + push_pin_loss_rate)
+    label: push pin零件費
+
+  # 組裝時間
+  assemblyTime:
+    label: PushPin 組裝時間
+    type: MATH
+    formula: pupiAmount * worktimeSec
+
+scope:
+  pupiAmount: pupiAmount
+
+constant:
+  worktimeSec:
+    label: Assembly組裝工時(sec)
+    ?getThermalCommon:
+      - thermal_module_processing
+      - assembly_spend_time
+    # value: 12
+    
+  push_pin_unit_price:
+    label: push pin單價
+    ?getThermalCommon:
+      - thermal_module_components
+      - push_pin_cost
+    # value: 0.08
+
+  push_pin_loss_rate:
+    label: push pin loss rate
+    ?getThermalCommon:
+      - thermal_module_components
+      - push_pin_loss_rate
+    # value: 1.015

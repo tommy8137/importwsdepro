@@ -1,0 +1,75 @@
+headers:
+  export_from:
+    label: Export From
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - dataString
+
+  customer:
+    label: Customer
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - dataString
+
+  project_name:
+    label: Project Name
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - dataString
+
+  project_code:
+    label: Project Code
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - dataString
+
+  version:
+    label: Version Status
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - dataString
+
+  bom_create_date:
+    label: BOM Create Date
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - dataString
+
+  eedm_ver:
+    label: eEDM Ver.
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - dataString
+
+  export_date:
+    label: Export Date
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - dataString
+
+  total_part_number_count:
+    label: Total Part Number Count
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - dataInt
+
+  total_parts_count:
+    label: Total Parts Count
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - dataInt
+
+  total_last_price_sap:
+    label: Total Last Price(SAP)
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - dataFloat
+
+  total_suggestion_cost:
+    label: Total Suggestion Cost
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - dataFloat
+
+  eecost_gap:
+    label: EE Cost Gap
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - dataInt
+
+  merged:
+    label: null
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - dataString
+
+  opportunity:
+    label: Opportunity
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - dataFloat

@@ -1,0 +1,17 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 12 7"
+>
+    <defs>
+        <style>
+            .cls-1{stroke:#fff}
+        </style>
+    </defs>
+    <g id="Symbols" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd" strokeLinecap="round">
+    <g class="cls-1" transform="translate(1.000000, 1.000000)" stroke="#333333" strokeWidth="1.5">
+        <g id="icon/收合箭頭-copy">
+        <polyline id="Path" transform="translate(5.000000, 2.500000) scale(1, -1) translate(-5.000000, -2.500000) " points="0 0 5 5 10 0" />
+        </g>
+    </g>
+    </g>
+</svg>

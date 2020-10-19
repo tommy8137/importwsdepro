@@ -1,0 +1,85 @@
+output:
+  total: total
+  a_sumCableMaterialPrice: sumCableMaterialPrice
+  b_secondary_processing_cost: secondary_processing_cost
+  c_component_cost: component_cost
+  sumAceticAcidClothQty: sumAceticAcidClothQty
+formula:
+  total:
+    type: MATH
+    formula: sumCableMaterialPrice + secondary_processing_cost + component_cost +  (secondary_processing_cost * 0.1)
+    label: Cable Wire 總費用
+
+  sumCableMaterialPrice:
+    type: GROUPSUM
+    label: A. 材料費
+    bykey: cableMaterialPrice
+    groups:
+      - cableMaterial
+
+  secondary_processing_cost:
+    type: MATH
+    formula: (total_assembly + (total_assembly * prepare_constant)) / 60 * spend_working_hour
+    label: B. 二次加工費
+
+  component_cost:
+    type: MATH
+    formula: sumConnectorTotalPrice + sumSupportPrice
+    label: C. 零件費 (耗材只要加一次, 移到 CableWire 一次做加總)
+
+  sumConnectorTotalPrice:
+    type: GROUPSUM
+    label: connector費用
+    bykey: connectorPrice
+    groups:
+      - cableConnector
+
+  sumSupportPrice:
+    type: GROUPSUM
+    label: 輔料費總和
+    bykey: supportCost
+    groups:
+      - cableSupport
+
+  sumAceticAcidClothQty:
+    type: GROUPSUM
+    label: 醋酸布數量
+    bykey: aceticAcidClothQty
+    groups:
+      - cableSupport
+
+  total_assembly:
+    type: MATH
+    formula: sumConnectorAssembly + sumSupportAssembly
+    label: assembly time 總和(輔料組裝時間 + connector 組裝時間)
+
+  sumConnectorAssembly:
+    type: GROUPSUM
+    label: connector組裝時間總和
+    bykey: connectorAssembly
+    groups:
+      - cableConnector
+
+  sumSupportAssembly:
+    type: GROUPSUM
+    label: 輔料組裝時間總和
+    bykey: supportAssembly
+    groups:
+      - cableSupport
+
+scope:
+  CWSubMertial: CWSubMertial
+
+constant:
+  prepare_constant:
+    label: loss_rate
+    ?getCableWireCommon:
+      - cable_wire_secondary_processing
+      - prepare_constant
+    # value: 0.08
+  spend_working_hour:
+    label: loss_rate
+    ?getCableWireCommon:
+      - cable_wire_secondary_processing
+      - spend_working_hour
+    # value: 0.067

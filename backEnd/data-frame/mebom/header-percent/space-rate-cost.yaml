@@ -1,0 +1,41 @@
+headers:
+  count:
+    label: 可計算數量
+    subHeader: Clean Sheet Cost   
+    subHeaderSite: 1
+    subHeaderMerge: 3
+    mainHeader: Cost完成率(%)
+    mainHeaderSite: 2
+    mainHeaderMerge: 6
+    $mebom.header-percent.Template:
+      - mainHeader
+
+  last_price_count:
+    label: Last Price數量
+    $mebom.header-percent.Template:
+      - dataInt
+
+  clean_sheet_count:
+    label: Clean Sheet已計算數量
+    $mebom.header-percent.Template:
+      - dataInt
+
+  sourcer_space:
+    label: null
+    subHeader: Sourcer Cost
+    subHeaderSite: 1
+    subHeaderMerge: 3
+    $mebom.header-percent.Template:
+      - costHeader
+
+  rd_space:
+    label: null
+    needMerge: true
+    $mebom.header-percent.Template:
+      - dataInt
+
+  new_material:
+    label: null
+    needMerge: true
+    $mebom.header-percent.Template:
+      - dataInt

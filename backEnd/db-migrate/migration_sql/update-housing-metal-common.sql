@@ -1,0 +1,1 @@
+update formula.common_parameter set part_type='housing_metal_material' where part_type='material_loss_rate'

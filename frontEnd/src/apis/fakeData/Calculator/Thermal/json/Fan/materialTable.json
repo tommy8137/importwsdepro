@@ -1,0 +1,17 @@
+{
+  "header": [
+    {
+      "key": "type",
+      "name": "材質",
+      "typeof": "string"
+    }
+  ],
+  "data": [
+    {
+      "type": "有鹵"
+    },
+    {
+      "type": "無鹵"
+    }
+  ]
+}

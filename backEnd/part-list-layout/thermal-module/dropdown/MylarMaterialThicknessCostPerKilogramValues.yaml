@@ -1,0 +1,24 @@
+values:
+ - mylarMaterial: 透明
+   mylarMaterialThickness: 0.05
+   mylarMaterialCostPerMM: 0.6382
+
+ - mylarMaterial: 透明
+   mylarMaterialThickness: 0.1
+   mylarMaterialCostPerMM: 0.9928
+
+ - mylarMaterial: 透明PC
+   mylarMaterialThickness: 0.175
+   mylarMaterialCostPerMM: 2.2206
+
+ - mylarMaterial: 透明PC
+   mylarMaterialThickness: 0.25
+   mylarMaterialCostPerMM: 2.8868
+
+ - mylarMaterial: 黑色
+   mylarMaterialThickness: 0.05
+   mylarMaterialCostPerMM: 0.7941
+
+ - mylarMaterial: 黑色
+   mylarMaterialThickness: 0.1
+   mylarMaterialCostPerMM: 0.9926

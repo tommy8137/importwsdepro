@@ -1,0 +1,32 @@
+multiple: true
+items:
+  - key: cmfProcessListRivetCheckBox
+    $Template:
+      - checkBox
+    label: Exist
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListPopRivetCheckBox
+
+  - key: cmfProcessListRivetCount
+    $Template:
+      - inputInt
+    label: 數量
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfProcessListRivetCheckBox: true
+      grids: 1
+      display: true
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfProcessListRivetCheckBox)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfProcessListRivetCheckBox
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListPopRivetCount

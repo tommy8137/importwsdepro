@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+    <defs>
+        <style>
+            .cls-1{fill:#333}.cls-2{fill:#fff}.cls-3{fill:none}
+        </style>
+    </defs>
+    <g id="btn_add_group_n" transform="translate(-1161 -264)">
+        <circle id="Ellipse_3" cx="18" cy="18" r="18" class="cls-1" data-name="Ellipse 3" transform="translate(1161 264)"/>
+        <path id="Union_2" d="M6 14v-4H2a2 2 0 1 1 0-4h4V2a2 2 0 1 1 4 0v4h4a2 2 0 0 1 0 4h-4v4a2 2 0 0 1-4 0z" class="cls-2" data-name="Union 2" transform="translate(1171 274)"/>
+        <circle id="btn_add_group_n-2" cx="18" cy="18" r="18" class="cls-3" data-name="btn_add_group_n" transform="translate(1161 264)"/>
+    </g>
+</svg>

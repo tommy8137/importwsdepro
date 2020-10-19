@@ -1,0 +1,63 @@
+multiple: true
+items:
+  - key: cmfProcessListPolishingAutoCheckBox
+    $Template:
+      - checkBox
+    label: Exist
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListPolishingAutoCheckBox
+
+  - key: cmfProcessListPolishingAutoArea
+    $Template:
+      - inputFloat
+    label: 加工面積(mm²)
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfProcessListPolishingAutoCheckBox: true
+      grids: 1
+      display: true
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfProcessListPolishingAutoCheckBox)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfProcessListPolishingAutoCheckBox
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListPolishingAutoArea
+
+  # - key: cmfProcessListPolishingArtificialCheckBox
+  #   $Template:
+  #     - checkBox
+  #   label: 人工/Exist
+  #   displayConfig:
+  #     $Template:
+  #       - displayConfig
+  #     grids: 0.5
+  #   emdmKey: emdmBomInfo.cmfForm.cmfProcessListPolishingArtificialCheckBox
+
+  # - key: cmfProcessListPolishingArtificialSec
+  #   $Template:
+  #     - inputFloat
+  #   label: 加工時間(sec)
+  #   displayConfig:
+  #     depends:
+  #       action: lock
+  #       condition:
+  #         cmfProcessListPolishingArtificialCheckBox: true
+  #     grids: 1
+  #     display: true
+  #   constrains:
+  #     - function: "(val, props) => {
+  #         return (val ==='' || val === null) && (props.cmfProcessListPolishingArtificialCheckBox)
+  #       }"
+  #       message: "此欄位為必填"
+  #       params:
+  #         - cmfProcessListPolishingArtificialCheckBox
+  #   require: true
+  #   emdmKey: emdmBomInfo.cmfForm.cmfProcessListPolishingArtificialSec

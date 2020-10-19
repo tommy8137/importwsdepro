@@ -1,0 +1,70 @@
+values:
+  - productType: NB
+    type2: Plastic
+    cmfPPaintingMethod: 一般噴塗
+  - productType: DT
+    type2: Painting
+    cmfPPaintingMethod: 一般噴塗
+  - productType: Others
+    type2: Painting
+    cmfPPaintingMethod: 一般噴塗
+
+  - productType: NB
+    type2: Painting
+    cmfPPaintingMethod: N/A
+  - productType: DT
+    type2: Painting
+    cmfPPaintingMethod: N/A
+  - productType: Others
+    type2: Painting
+    cmfPPaintingMethod: N/A
+
+  - productType: NB
+    type2: Double_Injection
+    cmfPPaintingMethod: N/A
+  - productType: DT
+    type2: Double_Injection
+    cmfPPaintingMethod: N/A
+  - productType: Others
+    type2: Double_Injection
+    cmfPPaintingMethod: N/A
+
+  - productType: NB
+    type2: Insert_Molding
+    cmfPPaintingMethod: 碳纖板類
+  - productType: DT
+    type2: Insert_Molding
+    cmfPPaintingMethod: 碳纖板類
+  - productType: Others
+    type2: Insert_Molding
+    cmfPPaintingMethod: 碳纖板類
+
+  - productType: NB
+    type2: RHCM
+    cmfPPaintingMethod: RHCM
+  - productType: DT
+    type2: RHCM
+    cmfPPaintingMethod: RHCM
+  - productType: Others
+    type2: RHCM
+    cmfPPaintingMethod: RHCM
+
+  - productType: NB
+    type2: IMR
+    cmfPPaintingMethod: N/A
+  - productType: DT
+    type2: IMR
+    cmfPPaintingMethod: N/A
+  - productType: Others
+    type2: IMR
+    cmfPPaintingMethod: N/A
+
+  - productType: NB
+    type2: NCVM
+    cmfPPaintingMethod: NCVM
+  - productType: DT
+    type2: NCVM
+    cmfPPaintingMethod: NCVM
+  - productType: Others
+    type2: NCVM
+    cmfPPaintingMethod: NCVM

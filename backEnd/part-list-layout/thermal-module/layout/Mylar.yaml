@@ -1,0 +1,269 @@
+multiple: true
+items:
+# 可編輯的sub-title --------------------------------------------------------------------------------------------------------------------
+  - key: MylarLabel
+    label: Mylar
+    $Template:
+      - label
+    editable: true
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+    default: Mylar
+    emdmMultipleKey: emdmBomInfo.cmfForm.mylar
+    emdmKey: MylarLabel
+
+# 用量 --------------------------------------------------------------------------------------------------------------------
+  - key: mylarAmount
+    label: 用量
+    $Template:
+      - inputInt
+      - ^displayConfig
+    default: 0
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.mylar
+    emdmKey: mylarAmount
+
+# 材料單價 --------------------------------------------------------------------------------------------------------------------
+  - key: mylarMaterialCostPerMM
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      ?getThermalmylarMaterial:
+        - Mylar_of_Mylar_Sponge_Poron
+      # $thermal-module.dropdown.MylarMaterialThicknessCostPerKilogramValues:
+      #   - ^values
+    mapFrom:
+      - mylarMaterial
+      - mylarMaterialThickness
+
+# 長度 --------------------------------------------------------------------------------------------------------------------
+  - key: mylarLength
+    label: 長度(L)
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.mylar
+    emdmKey: mylarLength
+
+# 寬度 --------------------------------------------------------------------------------------------------------------------
+  - key: mylarWidth
+    label: 寬度(W)
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.mylar
+    emdmKey: mylarWidth
+
+
+# 材料 --------------------------------------------------------------------------------------------------------------------
+  - key: mylarMaterialThickness
+    label: 厚度(t)
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: material_spec_id
+      ?getThermalmylarMaterial:
+        - Mylar_of_Mylar_Sponge_Poron
+      # $thermal-module.dropdown.MylarMaterialThicknessCostPerKilogramValues:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.mylar
+    emdmKey: mylarMaterialThickness
+
+  - key: mylarMaterial
+    label: 材料
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: material_id
+      ?getThermalmylarMaterial:
+        - Mylar_of_Mylar_Sponge_Poron
+      # $thermal-module.dropdown.MylarMaterialThicknessCostPerKilogramValues:
+      #   - ^values
+      depends:
+        - mylarMaterialThickness
+    displayConfig:
+      $Template:
+        - displayConfig
+      depends:
+        action: lock
+        condition:
+          # mylarMaterialThickness: true
+          mylarMaterialThickness: "(mylarMaterialThickness, props) => {
+            const { FFCConnectorFunctionName } = props;
+            const otherFillMeRemarkText = 'Other_Fill_ME_Remark';
+            const isOtherFillMeRemark = mylarMaterialThickness === otherFillMeRemarkText;
+            return !isOtherFillMeRemark;
+          }"
+    constrains:
+      - function: "(val, props) => {
+          const { mylarMaterialThickness } = props;
+          const otherFillMeRemarkText = 'Other_Fill_ME_Remark';
+          const isOtherFillMeRemark = mylarMaterialThickness === otherFillMeRemarkText;
+          return (val ==='' || val === null) && !isOtherFillMeRemark
+        }"
+        message: "此欄位為必填"
+        params:
+          - mylarMaterialThickness
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.mylar
+    emdmKey: mylarMaterial
+
+  - key: mylarAdhesiveThickness
+    label: 背膠厚度(t)
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: material_spec_id
+      ?getThermalmylarAdhesiveMaterial:
+        - Adhesive_of_Mylar_Sponge_Poron
+      # $thermal-module.dropdown.MylarAdhesiveThicknessCostPerKilogramValues:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.mylar
+    emdmKey: mylarAdhesiveThickness
+
+
+# 背膠單價 --------------------------------------------------------------------------------------------------------------------
+  - key: mylarAdhesiveCostPerMM
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      ?getThermalmylarAdhesiveMaterial:
+        - Adhesive_of_Mylar_Sponge_Poron
+      # $thermal-module.dropdown.MylarAdhesiveThicknessCostPerKilogramValues:
+      #   - ^values
+    mapFrom:
+      - mylarAdhesiveMaterial
+      - mylarAdhesiveThickness
+
+  - key: mylarAdhesiveMaterial
+    label: 背膠材料
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: material_id
+      ?getThermalmylarAdhesiveMaterial:
+        - Adhesive_of_Mylar_Sponge_Poron
+      # $thermal-module.dropdown.MylarAdhesiveThicknessCostPerKilogramValues:
+      #   - ^values
+      depends:
+        - mylarAdhesiveThickness
+    displayConfig:
+      $Template:
+        - displayConfig
+      depends:
+        action: lock
+        condition:
+          # mylarAdhesiveThickness: true
+          mylarAdhesiveThickness: "(mylarAdhesiveThickness, props) => {
+            const { FFCConnectorFunctionName } = props;
+            const otherFillMeRemarkText = 'Other_Fill_ME_Remark';
+            const isOtherFillMeRemark = mylarAdhesiveThickness === otherFillMeRemarkText;
+            return !isOtherFillMeRemark;
+          }"
+    require: true
+    constrains:
+      - function: "(val, props) => {
+          const { mylarAdhesiveThickness } = props;
+          const otherFillMeRemarkText = 'Other_Fill_ME_Remark';
+          const isOtherFillMeRemark = mylarAdhesiveThickness === otherFillMeRemarkText;
+          return (val ==='' || val === null) && !isOtherFillMeRemark
+        }"
+        message: "此欄位為必填"
+        params:
+          - mylarAdhesiveThickness
+    emdmMultipleKey: emdmBomInfo.cmfForm.mylar
+    emdmKey: mylarAdhesiveMaterial
+
+
+  - key: mylarMaterialThicknessRemark
+    label: 厚度(t) Remark
+    $Template:
+      - textarea
+    require: true
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      depends:
+        action: lock
+        condition:
+          mylarMaterialThickness: "val => val === 'Other_Fill_ME_Remark'"
+    emdmMultipleKey: emdmBomInfo.cmfForm.mylar
+    emdmKey: mylarMaterialThicknessRemark
+
+  - key: mylarMaterialRemark
+    label: 材料 Remark
+    $Template:
+      - textarea
+    require: true
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      depends:
+        action: lock
+        condition:
+          mylarMaterial: "val => val === 'Other_Fill_ME_Remark'"
+    emdmMultipleKey: emdmBomInfo.cmfForm.mylar
+    emdmKey: mylarMaterialRemark
+
+  - key: mylarAdhesiveThicknessRemark
+    label: 背膠厚度(t) Remark
+    $Template:
+      - textarea
+    require: true
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      depends:
+        action: lock
+        condition:
+          mylarAdhesiveThickness: "val => val === 'Other_Fill_ME_Remark'"
+    emdmMultipleKey: emdmBomInfo.cmfForm.mylar      
+    emdmKey: mylarAdhesiveThicknessRemark
+
+  - key: mylarAdhesiveMaterialRemark
+    label: 背膠材料 Remark
+    $Template:
+      - textarea
+    require: true
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      depends:
+        action: lock
+        condition:
+          mylarAdhesiveMaterial: "val => val === 'Other_Fill_ME_Remark'"
+    emdmMultipleKey: emdmBomInfo.cmfForm.mylar
+    emdmKey: mylarAdhesiveMaterialRemark
+    

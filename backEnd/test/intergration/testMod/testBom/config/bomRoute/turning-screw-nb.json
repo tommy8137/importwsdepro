@@ -1,0 +1,611 @@
+{
+  "xlsxName": "Test_Data_NB_screw.xlsx",
+  "sheetName": "NB_Screw",
+  "startHorizontalCoordinates": "C",
+  "transferMode": "createPath",
+  "formate": "meothers-screw",
+  "metadata": {
+    "productType": {
+      "createPath": "productType",
+      "valuekey": "productType",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "1"
+    },
+    "testLabel": {
+      "createPath": "testLabel",
+      "valuekey": "testLabel",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "2"
+    },
+    "type1": {
+      "createPath": "type1",
+      "valuekey": "type1",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "3"
+    },
+    "type2": {
+      "createPath": "type2",
+      "valuekey": "type2",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "4"
+    }
+  },
+  "transferPartlistInfo": {
+    "formData,meothers-screw,Screw,graphiteLabel": {
+      "createPath": "formData.meothers-screw.Screw.graphiteLabel",
+      "valuekey": "graphiteLabel",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,meothers-screw,Screw,materialspec": {
+      "createPath": "formData.meothers-screw.Screw.materialspec",
+      "valuekey": "materialspec",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 10,
+      "default": null
+    },
+    "formData,meothers-screw,Screw,materialUnitPrice": {
+      "createPath": "formData.meothers-screw.Screw.materialUnitPrice",
+      "valuekey": "materialUnitPrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,meothers-screw,Screw,materialDensity": {
+      "createPath": "formData.meothers-screw.Screw.materialDensity",
+      "valuekey": "materialDensity",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,meothers-screw,Screw,materialHeatingUnitPrice": {
+      "createPath": "formData.meothers-screw.Screw.materialHeatingUnitPrice",
+      "valuekey": "materialHeatingUnitPrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,meothers-screw,Screw,resistantFallColor": {
+      "createPath": "formData.meothers-screw.Screw.resistantFallColor",
+      "valuekey": "resistantFallColor",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 15,
+      "default": null
+    },
+    "formData,meothers-screw,Screw,toothDiameterName": {
+      "createPath": "formData.meothers-screw.Screw.toothDiameterName",
+      "valuekey": "toothDiameterName",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 11,
+      "default": null
+    },
+    "formData,meothers-screw,Screw,toothDiameter": {
+      "createPath": "formData.meothers-screw.Screw.toothDiameter",
+      "valuekey": "toothDiameter",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,meothers-screw,Screw,minToothDiameter": {
+      "createPath": "formData.meothers-screw.Screw.minToothDiameter",
+      "valuekey": "minToothDiameter",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,meothers-screw,Screw,maxToothDiameter": {
+      "createPath": "formData.meothers-screw.Screw.maxToothDiameter",
+      "valuekey": "maxToothDiameter",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,meothers-screw,Screw,headDiameter": {
+      "createPath": "formData.meothers-screw.Screw.headDiameter",
+      "valuekey": "headDiameter",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 12,
+      "default": null
+    },
+    "formData,meothers-screw,Screw,headThickness": {
+      "createPath": "formData.meothers-screw.Screw.headThickness",
+      "valuekey": "headThickness",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 13,
+      "default": null
+    },
+    "formData,meothers-screw,Screw,toothLength": {
+      "createPath": "formData.meothers-screw.Screw.toothLength",
+      "valuekey": "toothLength",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 14,
+      "default": null
+    },
+    "formData,meothers-screw,Screw,materialSpecRemark": {
+      "createPath": "formData.meothers-screw.Screw.materialSpecRemark",
+      "valuekey": "materialSpecRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,meothers-screw,Screw,mainMaterialSize,isPolishedRod": {
+      "createPath": "formData.meothers-screw.Screw.mainMaterialSize.isPolishedRod",
+      "valuekey": "isPolishedRod",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": 18,
+      "default": true
+    },
+    "formData,meothers-screw,Screw,mainMaterialSize,neckDiameter": {
+      "createPath": "formData.meothers-screw.Screw.mainMaterialSize.neckDiameter",
+      "valuekey": "neckDiameter",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 19,
+      "default": null
+    },
+    "formData,meothers-screw,Screw,mainMaterialSize,neckLength": {
+      "createPath": "formData.meothers-screw.Screw.mainMaterialSize.neckLength",
+      "valuekey": "neckLength",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 20,
+      "default": null
+    },
+    "formData,meothers-screw,Screw,isConcentricCircle": {
+      "createPath": "formData.meothers-screw.Screw.isConcentricCircle",
+      "valuekey": "isConcentricCircle",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": 17,
+      "default": true
+    },
+    "formData,meothers-screw,Screw,plating": {
+      "createPath": "formData.meothers-screw.Screw.plating",
+      "valuekey": "plating",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 16,
+      "default": null
+    },
+    "formData,meothers-screw,Screw,platingPrice": {
+      "createPath": "formData.meothers-screw.Screw.platingPrice",
+      "valuekey": "platingPrice",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    }
+  },
+  "verifyInfo": {
+    "totalPrices": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "totalPrices",
+      "valueType": "totalPrices",
+      "comparisonValuePath": "totalPrices"
+    },
+    "parentGroupId": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "parentGroupId",
+      "valueType": "parentGroupId",
+      "comparisonValuePath": "forDebug.summary.Screw.parentGroupId"
+    },
+    "material": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "material",
+      "valueType": "material",
+      "comparisonValuePath": "forDebug.summary.Screw._resistantFallValues.values.59.material"
+    },
+    "resistantFallColor": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "resistantFallColor",
+      "valueType": "resistantFallColor",
+      "comparisonValuePath": "forDebug.summary.Screw._resistantFallValues.values.59.resistantFallColor"
+    },
+    "minToothDiameter": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "minToothDiameter",
+      "valueType": "minToothDiameter",
+      "comparisonValuePath": "forDebug.summary.Screw._resistantFallValues.values.59.minToothDiameter"
+    },
+    "maxToothDiameter": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "maxToothDiameter",
+      "valueType": "maxToothDiameter",
+      "comparisonValuePath": "forDebug.summary.Screw._resistantFallValues.values.59.maxToothDiameter"
+    },
+    "toothLengthValue": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "toothLengthValue",
+      "valueType": "toothLengthValue",
+      "comparisonValuePath": "forDebug.summary.Screw._resistantFallValues.values.59.toothLengthValue"
+    },
+    "length_begin": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "length_begin",
+      "valueType": "length_begin",
+      "comparisonValuePath": "forDebug.summary.Screw._resistantFallValues.values.59.length_begin"
+    },
+    "length_end": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "length_end",
+      "valueType": "length_end",
+      "comparisonValuePath": "forDebug.summary.Screw._resistantFallValues.values.59.length_end"
+    },
+    "resistantFallPrice": {
+      "label": "熱處理",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "resistantFallPrice",
+      "valueType": "resistantFallPrice",
+      "comparisonValuePath": "forDebug.summary.Screw._resistantFallValues.values.59.resistantFallPrice"
+    },
+    "activate_date": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "activate_date",
+      "valueType": "activate_date",
+      "comparisonValuePath": "forDebug.summary.Screw._resistantFallValues.values.59.activate_date"
+    },
+    "packingDeliverPrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "packingDeliverPrice",
+      "valueType": "packingDeliverPrice",
+      "comparisonValuePath": "forDebug.summary.Screw.packingDeliverPrice"
+    },
+    "management_percentage": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "management_percentage",
+      "valueType": "management_percentage",
+      "comparisonValuePath": "forDebug.summary.Screw.management_percentage"
+    },
+    "_material": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "_material",
+      "valueType": "_material",
+      "comparisonValuePath": "forDebug.summary.Screw._material"
+    },
+    "_toothDiameter": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "_toothDiameter",
+      "valueType": "_toothDiameter",
+      "comparisonValuePath": "forDebug.summary.Screw._toothDiameter"
+    },
+    "_minToothDiameter": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "_minToothDiameter",
+      "valueType": "_minToothDiameter",
+      "comparisonValuePath": "forDebug.summary.Screw._minToothDiameter"
+    },
+    "_maxToothDiameter": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "_maxToothDiameter",
+      "valueType": "_maxToothDiameter",
+      "comparisonValuePath": "forDebug.summary.Screw._maxToothDiameter"
+    },
+    "_toothLength": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "_toothLength",
+      "valueType": "_toothLength",
+      "comparisonValuePath": "forDebug.summary.Screw._toothLength"
+    },
+    "_resistantFallColor": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "_resistantFallColor",
+      "valueType": "_resistantFallColor",
+      "comparisonValuePath": "forDebug.summary.Screw._resistantFallColor"
+    },
+    "_isPolishedRod": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "_isPolishedRod",
+      "valueType": "_isPolishedRod",
+      "comparisonValuePath": "forDebug.summary.Screw._isPolishedRod"
+    },
+    "_partWeight": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "_partWeight",
+      "valueType": "_partWeight",
+      "comparisonValuePath": "forDebug.summary.Screw._partWeight"
+    },
+    "materialPrice": {
+      "label": "材料費",
+      "excelValueLongitudinalCoordinates": "30",
+      "valuekey": "materialPrice",
+      "valueType": "materialPrice",
+      "comparisonValuePath": "forDebug.summary.Screw.materialPrice"
+    },
+    "_threadingPrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "_threadingPrice",
+      "valueType": "_threadingPrice",
+      "comparisonValuePath": "forDebug.summary.Screw._threadingPrice"
+    },
+    "_circlePrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "_circlePrice",
+      "valueType": "_circlePrice",
+      "comparisonValuePath": "forDebug.summary.Screw._circlePrice"
+    },
+    "formingPrice": {
+      "label": "成型費",
+      "excelValueLongitudinalCoordinates": "31",
+      "valuekey": "formingPrice",
+      "valueType": "formingPrice",
+      "comparisonValuePath": "forDebug.summary.Screw.formingPrice"
+    },
+    "_toothLengthValue": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "_toothLengthValue",
+      "valueType": "_toothLengthValue",
+      "comparisonValuePath": "forDebug.summary.Screw._toothLengthValue"
+    },
+    "_resistantFallPrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "_resistantFallPrice",
+      "valueType": "_resistantFallPrice",
+      "comparisonValuePath": "forDebug.summary.Screw._resistantFallPrice"
+    },
+    "_platingTotalPrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "_platingTotalPrice",
+      "valueType": "_platingTotalPrice",
+      "comparisonValuePath": "forDebug.summary.Screw._platingTotalPrice"
+    },
+    "processingPrice": {
+      "label": "加工費",
+      "excelValueLongitudinalCoordinates": "32",
+      "valuekey": "processingPrice",
+      "valueType": "processingPrice",
+      "comparisonValuePath": "forDebug.summary.Screw.processingPrice"
+    },
+    "managementPrice": {
+      "label": "管銷費",
+      "excelValueLongitudinalCoordinates": "34",
+      "valuekey": "managementPrice",
+      "valueType": "managementPrice",
+      "comparisonValuePath": "forDebug.summary.Screw.managementPrice"
+    },
+    "total": {
+      "label": "成品總價",
+      "excelValueLongitudinalCoordinates": "35",
+      "valuekey": "total",
+      "valueType": "total",
+      "comparisonValuePath": "forDebug.summary.Screw.total"
+    },
+    "thousand": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "thousand",
+      "valueType": "thousand",
+      "comparisonValuePath": "forDebug.debugInfo.Screw.thousand.value"
+    },
+    "pi": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "pi",
+      "valueType": "pi",
+      "comparisonValuePath": "forDebug.debugInfo.Screw.pi.value"
+    },
+    "resistantFallValues": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "resistantFallValues",
+      "valueType": "string",
+      "comparisonValuePath": "forDebug.debugInfo.Screw.resistantFallValues.label"
+    },
+    "toothLengthValues": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "toothLengthValues",
+      "valueType": "string",
+      "comparisonValuePath": "forDebug.debugInfo.Screw.toothLengthValues.label"
+    },
+    "minToothLength": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "minToothLength",
+      "valueType": "minToothLength",
+      "comparisonValuePath": "forDebug.debugInfo.Screw.toothLengthValues.value.values.2.minToothLength"
+    },
+    "maxToothLength": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "maxToothLength",
+      "valueType": "maxToothLength",
+      "comparisonValuePath": "forDebug.debugInfo.Screw.toothLengthValues.value.values.2.maxToothLength"
+    },
+    "threadingFormingPrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "threadingFormingPrice",
+      "valueType": "threadingFormingPrice",
+      "comparisonValuePath": "forDebug.debugInfo.Screw.threadingFormingPrice.value"
+    },
+    "threadingPerformance": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "threadingPerformance",
+      "valueType": "threadingPerformance",
+      "comparisonValuePath": "forDebug.debugInfo.Screw.threadingPerformance.value"
+    },
+    "threadingLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "threadingLossRate",
+      "valueType": "threadingLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.Screw.threadingLossRate.value"
+    },
+    "circleFormingPrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "circleFormingPrice",
+      "valueType": "circleFormingPrice",
+      "comparisonValuePath": "forDebug.debugInfo.Screw.circleFormingPrice.value"
+    },
+    "circlePerformance": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "circlePerformance",
+      "valueType": "circlePerformance",
+      "comparisonValuePath": "forDebug.debugInfo.Screw.circlePerformance.value"
+    },
+    "circleLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "circleLossRate",
+      "valueType": "circleLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.Screw.circleLossRate.value"
+    },
+    "materialUnitPrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "materialUnitPrice",
+      "valueType": "materialUnitPrice",
+      "comparisonValuePath": "forDebug.debugInfo.Screw.materialUnitPrice.value"
+    },
+    "headDiameter": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "headDiameter",
+      "valueType": "headDiameter",
+      "comparisonValuePath": "forDebug.debugInfo.Screw.headDiameter.value"
+    },
+    "headThickness": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "headThickness",
+      "valueType": "headThickness",
+      "comparisonValuePath": "forDebug.debugInfo.Screw.headThickness.value"
+    },
+    "toothDiameter": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "toothDiameter",
+      "valueType": "toothDiameter",
+      "comparisonValuePath": "forDebug.debugInfo.Screw.toothDiameter.value"
+    },
+    "toothLength": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "toothLength",
+      "valueType": "toothLength",
+      "comparisonValuePath": "forDebug.debugInfo.Screw.toothLength.value"
+    },
+    "neckDiameter": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "neckDiameter",
+      "valueType": "neckDiameter",
+      "comparisonValuePath": "forDebug.debugInfo.Screw.neckDiameter.value"
+    },
+    "neckLength": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "neckLength",
+      "valueType": "neckLength",
+      "comparisonValuePath": "forDebug.debugInfo.Screw.neckLength.value"
+    },
+    "isPolishedRod": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "isPolishedRod",
+      "valueType": "isPolishedRod",
+      "comparisonValuePath": "forDebug.debugInfo.Screw.isPolishedRod.value"
+    },
+    "materialDensity": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "materialDensity",
+      "valueType": "materialDensity",
+      "comparisonValuePath": "forDebug.debugInfo.Screw.materialDensity.value"
+    },
+    "isConcentricCircle": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "isConcentricCircle",
+      "valueType": "isConcentricCircle",
+      "comparisonValuePath": "forDebug.debugInfo.Screw.isConcentricCircle.value"
+    },
+    "platingPrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "platingPrice",
+      "valueType": "platingPrice",
+      "comparisonValuePath": "forDebug.debugInfo.Screw.platingPrice.value"
+    },
+    "materialHeatingUnitPrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "materialHeatingUnitPrice",
+      "valueType": "materialHeatingUnitPrice",
+      "comparisonValuePath": "forDebug.debugInfo.Screw.materialHeatingUnitPrice.value"
+    },
+    "partWeight": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "partWeight",
+      "valueType": "partWeight",
+      "comparisonValuePath": "forDebug.debugInfo.Screw.partWeight.value"
+    },
+    "threadingPrice": {
+      "label": "冷鍛打頭_搓牙",
+      "excelValueLongitudinalCoordinates": "23",
+      "valuekey": "threadingPrice",
+      "valueType": "threadingPrice",
+      "comparisonValuePath": "forDebug.debugInfo.Screw.threadingPrice.value"
+    },
+    "circlePrice": {
+      "label": "同心圓（車修真圓度）",
+      "excelValueLongitudinalCoordinates": "24",
+      "valuekey": "circlePrice",
+      "valueType": "circlePrice",
+      "comparisonValuePath": "forDebug.debugInfo.Screw.circlePrice.value"
+    },
+    "platingTotalPrice": {
+      "label": "電鍍",
+      "excelValueLongitudinalCoordinates": "27",
+      "valuekey": "platingTotalPrice",
+      "valueType": "platingTotalPrice",
+      "comparisonValuePath": "forDebug.debugInfo.Screw.platingTotalPrice.value"
+    },
+    "heatingPrice": {
+      "label": "熱處理",
+      "excelValueLongitudinalCoordinates": "28",
+      "valuekey": "heatingPrice",
+      "valueType": "heatingPrice",
+      "comparisonValuePath": "forDebug.debugInfo.Screw.heatingPrice.value"
+    },
+    "totalCost": {
+      "label": "計算結果",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "totalCost",
+      "valueType": "totalCost",
+      "comparisonValuePath": "forDebug.debugInfo.Screw.totalCost.value"
+    },
+    "isOtherFill": {
+      "label": "檢查是否有 Other_Fill_ME_Remark",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "isOtherFill",
+      "valueType": "isOtherFill",
+      "comparisonValuePath": "forDebug.debugInfo.Screw.isOtherFill.value"
+    }
+  }
+}

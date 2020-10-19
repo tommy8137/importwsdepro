@@ -1,0 +1,223 @@
+output:
+  # total
+  total: total
+  A.materialCost: materialCost
+  B.tappingCost: tappingCost
+  C.processingCost: processingCost
+  D.packageCost: packageCost
+  E.managementCost: managementCost
+  # FOR debug
+  partWeight: partWeight
+  materialUnitPrice: materialUnitPrice
+  partWeightD1: partWeightD1
+  partWeightD2: partWeightD2
+  partWeightD3: partWeightD3
+  tappingUnitPrice: tappingUnitPrice
+  tappingCapacity: tappingCapacity
+  tappingLossRate: tappingLossRate
+  turningPlatingUnitPrice: turningPlatingUnitPrice
+  materialHeatingUnitPrice: materialHeatingUnitPrice
+
+  _packageCost: _packageCost
+  management_percentage : management_percentage
+  ____platingProcessingCost: platingProcessingCost
+  ____heatTreamentCost: heatTreamentCost
+  _________enabledPlating: enabledPlating
+  _________enabledHeat: enabledHeat
+  material: material
+  materialspec: materialspec
+  # for export
+  nutType: nutType
+  # mapping
+  # turningMaterialValues: turningMaterialValues
+
+formula:
+  # 總價
+  total:
+    label: 總價
+    type: FUNC
+    formula: "(total, isOtherFill)=>{
+      const inValid = !(total && typeof total === 'number' && isFinite(total));
+      if (isOtherFill) {
+        return null;
+      } else if (inValid) {
+        return 0;
+      }
+      return total;
+    }"
+    param:
+      - totalCost
+      - isOtherFill
+
+  # 總Total = A.材料費 + B.成型費 + C.加工費 + D.全檢包裝運輸 + E.管銷10%
+  totalCost:
+    type: MATH
+    label: 計算結果
+    formula: materialCost + tappingCost + processingCost + packageCost + managementCost
+
+  # 檢查是否有 Other_Fill_ME_Remark
+  isOtherFill:
+    type: FUNC
+    formula: "materialspec => (materialspec ===  'Other_Fill_ME_Remark')"
+    label: 檢查是否有 Other_Fill_ME_Remark
+    param:
+      - materialspec  
+
+  # A.材料費 = 材料單價 * partWeight / 1000
+  materialCost:
+    type: MATH
+    label: A.材料費
+    formula: materialUnitPrice * partWeight / 1000
+
+  # B.成型費 = 成型加工費用(攻牙) /  [成型費(攻牙) 一般產能] * ( 1 + [成型費(攻牙) Loss Rate])
+  tappingCost:
+    type: MATH
+    label: B.成型費
+    formula: tappingUnitPrice / tappingCapacity * (1 + tappingLossRate)
+
+  #  C.加工費 = 電鍍加工費 + 熱處理加工費 
+  processingCost:
+    type: MATH
+    label: C.加工費
+    formula: platingProcessingCost + heatTreamentCost
+
+  # D.全檢包裝運輸
+  packageCost:
+    type: MATH
+    label: D.全檢包裝運輸
+    formula: _packageCost
+
+  # E.管銷10% = (B.成型費 + C.加工費) * 0.1
+  managementCost:
+    type: MATH
+    label: E.管銷10%
+    formula: (tappingCost + processingCost) * management_percentage
+
+
+  #  ====================
+
+  # partWeight = partWeightD1 + partWeightD2 - partWeightD3
+  partWeight:
+    type: MATH
+    label: Part Weight(g)
+    formula: partWeightD1 + partWeightD2 - partWeightD3
+
+  # partWeightD1 = 3.14 * (d1外徑 /2) ^ 2  * d1高 * 密度 / 1000
+  partWeightD1:
+    type: FUNC
+    label: partWeightD1
+    formula: "(d1OutterDiameter, d1Height, materialDensity) => {
+      return 3.14 * Math.pow((d1OutterDiameter/2), 2) * d1Height * materialDensity / 1000;
+    }"
+    param: 
+      - d1OutterDiameter
+      - d1Height
+      - materialDensity
+
+  # partWeightD2 = 3.14 * (d2直徑 / 2) ^ 2  * d1高 * 密度 / 1000
+  partWeightD2:
+    type: FUNC
+    label: partWeightD2
+    formula: "(d2Diameter, d2Height, materialDensity) => {
+      return 3.14 * Math.pow(d2Diameter/2, 2) * d2Height * materialDensity / 1000;
+    }"
+    param: 
+      - d2Diameter
+      - d2Height
+      - materialDensity
+
+  # partWeightD2 = 3.14 * (OD內徑 / 2) ^ 2  * 內徑高 * 密度 / 1000
+  partWeightD3:
+    type: FUNC
+    label: partWeightD3
+    formula: "(innerDiameter, innerDiameterHeight, materialDensity) => {
+      return 3.14 * Math.pow(innerDiameter/2, 2) * innerDiameterHeight * materialDensity / 1000;
+    }"
+    param: 
+      - innerDiameter
+      - innerDiameterHeight
+      - materialDensity
+
+  # 電鍍加工費用 = partWeight *  電鍍處理單價  / 1000
+  platingProcessingCost:
+    type: MATH
+    label: 電鍍加工費用
+    formula: enabledPlating ? partWeight * turningPlatingUnitPrice / 1000 :0
+
+
+  # 熱處理加工費用 = partWeight * 熱處理單價 / 1000
+  heatTreamentCost:
+    type: MATH
+    label: 熱處理加工費用
+    formula: enabledHeat ? partWeight * materialHeatingUnitPrice / 1000 :0
+  
+scope:
+  materialspec: materialspec
+  material: material
+  d1OutterDiameter: d1OutterDiameter
+  d2Diameter: d2Diameter
+  d1Height: d1Height
+  d2Height: d2Height
+  innerDiameter: innerDiameter
+  innerDiameterHeight: innerDiameterHeight
+  materialDensity: materialDensity
+  materialHeatingUnitPrice: materialHeatingUnitPrice
+  materialUnitPrice: materialUnitPrice
+  enabledPlating: enabledPlating
+  enabledHeat: enabledHeat
+  # for export
+  nutType: nutType
+constant:
+  # 材料單價對照表
+  turningMaterialValues:
+    label: 材料單價下拉
+    value: 
+      ?getTurningMaterial:
+        - 
+      
+  # 成型加工費用(攻牙) tapping_unit_price
+  tappingUnitPrice:
+    label: 成型加工費用(攻牙)
+    ?getTurningCommon:
+      - me_others_screw_molding
+      - tapping_unit_price
+    # value: 37
+
+  # 成型費(攻牙) 一班產能 tapping_capacity
+  tappingCapacity:
+    label: 成型費(攻牙) 一班產能
+    ?getTurningCommon:
+      - me_others_screw_molding
+      - tapping_capacity
+    # value: 9000
+
+  # 成型費(攻牙) Loss Rate tapping_loss_rate
+  tappingLossRate:
+    label: 成型費(攻牙) Loss Rate
+    ?getTurningCommon:
+      - me_others_screw_molding
+      - tapping_loss_rate
+    # value: 0.03
+
+  # 加工費(電鍍) 單位費用 turning_plating_unit_price
+  turningPlatingUnitPrice:
+    label: 加工費(電鍍) 單位費用
+    ?getTurningCommon:
+      - me_others_screw_second_process
+      - turning_plating_unit_price
+    # value: 2.57
+
+  _packageCost:
+    label: D.全檢包裝運輸
+    ?getTurningCommon:
+      - me_others_screw_shipping_check
+      - turning_shippingcheck_unit_price
+    # value: 0.0002
+  management_percentage:
+    label: 管銷費 比例
+    ?getTurningCommon:
+      - me_others_screw_management_and_profit
+      - nut_management_and_profit
+    # value: 0.1
+
+global:

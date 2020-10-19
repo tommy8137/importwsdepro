@@ -1,0 +1,52 @@
+output:
+  accessoryAssyTime: fpcAdhesive_AssyTime_Sum
+  accessoryCost: fpcAdhesive_cost
+  areatransferunit: areatransferunit
+
+formula:
+# 背膠組裝時間總和 = Qty * 背膠組裝時間 -------------------------------------------------------------------------------------------------------------------
+  fpcAdhesive_AssyTime_Sum:
+    type: MATH
+    formula: FPCAdhesiveQty * fpcAdhesive_assy_time
+    label: 背膠組裝時間總和(sec)
+
+# 背膠費用 = (長 * 寬 / 1000000) * Qty * 背膠單價 * (1 + 背膠loss rate) -------------------------------------------------------------------------------------------------------------------
+  fpcAdhesive_cost:
+    type: MATH
+    formula: (FPCAdhesiveLength * FPCAdhesivewidth / areatransferunit ) * FPCAdhesiveQty * fpcAdhesive_unit_price * (1 + fpcAdhesive_loss_rate)
+    label: 背膠費用
+
+scope:
+  FPCAdhesiveLength: FPCAdhesiveLength
+  FPCAdhesivewidth: FPCAdhesivewidth
+  FPCAdhesiveQty: FPCAdhesiveQty
+
+constant:
+  fpcAdhesive_assy_time:
+    label: 背膠組裝時間
+    ?getFPCCommon:
+      - cable_fpc_auxiliary_materials
+      - adhesive_assy_time
+    # value: 12
+
+  fpcAdhesive_unit_price:
+    label: 背膠單價
+    ?getFPCCommon:
+      - cable_fpc_auxiliary_materials
+      - adhesive_cost
+    # value: 1.5
+
+  fpcAdhesive_loss_rate:
+    label: 背膠 loss rate
+    ?getFPCCommon:
+      - cable_fpc_auxiliary_materials
+      - stiffener_loss_rate
+    # value: 0.015
+
+  areatransferunit:
+    label: 面積轉換常數
+    ?getFPCCommon:
+      - cable_fpc_auxiliary_materials
+      - area_unit_transfer_constant
+    # value: 1000000
+

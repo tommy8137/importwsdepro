@@ -1,0 +1,407 @@
+multiple: false
+items:
+
+  - key: partssizelength
+    label: L(mm)
+    url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+    $Template:
+      - fetchData
+      - ^displayConfig
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    require: true
+    emdmKey: emdmBomInfo.partLong
+
+  - key: partssizewidth
+    label: W(mm)
+    url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+    $Template:
+      - fetchData
+      - ^displayConfig
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    require: true
+    emdmKey: emdmBomInfo.partWidth
+# PET單面膠 ----------------------------------------
+  - key: petSingle
+    $Template:
+      - ^displayConfig
+      - selectorString
+    label: PET單面膠
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: id
+      ?getGraphitePet:
+        -
+      # $thermal-graphite.dropdown.PetSingleValues:
+      #     - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    require: true
+    constrains:
+      - function: "(val) => {
+          return (val ==='' || val === null)
+        }"
+        message: "此欄位為必填"
+    emdmKey: emdmBomInfo.cmfForm.petSingle
+
+  - key: petSinglePrice
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getGraphitePet:
+        -
+      # $thermal-graphite.dropdown.PetSingleValues:
+      #   - ^values
+    mapFrom:
+      - petSingle
+
+# 封邊 ----------------------------------------
+  - key: workProcessing
+    $Template:
+      - ^displayConfig
+      - realtimeFormulaString
+    label: 封邊
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    func: "(graphiteLayer1) => {
+      if (!graphiteLayer1) {
+        return null;
+      }
+      return graphiteLayer1.indexOf('合成') >= 0 ? '單封邊' : '雙封邊';
+    }"
+    replaceBy:
+      - graphiteLayer1
+
+  - key: workProcessingPrice
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getGraphiteProcess:
+        -
+      # $thermal-graphite.dropdown.GraphiteWorkingValues:
+      #   - ^values
+    mapFrom:
+      - workProcessing
+
+  # 總厚度
+  - key: totalThickness
+    label: 總厚度
+    $Template:
+      - realtimeFormulaFloat
+      - ^displayConfig
+    grids: 0.5
+    func: "(graphiteLayerThickness1, glueDouble1, graphiteLayerThickness2, glueDouble2, isEnabled2, petSingle) => {
+              const group1 = Number(graphiteLayerThickness1) + Number(glueDouble1);
+              const group2 = Number(graphiteLayerThickness2) + Number(glueDouble2);
+              return Number((group1 + group2 + Number(petSingle)).toFixed(4));
+          }"
+    replaceBy:
+      - graphiteLayerThickness1
+      - glueDouble1
+      - graphiteLayerThickness2
+      - glueDouble2
+      - isEnabled2
+      - petSingle
+
+# ========================================
+# ================================
+  - key: graphite1
+    # label: 第1片石墨
+    $Template:
+      - compositeInline
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+    items:
+    # 片數 ----------------------------------------
+      # - key: isEnabled1
+      #   label: Enabled
+      #   $Template:
+      #     - checkBox
+      #   displayConfig:
+      #     $Template:
+      #       - displayConfig
+      #     grids: 0.5
+      #   emdmKey: emdmBomInfo.cmfForm.isEnabled1
+    # 石墨層類別 ----------------------------------------
+      - key: graphiteLayer1
+        $Template:
+          - ^displayConfig
+          - selectorString
+        label: 石墨層類別
+        selectorConfig:
+          $Template:
+            - selectorConfig
+          idKey: graphite_id
+          ?getGraphiteLayer1:
+            -
+          # $thermal-graphite.dropdown.GraphiteLayerValues:
+          #     - ^values
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1
+        require: true
+        constrains:
+          - function: "(val) => {
+              return (val ==='' || val === null)
+            }"
+            message: "此欄位為必填"
+        emdmKey: emdmBomInfo.cmfForm.graphiteLayer1
+    # 厚度 ----------------------------------------
+      - key: graphiteLayerThickness1
+        emdmKey: emdmBomInfo.cmfForm.graphiteLayerThickness1
+        $Template:
+          - ^displayConfig
+          - selectorString
+        label: 石墨厚度
+        selectorConfig:
+          $Template:
+            - selectorConfig
+          idKey: id
+          ?getGraphiteLayer1:
+            -
+          # $thermal-graphite.dropdown.GraphiteLayerValues:
+          #     - ^values
+          depends:
+            - graphiteLayer1
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 0.5
+        require: true
+        constrains:
+          - function: "(val) => {
+              return (val ==='' || val === null)
+            }"
+            message: "此欄位為必填"
+
+    # Glue雙面膠 ----------------------------------------
+      - key: glueDouble1
+        $Template:
+          - ^displayConfig
+          - selectorString
+        label: Glue雙面膠
+        selectorConfig:
+          $Template:
+            - selectorConfig
+          idKey: id
+          ?getGraphiteGlue1:
+            -
+          # $thermal-graphite.dropdown.GlueDoubleValues:
+          #     - ^values
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 0.5
+        require: true
+        constrains:
+          - function: "(val) => {
+              return (val ==='' || val === null)
+            }"
+            message: "此欄位為必填"
+        emdmKey: emdmBomInfo.cmfForm.glueDouble1
+
+    # ================== 以下價錢區塊 =====================
+      - key: graphiteLayerPrice1
+        $Template:
+          - mappedValueFloat
+        label: 石墨價錢
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 0.5
+          display: false
+        selectorConfig:
+          ?getGraphiteLayer1:
+            -
+          # $thermal-graphite.dropdown.GraphiteLayerValues:
+          #   - ^values
+        mapFrom:
+          - graphiteLayer1
+          - graphiteLayerThickness1
+
+      - key: glueDoublePrice1
+        $Template:
+          - mappedValueFloat
+        label: 雙面膠價錢
+        displayConfig:
+          $Template:
+            - displayConfig
+          display: false
+          grids: 0
+        selectorConfig:
+          $Template:
+            - selectorConfig
+          ?getGraphiteGlue1:
+            -
+          # $thermal-graphite.dropdown.GlueDoubleValues:
+          #   - ^values
+        mapFrom:
+          - glueDouble1
+# ================================
+# ================================
+  - key: graphite2
+    # label: 第2片石墨
+    $Template:
+      - compositeInline
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+    items:
+    # 片數 ----------------------------------------
+      - key: isEnabled2
+        label: Enabled
+        $Template:
+          - checkBox
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 0.5
+        emdmKey: emdmBomInfo.cmfForm.isEnabled2
+    # 石墨層類別 ----------------------------------------
+      - key: graphiteLayer2
+        $Template:
+          - ^displayConfig
+          - realtimeFormulaString
+        label: 石墨層類別
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1
+        func: "(graphiteLayer1, isEnabled2) => {
+          return isEnabled2 ? graphiteLayer1 : '';
+        }"
+        replaceBy:
+          - graphiteLayer1
+          - isEnabled2
+    # 厚度 ----------------------------------------
+      - key: graphiteLayerThickness2
+        emdmKey: emdmBomInfo.cmfForm.graphiteLayerThickness2
+        $Template:
+          - ^displayConfig
+          - selectorString
+        label: 石墨厚度
+        selectorConfig:
+          $Template:
+            - selectorConfig
+          idKey: id
+          ?getGraphiteLayer2:
+            -
+          # $thermal-graphite.dropdown.GraphiteLayerValues:
+          #     - ^values
+          depends: 
+            - graphiteLayer1 # 由於emdm bom那邊會有bug, 先用 graphiteLayer1 來depends
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 0.5
+          depends:
+            action: lock
+            condition:
+              isEnabled2: true
+        require: true
+        constrains:
+          - function: "(val, props) => {
+              return (val ==='' || val === null) && (props.isEnabled2)
+            }"
+            message: "此欄位為必填"
+            params:
+              - isEnabled2
+
+
+
+    # Glue雙面膠 ----------------------------------------
+      - key: glueDouble2
+        $Template:
+          - ^displayConfig
+          - selectorString
+        label: Glue雙面膠
+        selectorConfig:
+          $Template:
+            - selectorConfig
+          idKey: id
+          ?getGraphiteGlue2:
+            -
+          # $thermal-graphite.dropdown.GlueDoubleValues:
+          #     - ^values
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 0.5
+          depends:
+            action: lock
+            condition:
+              isEnabled2: true
+        require: true
+        constrains:
+          - function: "(val, props) => {
+              return (val ==='' || val === null) && (props.isEnabled2)
+            }"
+            message: "此欄位為必填"
+            params:
+              - isEnabled2
+        emdmKey: emdmBomInfo.cmfForm.glueDouble2
+
+    # ================== 以下價錢區塊 =====================
+      - key: graphiteLayerPrice2
+        $Template:
+          - mappedValueFloat
+        label: 石墨價錢
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 0.5
+          display: false
+        selectorConfig:
+          ?getGraphiteLayer2:
+            -
+          # $thermal-graphite.dropdown.GraphiteLayerValues:
+          #   - ^values
+        mapFrom:
+          - graphiteLayer1 # 由於emdm bom那邊會有bug, 先用 graphiteLayer1 來depends
+          - graphiteLayerThickness2
+
+      - key: glueDoublePrice2
+        $Template:
+          - mappedValueFloat
+        label: 雙面膠價錢
+        displayConfig:
+          $Template:
+            - displayConfig
+          display: false
+          grids: 0
+        selectorConfig:
+          $Template:
+            - selectorConfig
+          ?getGraphiteGlue2:
+            -
+          # $thermal-graphite.dropdown.GlueDoubleValues:
+          #   - ^values
+        mapFrom:
+          - glueDouble2
+# ================================

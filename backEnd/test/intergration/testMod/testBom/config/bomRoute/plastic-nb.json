@@ -1,0 +1,876 @@
+{
+  "xlsxName": "Test_Data_plastic_NB_DT_AIO.xlsx",
+  "sheetName": "NB_Plastic",
+  "startHorizontalCoordinates": "C",
+  "transferMode": "createPath",
+  "formate": "housing-plastic",
+  "metadata": {
+    "productType": {
+      "createPath": "productType",
+      "valuekey": "productType",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "1"
+    },
+    "testLabel": {
+      "createPath": "testLabel",
+      "valuekey": "testLabel",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "2"
+    },
+    "type1": {
+      "createPath": "type1",
+      "valuekey": "type1",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "3"
+    },
+    "type2": {
+      "createPath": "type2",
+      "valuekey": "type2",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "4"
+    },
+    "site": {
+      "createPath": "site",
+      "valuekey": "site",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "107"
+    }
+  },
+  "transferPartlistInfo": {
+    "hppartname": {
+      "createPath": "formData.toolingPartList.hpUser.hppartname",
+      "valuekey": "hppartname",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "7",
+      "default": null
+    },
+    "hppartnumber": {
+      "createPath": "formData.toolingPartList.hpUser.hppartnumber",
+      "valuekey": "hppartnumber",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": "8",
+      "default": null
+    },
+    "hpProcess": {
+      "createPath": "formData.toolingPartList.hpUser.hpProcess",
+      "valuekey": "hpProcess",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "10",
+      "default": null
+    },
+    "hpMaterialLossRate": {
+      "createPath": "formData.toolingPartList.hpUser.hpMaterialLossRate",
+      "valuekey": "hpMaterialLossRate",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hpPrice": {
+      "createPath": "formData.toolingPartList.hpUser.hpPrice",
+      "valuekey": "hpPrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hpPrice2": {
+      "createPath": "formData.toolingPartList.hpUser.hpPrice2",
+      "valuekey": "hpPrice2",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hpmaterialspec1": {
+      "createPath": "formData.toolingPartList.hpUser.hpmaterialspec1",
+      "valuekey": "hpmaterialspec1",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "11",
+      "default": null
+    },
+    "hpmaterial": {
+      "createPath": "formData.toolingPartList.hpUser.hpmaterial",
+      "valuekey": "hpmaterial",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "12",
+      "default": null
+    },
+    "hpmaterialspec2": {
+      "createPath": "formData.toolingPartList.hpUser.hpmaterialspec2",
+      "valuekey": "hpmaterialspec2",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": "13",
+      "default": null
+    },
+    "hpmaterial2": {
+      "createPath": "formData.toolingPartList.hpUser.hpmaterial2",
+      "valuekey": "hpmaterial2",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": "14",
+      "default": null
+    },
+    "hpMaterialColor": {
+      "createPath": "formData.toolingPartList.hpUser.hpMaterialColor",
+      "valuekey": "hpMaterialColor",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "15",
+      "default": null
+    },
+    "hpthickness": {
+      "createPath": "formData.toolingPartList.hpUser.hpthickness",
+      "valuekey": "hpthickness",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "16",
+      "default": null
+    },
+    "hppartweightone": {
+      "createPath": "formData.toolingPartList.hpUser.hppartweightone",
+      "valuekey": "hppartweightone",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": "17",
+      "default": null
+    },
+    "hppartweighttwo": {
+      "createPath": "formData.toolingPartList.hpUser.hppartweighttwo",
+      "valuekey": "hppartweighttwo",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": "18",
+      "default": null
+    },
+    "hppartssizewidth": {
+      "createPath": "formData.toolingPartList.hpUser.hppartssizespec.hppartssizewidth",
+      "valuekey": "hppartssizewidth",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "19",
+      "default": null
+    },
+    "hppartssizelength": {
+      "createPath": "formData.toolingPartList.hpUser.hppartssizespec.hppartssizelength",
+      "valuekey": "hppartssizelength",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "20",
+      "default": null
+    },
+    "hppartssizehigh": {
+      "createPath": "formData.toolingPartList.hpUser.hppartssizespec.hppartssizehigh",
+      "valuekey": "hppartssizehigh",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "21",
+      "default": null
+    },
+    "hpToolingPartsWeightSpec1": {
+      "createPath": "formData.toolingPartList.hpTooling.hpToolingPartsWeightSpec1",
+      "valuekey": "hpToolingPartsWeightSpec1",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": "24",
+      "default": null
+    },
+    "hpToolingPartsWeightSpec2": {
+      "createPath": "formData.toolingPartList.hpTooling.hpToolingPartsWeightSpec2",
+      "valuekey": "hpToolingPartsWeightSpec2",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": "25",
+      "default": null
+    },
+    "hpToolingMachineTon": {
+      "createPath": "formData.toolingPartList.hpTooling.hpToolingMachineTon",
+      "valuekey": "hpToolingMachineTon",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "26",
+      "default": null
+    },
+    "hpToolingModule": {
+      "createPath": "formData.toolingPartList.hpTooling.hpToolingModule",
+      "valuekey": "hpToolingModule",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hpToolingMachinePrice": {
+      "createPath": "formData.toolingPartList.hpTooling.hpToolingMachinePrice",
+      "valuekey": "hpToolingMachinePrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hpToolingHole": {
+      "createPath": "formData.toolingPartList.hpTooling.hpToolingHole",
+      "valuekey": "hpToolingHole",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": "27",
+      "default": null
+    },
+    "hpToolingCT": {
+      "createPath": "formData.toolingPartList.hpTooling.hpToolingCT",
+      "valuekey": "hpToolingCT",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": "28",
+      "default": null
+    },
+    "hpToolingShrinkRate": {
+      "createPath": "formData.toolingPartList.hpTooling.hpToolingShrinkRate",
+      "valuekey": "hpToolingShrinkRate",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": "29",
+      "default": 0
+    },
+    "hpToolingModuleFactory": {
+      "createPath": "formData.toolingPartList.hpTooling.hpToolingModuleFactory",
+      "valuekey": "hpToolingModuleFactory",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": "30",
+      "default": null
+    },
+    "hpToolingMoldingManufacturer": {
+      "createPath": "formData.toolingPartList.hpTooling.hpToolingMoldingManufacturer",
+      "valuekey": "hpToolingMoldingManufacturer",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": "31",
+      "default": null
+    },
+    "site": {
+      "createPath": "formData.toolingPartList.hpTooling.site",
+      "valuekey": "site",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": "32",
+      "default": null
+    },
+    "payoutSite": {
+      "createPath": "formData.toolingPartList.hpTooling.payoutSite",
+      "valuekey": "payoutSite",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": "33",
+      "default": null
+    },
+    "hpToolingBonded": {
+      "createPath": "formData.toolingPartList.hpTooling.hpToolingBonded",
+      "valuekey": "hpToolingBonded",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": "34",
+      "default": null
+    },
+    "hpToolingTSDate": {
+      "createPath": "formData.toolingPartList.hpTooling.hpToolingTSDate",
+      "valuekey": "hpToolingTSDate",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": "35",
+      "default": null
+    },
+    "hpToolingT1Date": {
+      "createPath": "formData.toolingPartList.hpTooling.hpToolingT1Date",
+      "valuekey": "hpToolingT1Date",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": "36",
+      "default": null
+    },
+    "hpToolingRemark": {
+      "createPath": "formData.toolingPartList.hpTooling.hpToolingRemark",
+      "valuekey": "hpToolingRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfPPaintingCheckBox": {
+      "createPath": "formData.CMFProcessList.cmfPPainting.cmfPPaintingCheckBox",
+      "valuekey": "cmfPPaintingCheckBox",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": "41",
+      "default": false
+    },
+    "cmfPPaintingType": {
+      "createPath": "formData.CMFProcessList.cmfPPainting.cmfPPaintingType",
+      "valuekey": "cmfPPaintingType",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": "42",
+      "default": null
+    },
+    "cmfPPrimerQTY": {
+      "createPath": "formData.CMFProcessList.cmfPPainting.cmfPPrimerQTY",
+      "valuekey": "cmfPPrimerQTY",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": "43",
+      "default": 0
+    },
+    "cmfPTopcoatQTY": {
+      "createPath": "formData.CMFProcessList.cmfPPainting.cmfPTopcoatQTY",
+      "valuekey": "cmfPTopcoatQTY",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": "44",
+      "default": 0
+    },
+    "cmfPPaintingColor": {
+      "createPath": "formData.CMFProcessList.cmfPPainting.cmfPPaintingColor",
+      "valuekey": "cmfPPaintingColor",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": "45",
+      "default": null
+    },
+    "cmfPPaintingVendor": {
+      "createPath": "formData.CMFProcessList.cmfPPainting.cmfPPaintingVendor",
+      "valuekey": "cmfPPaintingVendor",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": "46",
+      "default": null
+    },
+    "cmfPPaintingPrimerPrice": {
+      "createPath": "formData.CMFProcessList.cmfPPainting.cmfPPaintingPrimerPrice",
+      "valuekey": "cmfPPaintingPrimerPrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "cmfPPaintingTopcoatPrice": {
+      "createPath": "formData.CMFProcessList.cmfPPainting.cmfPPaintingTopcoatPrice",
+      "valuekey": "cmfPPaintingTopcoatPrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "cmfPaintingThickness": {
+      "createPath": "formData.CMFProcessList.cmfPPainting.cmfPaintingThickness",
+      "valuekey": "cmfPaintingThickness",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": "47",
+      "default": 0
+    },
+    "cmfPaintingLength": {
+      "createPath": "formData.CMFProcessList.cmfPPainting.cmfPaintingLength",
+      "valuekey": "cmfPaintingLength",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": "48",
+      "default": 0
+    },
+    "cmfPaintingWidth": {
+      "createPath": "formData.CMFProcessList.cmfPPainting.cmfPaintingWidth",
+      "valuekey": "cmfPaintingWidth",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": "49",
+      "default": 0
+    },
+    "cmfPaintingHeight": {
+      "createPath": "formData.CMFProcessList.cmfPPainting.cmfPaintingHeight",
+      "valuekey": "cmfPaintingHeight",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": "50",
+      "default": 0
+    },
+    "cmfPaintingMachinePrice": {
+      "createPath": "formData.CMFProcessList.cmfPPainting.cmfPaintingMachinePrice",
+      "valuekey": "cmfPaintingMachinePrice",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfPPaintingUP": {
+      "createPath": "formData.CMFProcessList.cmfPPainting.cmfPPaintingUP",
+      "valuekey": "cmfPPaintingUP",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfPPaintingWorkTime": {
+      "createPath": "formData.CMFProcessList.cmfPPainting.cmfPPaintingWorkTime",
+      "valuekey": "cmfPPaintingWorkTime",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfPPrintingWorkers": {
+      "createPath": "formData.CMFProcessList.cmfPPainting.cmfPPrintingWorkers",
+      "valuekey": "cmfPPrintingWorkers",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "cmfPPrintingWorkersForNCVM": {
+      "createPath": "formData.CMFProcessList.cmfPPainting.cmfPPrintingWorkersForNCVM",
+      "valuekey": "cmfPPrintingWorkersForNCVM",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "cmfPPaintingTypeId": {
+      "createPath": "formData.CMFProcessList.cmfPPainting.cmfPPaintingTypeId",
+      "valuekey": "cmfPPaintingTypeId",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "paint_type_id": {
+      "createPath": "formData.CMFProcessList.cmfPPainting.paint_type_id",
+      "valuekey": "paint_type_id",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "paint_color_id": {
+      "createPath": "formData.CMFProcessList.cmfPPainting.paint_color_id",
+      "valuekey": "paint_color_id",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfPEmbedNailCheckBox": {
+      "createPath": "formData.CMFProcessList.cmfPEmbedNail.cmfPEmbedNailCheckBox",
+      "valuekey": "cmfPEmbedNailCheckBox",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": "56",
+      "default": false
+    },
+    "cmfPEmbedNailAuto": {
+      "createPath": "formData.CMFProcessList.cmfPEmbedNail.cmfPEmbedNailAuto",
+      "valuekey": "cmfPEmbedNailAuto",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": "57",
+      "default": null
+    },
+    "cmfPEmbedNailCount": {
+      "createPath": "formData.CMFProcessList.cmfPEmbedNail.cmfPEmbedNailCount",
+      "valuekey": "cmfPEmbedNailCount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": "58",
+      "default": 0
+    },
+    "cmfPEmbedNailPrice": {
+      "createPath": "formData.CMFProcessList.cmfPEmbedNail.cmfPEmbedNailPrice",
+      "valuekey": "cmfPEmbedNailPrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "cmfPPrintingCheckBox": {
+      "createPath": "formData.CMFProcessList.cmfPrinting.cmfPPrintingCheckBox",
+      "valuekey": "cmfPPrintingCheckBox",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": "60",
+      "default": false
+    },
+    "cmfPPrintingType": {
+      "createPath": "formData.CMFProcessList.cmfPrinting.cmfPPrintingType",
+      "valuekey": "cmfPPrintingType",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": "61",
+      "default": null
+    },
+    "cmfPPrintingCount": {
+      "createPath": "formData.CMFProcessList.cmfPrinting.cmfPPrintingCount",
+      "valuekey": "cmfPPrintingCount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": "62",
+      "default": 0
+    },
+    "cmfPPriningUP": {
+      "createPath": "formData.CMFProcessList.cmfPrinting.cmfPPriningUP",
+      "valuekey": "cmfPPriningUP",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfPPriningLossRate": {
+      "createPath": "formData.CMFProcessList.cmfPrinting.cmfPPriningLossRate",
+      "valuekey": "cmfPPriningLossRate",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfPCNCProcessingAreaCheckBox": {
+      "createPath": "formData.CMFProcessList.cmfPCNCArea.cmfPCNCProcessingAreaCheckBox",
+      "valuekey": "cmfPCNCProcessingAreaCheckBox",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": "64",
+      "default": false
+    },
+    "cmfPCNCProcessingAreaType": {
+      "createPath": "formData.CMFProcessList.cmfPCNCArea.cmfPCNCProcessingAreaType",
+      "valuekey": "cmfPCNCProcessingAreaType",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "65",
+      "default": null
+    },
+    "cmfPCNCProcessingAreaCount": {
+      "createPath": "formData.CMFProcessList.cmfPCNCArea.cmfPCNCProcessingAreaCount",
+      "valuekey": "cmfPCNCProcessingAreaCount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": "66",
+      "default": 0
+    },
+    "cmfPCNCProcessingAreaUP": {
+      "createPath": "formData.CMFProcessList.cmfPCNCArea.cmfPCNCProcessingAreaUP",
+      "valuekey": "cmfPCNCProcessingAreaUP",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfPCNCProcessingAreaLossRate": {
+      "createPath": "formData.CMFProcessList.cmfPCNCArea.cmfPCNCProcessingAreaLossRate",
+      "valuekey": "cmfPCNCProcessingAreaLossRate",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfPCNCFeederCheckBox": {
+      "createPath": "formData.CMFProcessList.cmfPCNCFeeder.cmfPCNCFeederCheckBox",
+      "valuekey": "cmfPCNCFeederCheckBox",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": "68",
+      "default": false
+    },
+    "cmfPCNCFeederType": {
+      "createPath": "formData.CMFProcessList.cmfPCNCFeeder.cmfPCNCFeederType",
+      "valuekey": "cmfPCNCFeederType",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "69",
+      "default": null
+    },
+    "cmfPCNCFeederCount": {
+      "createPath": "formData.CMFProcessList.cmfPCNCFeeder.cmfPCNCFeederCount",
+      "valuekey": "cmfPCNCFeederCount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": "70",
+      "default": 0
+    },
+    "cmfPCNCFeederUP": {
+      "createPath": "formData.CMFProcessList.cmfPCNCFeeder.cmfPCNCFeederUP",
+      "valuekey": "cmfPCNCFeederUP",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfPCNCFeederLossRate": {
+      "createPath": "formData.CMFProcessList.cmfPCNCFeeder.cmfPCNCFeederLossRate",
+      "valuekey": "cmfPCNCFeederLossRate",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfPProductPolishingPLExist": {
+      "createPath": "formData.CMFProcessList.cmfPProductPolishingPL.cmfPProductPolishingPLExist",
+      "valuekey": "cmfPProductPolishingPLExist",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": "72",
+      "default": false
+    },
+    "cmfPProductPolishingPLContent": {
+      "createPath": "formData.CMFProcessList.cmfPProductPolishingPL.cmfPProductPolishingPLContent",
+      "valuekey": "cmfPProductPolishingPLContent",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": "73",
+      "default": null
+    },
+    "cmfPProductPolishingPLUP": {
+      "createPath": "formData.CMFProcessList.cmfPProductPolishingPL.cmfPProductPolishingPLUP",
+      "valuekey": "cmfPProductPolishingPLUP",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfPProductPolishingPLLossRate": {
+      "createPath": "formData.CMFProcessList.cmfPProductPolishingPL.cmfPProductPolishingPLLossRate",
+      "valuekey": "cmfPProductPolishingPLLossRate",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfPHotMeltCheckBox": {
+      "createPath": "formData.CMFProcessList.cmfPHotMelt.cmfPHotMeltCheckBox",
+      "valuekey": "cmfPHotMeltCheckBox",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": "75",
+      "default": false
+    },
+    "cmfPHotMeltCount": {
+      "createPath": "formData.CMFProcessList.cmfPHotMelt.cmfPHotMeltCount",
+      "valuekey": "cmfPHotMeltCount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": "76",
+      "default": 0
+    },
+    "cmfPBondingCheckBox": {
+      "createPath": "formData.CMFProcessList.cmfPBonding.cmfPBondingCheckBox",
+      "valuekey": "cmfPBondingCheckBox",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": "78",
+      "default": false
+    },
+    "cmfPBondingCount": {
+      "createPath": "formData.CMFProcessList.cmfPBonding.cmfPBondingCount",
+      "valuekey": "cmfPBondingCount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": "79",
+      "default": 0
+    },
+    "cmfPEMISputteringCheckBox": {
+      "createPath": "formData.CMFProcessList.cmfPEMISputtering.cmfPEMISputteringCheckBox",
+      "valuekey": "cmfPEMISputteringCheckBox",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": "81",
+      "default": false
+    },
+    "cmfPEMISputtering": {
+      "createPath": "formData.CMFProcessList.cmfPEMISputtering.cmfPEMISputtering",
+      "valuekey": "cmfPEMISputtering",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "82",
+      "default": null
+    },
+    "cmfPEMISputteringBaseMaterial": {
+      "createPath": "formData.CMFProcessList.cmfPEMISputtering.cmfPEMISputteringBaseMaterial",
+      "valuekey": "cmfPEMISputteringBaseMaterial",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "83",
+      "default": null
+    },
+    "cmfEMIsputteringPrice": {
+      "createPath": "formData.CMFProcessList.cmfPEMISputtering.cmfEMIsputteringPrice",
+      "valuekey": "cmfEMIsputteringPrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "cmfPPolishStressMarkExist": {
+      "createPath": "formData.CMFProcessList.cmfPPolishStressMark.cmfPPolishStressMarkExist",
+      "valuekey": "cmfPPolishStressMarkExist",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": "85",
+      "default": false
+    },
+    "cmfPChipRemovalExist": {
+      "createPath": "formData.CMFProcessList.cmfPChipRemoval.cmfPChipRemovalExist",
+      "valuekey": "cmfPChipRemovalExist",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": "87",
+      "default": false
+    },
+    "cmfPRollingOrDeburringExist": {
+      "createPath": "formData.CMFProcessList.cmfPRollingOrDeburring.cmfPRollingOrDeburringExist",
+      "valuekey": "cmfPRollingOrDeburringExist",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": "89",
+      "default": false
+    },
+    "cmfPLaserMarkingCheckBox": {
+      "createPath": "formData.CMFProcessList.cmfPLaserMarking.cmfPLaserMarkingCheckBox",
+      "valuekey": "cmfPLaserMarkingCheckBox",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": "91",
+      "default": false
+    },
+    "cmfPLaserMarkingCount": {
+      "createPath": "formData.CMFProcessList.cmfPLaserMarking.cmfPLaserMarkingCount",
+      "valuekey": "cmfPLaserMarkingCount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": "92",
+      "default": 0
+    },
+    "paintingAreaLengthAllowance": {
+      "createPath": "formData.hpCeParametersTab.hpCeParameters.paintingAreaLengthAllowance",
+      "valuekey": "paintingAreaLengthAllowance",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": "95",
+      "default": null
+    },
+    "paintingAreaWidthAllowance": {
+      "createPath": "formData.hpCeParametersTab.hpCeParameters.paintingAreaWidthAllowance",
+      "valuekey": "paintingAreaWidthAllowance",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": "96",
+      "default": null
+    },
+    "NCVMAreaLengthAllowance": {
+      "createPath": "formData.hpCeParametersTab.hpCeParameters.NCVMAreaLengthAllowance",
+      "valuekey": "NCVMAreaLengthAllowance",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": "97",
+      "default": null
+    },
+    "NCVMAreaWidthAllowance": {
+      "createPath": "formData.hpCeParametersTab.hpCeParameters.NCVMAreaWidthAllowance",
+      "valuekey": "NCVMAreaWidthAllowance",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": "98",
+      "default": null
+    },
+    "cmfPaintingCycleTime": {
+      "createPath": "formData.hpCeParametersTab.hpCeParameters.cmfPaintingCycleTime",
+      "valuekey": "cmfPaintingCycleTime",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": "99",
+      "default": null
+    },
+    "paintingLossRate": {
+      "createPath": "formData.hpCeParametersTab.hpCeParameters.paintingLossRate",
+      "valuekey": "paintingLossRate",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": "100",
+      "default": null
+    },
+    "formData,hpCeParametersTab,hmCeParameters,cmfPPaintingPcs": {
+      "createPath": "formData.hpCeParametersTab.hpCeParameters.cmfPPaintingPcs",
+      "valuekey": "cmfPPaintingPcs",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": "101",
+      "default": null
+    },
+    "formData,hpCeParametersTab,hpCeParameters,cmfPaintingMachineType": {
+      "createPath": "formData.hpCeParametersTab.hpCeParameters.cmfPaintingMachineType",
+      "valuekey": "cmfPaintingMachineType",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "102",
+      "default": null
+    },
+    "formData,hpCeParametersTab,hpCeParameters,cmfPaintingAreaLW": {
+      "createPath": "formData.hpCeParametersTab.hpCeParameters.cmfPaintingAreaLW",
+      "valuekey": "cmfPaintingAreaLW",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": "103",
+      "default": null
+    },
+    "formData,hpCeParametersTab,hpCeParameters,cmfPaintingAreaLH": {
+      "createPath": "formData.hpCeParametersTab.hpCeParameters.cmfPaintingAreaLH",
+      "valuekey": "cmfPaintingAreaLH",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": "104",
+      "default": null
+    },
+    "formData,hpCeParametersTab,hpCeParameters,cmfPaintingAreaWH": {
+      "createPath": "formData.hpCeParametersTab.hpCeParameters.cmfPaintingAreaWH",
+      "valuekey": "cmfPaintingAreaWH",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": "105",
+      "default": null
+    }
+  },
+  "verifyInfo": {
+    "material_cost": {
+      "label": "材料費",
+      "excelValueLongitudinalCoordinates": "108",
+      "valuekey": "material_cost",
+      "valueType": "material_cost",
+      "comparisonValuePath": "forDebug.debugInfo.housingPlastic.material_cost.value"
+    },
+    "forming_cost": {
+      "label": "成型費",
+      "excelValueLongitudinalCoordinates": "109",
+      "valuekey": "forming_cost",
+      "valueType": "forming_cost",
+      "comparisonValuePath": "forDebug.debugInfo.housingPlastic.forming_cost.value"
+    },
+    "secondary_processing_cost": {
+      "label": "二次加工費",
+      "excelValueLongitudinalCoordinates": "110",
+      "valuekey": "secondary_processing_cost",
+      "valueType": "secondary_processing_cost",
+      "comparisonValuePath": "forDebug.debugInfo.housingPlastic.secondary_processing_cost.value"
+    },
+    "painting_cost": {
+      "label": "噴塗費",
+      "excelValueLongitudinalCoordinates": "111",
+      "valuekey": "painting_cost",
+      "valueType": "painting_cost",
+      "comparisonValuePath": "forDebug.debugInfo.housingPlastic.painting_cost.value"
+    },
+    "profit": {
+      "label": "管銷&利潤",
+      "excelValueLongitudinalCoordinates": "112",
+      "valuekey": "E.profit",
+      "valueType": "E.profit",
+      "comparisonValuePath": "forDebug.debugInfo.housingPlastic.profit.value"
+    },
+    "cmfPNCVM_cost": {
+      "label": "NCVM 成本",
+      "excelValueLongitudinalCoordinates": "40",
+      "valuekey": "cmfPNCVM_cost",
+      "valueType": "cmfPNCVM_cost",
+      "comparisonValuePath": "forDebug.summary.housingPlastic.cmfPNCVM_cost"
+    },
+    "cmfPEmbedNail_cost": {
+      "label": "埋釘價",
+      "excelValueLongitudinalCoordinates": "59",
+      "valuekey": "cmfPEmbedNail_cost",
+      "valueType": "cmfPEmbedNail_cost",
+      "comparisonValuePath": "forDebug.summary.housingPlastic.cmfPEmbedNail_cost"
+    },
+    "cmfPrinting_cost": {
+      "label": "Printing 製程成本",
+      "excelValueLongitudinalCoordinates": "63",
+      "valuekey": "cmfPrinting_cost",
+      "valueType": "cmfPrinting_cost",
+      "comparisonValuePath": "forDebug.summary.housingPlastic.cmfPrinting_cost"
+    },
+    "cmfPCNCProcessingArea_cost": {
+      "label": "成品CNC製程 局部加工成本",
+      "excelValueLongitudinalCoordinates": "67",
+      "valuekey": "cmfPCNCProcessingArea_cost",
+      "valueType": "cmfPCNCProcessingArea_cost",
+      "comparisonValuePath": "forDebug.summary.housingPlastic.cmfPCNCProcessingArea_cost"
+    },
+    "cmfPCNCFeeder_cost": {
+      "label": "成品CNC製程 除料頭成本",
+      "excelValueLongitudinalCoordinates": "71",
+      "valuekey": "cmfPCNCFeeder_cost",
+      "valueType": "cmfPCNCFeeder_cost",
+      "comparisonValuePath": "forDebug.summary.housingPlastic.cmfPCNCFeeder_cost"
+    },
+    "cmfPProductPolishingPL_cost": {
+      "label": "成品打磨(PL線)成本",
+      "excelValueLongitudinalCoordinates": "74",
+      "valuekey": "cmfPProductPolishingPL_cost",
+      "valueType": "cmfPProductPolishingPL_cost",
+      "comparisonValuePath": "forDebug.summary.housingPlastic.cmfPProductPolishingPL_cost"
+    },
+    "cmfPHotMelt_cost": {
+      "label": "熱熔(數量)成本",
+      "excelValueLongitudinalCoordinates": "77",
+      "valuekey": "cmfPHotMelt_cost",
+      "valueType": "cmfPHotMelt_cost",
+      "comparisonValuePath": "forDebug.summary.housingPlastic.cmfPHotMelt_cost"
+    },
+    "cmfPBonding_cost": {
+      "label": "Bonding(處)成本",
+      "excelValueLongitudinalCoordinates": "80",
+      "valuekey": "cmfPBonding_cost",
+      "valueType": "cmfPBonding_cost",
+      "comparisonValuePath": "forDebug.summary.housingPlastic.cmfPBonding_cost"
+    },
+    "cmfPEMISputtering_cost": {
+      "label": "EMI Sputtering成本",
+      "excelValueLongitudinalCoordinates": "84",
+      "valuekey": "cmfPEMISputtering_cost",
+      "valueType": "cmfPEMISputtering_cost",
+      "comparisonValuePath": "forDebug.summary.housingPlastic.cmfPEMISputtering_cost"
+    },
+    "cmfPPolishStressMark_cost": {
+      "label": "Polish應力痕成本",
+      "excelValueLongitudinalCoordinates": "86",
+      "valuekey": "cmfPPolishStressMark_cost",
+      "valueType": "cmfPPolishStressMark_cost",
+      "comparisonValuePath": "forDebug.summary.housingPlastic.cmfPPolishStressMark_cost"
+    },
+    "cmfPChipRemoval_cost": {
+      "label": "除屑(IMR)成本",
+      "excelValueLongitudinalCoordinates": "88",
+      "valuekey": "cmfPChipRemoval_cost",
+      "valueType": "cmfPChipRemoval_cost",
+      "comparisonValuePath": "forDebug.summary.housingPlastic.cmfPChipRemoval_cost"
+    },
+    "cmfPRollingOrDeburring_cost": {
+      "label": "滾邊or去毛邊(PL面)成本",
+      "excelValueLongitudinalCoordinates": "90",
+      "valuekey": "cmfPRollingOrDeburring_cost",
+      "valueType": "cmfPRollingOrDeburring_cost",
+      "comparisonValuePath": "forDebug.summary.housingPlastic.cmfPRollingOrDeburring_cost"
+    },
+    "cmfPLaserMarking_cost": {
+      "label": "icon雷雕(處)成本",
+      "excelValueLongitudinalCoordinates": "93",
+      "valuekey": "cmfPLaserMarking_cost",
+      "valueType": "cmfPLaserMarking_cost",
+      "comparisonValuePath": "forDebug.summary.housingPlastic.cmfPLaserMarking_cost"
+    },
+    "total": {
+      "label": "總價",
+      "excelValueLongitudinalCoordinates": "113",
+      "valuekey": "total",
+      "valueType": "total",
+      "comparisonValuePath": "forDebug.summary.housingPlastic.total"
+    }
+  }
+}

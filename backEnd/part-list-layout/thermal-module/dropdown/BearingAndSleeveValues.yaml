@@ -1,0 +1,77 @@
+values:
+  - bearingAndSleeve: Sleeve+塑膠
+    bearingAndSleevePrice: 0
+    fanSize: 60*60*3.5
+  - bearingAndSleeve: FDB+金屬
+    bearingAndSleevePrice: 0
+    fanSize: 60*60*3.5
+
+  - bearingAndSleeve: Sleeve+塑膠
+    bearingAndSleevePrice: 0
+    fanSize: 60*60*4
+  - bearingAndSleeve: FDB+金屬
+    bearingAndSleevePrice: 0
+    fanSize: 60*60*4
+
+  - bearingAndSleeve: Sleeve+塑膠
+    bearingAndSleevePrice: 0
+    fanSize: 60*60*4.5
+  - bearingAndSleeve: FDB+金屬
+    bearingAndSleevePrice: 0
+    fanSize: 60*60*4.5
+
+  - bearingAndSleeve: Sleeve+塑膠
+    bearingAndSleevePrice: 0
+    fanSize: 60*60*5
+  - bearingAndSleeve: FDB+金屬
+    bearingAndSleevePrice: 0.35
+    fanSize: 60*60*5
+
+  - bearingAndSleeve: Sleeve+塑膠
+    bearingAndSleevePrice: 0
+    fanSize: 60*60*5.5
+  - bearingAndSleeve: FDB+金屬
+    bearingAndSleevePrice: 0.35
+    fanSize: 60*60*5.5
+
+  - bearingAndSleeve: Sleeve+塑膠
+    bearingAndSleevePrice: 0
+    fanSize: 60*60*6
+  - bearingAndSleeve: FDB+金屬
+    bearingAndSleevePrice: 0.35
+    fanSize: 60*60*6
+
+  - bearingAndSleeve: Sleeve+塑膠
+    bearingAndSleevePrice: 0
+    fanSize: 60*60*6.5
+  - bearingAndSleeve: FDB+金屬
+    bearingAndSleevePrice: 0.35
+    fanSize: 60*60*6.5
+
+  - bearingAndSleeve: Sleeve+塑膠
+    bearingAndSleevePrice: 0
+    fanSize: 60*60*7
+  - bearingAndSleeve: FDB+金屬
+    bearingAndSleevePrice: 0.35
+    fanSize: 60*60*7
+
+  - bearingAndSleeve: Sleeve+塑膠
+    bearingAndSleevePrice: 0
+    fanSize: 60*60*7.5
+  - bearingAndSleeve: FDB+金屬
+    bearingAndSleevePrice: 0.35
+    fanSize: 60*60*7.5
+
+  - bearingAndSleeve: Sleeve+塑膠
+    bearingAndSleevePrice: 0
+    fanSize: 70*70*5
+  - bearingAndSleeve: FDB+金屬
+    bearingAndSleevePrice: 0.35
+    fanSize: 70*70*5
+
+  - bearingAndSleeve: Sleeve+塑膠
+    bearingAndSleevePrice: 0
+    fanSize: 80*80*5
+  - bearingAndSleeve: FDB+金屬
+    bearingAndSleevePrice: 0.35
+    fanSize: 80*80*5

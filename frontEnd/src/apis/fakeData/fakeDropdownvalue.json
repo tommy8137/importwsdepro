@@ -1,0 +1,3257 @@
+[
+  {
+    "id": "a65a7478-43cf-11e9-b34d-0242ac110002",
+    "item_name": "CoSign",
+    "path": "CONSIGN",
+    "field_name": "supply_type",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "48b79de4-43a9-11e9-b34d-0242ac110002",
+    "item_name": "ME",
+    "path": "ME",
+    "field_name": "func_ctgy",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0559741e-43a9-11e9-b34d-0242ac110002",
+    "item_name": "ID",
+    "path": "ID",
+    "field_name": "func_ctgy",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "48c33fd2-43a9-11e9-b34d-0242ac110002",
+    "item_name": "RF",
+    "path": "RF",
+    "field_name": "func_ctgy",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "48bb3134-43a9-11e9-b34d-0242ac110002",
+    "item_name": "EMC\n",
+    "path": "EMC",
+    "field_name": "func_ctgy",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "48c780f6-43a9-11e9-b34d-0242ac110001",
+    "item_name": "AV",
+    "path": "AV",
+    "field_name": "supply_type",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "a6560172-43cf-11e9-b34d-0242ac110002",
+    "item_name": "AVAP",
+    "path": "AVAP",
+    "field_name": "supply_type",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "b821322a-46e3-11e9-a2f5-0242ac110002",
+    "item_name": "Heatsink",
+    "path": "TRML.HS",
+    "field_name": "supply_type",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "b12c85fc-4a24-11e9-b26a-0242ac110002",
+    "item_name": "LCD Cover",
+    "path": "LCDCOV",
+    "field_name": "gb_assy_ctgy",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "b13dc54c-4a24-11e9-b26a-0242ac110002",
+    "item_name": "LCD Bezel",
+    "path": "LCDBZL",
+    "field_name": "gb_assy_ctgy",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "b148fd72-4a24-11e9-b26a-0242ac110002",
+    "item_name": "U-Case",
+    "path": "UC",
+    "field_name": "gb_assy_ctgy",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "b15c5624-4a24-11e9-b26a-0242ac110002",
+    "item_name": "L-Case",
+    "path": "LC",
+    "field_name": "gb_assy_ctgy",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "b165f6a2-4a24-11e9-b26a-0242ac110002",
+    "item_name": "PCB",
+    "path": "PCB",
+    "field_name": "gb_assy_ctgy",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "b16ac6c8-4a24-11e9-b26a-0242ac110002",
+    "item_name": "KB Support ",
+    "path": "KBSPRT",
+    "field_name": "gb_assy_ctgy",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06493120-4a25-11e9-b26a-0242ac110002",
+    "item_name": "LCD DC-Level",
+    "path": "LCDDCLV",
+    "field_name": "gb_assy_ctgy",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0657528c-4a25-11e9-b26a-0242ac110002",
+    "item_name": "System DC-Level",
+    "path": "SYSDCLV",
+    "field_name": "gb_assy_ctgy",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "48c780f6-43a9-11e9-b34d-0242ac110002",
+    "item_name": "Thermal",
+    "path": "THERMAL",
+    "field_name": "func_ctgy",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063d7ff8-554a-11e9-ab5c-0242ac110002",
+    "item_name": "Non_UL導電布灰",
+    "path": "EMC2.CONDU.T0085.NUG",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063d8e44-554a-11e9-ab5c-0242ac110002",
+    "item_name": "UL導電布灰",
+    "path": "EMC2.CONDU.T013.UG",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063d913c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "Non_UL導電布灰",
+    "path": "EMC2.CONDU.T013.NUG",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063d948e-554a-11e9-ab5c-0242ac110002",
+    "item_name": "UL導電布黑",
+    "path": "EMC2.CONDU.T013.UG",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063d984e-554a-11e9-ab5c-0242ac110002",
+    "item_name": "Non_UL導電布黑",
+    "path": "EMC2.CONDU.T013.NUB",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063d9b78-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0",
+    "path": "EMC2.GASKE.ULGASKETG.T0",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063d9e70-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0",
+    "path": "EMC2.GASKE.NON_ULGASKETG.T0",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063da15e-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0",
+    "path": "EMC2.GASKE.ULGASKETB.T0",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063da5c8-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0",
+    "path": "EMC2.GASKE.NON_ULGASKETB.T0",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063da8ca-554a-11e9-ab5c-0242ac110002",
+    "item_name": "1",
+    "path": "EMC2.GASKE.UL_ECO_FORM.T1",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063dac62-554a-11e9-ab5c-0242ac110002",
+    "item_name": "1",
+    "path": "EMC2.GASKE.NON_UL_ECO_FORM.T1",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e320e-554a-11e9-ab5c-0242ac110002",
+    "item_name": "FZ_015E保護膜_8515B",
+    "path": "MEOTHERS.PROTE.T0P05.FZ_01",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e3524-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PE_T_58保護膜",
+    "path": "MEOTHERS.PROTE.T0P05.PE_T_",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e3740-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SJ_450P保護膜",
+    "path": "MEOTHERS.PROTE.T0P05.SJ_45",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e3a42-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PE_W150保護膜",
+    "path": "MEOTHERS.PROTE.T0P05.PE_W1",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e3c72-554a-11e9-ab5c-0242ac110002",
+    "item_name": "TR-5001-LP",
+    "path": "MEOTHERS.PROTE.T0P05.TR-50",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e3eb6-554a-11e9-ab5c-0242ac110002",
+    "item_name": "TR-5001-MP",
+    "path": "MEOTHERS.PROTE.T0P05.TR-50",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e421c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "TR-5001-HP",
+    "path": "MEOTHERS.PROTE.T0P05.TR-50",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e4492-554a-11e9-ab5c-0242ac110002",
+    "item_name": "RH7027",
+    "path": "MEOTHERS.PROTE.T0P06.RH702",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e46cc-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PET_E_006",
+    "path": "MEOTHERS.PROTE.T0P06.PET_E",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e48e8-554a-11e9-ab5c-0242ac110002",
+    "item_name": "QLD-G1208P-60A",
+    "path": "MEOTHERS.PROTE.T0P075.QLD-G",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e4b18-554a-11e9-ab5c-0242ac110002",
+    "item_name": "TR-7501-H2P",
+    "path": "MEOTHERS.PROTE.T0P075.TR-75",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e4d66-554a-11e9-ab5c-0242ac110002",
+    "item_name": "TR_1001_H_20_30G",
+    "path": "MEOTHERS.PROTE.T0P1.TR_10",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e4f96-554a-11e9-ab5c-0242ac110002",
+    "item_name": "TR_1001_L_6_12G",
+    "path": "MEOTHERS.PROTE.T0P1.TR_10",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e51b2-554a-11e9-ab5c-0242ac110002",
+    "item_name": "TR_1001_LL_3_6G",
+    "path": "MEOTHERS.PROTE.T0P1.TR_10",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e53ce-554a-11e9-ab5c-0242ac110002",
+    "item_name": "TR_1001_LLL_1_3G",
+    "path": "MEOTHERS.PROTE.T0P1.TR_10",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e55ea-554a-11e9-ab5c-0242ac110002",
+    "item_name": "TR_1001_LP_6_12G",
+    "path": "MEOTHERS.PROTE.T0P1.TR_10",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e58c4-554a-11e9-ab5c-0242ac110002",
+    "item_name": "TR_1001_M 12_20G",
+    "path": "MEOTHERS.PROTE.T0P1.TR_10",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e5b1c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "TR_1001_MP",
+    "path": "MEOTHERS.PROTE.T0P1.TR_10",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e5d4c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "DST_5",
+    "path": "MEOTHERS.ADHES.T0P05.DST_5",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e6058-554a-11e9-ab5c-0242ac110002",
+    "item_name": "DS_5",
+    "path": "MEOTHERS.ADHES.T0P05.DS_5",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e6364-554a-11e9-ab5c-0242ac110002",
+    "item_name": "皇冠7972G",
+    "path": "MEOTHERS.ADHES.T0P05.HG792G",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e6670-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PW_05",
+    "path": "MEOTHERS.ADHES.T0P05.PW_05",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e6aa8-554a-11e9-ab5c-0242ac110002",
+    "item_name": "JA305",
+    "path": "MEOTHERS.ADHES.T0P05.JA305",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e6f94-554a-11e9-ab5c-0242ac110002",
+    "item_name": "JP005B",
+    "path": "MEOTHERS.ADHES.T0P05.JP005",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e72be-554a-11e9-ab5c-0242ac110002",
+    "item_name": "NITTO_GA835_上海產",
+    "path": "MEOTHERS.ADHES.T0P05.NITTO_XH",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e75de-554a-11e9-ab5c-0242ac110002",
+    "item_name": "NITTO_GA835_日本產",
+    "path": "MEOTHERS.ADHES.T0P05.NITTO_JP",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e78e0-554a-11e9-ab5c-0242ac110002",
+    "item_name": "3M_467MP",
+    "path": "MEOTHERS.ADHES.T0P05.3M_46",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e7bce-554a-11e9-ab5c-0242ac110002",
+    "item_name": "3M_55256",
+    "path": "MEOTHERS.ADHES.T0P05.3M_55",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e7eb2-554a-11e9-ab5c-0242ac110002",
+    "item_name": "TESA_68842",
+    "path": "MEOTHERS.ADHES.T0P05.T68842",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e825e-554a-11e9-ab5c-0242ac110002",
+    "item_name": "TESA_68742",
+    "path": "MEOTHERS.ADHES.T0P05.T68742",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e854c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SONY_NP203",
+    "path": "MEOTHERS.ADHES.T0P05.SONY_NP203",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e88ee-554a-11e9-ab5c-0242ac110002",
+    "item_name": "TESA_4972",
+    "path": "MEOTHERS.ADHES.T0P05.TESA_4972",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e8b96-554a-11e9-ab5c-0242ac110002",
+    "item_name": "TESA_51972",
+    "path": "MEOTHERS.ADHES.T0P05.TESA_51972",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e8f10-554a-11e9-ab5c-0242ac110002",
+    "item_name": "NITTO_56605B",
+    "path": "MEOTHERS.ADHES.T0P05.NITTO_566",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e921c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "3M_9460PC",
+    "path": "MEOTHERS.ADHES.T0P05.3M_9460PC",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e94f6-554a-11e9-ab5c-0242ac110002",
+    "item_name": "3M_9671LE",
+    "path": "MEOTHERS.ADHES.T0P05.3M_9671LE",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e9780-554a-11e9-ab5c-0242ac110002",
+    "item_name": "3M_8228B",
+    "path": "MEOTHERS.ADHES.T0P05.3M_8228B",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e9a5a-554a-11e9-ab5c-0242ac110002",
+    "item_name": "3M_9626",
+    "path": "MEOTHERS.ADHES.T0P05.3M_9626",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e9cee-554a-11e9-ab5c-0242ac110002",
+    "item_name": "TT219導電背膠",
+    "path": "MEOTHERS.ADHES.T0P05.TT219",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e9fc8-554a-11e9-ab5c-0242ac110002",
+    "item_name": "JC205導電背膠",
+    "path": "MEOTHERS.ADHES.T0P05.JC205",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063ea356-554a-11e9-ab5c-0242ac110002",
+    "item_name": "DSTT_7N",
+    "path": "MEOTHERS.ADHES.T0P07.DSTT_7N",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063ea6ee-554a-11e9-ab5c-0242ac110002",
+    "item_name": "DS_10B",
+    "path": "MEOTHERS.ADHES.T0P07.DS_10B",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063ea98c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "DST_10",
+    "path": "MEOTHERS.ADHES.T0P07.DST_10",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063eacac-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PW_10",
+    "path": "MEOTHERS.ADHES.T0P07.PW_10",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063eaf4a-554a-11e9-ab5c-0242ac110002",
+    "item_name": "3M_468MP",
+    "path": "MEOTHERS.ADHES.T0P07.3M_468MP",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063eb1e8-554a-11e9-ab5c-0242ac110002",
+    "item_name": "TESA_4982",
+    "path": "MEOTHERS.ADHES.T0P07.TESA_4982",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063eb5f8-554a-11e9-ab5c-0242ac110002",
+    "item_name": "DSTT_13N",
+    "path": "MEOTHERS.ADHES.T0P13.DSTT_13N",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063eb922-554a-11e9-ab5c-0242ac110002",
+    "item_name": "3M_468C",
+    "path": "MEOTHERS.ADHES.T0P13.3M_468C",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063ebbfc-554a-11e9-ab5c-0242ac110002",
+    "item_name": "DS_15",
+    "path": "MEOTHERS.ADHES.T0P15.DS_15",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063ec21e-554a-11e9-ab5c-0242ac110002",
+    "item_name": "DS_15B",
+    "path": "MEOTHERS.ADHES.T0P15.DS_15B",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063ec494-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SONY_G4000",
+    "path": "MEOTHERS.ADHES.T0P15.SONY_G400",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063ec732-554a-11e9-ab5c-0242ac110002",
+    "item_name": "3M_9888T",
+    "path": "MEOTHERS.ADHES.T0P15.3M_9888T",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063ecb06-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SONY_G9000",
+    "path": "MEOTHERS.ADHES.T0P15.SONY_G900",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063ecd4a-554a-11e9-ab5c-0242ac110002",
+    "item_name": "3M_9080HL",
+    "path": "MEOTHERS.ADHES.T0P15.3M_9080HL",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063ed07e-554a-11e9-ab5c-0242ac110002",
+    "item_name": "NITTO_5000NS",
+    "path": "MEOTHERS.ADHES.T0P15.NITTO_500",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063ed31c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "3M_9448AB",
+    "path": "MEOTHERS.ADHES.T0P15.3M_9448AB",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063ed696-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SONY_G9900",
+    "path": "MEOTHERS.ADHES.T0P15.SONY_G990",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063ed934-554a-11e9-ab5c-0242ac110002",
+    "item_name": "G9500R",
+    "path": "MEOTHERS.ADHES.T0P15.G9500R",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063ede2a-554a-11e9-ab5c-0242ac110002",
+    "item_name": "NITTO_5000NSLV",
+    "path": "MEOTHERS.ADHES.T0P15.NITTO_5000NSLV",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063ee276-554a-11e9-ab5c-0242ac110002",
+    "item_name": "NITTO_5000NCB",
+    "path": "MEOTHERS.ADHES.T0P15.NITTO_5000NCB",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063ee532-554a-11e9-ab5c-0242ac110002",
+    "item_name": "NT5000NSLV",
+    "path": "MEOTHERS.ADHES.T0P15.NT5000NSL",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063ee7c6-554a-11e9-ab5c-0242ac110002",
+    "item_name": "3M_4914VHB",
+    "path": "MEOTHERS.ADHES.T0P15.3M_4914VH",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063eea00-554a-11e9-ab5c-0242ac110002",
+    "item_name": "DS_20",
+    "path": "MEOTHERS.ADHES.T0P2.DS_20",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063eed7a-554a-11e9-ab5c-0242ac110002",
+    "item_name": "TESA_68644",
+    "path": "MEOTHERS.ADHES.T0P2.TESA_6864",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063ef090-554a-11e9-ab5c-0242ac110002",
+    "item_name": "TESA_61365",
+    "path": "MEOTHERS.ADHES.T0P2.TESA_6136",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063ef34c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "TESA_61395",
+    "path": "MEOTHERS.ADHES.T0P2.TESA_6139",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063ef6e4-554a-11e9-ab5c-0242ac110002",
+    "item_name": "TESA_62624",
+    "path": "MEOTHERS.ADHES.T0P2.TESA_6262",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063efa04-554a-11e9-ab5c-0242ac110002",
+    "item_name": "3M_WT_20",
+    "path": "MEOTHERS.ADHES.T0P2.3M_WT_20",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063efcac-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SLR1125",
+    "path": "MEOTHERS.ADHES.T0P25.SLR1125",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063eff54-554a-11e9-ab5c-0242ac110002",
+    "item_name": "TESA_62645",
+    "path": "MEOTHERS.ADHES.T0P25.TESA_6264",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f026a-554a-11e9-ab5c-0242ac110002",
+    "item_name": "3M_4914VHB",
+    "path": "MEOTHERS.ADHES.T0P25.3M_4914VH",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f06b6-554a-11e9-ab5c-0242ac110002",
+    "item_name": "3M_SR5625",
+    "path": "MEOTHERS.ADHES.T0P25.3M_SR5625",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f097c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "NITTO_GA6330",
+    "path": "MEOTHERS.ADHES.T0P3.NITTO_GA6",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f0cc4-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SONY_UT1430",
+    "path": "MEOTHERS.ADHES.T0P3.SONY_UT14",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f0fa8-554a-11e9-ab5c-0242ac110002",
+    "item_name": "TESA_61315",
+    "path": "MEOTHERS.ADHES.T0P3.TESA_6131",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f12e6-554a-11e9-ab5c-0242ac110002",
+    "item_name": "TESA_62626",
+    "path": "MEOTHERS.ADHES.T0P3.TESA_6262",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f157a-554a-11e9-ab5c-0242ac110002",
+    "item_name": "NITTO_DY_040N",
+    "path": "MEOTHERS.ADHES.T0P4.NITTO_DY_",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f18d6-554a-11e9-ab5c-0242ac110002",
+    "item_name": "3M_BD041VHB",
+    "path": "MEOTHERS.ADHES.T0P4.3M_BD041V",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f1bce-554a-11e9-ab5c-0242ac110002",
+    "item_name": "3M_4920VHB",
+    "path": "MEOTHERS.ADHES.T0P4.3M_4920VH",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f1eb2-554a-11e9-ab5c-0242ac110002",
+    "item_name": "DIC_8404B",
+    "path": "MEOTHERS.ADHES.T0P4.DIC_8404B",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f2240-554a-11e9-ab5c-0242ac110002",
+    "item_name": "3M_5915VHB",
+    "path": "MEOTHERS.ADHES.T0P4.3M_5915VH",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f256a-554a-11e9-ab5c-0242ac110002",
+    "item_name": "3M_5925VHB替代料_科捷龍_KJ6064B",
+    "path": "MEOTHERS.ADHES.T0P64.3M_5925VH",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f2916-554a-11e9-ab5c-0242ac110002",
+    "item_name": "NITTO_DY064N",
+    "path": "MEOTHERS.ADHES.T0P64.NITTO_DY0",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f2f38-554a-11e9-ab5c-0242ac110002",
+    "item_name": "3M_5925VHB",
+    "path": "MEOTHERS.ADHES.T0P64.3M_5925VH",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f3230-554a-11e9-ab5c-0242ac110002",
+    "item_name": "3M_BD065VHB",
+    "path": "MEOTHERS.ADHES.T0P64.3M_BD065V",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f3500-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SDTT_7N",
+    "path": "MEOTHERS.ADHES.T0P7.SDTT_7N",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f37f8-554a-11e9-ab5c-0242ac110002",
+    "item_name": "NITTO_DY_080N",
+    "path": "MEOTHERS.ADHES.T0P8.NITTO_DY_",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f3b36-554a-11e9-ab5c-0242ac110002",
+    "item_name": "3M_5930VHB",
+    "path": "MEOTHERS.ADHES.T0P8.3M_5930VH",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f3e1a-554a-11e9-ab5c-0242ac110002",
+    "item_name": "KVH200",
+    "path": "MEOTHERS.SPONG.T0P2.KVH200",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f40f4-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PORON_SRS32P",
+    "path": "MEOTHERS.SPONG.T0P2.PORON_SRS",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f43d8-554a-11e9-ab5c-0242ac110002",
+    "item_name": "KVH200",
+    "path": "MEOTHERS.SPONG.T0P3.KVH200",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f46b2-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PORON_SRS48P",
+    "path": "MEOTHERS.SPONG.T0P3.PORON_SRS",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f4982-554a-11e9-ab5c-0242ac110002",
+    "item_name": "KVH200",
+    "path": "MEOTHERS.SPONG.T0P4.KVH200",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f4c98-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PORON_SRS40P",
+    "path": "MEOTHERS.SPONG.T0P4.PORON_SRS",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f4f86-554a-11e9-ab5c-0242ac110002",
+    "item_name": "CR1015",
+    "path": "MEOTHERS.SPONG.T0P5.CR1015",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f53e6-554a-11e9-ab5c-0242ac110002",
+    "item_name": "EVA",
+    "path": "MEOTHERS.SPONG.T0P5.EVA",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f59b8-554a-11e9-ab5c-0242ac110002",
+    "item_name": "E4308",
+    "path": "MEOTHERS.SPONG.T0P5.E4308",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f5c9c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "YU55",
+    "path": "MEOTHERS.SPONG.T0P5.YU55",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f5f4e-554a-11e9-ab5c-0242ac110002",
+    "item_name": "YU356",
+    "path": "MEOTHERS.SPONG.T0P5.YU356",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f625a-554a-11e9-ab5c-0242ac110002",
+    "item_name": "E4382",
+    "path": "MEOTHERS.SPONG.T0P5.E4382",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f653e-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SM55",
+    "path": "MEOTHERS.SPONG.T0P5.SM55",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f6818-554a-11e9-ab5c-0242ac110002",
+    "item_name": "KVH200",
+    "path": "MEOTHERS.SPONG.T0P5.KVH200",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f6b74-554a-11e9-ab5c-0242ac110002",
+    "item_name": "LV100",
+    "path": "MEOTHERS.SPONG.T0P5.LV100",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f6e9e-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PORON_SRS40P",
+    "path": "MEOTHERS.SPONG.T0P5.PORON_SRS",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f715a-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PORON_SRS32P",
+    "path": "MEOTHERS.SPONG.T0P5.PORON_SRS",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f740c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PORON_ML32",
+    "path": "MEOTHERS.SPONG.T0P5.PORON_ML3",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f76f0-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PORON_SRS32P",
+    "path": "MEOTHERS.SPONG.T0P6.PORON_SRS",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f79c0-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PORON_SRS40P",
+    "path": "MEOTHERS.SPONG.T0P6.PORON_SRS",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f7dee-554a-11e9-ab5c-0242ac110002",
+    "item_name": "YU356",
+    "path": "MEOTHERS.SPONG.T0P7.YU356",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f81d6-554a-11e9-ab5c-0242ac110002",
+    "item_name": "KVH200",
+    "path": "MEOTHERS.SPONG.T0P7.KVH200",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f8492-554a-11e9-ab5c-0242ac110002",
+    "item_name": "LV100",
+    "path": "MEOTHERS.SPONG.T0P7.LV100",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f86fe-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PORON_SRS40P",
+    "path": "MEOTHERS.SPONG.T0P7.PORON_SRS",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f89b0-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PORON_SRS24P",
+    "path": "MEOTHERS.SPONG.T0P7.PORON_SRS",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f8be0-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PORON_SRS32P",
+    "path": "MEOTHERS.SPONG.T0P7.PORON_SRS",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f8df2-554a-11e9-ab5c-0242ac110002",
+    "item_name": "CR1015",
+    "path": "MEOTHERS.SPONG.T0P8.CR1015",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f9054-554a-11e9-ab5c-0242ac110002",
+    "item_name": "KVH200",
+    "path": "MEOTHERS.SPONG.T0P8.KVH200",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f934c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SM55",
+    "path": "MEOTHERS.SPONG.T0P8.SM55",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f9590-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PORON_SRS24P",
+    "path": "MEOTHERS.SPONG.T0P8.PORON_SRS",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f97fc-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PORON_SRS24P",
+    "path": "MEOTHERS.SPONG.T0P9.PORON_SRS",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f9ac2-554a-11e9-ab5c-0242ac110002",
+    "item_name": "EVA",
+    "path": "MEOTHERS.SPONG.T1.EVA",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063f9de2-554a-11e9-ab5c-0242ac110002",
+    "item_name": "CR1015",
+    "path": "MEOTHERS.SPONG.T1.CR1015",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063fa116-554a-11e9-ab5c-0242ac110002",
+    "item_name": "E4308",
+    "path": "MEOTHERS.SPONG.T1.E4308",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063fa404-554a-11e9-ab5c-0242ac110002",
+    "item_name": "YU55",
+    "path": "MEOTHERS.SPONG.T1.YU55",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063fa6d4-554a-11e9-ab5c-0242ac110002",
+    "item_name": "KVH200",
+    "path": "MEOTHERS.SPONG.T1.KVH200",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063faa1c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "YU356",
+    "path": "MEOTHERS.SPONG.T1.YU356",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063fae90-554a-11e9-ab5c-0242ac110002",
+    "item_name": "E4382",
+    "path": "MEOTHERS.SPONG.T1.E4382",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063fb1a6-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SM55",
+    "path": "MEOTHERS.SPONG.T1.SM55",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063fb700-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PMP1800",
+    "path": "MEOTHERS.SPONG.T1.PMP1800",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063fb9a8-554a-11e9-ab5c-0242ac110002",
+    "item_name": "LV100",
+    "path": "MEOTHERS.SPONG.T1.LV100",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063fbc32-554a-11e9-ab5c-0242ac110002",
+    "item_name": "CR2030",
+    "path": "MEOTHERS.SPONG.T1.CR2030",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063fbed0-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PORON_SRS40P",
+    "path": "MEOTHERS.SPONG.T1.PORON_SRS",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063fc150-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PORON_ML32",
+    "path": "MEOTHERS.SPONG.T1.PORON_ML3",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063fc402-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PORON_SRS24P",
+    "path": "MEOTHERS.SPONG.T1.PORON_SRS",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063fc736-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PORON_SRS32P",
+    "path": "MEOTHERS.SPONG.T1.PORON_SRS",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063fcace-554a-11e9-ab5c-0242ac110002",
+    "item_name": "CR1015",
+    "path": "MEOTHERS.SPONG.T1P5.CR1015",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063fcf56-554a-11e9-ab5c-0242ac110002",
+    "item_name": "E4308",
+    "path": "MEOTHERS.SPONG.T1P5.E4308",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063fd258-554a-11e9-ab5c-0242ac110002",
+    "item_name": "YU356",
+    "path": "MEOTHERS.SPONG.T1P5.YU356",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063fd604-554a-11e9-ab5c-0242ac110002",
+    "item_name": "KVH200",
+    "path": "MEOTHERS.SPONG.T1P5.KVH200",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063fda5a-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PMP1800",
+    "path": "MEOTHERS.SPONG.T1P5.PMP1800",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063fdd20-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SM55",
+    "path": "MEOTHERS.SPONG.T1P5.SM55",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063fe036-554a-11e9-ab5c-0242ac110002",
+    "item_name": "E4382",
+    "path": "MEOTHERS.SPONG.T1P5.E4382",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063fe306-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PORON_ML32",
+    "path": "MEOTHERS.SPONG.T1P5.PORON_ML3",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063fe5ea-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PORON_SRS32P",
+    "path": "MEOTHERS.SPONG.T1P5.PORON_SRS",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063fe964-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PORON_SRS24P",
+    "path": "MEOTHERS.SPONG.T1P5.PORON_SRS",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063fec02-554a-11e9-ab5c-0242ac110002",
+    "item_name": "CR1015",
+    "path": "MEOTHERS.SPONG.T2.CR1015",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063fefc2-554a-11e9-ab5c-0242ac110002",
+    "item_name": "YU356",
+    "path": "MEOTHERS.SPONG.T2.YU356",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063ff274-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SM55",
+    "path": "MEOTHERS.SPONG.T2.SM55",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063ff4b8-554a-11e9-ab5c-0242ac110002",
+    "item_name": "KVH200",
+    "path": "MEOTHERS.SPONG.T2.KVH200",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063ff788-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PMP1800",
+    "path": "MEOTHERS.SPONG.T2.PMP1800",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063ffa12-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PORON_ML32",
+    "path": "MEOTHERS.SPONG.T2.PORON_ML3",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063ffc92-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PORON_SRS32P",
+    "path": "MEOTHERS.SPONG.T2.PORON_SRS",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063fff30-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PORON_SRS24P",
+    "path": "MEOTHERS.SPONG.T2.PORON_SRS",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06400282-554a-11e9-ab5c-0242ac110002",
+    "item_name": "CR1015",
+    "path": "MEOTHERS.SPONG.T2P5.CR1015",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06400534-554a-11e9-ab5c-0242ac110002",
+    "item_name": "E4308",
+    "path": "MEOTHERS.SPONG.T2P5.E4308",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0640078c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SM55",
+    "path": "MEOTHERS.SPONG.T2P5.SM55",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064009ee-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PMP1800",
+    "path": "MEOTHERS.SPONG.T2P5.PMP1800",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06400c96-554a-11e9-ab5c-0242ac110002",
+    "item_name": "KVH200",
+    "path": "MEOTHERS.SPONG.T2P5.KVH200",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06400f02-554a-11e9-ab5c-0242ac110002",
+    "item_name": "E4382",
+    "path": "MEOTHERS.SPONG.T2P5.E4382",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064011c8-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PORON_ML32",
+    "path": "MEOTHERS.SPONG.T2P5.PORON_ML3",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064014e8-554a-11e9-ab5c-0242ac110002",
+    "item_name": "CR1015",
+    "path": "MEOTHERS.SPONG.T3.CR1015",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06401786-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SM55",
+    "path": "MEOTHERS.SPONG.T3.SM55",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06401a60-554a-11e9-ab5c-0242ac110002",
+    "item_name": "YU356",
+    "path": "MEOTHERS.SPONG.T3.YU356",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06401e5c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PMP1800",
+    "path": "MEOTHERS.SPONG.T3.PMP1800",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06402226-554a-11e9-ab5c-0242ac110002",
+    "item_name": "KVH200",
+    "path": "MEOTHERS.SPONG.T3.KVH200",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06402712-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PORON_ML32",
+    "path": "MEOTHERS.SPONG.T3.PORON_ML3",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064029ba-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PORON_SRS24P",
+    "path": "MEOTHERS.SPONG.T3.PORON_SRS",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06402c80-554a-11e9-ab5c-0242ac110002",
+    "item_name": "E4308",
+    "path": "MEOTHERS.SPONG.T3P5.E4308",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06402f46-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SM55",
+    "path": "MEOTHERS.SPONG.T3P5.SM55",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06403202-554a-11e9-ab5c-0242ac110002",
+    "item_name": "E4382",
+    "path": "MEOTHERS.SPONG.T3P5.E4382",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064034c8-554a-11e9-ab5c-0242ac110002",
+    "item_name": "CR1015",
+    "path": "MEOTHERS.SPONG.T4.CR1015",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0640382e-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SM55",
+    "path": "MEOTHERS.SPONG.T4.SM55",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06403ba8-554a-11e9-ab5c-0242ac110002",
+    "item_name": "KVH200",
+    "path": "MEOTHERS.SPONG.T4.KVH200",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06403ec8-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PORON_ML32",
+    "path": "MEOTHERS.SPONG.T4.PORON_ML3",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064041a2-554a-11e9-ab5c-0242ac110002",
+    "item_name": "EVA",
+    "path": "MEOTHERS.SPONG.T4P5.EVA",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06404530-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SM55",
+    "path": "MEOTHERS.SPONG.T4P5.SM55",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06404814-554a-11e9-ab5c-0242ac110002",
+    "item_name": "E4308",
+    "path": "MEOTHERS.SPONG.T4P5.E4308",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06404d14-554a-11e9-ab5c-0242ac110002",
+    "item_name": "YU55",
+    "path": "MEOTHERS.SPONG.T4P5.YU55",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064050e8-554a-11e9-ab5c-0242ac110002",
+    "item_name": "E4382",
+    "path": "MEOTHERS.SPONG.T4P5.E4382",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064053cc-554a-11e9-ab5c-0242ac110002",
+    "item_name": "CR1015",
+    "path": "MEOTHERS.SPONG.T5.CR1015",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064056a6-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SM55",
+    "path": "MEOTHERS.SPONG.T5.SM55",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06405980-554a-11e9-ab5c-0242ac110002",
+    "item_name": "KVH200",
+    "path": "MEOTHERS.SPONG.T5.KVH200",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06405c50-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PORON_ML32",
+    "path": "MEOTHERS.SPONG.T5.PORON_ML3",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06405f20-554a-11e9-ab5c-0242ac110002",
+    "item_name": "透明",
+    "path": "MEOTHERS.MYLAR.T0P05.TRANS",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06406376-554a-11e9-ab5c-0242ac110002",
+    "item_name": "CY28_PET",
+    "path": "MEOTHERS.MYLAR.T0P05.CY28_PET",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0640677c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "黑色",
+    "path": "MEOTHERS.MYLAR.T0P05.BLACK",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06406b32-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PC1860",
+    "path": "MEOTHERS.MYLAR.T0P05.PC1860",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06406e0c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PC1860",
+    "path": "MEOTHERS.MYLAR.T0P075.PC1860",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064070f0-554a-11e9-ab5c-0242ac110002",
+    "item_name": "DFR117",
+    "path": "MEOTHERS.MYLAR.T0P075.DFR117",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064073c0-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PET6027D",
+    "path": "MEOTHERS.MYLAR.T0P1.PET6027D",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06407870-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PET6023D",
+    "path": "MEOTHERS.MYLAR.T0P1.PET6023D",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06407b40-554a-11e9-ab5c-0242ac110002",
+    "item_name": "透明",
+    "path": "MEOTHERS.MYLAR.T0P1.TRANS",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06407e2e-554a-11e9-ab5c-0242ac110002",
+    "item_name": "CY28_PET",
+    "path": "MEOTHERS.MYLAR.T0P1.CY28_PET",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064080fe-554a-11e9-ab5c-0242ac110002",
+    "item_name": "黑色",
+    "path": "MEOTHERS.MYLAR.T0P1.BLACK",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0640848c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PC1860",
+    "path": "MEOTHERS.MYLAR.T0P1.PC1860",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0640878e-554a-11e9-ab5c-0242ac110002",
+    "item_name": "DFR117",
+    "path": "MEOTHERS.MYLAR.T0P1.DFR117",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06408b30-554a-11e9-ab5c-0242ac110002",
+    "item_name": "DFR_BK_PP",
+    "path": "MEOTHERS.MYLAR.T0P125.DFR_BK_PP",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06408e50-554a-11e9-ab5c-0242ac110002",
+    "item_name": "DFR117",
+    "path": "MEOTHERS.MYLAR.T0P125.DFR117",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06409116-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PC1860",
+    "path": "MEOTHERS.MYLAR.T0P125.PC1860",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064093fa-554a-11e9-ab5c-0242ac110002",
+    "item_name": "DFR116ECOB",
+    "path": "MEOTHERS.MYLAR.T0P125.DFR116ECO",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064096b6-554a-11e9-ab5c-0242ac110002",
+    "item_name": "DFR_BK_PP",
+    "path": "MEOTHERS.MYLAR.T0P175.DFR_BK_PP",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06409954-554a-11e9-ab5c-0242ac110002",
+    "item_name": "DFR117",
+    "path": "MEOTHERS.MYLAR.T0P175.DFR117",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06409c10-554a-11e9-ab5c-0242ac110002",
+    "item_name": "DFR116ECOB",
+    "path": "MEOTHERS.MYLAR.T0P175.DFR116ECO",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06409ed6-554a-11e9-ab5c-0242ac110002",
+    "item_name": "透明PC",
+    "path": "MEOTHERS.MYLAR.T0P175.TRANS_PC",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0640a1f6-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PC1860",
+    "path": "MEOTHERS.MYLAR.T0P175.PC1860",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0640af5c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PET6027D",
+    "path": "MEOTHERS.MYLAR.T0P188.PET6027D",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0640b376-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PET6023D",
+    "path": "MEOTHERS.MYLAR.T0P188.PET6023D",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0640b696-554a-11e9-ab5c-0242ac110002",
+    "item_name": "CY28_PET",
+    "path": "MEOTHERS.MYLAR.T0P188.CY28_PET",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0640bc22-554a-11e9-ab5c-0242ac110002",
+    "item_name": "黑色",
+    "path": "MEOTHERS.MYLAR.T0P188.BLACK",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0640beca-554a-11e9-ab5c-0242ac110002",
+    "item_name": "DFR_BK_PP",
+    "path": "MEOTHERS.MYLAR.T0P25.DFR_BK_PP",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0640c168-554a-11e9-ab5c-0242ac110002",
+    "item_name": "CY28_PET",
+    "path": "MEOTHERS.MYLAR.T0P25.CY28_PET",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0640c442-554a-11e9-ab5c-0242ac110002",
+    "item_name": "DFR117",
+    "path": "MEOTHERS.MYLAR.T0P25.DFR117",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0640c71c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PC1860",
+    "path": "MEOTHERS.MYLAR.T0P25.PC1860",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0640ca1e-554a-11e9-ab5c-0242ac110002",
+    "item_name": "DFR116ECOB",
+    "path": "MEOTHERS.MYLAR.T0P25.DFR116ECO",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0640ccb2-554a-11e9-ab5c-0242ac110002",
+    "item_name": "黑色",
+    "path": "MEOTHERS.MYLAR.T0P25.BLACK",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0640d0a4-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PC8010",
+    "path": "MEOTHERS.MYLAR.T0P25.PC8010",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0640d34c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "透明PC",
+    "path": "MEOTHERS.MYLAR.T0P25.TRANS_PC",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0640d89c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "DFR117",
+    "path": "MEOTHERS.MYLAR.T0P38.DFR117",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0640dbda-554a-11e9-ab5c-0242ac110002",
+    "item_name": "DF8D35T",
+    "path": "MEOTHERS.MYLAR.T0P38.DF8D35T",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0640de96-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PC1860",
+    "path": "MEOTHERS.MYLAR.T0P38.PC1860",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0640e210-554a-11e9-ab5c-0242ac110002",
+    "item_name": "透明PC",
+    "path": "MEOTHERS.MYLAR.T0P38.TRANS_PC",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0640e51c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PC8010",
+    "path": "MEOTHERS.MYLAR.T0P38.PC8010",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0640e968-554a-11e9-ab5c-0242ac110002",
+    "item_name": "DFR_BK_PP",
+    "path": "MEOTHERS.MYLAR.T0P43.DFR_BK_PP",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0640ebd4-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PC1860",
+    "path": "MEOTHERS.MYLAR.T0P43.PC1860",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0640ee90-554a-11e9-ab5c-0242ac110002",
+    "item_name": "DFR117",
+    "path": "MEOTHERS.MYLAR.T0P43.DFR117",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0640f1ba-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PC8010",
+    "path": "MEOTHERS.MYLAR.T0P5.PC8010",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0640f46c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "透明PC",
+    "path": "MEOTHERS.MYLAR.T0P5.TRANS_PC",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0640f75a-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PC1860",
+    "path": "MEOTHERS.MYLAR.T0P5.PC1860",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0640fa8e-554a-11e9-ab5c-0242ac110002",
+    "item_name": "DFR_BK_PP",
+    "path": "MEOTHERS.MYLAR.T0P76.DFR_BK_PP",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0641001a-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PC1860",
+    "path": "MEOTHERS.MYLAR.T0P76.PC1860",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064104ac-554a-11e9-ab5c-0242ac110002",
+    "item_name": "DFR117",
+    "path": "MEOTHERS.MYLAR.T0P76.DFR117",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06410a74-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PC8010",
+    "path": "MEOTHERS.MYLAR.T0P8.PC8010",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06410eca-554a-11e9-ab5c-0242ac110002",
+    "item_name": "透明PC",
+    "path": "MEOTHERS.MYLAR.T0P8.TRANS_PC",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06411212-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PC8010",
+    "path": "MEOTHERS.MYLAR.T1.PC8010",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064115c8-554a-11e9-ab5c-0242ac110002",
+    "item_name": "透明PC",
+    "path": "MEOTHERS.MYLAR.T1.TRANS_PC",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06412342-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PC1860",
+    "path": "MEOTHERS.MYLAR.T1.PC1860",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06412784-554a-11e9-ab5c-0242ac110002",
+    "item_name": "Housing",
+    "path": "HOUSING",
+    "field_name": "parts_ctgy_1",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06412f2c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "MEothers",
+    "path": "MEOTHERS",
+    "field_name": "parts_ctgy_1",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0641342c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "Cable",
+    "path": "CABLE",
+    "field_name": "parts_ctgy_1",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0641374c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "Thermal",
+    "path": "THERMAL",
+    "field_name": "parts_ctgy_1",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06413a1c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "Metal",
+    "path": "HOUSING.METAL",
+    "field_name": "parts_ctgy_2",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06413d0a-554a-11e9-ab5c-0242ac110002",
+    "item_name": "Aluminum",
+    "path": "HOUSING.ALUMI",
+    "field_name": "parts_ctgy_2",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0641506a-554a-11e9-ab5c-0242ac110002",
+    "item_name": "Protection_Film_of_Mylar_Sponge_Poron",
+    "path": "MEOTHERS.PROTE",
+    "field_name": "parts_ctgy_2",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06415376-554a-11e9-ab5c-0242ac110002",
+    "item_name": "Adhesive_of_Mylar_Sponge_Poron",
+    "path": "MEOTHERS.ADHES",
+    "field_name": "parts_ctgy_2",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064156aa-554a-11e9-ab5c-0242ac110002",
+    "item_name": "Sponge_of_Mylar_Sponge_Poron",
+    "path": "MEOTHERS.SPONG",
+    "field_name": "parts_ctgy_2",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064159e8-554a-11e9-ab5c-0242ac110002",
+    "item_name": "Mylar_of_Mylar_Sponge_Poron",
+    "path": "MEOTHERS.MYLAR",
+    "field_name": "parts_ctgy_2",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06415d30-554a-11e9-ab5c-0242ac110002",
+    "item_name": "FPC",
+    "path": "CABLE.FPC",
+    "field_name": "parts_ctgy_2",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064162f8-554a-11e9-ab5c-0242ac110002",
+    "item_name": "Standoff",
+    "path": "MEOTHERS.STAND",
+    "field_name": "parts_ctgy_2",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0641662c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "Nut",
+    "path": "MEOTHERS.NUT",
+    "field_name": "parts_ctgy_2",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06416a8c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "Screw",
+    "path": "MEOTHERS.SCREW",
+    "field_name": "parts_ctgy_2",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06416db6-554a-11e9-ab5c-0242ac110002",
+    "item_name": "FFC",
+    "path": "CABLE.FFC",
+    "field_name": "parts_ctgy_2",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06417202-554a-11e9-ab5c-0242ac110002",
+    "item_name": "Wire(Harness)",
+    "path": "CABLE.WIRE",
+    "field_name": "parts_ctgy_2",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06417662-554a-11e9-ab5c-0242ac110002",
+    "item_name": "DC-in cable",
+    "path": "CABLE.DC-IN",
+    "field_name": "parts_ctgy_2",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06417996-554a-11e9-ab5c-0242ac110002",
+    "item_name": "Panel Cable",
+    "path": "CABLE.PANEL",
+    "field_name": "parts_ctgy_2",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06417d42-554a-11e9-ab5c-0242ac110002",
+    "item_name": "Plastic",
+    "path": "HOUSING.PLAST",
+    "field_name": "parts_ctgy_2",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0641826a-554a-11e9-ab5c-0242ac110002",
+    "item_name": "Die_Casting",
+    "path": "HOUSING.DIE_C",
+    "field_name": "parts_ctgy_2",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0641863e-554a-11e9-ab5c-0242ac110002",
+    "item_name": "Double_Injection",
+    "path": "HOUSING.DOUBL",
+    "field_name": "parts_ctgy_2",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06418954-554a-11e9-ab5c-0242ac110002",
+    "item_name": "RHCM_Process",
+    "path": "HOUSING.RHCM_",
+    "field_name": "parts_ctgy_2",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06418ca6-554a-11e9-ab5c-0242ac110002",
+    "item_name": "IMR",
+    "path": "HOUSING.IMR",
+    "field_name": "parts_ctgy_2",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06419138-554a-11e9-ab5c-0242ac110002",
+    "item_name": "Insert_Molding",
+    "path": "HOUSING.INSER",
+    "field_name": "parts_ctgy_2",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0641964c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "Fan",
+    "path": "THERMAL.FAN",
+    "field_name": "parts_ctgy_2",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064199da-554a-11e9-ab5c-0242ac110002",
+    "item_name": "Module",
+    "path": "THERMAL.MODUL",
+    "field_name": "parts_ctgy_2",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06419eda-554a-11e9-ab5c-0242ac110002",
+    "item_name": "Heatsink",
+    "path": "THERMAL.HEATS",
+    "field_name": "parts_ctgy_2",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0641a5ba-554a-11e9-ab5c-0242ac110002",
+    "item_name": "AL1050",
+    "path": "HOUSING.METAL.AL1050",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0641a88a-554a-11e9-ab5c-0242ac110002",
+    "item_name": "AL5052",
+    "path": "HOUSING.METAL.AL5052",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0641ad4e-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SUS301",
+    "path": "HOUSING.METAL.SUS301",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0641b1b8-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SUS304",
+    "path": "HOUSING.METAL.SUS304",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0641b550-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SUS403",
+    "path": "HOUSING.METAL.SUS403",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0641b866-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SUS430",
+    "path": "HOUSING.METAL.SUS430",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0641bd7a-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SECC",
+    "path": "HOUSING.METAL.SECC",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0641c09a-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SGCC",
+    "path": "HOUSING.METAL.SGCC",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0641c41e-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SPCC",
+    "path": "HOUSING.METAL.SPCC",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0641c766-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SGLD",
+    "path": "HOUSING.METAL.SGLD",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0641cac2-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SPTE",
+    "path": "HOUSING.METAL.SPTE",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0641ce78-554a-11e9-ab5c-0242ac110002",
+    "item_name": "Cu3604",
+    "path": "HOUSING.METAL.CU3604",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0641d15c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "低碳鋼18A",
+    "path": "HOUSING.METAL.DTG18A",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0641d3f0-554a-11e9-ab5c-0242ac110002",
+    "item_name": "快削鋼",
+    "path": "HOUSING.METAL.KXG",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0641d6ca-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SUS410",
+    "path": "HOUSING.METAL.SUS410",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0641d936-554a-11e9-ab5c-0242ac110002",
+    "item_name": "磷青銅",
+    "path": "HOUSING.METAL.LQT",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0641dcb0-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PH-CU",
+    "path": "HOUSING.METAL.PH-CU",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0641e12e-554a-11e9-ab5c-0242ac110002",
+    "item_name": "CU1100",
+    "path": "HOUSING.METAL.CU1100",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0641e4d0-554a-11e9-ab5c-0242ac110002",
+    "item_name": "AL1050",
+    "path": "HOUSING.ALUMI.AL1050",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0641e9f8-554a-11e9-ab5c-0242ac110002",
+    "item_name": "AL5052",
+    "path": "HOUSING.ALUMI.AL5052",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06412b3a-554a-11e9-ab5c-0242ac110002",
+    "item_name": "EMC",
+    "path": "EMC2",
+    "field_name": "parts_ctgy_1",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0641ef98-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SUS301",
+    "path": "HOUSING.ALUMI.SUS301",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0641f7c2-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SUS304",
+    "path": "HOUSING.ALUMI.SUS304",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0641fa74-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SUS403",
+    "path": "HOUSING.ALUMI.SUS403",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0641fd3a-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SUS430",
+    "path": "HOUSING.ALUMI.SUS430",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06420014-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SECC",
+    "path": "HOUSING.ALUMI.SECC",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06420398-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SGCC",
+    "path": "HOUSING.ALUMI.SGCC",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064206b8-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SPCC",
+    "path": "HOUSING.ALUMI.SPCC",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06420a46-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SGLD",
+    "path": "HOUSING.ALUMI.SGLD",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06420e10-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SPTE",
+    "path": "HOUSING.ALUMI.SPTE",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064211da-554a-11e9-ab5c-0242ac110002",
+    "item_name": "Cu3604",
+    "path": "HOUSING.ALUMI.CU3604",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064214be-554a-11e9-ab5c-0242ac110002",
+    "item_name": "低碳鋼18A",
+    "path": "HOUSING.ALUMI.DTG18A",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064217ac-554a-11e9-ab5c-0242ac110002",
+    "item_name": "快削鋼",
+    "path": "HOUSING.ALUMI.KXG",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06421ba8-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SUS410",
+    "path": "HOUSING.ALUMI.SUS410",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06421e5a-554a-11e9-ab5c-0242ac110002",
+    "item_name": "磷青銅",
+    "path": "HOUSING.ALUMI.LQT",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064221a2-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PH-CU",
+    "path": "HOUSING.ALUMI.PH-CU",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06422490-554a-11e9-ab5c-0242ac110002",
+    "item_name": "CU1100",
+    "path": "HOUSING.ALUMI.CU1100",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06427c56-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.05",
+    "path": "MEOTHERS.PROTE.T0P05",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0642816a-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.06",
+    "path": "MEOTHERS.PROTE.T0P06",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06428764-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.075",
+    "path": "MEOTHERS.PROTE.T0P075",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06428aca-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.1",
+    "path": "MEOTHERS.PROTE.T0P1",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06428dd6-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.05",
+    "path": "MEOTHERS.ADHES.T0P05",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0642922c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.07",
+    "path": "MEOTHERS.ADHES.T0P07",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064294fc-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.13",
+    "path": "MEOTHERS.ADHES.T0P13",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064298a8-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.15",
+    "path": "MEOTHERS.ADHES.T0P15",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06429cea-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.2",
+    "path": "MEOTHERS.ADHES.T0P2",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0642a03c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.25",
+    "path": "MEOTHERS.ADHES.T0P25",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0642a35c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.3",
+    "path": "MEOTHERS.ADHES.T0P3",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0642a668-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.4",
+    "path": "MEOTHERS.ADHES.T0P4",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0642a96a-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.64",
+    "path": "MEOTHERS.ADHES.T0P64",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0642aeec-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.7",
+    "path": "MEOTHERS.ADHES.T0P7",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0642b3ec-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.8",
+    "path": "MEOTHERS.ADHES.T0P8",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0642b950-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.2",
+    "path": "MEOTHERS.SPONG.T0P2",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0642bd56-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.3",
+    "path": "MEOTHERS.SPONG.T0P3",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0642c184-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.4",
+    "path": "MEOTHERS.SPONG.T0P4",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0642c5d0-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.5",
+    "path": "MEOTHERS.SPONG.T0P5",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0642cb20-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.6",
+    "path": "MEOTHERS.SPONG.T0P6",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0642ce40-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.7",
+    "path": "MEOTHERS.SPONG.T0P7",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0642d160-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.8",
+    "path": "MEOTHERS.SPONG.T0P8",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0642d638-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.9",
+    "path": "MEOTHERS.SPONG.T0P9",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0642d98a-554a-11e9-ab5c-0242ac110002",
+    "item_name": "1",
+    "path": "MEOTHERS.SPONG.T1",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0642dcbe-554a-11e9-ab5c-0242ac110002",
+    "item_name": "1.5",
+    "path": "MEOTHERS.SPONG.T1P5",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0642e038-554a-11e9-ab5c-0242ac110002",
+    "item_name": "2",
+    "path": "MEOTHERS.SPONG.T2",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0642e376-554a-11e9-ab5c-0242ac110002",
+    "item_name": "2.5",
+    "path": "MEOTHERS.SPONG.T2P5",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0642e70e-554a-11e9-ab5c-0242ac110002",
+    "item_name": "3",
+    "path": "MEOTHERS.SPONG.T3",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0642eb00-554a-11e9-ab5c-0242ac110002",
+    "item_name": "3.5",
+    "path": "MEOTHERS.SPONG.T3P5",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0642ee02-554a-11e9-ab5c-0242ac110002",
+    "item_name": "4",
+    "path": "MEOTHERS.SPONG.T4",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0642f0f0-554a-11e9-ab5c-0242ac110002",
+    "item_name": "4.5",
+    "path": "MEOTHERS.SPONG.T4P5",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0642f46a-554a-11e9-ab5c-0242ac110002",
+    "item_name": "5",
+    "path": "MEOTHERS.SPONG.T5",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0642f794-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.05",
+    "path": "MEOTHERS.MYLAR.T0P05",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0642fb36-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.075",
+    "path": "MEOTHERS.MYLAR.T0P075",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0642ff82-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.1",
+    "path": "MEOTHERS.MYLAR.T0P1",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064302c0-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.125",
+    "path": "MEOTHERS.MYLAR.T0P125",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06430658-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.175",
+    "path": "MEOTHERS.MYLAR.T0P175",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064309e6-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.188",
+    "path": "MEOTHERS.MYLAR.T0P188",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06430d1a-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.25",
+    "path": "MEOTHERS.MYLAR.T0P25",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06431102-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.38",
+    "path": "MEOTHERS.MYLAR.T0P38",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06431594-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.43",
+    "path": "MEOTHERS.MYLAR.T0P43",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064318c8-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.5",
+    "path": "MEOTHERS.MYLAR.T0P5",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064320c0-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.76",
+    "path": "MEOTHERS.MYLAR.T0P76",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0643261a-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.8",
+    "path": "MEOTHERS.MYLAR.T0P8",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064329da-554a-11e9-ab5c-0242ac110002",
+    "item_name": "1",
+    "path": "MEOTHERS.MYLAR.T1",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06432dd6-554a-11e9-ab5c-0242ac110002",
+    "item_name": "Single side (單面板、一般材料)",
+    "path": "CABLE.FPC.SINGLE_SIDE",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0643343e-554a-11e9-ab5c-0242ac110002",
+    "item_name": "Double side (雙面板、一般材料)",
+    "path": "CABLE.FPC.DOUBLE_SIDE",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0643379a-554a-11e9-ab5c-0242ac110002",
+    "item_name": "3層板 (單面板+雙面板 , 一般材料)",
+    "path": "CABLE.FPC.3CB",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0643482a-554a-11e9-ab5c-0242ac110002",
+    "item_name": "低碳鋼18A",
+    "path": "MEOTHERS.STAND.DTG18A",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06434c1c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "快削鋼",
+    "path": "MEOTHERS.STAND.KXG",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06435054-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SUS410",
+    "path": "MEOTHERS.STAND.SUS410",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06435540-554a-11e9-ab5c-0242ac110002",
+    "item_name": "低碳鋼18A",
+    "path": "MEOTHERS.NUT.DTG18A",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06435888-554a-11e9-ab5c-0242ac110002",
+    "item_name": "快削鋼",
+    "path": "MEOTHERS.NUT.KXG",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06435b94-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SUS410",
+    "path": "MEOTHERS.NUT.SUS410",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06435ed2-554a-11e9-ab5c-0242ac110002",
+    "item_name": "低碳鋼18A",
+    "path": "MEOTHERS.SCREW.DTG18A",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06436242-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SUS410",
+    "path": "MEOTHERS.SCREW.SUS410",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063db004-554a-11e9-ab5c-0242ac110002",
+    "item_name": "1.5",
+    "path": "EMC2.GASKE.UL_ECO_FORM.T1P5",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063de664-554a-11e9-ab5c-0242ac110002",
+    "item_name": "1.5",
+    "path": "EMC2.GASKE.NON_UL_ECO_FORM.T1P5",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063de902-554a-11e9-ab5c-0242ac110002",
+    "item_name": "2",
+    "path": "EMC2.GASKE.UL_ECO_FORM.T2",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063deb5a-554a-11e9-ab5c-0242ac110002",
+    "item_name": "2",
+    "path": "EMC2.GASKE.NON_UL_ECO_FORM.T2",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063def7e-554a-11e9-ab5c-0242ac110002",
+    "item_name": "AL_Mylar_不含背膠",
+    "path": "EMC2.AL_CU.T0P05.A_M_N",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063df38e-554a-11e9-ab5c-0242ac110002",
+    "item_name": "軟鋁S_不含背膠",
+    "path": "EMC2.AL_CU.T0P05.SS",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063df6ea-554a-11e9-ab5c-0242ac110002",
+    "item_name": "雙導鋁(含導電膠)",
+    "path": "EMC2.AL_CU.T0P06.DS",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063df938-554a-11e9-ab5c-0242ac110002",
+    "item_name": "AL_Mylar_不含背膠",
+    "path": "EMC2.AL_CU.T0P075.A_M_N",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063dfb7c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "AL_Mylar_不含背膠",
+    "path": "EMC2.AL_CU.T0P1.A_M_N",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063dfdac-554a-11e9-ab5c-0242ac110002",
+    "item_name": "雙導鋁(含導電膠)",
+    "path": "EMC2.AL_CU.T0P1.DS",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063dffe6-554a-11e9-ab5c-0242ac110002",
+    "item_name": "軟鋁S_不含背膠",
+    "path": "EMC2.AL_CU.T0P1.SS",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e022a-554a-11e9-ab5c-0242ac110002",
+    "item_name": "軟銅_不含背膠",
+    "path": "EMC2.AL_CU.T0P1.SD",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e048c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "雙導鋁(含導電膠)",
+    "path": "EMC2.AL_CU.T0P15.SS",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e07fc-554a-11e9-ab5c-0242ac110002",
+    "item_name": "軟銅_不含背膠",
+    "path": "EMC2.AL_CU.T0P15.SD",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e0a54-554a-11e9-ab5c-0242ac110002",
+    "item_name": "AL_Mylar_不含背膠",
+    "path": "EMC2.AL_CU.T0P15.A_M_N",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e0c98-554a-11e9-ab5c-0242ac110002",
+    "item_name": "雙導鋁(含導電膠)",
+    "path": "EMC2.AL_CU.T0P2.SS",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e0ed2-554a-11e9-ab5c-0242ac110002",
+    "item_name": "雙導銅(含導電膠)",
+    "path": "EMC2.AL_CU.T0P25.SS",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e112a-554a-11e9-ab5c-0242ac110002",
+    "item_name": "4010",
+    "path": "EMC2.ABSOR.T0P1.T4010",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e135a-554a-11e9-ab5c-0242ac110002",
+    "item_name": "YJC75005",
+    "path": "EMC2.ABSOR.T0P1.YJC75005",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e1594-554a-11e9-ab5c-0242ac110002",
+    "item_name": "G566_10",
+    "path": "EMC2.ABSOR.T0P15.G566_10",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e17e2-554a-11e9-ab5c-0242ac110002",
+    "item_name": "G566_20",
+    "path": "EMC2.ABSOR.T0P2.G566_20",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e1bac-554a-11e9-ab5c-0242ac110002",
+    "item_name": "YJC75015",
+    "path": "EMC2.ABSOR.T0P2.YJC75015",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e1e18-554a-11e9-ab5c-0242ac110002",
+    "item_name": "G566_25",
+    "path": "EMC2.ABSOR.T0P25.G566_25",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e2084-554a-11e9-ab5c-0242ac110002",
+    "item_name": "3M_AB5030",
+    "path": "EMC2.ABSOR.T0P3.3M_AB5030",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e22c8-554a-11e9-ab5c-0242ac110002",
+    "item_name": "YJC75025",
+    "path": "EMC2.ABSOR.T0P3.YJC75025",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e250c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "G566_30",
+    "path": "EMC2.ABSOR.T0P35.G566_30",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e2750-554a-11e9-ab5c-0242ac110002",
+    "item_name": "4030",
+    "path": "EMC2.ABSOR.T0P35.T4030",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e29d0-554a-11e9-ab5c-0242ac110002",
+    "item_name": "G566_50",
+    "path": "EMC2.ABSOR.T0P55.G566_",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e2cc8-554a-11e9-ab5c-0242ac110002",
+    "item_name": "YJC75100",
+    "path": "EMC2.ABSOR.T1.YJC75",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "063e2fb6-554a-11e9-ab5c-0242ac110002",
+    "item_name": "YJC75200",
+    "path": "EMC2.ABSOR.T2P5.YJC75",
+    "field_name": "material",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0641414c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "ConductiveTape",
+    "path": "EMC2.CONDU",
+    "field_name": "parts_ctgy_2",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06414516-554a-11e9-ab5c-0242ac110002",
+    "item_name": "Gasket",
+    "path": "EMC2.GASKE",
+    "field_name": "parts_ctgy_2",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064148d6-554a-11e9-ab5c-0242ac110002",
+    "item_name": "Al_Cu_Foil",
+    "path": "EMC2.AL_CU",
+    "field_name": "parts_ctgy_2",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06414d0e-554a-11e9-ab5c-0242ac110002",
+    "item_name": "Absorber",
+    "path": "EMC2.ABSOR",
+    "field_name": "parts_ctgy_2",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06416032-554a-11e9-ab5c-0242ac110002",
+    "item_name": "Magnet",
+    "path": "EMC2.MAGNE",
+    "field_name": "parts_ctgy_2",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0641a240-554a-11e9-ab5c-0242ac110002",
+    "item_name": "ShieldingCan",
+    "path": "EMC2.SHIEL",
+    "field_name": "parts_ctgy_2",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0642280a-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.085",
+    "path": "EMC2.CONDU.T0085",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06422b34-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.13",
+    "path": "EMC2.CONDU.T013",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06422ecc-554a-11e9-ab5c-0242ac110002",
+    "item_name": "ULGasket灰",
+    "path": "EMC2.GASKE.ULGASKETG",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0642328c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "Non_ULGasket灰",
+    "path": "EMC2.GASKE.NON_ULGASKETG",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06423642-554a-11e9-ab5c-0242ac110002",
+    "item_name": "ULGasket黑",
+    "path": "EMC2.GASKE.ULGASKETB",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064239ee-554a-11e9-ab5c-0242ac110002",
+    "item_name": "Non_ULGasket黑",
+    "path": "EMC2.GASKE.NON_ULGASKETB",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06423d0e-554a-11e9-ab5c-0242ac110002",
+    "item_name": "UL_Eco_Form",
+    "path": "EMC2.GASKE.UL_ECO_FORM",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064240a6-554a-11e9-ab5c-0242ac110002",
+    "item_name": "Non_UL_Eco_Form",
+    "path": "EMC2.GASKE.NON_UL_ECO_FORM",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064243bc-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.05",
+    "path": "EMC2.AL_CU.T0P05",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064246e6-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.06",
+    "path": "EMC2.AL_CU.T0P06",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06424ab0-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.075",
+    "path": "EMC2.AL_CU.T0P075",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06424d94-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.1",
+    "path": "EMC2.AL_CU.T0P1",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064250e6-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.15",
+    "path": "EMC2.AL_CU.T0P15",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064254e2-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.2",
+    "path": "EMC2.AL_CU.T0P2",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06425802-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.25",
+    "path": "EMC2.AL_CU.T0P25",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06425c44-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.1",
+    "path": "EMC2.ABSOR.T0P1",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0642604a-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.15",
+    "path": "EMC2.ABSOR.T0P15",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0642636a-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.2",
+    "path": "EMC2.ABSOR.T0P2",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0642666c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.25",
+    "path": "EMC2.ABSOR.T0P25",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06426aa4-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.3",
+    "path": "EMC2.ABSOR.T0P3",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06426db0-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.35",
+    "path": "EMC2.ABSOR.T0P35",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06427170-554a-11e9-ab5c-0242ac110002",
+    "item_name": "0.55",
+    "path": "EMC2.ABSOR.T0P55",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064274e0-554a-11e9-ab5c-0242ac110002",
+    "item_name": "1",
+    "path": "EMC2.ABSOR.T1",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064277ec-554a-11e9-ab5c-0242ac110002",
+    "item_name": "2.5",
+    "path": "EMC2.ABSOR.T2P5",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06433b28-554a-11e9-ab5c-0242ac110002",
+    "item_name": " Nd-Fe-B N48 ",
+    "path": "EMC2.MAGNE.ND-FE-B_N48 ",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06433e34-554a-11e9-ab5c-0242ac110002",
+    "item_name": " Nd-Fe-B N52 ",
+    "path": "EMC2.MAGNE.ND-FE-B_N52 ",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0643415e-554a-11e9-ab5c-0242ac110002",
+    "item_name": " Nd-Fe-B N48H ",
+    "path": "EMC2.MAGNE.ND-FE-B_N48H ",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06434528-554a-11e9-ab5c-0242ac110002",
+    "item_name": " Nd-Fe-B N52H ",
+    "path": "EMC2.MAGNE.ND-FE-B_N52H ",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0643677e-554a-11e9-ab5c-0242ac110002",
+    "item_name": "AL1050",
+    "path": "EMC2.SHIEL.AL1050",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06436d14-554a-11e9-ab5c-0242ac110002",
+    "item_name": "AL5052",
+    "path": "EMC2.SHIEL.AL5052",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06437192-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SUS301",
+    "path": "EMC2.SHIEL.SUS301",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064374bc-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SUS304",
+    "path": "EMC2.SHIEL.SUS304",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06437804-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SUS403",
+    "path": "EMC2.SHIEL.SUS403",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06437bba-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SUS430",
+    "path": "EMC2.SHIEL.SUS430",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06437eee-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SECC",
+    "path": "EMC2.SHIEL.SECC",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064382d6-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SGCC",
+    "path": "EMC2.SHIEL.SGCC",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0643868c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SPCC",
+    "path": "EMC2.SHIEL.SPCC",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "064389ac-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SGLD",
+    "path": "EMC2.SHIEL.SGLD",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06438cb8-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SPTE",
+    "path": "EMC2.SHIEL.SPTE",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06439028-554a-11e9-ab5c-0242ac110002",
+    "item_name": "Cu3604",
+    "path": "EMC2.SHIEL.CU3604",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0643930c-554a-11e9-ab5c-0242ac110002",
+    "item_name": "低碳鋼18A",
+    "path": "EMC2.SHIEL.DTG18A",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06439640-554a-11e9-ab5c-0242ac110002",
+    "item_name": "快削鋼",
+    "path": "EMC2.SHIEL.KXG",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06439a46-554a-11e9-ab5c-0242ac110002",
+    "item_name": "SUS410",
+    "path": "EMC2.SHIEL.SUS410",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "06439da2-554a-11e9-ab5c-0242ac110002",
+    "item_name": "磷青銅",
+    "path": "EMC2.SHIEL.LQT",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0643a108-554a-11e9-ab5c-0242ac110002",
+    "item_name": "PH-CU",
+    "path": "EMC2.SHIEL.PH-CU",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  },
+  {
+    "id": "0643a414-554a-11e9-ab5c-0242ac110002",
+    "item_name": "CU1100",
+    "path": "EMC2.SHIEL.CU1100",
+    "field_name": "material_spec",
+    "layout_name": "bom_item"
+  }
+]

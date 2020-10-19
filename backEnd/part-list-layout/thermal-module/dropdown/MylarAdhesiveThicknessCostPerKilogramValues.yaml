@@ -1,0 +1,20 @@
+values:
+ - mylarAdhesiveMaterial: DS_5
+   mylarAdhesiveThickness: 0.05
+   mylarAdhesiveCostPerMM: 1.0294
+
+ - mylarAdhesiveMaterial: DST_5
+   mylarAdhesiveThickness: 0.05
+   mylarAdhesiveCostPerMM: 1.5
+
+ - mylarAdhesiveMaterial: DSTT_7N
+   mylarAdhesiveThickness: 0.07
+   mylarAdhesiveCostPerMM: 3.3824
+
+ - mylarAdhesiveMaterial: DS_10B
+   mylarAdhesiveThickness: 0.1
+   mylarAdhesiveCostPerMM: 1.9118
+
+ - mylarAdhesiveMaterial: DST_10
+   mylarAdhesiveThickness: 0.1
+   mylarAdhesiveCostPerMM: 1.8750

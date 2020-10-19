@@ -1,0 +1,7 @@
+values:
+  - coaxialGuage: 34
+    coaxialUnitPrice: 0.1
+  - coaxialGuage: 36
+    coaxialUnitPrice: 0.09
+  - coaxialGuage: 40
+    coaxialUnitPrice: 0.09

@@ -1,0 +1,3 @@
+ALTER TABLE wiprocurement.pcb_typeii_spec01 DROP CONSTRAINT pcb_typeii_spec01_typeii_spec01_key;
+ALTER TABLE wiprocurement.pcb_manufacturer_usd ADD CONSTRAINT pcb_typeii_spec01_uuid_manufacturer_usd UNIQUE (pcb_typeii_spec01_uuid, manufacturer);
+ALTER TABLE wiprocurement.pcb_manufacturer_adder ADD CONSTRAINT pcb_typeii_spec01_uuid_manufacturer_adder UNIQUE (pcb_typeii_spec01_uuid, manufacturer);

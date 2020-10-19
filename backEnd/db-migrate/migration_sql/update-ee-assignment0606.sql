@@ -1,0 +1,1 @@
+INSERT INTO wiprocurement.ee_assignment (type1, type2, pic, pic_emplid) VALUES ('EMC', 'EMI Spring', 'Kevin JF Hsueh', '10802070');

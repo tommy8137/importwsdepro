@@ -1,0 +1,34 @@
+headers:
+  type1:
+    label: TYPE1
+    $example.header-hitrate-dynamic.hiterateDynamicTemplate:
+      - dataStringHC     
+
+  type2:
+    label: TYPE2
+    $example.header-hitrate-dynamic.hiterateDynamicTemplate:
+      - dataStringHC     
+
+  spec01:
+    label: Spec01
+    $example.header-hitrate-dynamic.hiterateDynamicTemplate:
+      - dataStringHC     
+
+
+  bomPartCount:
+    label: BOM Part Count
+    $example.header-hitrate-dynamic.hiterateDynamicTemplate:
+      - dataStringHC     
+
+
+  commonPartsList:
+    label: Common Parts List
+    $example.header-hitrate-dynamic.hiterateDynamicTemplate:
+      - dataStringHD 
+
+
+#  hitRate:
+#    label: Hit-Rate %
+#    $example.header-hitrate-dynamic.hiterateDynamicTemplate:
+#      - dataStringHD 
+

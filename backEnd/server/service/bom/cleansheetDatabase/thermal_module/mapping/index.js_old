@@ -1,0 +1,51 @@
+const thermalModuleAdhesiveMaterialMap = require('./thermal_modul_adhesive_material')
+const thermalBearingAndSleeveFan = require('./thermal_bearin_and_sleeve_fan')
+const thermalClipMaterialMap =  require('./thermal_clip_material')
+const thermalFanBladeMaterialMap = require('./thermal_fan_blade_material')
+const thermalFanSizeMap = require('./thermal_fan_size')
+const thermalFanVendorLocate = require('./thermal_fan_vendor_locate.js')
+const thermalFanLossRate = require('./thermal_fan_loss_rate.js')
+const thermalFinMaterialDensityMap = require('./thermal_fin_material_density')
+const thermalFinMaterialMap = require('./thermal_fin_material')
+const thermalGreaseMap = require('./thermal_grease')
+const thermalMagnetMap = require('./thermal_fan_magnet')
+const thermalMotorMap = require('./thermal_fan_motor')
+const thermalMylarMaterialMap = require('./thermal_modul_mylar_material')
+const thermalPipeDiamaterTypeMap = require('./thermal_pipe_diameter_type')
+const thermalPipeTypeMap = require('./thermal_pipe_type')
+const thermalSpongeMaterialMap = require('./thermal_modul_sponge_material')
+const thermalBlockMaterialDensityMap = require('./thermal_module_block_material_density')
+const thermalBlockMaterialThicknessMap = require('./thermal_modul_block_material_thickness')
+const thermalPadMap = require('./thermal_pad')
+const thermalPlateMaterialDensityMap = require('./thermal_module_plate_material_density')
+const thermalPlateMaterialThicknessMap = require('./thermal_modul_plate_material_thickness')
+const thermalApperanceProcessMap = require('./thermal_apperance_process')
+const thermalFanTypeMap = require('./thermal_fan_type')
+const thermalPipeLenODiaCostMap = require('./thermal_pipe_length_outdiameter_cost.js')
+
+module.exports = {
+  thermalModuleAdhesiveMaterialMap,
+  thermalBearingAndSleeveFan,
+  thermalClipMaterialMap,
+  thermalFanBladeMaterialMap,
+  thermalFanSizeMap,
+  thermalFanVendorLocate,
+  thermalFanLossRate,
+  thermalFinMaterialDensityMap,
+  thermalFinMaterialMap,
+  thermalGreaseMap,
+  thermalMagnetMap,
+  thermalMotorMap,
+  thermalMylarMaterialMap,
+  thermalPipeDiamaterTypeMap,
+  thermalPipeTypeMap,
+  thermalSpongeMaterialMap,
+  thermalBlockMaterialDensityMap,
+  thermalBlockMaterialThicknessMap,
+  thermalPadMap,
+  thermalPlateMaterialDensityMap,
+  thermalPlateMaterialThicknessMap,
+  thermalApperanceProcessMap,
+  thermalFanTypeMap,
+  thermalPipeLenODiaCostMap,
+}

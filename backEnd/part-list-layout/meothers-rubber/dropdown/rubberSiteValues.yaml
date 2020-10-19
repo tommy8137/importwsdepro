@@ -1,0 +1,17 @@
+# 生產地 /掛帳廠別 下拉選單
+values:
+  - site: WHC
+    payoutSite: WHC
+
+  - site: WZS
+    payoutSite: WZS
+
+  - site: WKS
+    payoutSite: WKS
+    
+  - site: WCD
+    payoutSite: WCD
+    
+  - site: WCQ
+    payoutSite: WCQ
+    

@@ -1,0 +1,12 @@
+sheet:
+  label: Common Pool
+  tables:
+    - key: commonPoolList
+      $Template:
+        - rowTable
+      anchor:
+        x: A
+        y: 2
+      headers:
+        $database-common-pool.header-common-pool.common-pool-base:
+          - headers

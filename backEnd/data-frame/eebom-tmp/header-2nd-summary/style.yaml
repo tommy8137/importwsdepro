@@ -1,0 +1,36 @@
+lowest-header:
+  fontColor: '000000'
+  fill: FFC000
+  bold: true
+  # fontFamily: arial
+  border: true
+
+
+high-header:
+  fontColor: '000000'
+  fill: FFF2CC
+  bold: true
+  # fontFamily: arial
+  border: true
+
+
+mlcc-header:
+  fontColor: '000000'
+  fill: FFFFFF
+  bold: true
+  # fontFamily: arial
+  border: true
+
+data:
+  numberFormat: '#,##0.00000'
+  border: true
+
+wrap-header:
+  fontColor: '000000'
+  fill: FFBB66
+  bold: true
+  fontFamily: arial
+  horizontalAlignment: center
+  border: true
+  wrapText: true
+  

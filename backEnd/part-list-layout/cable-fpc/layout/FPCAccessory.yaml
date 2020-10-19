@@ -1,0 +1,170 @@
+multiple: true
+label: 輔料
+multipleItems:
+  - item: Shielding
+    emdmMultipleKey: emdmBomInfo.cmfForm.fpcShielding
+    group: fpcShielding
+    layout:
+      - key: FPCShielding
+        label: Shielding
+        $Template:
+          - label
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 3
+
+      - key: FPCShieldingType
+        label: Type
+        $Template:
+          - selectorString
+          - ^displayConfig
+        require: true
+        selectorConfig:
+          $Template:
+            - selectorConfig
+          idKey: shielding_id
+          ?getFpcShielding:
+            -
+          # $cable-fpc.dropdown.FPCShieldingTypeValues:
+          #   - ^values
+        constrains:
+          - function: "(val) => val == null"
+            message: "此欄位為必填"
+        emdmMultipleKey: emdmBomInfo.cmfForm.fpcShielding
+        emdmKey: FPCShieldingType
+
+      - key: FPCShieldingQty
+        label: QTY
+        $Template:
+          - selectorString
+          - ^displayConfig
+        selectorConfig:
+          $Template:
+            - selectorConfig
+          idKey: id
+          ?getFPCShieldingQty:
+            -
+          # $cable-fpc.dropdown.FPCShieldingQtyValues:
+          #   - ^values
+        require: true
+        constrains:
+          - function: "(val) => val == null"
+            message: "此欄位為必填"
+        emdmMultipleKey: emdmBomInfo.cmfForm.fpcShielding
+        emdmKey: FPCShieldingQty
+
+      - key: FPCShieldingTypeUnitPrice
+        $Template:
+          - mappedValueInt
+        mapFrom:
+          - FPCShieldingType
+        selectorConfig:
+          ?getFpcShielding:
+            -
+          # $cable-fpc.dropdown.FPCShieldingTypeValues:
+          #   - ^values
+        displayConfig:
+          $Template:
+          - displayConfig
+          display: false
+
+  - item: 補強板
+    emdmMultipleKey: emdmBomInfo.cmfForm.fpcReinforcingPlate
+    group: fpcReinforcingPlate
+    layout:
+      - key: FPCReinforcingPlate
+        label: 補強板
+        $Template:
+          - label
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 3
+
+      - key: FPCReinforcingPlateQty
+        label: QTY
+        $Template:
+          - inputInt
+          - ^displayConfig
+        require: true
+        constrains:
+          - function: "(val) => val ==='' || val === null"
+            message: "此欄位為必填"
+        emdmMultipleKey: emdmBomInfo.cmfForm.fpcReinforcingPlate
+        emdmKey: FPCReinforcingPlateQty
+
+  - item: Label
+    emdmMultipleKey: emdmBomInfo.cmfForm.fpcLabel
+    group: fpcLabel
+    layout:
+      - key: FPCLabel
+        label: Label
+        $Template:
+          - label
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 3
+
+      - key: FPCLabelQty
+        label: QTY
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        constrains:
+          - function: "(val) => val ==='' || val === null"
+            message: "此欄位為必填"
+        emdmMultipleKey: emdmBomInfo.cmfForm.fpcLabel
+        emdmKey: FPCLabelQty
+
+  - item: 背膠
+    emdmMultipleKey: emdmBomInfo.cmfForm.fpcAdhesive
+    group: fpcAdhesive
+    layout:
+      - key: FPCAdhesive
+        label: 背膠
+        $Template:
+          - label
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 3
+
+      - key: FPCAdhesiveLength
+        label: L(mm)
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        constrains:
+          - function: "(val) => val ==='' || val === null"
+            message: "此欄位為必填"
+        emdmMultipleKey: emdmBomInfo.cmfForm.fpcAdhesive
+        emdmKey: FPCAdhesiveLength
+
+      - key: FPCAdhesivewidth
+        label: W(mm)
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        constrains:
+          - function: "(val) => val ==='' || val === null"
+            message: "此欄位為必填"
+        emdmMultipleKey: emdmBomInfo.cmfForm.fpcAdhesive
+        emdmKey: FPCAdhesivewidth
+
+      - key: FPCAdhesiveQty
+        label: QTY
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        constrains:
+          - function: "(val) => val ==='' || val === null"
+            message: "此欄位為必填"
+        emdmMultipleKey: emdmBomInfo.cmfForm.fpcAdhesive
+        emdmKey: FPCAdhesiveQty
+

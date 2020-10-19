@@ -1,0 +1,248 @@
+multiple: false
+label: 選擇或調整內容
+items:
+
+  - key: SPEC01
+    label: 主板/板卡
+    $Template:
+      - selectorString
+      - ^displayConfig
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      $pcb.dropdown.PcbMainBoardValues:
+        - ^values
+    # require: true
+
+  - key: SPEC02
+    label: Layer
+    $Template:
+      - inputInt
+      - ^displayConfig
+    # require: true
+    placeholder: '請輸入整數'
+
+  - key: SPEC03
+    label: HDI Structure
+    $Template:
+      - selectorString
+      - ^displayConfig
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      $pcb.dropdown.PcbHdiStructureValues:
+        - ^values
+    # require: true
+
+  - key: SPEC04
+    label: Length(mm)
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    # require: true
+    placeholder: '請輸入數字'
+
+  - key: SPEC05
+    label: Width(mm)
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    # require: true
+    placeholder: '請輸入數字'
+
+  - key: SPEC06
+    label: Array
+    $Template:
+      - inputInt
+      - ^displayConfig
+    # require: true
+    placeholder: '請輸入整數'
+
+  - key: SPEC07
+    label: Thickness (mm)
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    # require: true
+
+  - key: SPEC08
+    label: Surface Treatment
+    $Template:
+      - selectorString
+      - ^displayConfig
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      $pcb.dropdown.PcbASurfaceTreatmentValues:
+        - ^values
+    # require: true
+
+  - key: SPEC09
+    label: HF (Y/N)
+    $Template:
+      - checkBox
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    checkboxConfig:
+      convert: true
+      # 這邊的Y/N是相反的true是N, false是Y
+      label:
+        true: 'N'
+        false: 'Y'
+      mapped: 
+        true: 'N'
+        false: 'Y'
+    default: 'Y'
+
+  - key: SPEC10
+    label: Golden Finger (N/ pin 數)
+    $Template:
+      - inputString
+      - ^displayConfig
+    # require: true
+
+  - key: SPEC11
+    label: Golden Finger Spec.(micro inch)
+    $Template:
+      - selectorString
+      - ^displayConfig
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      $pcb.dropdown.PcbGoldenFingerSpecValues:
+        - ^values
+    # require: true
+
+  - key: SPEC12
+    label: Material Type
+    $Template:
+      - selectorString
+      - ^displayConfig
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      $pcb.dropdown.PcbMaterialTypeValues:
+        - ^values
+    # require: true
+
+  - key: SPEC13
+    label: Line space/width (mil)
+    $Template:
+      - inputString
+      - ^displayConfig
+    # require: true
+    placeholder: '填入範例：3 或 5/20 或 NA'
+
+  - key: SPEC14
+    label: Mini. VIA (mil)
+    $Template:
+      - inputString
+      - ^displayConfig
+    # require: true
+    placeholder: '請輸入數字或 NA'
+
+  - key: SPEC15
+    label: Solder Mask Color
+    $Template:
+      - selectorString
+      - ^displayConfig
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      $pcb.dropdown.PcbSolderMaskColorValues:
+        - ^values
+    require: true
+
+  - key: SPEC16
+    label: Core Thickness(mil)
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    # require: true
+    placeholder: '填入範例：3/3.5 或 NA'
+
+  - key: SPEC17
+    label: Copper Thickness(可複選)
+    $Template:
+      - multiSelectorString
+      - ^displayConfig
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      $pcb.dropdown.PcbCopperThicknessValues:
+        - ^values
+    # require: true
+
+  - key: SPEC18
+    label: PP Type(可複選)
+    $Template:
+      - multiSelectorString
+      - ^displayConfig
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      $pcb.dropdown.PcbPPTypeValues:
+        - ^values
+    # require: true
+
+  - key: SPEC19
+    label: Others 1(可複選)
+    $Template:
+      - multiSelectorString
+      - ^displayConfig
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      $pcb.dropdown.PcbOthers1Values:
+        - ^values
+
+  - key: SPEC20
+    label: Others 2(可複選)
+    $Template:
+      - multiSelectorString
+      - ^displayConfig
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      $pcb.dropdown.PcbOthers2Values:
+        - ^values
+
+  - key: SPEC21
+    label: Others 3
+    $Template:
+      - inputString
+      - ^displayConfig
+    placeholder: '請填入數字或NA'
+
+  - key: SPEC22
+    label: Others 4
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    placeholder: '請填入數字或空白'
+
+  - key: SPEC23
+    label: Others 5
+    $Template:
+      - inputString
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 2
+    placeholder: '填入範例：24pc up(5%)+Panel Size加大(5%)'
+
+  - key: SPEC24
+    label: 併版 CARD
+    $Template:
+      - selectorString
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      $pcb.dropdown.PcbCardValues:
+        - ^values

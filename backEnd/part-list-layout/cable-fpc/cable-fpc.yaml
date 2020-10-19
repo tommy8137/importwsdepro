@@ -1,0 +1,85 @@
+version: 2
+showMenu: false
+layout :
+  - key: FPCTab
+    $Template:
+      - tab
+    label: FPCLabel
+    group:
+      - cableFPC
+    items:
+      - key: FPCItems
+        $Template:
+          - composite
+        label: 不用顯示的
+        $cable-fpc.layout.FPCItems:
+          - ^items
+        visiable: false
+
+      - key: FFCProcessingContent
+        $Template:
+          - composite
+        label: 加工內容
+        $cable-fpc.layout.FPCProcessingContent:
+          - ^items
+
+      - key: FPCMainMaterial
+        $Template:
+          - composite
+        label: 主材料
+        $cable-fpc.layout.FPCMainMaterial:
+          - ^items
+
+      - key: FPCAccessory
+        $Template:
+          - composite
+        label: 輔料
+        group:
+          - fpcAccessory
+        $cable-fpc.layout.FPCAccessory:
+          - ^multiple
+          - ^multipleItems
+
+      - key: FFCRemark
+        $Template:
+          - composite
+        label: 備註
+        $cable-fpc.layout.FPCRemark:
+          - ^items
+
+formulas:
+  cableFPC:
+    $cable-fpc.formula.FPC:
+      - ^formula
+      - ^scope
+      - ^constant
+      - ^output
+
+  fpcShielding:
+    $cable-fpc.formula.FPCShieldingGroup:
+      - ^formula
+      - ^scope
+      - ^global
+      - ^constant
+      - ^output
+
+  fpcReinforcingPlate:
+    $cable-fpc.formula.FPCReinforcingPlateGroup:
+      - ^formula
+      - ^scope
+      - ^constant
+      - ^output
+
+  fpcLabel:
+    $cable-fpc.formula.FPCLabelGroup:
+      - ^formula
+      - ^scope
+      - ^constant
+      - ^output
+
+  fpcAdhesive:
+    $cable-fpc.formula.FPCAdhesiveGroup:
+      - ^formula
+      - ^scope
+      - ^constant
+      - ^output

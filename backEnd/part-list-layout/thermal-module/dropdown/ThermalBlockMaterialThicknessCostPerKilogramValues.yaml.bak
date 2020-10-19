@@ -1,0 +1,47 @@
+values:
+ - thBlMaterial: CU1100
+   thBlMaterialThickness: 0.1
+   thBlMaterialCostPerKilogram: 8.6
+ - thBlMaterial: CU1100
+   thBlMaterialThickness: 0.2
+   thBlMaterialCostPerKilogram: 8.2
+ - thBlMaterial: CU1100
+   thBlMaterialThickness: 0.3
+   thBlMaterialCostPerKilogram: 8.2
+ - thBlMaterial: CU1100
+   thBlMaterialThickness: 0.5
+   thBlMaterialCostPerKilogram: 8.2
+ - thBlMaterial: CU1100
+   thBlMaterialThickness: 0.6
+   thBlMaterialCostPerKilogram: 8.2
+ - thBlMaterial: CU1100
+   thBlMaterialThickness: 0.8
+   thBlMaterialCostPerKilogram: 8.2
+ - thBlMaterial: 皮銅
+   thBlMaterialThickness: 0.5
+   thBlMaterialCostPerKilogram: 8.2
+ - thBlMaterial: AL1050
+   thBlMaterialThickness: 0.15
+   thBlMaterialCostPerKilogram: 3.6
+ - thBlMaterial: AL1050
+   thBlMaterialThickness: 0.2
+   thBlMaterialCostPerKilogram: 2.9
+ - thBlMaterial: AL1050
+   thBlMaterialThickness: 0.3
+   thBlMaterialCostPerKilogram: 2.9
+ - thBlMaterial: AL1050
+   thBlMaterialThickness: 0.4
+   thBlMaterialCostPerKilogram: 2.9
+ - thBlMaterial: AL1050
+   thBlMaterialThickness: 0.5
+   thBlMaterialCostPerKilogram: 2.9
+ - thBlMaterial: AL1050
+   thBlMaterialThickness: 0.6
+   thBlMaterialCostPerKilogram: 2.9
+ - thBlMaterial: AL1050
+   thBlMaterialThickness: 0.8
+   thBlMaterialCostPerKilogram: 2.9
+ - thBlMaterial: AL1052
+   thBlMaterialThickness: 1
+   thBlMaterialCostPerKilogram: 5
+

@@ -1,0 +1,43 @@
+output:
+  total: total
+  unit_total: clip_unit_price
+  qty: clipAmount
+  assemblyTime: assemblyTime
+
+formula:
+# clip零件費 = 單價 * 用量 * (1 + clip loss rate) -----------------------------------------------------------------------------------------------------------------
+  total:
+    type: MATH
+    formula: clip_unit_price * clipAmount * (1 + clip_loss_rate) 
+    label: clip零件費
+
+  # 組裝時間
+  assemblyTime:
+    label: clip組裝時間
+    type: MATH
+    formula: clipAmount * worktimeSec
+
+scope:
+  clipAmount: clipAmount
+
+constant:
+  worktimeSec:
+    label: Assembly組裝工時(sec)
+    ?getThermalCommon:
+      - thermal_module_processing
+      - assembly_spend_time
+    # value: 12
+    
+  clip_unit_price:
+    label: clip單價
+    ?getThermalCommon:
+      - thermal_module_components
+      - clip_cost
+    # value: 0.015
+
+  clip_loss_rate:
+    label: clip loss rate
+    ?getThermalCommon:
+      - thermal_module_components
+      - clip_loss_rate
+    # value: 0.015

@@ -1,0 +1,86 @@
+sheet:
+  label: ODM BOM Summary
+  tables:
+    - key: odmPartSummary_2nd
+      $Template:
+        - colTable
+      colLength: 11
+      headers:
+        $eebom-tmp.header-2nd-summary.odm-bom-summary:
+          - headers
+
+    - key: odmPartNewOpportunity
+      $Template:
+        - newOpportunityTable
+      headers:
+        $eebom-alternative.alternative-new-opportunity:
+          - headers
+
+    - key: exchangeRateDefault_2nd
+      $Template:
+        - traverseTable
+      headers:
+        $eebom-tmp.header-full-bom.fullbomexchange-excel:
+          - headers
+      anchor:
+        x: E
+        y: 7
+
+    - key: costFilter_2nd
+      $Template:
+        - listTable
+      anchor:
+        x: G
+        y: 1
+      headers:
+        $eebom-tmp.header-2nd-bom.2nd-bomcost-base:
+          - headers
+
+    - key: opportunityFilter_2nd
+      $Template:
+        - listTable
+      anchor:
+        x: H
+        y: 1
+      headers:
+        $eebom-tmp.header-2nd-bom.2nd-bomopportunity-base:
+          - headers
+
+    - key: summaryItem2nd_lowest
+      $Template:
+        - summaryfor2nd
+      headers:
+        $eebom-tmp.header-2nd-summary.2nd-summarylowestitems-base:
+          - headers
+      headerConfig:
+        $eebom-tmp.header-2nd-summary.headerConfig:
+          - summaryTitle
+
+    # - key: summaryItem2nd_highest
+    #   $Template:
+    #     - summaryfor2nd
+    #   headers:
+    #     $eebom-tmp.header-2nd-summary.2nd-summaryhighestitems-base:
+    #       - headers
+    #   headerConfig:
+    #     $eebom-tmp.header-2nd-summary.headerConfig:
+    #       - summaryTitle
+    #   anchor:
+    #     x: A
+    #     y: 22
+
+    - key: summaryItem2nd_mlcc
+      $Template:
+        - summaryfor2nd
+      headers:
+        $eebom-tmp.header-2nd-summary.2nd-summarymlccitems-base:
+          - headers
+      headerConfig:
+        $eebom-tmp.header-2nd-summary.headerConfig:
+          - summaryTitle
+      anchor:
+        x: A
+        y: 23
+
+
+    

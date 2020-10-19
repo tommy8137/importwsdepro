@@ -1,0 +1,90 @@
+headers:
+  export_from:
+    label: Export From
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataString
+
+  customer:
+    label: Customer
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataString
+
+  product_type:
+    label: Product Type
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataString
+
+  project_name:
+    label: Project Name
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataString
+
+  project_code:
+    label: Project Code
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataString
+
+  platform:
+    label: Platform
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataString
+
+  sku:
+    label: SKU
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataString
+
+  pcb_no_stage:
+    label: PCB No._Stage
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataString
+
+  stage:
+    label: Stage
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataString
+
+  rd_contact_window:
+    label: RD contact window
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataString
+
+  pm_contact_window:
+    label: PM contact window
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataString
+
+  fcst:
+    label: FCST
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataString
+
+  bu:
+    label: BU
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataInt
+
+  bg:
+    label: BG
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataInt
+
+  business_type_c_flow:
+    label: Business Type of C Flow
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataFloat
+
+  customer_type:
+    label: Customer Type
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataFloat
+
+  project_type:
+    label: Project Type
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataFloat
+
+  project_manufacturing_plant_code:
+    label: Project Manufacturing Plant Code
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataFloat

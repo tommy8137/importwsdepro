@@ -1,0 +1,38 @@
+{
+  "testURL": "http://localhost/",
+  "verbose": false,
+  "collectCoverage": false,
+  "collectCoverageFrom": [
+    "!**/node_modules/**",
+    "**/features/**/*Actions.{js,jsx}"
+  ],
+  "coverageDirectory": "<rootDir>/coverage",
+  "coverageThreshold": {
+    "global": {
+      "branches": 0,
+      "functions": 0,
+      "lines": 0,
+      "statements": 0
+    }
+  },
+  "snapshotSerializers": [
+    "<rootDir>/node_modules/enzyme-to-json/serializer"
+  ],
+  "testRegex": "/__tests__/.*\\.(test|spec)\\.js$",
+  "transform": {
+    "^.+\\.js$": "babel-jest"
+  },
+  "moduleNameMapper": {
+    "\\.(css|less|styl|scss|sass)$": "identity-obj-proxy",
+    "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/test/unit/jest/__mocks__/FileMock.js"
+  },
+  "moduleFileExtensions": [
+    "js",
+    "jsx"
+  ],
+  "moduleDirectories": [
+    "node_modules",
+    "src"
+  ],
+  "setupTestFrameworkScriptFile": "<rootDir>/src/test/unit/jest/SetUp.js" 
+}

@@ -1,0 +1,408 @@
+{
+  "xlsxName": "Test_Data_NB_Thermal_Graphite.xlsx",
+  "sheetName": "NB_Thermal_Graphite",
+  "startHorizontalCoordinates": "C",
+  "transferMode": "createPath",
+  "formate": "thermal-graphite",
+  "metadata": {
+    "productType": {
+      "createPath": "productType",
+      "valuekey": "productType",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "1"
+    },
+    "testLabel": {
+      "createPath": "testLabel",
+      "valuekey": "testLabel",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "2"
+    },
+    "type1": {
+      "createPath": "type1",
+      "valuekey": "type1",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "3"
+    },
+    "type2": {
+      "createPath": "type2",
+      "valuekey": "type2",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "4"
+    }
+  },
+  "transferPartlistInfo": {
+    "formData,thermal-graphite,Graphite,partssizelength": {
+      "createPath": "formData.thermal-graphite.Graphite.partssizelength",
+      "valuekey": "partssizelength",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 7,
+      "default": null
+    },
+    "formData,thermal-graphite,Graphite,partssizewidth": {
+      "createPath": "formData.thermal-graphite.Graphite.partssizewidth",
+      "valuekey": "partssizewidth",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 8,
+      "default": null
+    },
+    "formData,thermal-graphite,Graphite,petSingle": {
+      "createPath": "formData.thermal-graphite.Graphite.petSingle",
+      "valuekey": "petSingle",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 15,
+      "default": null
+    },
+    "formData,thermal-graphite,Graphite,petSinglePrice": {
+      "createPath": "formData.thermal-graphite.Graphite.petSinglePrice",
+      "valuekey": "petSinglePrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,thermal-graphite,Graphite,workProcessing": {
+      "createPath": "formData.thermal-graphite.Graphite.workProcessing",
+      "valuekey": "workProcessing",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 17,
+      "default": null
+    },
+    "formData,thermal-graphite,Graphite,workProcessingPrice": {
+      "createPath": "formData.thermal-graphite.Graphite.workProcessingPrice",
+      "valuekey": "workProcessingPrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,thermal-graphite,Graphite,totalThickness": {
+      "createPath": "formData.thermal-graphite.Graphite.totalThickness",
+      "valuekey": "totalThickness",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,thermal-graphite,Graphite,graphite1,graphiteLayer1": {
+      "createPath": "formData.thermal-graphite.Graphite.graphite1.graphiteLayer1",
+      "valuekey": "graphiteLayer1",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 9,
+      "default": null
+    },
+    "formData,thermal-graphite,Graphite,graphite1,graphiteLayerThickness1": {
+      "createPath": "formData.thermal-graphite.Graphite.graphite1.graphiteLayerThickness1",
+      "valuekey": "graphiteLayerThickness1",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 10,
+      "default": null
+    },
+    "formData,thermal-graphite,Graphite,graphite1,glueDouble1": {
+      "createPath": "formData.thermal-graphite.Graphite.graphite1.glueDouble1",
+      "valuekey": "glueDouble1",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 13,
+      "default": null
+    },
+    "formData,thermal-graphite,Graphite,graphite1,graphiteLayerPrice1": {
+      "createPath": "formData.thermal-graphite.Graphite.graphite1.graphiteLayerPrice1",
+      "valuekey": "graphiteLayerPrice1",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,thermal-graphite,Graphite,graphite1,glueDoublePrice1": {
+      "createPath": "formData.thermal-graphite.Graphite.graphite1.glueDoublePrice1",
+      "valuekey": "glueDoublePrice1",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,thermal-graphite,Graphite,graphite2,isEnabled2": {
+      "createPath": "formData.thermal-graphite.Graphite.graphite2.isEnabled2",
+      "valuekey": "isEnabled2",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": 19,
+      "default": true
+    },
+    "formData,thermal-graphite,Graphite,graphite2,graphiteLayer2": {
+      "createPath": "formData.thermal-graphite.Graphite.graphite2.graphiteLayer2",
+      "valuekey": "graphiteLayer2",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 21,
+      "default": null
+    },
+    "formData,thermal-graphite,Graphite,graphite2,graphiteLayerThickness2": {
+      "createPath": "formData.thermal-graphite.Graphite.graphite2.graphiteLayerThickness2",
+      "valuekey": "graphiteLayerThickness2",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 22,
+      "default": null
+    },
+    "formData,thermal-graphite,Graphite,graphite2,glueDouble2": {
+      "createPath": "formData.thermal-graphite.Graphite.graphite2.glueDouble2",
+      "valuekey": "glueDouble2",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 25,
+      "default": null
+    },
+    "formData,thermal-graphite,Graphite,graphite2,graphiteLayerPrice2": {
+      "createPath": "formData.thermal-graphite.Graphite.graphite2.graphiteLayerPrice2",
+      "valuekey": "graphiteLayerPrice2",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,thermal-graphite,Graphite,graphite2,glueDoublePrice2": {
+      "createPath": "formData.thermal-graphite.Graphite.graphite2.glueDoublePrice2",
+      "valuekey": "glueDoublePrice2",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    }
+  },
+  "verifyInfo": {
+    "totalPrices": {
+      "label": "總價",
+      "excelValueLongitudinalCoordinates": "33",
+      "valuekey": "totalPrices",
+      "valueType": "totalPrices",
+      "comparisonValuePath": "totalPrices"
+    },
+    "parentGroupId": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "parentGroupId",
+      "valueType": "parentGroupId",
+      "comparisonValuePath": "forDebug.summary.thermalgraphite.parentGroupId"
+    },
+    "_graphiteLengthBorder": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "_graphiteLengthBorder",
+      "valueType": "_graphiteLengthBorder",
+      "comparisonValuePath": "forDebug.summary.Graphite._graphiteLengthBorder"
+    },
+    "_graphiteWidthBorder": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "_graphiteWidthBorder",
+      "valueType": "_graphiteWidthBorder",
+      "comparisonValuePath": "forDebug.summary.Graphite._graphiteWidthBorder"
+    },
+    "_partssizelength": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "_partssizelength",
+      "valueType": "_partssizelength",
+      "comparisonValuePath": "forDebug.summary.Graphite._partssizelength"
+    },
+    "_partssizewidth": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "_partssizewidth",
+      "valueType": "_partssizewidth",
+      "comparisonValuePath": "forDebug.summary.Graphite._partssizewidth"
+    },
+    "_graphiteLayerPrice1": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "_graphiteLayerPrice1",
+      "valueType": "_graphiteLayerPrice1",
+      "comparisonValuePath": "forDebug.summary.Graphite._graphiteLayerPrice1"
+    },
+    "_glueDoublePrice1": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "_glueDoublePrice1",
+      "valueType": "_glueDoublePrice1",
+      "comparisonValuePath": "forDebug.summary.Graphite._glueDoublePrice1"
+    },
+    "_graphiteLayerPrice2": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "_graphiteLayerPrice2",
+      "valueType": "_graphiteLayerPrice2",
+      "comparisonValuePath": "forDebug.summary.Graphite._graphiteLayerPrice2"
+    },
+    "_glueDoublePrice2": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "_glueDoublePrice2",
+      "valueType": "_glueDoublePrice2",
+      "comparisonValuePath": "forDebug.summary.Graphite._glueDoublePrice2"
+    },
+    "totalThickness": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "totalThickness",
+      "valueType": "totalThickness",
+      "comparisonValuePath": "forDebug.summary.Graphite.totalThickness"
+    },
+    "_graphiteLWBorder": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "_graphiteLWBorder",
+      "valueType": "_graphiteLWBorder",
+      "comparisonValuePath": "forDebug.summary.Graphite._graphiteLWBorder"
+    },
+    "graphiteTotalPrice1": {
+      "label": "graphiteTotalPrice1",
+      "excelValueLongitudinalCoordinates": "12",
+      "valuekey": "graphiteTotalPrice1",
+      "valueType": "graphiteTotalPrice1",
+      "comparisonValuePath": "forDebug.summary.Graphite.graphiteTotalPrice1"
+    },
+    "_graphiteLW": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "_graphiteLW",
+      "valueType": "_graphiteLW",
+      "comparisonValuePath": "forDebug.summary.Graphite._graphiteLW"
+    },
+    "glueDoubleTotalPrice1": {
+      "label": "glueDoubleTotalPrice1",
+      "excelValueLongitudinalCoordinates": "14",
+      "valuekey": "glueDoubleTotalPrice1",
+      "valueType": "glueDoubleTotalPrice1",
+      "comparisonValuePath": "forDebug.summary.Graphite.glueDoubleTotalPrice1"
+    },
+    "graphiteTotalPrice2": {
+      "label": "graphiteTotalPrice2",
+      "excelValueLongitudinalCoordinates": "24",
+      "valuekey": "graphiteTotalPrice2",
+      "valueType": "graphiteTotalPrice2",
+      "comparisonValuePath": "forDebug.summary.Graphite.graphiteTotalPrice2"
+    },
+    "glueDoubleTotalPrice2": {
+      "label": "glueDoubleTotalPrice2",
+      "excelValueLongitudinalCoordinates": "26",
+      "valuekey": "glueDoubleTotalPrice2",
+      "valueType": "glueDoubleTotalPrice2",
+      "comparisonValuePath": "forDebug.summary.Graphite.glueDoubleTotalPrice2"
+    },
+    "petSingleTotalPrice": {
+      "label": "單面膠總價",
+      "excelValueLongitudinalCoordinates": "16",
+      "valuekey": "petSingleTotalPrice",
+      "valueType": "petSingleTotalPrice",
+      "comparisonValuePath": "forDebug.summary.Graphite.petSingleTotalPrice"
+    },
+    "workProcessingTotalPrice": {
+      "label": "封邊總價",
+      "excelValueLongitudinalCoordinates": "18",
+      "valuekey": "workProcessingTotalPrice",
+      "valueType": "workProcessingTotalPrice",
+      "comparisonValuePath": "forDebug.summary.Graphite.workProcessingTotalPrice"
+    },
+    "total": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "total",
+      "valueType": "total",
+      "comparisonValuePath": "forDebug.summary.thermalgraphite.total"
+    },
+    "squareMeter": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "squareMeter",
+      "valueType": "squareMeter",
+      "comparisonValuePath": "forDebug.debugInfo.Graphite.squareMeter.value"
+    },
+    "graphiteLengthBorder": {
+      "label": "邊料Ｌ",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "graphiteLengthBorder",
+      "valueType": "graphiteLengthBorder",
+      "comparisonValuePath": "forDebug.debugInfo.Graphite.graphiteLengthBorder.value"
+    },
+    "graphiteWidthBorder": {
+      "label": "邊料Ｗ",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "graphiteWidthBorder",
+      "valueType": "graphiteWidthBorder",
+      "comparisonValuePath": "forDebug.debugInfo.Graphite.graphiteWidthBorder.value"
+    },
+    "partssizelength": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "partssizelength",
+      "valueType": "partssizelength",
+      "comparisonValuePath": "forDebug.debugInfo.Graphite.partssizelength.value"
+    },
+    "partssizewidth": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "partssizewidth",
+      "valueType": "partssizewidth",
+      "comparisonValuePath": "forDebug.debugInfo.Graphite.partssizewidth.value"
+    },
+    "graphiteLayerPrice1": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "graphiteLayerPrice1",
+      "valueType": "graphiteLayerPrice1",
+      "comparisonValuePath": "forDebug.debugInfo.Graphite.graphiteLayerPrice1.value"
+    },
+    "glueDoublePrice1": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "glueDoublePrice1",
+      "valueType": "glueDoublePrice1",
+      "comparisonValuePath": "forDebug.debugInfo.Graphite.glueDoublePrice1.value"
+    },
+    "isEnabled2": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "isEnabled2",
+      "valueType": "isEnabled2",
+      "comparisonValuePath": "forDebug.debugInfo.Graphite.isEnabled2.value"
+    },
+    "graphiteLayerPrice2": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "graphiteLayerPrice2",
+      "valueType": "graphiteLayerPrice2",
+      "comparisonValuePath": "forDebug.debugInfo.Graphite.graphiteLayerPrice2.value"
+    },
+    "glueDoublePrice2": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "glueDoublePrice2",
+      "valueType": "glueDoublePrice2",
+      "comparisonValuePath": "forDebug.debugInfo.Graphite.glueDoublePrice2.value"
+    },
+    "petSinglePrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "petSinglePrice",
+      "valueType": "petSinglePrice",
+      "comparisonValuePath": "forDebug.debugInfo.Graphite.petSinglePrice.value"
+    },
+    "workProcessingPrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "workProcessingPrice",
+      "valueType": "workProcessingPrice",
+      "comparisonValuePath": "forDebug.debugInfo.Graphite.workProcessingPrice.value"
+    },
+    "graphiteLayer2": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "graphiteLayer2",
+      "valueType": "graphiteLayer2",
+      "comparisonValuePath": "forDebug.debugInfo.Graphite.graphiteLayer2.value"
+    },
+    "graphiteLWBorder": {
+      "label": "graphiteLW",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "graphiteLWBorder",
+      "valueType": "graphiteLWBorder",
+      "comparisonValuePath": "forDebug.debugInfo.Graphite.graphiteLWBorder.value"
+    },
+    "graphiteLW": {
+      "label": "graphiteLW",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "graphiteLW",
+      "valueType": "graphiteLW",
+      "comparisonValuePath": "forDebug.debugInfo.Graphite.graphiteLW.value"
+    }
+  }
+}

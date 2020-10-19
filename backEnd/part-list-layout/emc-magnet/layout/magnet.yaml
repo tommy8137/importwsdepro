@@ -1,0 +1,53 @@
+multiple: true
+items:
+  - key: materialLength
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    label: L(mm)
+    default: 0
+
+  - key: materialWidth
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    label: W(mm)
+    default: 0
+
+  - key: materialHeight
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    label: H(mm)
+    default: 0
+
+  - key: materialSpecId
+    $Template:
+      - selectorString
+      - ^displayConfig
+    label: materialSpec
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getMagnetMaterial:
+        -
+      # $emc-magnet.dropdown.materialPrice:
+      #   - ^values
+    default: 0
+
+  - key: materialPrice
+    $Template:
+      - mappedValueFloat
+    mapFrom:
+      - materialSpecId
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getMagnetMaterial:
+        -
+      # $emc-magnet.dropdown.materialPrice:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false

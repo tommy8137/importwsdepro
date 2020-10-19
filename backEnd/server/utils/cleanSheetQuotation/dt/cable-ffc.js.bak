@@ -1,0 +1,3255 @@
+module.exports = [
+  {
+    'xlsxKey': 'CI1RI0',
+    'rowIndex': 0,
+    'cellIndex': 0,
+    'label': 'A.材料費',
+    'type': 'formula',
+    'description': '=CI1RI10+CI1RI19',
+    'style': {
+      'color': '0000FF',
+      'border': {
+        'topBorderStyle': 'thick',
+        'bottomBorderStyle': 'thick',
+      },
+      'numberFormat': '#,##0.00000',
+    },
+    'contents': []
+  },
+  {
+    'xlsxKey': 'CI0RI1',
+    'rowIndex': 1,
+    'cellIndex': 0,
+    'label': '銅線',
+    'style': {
+      'color': null,
+      'border': {
+        'topBorderStyle': 'thin',
+        'bottomBorderStyle': 'thin',
+      },
+      'numberFormat': '#,##0.00000',
+    },
+    'contents': [
+      {
+        'xlsxKey': 'CI1RI1',
+        'rowIndex': 1,
+        'cellIndex': 1,
+        'label': 'Material',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00000',
+        },
+        'byKey': 'partlistvalue.Price.cableFFC.FFCCopperWireSpec',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI2',
+        'rowIndex': 2,
+        'cellIndex': 1,
+        'label': '銅線Pin',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.FFCPin.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI3',
+        'rowIndex': 3,
+        'cellIndex': 1,
+        'label': '銅線Pitch',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.0',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.FFCPitch.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI4',
+        'rowIndex': 4,
+        'cellIndex': 1,
+        'label': '銅線/皮膜L(mm)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.FFCLength.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI5',
+        'rowIndex': 5,
+        'cellIndex': 1,
+        'label': '銅線長度邊料尺寸(mm)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.copperWireMaterialSideConstant.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI6',
+        'rowIndex': 6,
+        'cellIndex': 1,
+        'label': '邊料(mm)',
+        'type': 'formula',
+        'description': '=IF(CI1RI51>0, CI1RI5, 0)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00',
+        },
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI7',
+        'rowIndex': 7,
+        'cellIndex': 1,
+        'label': 'Material Price (USD/M)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00000',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.FFCCopperWireSpecPrice.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI8',
+        'rowIndex': 8,
+        'cellIndex': 1,
+        'label': 'Loss Rate(%)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '0.0%',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.FFCCopperWireLossRateValue.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI9',
+        'rowIndex': 9,
+        'cellIndex': 1,
+        'label': '公式',
+        'type': 'value',
+        'description': '(L+邊料)*銅線Pin*(Material Price/1000)*(1+Loss Rate)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00000',
+        },
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI10',
+        'rowIndex': 10,
+        'cellIndex': 1,
+        'label': 'Price',
+        'type': 'formula',
+        'description': '=IF(CI1RI4=0,0,(CI1RI4+CI1RI6)*CI1RI2*(CI1RI7/1000)*(1+CI1RI8))',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00000',
+        },
+        'contents': []
+      }
+    ]
+  },
+  {
+    'xlsxKey': 'CI0RI11',
+    'rowIndex': 11,
+    'cellIndex': 0,
+    'label': '皮膜',
+    'style': {
+      'color': null,
+      'border': {
+        'topBorderStyle': 'thin',
+        'bottomBorderStyle': 'thin',
+      },
+      'numberFormat': '#,##0.00000',
+    },
+    'contents': [
+      {
+        'xlsxKey': 'CI1RI11',
+        'rowIndex': 11,
+        'cellIndex': 1,
+        'label': 'Material',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00000',
+        },
+        'byKey': 'partlistvalue.Price.cableFFC.FFCCoatingSpec',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI12',
+        'rowIndex': 12,
+        'cellIndex': 1,
+        'label': 'W (mm)',
+        'type': 'formula',
+        'description': '=(CI1RI2+1)*CI1RI3',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00',
+        },
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI13',
+        'rowIndex': 13,
+        'cellIndex': 1,
+        'label': '分條數',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.slittingCount.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI14',
+        'rowIndex': 14,
+        'cellIndex': 1,
+        'label': '皮膜長度邊料尺寸(mm)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.coatingMaterialSideConstant.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI15',
+        'rowIndex': 15,
+        'cellIndex': 1,
+        'label': '邊料(mm)',
+        'type': 'formula',
+        'description': '=IF(CI1RI51>0, CI1RI14, 0)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00',
+        },
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI16',
+        'rowIndex': 16,
+        'cellIndex': 1,
+        'label': 'Material Price (USD/M)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00000',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.FFCCoatingSpecPrice.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI17',
+        'rowIndex': 17,
+        'cellIndex': 1,
+        'label': 'Loss Rate(%)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '0.0%',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.FFCCoatingLossRateValue.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI18',
+        'rowIndex': 18,
+        'cellIndex': 1,
+        'label': '公式',
+        'type': 'value',
+        'description': '(Material Price/1000)*(L+邊料)/分條數*(1+Loss Rate)*2',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00000',
+        },
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI19',
+        'rowIndex': 19,
+        'cellIndex': 1,
+        'label': 'Price',
+        'type': 'formula',
+        'description': '=IF(CI1RI4=0,0,(CI1RI16/1000)*(CI1RI4+CI1RI15)/CI1RI13*(1+CI1RI17)*2)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00000',
+        },
+        'contents': []
+      }
+    ]
+  },
+  {
+    'xlsxKey': 'CI1RI20',
+    'rowIndex': 20,
+    'cellIndex': 0,
+    'label': 'B.二次加工費',
+    'type': 'formula',
+    'description': '=SUM(CI1RI30,CI1RI36,CI1RI41,CI1RI50,CI1RI55,CI1RI60,CI1RI65,CI1RI70)',
+    'style': {
+      'color': '0000FF',
+      'border': {
+        'topBorderStyle': 'thick',
+        'bottomBorderStyle': 'thick',
+      },
+      'numberFormat': '#,##0.00000',
+    },
+    'contents': []
+  },
+  {
+    'xlsxKey': 'CI0RI21',
+    'rowIndex': 21,
+    'cellIndex': 0,
+    'label': '貼合分條及導通裁切',
+    'style': {
+      'color': null,
+      'border': {
+        'topBorderStyle': 'thin',
+        'bottomBorderStyle': 'thin',
+      },
+      'numberFormat': '#,##0',
+    },
+    'contents': [
+      {
+        'xlsxKey': 'CI1RI21',
+        'rowIndex': 21,
+        'cellIndex': 1,
+        'label': '秒數',
+        'type': 'formula',
+        'description': '=CI1RI22+CI1RI4/CI1RI23/CI1RI13+CI1RI24+CI1RI25',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI22',
+        'rowIndex': 22,
+        'cellIndex': 1,
+        'label': '拉絲及壓延秒數(sec)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.0',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.pastingSec.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI23',
+        'rowIndex': 23,
+        'cellIndex': 1,
+        'label': '貼合分條速率(mm/sec)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.0',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.pastingLengthPerSec.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI24',
+        'rowIndex': 24,
+        'cellIndex': 1,
+        'label': '導通測試秒數(sec)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.0',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.pastingOtherSec.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI25',
+        'rowIndex': 25,
+        'cellIndex': 1,
+        'label': '裁切及量測秒數(sec)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.pastingMeasuringSec.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI26',
+        'rowIndex': 26,
+        'cellIndex': 1,
+        'label': '組裝費率(USD/min)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.0000',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.pastingPerPrice.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI27',
+        'rowIndex': 27,
+        'cellIndex': 1,
+        'label': 'U/P(USD/sec)',
+        'type': 'formula',
+        'description': '=CI1RI26/60',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.0000',
+        },
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI28',
+        'rowIndex': 28,
+        'cellIndex': 1,
+        'label': 'Loss Rate(%)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '0.0%',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.pastingLossRate.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI29',
+        'rowIndex': 29,
+        'cellIndex': 1,
+        'label': '公式',
+        'type': 'value',
+        'description': '數量 * U/P * (1 + Loss Rate)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00000',
+        },
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI30',
+        'rowIndex': 30,
+        'cellIndex': 1,
+        'label': 'Price',
+        'type': 'formula',
+        'description': '=CI1RI21*CI1RI27*(1+CI1RI28)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.0000',
+        },
+        'contents': []
+      }
+    ]
+  },
+  {
+    'xlsxKey': 'CI0RI31',
+    'rowIndex': 31,
+    'cellIndex': 0,
+    'label': '停止線',
+    'style': {
+      'color': null,
+      'border': {
+        'topBorderStyle': 'thin',
+        'bottomBorderStyle': 'thin',
+      },
+      'numberFormat': '#,##0',
+    },
+    'contents': [
+      {
+        'xlsxKey': 'CI1RI31',
+        'rowIndex': 31,
+        'cellIndex': 1,
+        'label': '數量(條)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.FFCStopLine.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI32',
+        'rowIndex': 32,
+        'cellIndex': 1,
+        'label': '畫線費率(USD/min)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.0000',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.stopLinePerPrice.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI33',
+        'rowIndex': 33,
+        'cellIndex': 1,
+        'label': 'U/P(USD)',
+        'type': 'formula',
+        'description': '=CI1RI32/60',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.0000',
+        },
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI34',
+        'rowIndex': 34,
+        'cellIndex': 1,
+        'label': 'Loss Rate(%)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '0.0%',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.FFCStopLineLossRateValue.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI35',
+        'rowIndex': 35,
+        'cellIndex': 1,
+        'label': '公式',
+        'type': 'value',
+        'description': '數量 * U/P * (1 + Loss Rate)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00000',
+        },
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI36',
+        'rowIndex': 36,
+        'cellIndex': 1,
+        'label': 'Price',
+        'type': 'formula',
+        'description': '=CI1RI31*CI1RI33*(1+CI1RI34)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.0000',
+        },
+        'contents': []
+      }
+    ],
+    'byKey': 'partlistprice.prices.cableFFC.b_sub_ffcStopLine_cost',
+  },
+  {
+    'xlsxKey': 'CI0RI37',
+    'rowIndex': 37,
+    'cellIndex': 0,
+    'label': '印刷',
+    'style': {
+      'color': null,
+      'border': {
+        'topBorderStyle': 'thin',
+        'bottomBorderStyle': 'thin',
+      },
+      'numberFormat': '#,##0',
+    },
+    'contents': [
+      {
+        'xlsxKey': 'CI1RI37',
+        'rowIndex': 37,
+        'cellIndex': 1,
+        'label': '數量(面)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.FFCPrintArea.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI38',
+        'rowIndex': 38,
+        'cellIndex': 1,
+        'label': 'U/P(USD)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.0000',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.prittingPrice.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI39',
+        'rowIndex': 39,
+        'cellIndex': 1,
+        'label': 'Loss Rate(%)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '0.0%',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.FFCPrittingLossRateValue.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI40',
+        'rowIndex': 40,
+        'cellIndex': 1,
+        'label': '公式',
+        'type': 'value',
+        'description': '數量 * U/P * (1 + Loss Rate)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00000',
+        },
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI41',
+        'rowIndex': 41,
+        'cellIndex': 1,
+        'label': 'Price',
+        'type': 'formula',
+        'description': '=CI1RI37*CI1RI38*(1+CI1RI39)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.0000',
+        },
+        'contents': []
+      }
+    ]
+  },
+  {
+    'xlsxKey': 'CI0RI42',
+    'rowIndex': 42,
+    'cellIndex': 0,
+    'label': '金手指掛鍍',
+    'style': {
+      'color': null,
+      'border': {
+        'topBorderStyle': 'thin',
+        'bottomBorderStyle': 'thin',
+      },
+      'numberFormat': '#,##0',
+    },
+    'contents': [
+      {
+        'xlsxKey': 'CI1RI42',
+        'rowIndex': 42,
+        'cellIndex': 1,
+        'label': '數量(um)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.FFCGoldPlating.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI43',
+        'rowIndex': 43,
+        'cellIndex': 1,
+        'label': '鍍金基本費(USD)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.0000',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.goldPlatingParams.value.pitchPrice',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI44',
+        'rowIndex': 44,
+        'cellIndex': 1,
+        'label': '每Pin基本鍍金費率(USD/um)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00000',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.goldPlatingParams.value.pitchPerPinPrice',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI45',
+        'rowIndex': 45,
+        'cellIndex': 1,
+        'label': '鍍金長度係數(mm)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.goldPlatingConstant.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI46',
+        'rowIndex': 46,
+        'cellIndex': 1,
+        'label': '鍍金費(USD)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.0000',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.goldPlatingPricePerLength.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI47',
+        'rowIndex': 47,
+        'cellIndex': 1,
+        'label': '加工費用',
+        'type': 'formula',
+        'description': '=IF(CI1RI42 <= 0, 0, (CI1RI43+CI1RI44*CI1RI42*CI1RI2)+INT(CI1RI4/CI1RI45)*CI1RI46)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.0000',
+        },
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI48',
+        'rowIndex': 48,
+        'cellIndex': 1,
+        'label': 'Loss Rate(%)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '0.0%',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.FFCGiltLossRateValue.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI49',
+        'rowIndex': 49,
+        'cellIndex': 1,
+        'label': '公式',
+        'type': 'value',
+        'description': '加工費用 * (1 + Loss Rate)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00000',
+        },
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI50',
+        'rowIndex': 50,
+        'cellIndex': 1,
+        'label': 'Price',
+        'type': 'formula',
+        'description': '=CI1RI47*(1+CI1RI48)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.0000',
+        },
+        'contents': []
+      }
+    ]
+  },
+  {
+    'xlsxKey': 'CI0RI51',
+    'rowIndex': 51,
+    'cellIndex': 0,
+    'label': '沖型',
+    'style': {
+      'color': null,
+      'border': {
+        'topBorderStyle': 'thin',
+        'bottomBorderStyle': 'thin',
+      },
+      'numberFormat': '#,##0',
+    },
+    'contents': [
+      {
+        'xlsxKey': 'CI1RI51',
+        'rowIndex': 51,
+        'cellIndex': 1,
+        'label': '數量(次)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.FFCFlushCount.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI52',
+        'rowIndex': 52,
+        'cellIndex': 1,
+        'label': 'U/P(USD)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.0000',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.flushPrice.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI53',
+        'rowIndex': 53,
+        'cellIndex': 1,
+        'label': 'Loss Rate(%)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '0.0%',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.FFCFlushLossRateValue.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI54',
+        'rowIndex': 54,
+        'cellIndex': 1,
+        'label': '公式',
+        'type': 'value',
+        'description': '數量 * U/P * (1 + Loss Rate)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00000',
+        },
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI55',
+        'rowIndex': 55,
+        'cellIndex': 1,
+        'label': 'Price',
+        'type': 'formula',
+        'description': '=CI1RI51*CI1RI52*(1+CI1RI53)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.0000',
+        },
+        'contents': []
+      }
+    ],
+    'byKey': 'partlistprice.prices.cableFFC.b_sub_ffc_flush_cost',
+  },
+  {
+    'xlsxKey': 'CI0RI56',
+    'rowIndex': 56,
+    'cellIndex': 0,
+    'label': '折彎',
+    'style': {
+      'color': null,
+      'border': {
+        'topBorderStyle': 'thin',
+        'bottomBorderStyle': 'thin',
+      },
+      'numberFormat': '#,##0',
+    },
+    'contents': [
+      {
+        'xlsxKey': 'CI1RI56',
+        'rowIndex': 56,
+        'cellIndex': 1,
+        'label': '數量(次)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.FFCBendTImes.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI57',
+        'rowIndex': 57,
+        'cellIndex': 1,
+        'label': 'U/P(USD)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.0000',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.bendPrice.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI58',
+        'rowIndex': 58,
+        'cellIndex': 1,
+        'label': 'Loss Rate(%)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '0.0%',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.FFCBendLossRateValue.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI59',
+        'rowIndex': 59,
+        'cellIndex': 1,
+        'label': '公式',
+        'type': 'value',
+        'description': '數量 * U/P * (1 + Loss Rate)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00000',
+        },
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI60',
+        'rowIndex': 60,
+        'cellIndex': 1,
+        'label': 'Price',
+        'type': 'formula',
+        'description': '=CI1RI56*CI1RI57*(1+CI1RI58)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.0000',
+        },
+        'contents': []
+      }
+    ],
+    'byKey': 'partlistprice.prices.cableFFC.b_sub_ffcBend_cost',
+  },
+  {
+    'xlsxKey': 'CI0RI61',
+    'rowIndex': 61,
+    'cellIndex': 0,
+    'label': '噴碼',
+    'style': {
+      'color': null,
+      'border': {
+        'topBorderStyle': 'thin',
+        'bottomBorderStyle': 'thin',
+      },
+      'numberFormat': '#,##0',
+    },
+    'contents': [
+      {
+        'xlsxKey': 'CI1RI61',
+        'rowIndex': 61,
+        'cellIndex': 1,
+        'label': '數量(次)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.FFCSprayCodeCount.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI62',
+        'rowIndex': 62,
+        'cellIndex': 1,
+        'label': 'U/P(USD)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.0000',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.sprayCodePrice.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI63',
+        'rowIndex': 63,
+        'cellIndex': 1,
+        'label': 'Loss Rate(%)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '0.0%',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.FFCSprayCodeLossRateValue.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI64',
+        'rowIndex': 64,
+        'cellIndex': 1,
+        'label': '公式',
+        'type': 'value',
+        'description': '數量 * U/P * (1 + Loss Rate)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00000',
+        },
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI65',
+        'rowIndex': 65,
+        'cellIndex': 1,
+        'label': 'Price',
+        'type': 'formula',
+        'description': '=CI1RI61*CI1RI62*(1+CI1RI63)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.0000',
+        },
+        'contents': []
+      }
+    ]
+  },
+  {
+    'xlsxKey': 'CI0RI66',
+    'rowIndex': 66,
+    'cellIndex': 0,
+    'label': '組裝',
+    'style': {
+      'color': null,
+      'border': {
+        'topBorderStyle': 'thin',
+        'bottomBorderStyle': 'thin',
+      },
+      'numberFormat': '#,##0',
+    },
+    'contents': [
+      {
+        'xlsxKey': 'CI1RI66',
+        'rowIndex': 66,
+        'cellIndex': 1,
+        'label': '數量(秒)',
+        'type': 'formula',
+        'description': {
+          'type': 'sum',
+          'set': [
+            {
+              'groupIdPath': 'partlistvalue.formData.FFCTab.FFCConnector',
+              'byKey': 'assyTime.value',
+            },
+            {
+              'groupIdPath': 'partlistvalue.formData.FFCTab.FFCAccessory',
+              'byKey': 'assy_time',
+            }
+          ],
+          'wrapper': 'IFERROR(FORMULA, "")',
+        },
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI67',
+        'rowIndex': 67,
+        'cellIndex': 1,
+        'label': 'U/P(USD)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.0000',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.assemblyPrice',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI68',
+        'rowIndex': 68,
+        'cellIndex': 1,
+        'label': 'Loss Rate(%)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '0.0%',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.FFCAssembleLossRateValue.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI69',
+        'rowIndex': 69,
+        'cellIndex': 1,
+        'label': '公式',
+        'type': 'value',
+        'description': '數量 * U/P * (1 + Loss Rate)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00000',
+        },
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI70',
+        'rowIndex': 70,
+        'cellIndex': 1,
+        'label': 'Price',
+        'type': 'formula',
+        'description': '=CI1RI66*CI1RI67*(1+CI1RI68)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.0000',
+        },
+        'contents': []
+      }
+    ],
+    'byKey': 'partlistprice.prices.cableFFC.b_sub_assembly_cost',
+  },
+  {
+    'xlsxKey': 'CI1RI71',
+    'rowIndex': 71,
+    'cellIndex': 0,
+    'label': 'C.零件費',
+    'type': 'formula',
+    'description': {
+      'type': 'sum',
+      'set': [
+        {
+          'groupIdPath': 'partlistvalue.formData.FFCTab.FFCConnector',
+          'byKey': 'connector_price',
+        },
+        {
+          'groupIdPath': 'partlistvalue.formData.FFCTab.FFCAccessory',
+          'byKey': 'accessory_price',
+        }
+      ],
+      'wrapper': 'IFERROR(FORMULA+$C$160+$C$152, "")',
+    },
+    'style': {
+      'color': '0000FF',
+      'border': {
+        'topBorderStyle': 'thick',
+        'bottomBorderStyle': 'thick',
+      },
+      'numberFormat': '#,##0.00000',
+    },
+    'contents': []
+  },
+  {
+    'xlsxKey': 'CI0RI72',
+    'rowIndex': 72,
+    'cellIndex': 0,
+    'label': 'system parameter',
+    'style': {
+      'color': null,
+      'border': {
+        'topBorderStyle': 'thin',
+        'bottomBorderStyle': 'thin',
+      },
+      'numberFormat': '#,##0',
+    },
+    'contents': [
+      {
+        'xlsxKey': 'CI1RI72',
+        'rowIndex': 72,
+        'cellIndex': 1,
+        'label': '長度下料增加尺寸',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.lengthAdder.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI73',
+        'rowIndex': 73,
+        'cellIndex': 1,
+        'label': '寬度下料增加尺寸',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.widthAdder.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI74',
+        'rowIndex': 74,
+        'cellIndex': 1,
+        'label': 'M1沖模有效長度',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.m1Length.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI75',
+        'rowIndex': 75,
+        'cellIndex': 1,
+        'label': 'M1沖模有效寬度',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.m1Width.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI76',
+        'rowIndex': 76,
+        'cellIndex': 1,
+        'label': 'M1沖工費(材料面積<=25)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.0000',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.m1Price.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI77',
+        'rowIndex': 77,
+        'cellIndex': 1,
+        'label': 'M2沖模有效長度(mm)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.m2Length.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI78',
+        'rowIndex': 78,
+        'cellIndex': 1,
+        'label': 'M2沖模有效寬度(mm)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.m2Width.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI79',
+        'rowIndex': 79,
+        'cellIndex': 1,
+        'label': 'M2沖工費(材料面積<=2500)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.0000',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.m2Price.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI80',
+        'rowIndex': 80,
+        'cellIndex': 1,
+        'label': 'M3沖工費(材料面積<=5000)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.0000',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.m3Price.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI81',
+        'rowIndex': 81,
+        'cellIndex': 1,
+        'label': 'M3沖模有效長度(mm)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.m3Length.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI82',
+        'rowIndex': 82,
+        'cellIndex': 1,
+        'label': 'M3沖模有效寬度(mm)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.m3Width.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI83',
+        'rowIndex': 83,
+        'cellIndex': 1,
+        'label': '沖切利潤(%)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '0.0%',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.accessoryProfit.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI84',
+        'rowIndex': 84,
+        'cellIndex': 1,
+        'label': '人工貼合秒數(sec)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.stickingAssyTime',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI85',
+        'rowIndex': 85,
+        'cellIndex': 1,
+        'label': '組裝費率(USD/min)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.0000',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.assemblyPerPrice.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI86',
+        'rowIndex': 86,
+        'cellIndex': 1,
+        'label': '人工貼合利潤(%)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '0.0%',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.stickingProfit',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI87',
+        'rowIndex': 87,
+        'cellIndex': 1,
+        'label': '平貼組裝秒數(0 < 長度 <= 平貼長度係數1)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.flatPaste.param1.second',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI88',
+        'rowIndex': 88,
+        'cellIndex': 1,
+        'label': '平貼組裝秒數(平貼長度係數1 < 長度 <= 平貼長度係數2)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.flatPaste.param2.second',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI89',
+        'rowIndex': 89,
+        'cellIndex': 1,
+        'label': '平貼組裝秒數(平貼長度係數2 < 長度 <= 平貼長度係數3)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.flatPaste.param3.second',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI90',
+        'rowIndex': 90,
+        'cellIndex': 1,
+        'label': '平貼組裝秒數(平貼長度係數3 < 長度 <= 平貼長度係數4)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.flatPaste.param4.second',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI91',
+        'rowIndex': 91,
+        'cellIndex': 1,
+        'label': '平貼組裝秒數(平貼長度係數4 < 長度 <= 平貼長度係數5)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.flatPaste.param5.second',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI92',
+        'rowIndex': 92,
+        'cellIndex': 1,
+        'label': '平貼組裝秒數(平貼長度係數5 < 長度 <= 平貼長度係數6)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.flatPaste.param6.second',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI93',
+        'rowIndex': 93,
+        'cellIndex': 1,
+        'label': '平貼組裝秒數(平貼長度係數6 < 長度 <= 平貼長度係數7)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.flatPaste.param7.second',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI94',
+        'rowIndex': 94,
+        'cellIndex': 1,
+        'label': '平貼組裝秒數(平貼長度係數7 < 長度 <= 平貼長度係數8)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.flatPaste.param8.second',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI95',
+        'rowIndex': 95,
+        'cellIndex': 1,
+        'label': '平貼組裝秒數(平貼長度係數8 < 長度 <= 平貼長度係數9)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.flatPaste.param9.second',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI96',
+        'rowIndex': 96,
+        'cellIndex': 1,
+        'label': '平貼組裝秒數(平貼長度係數9 < 長度 <= 平貼長度係數10)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.flatPaste.param10.second',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI97',
+        'rowIndex': 97,
+        'cellIndex': 1,
+        'label': '平貼組裝秒數(長度 > 平貼長度係數10)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.flatPaste.param11.second',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI98',
+        'rowIndex': 98,
+        'cellIndex': 1,
+        'label': '環包組裝秒數(寬度 <= 15)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.roundCoverW.param1.second',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI99',
+        'rowIndex': 99,
+        'cellIndex': 1,
+        'label': '環包組裝秒數(0 < 長度 <= 環包長度係數1)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.roundCoverL.param1.second',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI100',
+        'rowIndex': 100,
+        'cellIndex': 1,
+        'label': '環包組裝秒數(環包長度係數1 < 長度 <= 環包長度係數2)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.roundCoverL.param2.second',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI101',
+        'rowIndex': 101,
+        'cellIndex': 1,
+        'label': '環包組裝秒數(環包長度係數2 < 長度 <= 環包長度係數3)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.roundCoverL.param3.second',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI102',
+        'rowIndex': 102,
+        'cellIndex': 1,
+        'label': '環包組裝秒數(環包長度係數3 < 長度 <= 環包長度係數4)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.roundCoverL.param4.second',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI103',
+        'rowIndex': 103,
+        'cellIndex': 1,
+        'label': '環包組裝秒數(環包長度係數4 < 長度 <= 環包長度係數5)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.roundCoverL.param5.second',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI104',
+        'rowIndex': 104,
+        'cellIndex': 1,
+        'label': '環包組裝秒數(環包長度係數5 < 長度 <= 環包長度係數6)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.roundCoverL.param6.second',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI105',
+        'rowIndex': 105,
+        'cellIndex': 1,
+        'label': '環包組裝秒數(環包長度係數6 < 長度 <= 環包長度係數7)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.roundCoverL.param7.second',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI106',
+        'rowIndex': 106,
+        'cellIndex': 1,
+        'label': '環包組裝秒數(環包長度係數7 < 長度 <= 環包長度係數8)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.roundCoverL.param8.second',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI107',
+        'rowIndex': 107,
+        'cellIndex': 1,
+        'label': '環包組裝秒數(環包長度係數8 < 長度 <= 環包長度係數9)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.roundCoverL.param9.second',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI108',
+        'rowIndex': 108,
+        'cellIndex': 1,
+        'label': '環包組裝秒數(環包長度係數9 < 長度 <= 環包長度係數10)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00000',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.roundCoverL.param10.second',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI109',
+        'rowIndex': 109,
+        'cellIndex': 1,
+        'label': '環包組裝秒數(長度 > 環包長度係數10)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.roundCoverL.param11.second',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI110',
+        'rowIndex': 110,
+        'cellIndex': 1,
+        'label': '纏繞組裝秒數(0 < 長度 <= 100)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.twine.param1.second',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI111',
+        'rowIndex': 111,
+        'cellIndex': 1,
+        'label': '纏繞組裝秒數(長度>100時，長度超過100的部分，每100的區間增加的秒數)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.twine.param2.second',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI112',
+        'rowIndex': 112,
+        'cellIndex': 1,
+        'label': '平貼長度係數1',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.flatPaste.param1.limit',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI113',
+        'rowIndex': 113,
+        'cellIndex': 1,
+        'label': '平貼長度係數2',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.flatPaste.param2.limit',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI114',
+        'rowIndex': 114,
+        'cellIndex': 1,
+        'label': '平貼長度係數3',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.flatPaste.param3.limit',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI115',
+        'rowIndex': 115,
+        'cellIndex': 1,
+        'label': '平貼長度係數4',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.flatPaste.param4.limit',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI116',
+        'rowIndex': 116,
+        'cellIndex': 1,
+        'label': '平貼長度係數5',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.flatPaste.param5.limit',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI117',
+        'rowIndex': 117,
+        'cellIndex': 1,
+        'label': '平貼長度係數6',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.flatPaste.param6.limit',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI118',
+        'rowIndex': 118,
+        'cellIndex': 1,
+        'label': '平貼長度係數7',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.flatPaste.param7.limit',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI119',
+        'rowIndex': 119,
+        'cellIndex': 1,
+        'label': '平貼長度係數8',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.flatPaste.param8.limit',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI120',
+        'rowIndex': 120,
+        'cellIndex': 1,
+        'label': '平貼長度係數9',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.flatPaste.param9.limit',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI121',
+        'rowIndex': 121,
+        'cellIndex': 1,
+        'label': '平貼長度係數10',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.flatPaste.param10.limit',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI122',
+        'rowIndex': 122,
+        'cellIndex': 1,
+        'label': '環包寬度係數',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.roundCoverW.param1.limit',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI123',
+        'rowIndex': 123,
+        'cellIndex': 1,
+        'label': '環包長度係數1',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.roundCoverL.param1.limit',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI124',
+        'rowIndex': 124,
+        'cellIndex': 1,
+        'label': '環包長度係數2',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.roundCoverL.param2.limit',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI125',
+        'rowIndex': 125,
+        'cellIndex': 1,
+        'label': '環包長度係數3',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.roundCoverL.param3.limit',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI126',
+        'rowIndex': 126,
+        'cellIndex': 1,
+        'label': '環包長度係數4',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.roundCoverL.param4.limit',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI127',
+        'rowIndex': 127,
+        'cellIndex': 1,
+        'label': '環包長度係數5',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.roundCoverL.param5.limit',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI128',
+        'rowIndex': 128,
+        'cellIndex': 1,
+        'label': '環包長度係數6',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.roundCoverL.param6.limit',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI129',
+        'rowIndex': 129,
+        'cellIndex': 1,
+        'label': '環包長度係數7',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.roundCoverL.param7.limit',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI130',
+        'rowIndex': 130,
+        'cellIndex': 1,
+        'label': '環包長度係數8',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.roundCoverL.param8.limit',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI131',
+        'rowIndex': 131,
+        'cellIndex': 1,
+        'label': '環包長度係數9',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.roundCoverL.param9.limit',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI132',
+        'rowIndex': 132,
+        'cellIndex': 1,
+        'label': '環包長度係數10',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.roundCoverL.param10.limit',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI133',
+        'rowIndex': 133,
+        'cellIndex': 1,
+        'label': '纏繞長度區間係數',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00000',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.twine.param1.interval',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI134',
+        'rowIndex': 134,
+        'cellIndex': 1,
+        'label': '纏繞長度係數',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.summary.cableFFC.accessoryAssyTimeParams.twine.param1.limit',
+        'contents': []
+      }
+    ],
+    'forceHidden': true
+  },
+  {
+    'xlsxKey': 'CI0RI135',
+    'rowIndex': 135,
+    'cellIndex': 0,
+    'label': '補強板 - 1',
+    'style': {
+      'color': null,
+      'border': {
+        'topBorderStyle': 'thin',
+        'bottomBorderStyle': 'thin',
+      },
+      'numberFormat': '#,##0.00',
+    },
+    'contents': [
+      {
+        'xlsxKey': 'CI1RI135',
+        'rowIndex': 135,
+        'cellIndex': 1,
+        'label': 'L (mm)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.FFCReinforcingPlateLength1.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI136',
+        'rowIndex': 136,
+        'cellIndex': 1,
+        'label': 'W (mm)',
+        'type': 'formula',
+        'description': '=$C$22+CI1RI137',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00',
+        },
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI137',
+        'rowIndex': 137,
+        'cellIndex': 1,
+        'label': '補強板寬度寬放(mm)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00000',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.reinforcingPlateConstant.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI138',
+        'rowIndex': 138,
+        'cellIndex': 1,
+        'label': '數量',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.FFCReinforcingPlateQty1.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI139',
+        'rowIndex': 139,
+        'cellIndex': 1,
+        'label': 'U/P (USD)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.0000',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.FFCReinforcingPlatePrice1.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI140',
+        'rowIndex': 140,
+        'cellIndex': 1,
+        'label': 'Loss Rate(%)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '0.0%',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.FFCReinforcingPlateLossRate.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI141',
+        'rowIndex': 141,
+        'cellIndex': 1,
+        'label': '公式',
+        'type': 'value',
+        'description': 'L*W*數量*(U/P/1000000)*(1+LossRate)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00000',
+        },
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI142',
+        'rowIndex': 142,
+        'cellIndex': 1,
+        'label': 'Price',
+        'type': 'formula',
+        'description': '=CI1RI135*CI1RI136*CI1RI138*(CI1RI139/1000000)*(1+CI1RI140)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.0000',
+        },
+        'contents': [],
+      }
+    ]
+  },
+  {
+    'xlsxKey': 'CI0RI143',
+    'rowIndex': 143,
+    'cellIndex': 0,
+    'label': '補強板 - 2',
+    'style': {
+      'color': null,
+      'border': {
+        'topBorderStyle': 'thin',
+        'bottomBorderStyle': 'thin',
+      },
+      'numberFormat': '#,##0.00',
+    },
+    'contents': [
+      {
+        'xlsxKey': 'CI1RI143',
+        'rowIndex': 143,
+        'cellIndex': 1,
+        'label': 'L (mm)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.FFCReinforcingPlateLength2.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI144',
+        'rowIndex': 144,
+        'cellIndex': 1,
+        'label': 'W (mm)',
+        'type': 'formula',
+        'description': '=$C$22+CI1RI145',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00',
+        },
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI145',
+        'rowIndex': 145,
+        'cellIndex': 1,
+        'label': '補強板寬度寬放(mm)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00000',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.reinforcingPlateConstant.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI146',
+        'rowIndex': 146,
+        'cellIndex': 1,
+        'label': '數量',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.FFCReinforcingPlateQty2.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI147',
+        'rowIndex': 147,
+        'cellIndex': 1,
+        'label': 'U/P (USD)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.0000',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.FFCReinforcingPlatePrice2.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI148',
+        'rowIndex': 148,
+        'cellIndex': 1,
+        'label': 'Loss Rate(%)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '0.0%',
+        },
+        'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.FFCReinforcingPlateLossRate.value',
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI149',
+        'rowIndex': 149,
+        'cellIndex': 1,
+        'label': '公式',
+        'type': 'value',
+        'description': 'L*W*數量*(U/P/1000000)*(1+LossRate)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00000',
+        },
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI150',
+        'rowIndex': 150,
+        'cellIndex': 1,
+        'label': 'Price',
+        'type': 'formula',
+        'description': '=CI1RI143*CI1RI144*CI1RI146*(CI1RI147/1000000)*(1+CI1RI148)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.0000',
+        },
+        'contents': [],
+      }
+    ],
+    'existKey': 'partlistprice.forDebug.debugInfo.cableFFC.FFCReinforcingPlateLength2.value',
+  },
+  {
+    'xlsxKey': 'CI0RI151',
+    'rowIndex': 151,
+    'cellIndex': 0,
+    'label': 'Connector',
+    'style': {
+      'color': null,
+      'border': {
+        'topBorderStyle': 'thin',
+        'bottomBorderStyle': 'thin',
+      },
+      'numberFormat': '#,##0',
+    },
+    'contents': [
+      {
+        'xlsxKey': 'CI1RI151',
+        'rowIndex': 151,
+        'cellIndex': 1,
+        'label': 'Assy Time (Sec)',
+        'type': 'formula',
+        'description': '=IF(CI1RI152="壓接/刺破式", CI1RI154 * CI1RI155, IF(CI1RI152="焊接式", CI1RI154 * CI1RI153 * CI1RI155,0))',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'contents': [],
+        'groupIdPath': 'partlistvalue.formData.FFCTab.FFCConnector',
+      },
+      {
+        'xlsxKey': 'CI1RI152',
+        'rowIndex': 152,
+        'cellIndex': 1,
+        'label': '組裝方式',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00000',
+        },
+        'byKey': 'FFCConnectorAssemblyType',
+        'contents': [],
+        'parentKey': 'Connector',
+        'parent': 'partlistvalue.Price.cableFFC.cableFfcConnector',
+        'groupIdPath': 'partlistvalue.formData.FFCTab.FFCConnector',
+      },
+      {
+        'xlsxKey': 'CI1RI153',
+        'rowIndex': 153,
+        'cellIndex': 1,
+        'label': 'Pin',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'FFCConnectorPin',
+        'contents': [],
+        'parentKey': 'Connector',
+        'parent': 'partlistvalue.Price.cableFFC.cableFfcConnector',
+        'groupIdPath': 'partlistvalue.formData.FFCTab.FFCConnector',
+      },
+      {
+        'xlsxKey': 'CI1RI154',
+        'rowIndex': 154,
+        'cellIndex': 1,
+        'label': 'Connector組裝秒數',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'assyTime.value',
+        'contents': [],
+        'parentKey': 'Connector',
+        'parent': 'partlistprice.forDebug.debugInfo.cableFfcConnector',
+        'groupIdPath': 'partlistvalue.formData.FFCTab.FFCConnector',
+      },
+      {
+        'xlsxKey': 'CI1RI155',
+        'rowIndex': 155,
+        'cellIndex': 1,
+        'label': '數量',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'FFCConnectorQty',
+        'contents': [],
+        'parentKey': 'Connector',
+        'parent': 'partlistvalue.Price.cableFFC.cableFfcConnector',
+        'groupIdPath': 'partlistvalue.formData.FFCTab.FFCConnector',
+      },
+      {
+        'xlsxKey': 'CI1RI156',
+        'rowIndex': 156,
+        'cellIndex': 1,
+        'label': 'U/P (USD)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.0000',
+        },
+        'byKey': 'FFCConnectorPrice.value',
+        'contents': [],
+        'parentKey': 'Connector',
+        'parent': 'partlistprice.forDebug.debugInfo.cableFfcConnector',
+        'groupIdPath': 'partlistvalue.formData.FFCTab.FFCConnector',
+      },
+      {
+        'xlsxKey': 'CI1RI157',
+        'rowIndex': 157,
+        'cellIndex': 1,
+        'label': 'Loss Rate(%)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '0.0%',
+        },
+        'byKey': 'FFCConnectorLossRateValue.value',
+        'contents': [],
+        'parentKey': 'Connector',
+        'parent': 'partlistprice.forDebug.debugInfo.cableFfcConnector',
+        'groupIdPath': 'partlistvalue.formData.FFCTab.FFCConnector',
+      },
+      {
+        'xlsxKey': 'CI1RI158',
+        'rowIndex': 158,
+        'cellIndex': 1,
+        'label': '公式',
+        'type': 'value',
+        'description': '數量 * U/P * (1 + Loss Rate(%))',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00000',
+        },
+        'contents': []
+      },
+      {
+        'xlsxKey': 'CI1RI159',
+        'rowIndex': 159,
+        'cellIndex': 1,
+        'label': 'Price',
+        'type': 'formula',
+        'description': '=CI1RI155*CI1RI156*(1+CI1RI157)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.0000',
+        },
+        'contents': [],
+        'parentKey': 'Connector',
+        'parent': 'partlistvalue.Price.cableFFC.cableFfcConnector',
+        'byKey': 'connector_price',
+        'groupIdPath': 'partlistvalue.formData.FFCTab.FFCConnector',
+      }
+    ]
+  },
+  {
+    'xlsxKey': 'CI0RI160',
+    'rowIndex': 160,
+    'cellIndex': 0,
+    'label': '輔料',
+    'style': {
+      'color': null,
+      'border': {
+        'topBorderStyle': 'thin',
+        'bottomBorderStyle': 'thin',
+      },
+      'numberFormat': '#,##0.00000',
+    },
+    'contents': [
+      {
+        'xlsxKey': 'CI1RI160',
+        'rowIndex': 160,
+        'cellIndex': 1,
+        'label': '規格',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00000',
+        },
+        'byKey': 'FFCAccessorySpec',
+        'contents': [],
+        'parentKey': '輔料',
+        'parent': 'partlistvalue.Price.cableFFC.cableFfcAccessory',
+        'groupIdPath': 'partlistvalue.formData.FFCTab.FFCAccessory',
+      },
+      {
+        'xlsxKey': 'CI1RI161',
+        'rowIndex': 161,
+        'cellIndex': 1,
+        'label': '主料/次料',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00000',
+        },
+        'byKey': 'FFCAccessoryMaterialType',
+        'contents': [],
+        'parentKey': '輔料',
+        'parent': 'partlistvalue.Price.cableFFC.cableFfcAccessory',
+        'groupIdPath': 'partlistvalue.formData.FFCTab.FFCAccessory',
+      },
+      {
+        'xlsxKey': 'CI1RI162',
+        'rowIndex': 162,
+        'cellIndex': 1,
+        'label': '組裝方式',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00000',
+        },
+        'byKey': 'FFCAccessoryAssemblyType',
+        'contents': [],
+        'parentKey': '輔料',
+        'parent': 'partlistvalue.Price.cableFFC.cableFfcAccessory',
+        'groupIdPath': 'partlistvalue.formData.FFCTab.FFCAccessory',
+      },
+      {
+        'xlsxKey': 'CI1RI163',
+        'rowIndex': 163,
+        'cellIndex': 1,
+        'label': 'L (mm)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00',
+        },
+        'byKey': 'FFCAccessoryLength',
+        'contents': [],
+        'parentKey': '輔料',
+        'parent': 'partlistvalue.Price.cableFFC.cableFfcAccessory',
+        'groupIdPath': 'partlistvalue.formData.FFCTab.FFCAccessory',
+      },
+      {
+        'xlsxKey': 'CI1RI164',
+        'rowIndex': 164,
+        'cellIndex': 1,
+        'label': 'W (mm)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00',
+        },
+        'byKey': 'FFCAccessoryWidth',
+        'contents': [],
+        'parentKey': '輔料',
+        'parent': 'partlistvalue.Price.cableFFC.cableFfcAccessory',
+        'groupIdPath': 'partlistvalue.formData.FFCTab.FFCAccessory',
+      },
+      {
+        'xlsxKey': 'CI1RI165',
+        'rowIndex': 165,
+        'cellIndex': 1,
+        'label': '數量',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'byKey': 'FFCAccessoryQty',
+        'contents': [],
+        'parentKey': '輔料',
+        'parent': 'partlistvalue.Price.cableFFC.cableFfcAccessory',
+        'groupIdPath': 'partlistvalue.formData.FFCTab.FFCAccessory',
+      },
+      {
+        'xlsxKey': 'CI1RI166',
+        'rowIndex': 166,
+        'cellIndex': 1,
+        'label': 'Material cost(USD)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.0000',
+        },
+        'byKey': 'FFCAccessoryPrice.value',
+        'contents': [],
+        'parentKey': '輔料',
+        'parent': 'partlistprice.forDebug.debugInfo.cableFfcAccessory',
+        'groupIdPath': 'partlistvalue.formData.FFCTab.FFCAccessory',
+      },
+      {
+        'xlsxKey': 'CI1RI167',
+        'rowIndex': 167,
+        'cellIndex': 1,
+        'label': 'LOSS(%)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '0.0%',
+        },
+        'byKey': 'lossRate.value',
+        'contents': [],
+        'parentKey': '輔料',
+        'parent': 'partlistprice.forDebug.debugInfo.cableFfcAccessory',
+        'groupIdPath': 'partlistvalue.formData.FFCTab.FFCAccessory',
+      },
+      {
+        'xlsxKey': 'CI1RI168',
+        'rowIndex': 168,
+        'cellIndex': 1,
+        'label': 'Assy time (sec)',
+        'type': 'formula',
+        'description': '=IFERROR( IF( CI1RI165 = 0, 0, IF( CI1RI161 = "次料", 0, IF( CI1RI162 = "平貼", IF( CI1RI163 > $C$131, CI1RI165 * $C$107, IF( CI1RI163 > $C$130, CI1RI165 * $C$106, IF( CI1RI163 > $C$129, CI1RI165 * $C$105, IF( CI1RI163 > $C$128, CI1RI165 * $C$104, IF( CI1RI163 > $C$127, CI1RI165 * $C$103, IF( CI1RI163 > $C$126, CI1RI165 * $C$102, IF( CI1RI163 > $C$125, CI1RI165 * $C$101, IF( CI1RI163 > $C$124, CI1RI165 * $C$100, IF( CI1RI163 > $C$123, CI1RI165 * $C$99, IF( CI1RI163 > $C$122, CI1RI165 * $C$98, CI1RI165 * $C$97 ) ) ) ) ) ) ) ) ) ), IF( CI1RI162 = "環包", IF( CI1RI164 <= $C$132, $C$108 * CI1RI165, IF( CI1RI163 > $C$142, $C$119 * CI1RI165, IF( CI1RI163 > $C$141, $C$118 * CI1RI165, IF( CI1RI163 > $C$140, $C$117 * CI1RI165, IF( CI1RI163 > $C$139, $C$116 * CI1RI165, IF( CI1RI163 > $C$138, $C$115 * CI1RI165, IF( CI1RI163 > $C$137, $C$114 * CI1RI165, IF( CI1RI163 > $C$136, $C$113 * CI1RI165, IF( CI1RI163 > $C$135, $C$112 * CI1RI165, IF( CI1RI163 > $C$134, $C$111 * CI1RI165, IF( CI1RI163 > $C$133, $C$110 * CI1RI165, $C$109 * CI1RI165 ) ) ) ) ) ) ) ) ) ) ), IF( CI1RI163 <= $C$144, ( $C$120 * CI1RI165 ), ( ( INT( CI1RI163 / $C$143 ) * $C$121 ) + $C$120 * CI1RI165 ) ) ) ) ) ), 0 )',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'contents': [],
+        'byKey': 'assy_time',
+        'groupIdPath': 'partlistvalue.formData.FFCTab.FFCAccessory',
+      },
+      {
+        'xlsxKey': 'CI1RI169',
+        'rowIndex': 169,
+        'cellIndex': 1,
+        'label': '是否計算沖切費(1為是0為否)',
+        'type': 'formula',
+        'description': '=IF(OR(OFFSET(CI1RI160, 0, -2) = "輔料 1", OFFSET(CI1RI160, 0, -2) = "輔料",OFFSET(CI1RI160, 0, -2) = "輔料", CI1RI161="主料", NOT(AND(CI1RI163 = OFFSET(CI1RI163, -13, 0), IFERROR(CI1RI164 = OFFSET(CI1RI164, -13, 0), FALSE)) ) ), 1, 0)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'contents': [],
+        'groupIdPath': 'partlistvalue.formData.FFCTab.FFCAccessory',
+      },
+      {
+        'xlsxKey': 'CI1RI170',
+        'rowIndex': 170,
+        'cellIndex': 1,
+        'label': '是否計算貼合費(1為是0為否)',
+        'type': 'formula',
+        'description': '=IF(OR(OFFSET(CI1RI160, 0, -2) = "輔料 1", OFFSET(CI1RI160, 0, -2) = "輔料", CI1RI161="主料", AND(CI1RI163 = OFFSET(CI1RI163, -13, 0), IFERROR(CI1RI164 = OFFSET(CI1RI164, -13, 0), FALSE))), 0, 1)',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0',
+        },
+        'contents': [],
+        'groupIdPath': 'partlistvalue.formData.FFCTab.FFCAccessory',
+      },
+      {
+        'xlsxKey': 'CI1RI171',
+        'rowIndex': 171,
+        'cellIndex': 1,
+        'label': '公式',
+        'type': 'value',
+        'description': 'IFERROR( IF( 數量 = 0, 0, ( Material cost / 1000000 * ( ( L(mm) + 長度下料增加尺寸 ) * ( W(mm) + 寬度下料增加尺寸 ) * ( 1 + LOSS(%) ) * 數量 ) + IF( AND( MAX( L(mm):W(mm) ) + 長度下料增加尺寸 < M1沖模有效長度, MIN( L(mm):W(mm) ) + 寬度下料增加尺寸 < M1沖模有效寬度 ), M1沖工費(材料面積<=25), IF( AND( MAX( L(mm):W(mm) ) + 長度下料增加尺寸 < M2沖模有效長度(mm), MIN( L(mm):W(mm) ) + 寬度下料增加尺寸 < M2沖模有效寬度(mm) ), M2沖工費(材料面積<=2500), M3沖工費(材料面積<=5000) ) ) / IF( AND( MAX( L(mm):W(mm) ) + 長度下料增加尺寸 < M1沖模有效長度, MIN( L(mm):W(mm) ) + 寬度下料增加尺寸 < M1沖模有效寬度 ), MAX( INT( M1沖模有效長度 / ( L(mm) + 長度下料增加尺寸 ) ) * INT( M1沖模有效寬度 / ( W(mm) + 寬度下料增加尺寸 ) ), INT( M1沖模有效長度 / ( W(mm) + 寬度下料增加尺寸 ) ) * INT( M1沖模有效寬度 / ( L(mm) + 長度下料增加尺寸 ) ) ), IF( AND( MAX( L(mm):W(mm) ) < M2沖模有效長度(mm), MIN( L(mm):W(mm) ) < M2沖模有效寬度(mm) ), MAX( INT( M2沖模有效長度(mm) / ( L(mm) + 長度下料增加尺寸 ) ) * INT( M2沖模有效寬度(mm) / ( W(mm) + 寬度下料增加尺寸 ) ), INT( M2沖模有效長度(mm) / ( W(mm) + 寬度下料增加尺寸 ) ) * INT( M2沖模有效寬度(mm) / ( L(mm) + 長度下料增加尺寸 ) ) ), MAX( INT( M3沖模有效長度(mm) / ( L(mm) + 長度下料增加尺寸 ) ) * INT( M3沖模有效寬度(mm) / ( W(mm) + 寬度下料增加尺寸 ) ), INT( M3沖模有效長度(mm) / ( W(mm) + 寬度下料增加尺寸 ) ) * INT( M3沖模有效寬度(mm) / ( L(mm) + 長度下料增加尺寸 ) ) ) ) ) * ( 1 + 沖切利潤(%) ) * 是否計算沖切費 + 是否計算貼合費 * 人工貼合秒數(sec) * 組裝費率(USD/min) / 60 * ( 1 + 人工貼合利潤(%) ) ) ), 0 )',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00000',
+        },
+        'contents': [],
+        'rowHeight': 30
+      },
+      {
+        'xlsxKey': 'CI1RI172',
+        'rowIndex': 172,
+        'cellIndex': 1,
+        'label': 'Price',
+        'type': 'formula',
+        'description': '=IFERROR( IF( CI1RI165 = 0, 0, ( CI1RI166 / 1000000 * ( ( CI1RI163 + $C$82 ) * ( CI1RI164 + $C$83 ) * ( 1 + CI1RI167 ) * CI1RI165 ) + IF( AND( MAX( CI1RI163:CI1RI164 ) + $C$82 < $C$84, MIN( CI1RI163:CI1RI164 ) + $C$83 < $C$85 ), $C$86, IF( AND( MAX( CI1RI163:CI1RI164 ) + $C$82 < $C$87, MIN( CI1RI163:CI1RI164 ) + $C$83 < $C$88 ), $C$89, $C$90 ) ) / IF( AND( MAX( CI1RI163:CI1RI164 ) + $C$82 < $C$84, MIN( CI1RI163:CI1RI164 ) + $C$83 < $C$85 ), MAX( INT( $C$84 / ( CI1RI163 + $C$82 ) ) * INT( $C$85 / ( CI1RI164 + $C$83 ) ), INT( $C$84 / ( CI1RI164 + $C$83 ) ) * INT( $C$85 / ( CI1RI163 + $C$82 ) ) ), IF( AND( MAX( CI1RI163:CI1RI164 ) < $C$87, MIN( CI1RI163:CI1RI164 ) < $C$88 ), MAX( INT( $C$87 / ( CI1RI163 + $C$82 ) ) * INT( $C$88 / ( CI1RI164 + $C$83 ) ), INT( $C$87 / ( CI1RI164 + $C$83 ) ) * INT( $C$88 / ( CI1RI163 + $C$82 ) ) ), MAX( INT( $C$91 / ( CI1RI163 + $C$82 ) ) * INT( $C$92 / ( CI1RI164 + $C$83 ) ), INT( $C$91 / ( CI1RI164 + $C$83 ) ) * INT( $C$92 / ( CI1RI163 + $C$82 ) ) ) ) ) * ( 1 + $C$93 ) * CI1RI169 + CI1RI170 * $C$94 * $C$95 / 60 * ( 1 + $C$96 ) ) ), 0 )',
+        'style': {
+          'color': null,
+          'border': {
+            'topBorderStyle': 'thin',
+            'bottomBorderStyle': 'thin',
+          },
+          'numberFormat': '#,##0.00000',
+        },
+        'contents': [],
+        'byKey': 'accessory_price',
+        'groupIdPath': 'partlistvalue.formData.FFCTab.FFCAccessory',
+      }
+    ]
+  },
+  {
+    'xlsxKey': 'CI1RI173',
+    'rowIndex': 173,
+    'cellIndex': 0,
+    'label': 'A.材料費',
+    'type': 'formula',
+    'description': '=CI1RI0',
+    'style': {
+      'color': '0000FF',
+      'border': {
+        'topBorderStyle': 'thick',
+        'bottomBorderStyle': 'thick',
+      },
+      'numberFormat': '#,##0.00000',
+    },
+    'contents': []
+  },
+  {
+    'xlsxKey': 'CI1RI174',
+    'rowIndex': 174,
+    'cellIndex': 0,
+    'label': 'B.二次加工費',
+    'type': 'formula',
+    'description': '=CI1RI30+CI1RI36+CI1RI41+CI1RI50+CI1RI55+CI1RI60+CI1RI65+CI1RI70',
+    'style': {
+      'color': '0000FF',
+      'border': {
+        'topBorderStyle': 'thick',
+        'bottomBorderStyle': 'thick',
+      },
+      'numberFormat': '#,##0.00000',
+    },
+    'contents': []
+  },
+  {
+    'xlsxKey': 'CI1RI175',
+    'rowIndex': 175,
+    'cellIndex': 0,
+    'label': 'C.零件費',
+    'type': 'formula',
+    'description': {
+      'type': 'sum',
+      'set': [
+        {
+          'groupIdPath': 'partlistvalue.formData.FFCTab.FFCConnector',
+          'byKey': 'connector_price',
+        },
+        {
+          'groupIdPath': 'partlistvalue.formData.FFCTab.FFCAccessory',
+          'byKey': 'accessory_price',
+        }
+      ],
+      'wrapper': 'IFERROR(FORMULA+$C$160+$C$152, "")',
+    },
+    'style': {
+      'color': '0000FF',
+      'border': {
+        'topBorderStyle': 'thick',
+        'bottomBorderStyle': 'thick',
+      },
+      'numberFormat': '#,##0.00000',
+    },
+    'contents': []
+  },
+  {
+    'xlsxKey': 'CI1RI176',
+    'rowIndex': 176,
+    'cellIndex': 0,
+    'label': '管銷利潤比重',
+    'style': {
+      'color': null,
+      'border': {
+        'topBorderStyle': 'thick',
+        'bottomBorderStyle': 'thick',
+      },
+      'numberFormat': '0.0%',
+    },
+    'byKey': 'partlistprice.forDebug.debugInfo.cableFFC.profit.value',
+    'contents': []
+  },
+  {
+    'xlsxKey': 'CI1RI177',
+    'rowIndex': 177,
+    'cellIndex': 0,
+    'label': 'D.管銷&利潤',
+    'type': 'formula',
+    'description': '=CI1RI174*CI1RI176',
+    'style': {
+      'color': '0000FF',
+      'border': {
+        'topBorderStyle': 'thick',
+        'bottomBorderStyle': 'thick',
+      },
+      'numberFormat': '#,##0.00000',
+    },
+    'contents': []
+  },
+  {
+    'xlsxKey': 'CI1RI178',
+    'rowIndex': 178,
+    'cellIndex': 0,
+    'label': 'E. 成品總價',
+    'type': 'formula',
+    'description': '=IFERROR(CI1RI173+CI1RI174+CI1RI175+CI1RI177,"")',
+    'style': {
+      'color': '0000FF',
+      'border': {
+        'topBorderStyle': 'thick',
+        'bottomBorderStyle': 'thick',
+      },
+      'numberFormat': '#,##0.00000',
+    },
+    'contents': []
+  }
+]

@@ -1,0 +1,24 @@
+dataStringHC:
+  $Template:
+    - dataString
+  $example.header-hitrate-dynamic.styleTemplate:
+    - hc
+ 
+dataStringHD:
+  $Template:
+    - dataString
+  $example.header-hitrate-dynamic.styleTemplate:
+    - hd
+   
+dataIntHC:
+  $Template:
+    - dataInt
+  $example.header-hitrate-dynamic.styleTemplate:
+    - hc
+
+dataIntHD:
+  $Template:
+    - dataInt
+  $example.header-hitrate-dynamic.styleTemplate:
+    - hd
+

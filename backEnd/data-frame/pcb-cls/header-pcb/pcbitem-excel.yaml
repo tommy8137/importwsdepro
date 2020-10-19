@@ -1,0 +1,240 @@
+headers:
+  typei:
+    label: Type I
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataString
+
+  typeii:
+    label: Type II(PTH or HDI)
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataString
+
+  wistronpn:
+    label: Part Number
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataString
+
+  description:
+    label: Description
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataString
+
+  PcbStageNo:
+    label: PCB No._Stage
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+    - dataString
+
+  manufacturer:
+    label: Manufacturer
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataString
+
+  supply_type:
+    label: Supply Type
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataString
+
+  parallelBoard:
+    label: Merged
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataString
+
+  remark:
+    label: Remark
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataString
+
+  sapPrice:
+    label: Last Price
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataFloat
+
+  originCurrency:
+    label: Org. Curr. 
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataString
+
+  orgLastPrice:
+    label: Org. Last Price 
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataFloat
+
+  formula4:
+    label: Clean Sheet  U/P with Adder
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataFloat
+
+  formula3:
+    label: Clean Sheet U/P Without Adder
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataFloat
+
+  sum_adder:
+    label: Adder (%)
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataPercent
+
+  other5Adder:
+    label: Others5 Adder (%)
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataPercent
+
+  formula5:
+    label: Clean Sheet U/P vs Pur. U/P Gap
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataFloat
+
+  formula6:
+    label: Clean Sheet U/P vs Pur. U/P Gap%
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataPercent
+
+  formula2:
+    label: Target Price's Quotation Base
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataFloat
+
+  formula1:
+    label: SQI Per Pcs
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataFloat
+
+  vendor:
+    label: Vendor Name
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataString
+
+  vendorPartNumber:
+    label: Vendor P/N
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataString
+
+  SPEC01:
+    label: Spec 1
+    $pcb-cls.header-pcb.pcbTemplate:
+      - specString
+
+  SPEC02:
+    label: Spec 2
+    $pcb-cls.header-pcb.pcbTemplate:
+      - specString
+
+  SPEC03:
+    label: Spec 3
+    $pcb-cls.header-pcb.pcbTemplate:
+      - specString
+
+  SPEC04:
+    label: Spec 4
+    $pcb-cls.header-pcb.pcbTemplate:
+      - specString
+
+  SPEC05:
+    label: Spec 5
+    $pcb-cls.header-pcb.pcbTemplate:
+      - specString
+
+  SPEC06:
+    label: Spec 6
+    $pcb-cls.header-pcb.pcbTemplate:
+      - specString
+
+  SPEC07:
+    label: Spec 7
+    $pcb-cls.header-pcb.pcbTemplate:
+      - specString
+
+  SPEC08:
+    label: Spec 8
+    $pcb-cls.header-pcb.pcbTemplate:
+      - specString
+
+  SPEC09:
+    label: Spec 9
+    $pcb-cls.header-pcb.pcbTemplate:
+      - specString
+
+  SPEC10:
+    label: Spec 10
+    $pcb-cls.header-pcb.pcbTemplate:
+      - specString
+
+  SPEC11:
+    label: Spec 11
+    $pcb-cls.header-pcb.pcbTemplate:
+      - specString
+
+  SPEC12:
+    label: Spec 12
+    $pcb-cls.header-pcb.pcbTemplate:
+      - specString
+
+  SPEC13:
+    label: Spec 13
+    $pcb-cls.header-pcb.pcbTemplate:
+      - specString
+
+  SPEC14:
+    label: Spec 14
+    $pcb-cls.header-pcb.pcbTemplate:
+      - specString
+
+  SPEC15:
+    label: Spec 15
+    $pcb-cls.header-pcb.pcbTemplate:
+      - specString
+
+  SPEC16:
+    label: Spec 16
+    $pcb-cls.header-pcb.pcbTemplate:
+      - specString
+
+  SPEC17:
+    label: Spec 17
+    $pcb-cls.header-pcb.pcbTemplate:
+      - specString
+
+  SPEC18:
+    label: Spec 18
+    $pcb-cls.header-pcb.pcbTemplate:
+      - specString
+
+  SPEC19:
+    label: Spec 19
+    $pcb-cls.header-pcb.pcbTemplate:
+      - specString
+
+  SPEC20:
+    label: Spec 20
+    $pcb-cls.header-pcb.pcbTemplate:
+      - specString
+
+  SPEC21:
+    label: Spec 21
+    $pcb-cls.header-pcb.pcbTemplate:
+      - specString
+
+  SPEC22:
+    label: Spec 22
+    $pcb-cls.header-pcb.pcbTemplate:
+      - specString
+
+  SPEC23:
+    label: Spec 23
+    $pcb-cls.header-pcb.pcbTemplate:
+      - specString
+
+  SPEC24:
+    label: Spec 24
+    $pcb-cls.header-pcb.pcbTemplate:
+      - specString
+
+  SPEC25:
+    label: Spec 25
+    $pcb-cls.header-pcb.pcbTemplate:
+      - specString
+
+  SPEC26:
+    label: Spec 26
+    $pcb-cls.header-pcb.pcbTemplate:
+      - specString

@@ -1,0 +1,3 @@
+headers:
+  $dashboard-me.header-dashboard-me.dashboardmeitem-base:
+    - headers

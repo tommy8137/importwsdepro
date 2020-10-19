@@ -1,0 +1,41 @@
+values:  
+  - hpmaterial2: PC
+  - hpmaterial2: PC_with_25percent_PCR
+  - hpmaterial2: PC_with_30percent_PCR
+  - hpmaterial2: PC_非透明
+  - hpmaterial2: PC_25percent_Talc
+  - hpmaterial2: PC_25percent_Talc_with_30percent_PCR
+  - hpmaterial2: PC_25percent_Talc_with_35percent_PCR
+  - hpmaterial2: PC_ABS
+  - hpmaterial2: PC_ABS_with_30percent_PCR
+  - hpmaterial2: PC_ABS_with_35percent_PCR
+  - hpmaterial2: PC_ABS_高光澤高流動
+  - hpmaterial2: PC_ABS_12percent_Talc
+  - hpmaterial2: PC_ABS_15percent_Talc
+  - hpmaterial2: PC_ABS_15percent_Talc_UVS
+  - hpmaterial2: PC_ABS_15percent_Talc_with_15percent_PCR
+  - hpmaterial2: PC_ABS_15percent_Talc_with_30percent_PCR
+  - hpmaterial2: PC_ABS_23percent_Talc
+  - hpmaterial2: PC_ABS_25percent_Talc
+  - hpmaterial2: PC_ABS_25percent_Talc_with_30percent_PCR
+  - hpmaterial2: PC_ABS_25percent_Talc_with_35percent_PCR
+  - hpmaterial2: PC_ABS_3percent_Talc
+  - hpmaterial2: PC_ABS_5percent_Talc
+  - hpmaterial2: PC_ABS_5percent_Talc_UVS
+  - hpmaterial2: PC_ABS_5percent_Talc_with_35percent_PCR
+  - hpmaterial2: PC_ABS_8percent_Talc
+  - hpmaterial2: TPEE_Dupont_Hytrel_3046
+  - hpmaterial2: TPEE_Dupont_Hytrel_3078
+  - hpmaterial2: TPEE_Dupont_Hytrel_4056
+  - hpmaterial2: TPEE_Dupont_Hytrel_RS30F7
+  - hpmaterial2: TPEE_Dupont_Hytrel_RS40F2
+  - hpmaterial2: TPU_Covestro_UDS70AU
+  - hpmaterial2: TPU_Covestro_IT85AU
+  - hpmaterial2: TPU_Covestro_8785A
+  - hpmaterial2: TPU_Covestro_1070AU
+  - hpmaterial2: TPU_Covestro_5377A
+  - hpmaterial2: TPU_Covestro_1065AU
+  - hpmaterial2: TPU_Huntsman_AVALON 85AE
+  - hpmaterial2: TPU_Huntsman_AVALON 80AE
+  - hpmaterial2: TPU_Huntsman_AVALON 75AE
+  - hpmaterial2: TPU_Huntsman_AVALON 65AB

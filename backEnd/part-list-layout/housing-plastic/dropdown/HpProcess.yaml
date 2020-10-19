@@ -1,0 +1,43 @@
+values:
+  - hpProcess: NORMAL (咬花)
+    hpMaterialLossRate: 0.03
+  - hpProcess: NORMAL (咬花)_高礦粉
+    hpMaterialLossRate: 0.08
+  - hpProcess: NORMAL (咬花)_局部高光
+    hpMaterialLossRate: 0.1
+  - hpProcess: NORMAL (咬花)_模內埋釘
+    hpMaterialLossRate: 0.1
+  - hpProcess: IMR-Normal
+    hpMaterialLossRate: 0.8
+  - hpProcess: IMR-partial high gloss molded
+    hpMaterialLossRate: 0.15
+  - hpProcess: IMR-高彩
+    hpMaterialLossRate: 0.1
+  - hpProcess: IMR NCVM
+    hpMaterialLossRate: 0.12
+  - hpProcess: DOUBLE_INJECTION-Texture
+    hpMaterialLossRate: 0.1
+  - hpProcess: DOUBLE_INJECTION-Painting
+    hpMaterialLossRate: 0.12
+  - hpProcess: DOUBLE_INJECTION-Partial high gloss
+    hpMaterialLossRate: 0.15
+  - hpProcess: RHCM-GFRP
+    hpMaterialLossRate: 0.15
+  - hpProcess: RHCM-GFRP-Painting
+    hpMaterialLossRate: 0.15
+  - hpProcess: RHCM-模內埋釘
+    hpMaterialLossRate: 0.15
+  - hpProcess: HIGH_GLOSS 
+    hpMaterialLossRate: 0.15
+  - hpProcess: SPECIAL-TEXTURE (特殊咬花)
+    hpMaterialLossRate: 0.8
+  - hpProcess: Texture-Partial high gloss
+    hpMaterialLossRate: 0.1
+  - hpProcess: PAINTING (1C1B)
+    hpMaterialLossRate: 0.3
+  - hpProcess: PAINTING (2C1B)
+    hpMaterialLossRate: 0.3
+  - hpProcess: PAINTING (3C1B)
+    hpMaterialLossRate: 0.3
+  - hpProcess: NCVM
+    hpMaterialLossRate: 0.1

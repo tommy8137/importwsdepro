@@ -1,0 +1,32 @@
+multiple: true
+items:
+  - key: cmfProcessListSingleSpotWeldingCheckBox
+    $Template:
+      - checkBox
+    label: Exist
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListSingleSpotWeldingCheckBox
+
+  - key: cmfProcessListSingleSpotWeldingCount
+    $Template:
+      - inputInt
+    label: 數量
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfProcessListSingleSpotWeldingCheckBox: true
+      grids: 1
+      display: true
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfProcessListSingleSpotWeldingCheckBox)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfProcessListSingleSpotWeldingCheckBox
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListSingleSpotWeldingCount

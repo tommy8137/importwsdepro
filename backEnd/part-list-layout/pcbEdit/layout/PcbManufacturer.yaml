@@ -1,0 +1,14 @@
+multiple: false
+label: 選擇Manufacturer
+items:
+  - key: manufacturer
+    label: Manufacturer
+    $Template:
+      - selectorString
+      - ^displayConfig
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      $pcb.dropdown.PcbManufacturerValues:
+        - ^values
+    require: true

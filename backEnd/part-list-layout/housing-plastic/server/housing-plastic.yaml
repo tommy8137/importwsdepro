@@ -1,0 +1,185 @@
+version: 2
+layout:
+  - key: toolingPartList
+    $Template:
+      - tab
+    label: Tooling Part List
+    # visiable: true
+    group:
+      - housingPlastic
+    items:
+      - key: hpUser
+        $Template:
+          - composite
+        label: Parts Data
+        $housing-plastic.layout.HPUserDT:
+          - ^items
+        multiple: false
+
+      - key: hpTooling
+        $Template:
+          - composite
+        label: Tooling Data
+        $housing-plastic.layout.hpTooling:
+          - ^items
+        multiple: false
+
+  - key: CMFProcessList
+    $Template:
+      - tab
+    label: CMF and Process List
+    visiable: false
+    group:
+      - housingPlastic
+    items:
+      - key: cmfNCVM
+        $Template:
+          - composite
+        label: NCVM製程
+        items: []
+        multiple: false
+        showCostByKey: cmfPNCVM_cost
+
+      - key: cmfPPainting
+        $Template:
+          - composite
+        label: 噴塗製程
+        $housing-plastic.layout.CmfPPainting:
+          - ^items
+        multiple: false
+        showCostByKey: painting_cost
+
+      - key: cmfPEmbedNail
+        $Template:
+          - composite
+        label: 埋釘製程
+        $housing-plastic.layout.CmfPEmbedNail:
+          - ^items
+        multiple: false
+        showCostByKey: cmfPEmbedNail_cost
+
+      - key: cmfPrinting
+        $Template:
+          - composite
+        label: 印刷製程
+        $housing-plastic.layout.CmfPPrinting:
+          - ^items
+        multiple: false
+        showCostByKey: cmfPrinting_cost
+
+      - key: cmfPCNCArea
+        $Template:
+          - composite
+        label: 成品CNC製程 - 局部加工
+        $housing-plastic.layout.CmfPCNCArea:
+          - ^items
+        multiple: false
+        showCostByKey: cmfPCNCProcessingArea_cost
+
+      - key: cmfPCNCFeeder
+        $Template:
+          - composite
+        label: NC除料頭
+        $housing-plastic.layout.CmfPCNCFeeder:
+          - ^items
+        multiple: false
+        showCostByKey: cmfPCNCFeeder_cost
+
+      - key: cmfPProductPolishingPL
+        $Template:
+          - composite
+        label: 成品打磨(PL線)
+        $housing-plastic.layout.CmfPProductPolishingPL:
+          - ^items
+        multiple: false
+        showCostByKey: cmfPProductPolishingPL_cost
+
+      - key: cmfPHotMelt
+        $Template:
+          - composite
+        label: 熱熔(數量)
+        $housing-plastic.layout.CmfPHotMelt:
+          - ^items
+        multiple: false
+        showCostByKey: cmfPHotMelt_cost
+
+      - key: cmfPBonding
+        $Template:
+          - composite
+        label: BONDING
+        $housing-plastic.layout.CmfPBonding:
+          - ^items
+        multiple: false
+        showCostByKey: cmfPBonding_cost
+
+      - key: cmfPEMISputtering
+        $Template:
+          - composite
+        label: EMI sputtering
+        $housing-plastic.layout.CmfPEMISputtering:
+          - ^items
+        multiple: false
+        showCostByKey: cmfPEMISputtering_cost
+
+      - key: cmfPPolishStressMark
+        $Template:
+          - composite
+        label: Polish應力痕
+        $housing-plastic.layout.CmfPPolishStressMark:
+          - ^items
+        multiple: false
+        showCostByKey: cmfPPolishStressMark_cost
+
+      - key: cmfPChipRemoval
+        $Template:
+          - composite
+        label: 除屑(IMR)
+        $housing-plastic.layout.CmfPChipRemoval:
+          - ^items
+        multiple: false
+        showCostByKey: cmfPChipRemoval_cost
+
+      - key: cmfPRollingOrDeburring
+        $Template:
+          - composite
+        label: 滾邊or去毛邊(PL面)
+        $housing-plastic.layout.CmfPRollingOrDeburring:
+          - ^items
+        multiple: false
+        showCostByKey: cmfPRollingOrDeburring_cost
+
+      - key: cmfPLaserMarking
+        $Template:
+          - composite
+        label: 雷雕ICON(處)
+        $housing-plastic.layout.CmfPLaserMarking:
+          - ^items
+        multiple: false
+        showCostByKey: cmfPLaserMarking_cost
+
+  - key: hpCeParametersTab
+    $Template:
+      - tab
+    label: CE 可調整係數
+    # visiable: true
+    group:
+      - housingPlastic
+    items:
+      - key: hpCeParameters
+        $Template:
+          - composite
+        label: 材料費
+        $housing-plastic.layout.hpCeParametersDT:
+          - ^items
+        multiple: false
+        visiable: false
+    needCePolicy: true
+
+formulas:
+  housingPlastic:
+    $housing-plastic.nb.formula.HousingPlastic:
+      - ^formula
+      - ^scope
+      - ^constant
+      - ^global
+      - ^output

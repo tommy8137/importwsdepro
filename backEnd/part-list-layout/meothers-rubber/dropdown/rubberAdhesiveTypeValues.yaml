@@ -1,0 +1,319 @@
+values:
+  - rubberAdhesiveThickness: T0.05
+    rubberAdhesiveMaterial: JP005B
+    rubberAdhesiveMaterialPrice: 2.4
+  - rubberAdhesiveThickness: T0.05
+    rubberAdhesiveMaterial: TESA_61305M
+    rubberAdhesiveMaterialPrice: 8.23529
+  - rubberAdhesiveThickness: T0.05
+    rubberAdhesiveMaterial: 3M_1350F-1B
+    rubberAdhesiveMaterialPrice: 2.57143
+  - rubberAdhesiveThickness: T0.05
+    rubberAdhesiveMaterial: JP005B+WT15
+    rubberAdhesiveMaterialPrice: 5.62571
+  - rubberAdhesiveThickness: T0.05
+    rubberAdhesiveMaterial: DST_5
+    rubberAdhesiveMaterialPrice: 1.10294
+  - rubberAdhesiveThickness: T0.05
+    rubberAdhesiveMaterial: DS_5
+    rubberAdhesiveMaterialPrice: 0.66176
+  - rubberAdhesiveThickness: T0.05
+    rubberAdhesiveMaterial: 皇冠7972G
+    rubberAdhesiveMaterialPrice: 1.17647
+  - rubberAdhesiveThickness: T0.05
+    rubberAdhesiveMaterial: PW_05
+    rubberAdhesiveMaterialPrice: 2.08529
+  - rubberAdhesiveThickness: T0.05
+    rubberAdhesiveMaterial: JA305
+    rubberAdhesiveMaterialPrice: 0.88235
+  - rubberAdhesiveThickness: T0.05
+    rubberAdhesiveMaterial: NITTO_GA835_上海產
+    rubberAdhesiveMaterialPrice: 3.21176
+  - rubberAdhesiveThickness: T0.05
+    rubberAdhesiveMaterial: NITTO_GA835_日本產
+    rubberAdhesiveMaterialPrice: 4.46029
+  - rubberAdhesiveThickness: T0.05
+    rubberAdhesiveMaterial: 3M_467MP
+    rubberAdhesiveMaterialPrice: 3.82353
+  - rubberAdhesiveThickness: T0.05
+    rubberAdhesiveMaterial: 3M_55256
+    rubberAdhesiveMaterialPrice: 3.52941
+  - rubberAdhesiveThickness: T0.05
+    rubberAdhesiveMaterial: TESA_68842
+    rubberAdhesiveMaterialPrice: 4.11765
+  - rubberAdhesiveThickness: T0.05
+    rubberAdhesiveMaterial: TESA_68742
+    rubberAdhesiveMaterialPrice: 5.55882
+  - rubberAdhesiveThickness: T0.05
+    rubberAdhesiveMaterial: SONY_NP203
+    rubberAdhesiveMaterialPrice: 5.775
+  - rubberAdhesiveThickness: T0.05
+    rubberAdhesiveMaterial: TESA_4972
+    rubberAdhesiveMaterialPrice: 5.58824
+  - rubberAdhesiveThickness: T0.05
+    rubberAdhesiveMaterial: TESA_51972
+    rubberAdhesiveMaterialPrice: 7.87353
+  - rubberAdhesiveThickness: T0.05
+    rubberAdhesiveMaterial: NITTO_56605B
+    rubberAdhesiveMaterialPrice: 8.64706
+  - rubberAdhesiveThickness: T0.05
+    rubberAdhesiveMaterial: 3M_9460PC
+    rubberAdhesiveMaterialPrice: 7.33529
+  - rubberAdhesiveThickness: T0.05
+    rubberAdhesiveMaterial: 3M_9671LE
+    rubberAdhesiveMaterialPrice: 8.60147
+  - rubberAdhesiveThickness: T0.05
+    rubberAdhesiveMaterial: 3M_8228B
+    rubberAdhesiveMaterialPrice: 11.08824
+  - rubberAdhesiveThickness: T0.05
+    rubberAdhesiveMaterial: 3M_9626
+    rubberAdhesiveMaterialPrice: 13.69706
+  - rubberAdhesiveThickness: T0.05
+    rubberAdhesiveMaterial: TT219導電背膠
+    rubberAdhesiveMaterialPrice: 2.94118
+  - rubberAdhesiveThickness: T0.05
+    rubberAdhesiveMaterial: JC205導電背膠
+    rubberAdhesiveMaterialPrice: 2.20588
+  - rubberAdhesiveThickness: T0.07
+    rubberAdhesiveMaterial: DSTT_7N
+    rubberAdhesiveMaterialPrice: 1.91176
+  - rubberAdhesiveThickness: T0.08
+    rubberAdhesiveMaterial: 3M244
+    rubberAdhesiveMaterialPrice: 1.98529
+  - rubberAdhesiveThickness: T0.1
+    rubberAdhesiveMaterial: DS_10B
+    rubberAdhesiveMaterialPrice: 1.25
+  - rubberAdhesiveThickness: T0.1
+    rubberAdhesiveMaterial: DST_10
+    rubberAdhesiveMaterialPrice: 1.64706
+  - rubberAdhesiveThickness: T0.1
+    rubberAdhesiveMaterial: PW_10
+    rubberAdhesiveMaterialPrice: 2.77941
+  - rubberAdhesiveThickness: T0.1
+    rubberAdhesiveMaterial: 3M_468MP
+    rubberAdhesiveMaterialPrice: 5.14706
+  - rubberAdhesiveThickness: T0.1
+    rubberAdhesiveMaterial: TESA_4982
+    rubberAdhesiveMaterialPrice: 5.22059
+  - rubberAdhesiveThickness: T0.1
+    rubberAdhesiveMaterial: TESA_60504
+    rubberAdhesiveMaterialPrice: 8.52941
+  - rubberAdhesiveThickness: T0.1
+    rubberAdhesiveMaterial: TT219導電背膠
+    rubberAdhesiveMaterialPrice: 2.94118
+  - rubberAdhesiveThickness: T0.13
+    rubberAdhesiveMaterial: TESA_68616
+    rubberAdhesiveMaterialPrice: 3.35714
+  - rubberAdhesiveThickness: T0.13
+    rubberAdhesiveMaterial: DSTT_13N
+    rubberAdhesiveMaterialPrice: 2.64706
+  - rubberAdhesiveThickness: T0.13
+    rubberAdhesiveMaterial: 3M_468C
+    rubberAdhesiveMaterialPrice: 5.14706
+  - rubberAdhesiveThickness: T0.15
+    rubberAdhesiveMaterial: TESA_61385
+    rubberAdhesiveMaterialPrice: 13.97059
+  - rubberAdhesiveThickness: T0.15
+    rubberAdhesiveMaterial: JHW51315
+    rubberAdhesiveMaterialPrice: 5.35294
+  - rubberAdhesiveThickness: T0.15
+    rubberAdhesiveMaterial: 3M_150HL
+    rubberAdhesiveMaterialPrice: 14.70588
+  - rubberAdhesiveThickness: T0.15
+    rubberAdhesiveMaterial: 3M_9448B
+    rubberAdhesiveMaterialPrice: 5.73529
+  - rubberAdhesiveThickness: T0.15
+    rubberAdhesiveMaterial: 3M_9448A
+    rubberAdhesiveMaterialPrice: 4.85294
+  - rubberAdhesiveThickness: T0.15
+    rubberAdhesiveMaterial: Avery_FT_7515L
+    rubberAdhesiveMaterialPrice: 3.53571
+  - rubberAdhesiveThickness: T0.15
+    rubberAdhesiveMaterial: SDK_8215V
+    rubberAdhesiveMaterialPrice: 3
+  - rubberAdhesiveThickness: T0.15
+    rubberAdhesiveMaterial: SDK_81115BR
+    rubberAdhesiveMaterialPrice: 9.28571
+  - rubberAdhesiveThickness: T0.15
+    rubberAdhesiveMaterial: DS_15
+    rubberAdhesiveMaterialPrice: 1.39706
+  - rubberAdhesiveThickness: T0.15
+    rubberAdhesiveMaterial: DS_15B
+    rubberAdhesiveMaterialPrice: 1.91176
+  - rubberAdhesiveThickness: T0.15
+    rubberAdhesiveMaterial: SONY_G4000
+    rubberAdhesiveMaterialPrice: 4.37059
+  - rubberAdhesiveThickness: T0.15
+    rubberAdhesiveMaterial: 3M_9888T
+    rubberAdhesiveMaterialPrice: 4.11765
+  - rubberAdhesiveThickness: T0.15
+    rubberAdhesiveMaterial: SONY_G9000
+    rubberAdhesiveMaterialPrice: 4.73529
+  - rubberAdhesiveThickness: T0.15
+    rubberAdhesiveMaterial: 3M_9080HL
+    rubberAdhesiveMaterialPrice: 5.92647
+  - rubberAdhesiveThickness: T0.15
+    rubberAdhesiveMaterial: NITTO_5000NS
+    rubberAdhesiveMaterialPrice: 5.14706
+  - rubberAdhesiveThickness: T0.15
+    rubberAdhesiveMaterial: 3M_9448AB
+    rubberAdhesiveMaterialPrice: 5.25
+  - rubberAdhesiveThickness: T0.15
+    rubberAdhesiveMaterial: SONY_G9900
+    rubberAdhesiveMaterialPrice: 5.58824
+  - rubberAdhesiveThickness: T0.15
+    rubberAdhesiveMaterial: G9500R
+    rubberAdhesiveMaterialPrice: 6.93382
+  - rubberAdhesiveThickness: T0.15
+    rubberAdhesiveMaterial: NITTO_5000NSLV
+    rubberAdhesiveMaterialPrice: 6.79412
+  - rubberAdhesiveThickness: T0.15
+    rubberAdhesiveMaterial: NITTO_5000NCB
+    rubberAdhesiveMaterialPrice: 10.30441
+  - rubberAdhesiveThickness: T0.15
+    rubberAdhesiveMaterial: 3M_4914VHB
+    rubberAdhesiveMaterialPrice: 41.17647
+  - rubberAdhesiveThickness: T0.15
+    rubberAdhesiveMaterial: TESA_62622
+    rubberAdhesiveMaterialPrice: 21.32353
+  - rubberAdhesiveThickness: T0.15
+    rubberAdhesiveMaterial: Hitachi_Hi-Bon_XT654-3WR
+    rubberAdhesiveMaterialPrice: 10.80882
+  - rubberAdhesiveThickness: T0.15
+    rubberAdhesiveMaterial: KM-87015W
+    rubberAdhesiveMaterialPrice: 3.57143
+  - rubberAdhesiveThickness: T0.2
+    rubberAdhesiveMaterial: TESA_61385
+    rubberAdhesiveMaterialPrice: 12.35294
+  - rubberAdhesiveThickness: T0.2
+    rubberAdhesiveMaterial: 3M_200HL
+    rubberAdhesiveMaterialPrice: 21.02941
+  - rubberAdhesiveThickness: T0.2
+    rubberAdhesiveMaterial: DS_20
+    rubberAdhesiveMaterialPrice: 3.08824
+  - rubberAdhesiveThickness: T0.2
+    rubberAdhesiveMaterial: TESA_68644
+    rubberAdhesiveMaterialPrice: 3.97059
+  - rubberAdhesiveThickness: T0.2
+    rubberAdhesiveMaterial: TESA_61365
+    rubberAdhesiveMaterialPrice: 10.29412
+  - rubberAdhesiveThickness: T0.2
+    rubberAdhesiveMaterial: TESA_61395
+    rubberAdhesiveMaterialPrice: 14.26471
+  - rubberAdhesiveThickness: T0.2
+    rubberAdhesiveMaterial: TESA_62624
+    rubberAdhesiveMaterialPrice: 21.47059
+  - rubberAdhesiveThickness: T0.2
+    rubberAdhesiveMaterial: 3M_WT_20
+    rubberAdhesiveMaterialPrice: 28.23529
+  - rubberAdhesiveThickness: T0.2
+    rubberAdhesiveMaterial: 3M_93420
+    rubberAdhesiveMaterialPrice: 16.91176
+  - rubberAdhesiveThickness: T0.2
+    rubberAdhesiveMaterial: TESA_4965(205μm)
+    rubberAdhesiveMaterialPrice: 10.14286
+  - rubberAdhesiveThickness: T0.25
+    rubberAdhesiveMaterial: 3M_93425
+    rubberAdhesiveMaterialPrice: 16.91176
+  - rubberAdhesiveThickness: T0.25
+    rubberAdhesiveMaterial: SDK89R00W
+    rubberAdhesiveMaterialPrice: 16.17647
+  - rubberAdhesiveThickness: T0.25
+    rubberAdhesiveMaterial: SDK81225
+    rubberAdhesiveMaterialPrice: 20.58824
+  - rubberAdhesiveThickness: T0.25
+    rubberAdhesiveMaterial: TKB_250
+    rubberAdhesiveMaterialPrice: 16.88235
+  - rubberAdhesiveThickness: T0.25
+    rubberAdhesiveMaterial: TDS_RT25B
+    rubberAdhesiveMaterialPrice: 23.89706
+  - rubberAdhesiveThickness: T0.25
+    rubberAdhesiveMaterial: SLR1125
+    rubberAdhesiveMaterialPrice: 28.20588
+  - rubberAdhesiveThickness: T0.25
+    rubberAdhesiveMaterial: TESA_62645
+    rubberAdhesiveMaterialPrice: 21.39706
+  - rubberAdhesiveThickness: T0.25
+    rubberAdhesiveMaterial: 3M_4914VHB
+    rubberAdhesiveMaterialPrice: 30.88235
+  - rubberAdhesiveThickness: T0.25
+    rubberAdhesiveMaterial: 3M_SR5625
+    rubberAdhesiveMaterialPrice: 34.70588
+  - rubberAdhesiveThickness: T0.25
+    rubberAdhesiveMaterial: 3M_250HL
+    rubberAdhesiveMaterialPrice: 15
+  - rubberAdhesiveThickness: T0.25
+    rubberAdhesiveMaterial: Avery_FT_5295
+    rubberAdhesiveMaterialPrice: 13.97059
+  - rubberAdhesiveThickness: T0.3
+    rubberAdhesiveMaterial: 3M_93430
+    rubberAdhesiveMaterialPrice: 18.38235
+  - rubberAdhesiveThickness: T0.3
+    rubberAdhesiveMaterial: Avery_FM_7680I
+    rubberAdhesiveMaterialPrice: 15.89286
+  - rubberAdhesiveThickness: T0.3
+    rubberAdhesiveMaterial: TESA_62646
+    rubberAdhesiveMaterialPrice: 21.11857
+  - rubberAdhesiveThickness: T0.3
+    rubberAdhesiveMaterial: NITTO_GA6330
+    rubberAdhesiveMaterialPrice: 14.82353
+  - rubberAdhesiveThickness: T0.3
+    rubberAdhesiveMaterial: SONY_UT1430
+    rubberAdhesiveMaterialPrice: 25.33088
+  - rubberAdhesiveThickness: T0.3
+    rubberAdhesiveMaterial: TESA_61315
+    rubberAdhesiveMaterialPrice: 19.41176
+  - rubberAdhesiveThickness: T0.3
+    rubberAdhesiveMaterial: TESA_62626
+    rubberAdhesiveMaterialPrice: 25.40735
+  - rubberAdhesiveThickness: T0.3
+    rubberAdhesiveMaterial: 3M_T030B
+    rubberAdhesiveMaterialPrice: 33.52941
+  - rubberAdhesiveThickness: T0.4
+    rubberAdhesiveMaterial: SDK81840WR
+    rubberAdhesiveMaterialPrice: 20.58824
+  - rubberAdhesiveThickness: T0.4
+    rubberAdhesiveMaterial: NITTO_DY_040N
+    rubberAdhesiveMaterialPrice: 25.26176
+  - rubberAdhesiveThickness: T0.4
+    rubberAdhesiveMaterial: 3M_BD041VHB
+    rubberAdhesiveMaterialPrice: 27.39265
+  - rubberAdhesiveThickness: T0.4
+    rubberAdhesiveMaterial: 3M_4920VHB
+    rubberAdhesiveMaterialPrice: 25.73529
+  - rubberAdhesiveThickness: T0.4
+    rubberAdhesiveMaterial: DIC_8404B
+    rubberAdhesiveMaterialPrice: 47.31618
+  - rubberAdhesiveThickness: T0.4
+    rubberAdhesiveMaterial: 3M_5915VHB
+    rubberAdhesiveMaterialPrice: 38.23529
+  - rubberAdhesiveThickness: T0.4
+    rubberAdhesiveMaterial: TESA_62648
+    rubberAdhesiveMaterialPrice: 23.52941
+  - rubberAdhesiveThickness: T0.4
+    rubberAdhesiveMaterial: TESA_70640
+    rubberAdhesiveMaterialPrice: 44.85294
+  - rubberAdhesiveThickness: T0.5
+    rubberAdhesiveMaterial: TKB 500
+    rubberAdhesiveMaterialPrice: 30.88235
+  - rubberAdhesiveThickness: T0.64
+    rubberAdhesiveMaterial: 3M_5925VHB替代料_科捷龍_KJ6064B
+    rubberAdhesiveMaterialPrice: 19.11765
+  - rubberAdhesiveThickness: T0.64
+    rubberAdhesiveMaterial: NITTO_DY064N
+    rubberAdhesiveMaterialPrice: 26.72941
+  - rubberAdhesiveThickness: T0.64
+    rubberAdhesiveMaterial: 3M_5925VHB
+    rubberAdhesiveMaterialPrice: 30.11029
+  - rubberAdhesiveThickness: T0.64
+    rubberAdhesiveMaterial: 3M_BD065VHB
+    rubberAdhesiveMaterialPrice: 31.03676
+  - rubberAdhesiveThickness: T0.7
+    rubberAdhesiveMaterial: SDTT_7N
+    rubberAdhesiveMaterialPrice: 3.38235
+  - rubberAdhesiveThickness: T0.8
+    rubberAdhesiveMaterial: NITTO_DY_080N
+    rubberAdhesiveMaterialPrice: 28.41176
+  - rubberAdhesiveThickness: T0.8
+    rubberAdhesiveMaterial: 3M_5930VHB
+    rubberAdhesiveMaterialPrice: 44.05882

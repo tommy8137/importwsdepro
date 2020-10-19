@@ -1,0 +1,12 @@
+sheet:
+  label: 不織布
+  tables:
+    - key: nonWoven
+      $Template:
+        - rowTable
+      anchor:
+        x: F
+        y: 1
+      headers:
+        $database-diecut.header-diecut.diecut-base:
+          - headers

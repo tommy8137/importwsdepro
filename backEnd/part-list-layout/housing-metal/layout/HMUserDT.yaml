@@ -1,0 +1,290 @@
+multiple: true
+items:
+  - key: level
+    $Template:
+      - fetchData
+    label: level
+    url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0
+    constrains:
+      - function: "(val) => val ==='' || val === null"
+        message: "此欄位為必填"
+    require: true
+    emdmKey: emdmBomInfo.level
+
+  # - key: hmItem
+  #   $Template:
+  #     - inputString
+  #     - ^displayConfig
+  #   label: item
+
+  - key: hmpartname
+    $Template:
+      - fetchData
+    label: partName
+    url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+    constrains:
+      - function: "(val) => val ==='' || val === null"
+        message: "此欄位為必填"
+    require: true
+    emdmKey: emdmBomInfo.wistronPartName
+
+  - key: hmpartnumber
+    $Template:
+      - fetchData
+      - ^displayConfig
+    label: partNumber
+    url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+    emdmKey: emdmBomInfo.wpn
+
+  - key: hmuploadimage
+    $Template:
+      - uploadImage
+    label: 圖示
+    uploadUrl: bom/partlist/uploadImage
+    getUrl: bom/partlist/getImage/:{imageid}
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 2
+      display: true
+
+  - key: hmmaterial
+    $Template:
+      - fetchData
+      - ^displayConfig
+    label: Material
+    url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+    constrains:
+      - function: "(val) => val ==='' || val === null"
+        message: "此欄位為必填"
+    require: true
+    selectorConfig:
+      ?getMetalMaterialDropDownList:
+      mappedKey:
+        hmmaterial: material
+      depends:
+        - type2
+    emdmKey: emdmBomInfo.materialspec
+
+  - key: hmmaterialdensity
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0
+    mapFrom:
+      - hmmaterial
+    selectorConfig:
+      ?getMaterial:
+      # $housing-metal.dropdown.HmMaterialDensity:
+      # - ^values
+    needExe: true
+
+  - key: hmmaterialprice
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    mapFrom:
+      - hmmaterial
+      - hmthickness
+    selectorConfig:
+      ?getMaterial:
+      # $housing-metal.dropdown.HmMaterialPrice:
+      #   - ^values
+
+  - key: hmthickness
+    $Template:
+      - fetchData
+      - ^displayConfig
+    label: Thickness
+    url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+    constrains:
+      - function: "(val) => val ==='' || val === null"
+        message: "此欄位為必填"
+    require: true
+    selectorConfig:
+      ?getMaterial:
+      depends:
+        - hmmaterial
+    emdmKey: emdmBomInfo.thickness
+
+  - key: hmpartssizespec
+    $Template:
+      - compositeInline
+    label: Part Size/Spec. (W*L*H mm)-(成品尺寸)
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1.5
+    items:
+      - key: hmpartssizewidth
+        $Template:
+          - fetchData
+        url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1
+        label: 寬度(W)
+        constrains:
+          - function: "(val) => val ==='' || val === null"
+            message: "此欄位為必填"
+        require: true
+        emdmKey: emdmBomInfo.partWidth
+
+      - key: hmpartssizelength
+        $Template:
+          - fetchData
+        url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1
+        label: 長度(L)
+        constrains:
+          - function: "(val) => val ==='' || val === null"
+            message: "此欄位為必填"
+        require: true
+        emdmKey: emdmBomInfo.partLong
+
+      - key: hmpartssizehigh
+        $Template:
+          - fetchData
+        url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1
+        label: 高度(H)
+        constrains:
+          - function: "(val) => val ==='' || val === null"
+            message: "此欄位為必填"
+        require: true
+        emdmKey: emdmBomInfo.partHeight
+
+  - key: hmpartsexpandsize
+    $Template:
+      - compositeInline
+    label: Part Size/Spec. (W*L*H mm)-(成品展開尺寸)
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1.5
+    items:
+      - key: hmpartsexpandwidth
+        $Template:
+          - fetchData
+        url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1
+        label: 寬度(W)
+        constrains:
+          - function: "(val) => val ==='' || val === null"
+            message: "此欄位為必填"
+        require: true
+        emdmKey: emdmBomInfo.partWidth2
+
+      - key: hmpartsexpandlength
+        $Template:
+          - fetchData
+        url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1
+        label: 長度(L)
+        constrains:
+          - function: "(val) => val ==='' || val === null"
+            message: "此欄位為必填"
+        require: true
+        emdmKey: emdmBomInfo.partLong2
+
+  - key: hmSecondProcess
+    $Template:
+      - compositeInline
+    label: 二次加工
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+    items:
+      - key: hmStandOff
+        $Template:
+          - inputString
+          - ^displayConfig
+        label: Standoff數量/規格
+        emdmKey: emdmBomInfo.extraWorkStandoffQty
+
+      - key: hmRivetCount
+        $Template:
+          - inputString
+          - ^displayConfig
+        label: 令件鉚合數量/規格
+        emdmKey: emdmBomInfo.extraWorkPartRivetingQty
+
+      - key: hmTappingCount
+        $Template:
+          - inputString
+          - ^displayConfig
+        label: 攻牙數量/規格
+        emdmKey: emdmBomInfo.extraWorkTappingQty
+
+      - key: hmSelfriveCount
+        $Template:
+          - inputString
+          - ^displayConfig
+        label: 自鉚數量/規格
+        emdmKey: emdmBomInfo.extraWorkSelfClinchingQty
+
+      - key: hmHoleCount
+        $Template:
+          - inputInt
+          - ^displayConfig
+        label: 網孔/風孔數量
+        emdmKey: emdmBomInfo.airHoleQty
+
+  - key: hmMaterialLossRate
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    mapFrom:
+      - type2
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getMaterialLossRate:
+        - housing_metal_material
+      # $housing-metal.dropdown.HmMaterialLossRate:
+      #   - ^values
+
+  - key: hmMaterialRemark
+    label: Material Remark
+    $Template:
+      - textarea
+    require: true
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      depends:
+        action: lock
+        condition:
+          hmmaterial: "val => val === 'Other_Fill_ME_Remark'"
+    emdmKey: emdmBomInfo.materialspec1Remark

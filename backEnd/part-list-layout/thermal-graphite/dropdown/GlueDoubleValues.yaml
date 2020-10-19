@@ -1,0 +1,9 @@
+# Glue雙面膠
+values:
+ - glueDouble: 0.01
+   glueDoublePrice: 5.20 
+ - glueDouble: 0.02
+   glueDoublePrice: 4.50 
+ - glueDouble: 0.03
+   glueDoublePrice: 3.10 
+

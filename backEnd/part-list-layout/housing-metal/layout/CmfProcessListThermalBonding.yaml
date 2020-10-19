@@ -1,0 +1,194 @@
+multiple: true
+items:
+  - key: cmfProcessListThermalBondingCheckBox
+    $Template:
+      - checkBox
+    label: Exist
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListThermalBondingCheckBox
+
+  - key: cmfProcessListThermalBondingGlueType
+    $Template:
+      - selectorString
+    label: 膠水型號
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: metal_glue_id
+      # $housing-metal.dropdown.CmfProcessListThermalBondingGlueType:
+      #   - ^values
+      ?getGlue:
+
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfProcessListThermalBondingCheckBox: true
+      grids: 1
+      display: true
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfProcessListThermalBondingCheckBox)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfProcessListThermalBondingCheckBox
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListThermalBondingGlueType
+
+  - key: cmfProcessListThermalBondingGluePrice
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+      grids: 0
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      # $housing-metal.dropdown.CmfProcessListThermalBondingGlueType:
+      #   - ^values
+      ?getGlue:
+    mapFrom:
+      - cmfProcessListThermalBondingGlueType
+
+
+  - key: cmfProcessListThermalBondingGlueDensity
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0
+    mapFrom:
+      - cmfProcessListThermalBondingGlueType
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      # $housing-metal.dropdown.CmfProcessListThermalBondingGlueType:
+      #   - ^values
+      ?getGlue:
+    needExe: true
+
+  - key: cmfProcessListThermalBondingPathLength
+    $Template:
+      - inputInt
+    label: 路徑總長
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfProcessListThermalBondingCheckBox: true
+      grids: 1
+      display: true
+    default: 0
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfProcessListThermalBondingCheckBox)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfProcessListThermalBondingCheckBox
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListThermalBondingPathLength
+
+  - key: cmfProcessListThermalBondingGlueSyringeDiameter
+    $Template:
+      - selectorString
+    label: 膠水針筒內徑
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: syringe_id
+      # $housing-metal.dropdown.CmfProcessListThermalBondingGlueSyringeDiameter:
+      #   - ^values
+      ?getGlueSyringeDiameter:
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfProcessListThermalBondingCheckBox: true
+      grids: 1
+      display: true
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfProcessListThermalBondingCheckBox)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfProcessListThermalBondingCheckBox
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListThermalBondingGlueSyringeDiameter
+
+  - key: cmfProcessListThermalBondingGlueWeight
+    $Template:
+      - realtimeFormulaFloat
+    label: 膠水重量
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfProcessListThermalBondingCheckBox: true
+      grids: 1
+      display: true
+    func: "(diameter, cmfProcessListThermalBondingGlueDensity, cmfProcessListThermalBondingPathLength)=>{
+      let result = 3.1416 * (diameter / 2) * (diameter / 2) * cmfProcessListThermalBondingPathLength * cmfProcessListThermalBondingGlueDensity / 1000;
+      return result;
+    }"
+    replaceBy:
+      - cmfProcessListThermalBondingGlueSyringeDiameter
+      - cmfProcessListThermalBondingGlueDensity
+      - cmfProcessListThermalBondingPathLength
+    emdmSetting:
+      group: thermal_bonding
+      isCheck: false
+
+  - key: cmfProcessListThermalBondingCycleTime
+    $Template:
+      - selectorString
+    label: Cycle Time(sec)
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: id
+      ?getMetalGlueCycleTime:
+        -
+      # $housing-metal.dropdown.CmfProcessListCycleTime:
+      #   - ^values
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfProcessListThermalBondingCheckBox: true
+      grids: 1
+      display: true
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfProcessListThermalBondingCheckBox)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfProcessListThermalBondingCheckBox
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListThermalBondingCycleTime
+
+  - key: cmfProcessListThermalBondingCycleTimeValue
+    $Template:
+      - mappedValueString
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getMetalGlueCycleTime:
+        -
+      # $housing-metal.dropdown.CmfProcessListCycleTime:
+      #   - ^values
+    mapFrom:
+      - cmfProcessListThermalBondingCycleTime

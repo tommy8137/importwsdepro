@@ -1,0 +1,1240 @@
+{
+  "Fan": {
+    "bearingAndSleeveTable": {
+      "header": [
+        {
+          "key": "type",
+          "name": "軸承+套筒類別",
+          "typeof": "string"
+        },
+        {
+          "key": "price",
+          "name": "價格",
+          "typeof": "number"
+        }
+      ],
+      "data": [
+        {
+          "type": "Sleeve+塑膠_H<=7.5",
+          "price": 0
+        },
+        {
+          "type": "Sleeve+金屬_H<=7.5",
+          "price": 0
+        },
+        {
+          "type": "FDB+金屬_H<=4.5",
+          "price": 0
+        },
+        {
+          "type": "FDB+金屬_H>=5.0",
+          "price": 0.35
+        }
+      ]
+    },
+    "fanBladeMaterialTable": {
+      "header": [
+        {
+          "key": "type",
+          "name": "扇葉材料",
+          "typeof": "string"
+        },
+        {
+          "key": "price",
+          "name": "價格",
+          "typeof": "number"
+        }
+      ],
+      "data": [
+        {
+          "type": "PBT_H<=7.5",
+          "price": 0
+        },
+        {
+          "type": "LCP_H<= 5.5",
+          "price": 0.1
+        },
+        {
+          "type": "LCP_H>=6",
+          "price": 0.15
+        }
+      ]
+    },
+    "fanSizeTable": {
+      "header": [
+        {
+          "key": "fanSize",
+          "name": "Size",
+          "typeof": "string"
+        },
+        {
+          "key": "price",
+          "name": "價格",
+          "typeof": "number"
+        }
+      ],
+      "data": [
+        {
+          "fanSize": "60*60*3.5",
+          "price": 5.5
+        },
+        {
+          "fanSize": "60*60*4",
+          "price": 3.7
+        },
+        {
+          "fanSize": "60*60*4.5",
+          "price": 3.5
+        },
+        {
+          "fanSize": "60*60*5",
+          "price": 2.5
+        },
+        {
+          "fanSize": "60*60*5.5",
+          "price": 2.1
+        },
+        {
+          "fanSize": "60*60*6",
+          "price": 1.75
+        },
+        {
+          "fanSize": "60*60*6.5",
+          "price": 1.65
+        },
+        {
+          "fanSize": "60*60*7",
+          "price": 1.4
+        },
+        {
+          "fanSize": "60*60*7.5",
+          "price": 1.4
+        },
+        {
+          "fanSize": "80*80*5.5",
+          "price": 2.2
+        }
+      ]
+    },
+    "fanTypeTable": {
+      "header": [
+        {
+          "key": "fanType",
+          "name": "風扇類型",
+          "typeof": "string"
+        }
+      ],
+      "data": [
+        {
+          "fanType": "Axial(軸流扇)"
+        },
+        {
+          "fanType": "Cross Flow Fan(橫流扇)"
+        },
+        {
+          "fanType": "Blower(離心扇)"
+        }
+      ]
+    },
+    "magnetMaterialAndSizeTable": {
+      "header": [
+        {
+          "key": "type",
+          "name": "磁石材料",
+          "typeof": "string"
+        },
+        {
+          "key": "price",
+          "name": "價格",
+          "typeof": "number"
+        }
+      ],
+      "data": [
+        {
+          "type": "橡膠_H<=7.5",
+          "price": 0
+        },
+        {
+          "type": "MQ_H<= 5.5",
+          "price": 0.1
+        },
+        {
+          "type": "MQ_H>=6",
+          "price": 0.15
+        }
+      ]
+    },
+    "materialTable": {
+      "header": [
+        {
+          "key": "type",
+          "name": "材質",
+          "typeof": "string"
+        }
+      ],
+      "data": [
+        {
+          "type": "有鹵"
+        },
+        {
+          "type": "無鹵"
+        }
+      ]
+    },
+    "motorArchitectureTable": {
+      "header": [
+        {
+          "key": "type",
+          "name": "馬達",
+          "typeof": "string"
+        },
+        {
+          "key": "price",
+          "name": "價格",
+          "typeof": "number"
+        }
+      ],
+      "data": [
+        {
+          "type": "1_phase_H<=7.5",
+          "price": 0
+        },
+        {
+          "type": "3_phase_H<=4.5",
+          "price": 0
+        },
+        {
+          "type": "3_phase_H>=5.0",
+          "price": 0.25
+        }
+      ]
+    }
+  },
+  "Fin": {
+    "densityTable": {
+      "header": [
+        {
+          "key": "material",
+          "name": "材料",
+          "typeof": "string"
+        },
+        {
+          "key": "density",
+          "name": "密度",
+          "typeof": "number"
+        },
+        {
+          "key": "price",
+          "name": "Price USD",
+          "typeof": "number"
+        }
+      ],
+      "data": [
+        {
+          "material": "AL1050",
+          "density": 2.75,
+          "price": 2.75
+        },
+        {
+          "material": "CU1100",
+          "density": 8.9,
+          "price": 8.9
+        }
+      ]
+    },
+    "materialCostPerKilogramTable": {
+      "header": [
+        {
+          "key": "material",
+          "name": "材料",
+          "typeof": "string"
+        },
+        {
+          "key": "materialThickness",
+          "name": "材料厚度",
+          "typeof": "number"
+        },
+        {
+          "key": "materialCostPerKilogram",
+          "name": "材料每公斤費用",
+          "typeof": "number"
+        }
+      ],
+      "data": [
+        {
+          "material": "AL1050",
+          "materialThickness": 0.15,
+          "materialCostPerKilogram": 3.6
+        },
+        {
+          "material": "AL1050",
+          "materialThickness": 0.2,
+          "materialCostPerKilogram": 2.9
+        },
+        {
+          "material": "AL1050",
+          "materialThickness": 0.3,
+          "materialCostPerKilogram": 2.9
+        },
+        {
+          "material": "CU1100",
+          "materialThickness": 0.1,
+          "materialCostPerKilogram": 8.6
+        },
+        {
+          "material": "CU1100",
+          "materialThickness": 0.2,
+          "materialCostPerKilogram": 8.2
+        },
+        {
+          "material": "CU1100",
+          "materialThickness": 0.3,
+          "materialCostPerKilogram": 8.2
+        }
+      ]
+    }
+  },
+  "Grease": {
+    "materialTable": {
+      "header": [
+        {
+          "key": "material",
+          "name": "材質",
+          "typeof": "string"
+        },
+        {
+          "key": "materialCost",
+          "name": "材料成本",
+          "typeof": "number"
+        }
+      ],
+      "data": [
+        {
+          "material": "7783",
+          "materialCost": 490
+        },
+        {
+          "material": "7762",
+          "materialCost": 145
+        }
+      ]
+    }
+  },
+  "Pipe": {
+    "outerDiameterFlatteningThicknessTable": {
+      "header": [
+        {
+          "key": "outerDiameter",
+          "name": "外徑",
+          "typeof": "string"
+        },
+        {
+          "key": "flatteningThickness",
+          "name": "打扁",
+          "typeof": "string"
+        },
+        {
+          "key": "math",
+          "name": "數學",
+          "typeof": "number"
+        },
+        {
+          "key": "cost",
+          "name": "Cost",
+          "typeof": "number"
+        }
+      ],
+      "data": [
+        {
+          "outerDiameter": "D4_",
+          "flatteningThickness": ">=2.0mm",
+          "math": 2,
+          "cost": 0
+        },
+        {
+          "outerDiameter": "D4_",
+          "flatteningThickness": ">=1.8mm",
+          "math": 1.8,
+          "cost": 0.15
+        },
+        {
+          "outerDiameter": "D4_",
+          "flatteningThickness": ">=1.6mm",
+          "math": 1.6,
+          "cost": 0.2
+        },
+        {
+          "outerDiameter": "D4_",
+          "flatteningThickness": ">=1.4mm",
+          "math": 1.4,
+          "cost": 0.25
+        },
+        {
+          "outerDiameter": "D4_",
+          "flatteningThickness": ">=1.2mm",
+          "math": 1.2,
+          "cost": 0.35
+        },
+        {
+          "outerDiameter": "D4_",
+          "flatteningThickness": ">=1.0mm",
+          "math": 1,
+          "cost": 0.45
+        },
+        {
+          "outerDiameter": "D4_",
+          "flatteningThickness": ">=0.8mm",
+          "math": 0.8,
+          "cost": 0.6
+        },
+        {
+          "outerDiameter": "D4_",
+          "flatteningThickness": ">=0.6mm",
+          "math": 0.6,
+          "cost": 0.8
+        },
+        {
+          "outerDiameter": "D4_",
+          "flatteningThickness": ">=0mm",
+          "math": 0,
+          "cost": 1
+        },
+        {
+          "outerDiameter": "D6_",
+          "flatteningThickness": ">=2.0mm",
+          "math": 2,
+          "cost": 0
+        },
+        {
+          "outerDiameter": "D6_",
+          "flatteningThickness": ">=1.8mm",
+          "math": 1.8,
+          "cost": 0.15
+        },
+        {
+          "outerDiameter": "D6_",
+          "flatteningThickness": ">=1.6mm",
+          "math": 1.6,
+          "cost": 0.2
+        },
+        {
+          "outerDiameter": "D6_",
+          "flatteningThickness": ">=1.4mm",
+          "math": 1.4,
+          "cost": 0.25
+        },
+        {
+          "outerDiameter": "D6_",
+          "flatteningThickness": ">=1.2mm",
+          "math": 1.2,
+          "cost": 0.35
+        },
+        {
+          "outerDiameter": "D6_",
+          "flatteningThickness": ">=1.0mm",
+          "math": 1,
+          "cost": 0.45
+        },
+        {
+          "outerDiameter": "D6_",
+          "flatteningThickness": ">=0.8mm",
+          "math": 0.8,
+          "cost": 0.6
+        },
+        {
+          "outerDiameter": "D6_",
+          "flatteningThickness": ">=0mm",
+          "math": 0,
+          "cost": 1
+        },
+        {
+          "outerDiameter": "D8_",
+          "flatteningThickness": ">=2.0mm",
+          "math": 2,
+          "cost": 0
+        },
+        {
+          "outerDiameter": "D8_",
+          "flatteningThickness": ">=1.8mm",
+          "math": 1.8,
+          "cost": 0.25
+        },
+        {
+          "outerDiameter": "D8_",
+          "flatteningThickness": ">=1.6mm",
+          "math": 1.6,
+          "cost": 0.3
+        },
+        {
+          "outerDiameter": "D8_",
+          "flatteningThickness": ">=1.4mm",
+          "math": 1.4,
+          "cost": 0.4
+        },
+        {
+          "outerDiameter": "D8_",
+          "flatteningThickness": ">=1.2mm",
+          "math": 1.2,
+          "cost": 0.5
+        },
+        {
+          "outerDiameter": "D8_",
+          "flatteningThickness": ">=1.0mm",
+          "math": 1,
+          "cost": 0.6
+        },
+        {
+          "outerDiameter": "D8_",
+          "flatteningThickness": ">=0mm",
+          "math": 0,
+          "cost": 1
+        }
+      ]
+    },
+    "outerDiameterLengthTable": {
+      "header": [
+        {
+          "key": "outerDiameter",
+          "name": "外徑",
+          "typeof": "string"
+        },
+        {
+          "key": "lengthRange",
+          "name": "長度範圍",
+          "typeof": "string"
+        },
+        {
+          "key": "math",
+          "name": "數學",
+          "typeof": "number"
+        },
+        {
+          "key": "cost",
+          "name": "cost",
+          "typeof": "number"
+        }
+      ],
+      "data": [
+        {
+          "outerDiameter": "D4_",
+          "lengthRange": ">=250",
+          "math": 250,
+          "cost": 0.75
+        },
+        {
+          "outerDiameter": "D4_",
+          "lengthRange": ">=200",
+          "math": 200,
+          "cost": 0.7
+        },
+        {
+          "outerDiameter": "D4_",
+          "lengthRange": ">=175",
+          "math": 175,
+          "cost": 0.65
+        },
+        {
+          "outerDiameter": "D4_",
+          "lengthRange": ">=0",
+          "math": 0,
+          "cost": 0.6
+        },
+        {
+          "outerDiameter": "D6_",
+          "lengthRange": ">=250",
+          "math": 250,
+          "cost": 0.75
+        },
+        {
+          "outerDiameter": "D6_",
+          "lengthRange": ">=200",
+          "math": 200,
+          "cost": 0.7
+        },
+        {
+          "outerDiameter": "D6_",
+          "lengthRange": ">=175",
+          "math": 175,
+          "cost": 0.65
+        },
+        {
+          "outerDiameter": "D6_",
+          "lengthRange": ">=0",
+          "math": 0,
+          "cost": 0.6
+        },
+        {
+          "outerDiameter": "D8_",
+          "lengthRange": ">=250",
+          "math": 250,
+          "cost": 0.95
+        },
+        {
+          "outerDiameter": "D8_",
+          "lengthRange": ">=200",
+          "math": 200,
+          "cost": 0.9
+        },
+        {
+          "outerDiameter": "D8_",
+          "lengthRange": ">=175",
+          "math": 175,
+          "cost": 0.85
+        },
+        {
+          "outerDiameter": "D8_",
+          "lengthRange": ">=0",
+          "math": 0,
+          "cost": 0.8
+        }
+      ]
+    },
+    "outerDiameterTable": {
+      "header": [
+        {
+          "key": "outerDiameter",
+          "name": "外徑直徑",
+          "typeof": "string"
+        }
+      ],
+      "data": [
+        {
+          "outerDiameter": "D4_"
+        },
+        {
+          "outerDiameter": "D6_"
+        },
+        {
+          "outerDiameter": "D8_"
+        }
+      ]
+    },
+    "pipeTypeTable": {
+      "header": [
+        {
+          "key": "pipeType",
+          "name": "pipe形式",
+          "typeof": "string"
+        }
+      ],
+      "data": [
+        {
+          "pipeType": "Powder(結燒管)"
+        },
+        {
+          "pipeType": "Groove(溝槽管)"
+        },
+        {
+          "pipeType": "Complex(複合管)"
+        },
+        {
+          "pipeType": "VC(均熱管)"
+        }
+      ]
+    }
+  },
+  "Screw": {
+    "polishedRodTable": {
+      "header": [
+        {
+          "key": "type",
+          "name": "光桿",
+          "typeof": "string"
+        }
+      ],
+      "data": [
+        {
+          "type": "Yes"
+        },
+        {
+          "type": "No"
+        }
+      ]
+    }
+  },
+  "Sponge": {
+    "materialTable": {
+      "header": [
+        {
+          "key": "material",
+          "name": "材料",
+          "typeof": "string"
+        },
+        {
+          "key": "materialThickness",
+          "name": "材料厚度",
+          "typeof": "number"
+        },
+        {
+          "key": "materialCostPerMM",
+          "name": "材料每mm費用",
+          "typeof": "number"
+        }
+      ],
+      "data": [
+        {
+          "material": "CR1015",
+          "materialThickness": 0.5,
+          "materialCostPerMM": 0.98
+        },
+        {
+          "material": "CR1015",
+          "materialThickness": 0.8,
+          "materialCostPerMM": 1.15
+        },
+        {
+          "material": "CR1015",
+          "materialThickness": 1,
+          "materialCostPerMM": 1.31
+        },
+        {
+          "material": "CR1015",
+          "materialThickness": 1.5,
+          "materialCostPerMM": 2.62
+        },
+        {
+          "material": "CR1015",
+          "materialThickness": 2,
+          "materialCostPerMM": 2.62
+        },
+        {
+          "material": "CR1015",
+          "materialThickness": 2.5,
+          "materialCostPerMM": 3.93
+        },
+        {
+          "material": "CR1015",
+          "materialThickness": 3,
+          "materialCostPerMM": 3.93
+        },
+        {
+          "material": "CR1015",
+          "materialThickness": 4,
+          "materialCostPerMM": 5.25
+        },
+        {
+          "material": "CR1015",
+          "materialThickness": 5,
+          "materialCostPerMM": 6.56
+        },
+        {
+          "material": "SM55",
+          "materialThickness": 2,
+          "materialCostPerMM": 4.43
+        },
+        {
+          "material": "SM55",
+          "materialThickness": 2.5,
+          "materialCostPerMM": 4.59
+        },
+        {
+          "material": "SM55",
+          "materialThickness": 3,
+          "materialCostPerMM": 4.75
+        },
+        {
+          "material": "SM55",
+          "materialThickness": 4,
+          "materialCostPerMM": 5.74
+        },
+        {
+          "material": "SM55",
+          "materialThickness": 4.5,
+          "materialCostPerMM": 6.23
+        },
+        {
+          "material": "SM55",
+          "materialThickness": 5,
+          "materialCostPerMM": 7.38
+        },
+        {
+          "material": "藍色PMP1800",
+          "materialThickness": 1,
+          "materialCostPerMM": 5.9
+        },
+        {
+          "material": "藍色PMP1800",
+          "materialThickness": 1.5,
+          "materialCostPerMM": 6.56
+        },
+        {
+          "material": "藍色PMP1800",
+          "materialThickness": 2,
+          "materialCostPerMM": 6.56
+        },
+        {
+          "material": "藍色PMP1800",
+          "materialThickness": 2.5,
+          "materialCostPerMM": 7.87
+        },
+        {
+          "material": "黑色PMP1800",
+          "materialThickness": 1,
+          "materialCostPerMM": 5.9
+        },
+        {
+          "material": "黑色PMP1800",
+          "materialThickness": 2,
+          "materialCostPerMM": 6.5
+        },
+        {
+          "material": "黑色PMP1800",
+          "materialThickness": 3,
+          "materialCostPerMM": 8.2
+        },
+        {
+          "material": "E4382",
+          "materialThickness": 0.5,
+          "materialCostPerMM": 4.92
+        },
+        {
+          "material": "E4382",
+          "materialThickness": 1,
+          "materialCostPerMM": 4.92
+        },
+        {
+          "material": "E4382",
+          "materialThickness": 1.5,
+          "materialCostPerMM": 7.38
+        },
+        {
+          "material": "E4382",
+          "materialThickness": 2.5,
+          "materialCostPerMM": 12.3
+        },
+        {
+          "material": "E4382",
+          "materialThickness": 3.5,
+          "materialCostPerMM": 17.21
+        },
+        {
+          "material": "E4382",
+          "materialThickness": 4.5,
+          "materialCostPerMM": 22.13
+        }
+      ]
+    }
+  },
+  "ThermalBlock": {
+    "materialDensityTable": {
+      "header": [
+        {
+          "key": "material",
+          "name": "材料",
+          "typeof": "string"
+        },
+        {
+          "key": "density",
+          "name": "密度",
+          "typeof": "number"
+        }
+      ],
+      "data": [
+        {
+          "material": "CU1100",
+          "density": 8.9
+        },
+        {
+          "material": "皮銅",
+          "density": 8.8
+        },
+        {
+          "material": "AL1050",
+          "density": 2.75
+        },
+        {
+          "material": "AL1052",
+          "density": 2.71
+        }
+      ]
+    },
+    "thermalBlockTable": {
+      "header": [
+        {
+          "key": "material",
+          "name": "材料",
+          "typeof": "string"
+        },
+        {
+          "key": "materialThickness",
+          "name": "材料厚度",
+          "typeof": "number"
+        },
+        {
+          "key": "materialCostPerKilogram",
+          "name": "材料每公斤費用",
+          "typeof": "number"
+        }
+      ],
+      "data": [
+        {
+          "material": "CU1100",
+          "materialThickness": 0.1,
+          "materialCostPerKilogram": 8.6
+        },
+        {
+          "material": "CU1100",
+          "materialThickness": 0.2,
+          "materialCostPerKilogram": 8.2
+        },
+        {
+          "material": "CU1100",
+          "materialThickness": 0.3,
+          "materialCostPerKilogram": 8.2
+        },
+        {
+          "material": "CU1100",
+          "materialThickness": 0.5,
+          "materialCostPerKilogram": 8.2
+        },
+        {
+          "material": "CU1100",
+          "materialThickness": 0.6,
+          "materialCostPerKilogram": 8.2
+        },
+        {
+          "material": "CU1100",
+          "materialThickness": 0.8,
+          "materialCostPerKilogram": 8.2
+        },
+        {
+          "material": "皮銅",
+          "materialThickness": 0.5,
+          "materialCostPerKilogram": 8.2
+        },
+        {
+          "material": "AL1050",
+          "materialThickness": 0.15,
+          "materialCostPerKilogram": 3.6
+        },
+        {
+          "material": "AL1050",
+          "materialThickness": 0.2,
+          "materialCostPerKilogram": 2.9
+        },
+        {
+          "material": "AL1050",
+          "materialThickness": 0.3,
+          "materialCostPerKilogram": 2.9
+        },
+        {
+          "material": "AL1050",
+          "materialThickness": 0.4,
+          "materialCostPerKilogram": 2.9
+        },
+        {
+          "material": "AL1050",
+          "materialThickness": 0.5,
+          "materialCostPerKilogram": 2.9
+        },
+        {
+          "material": "AL1050",
+          "materialThickness": 0.6,
+          "materialCostPerKilogram": 2.9
+        },
+        {
+          "material": "AL1050",
+          "materialThickness": 0.8,
+          "materialCostPerKilogram": 2.9
+        },
+        {
+          "material": "AL1052",
+          "materialThickness": 1,
+          "materialCostPerKilogram": 5
+        }
+      ]
+    }
+  },
+  "ThermalPad": {
+    "heatTransferCoefficientTable": {
+      "header": [
+        {
+          "key": "heatTransferCoefficient",
+          "name": "熱傳係數(K值)",
+          "typeof": "number"
+        },
+        {
+          "key": "shore",
+          "name": "硬度",
+          "typeof": "number"
+        }
+      ],
+      "data": [
+        {
+          "heatTransferCoefficient": 1.3,
+          "shore": 24
+        },
+        {
+          "heatTransferCoefficient": 3,
+          "shore": 42
+        },
+        {
+          "heatTransferCoefficient": 6,
+          "shore": 45
+        }
+      ]
+    },
+    "thicknessTable": {
+      "header": [
+        {
+          "key": "heatTransferCoefficient",
+          "name": "熱傳係數(K值)",
+          "typeof": "number"
+        },
+        {
+          "key": "thickness",
+          "name": "厚度",
+          "typeof": "number"
+        },
+        {
+          "key": "price",
+          "name": "價格",
+          "typeof": "number"
+        },
+        {
+          "key": "shore",
+          "name": "硬度",
+          "typeof": "number"
+        }
+      ],
+      "data": [
+        {
+          "heatTransferCoefficient": 6,
+          "thickness": 0.5,
+          "price": 257,
+          "shore": 45
+        },
+        {
+          "heatTransferCoefficient": 6,
+          "thickness": 0.8,
+          "price": 300,
+          "shore": 45
+        },
+        {
+          "heatTransferCoefficient": 6,
+          "thickness": 1,
+          "price": 320,
+          "shore": 45
+        },
+        {
+          "heatTransferCoefficient": 1.3,
+          "thickness": 0.5,
+          "price": 74,
+          "shore": 24
+        },
+        {
+          "heatTransferCoefficient": 1.3,
+          "thickness": 1,
+          "price": 98,
+          "shore": 24
+        },
+        {
+          "heatTransferCoefficient": 1.3,
+          "thickness": 1.5,
+          "price": 136,
+          "shore": 24
+        },
+        {
+          "heatTransferCoefficient": 1.3,
+          "thickness": 3,
+          "price": 197,
+          "shore": 24
+        },
+        {
+          "heatTransferCoefficient": 3,
+          "thickness": 0.5,
+          "price": 95,
+          "shore": 42
+        },
+        {
+          "heatTransferCoefficient": 3,
+          "thickness": 1,
+          "price": 121,
+          "shore": 42
+        },
+        {
+          "heatTransferCoefficient": 3,
+          "thickness": 1.5,
+          "price": 168,
+          "shore": 42
+        },
+        {
+          "heatTransferCoefficient": 3,
+          "thickness": 2.25,
+          "price": 270,
+          "shore": 42
+        },
+        {
+          "heatTransferCoefficient": 3,
+          "thickness": 2.5,
+          "price": 315,
+          "shore": 42
+        },
+        {
+          "heatTransferCoefficient": 6,
+          "thickness": 0.3,
+          "price": 189,
+          "shore": 45
+        }
+      ]
+    }
+  },
+  "ThermalPlate": {
+    "materialCostPerKilogramTable": {
+      "header": [
+        {
+          "key": "material",
+          "name": "材料",
+          "typeof": "string"
+        },
+        {
+          "key": "materialThickness",
+          "name": "材料厚度",
+          "typeof": "number"
+        },
+        {
+          "key": "materialCostPerKilogram",
+          "name": "材料每公斤費用",
+          "typeof": "number"
+        }
+      ],
+      "data": [
+        {
+          "material": "CU1100",
+          "materialThickness": 0.5,
+          "materialCostPerKilogram": 4.5
+        },
+        {
+          "material": "CU1100",
+          "materialThickness": 0.6,
+          "materialCostPerKilogram": 4.5
+        },
+        {
+          "material": "CU1100",
+          "materialThickness": 0.8,
+          "materialCostPerKilogram": 4.5
+        },
+        {
+          "material": "C18400",
+          "materialThickness": 0.3,
+          "materialCostPerKilogram": 4.5
+        },
+        {
+          "material": "KU400",
+          "materialThickness": 0.5,
+          "materialCostPerKilogram": 1.5
+        },
+        {
+          "material": "KU400",
+          "materialThickness": 0.6,
+          "materialCostPerKilogram": 1.5
+        },
+        {
+          "material": "SGCC",
+          "materialThickness": 0.5,
+          "materialCostPerKilogram": 1.4
+        },
+        {
+          "material": "SGCC",
+          "materialThickness": 0.6,
+          "materialCostPerKilogram": 1.37
+        },
+        {
+          "material": "SGCC",
+          "materialThickness": 0.8,
+          "materialCostPerKilogram": 1
+        },
+        {
+          "material": "SGCC",
+          "materialThickness": 1,
+          "materialCostPerKilogram": 1.35
+        },
+        {
+          "material": "SGCC",
+          "materialThickness": 1.2,
+          "materialCostPerKilogram": 1.36
+        },
+        {
+          "material": "SECC",
+          "materialThickness": 0.5,
+          "materialCostPerKilogram": 1.39
+        },
+        {
+          "material": "SECC",
+          "materialThickness": 0.6,
+          "materialCostPerKilogram": 1.37
+        },
+        {
+          "material": "SPCC",
+          "materialThickness": 0.5,
+          "materialCostPerKilogram": 0.95
+        },
+        {
+          "material": "SPCC",
+          "materialThickness": 0.6,
+          "materialCostPerKilogram": 0.9
+        },
+        {
+          "material": "SPCC",
+          "materialThickness": 0.8,
+          "materialCostPerKilogram": 0.8
+        },
+        {
+          "material": "SPCC",
+          "materialThickness": 1,
+          "materialCostPerKilogram": 0.8
+        },
+        {
+          "material": "SPCC",
+          "materialThickness": 1.2,
+          "materialCostPerKilogram": 0.8
+        },
+        {
+          "material": "SPCC",
+          "materialThickness": 1.6,
+          "materialCostPerKilogram": 0.8
+        }
+      ]
+    },
+    "materialDensityTable": {
+      "header": [
+        {
+          "key": "material",
+          "name": "材料",
+          "typeof": "string"
+        },
+        {
+          "key": "density",
+          "name": "密度",
+          "typeof": "number"
+        }
+      ],
+      "data": [
+        {
+          "material": "CU1100",
+          "density": 8.9
+        },
+        {
+          "material": "KU400",
+          "density": 7.85
+        },
+        {
+          "material": "SGCC",
+          "density": 7.85
+        },
+        {
+          "material": "SECC",
+          "density": 7.85
+        },
+        {
+          "material": "SPCC",
+          "density": 7.85
+        },
+        {
+          "material": "C18400",
+          "density": 8.8
+        }
+      ]
+    }
+  }
+}

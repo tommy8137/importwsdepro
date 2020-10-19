@@ -1,0 +1,58 @@
+output:
+  connectorPrice: connectorPrice
+  connectorAssembly: connectorAssembly
+  isOtherFillMeRemark: isOtherFillMeRemark
+  use_amount: use_amount
+formula:
+  connectorPrice:
+    label: connector費用
+    type: FUNC
+    formula: "(cableConnectorUnitPrice, loss_rate, isOtherFillMeRemark) => {
+       if (isOtherFillMeRemark) {
+         return null;
+       }
+       return 1 * cableConnectorUnitPrice * (1 + loss_rate);
+     }"
+    param:
+      - cableConnectorUnitPrice
+      - loss_rate
+      - isOtherFillMeRemark
+
+
+  connectorAssembly:
+    type: MATH
+    formula: 1 * cableConnectorWorkingTime
+    label: assembly time
+
+  isOtherFillMeRemark:
+    type: FUNC
+    label: 判斷是不是other fill me remark
+    formula: "(otherFillMeRemarkName, cableConnectorName, cableConnectorType) => {
+      return cableConnectorName === otherFillMeRemarkName || cableConnectorType === otherFillMeRemarkName;
+    }"
+    param:
+      - otherFillMeRemarkName
+      - cableConnectorName
+      - cableConnectorType
+
+scope:
+  cableConnectorUnitPrice: cableConnectorUnitPrice
+  cableConnectorWorkingTime: cableConnectorWorkingTime
+  cableConnectorName: cableConnectorName
+  cableConnectorType: cableConnectorType
+
+constant:
+  otherFillMeRemarkName:
+    label: Other_Fill_ME_Remark
+    value: Other_Fill_ME_Remark
+
+  loss_rate:
+    label: loss_rate
+    ?getCableWireCommon:
+      - cable_wire_connector
+      - connector_loss_rate
+    # value: 0.03
+
+  use_amount:
+    label: 用量
+    value: 1

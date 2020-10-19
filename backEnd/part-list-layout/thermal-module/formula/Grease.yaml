@@ -1,0 +1,53 @@
+output:
+  total: total
+  unit_price: unit_price
+  qty: greaseAmount
+  assemblyTime: assemblyTime
+
+formula:
+# grease零件費 = 單價 * 用量 * (1+ grease loss rate) -----------------------------------------------------------------------------------------------------------------
+  total:
+    type: MATH
+    formula: unit_price * greaseAmount * (1 + grease_loss_rate)
+    label: grease零件費
+
+# 單價 = 長 * 寬 * 厚 / 1000 * 材質單價 / 1000 * 密度 -----------------------------------------------------------------------------------------------------------------
+  unit_price:
+    type: MATH
+    formula: greaseLength * greaseWidth * greaseThickness / 1000 * greaseMaterialCost / 1000 * grease_density
+    label: 單價
+
+  # 組裝時間
+  assemblyTime:
+    label: Grease 組裝時間
+    type: MATH
+    formula: greaseAmount * worktimeSec
+
+scope:
+  greaseLength: greaseLength
+  greaseWidth: greaseWidth
+  greaseThickness: greaseThickness
+  greaseMaterialCost: greaseMaterialCost
+  greaseAmount: greaseAmount
+
+constant:
+  worktimeSec:
+    label: Assembly組裝工時(sec)
+    ?getThermalCommon:
+      - thermal_module_processing
+      - assembly_spend_time
+    # value: 12
+    
+  grease_loss_rate:
+    label: grease loss rate
+    ?getThermalCommon:
+      - thermal_module_components
+      - grease_loss_rate
+    # value: 0.015
+
+  grease_density: 
+    label: grease密度
+    ?getThermalCommon:
+      - thermal_module_components
+      - grease_density
+    # value: 2.6

@@ -1,0 +1,14 @@
+sheet:
+  label: Original Currency
+  tables:
+    
+    - key: meCurrency
+      $Template:
+        - rowTable
+      autoFilter: true
+      anchor:
+        x: A
+        y: 9
+      headers:
+        $mebom.header-me.mecurrency-base:
+          - headers

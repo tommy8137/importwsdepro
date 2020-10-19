@@ -1,0 +1,13 @@
+values:
+  - hpComponent: NB-LCD_COVER
+  - hpComponent: NB-LCD_BEZEL
+  - hpComponent: NB-UP_CASE
+  - hpComponent: NB-LOW_CASE
+  - hpComponent: NB-KB_Frame
+  - hpComponent: NB-Side_Band
+  - hpComponent: NB-Other Category
+  - hpComponent: DT-FRONT_BEZEL
+  - hpComponent: DT-TOP_COVER
+  - hpComponent: DT-MIDDLE_COVER
+  - hpComponent: TV-FRONT_COVER
+  - hpComponent: TV-REAR_COVER

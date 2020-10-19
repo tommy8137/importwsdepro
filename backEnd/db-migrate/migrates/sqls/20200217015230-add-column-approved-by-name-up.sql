@@ -1,0 +1,1 @@
+alter table wiprocurement.bom_projects add column if not exists approved_by_name varchar(50) null;

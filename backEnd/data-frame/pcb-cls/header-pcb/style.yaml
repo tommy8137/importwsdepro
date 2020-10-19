@@ -1,0 +1,9 @@
+spec-header:
+  fontColor: 'FFFFFF'
+  fill: A6A6A6
+  bold: true
+  border: true
+
+spec-data:
+  border: true
+  borderColor: ED7D31'

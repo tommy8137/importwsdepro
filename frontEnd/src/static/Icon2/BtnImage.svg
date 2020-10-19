@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 16">
+    <defs>
+        <style>
+            .cls-1,.cls-4{fill:none}.cls-1{stroke:#333}.cls-2{fill:#333}.cls-3{stroke:none}
+        </style>
+    </defs>
+    <g id="btn_image_n" transform="translate(-1698.666 -15054)">
+        <g id="Rectangle_3198" class="cls-1" data-name="Rectangle 3198">
+            <path d="M0 0h20v16H0z" class="cls-3" transform="translate(1698.667 15054)"/>
+            <path d="M.5.5h19v15H.5z" class="cls-4" transform="translate(1698.667 15054)"/>
+        </g>
+        <ellipse id="Ellipse_306" cx="1.761" cy="1.761" class="cls-2" data-name="Ellipse 306" rx="1.761" ry="1.761" transform="translate(1712.182 15056.993)"/>
+        <path id="Union_249" d="M0 9.4V4.786L5.4 0l6.112 5.412v-.02L14 3.2l5.261 4.659v1.53h-3.25l.018.016z" class="cls-2" data-name="Union 249" transform="translate(1698.942 15059.654)"/>
+    </g>
+</svg>

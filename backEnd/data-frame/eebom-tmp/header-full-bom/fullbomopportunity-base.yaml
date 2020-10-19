@@ -1,0 +1,17 @@
+headers:
+  opportunity:
+    label: Opportunity TYPE 1
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - listHeader
+  total_opp_type1:
+    label: Total Opportunity
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - listString
+  opp_common_parts_type1:
+    label: Opp. CMP
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - listString
+  opp_non_common_parts_type1:
+    label: Opp. Non-CMP
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - listString

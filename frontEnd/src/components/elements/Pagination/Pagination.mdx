@@ -1,0 +1,49 @@
+---
+name: Pagination
+---
+
+import { Playground, Props } from 'docz'
+import Pagination from '~~elements/Pagination'
+
+import { State } from 'react-powerplug';
+
+
+
+##  引用方式
+```js
+import Radio from '~~elements/Pagination';
+```
+
+## Props
+
+<Props of={Pagination} />
+
+--- 
+
+
+## 範例
+
+<Playground>
+    <State initial={{ currentPage: 5 }}>
+    {({ state, setState }) => {
+        const handlePageChange = (current, pageSize) => {
+            setState({ currentPage: current })
+        }
+        return (
+            <div>
+                <Pagination
+                pageSize={10}
+                total={250}
+                currentPage={state.currentPage}
+                onChange={handlePageChange}
+                />
+            </div>
+        )
+    }
+    }
+    </State>
+</Playground>
+
+
+
+

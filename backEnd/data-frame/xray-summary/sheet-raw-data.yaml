@@ -1,0 +1,19 @@
+sheet:
+  label: SPA Raw Data
+  tables:
+    - key: spaRawData
+      $Template:
+        - spaTable
+      headers:
+        $xray-summary.header-raw-data.raw-data-excel:
+          - headers
+
+    - key: exchangeRateDefault
+      $Template:
+        - traverseTable
+      headers:
+        $eebom-tmp.header-full-bom.fullbomexchange-excel:
+          - headers
+      anchor:
+        x: F
+        y: 1

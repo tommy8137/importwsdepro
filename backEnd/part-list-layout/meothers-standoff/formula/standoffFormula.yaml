@@ -1,0 +1,160 @@
+output:
+  # total
+  total: total
+  # FOR GroupSum
+  A_materialCost: materialCost
+  B_formingCost: formingCost
+  C_secondaryProcessingCost: secondaryProcessingCost
+  D_packageCost: packageCost
+  E_managementCost: managementCost
+
+  # FOR debug
+  electroplating: electroplating
+  heat_treatments: heat_treatments
+  materialHeatingUnitPrice: materialHeatingUnitPrice
+  production_weight: production_weight
+  material: material
+  materialspec: materialspec
+  materialUnitPrice: materialUnitPrice
+
+formula:
+  # 總價
+  total:
+    label: 總價
+    type: FUNC
+    formula: "(total, isOtherFill)=>{
+      const inValid = !(total && typeof total === 'number' && isFinite(total));
+      if (isOtherFill) {
+        return null;
+      } else if (inValid) {
+        return 0;
+      }
+      return total;
+    }"
+    param:
+      - totalCost
+      - isOtherFill
+
+  # 計算結果 
+  totalCost:
+    type: MATH
+    label: 計算結果
+    formula: materialCost + formingCost + secondaryProcessingCost + packageCost + managementCost
+
+  # 檢查是否有 Other_Fill_ME_Remark
+  isOtherFill:
+    type: FUNC
+    formula: "materialspec => (materialspec ===  'Other_Fill_ME_Remark')"
+    label: 檢查是否有 Other_Fill_ME_Remark
+    param:
+      - materialspec
+
+  materialCost:
+    label: A. 材料費
+    type: MATH
+    formula: materialUnitPrice * production_weight / 1000
+
+  production_weight:
+    label: 成品重量
+    type: MATH
+    formula: ((3.14 * ( bossOuterDiameter / 2 ) ^ 2 * bossOuterDiameterHeight * materialDensity / 1000) + (3.14 * ( outerDiameter / 2 )^2 * outerDiameterHeight * materialDensity / 1000)+ (3.14 * ( pinOuterDiameter / 2 )^2 * pinOuterDiameterHeight * materialDensity / 1000))- (3.14 * ( innerDiameter / 2 )^2 * innerDiameterHeight * materialDensity / 1000)
+
+  formingCost:
+    label: B.成型費
+    type: MATH
+    formula: tapping_cost
+
+  tapping_cost:
+    label: 攻牙 費用
+    type: MATH
+    formula: tapping_process_cost / tapping_production_capacity * (1 + tapping_loss_rate)
+
+  secondaryProcessingCost:
+    label: C.二次加工費
+    type: MATH
+    formula: electroplating + heat_treatments
+
+  electroplating:
+    label: 電鍍
+    type: MATH
+    formula: enabledPlating ? production_weight * electroplating_unit_price / 1000 :0
+
+  heat_treatments: # 熱處理不用算
+    label: 熱處理
+    type: MATH
+    formula: 0
+    # formula: production_weight * materialHeatingUnitPrice / 1000
+
+  packageCost:
+    label: D.全檢包裝運輸
+    type: MATH
+    formula: package_cost
+
+  managementCost:
+    label: E.管銷費
+    type: MATH
+    formula: (formingCost + secondaryProcessingCost)  * management_percentage
+
+scope:
+  partssizem: partssizem
+  bossOuterDiameter: bossOuterDiameter
+  bossOuterDiameterHeight: bossOuterDiameterHeight
+  outerDiameter: outerDiameter
+  outerDiameterHeight: outerDiameterHeight
+  pinOuterDiameter: pinOuterDiameter
+  pinOuterDiameterHeight: pinOuterDiameterHeight
+  innerDiameterHeight: innerDiameterHeight
+  innerDiameter: innerDiameter
+  materialUnitPrice: materialUnitPrice # 材料單價
+  materialDensity: materialDensity # 材料密度
+  materialHeatingUnitPrice: materialHeatingUnitPrice # 熱處理 單價
+  enabledPlating: enabledPlating # 電鍍
+  material: material
+  materialspec: materialspec
+
+constant:
+  tapping_process_cost:
+    label: 攻牙 成型加工費用
+    ?getTurningCommon:
+      - me_others_screw_molding
+      - tapping_unit_price
+    # value: 37
+  tapping_production_capacity:
+    label: 攻牙 一班產能
+    ?getTurningCommon:
+      - me_others_screw_molding
+      - tapping_capacity
+    # value: 9000
+  tapping_loss_rate:
+    label: 攻牙 loss rate
+    ?getTurningCommon:
+      - me_others_screw_molding
+      - tapping_loss_rate
+    # value: 0.03
+
+  electroplating_unit_price:
+    label: 電鍍 單價
+    ?getTurningCommon:
+      - me_others_screw_second_process
+      - turning_plating_unit_price
+    # value: 2.57
+  heat_treatment_unit_price:
+    label: 熱處理 單價
+    ?getTurningCommon:
+      - me_others_screw_second_process
+      - turning_heattreatment_unit_price
+    # value: 0.74
+
+  package_cost:
+    label: 全檢包裝運輸
+    ?getTurningCommon:
+      - me_others_screw_shipping_check
+      - turning_shippingcheck_unit_price
+    # value: 0.0002
+
+  management_percentage:
+    label: 管銷費 比例
+    ?getTurningCommon:
+      - me_others_screw_management_and_profit
+      - standoff_management_and_profit
+    # value: 0.1

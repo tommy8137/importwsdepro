@@ -1,0 +1,40 @@
+headers:
+  keys:
+    label: ODM
+    $xray-summary.header-type.typeTemplate:
+      - headerString
+
+  type1:
+    label: TYPE I
+    $xray-summary.header-type.typeTemplate:
+      - dataString
+
+  manufacturer:
+    label: Manufacturer
+    $xray-summary.header-type.typeTemplate:
+      - dataString
+
+  vendorName:
+    label: Vendor Name
+    $xray-summary.header-type.typeTemplate:
+      - headerString
+
+  lastPrice:
+    label: Last Price
+    $xray-summary.header-type.typeTemplate:
+      - dataFloat
+
+  suggestionCost:
+    label: Suggestion Cost
+    $xray-summary.header-type.typeTemplate:
+      - dataFloat
+
+  opportunity:
+    label: Opportunity
+    $xray-summary.header-type.typeTemplate:
+      - dataFloat
+
+  opportunityPercent:
+    label: Opportunity %
+    $xray-summary.header-type.typeTemplate:
+      - headerString

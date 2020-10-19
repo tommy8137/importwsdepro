@@ -1,0 +1,14 @@
+node_modules/
+apidoc/
+.nyc_output/
+server/utils/excel/
+coverage/
+static/
+Logs/
+package-lock.json
+logs/
+*.swp
+.vscode/
+test/intergration/testBom/*
+mochawesome-report/*
+eslint-report.html

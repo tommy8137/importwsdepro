@@ -1,0 +1,4 @@
+values:
+  - cmfPEMISputteringBaseMaterial: PC+ABS
+  - cmfPEMISputteringBaseMaterial: PC+GF≦25%
+  - cmfPEMISputteringBaseMaterial: PC+GF>25%

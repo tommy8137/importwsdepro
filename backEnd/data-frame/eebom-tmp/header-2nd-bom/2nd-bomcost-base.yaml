@@ -1,0 +1,26 @@
+headers:
+  usd:
+    label: USD
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - listHeader
+  total_opportunity:
+    label: Total Opportunity
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - listFloat
+  opp_common_parts:
+    label: Opp.Comm Parts
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - listFloat
+  opp_non_common_parts:
+    label: Opp. Non-CMP
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - listFloat   
+  avl_filter:
+    label: null
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - listString
+
+  avl_doc_ver:
+    label: null
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - listString

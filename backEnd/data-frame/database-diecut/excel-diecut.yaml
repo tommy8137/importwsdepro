@@ -1,0 +1,22 @@
+excel:
+  sheets:
+    - $database-diecut.sheet-diecut-mylar:
+      - sheet
+    - $database-diecut.sheet-diecut-sponge:
+      - sheet
+    - $database-diecut.sheet-diecut-protection-film:
+      - sheet
+    - $database-diecut.sheet-diecut-adhesive:
+      - sheet
+    - $database-diecut.sheet-diecut-acetate-tape:
+      - sheet
+    - $database-diecut.sheet-diecut-absorber:
+      - sheet
+    - $database-diecut.sheet-diecut-al-cu-foil:
+      - sheet
+    - $database-diecut.sheet-diecut-non-woven:
+      - sheet
+    - $database-diecut.sheet-diecut-conductive-tape:
+      - sheet
+    - $database-diecut.sheet-diecut-gasket:
+      - sheet

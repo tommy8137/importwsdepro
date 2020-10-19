@@ -1,0 +1,127 @@
+output:
+  total: total
+  unit_price: unit_price
+  qty: thBlAmount
+  assemblyTime: assemblyTime
+
+formula:
+# thermal block零件費 = 單價 * 用量 * (1 + thermal block loss rate) -----------------------------------------------------------------------------------------------------------------
+  total:
+    type: MATH
+    formula: unit_price * thBlAmount * (1 + thermal_block_loss_rate)
+    label: thermal block零件費
+
+# 單價 = 成品材料費 + 沖壓費 + 二次加工 + 管消費 -----------------------------------------------------------------------------------------------------------------
+  unit_price:
+    type: MATH
+    formula: production_material_cost + stamping_cost + secondary_processing_cost + profit
+    label: 單價
+
+# 成品材料費 = (成品展開L * 成品展開W * 厚 * 密度 * 材料每公斤價格) / 1000000 * (1 + 成品材料費loss rate) -----------------------------------------------------------------------------------------------------------------
+  production_material_cost:
+    type: MATH
+    formula: (thBlProductionExpandLength * thBlProductionExpandWidth * thBlMaterialThickness * thBlDensity * thBlMaterialCostPerKilogram) / 1000000 * (1 + production_material_loss_rate)
+    label: 成品材料費
+
+# 二次加工費 = 超音波清洗 + 鍍鎳 -----------------------------------------------------------------------------------------------------------------
+  secondary_processing_cost:
+    type: MATH
+    formula: UltrasonicClean + NickelPlating
+    label: 二次加工費
+  
+  # 超音波清洗 = (成品展開L * 成品展開W * 厚 * 密度) / 1000 * 清洗單價 * (1 + 超音波清洗loss rate) / 1000
+  UltrasonicClean:
+    type: MATH
+    formula: (thBlProductionExpandLength * thBlProductionExpandWidth * thBlMaterialThickness * thBlDensity) / 1000 * ultrasonicClean_unit_price * (1 + ultrasonicClean_loss_rate) / 1000
+    label: 超音波清洗
+
+  # 鍍鎳 = (成品展開L * 成品展開W * 厚 * 密度 ) / 1000 * 鍍鎳單價 * (1 + 鍍鎳 loss rate) / 1000
+  NickelPlating:
+    type: MATH
+    formula: thBlNickelPlating ? (thBlProductionExpandLength * thBlProductionExpandWidth * thBlMaterialThickness * thBlDensity) / 1000 * nickelPlating_unit_price * (1 + nickelPlating_loss_rate) / 1000 :0
+    label: 鍍鎳
+  
+  # 管銷&利潤 = 沖壓費 * 管銷利潤 -----------------------------------------------------------------------------------------------------------------
+  profit:
+    type: MATH
+    formula: stamping_cost * profit_rate
+    label: 管銷&利潤
+
+   # 組裝時間
+  assemblyTime:
+    label: thBl 組裝時間
+    type: MATH
+    formula: thBlAmount * worktimeSec
+
+scope:
+  thBlProductionExpandLength: thBlProductionExpandLength
+  thBlProductionExpandWidth: thBlProductionExpandWidth
+  thBlMaterialThickness: thBlMaterialThickness
+  thBlDensity: thBlDensity
+  thBlMaterialCostPerKilogram: thBlMaterialCostPerKilogram
+  thBlAmount: thBlAmount
+  thBlNickelPlating: thBlNickelPlating
+
+constant:
+  worktimeSec:
+    label: Assembly組裝工時(sec)
+    ?getThermalCommon:
+      - thermal_module_processing
+      - assembly_spend_time
+    # value: 12
+
+  thermal_block_loss_rate:
+    label: thermal block loss rate
+    ?getThermalCommon:
+      - thermal_module_components
+      - thermal_block_loss_rate
+    # value: 0.015
+
+  production_material_loss_rate:
+    label: 成品材料費 loss rate
+    ?getThermalCommon:
+      - thermal_module_components
+      - thermal_block_material_loss_rate
+    # value: 0.03
+
+  stamping_cost:
+    label: 沖壓費
+    ?getThermalCommon:
+      - thermal_module_components
+      - thermal_block_stamping_cost
+    # value: 0.018
+
+  ultrasonicClean_unit_price:
+    label: 超音波清洗單價
+    ?getThermalCommon:
+      - thermal_module_components
+      - thermal_block_ultrasonic_cleaning_cost
+    # value: 0.3529
+
+  ultrasonicClean_loss_rate:
+    label: 超音波清洗 loss rate
+    ?getThermalCommon:
+      - thermal_module_components
+      - thermal_block_ultrasonic_cleaning_loss_rate
+    # value: 0.03
+
+  nickelPlating_unit_price:
+    label: 鍍鎳單價
+    ?getThermalCommon:
+      - thermal_module_components
+      - thermal_block_nickelplated_cost
+    # value: 5.71
+
+  nickelPlating_loss_rate:
+    label: 鍍鎳 loss rate
+    ?getThermalCommon:
+      - thermal_module_components
+      - thermal_block_nickelplated_loss_rate
+    # value: 0.03
+
+  profit_rate:
+    label: 管銷利潤
+    ?getThermalCommon:
+      - thermal_module_components
+      - thermal_block_management_and_profit
+    # value: 0.15

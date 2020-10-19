@@ -1,0 +1,435 @@
+multiple: true
+label: 輔料
+multipleItems:
+  - item: 地片
+    emdmMultipleKey: emdmBomInfo.cmfForm.CWGroundFilm
+    layout:
+      - key: CWGroundFilmLabel
+        label: 地片
+        $Template:
+          - label
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 3
+      - key: CWGroundFilmQty
+        label: QTY
+        $Template:
+          - inputInt
+          - ^displayConfig
+        require: ture
+        emdmMultipleKey: emdmBomInfo.cmfForm.CWGroundFilm
+        emdmKey: CWGroundFilmQty
+
+  - item: KAPTON
+    emdmMultipleKey: emdmBomInfo.cmfForm.CWKapton
+    layout:
+      - key: CWKapton
+        label: KAPTON
+        $Template:
+          - label
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 3
+      - key: CWKaptonLength
+        label: L(mm)
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.CWKapton
+        emdmKey: CWKaptonLength
+
+      - key: CWKaptonwidth
+        label: W(mm)
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.CWKapton
+        emdmKey: CWKaptonwidth
+
+      - key: CWKaptonQty
+        label: QTY
+        $Template:
+          - inputInt
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.CWKapton
+        emdmKey: CWKaptonQty
+
+  - item: 醋酸布拉帶
+    emdmMultipleKey: emdmBomInfo.cmfForm.CWAceticAcidCloth
+    layout:
+      - key: CWAceticAcidCloth
+        label: 醋酸布拉帶
+        $Template:
+          - label
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 3
+
+      - key: CWAceticAcidClothLength
+        label: L(mm)
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.CWAceticAcidCloth
+        emdmKey: CWAceticAcidClothLength
+
+      - key: CWAceticAcidClothwidth
+        label: W(mm)
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.CWAceticAcidCloth
+        emdmKey: CWAceticAcidClothwidth
+
+      - key: CWAceticAcidClothQty
+        label: QTY
+        $Template:
+          - inputInt
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.CWAceticAcidCloth
+        emdmKey: CWAceticAcidClothQty
+
+  - item: Teflon膠带
+    emdmMultipleKey: emdmBomInfo.cmfForm.CWTeflonTape
+    layout:
+      - key: CWTeflonTape
+        label: Teflon膠带
+        $Template:
+          - label
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 3
+
+      - key: CWTeflonTapeLength
+        label: L(mm)
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.CWTeflonTape
+        emdmKey: CWTeflonTapeLength
+
+      - key: CWTeflonTapeWidth
+        label: W(mm)
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.CWTeflonTape
+        emdmKey: CWTeflonTapeWidth
+
+      - key: CWTeflonTapeQty
+        label: QTY
+        $Template:
+          - inputInt
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.CWTeflonTape
+        emdmKey: CWTeflonTapeQty
+
+  - item: 導電布
+    emdmMultipleKey: emdmBomInfo.cmfForm.CWConductiveCloth
+    layout:
+      - key: CWConductiveCloth
+        label: 導電布
+        $Template:
+          - label
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 3
+
+      - key: CWConductiveClothLength
+        label: L(mm)
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.CWConductiveCloth
+        emdmKey: CWConductiveClothLength
+
+      - key: CWConductiveClothWidth
+        label: W(mm)
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.CWConductiveCloth
+        emdmKey: CWConductiveClothWidth
+
+      - key: CWConductiveClothQty
+        label: QTY
+        $Template:
+          - inputInt
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.CWConductiveCloth
+        emdmKey: CWConductiveClothQty
+
+  - item: 絞線
+    emdmMultipleKey: emdmBomInfo.cmfForm.CWTwistedWire
+    layout:
+      - key: CWTwistedWire
+        label: 絞線
+        $Template:
+          - label
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 3
+      - key: CWTwistedWireQty
+        label: QTY
+        $Template:
+          - inputInt
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.CWTwistedWire
+        emdmKey: CWTwistedWireQty
+
+  - item: UV GLUE
+    emdmMultipleKey: emdmBomInfo.cmfForm.CWUvGlue
+    layout:
+      - key: CWUvGlue
+        label: UV GLUE
+        $Template:
+          - label
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 3
+      - key: CWUvGlueQty
+        label: QTY
+        $Template:
+          - inputInt
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.CWUvGlue
+        emdmKey: CWUvGlueQty
+
+  - item: Label
+    emdmMultipleKey: emdmBomInfo.cmfForm.CWLabel
+    layout:
+      - key: CWLabel
+        label: Label
+        $Template:
+          - label
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 3
+
+      - key: CWLabelQty
+        label: QTY
+        $Template:
+          - inputInt
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.CWLabel
+        emdmKey: CWLabelQty
+
+  - item: 熱縮套管
+    emdmMultipleKey: emdmBomInfo.cmfForm.CWHeatShrinkableTubings
+    layout:
+      - key: CWHeatShrinkableTubings
+        label: 熱縮套管
+        $Template:
+          - label
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 3
+
+      - key: CWHeatShrinkableTubingsQty
+        label: QTY
+        $Template:
+          - inputInt
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.CWHeatShrinkableTubings
+        emdmKey: CWHeatShrinkableTubingsQty
+
+  - item: 畫線
+    emdmMultipleKey: emdmBomInfo.cmfForm.CWDrawLine
+    layout:
+      - key: CWDrawLine
+        label: 畫線
+        $Template:
+          - label
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 3
+
+      - key: CWDrawLineQty
+        label: QTY
+        $Template:
+          - inputInt
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.CWDrawLine
+        emdmKey: CWDrawLineQty
+
+  - item: 導電雙面膠
+    emdmMultipleKey: emdmBomInfo.cmfForm.CWConductiveDoubleSideTape
+    layout:
+      - key: CWConductiveDoubleSideTape
+        label: 導電雙面膠
+        $Template:
+          - label
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 3
+      - key: CWConductiveDoubleSideTapeLength
+        label: L(mm)
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.CWConductiveDoubleSideTape
+        emdmKey: CWConductiveDoubleSideTapeLength
+
+      - key: CWConductiveDoubleSideTapewidth
+        label: W(mm)
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.CWConductiveDoubleSideTape
+        emdmKey: CWConductiveDoubleSideTapewidth
+
+      - key: CWConductiveDoubleSideTapeQty
+        label: QTY
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.CWConductiveDoubleSideTape
+        emdmKey: CWConductiveDoubleSideTapeQty
+
+  - item: Mylar(CY28_PET) T=0.05
+    emdmMultipleKey: emdmBomInfo.cmfForm.CWMylarCY28Pet005
+    layout:
+      - key: CWMylarCY28Pet005
+        label: Mylar(CY28_PET) T=0.05
+        $Template:
+          - label
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 3
+
+      - key: CWMylarCY28Pet005Length
+        label: L(mm)
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.CWMylarCY28Pet005
+        emdmKey: CWMylarCY28Pet005Length
+
+      - key: CWMylarCY28Pet005width
+        label: W(mm)
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.CWMylarCY28Pet005
+        emdmKey: CWMylarCY28Pet005width
+
+      - key: CWMylarCY28Pet005Qty
+        label: QTY
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.CWMylarCY28Pet005
+        emdmKey: CWMylarCY28Pet005Qty
+
+  - item: Mylar(PET_6027D) T=0.1
+    emdmMultipleKey: emdmBomInfo.cmfForm.CWMylarPet6027D01
+    layout:
+      - key: CWMylarPet6027D01
+        label: Mylar(PET_6027D) T=0.1
+        $Template:
+          - label
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 3
+
+      - key: CWMylarPet6027D01Length
+        label: L(mm)
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.CWMylarPet6027D01
+        emdmKey: CWMylarPet6027D01Length
+
+      - key: CWMylarPet6027D01width
+        label: W(mm)
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.CWMylarPet6027D01
+        emdmKey: CWMylarPet6027D01width
+
+      - key: CWMylarPet6027D01Qty
+        label: QTY
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.CWMylarPet6027D01
+        emdmKey: CWMylarPet6027D01Qty
+
+  - item: 雙面膠
+    emdmMultipleKey: emdmBomInfo.cmfForm.CWDoubleSideTape
+    layout:
+      - key: CWDoubleSideTape
+        label: 雙面膠
+        $Template:
+          - label
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 3
+
+      - key: CWDoubleSideTapeLength
+        label: L(mm)
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.CWDoubleSideTape
+        emdmKey: CWDoubleSideTapeLength
+
+      - key: CWDoubleSideTapewidth
+        label: W(mm)
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.CWDoubleSideTape
+        emdmKey: CWDoubleSideTapewidth
+
+      - key: CWDoubleSideTapeQty
+        label: QTY
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.CWDoubleSideTape
+        emdmKey: CWDoubleSideTapeQty

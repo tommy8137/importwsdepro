@@ -1,0 +1,66 @@
+sub-header:
+  fill: 0E70C0
+  fontColor: FFFFFF
+  border: true
+  bold: true
+  horizontalAlignment: center
+  verticalAlignment: middle
+  borderTop: true
+  borderLeft: true
+
+header:
+  border: true
+  horizontalAlignment: center
+  verticalAlignment: middle
+
+border-header-right:
+  border: true
+  borderRight: true
+  horizontalAlignment: center
+  verticalAlignment: middle
+
+data:
+  border: true
+  horizontalAlignment: center
+  verticalAlignment: middle
+
+border-data-left:
+  border: true
+  borderLeft: true
+  horizontalAlignment: center
+  verticalAlignment: middle
+
+border-data-right:
+  border: true
+  borderRight: true
+  horizontalAlignment: center
+  verticalAlignment: middle
+
+
+value:
+  border: true
+  borderTop: true
+  borderBottom: true
+  horizontalAlignment: center
+  verticalAlignment: middle
+  numberFormat: '0%'
+
+value-not-top:
+  border: true
+  borderBottom: true
+  borderLeft: true
+  borderRight: true
+  horizontalAlignment: center
+  verticalAlignment: middle
+  numberFormat: '0%'
+
+
+cost-header:
+  border: true
+  horizontalAlignment: center
+  verticalAlignment: middle
+  borderRight: true
+  borderLeft: true
+  borderBottom: true
+
+

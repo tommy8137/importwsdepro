@@ -1,0 +1,10 @@
+# PET 單面膠
+values:
+ - petSingle: 0.01
+   petSinglePrice: 7.35
+ - petSingle: 0.02
+   petSinglePrice: 7.35
+ - petSingle: 0.03
+   petSinglePrice: 6.50
+ - petSingle: 0.05
+   petSinglePrice: 4.50

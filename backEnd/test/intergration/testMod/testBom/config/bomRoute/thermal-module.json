@@ -1,0 +1,2200 @@
+{
+  "xlsxName": "Test_Data_thermal_module_NB.xlsx",
+  "sheetName": "thermal module",
+  "startHorizontalCoordinates": "C",
+  "transferMode": "createPath",
+  "formate": "thermal-module",
+  "metadata": {
+    "productType": {
+      "createPath": "productType",
+      "valuekey": "productType",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "2"
+    },
+    "testLabel": {
+      "createPath": "testLabel",
+      "valuekey": "testLabel",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "3"
+    },
+    "type1": {
+      "createPath": "type1",
+      "valuekey": "type1",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "8"
+    },
+    "type2": {
+      "createPath": "type2",
+      "valuekey": "type2",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "9"
+    }
+  },
+  "transferPartlistInfo": {
+    "formData,thermal-module,Process,process,appearanceProcess": {
+      "createPath": "formData.thermal-module.Process.process.appearanceProcess",
+      "valuekey": "appearanceProcess",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": 158,
+      "default": true
+    },
+    "formData,thermal-module,Process,process,maskSpray": {
+      "createPath": "formData.thermal-module.Process.process.maskSpray",
+      "valuekey": "maskSpray",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": 143,
+      "default": true
+    },
+    "formData,thermal-module,Process,laserMarking": {
+      "createPath": "formData.thermal-module.Process.laserMarking",
+      "valuekey": "laserMarking",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": 146,
+      "default": true
+    },
+    "formData,thermal-module,Process,laserMarkingArea": {
+      "createPath": "formData.thermal-module.Process.laserMarkingArea",
+      "valuekey": "laserMarkingArea",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 148,
+      "default": null
+    },
+    "formData,thermal-module,Fan,0,uuid": {
+      "createPath": "formData.thermal-module.Fan.0.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,thermal-module,Fan,0,fanLabel": {
+      "createPath": "formData.thermal-module.Fan.0.fanLabel",
+      "valuekey": "fanLabel",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,thermal-module,Fan,0,fanAmount": {
+      "createPath": "formData.thermal-module.Fan.0.fanAmount",
+      "valuekey": "fanAmount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 25,
+      "default": null
+    },
+    "formData,thermal-module,Fan,0,fanType": {
+      "createPath": "formData.thermal-module.Fan.0.fanType",
+      "valuekey": "fanType",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 13,
+      "default": null
+    },
+    "formData,thermal-module,Fan,0,fanSizePanel,fanSizeX": {
+      "createPath": "formData.thermal-module.Fan.0.fanSizePanel.fanSizeX",
+      "valuekey": "fanSizeX",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 14,
+      "default": null
+    },
+    "formData,thermal-module,Fan,0,fanSizePanel,fanSizeY": {
+      "createPath": "formData.thermal-module.Fan.0.fanSizePanel.fanSizeY",
+      "valuekey": "fanSizeY",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 15,
+      "default": null
+    },
+    "formData,thermal-module,Fan,0,fanSizePanel,fanSize": {
+      "createPath": "formData.thermal-module.Fan.0.fanSizePanel.fanSize",
+      "valuekey": "fanSize",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 16,
+      "default": null
+    },
+    "formData,thermal-module,Fan,0,fanSizePanel,fanSizePrice": {
+      "createPath": "formData.thermal-module.Fan.0.fanSizePanel.fanSizePrice",
+      "valuekey": "fanSizePrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,thermal-module,Fan,0,fanSizePanel,fanArea": {
+      "createPath": "formData.thermal-module.Fan.0.fanSizePanel.fanArea",
+      "valuekey": "fanArea",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,thermal-module,Fan,0,fanSizePanel,fanCostAdder": {
+      "createPath": "formData.thermal-module.Fan.0.fanSizePanel.fanCostAdder",
+      "valuekey": "fanCostAdder",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 165,
+      "default": null
+    },
+    "formData,thermal-module,Fan,0,motorArchitecture": {
+      "createPath": "formData.thermal-module.Fan.0.motorArchitecture",
+      "valuekey": "motorArchitecture",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 20,
+      "default": null
+    },
+    "formData,thermal-module,Fan,0,motorArchitecturePrice": {
+      "createPath": "formData.thermal-module.Fan.0.motorArchitecturePrice",
+      "valuekey": "motorArchitecturePrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,thermal-module,Fan,0,bearingAndSleeve": {
+      "createPath": "formData.thermal-module.Fan.0.bearingAndSleeve",
+      "valuekey": "bearingAndSleeve",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 21,
+      "default": null
+    },
+    "formData,thermal-module,Fan,0,bearingAndSleevePrice": {
+      "createPath": "formData.thermal-module.Fan.0.bearingAndSleevePrice",
+      "valuekey": "bearingAndSleevePrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,thermal-module,Fan,0,fanBladeMaterial": {
+      "createPath": "formData.thermal-module.Fan.0.fanBladeMaterial",
+      "valuekey": "fanBladeMaterial",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 22,
+      "default": null
+    },
+    "formData,thermal-module,Fan,0,fanBladeMaterialPrice": {
+      "createPath": "formData.thermal-module.Fan.0.fanBladeMaterialPrice",
+      "valuekey": "fanBladeMaterialPrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,thermal-module,Fan,0,magnetMaterialAndSize": {
+      "createPath": "formData.thermal-module.Fan.0.magnetMaterialAndSize",
+      "valuekey": "magnetMaterialAndSize",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 23,
+      "default": null
+    },
+    "formData,thermal-module,Fan,0,magnetMaterialAndSizePrice": {
+      "createPath": "formData.thermal-module.Fan.0.magnetMaterialAndSizePrice",
+      "valuekey": "magnetMaterialAndSizePrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,thermal-module,Fan,0,fanVoltage": {
+      "createPath": "formData.thermal-module.Fan.0.fanVoltage",
+      "valuekey": "fanVoltage",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 164,
+      "default": null
+    },
+    "formData,thermal-module,Fan,0,fanVoltagePrice": {
+      "createPath": "formData.thermal-module.Fan.0.fanVoltagePrice",
+      "valuekey": "fanVoltagePrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,thermal-module,Fan,0,hasHalogen": {
+      "createPath": "formData.thermal-module.Fan.0.hasHalogen",
+      "valuekey": "hasHalogen",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": 166,
+      "default": true
+    },
+    "formData,thermal-module,Fan,0,poundOut": {
+      "createPath": "formData.thermal-module.Fan.0.poundOut",
+      "valuekey": "poundOut",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": 18,
+      "default": true
+    },
+    "formData,thermal-module,Pipe,0,uuid": {
+      "createPath": "formData.thermal-module.Pipe.0.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,thermal-module,Pipe,0,pipeLabel": {
+      "createPath": "formData.thermal-module.Pipe.0.pipeLabel",
+      "valuekey": "pipeLabel",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,thermal-module,Pipe,0,pipeAmount": {
+      "createPath": "formData.thermal-module.Pipe.0.pipeAmount",
+      "valuekey": "pipeAmount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 34,
+      "default": null
+    },
+    "formData,thermal-module,Pipe,0,pipeType": {
+      "createPath": "formData.thermal-module.Pipe.0.pipeType",
+      "valuekey": "pipeType",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 29,
+      "default": null
+    },
+    "formData,thermal-module,Pipe,0,outerDiameter": {
+      "createPath": "formData.thermal-module.Pipe.0.outerDiameter",
+      "valuekey": "outerDiameter",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 30,
+      "default": null
+    },
+    "formData,thermal-module,Pipe,0,pipeLength": {
+      "createPath": "formData.thermal-module.Pipe.0.pipeLength",
+      "valuekey": "pipeLength",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 31,
+      "default": null
+    },
+    "formData,thermal-module,Pipe,0,pipeFlatteningThickness": {
+      "createPath": "formData.thermal-module.Pipe.0.pipeFlatteningThickness",
+      "valuekey": "pipeFlatteningThickness",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 32,
+      "default": null
+    },
+    "formData,thermal-module,Pipe,0,pipiLenODiaToCost": {
+      "createPath": "formData.thermal-module.Pipe.0.pipiLenODiaToCost",
+      "valuekey": "pipiLenODiaToCost",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,thermal-module,Pipe,0,pipiFlThickODiaToCost": {
+      "createPath": "formData.thermal-module.Pipe.0.pipiFlThickODiaToCost",
+      "valuekey": "pipiFlThickODiaToCost",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,thermal-module,Fin,0,uuid": {
+      "createPath": "formData.thermal-module.Fin.0.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,thermal-module,Fin,0,finLabel": {
+      "createPath": "formData.thermal-module.Fin.0.finLabel",
+      "valuekey": "finLabel",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,thermal-module,Fin,0,finAmount": {
+      "createPath": "formData.thermal-module.Fin.0.finAmount",
+      "valuekey": "finAmount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 46,
+      "default": null
+    },
+    "formData,thermal-module,Fin,0,finMaterial": {
+      "createPath": "formData.thermal-module.Fin.0.finMaterial",
+      "valuekey": "finMaterial",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 44,
+      "default": null
+    },
+    "formData,thermal-module,Fin,0,finMaterialThickness": {
+      "createPath": "formData.thermal-module.Fin.0.finMaterialThickness",
+      "valuekey": "finMaterialThickness",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 41,
+      "default": null
+    },
+    "formData,thermal-module,Fin,0,finDensity": {
+      "createPath": "formData.thermal-module.Fin.0.finDensity",
+      "valuekey": "finDensity",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,thermal-module,Fin,0,finMaterialCostPerKilogram": {
+      "createPath": "formData.thermal-module.Fin.0.finMaterialCostPerKilogram",
+      "valuekey": "finMaterialCostPerKilogram",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,thermal-module,Fin,0,finProductionSize,finProductionLength": {
+      "createPath": "formData.thermal-module.Fin.0.finProductionSize.finProductionLength",
+      "valuekey": "finProductionLength",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 38,
+      "default": null
+    },
+    "formData,thermal-module,Fin,0,finProductionSize,finProductionWidth": {
+      "createPath": "formData.thermal-module.Fin.0.finProductionSize.finProductionWidth",
+      "valuekey": "finProductionWidth",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 39,
+      "default": null
+    },
+    "formData,thermal-module,Fin,0,finProductionSize,finProductionHigh": {
+      "createPath": "formData.thermal-module.Fin.0.finProductionSize.finProductionHigh",
+      "valuekey": "finProductionHigh",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 40,
+      "default": null
+    },
+    "formData,thermal-module,Fin,0,finProductionExpandSize,finProductionExpandLength": {
+      "createPath": "formData.thermal-module.Fin.0.finProductionExpandSize.finProductionExpandLength",
+      "valuekey": "finProductionExpandLength",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,thermal-module,Fin,0,finProductionExpandSize,finProductionExpandWidth": {
+      "createPath": "formData.thermal-module.Fin.0.finProductionExpandSize.finProductionExpandWidth",
+      "valuekey": "finProductionExpandWidth",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,thermal-module,Fin,0,finPitch": {
+      "createPath": "formData.thermal-module.Fin.0.finPitch",
+      "valuekey": "finPitch",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 42,
+      "default": null
+    },
+    "formData,thermal-module,Fin,0,finNickelPlating": {
+      "createPath": "formData.thermal-module.Fin.0.finNickelPlating",
+      "valuekey": "finNickelPlating",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": 48,
+      "default": true
+    },
+    "formData,thermal-module,Fin,0,finPiece": {
+      "createPath": "formData.thermal-module.Fin.0.finPiece",
+      "valuekey": "finPiece",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,thermal-module,ThermalPlate,0,uuid": {
+      "createPath": "formData.thermal-module.ThermalPlate.0.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,thermal-module,ThermalPlate,0,thPlLabel": {
+      "createPath": "formData.thermal-module.ThermalPlate.0.thPlLabel",
+      "valuekey": "thPlLabel",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,thermal-module,ThermalPlate,0,thPlAmount": {
+      "createPath": "formData.thermal-module.ThermalPlate.0.thPlAmount",
+      "valuekey": "thPlAmount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 57,
+      "default": null
+    },
+    "formData,thermal-module,ThermalPlate,0,thPlMaterial": {
+      "createPath": "formData.thermal-module.ThermalPlate.0.thPlMaterial",
+      "valuekey": "thPlMaterial",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 55,
+      "default": null
+    },
+    "formData,thermal-module,ThermalPlate,0,thPlMaterialThickness": {
+      "createPath": "formData.thermal-module.ThermalPlate.0.thPlMaterialThickness",
+      "valuekey": "thPlMaterialThickness",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 52,
+      "default": null
+    },
+    "formData,thermal-module,ThermalPlate,0,thPlDensity": {
+      "createPath": "formData.thermal-module.ThermalPlate.0.thPlDensity",
+      "valuekey": "thPlDensity",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,thermal-module,ThermalPlate,0,thPlMaterialCostPerKilogram": {
+      "createPath": "formData.thermal-module.ThermalPlate.0.thPlMaterialCostPerKilogram",
+      "valuekey": "thPlMaterialCostPerKilogram",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,thermal-module,ThermalPlate,0,thPlProductionSize,thPlProductionLength": {
+      "createPath": "formData.thermal-module.ThermalPlate.0.thPlProductionSize.thPlProductionLength",
+      "valuekey": "thPlProductionLength",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 59,
+      "default": null
+    },
+    "formData,thermal-module,ThermalPlate,0,thPlProductionSize,thPlProductionWidth": {
+      "createPath": "formData.thermal-module.ThermalPlate.0.thPlProductionSize.thPlProductionWidth",
+      "valuekey": "thPlProductionWidth",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 50,
+      "default": null
+    },
+    "formData,thermal-module,ThermalPlate,0,thPlProductionSize,thPlProductionHigh": {
+      "createPath": "formData.thermal-module.ThermalPlate.0.thPlProductionSize.thPlProductionHigh",
+      "valuekey": "thPlProductionHigh",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 51,
+      "default": null
+    },
+    "formData,thermal-module,ThermalPlate,0,thPlProductionExpandSize,thPlProductionExpandLength": {
+      "createPath": "formData.thermal-module.ThermalPlate.0.thPlProductionExpandSize.thPlProductionExpandLength",
+      "valuekey": "thPlProductionExpandLength",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,thermal-module,ThermalPlate,0,thPlProductionExpandSize,thPlProductionExpandWidth": {
+      "createPath": "formData.thermal-module.ThermalPlate.0.thPlProductionExpandSize.thPlProductionExpandWidth",
+      "valuekey": "thPlProductionExpandWidth",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,thermal-module,ThermalPlate,0,thPlNickelPlating": {
+      "createPath": "formData.thermal-module.ThermalPlate.0.thPlNickelPlating",
+      "valuekey": "thPlNickelPlating",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": 53,
+      "default": false
+    },
+    "formData,thermal-module,ThermalPlate,0,thPlRiveting": {
+      "createPath": "formData.thermal-module.ThermalPlate.0.thPlRiveting",
+      "valuekey": "thPlRiveting",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": 54,
+      "default": true
+    },
+    "formData,thermal-module,ThermalBlock,0,uuid": {
+      "createPath": "formData.thermal-module.ThermalBlock.0.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,thermal-module,ThermalBlock,0,thBlLabel": {
+      "createPath": "formData.thermal-module.ThermalBlock.0.thBlLabel",
+      "valuekey": "thBlLabel",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,thermal-module,ThermalBlock,0,thBlAmount": {
+      "createPath": "formData.thermal-module.ThermalBlock.0.thBlAmount",
+      "valuekey": "thBlAmount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 67,
+      "default": null
+    },
+    "formData,thermal-module,ThermalBlock,0,thBlMaterial": {
+      "createPath": "formData.thermal-module.ThermalBlock.0.thBlMaterial",
+      "valuekey": "thBlMaterial",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 65,
+      "default": null
+    },
+    "formData,thermal-module,ThermalBlock,0,thBlMaterialThickness": {
+      "createPath": "formData.thermal-module.ThermalBlock.0.thBlMaterialThickness",
+      "valuekey": "thBlMaterialThickness",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 63,
+      "default": null
+    },
+    "formData,thermal-module,ThermalBlock,0,thBlDensity": {
+      "createPath": "formData.thermal-module.ThermalBlock.0.thBlDensity",
+      "valuekey": "thBlDensity",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,thermal-module,ThermalBlock,0,thBlMaterialCostPerKilogram": {
+      "createPath": "formData.thermal-module.ThermalBlock.0.thBlMaterialCostPerKilogram",
+      "valuekey": "thBlMaterialCostPerKilogram",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,thermal-module,ThermalBlock,0,thBlProductionSize,thBlProductionLength": {
+      "createPath": "formData.thermal-module.ThermalBlock.0.thBlProductionSize.thBlProductionLength",
+      "valuekey": "thBlProductionLength",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 61,
+      "default": null
+    },
+    "formData,thermal-module,ThermalBlock,0,thBlProductionSize,thBlProductionWidth": {
+      "createPath": "formData.thermal-module.ThermalBlock.0.thBlProductionSize.thBlProductionWidth",
+      "valuekey": "thBlProductionWidth",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 62,
+      "default": null
+    },
+    "formData,thermal-module,ThermalBlock,0,thBlNickelPlating": {
+      "createPath": "formData.thermal-module.ThermalBlock.0.thBlNickelPlating",
+      "valuekey": "thBlNickelPlating",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": 64,
+      "default": true
+    },
+    "formData,thermal-module,ThermalBlock,0,thBlProductionExpandSize,thBlProductionExpandLength": {
+      "createPath": "formData.thermal-module.ThermalBlock.0.thBlProductionExpandSize.thBlProductionExpandLength",
+      "valuekey": "thBlProductionExpandLength",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,thermal-module,ThermalBlock,0,thBlProductionExpandSize,thBlProductionExpandWidth": {
+      "createPath": "formData.thermal-module.ThermalBlock.0.thBlProductionExpandSize.thBlProductionExpandWidth",
+      "valuekey": "thBlProductionExpandWidth",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,thermal-module,Screw,0,uuid": {
+      "createPath": "formData.thermal-module.Screw.0.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,thermal-module,Screw,0,screwLabel": {
+      "createPath": "formData.thermal-module.Screw.0.screwLabel",
+      "valuekey": "screwLabel",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,thermal-module,Screw,0,screwAmount": {
+      "createPath": "formData.thermal-module.Screw.0.screwAmount",
+      "valuekey": "screwAmount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 79,
+      "default": null
+    },
+    "formData,thermal-module,Screw,0,screwToothpath": {
+      "createPath": "formData.thermal-module.Screw.0.screwToothpath",
+      "valuekey": "screwToothpath",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 81,
+      "default": null
+    },
+    "formData,thermal-module,Screw,0,screwHeadDiameter": {
+      "createPath": "formData.thermal-module.Screw.0.screwHeadDiameter",
+      "valuekey": "screwHeadDiameter",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 71,
+      "default": null
+    },
+    "formData,thermal-module,Screw,0,screwHeadThickness": {
+      "createPath": "formData.thermal-module.Screw.0.screwHeadThickness",
+      "valuekey": "screwHeadThickness",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 72,
+      "default": null
+    },
+    "formData,thermal-module,Screw,0,screwLength": {
+      "createPath": "formData.thermal-module.Screw.0.screwLength",
+      "valuekey": "screwLength",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 73,
+      "default": null
+    },
+    "formData,thermal-module,Screw,0,screwPolishedRod": {
+      "createPath": "formData.thermal-module.Screw.0.screwPolishedRod",
+      "valuekey": "screwPolishedRod",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": 74,
+      "default": true
+    },
+    "formData,thermal-module,Screw,0,screwNeckDiameter": {
+      "createPath": "formData.thermal-module.Screw.0.screwNeckDiameter",
+      "valuekey": "screwNeckDiameter",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 75,
+      "default": null
+    },
+    "formData,thermal-module,Screw,0,screwNeckLength": {
+      "createPath": "formData.thermal-module.Screw.0.screwNeckLength",
+      "valuekey": "screwNeckLength",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 76,
+      "default": null
+    },
+    "formData,thermal-module,Screw,0,screwResistantFall": {
+      "createPath": "formData.thermal-module.Screw.0.screwResistantFall",
+      "valuekey": "screwResistantFall",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": 77,
+      "default": true
+    },
+    "formData,thermal-module,Spring,0,uuid": {
+      "createPath": "formData.thermal-module.Spring.0.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,thermal-module,Spring,0,springLabel": {
+      "createPath": "formData.thermal-module.Spring.0.springLabel",
+      "valuekey": "springLabel",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,thermal-module,Spring,0,springAmount": {
+      "createPath": "formData.thermal-module.Spring.0.springAmount",
+      "valuekey": "springAmount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 94,
+      "default": null
+    },
+    "formData,thermal-module,Spring,0,springWireDiameter": {
+      "createPath": "formData.thermal-module.Spring.0.springWireDiameter",
+      "valuekey": "springWireDiameter",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 96,
+      "default": null
+    },
+    "formData,thermal-module,Spring,0,springCoilCenterDiameter": {
+      "createPath": "formData.thermal-module.Spring.0.springCoilCenterDiameter",
+      "valuekey": "springCoilCenterDiameter",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 91,
+      "default": null
+    },
+    "formData,thermal-module,Spring,0,springFreeLong": {
+      "createPath": "formData.thermal-module.Spring.0.springFreeLong",
+      "valuekey": "springFreeLong",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 92,
+      "default": null
+    },
+    "formData,thermal-module,ORing,0,uuid": {
+      "createPath": "formData.thermal-module.ORing.0.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,thermal-module,ORing,0,oRLabel": {
+      "createPath": "formData.thermal-module.ORing.0.oRLabel",
+      "valuekey": "oRLabel",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,thermal-module,ORing,0,oRAmount": {
+      "createPath": "formData.thermal-module.ORing.0.oRAmount",
+      "valuekey": "oRAmount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 101,
+      "default": null
+    },
+    "formData,thermal-module,ORing,0,oROuterDiameter": {
+      "createPath": "formData.thermal-module.ORing.0.oROuterDiameter",
+      "valuekey": "oROuterDiameter",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 103,
+      "default": null
+    },
+    "formData,thermal-module,ORing,0,oRInnerDiameter": {
+      "createPath": "formData.thermal-module.ORing.0.oRInnerDiameter",
+      "valuekey": "oRInnerDiameter",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 98,
+      "default": null
+    },
+    "formData,thermal-module,ORing,0,oRThickness": {
+      "createPath": "formData.thermal-module.ORing.0.oRThickness",
+      "valuekey": "oRThickness",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 99,
+      "default": null
+    },
+    "formData,thermal-module,Label,0,uuid": {
+      "createPath": "formData.thermal-module.Label.0.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,thermal-module,Label,0,labelLabel": {
+      "createPath": "formData.thermal-module.Label.0.labelLabel",
+      "valuekey": "labelLabel",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,thermal-module,Label,0,labelAmount": {
+      "createPath": "formData.thermal-module.Label.0.labelAmount",
+      "valuekey": "labelAmount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 121,
+      "default": null
+    },
+    "formData,thermal-module,Label,0,labelLength": {
+      "createPath": "formData.thermal-module.Label.0.labelLength",
+      "valuekey": "labelLength",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 123,
+      "default": null
+    },
+    "formData,thermal-module,Label,0,labelWidth": {
+      "createPath": "formData.thermal-module.Label.0.labelWidth",
+      "valuekey": "labelWidth",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 118,
+      "default": null
+    },
+    "formData,thermal-module,Label,0,labelThickness": {
+      "createPath": "formData.thermal-module.Label.0.labelThickness",
+      "valuekey": "labelThickness",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 119,
+      "default": null
+    },
+    "formData,thermal-module,Sponge,0,uuid": {
+      "createPath": "formData.thermal-module.Sponge.0.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,thermal-module,Sponge,0,spongeLabel": {
+      "createPath": "formData.thermal-module.Sponge.0.spongeLabel",
+      "valuekey": "spongeLabel",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,thermal-module,Sponge,0,spongeAmount": {
+      "createPath": "formData.thermal-module.Sponge.0.spongeAmount",
+      "valuekey": "spongeAmount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 131,
+      "default": null
+    },
+    "formData,thermal-module,Sponge,0,spongeLength": {
+      "createPath": "formData.thermal-module.Sponge.0.spongeLength",
+      "valuekey": "spongeLength",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 133,
+      "default": null
+    },
+    "formData,thermal-module,Sponge,0,spongeWidth": {
+      "createPath": "formData.thermal-module.Sponge.0.spongeWidth",
+      "valuekey": "spongeWidth",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 125,
+      "default": null
+    },
+    "formData,thermal-module,Sponge,0,spongeMaterialThickness": {
+      "createPath": "formData.thermal-module.Sponge.0.spongeMaterialThickness",
+      "valuekey": "spongeMaterialThickness",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 126,
+      "default": null
+    },
+    "formData,thermal-module,Sponge,0,spongeMaterial": {
+      "createPath": "formData.thermal-module.Sponge.0.spongeMaterial",
+      "valuekey": "spongeMaterial",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 128,
+      "default": null
+    },
+    "formData,thermal-module,Sponge,0,spongeMaterialCostPerMM": {
+      "createPath": "formData.thermal-module.Sponge.0.spongeMaterialCostPerMM",
+      "valuekey": "spongeMaterialCostPerMM",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,thermal-module,Sponge,0,spongeMaterialThicknessRemark": {
+      "createPath": "formData.thermal-module.Sponge.0.spongeMaterialThicknessRemark",
+      "valuekey": "spongeMaterialThicknessRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,thermal-module,Sponge,0,spongeMaterialRemark": {
+      "createPath": "formData.thermal-module.Sponge.0.spongeMaterialRemark",
+      "valuekey": "spongeMaterialRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,thermal-module,Mylar,0,uuid": {
+      "createPath": "formData.thermal-module.Mylar.0.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,thermal-module,Mylar,0,MylarLabel": {
+      "createPath": "formData.thermal-module.Mylar.0.MylarLabel",
+      "valuekey": "MylarLabel",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,thermal-module,Mylar,0,mylarAmount": {
+      "createPath": "formData.thermal-module.Mylar.0.mylarAmount",
+      "valuekey": "mylarAmount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 114,
+      "default": null
+    },
+    "formData,thermal-module,Mylar,0,mylarMaterialCostPerMM": {
+      "createPath": "formData.thermal-module.Mylar.0.mylarMaterialCostPerMM",
+      "valuekey": "mylarMaterialCostPerMM",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,thermal-module,Mylar,0,mylarLength": {
+      "createPath": "formData.thermal-module.Mylar.0.mylarLength",
+      "valuekey": "mylarLength",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 107,
+      "default": null
+    },
+    "formData,thermal-module,Mylar,0,mylarWidth": {
+      "createPath": "formData.thermal-module.Mylar.0.mylarWidth",
+      "valuekey": "mylarWidth",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 108,
+      "default": null
+    },
+    "formData,thermal-module,Mylar,0,mylarMaterialThickness": {
+      "createPath": "formData.thermal-module.Mylar.0.mylarMaterialThickness",
+      "valuekey": "mylarMaterialThickness",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 116,
+      "default": null
+    },
+    "formData,thermal-module,Mylar,0,mylarMaterial": {
+      "createPath": "formData.thermal-module.Mylar.0.mylarMaterial",
+      "valuekey": "mylarMaterial",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 105,
+      "default": null
+    },
+    "formData,thermal-module,Mylar,0,mylarAdhesiveThickness": {
+      "createPath": "formData.thermal-module.Mylar.0.mylarAdhesiveThickness",
+      "valuekey": "mylarAdhesiveThickness",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 109,
+      "default": null
+    },
+    "formData,thermal-module,Mylar,0,mylarAdhesiveCostPerMM": {
+      "createPath": "formData.thermal-module.Mylar.0.mylarAdhesiveCostPerMM",
+      "valuekey": "mylarAdhesiveCostPerMM",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,thermal-module,Mylar,0,mylarAdhesiveMaterial": {
+      "createPath": "formData.thermal-module.Mylar.0.mylarAdhesiveMaterial",
+      "valuekey": "mylarAdhesiveMaterial",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 111,
+      "default": null
+    },
+    "formData,thermal-module,Mylar,0,mylarMaterialThicknessRemark": {
+      "createPath": "formData.thermal-module.Mylar.0.mylarMaterialThicknessRemark",
+      "valuekey": "mylarMaterialThicknessRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,thermal-module,Mylar,0,mylarMaterialRemark": {
+      "createPath": "formData.thermal-module.Mylar.0.mylarMaterialRemark",
+      "valuekey": "mylarMaterialRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,thermal-module,Mylar,0,mylarAdhesiveThicknessRemark": {
+      "createPath": "formData.thermal-module.Mylar.0.mylarAdhesiveThicknessRemark",
+      "valuekey": "mylarAdhesiveThicknessRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,thermal-module,Mylar,0,mylarAdhesiveMaterialRemark": {
+      "createPath": "formData.thermal-module.Mylar.0.mylarAdhesiveMaterialRemark",
+      "valuekey": "mylarAdhesiveMaterialRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,thermal-module,Grease,0,uuid": {
+      "createPath": "formData.thermal-module.Grease.0.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,thermal-module,Grease,0,greaseLabel": {
+      "createPath": "formData.thermal-module.Grease.0.greaseLabel",
+      "valuekey": "greaseLabel",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,thermal-module,Grease,0,greaseAmount": {
+      "createPath": "formData.thermal-module.Grease.0.greaseAmount",
+      "valuekey": "greaseAmount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 87,
+      "default": null
+    },
+    "formData,thermal-module,Grease,0,greaseMaterial": {
+      "createPath": "formData.thermal-module.Grease.0.greaseMaterial",
+      "valuekey": "greaseMaterial",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 85,
+      "default": null
+    },
+    "formData,thermal-module,Grease,0,greaseMaterialCost": {
+      "createPath": "formData.thermal-module.Grease.0.greaseMaterialCost",
+      "valuekey": "greaseMaterialCost",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,thermal-module,Grease,0,greaseLength": {
+      "createPath": "formData.thermal-module.Grease.0.greaseLength",
+      "valuekey": "greaseLength",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 89,
+      "default": null
+    },
+    "formData,thermal-module,Grease,0,greaseWidth": {
+      "createPath": "formData.thermal-module.Grease.0.greaseWidth",
+      "valuekey": "greaseWidth",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 83,
+      "default": null
+    },
+    "formData,thermal-module,Grease,0,greaseThickness": {
+      "createPath": "formData.thermal-module.Grease.0.greaseThickness",
+      "valuekey": "greaseThickness",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 84,
+      "default": null
+    }
+  },
+  "verifyInfo": {
+    "totalPrices": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "totalPrices",
+      "valueType": "totalPrices",
+      "comparisonValuePath": "totalPrices"
+    },
+    "parentGroupId": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "parentGroupId",
+      "valueType": "parentGroupId",
+      "comparisonValuePath": "forDebug.summary.thermalModule.parentGroupId"
+    },
+    "qty": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "qty",
+      "valueType": "qty",
+      "comparisonValuePath": "forDebug.summary.Fan-f47239da-5bb5-412a-9490-c3c2dc5cf8b5.qty"
+    },
+    "unit_price": {
+      "label": "單價",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "unit_price",
+      "valueType": "unit_price",
+      "comparisonValuePath": "forDebug.summary.Fan-f47239da-5bb5-412a-9490-c3c2dc5cf8b5.unit_price"
+    },
+    "total": {
+      "label": "總價",
+      "excelValueLongitudinalCoordinates": "163",
+      "valuekey": "total",
+      "valueType": "total",
+      "comparisonValuePath": "forDebug.summary.thermalModule.total"
+    },
+    "assemblyTime": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "assemblyTime",
+      "valueType": "assemblyTime",
+      "comparisonValuePath": "forDebug.summary.Fan-f47239da-5bb5-412a-9490-c3c2dc5cf8b5.assemblyTime"
+    },
+    "profit_rate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "profit_rate",
+      "valueType": "profit_rate",
+      "comparisonValuePath": "forDebug.summary.ThermalPlate-1f61b4c0-44e2-4a5c-8c56-0edc0b9ba6e4.profit_rate"
+    },
+    "isOtherFill": {
+      "label": "是否有欄位填寫 Other_Fill_ME_Remark",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "isOtherFill",
+      "valueType": "isOtherFill",
+      "comparisonValuePath": "forDebug.summary.Sponge-e64232ed-aabc-40a9-8822-33f61cda086e.isOtherFill"
+    },
+    "thermal_plate_loss_rate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "thermal_plate_loss_rate",
+      "valueType": "thermal_plate_loss_rate",
+      "comparisonValuePath": "forDebug.summary.ThermalPlate-1f61b4c0-44e2-4a5c-8c56-0edc0b9ba6e4.thermal_plate_loss_rate"
+    },
+    "B.stamping_cost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "B.stamping_cost",
+      "valueType": "B.stamping_cost",
+      "comparisonValuePath": "forDebug.summary.ThermalPlate-1f61b4c0-44e2-4a5c-8c56-0edc0b9ba6e4.B.stamping_cost"
+    },
+    "nickelPlating_loss_rate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "nickelPlating_loss_rate",
+      "valueType": "nickelPlating_loss_rate",
+      "comparisonValuePath": "forDebug.summary.ThermalPlate-1f61b4c0-44e2-4a5c-8c56-0edc0b9ba6e4.nickelPlating_loss_rate"
+    },
+    "thPlRiveting_loss_rate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "thPlRiveting_loss_rate",
+      "valueType": "thPlRiveting_loss_rate",
+      "comparisonValuePath": "forDebug.summary.ThermalPlate-1f61b4c0-44e2-4a5c-8c56-0edc0b9ba6e4.thPlRiveting_loss_rate"
+    },
+    "A.production_material_cost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "A.production_material_cost",
+      "valueType": "A.production_material_cost",
+      "comparisonValuePath": "forDebug.summary.ThermalPlate-1f61b4c0-44e2-4a5c-8c56-0edc0b9ba6e4.A.production_material_cost"
+    },
+    "UltrasonicCleanCost": {
+      "label": "超音波清洗",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "UltrasonicCleanCost",
+      "valueType": "UltrasonicCleanCost",
+      "comparisonValuePath": "forDebug.summary.ThermalPlate-1f61b4c0-44e2-4a5c-8c56-0edc0b9ba6e4.UltrasonicCleanCost"
+    },
+    "NickelPlatingCost": {
+      "label": "鍍鎳總價",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "NickelPlatingCost",
+      "valueType": "NickelPlatingCost",
+      "comparisonValuePath": "forDebug.summary.ThermalPlate-1f61b4c0-44e2-4a5c-8c56-0edc0b9ba6e4.NickelPlatingCost"
+    },
+    "thPlRivetingCost": {
+      "label": "鉚接",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "thPlRivetingCost",
+      "valueType": "thPlRivetingCost",
+      "comparisonValuePath": "forDebug.summary.ThermalPlate-1f61b4c0-44e2-4a5c-8c56-0edc0b9ba6e4.thPlRivetingCost"
+    },
+    "C.secondary_processing_cost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "C.secondary_processing_cost",
+      "valueType": "C.secondary_processing_cost",
+      "comparisonValuePath": "forDebug.summary.ThermalPlate-1f61b4c0-44e2-4a5c-8c56-0edc0b9ba6e4.C.secondary_processing_cost"
+    },
+    "D.profit": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "D.profit",
+      "valueType": "D.profit",
+      "comparisonValuePath": "forDebug.summary.ThermalPlate-1f61b4c0-44e2-4a5c-8c56-0edc0b9ba6e4.D.profit"
+    },
+    "pipe_loss_rate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "pipe_loss_rate",
+      "valueType": "pipe_loss_rate",
+      "comparisonValuePath": "forDebug.summary.Pipe-c743bf33-8947-4b70-8d9b-04e145301cd5.pipe_loss_rate"
+    },
+    "pipeLength": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "pipeLength",
+      "valueType": "pipeLength",
+      "comparisonValuePath": "forDebug.summary.Pipe-c743bf33-8947-4b70-8d9b-04e145301cd5.pipeLength"
+    },
+    "pipeFlatteningThickness": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "pipeFlatteningThickness",
+      "valueType": "pipeFlatteningThickness",
+      "comparisonValuePath": "forDebug.summary.Pipe-c743bf33-8947-4b70-8d9b-04e145301cd5.pipeFlatteningThickness"
+    },
+    "pipeTypeAndOuterDiameter": {
+      "label": "pipe型式字首+外徑",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "pipeTypeAndOuterDiameter",
+      "valueType": "pipeTypeAndOuterDiameter",
+      "comparisonValuePath": "forDebug.summary.Pipe-c743bf33-8947-4b70-8d9b-04e145301cd5.pipeTypeAndOuterDiameter"
+    },
+    "id": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "id",
+      "valueType": "id",
+      "comparisonValuePath": "forDebug.summary.Fan-f47239da-5bb5-412a-9490-c3c2dc5cf8b5.fanSizePriceValues.values.18.id"
+    },
+    "fanSize": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fanSize",
+      "valueType": "fanSize",
+      "comparisonValuePath": "forDebug.summary.Fan-f47239da-5bb5-412a-9490-c3c2dc5cf8b5.fanSize"
+    },
+    "fanSizePrice": {
+      "label": "Fan unit price",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fanSizePrice",
+      "valueType": "fanSizePrice",
+      "comparisonValuePath": "forDebug.summary.Fan-f47239da-5bb5-412a-9490-c3c2dc5cf8b5.fanSizePrice"
+    },
+    "activate_date": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "activate_date",
+      "valueType": "activate_date",
+      "comparisonValuePath": "forDebug.summary.Fan-f47239da-5bb5-412a-9490-c3c2dc5cf8b5.fanSizePriceValues.values.18.activate_date"
+    },
+    "fanVoltagePrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fanVoltagePrice",
+      "valueType": "fanVoltagePrice",
+      "comparisonValuePath": "forDebug.summary.Fan-f47239da-5bb5-412a-9490-c3c2dc5cf8b5.fanVoltagePrice"
+    },
+    "bearingAndSleevePrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "bearingAndSleevePrice",
+      "valueType": "bearingAndSleevePrice",
+      "comparisonValuePath": "forDebug.summary.Fan-f47239da-5bb5-412a-9490-c3c2dc5cf8b5.bearingAndSleevePrice"
+    },
+    "poundOut": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "poundOut",
+      "valueType": "poundOut",
+      "comparisonValuePath": "forDebug.summary.Fan-f47239da-5bb5-412a-9490-c3c2dc5cf8b5.poundOut"
+    },
+    "motorArchitecturePrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "motorArchitecturePrice",
+      "valueType": "motorArchitecturePrice",
+      "comparisonValuePath": "forDebug.summary.Fan-f47239da-5bb5-412a-9490-c3c2dc5cf8b5.motorArchitecturePrice"
+    },
+    "fanBladeMaterialPrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fanBladeMaterialPrice",
+      "valueType": "fanBladeMaterialPrice",
+      "comparisonValuePath": "forDebug.summary.Fan-f47239da-5bb5-412a-9490-c3c2dc5cf8b5.fanBladeMaterialPrice"
+    },
+    "magnetMaterialAndSizePrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "magnetMaterialAndSizePrice",
+      "valueType": "magnetMaterialAndSizePrice",
+      "comparisonValuePath": "forDebug.summary.Fan-f47239da-5bb5-412a-9490-c3c2dc5cf8b5.magnetMaterialAndSizePrice"
+    },
+    "fanLossRate": {
+      "label": "FAN loss rate",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fanLossRate",
+      "valueType": "fanLossRate",
+      "comparisonValuePath": "forDebug.summary.Fan-f47239da-5bb5-412a-9490-c3c2dc5cf8b5.fanLossRate"
+    },
+    "assemblyVariable": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "assemblyVariable",
+      "valueType": "assemblyVariable",
+      "comparisonValuePath": "forDebug.summary.thermalModule.assemblyVariable"
+    },
+    "worktimeSec": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "worktimeSec",
+      "valueType": "worktimeSec",
+      "comparisonValuePath": "forDebug.summary.thermalModule.worktimeSec"
+    },
+    "worktimeCost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "worktimeCost",
+      "valueType": "worktimeCost",
+      "comparisonValuePath": "forDebug.summary.thermalModule.worktimeCost"
+    },
+    "painting_unit_price": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "painting_unit_price",
+      "valueType": "painting_unit_price",
+      "comparisonValuePath": "forDebug.summary.thermalModule.painting_unit_price"
+    },
+    "maskSpray_unit_price": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "maskSpray_unit_price",
+      "valueType": "maskSpray_unit_price",
+      "comparisonValuePath": "forDebug.summary.thermalModule.maskSpray_unit_price"
+    },
+    "laserMarking_area_unit_price": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "laserMarking_area_unit_price",
+      "valueType": "laserMarking_area_unit_price",
+      "comparisonValuePath": "forDebug.summary.thermalModule.laserMarking_area_unit_price"
+    },
+    "laserMarking_area": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "laserMarking_area",
+      "valueType": "laserMarking_area",
+      "comparisonValuePath": "forDebug.summary.thermalModule.laserMarking_area"
+    },
+    "appearanceProcess": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "appearanceProcess",
+      "valueType": "appearanceProcess",
+      "comparisonValuePath": "forDebug.summary.thermalModule.appearanceProcess"
+    },
+    "maskSpray": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "maskSpray",
+      "valueType": "maskSpray",
+      "comparisonValuePath": "forDebug.summary.thermalModule.maskSpray"
+    },
+    "laserMarking": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "laserMarking",
+      "valueType": "laserMarking",
+      "comparisonValuePath": "forDebug.summary.thermalModule.laserMarking"
+    },
+    "laserMarkingArea": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "laserMarkingArea",
+      "valueType": "laserMarkingArea",
+      "comparisonValuePath": "forDebug.summary.thermalModule.laserMarkingArea"
+    },
+    "A.component_cost": {
+      "label": "A.零件費 ",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "A.component_cost",
+      "valueType": "A.component_cost",
+      "comparisonValuePath": "forDebug.summary.thermalModule.A.component_cost"
+    },
+    "sumAssemblyTime": {
+      "label": "assemblyTime 總和",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "sumAssemblyTime",
+      "valueType": "sumAssemblyTime",
+      "comparisonValuePath": "forDebug.summary.thermalModule.sumAssemblyTime"
+    },
+    "totalAssemblyTime": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "totalAssemblyTime",
+      "valueType": "totalAssemblyTime",
+      "comparisonValuePath": "forDebug.summary.thermalModule.totalAssemblyTime"
+    },
+    "B-1.assembly_cost": {
+      "label": "組裝費",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "B-1.assembly_cost",
+      "valueType": "B-1.assembly_cost",
+      "comparisonValuePath": "forDebug.summary.thermalModule.B-1.assembly_cost"
+    },
+    "B-2.painting_cost": {
+      "label": "噴漆費用",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "B-2.painting_cost",
+      "valueType": "B-2.painting_cost",
+      "comparisonValuePath": "forDebug.summary.thermalModule.B-2.painting_cost"
+    },
+    "B-3.maskSpray_cost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "B-3.maskSpray_cost",
+      "valueType": "B-3.maskSpray_cost",
+      "comparisonValuePath": "forDebug.summary.thermalModule.B-3.maskSpray_cost"
+    },
+    "laserMarkingVariable": {
+      "label": "雷雕固定參數",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "laserMarkingVariable",
+      "valueType": "laserMarkingVariable",
+      "comparisonValuePath": "forDebug.summary.thermalModule.laserMarkingVariable"
+    },
+    "B-4.laserMarking_cost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "B-4.laserMarking_cost",
+      "valueType": "B-4.laserMarking_cost",
+      "comparisonValuePath": "forDebug.summary.thermalModule.B-4.laserMarking_cost"
+    },
+    "B.processing_cost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "B.processing_cost",
+      "valueType": "B.processing_cost",
+      "comparisonValuePath": "forDebug.summary.thermalModule.B.processing_cost"
+    },
+    "C.profit_cost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "C.profit_cost",
+      "valueType": "C.profit_cost",
+      "comparisonValuePath": "forDebug.summary.thermalModule.C.profit_cost"
+    },
+    "totalCost": {
+      "label": "計算結果",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "totalCost",
+      "valueType": "totalCost",
+      "comparisonValuePath": "forDebug.summary.thermalModule.totalCost"
+    },
+    "grease_loss_rate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "grease_loss_rate",
+      "valueType": "grease_loss_rate",
+      "comparisonValuePath": "forDebug.debugInfo.Grease-e6664185-5bdd-4669-9f7a-37b741d638b6.grease_loss_rate.value"
+    },
+    "grease_density": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "grease_density",
+      "valueType": "grease_density",
+      "comparisonValuePath": "forDebug.debugInfo.Grease-e6664185-5bdd-4669-9f7a-37b741d638b6.grease_density.value"
+    },
+    "greaseLength": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "greaseLength",
+      "valueType": "greaseLength",
+      "comparisonValuePath": "forDebug.debugInfo.Grease-e6664185-5bdd-4669-9f7a-37b741d638b6.greaseLength.value"
+    },
+    "greaseWidth": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "greaseWidth",
+      "valueType": "greaseWidth",
+      "comparisonValuePath": "forDebug.debugInfo.Grease-e6664185-5bdd-4669-9f7a-37b741d638b6.greaseWidth.value"
+    },
+    "greaseThickness": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "greaseThickness",
+      "valueType": "greaseThickness",
+      "comparisonValuePath": "forDebug.debugInfo.Grease-e6664185-5bdd-4669-9f7a-37b741d638b6.greaseThickness.value"
+    },
+    "greaseMaterialCost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "greaseMaterialCost",
+      "valueType": "greaseMaterialCost",
+      "comparisonValuePath": "forDebug.debugInfo.Grease-e6664185-5bdd-4669-9f7a-37b741d638b6.greaseMaterialCost.value"
+    },
+    "greaseAmount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "greaseAmount",
+      "valueType": "greaseAmount",
+      "comparisonValuePath": "forDebug.debugInfo.Grease-e6664185-5bdd-4669-9f7a-37b741d638b6.greaseAmount.value"
+    },
+    "mylar_loss_rate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "mylar_loss_rate",
+      "valueType": "mylar_loss_rate",
+      "comparisonValuePath": "forDebug.debugInfo.Mylar-98201f2e-2cea-4563-ab33-758e54ba4a8d.mylar_loss_rate.value"
+    },
+    "production_material_loss_rate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "production_material_loss_rate",
+      "valueType": "production_material_loss_rate",
+      "comparisonValuePath": "forDebug.debugInfo.Fin-de84d80b-69a2-4ecc-ac1f-65bc8321fcbf.production_material_loss_rate.value"
+    },
+    "secondary_processing_loss_rate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "secondary_processing_loss_rate",
+      "valueType": "secondary_processing_loss_rate",
+      "comparisonValuePath": "forDebug.debugInfo.Mylar-98201f2e-2cea-4563-ab33-758e54ba4a8d.secondary_processing_loss_rate.value"
+    },
+    "package_cost_param": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "package_cost_param",
+      "valueType": "package_cost_param",
+      "comparisonValuePath": "forDebug.debugInfo.Mylar-98201f2e-2cea-4563-ab33-758e54ba4a8d.package_cost_param.value"
+    },
+    "edge_material_size": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "edge_material_size",
+      "valueType": "edge_material_size",
+      "comparisonValuePath": "forDebug.debugInfo.Mylar-98201f2e-2cea-4563-ab33-758e54ba4a8d.edge_material_size.value"
+    },
+    "mylarLength": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "mylarLength",
+      "valueType": "mylarLength",
+      "comparisonValuePath": "forDebug.debugInfo.Mylar-98201f2e-2cea-4563-ab33-758e54ba4a8d.mylarLength.value"
+    },
+    "mylarWidth": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "mylarWidth",
+      "valueType": "mylarWidth",
+      "comparisonValuePath": "forDebug.debugInfo.Mylar-98201f2e-2cea-4563-ab33-758e54ba4a8d.mylarWidth.value"
+    },
+    "mylarMaterialCostPerMM": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "mylarMaterialCostPerMM",
+      "valueType": "mylarMaterialCostPerMM",
+      "comparisonValuePath": "forDebug.debugInfo.Mylar-98201f2e-2cea-4563-ab33-758e54ba4a8d.mylarMaterialCostPerMM.value"
+    },
+    "mylarAdhesiveCostPerMM": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "mylarAdhesiveCostPerMM",
+      "valueType": "mylarAdhesiveCostPerMM",
+      "comparisonValuePath": "forDebug.debugInfo.Mylar-98201f2e-2cea-4563-ab33-758e54ba4a8d.mylarAdhesiveCostPerMM.value"
+    },
+    "mylarAmount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "mylarAmount",
+      "valueType": "mylarAmount",
+      "comparisonValuePath": "forDebug.debugInfo.Mylar-98201f2e-2cea-4563-ab33-758e54ba4a8d.mylarAmount.value"
+    },
+    "mylarMaterialThickness": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "mylarMaterialThickness",
+      "valueType": "mylarMaterialThickness",
+      "comparisonValuePath": "forDebug.debugInfo.Mylar-98201f2e-2cea-4563-ab33-758e54ba4a8d.mylarMaterialThickness.value"
+    },
+    "mylarMaterial": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "mylarMaterial",
+      "valueType": "mylarMaterial",
+      "comparisonValuePath": "forDebug.debugInfo.Mylar-98201f2e-2cea-4563-ab33-758e54ba4a8d.mylarMaterial.value"
+    },
+    "mylarAdhesiveThickness": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "mylarAdhesiveThickness",
+      "valueType": "mylarAdhesiveThickness",
+      "comparisonValuePath": "forDebug.debugInfo.Mylar-98201f2e-2cea-4563-ab33-758e54ba4a8d.mylarAdhesiveThickness.value"
+    },
+    "mylarAdhesiveMaterial": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "mylarAdhesiveMaterial",
+      "valueType": "mylarAdhesiveMaterial",
+      "comparisonValuePath": "forDebug.debugInfo.Mylar-98201f2e-2cea-4563-ab33-758e54ba4a8d.mylarAdhesiveMaterial.value"
+    },
+    "production_material_cost": {
+      "label": "成品材料費",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "production_material_cost",
+      "valueType": "production_material_cost",
+      "comparisonValuePath": "forDebug.debugInfo.Fin-de84d80b-69a2-4ecc-ac1f-65bc8321fcbf.production_material_cost.value"
+    },
+    "secondary_processing_cost": {
+      "label": "二次加工費",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "secondary_processing_cost",
+      "valueType": "secondary_processing_cost",
+      "comparisonValuePath": "forDebug.debugInfo.Fin-de84d80b-69a2-4ecc-ac1f-65bc8321fcbf.secondary_processing_cost.value"
+    },
+    "package_cost": {
+      "label": "運包檢",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "package_cost",
+      "valueType": "package_cost",
+      "comparisonValuePath": "forDebug.debugInfo.Mylar-98201f2e-2cea-4563-ab33-758e54ba4a8d.package_cost.value"
+    },
+    "profit": {
+      "label": "管銷&利潤",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "profit",
+      "valueType": "profit",
+      "comparisonValuePath": "forDebug.debugInfo.Fin-de84d80b-69a2-4ecc-ac1f-65bc8321fcbf.profit.value"
+    },
+    "sponge_loss_rate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "sponge_loss_rate",
+      "valueType": "sponge_loss_rate",
+      "comparisonValuePath": "forDebug.debugInfo.Sponge-e64232ed-aabc-40a9-8822-33f61cda086e.sponge_loss_rate.value"
+    },
+    "secondary_processing_cost_param": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "secondary_processing_cost_param",
+      "valueType": "secondary_processing_cost_param",
+      "comparisonValuePath": "forDebug.debugInfo.Sponge-e64232ed-aabc-40a9-8822-33f61cda086e.secondary_processing_cost_param.value"
+    },
+    "spongeLength": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "spongeLength",
+      "valueType": "spongeLength",
+      "comparisonValuePath": "forDebug.debugInfo.Sponge-e64232ed-aabc-40a9-8822-33f61cda086e.spongeLength.value"
+    },
+    "spongeWidth": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "spongeWidth",
+      "valueType": "spongeWidth",
+      "comparisonValuePath": "forDebug.debugInfo.Sponge-e64232ed-aabc-40a9-8822-33f61cda086e.spongeWidth.value"
+    },
+    "spongeMaterialCostPerMM": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "spongeMaterialCostPerMM",
+      "valueType": "spongeMaterialCostPerMM",
+      "comparisonValuePath": "forDebug.debugInfo.Sponge-e64232ed-aabc-40a9-8822-33f61cda086e.spongeMaterialCostPerMM.value"
+    },
+    "spongeAmount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "spongeAmount",
+      "valueType": "spongeAmount",
+      "comparisonValuePath": "forDebug.debugInfo.Sponge-e64232ed-aabc-40a9-8822-33f61cda086e.spongeAmount.value"
+    },
+    "spongeMaterialThickness": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "spongeMaterialThickness",
+      "valueType": "spongeMaterialThickness",
+      "comparisonValuePath": "forDebug.debugInfo.Sponge-e64232ed-aabc-40a9-8822-33f61cda086e.spongeMaterialThickness.value"
+    },
+    "spongeMaterial": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "spongeMaterial",
+      "valueType": "spongeMaterial",
+      "comparisonValuePath": "forDebug.debugInfo.Sponge-e64232ed-aabc-40a9-8822-33f61cda086e.spongeMaterial.value"
+    },
+    "label_unit_price": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "label_unit_price",
+      "valueType": "label_unit_price",
+      "comparisonValuePath": "forDebug.debugInfo.Label-968399e6-ad11-4db2-b747-07fc221826dd.label_unit_price.value"
+    },
+    "label_loss_rate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "label_loss_rate",
+      "valueType": "label_loss_rate",
+      "comparisonValuePath": "forDebug.debugInfo.Label-968399e6-ad11-4db2-b747-07fc221826dd.label_loss_rate.value"
+    },
+    "labelAmount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "labelAmount",
+      "valueType": "labelAmount",
+      "comparisonValuePath": "forDebug.debugInfo.Label-968399e6-ad11-4db2-b747-07fc221826dd.labelAmount.value"
+    },
+    "oRing_unit_price": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "oRing_unit_price",
+      "valueType": "oRing_unit_price",
+      "comparisonValuePath": "forDebug.debugInfo.ORing-fc41bba2-9e26-4b58-814d-84871fc8a982.oRing_unit_price.value"
+    },
+    "oRing_loss_rate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "oRing_loss_rate",
+      "valueType": "oRing_loss_rate",
+      "comparisonValuePath": "forDebug.debugInfo.ORing-fc41bba2-9e26-4b58-814d-84871fc8a982.oRing_loss_rate.value"
+    },
+    "oRAmount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "oRAmount",
+      "valueType": "oRAmount",
+      "comparisonValuePath": "forDebug.debugInfo.ORing-fc41bba2-9e26-4b58-814d-84871fc8a982.oRAmount.value"
+    },
+    "spring_unit_price": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "spring_unit_price",
+      "valueType": "spring_unit_price",
+      "comparisonValuePath": "forDebug.debugInfo.Spring-3e5afd80-8672-458d-83d9-63e73b87e930.spring_unit_price.value"
+    },
+    "spring_loss_rate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "spring_loss_rate",
+      "valueType": "spring_loss_rate",
+      "comparisonValuePath": "forDebug.debugInfo.Spring-3e5afd80-8672-458d-83d9-63e73b87e930.spring_loss_rate.value"
+    },
+    "springAmount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "springAmount",
+      "valueType": "springAmount",
+      "comparisonValuePath": "forDebug.debugInfo.Spring-3e5afd80-8672-458d-83d9-63e73b87e930.springAmount.value"
+    },
+    "screw_unit_price": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "screw_unit_price",
+      "valueType": "screw_unit_price",
+      "comparisonValuePath": "forDebug.debugInfo.Screw-0c58feca-d9e7-4e38-8c2f-066a35ee7d60.screw_unit_price.value"
+    },
+    "screw_loss_rate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "screw_loss_rate",
+      "valueType": "screw_loss_rate",
+      "comparisonValuePath": "forDebug.debugInfo.Screw-0c58feca-d9e7-4e38-8c2f-066a35ee7d60.screw_loss_rate.value"
+    },
+    "screwAmount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "screwAmount",
+      "valueType": "screwAmount",
+      "comparisonValuePath": "forDebug.debugInfo.Screw-0c58feca-d9e7-4e38-8c2f-066a35ee7d60.screwAmount.value"
+    },
+    "thermal_block_loss_rate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "thermal_block_loss_rate",
+      "valueType": "thermal_block_loss_rate",
+      "comparisonValuePath": "forDebug.debugInfo.ThermalBlock-8b6beecd-f00a-4759-8fee-0f14191c84b3.thermal_block_loss_rate.value"
+    },
+    "stamping_cost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "stamping_cost",
+      "valueType": "stamping_cost",
+      "comparisonValuePath": "forDebug.debugInfo.Fin-de84d80b-69a2-4ecc-ac1f-65bc8321fcbf.stamping_cost.value"
+    },
+    "ultrasonicClean_unit_price": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "ultrasonicClean_unit_price",
+      "valueType": "ultrasonicClean_unit_price",
+      "comparisonValuePath": "forDebug.debugInfo.Fin-de84d80b-69a2-4ecc-ac1f-65bc8321fcbf.ultrasonicClean_unit_price.value"
+    },
+    "ultrasonicClean_loss_rate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "ultrasonicClean_loss_rate",
+      "valueType": "ultrasonicClean_loss_rate",
+      "comparisonValuePath": "forDebug.debugInfo.Fin-de84d80b-69a2-4ecc-ac1f-65bc8321fcbf.ultrasonicClean_loss_rate.value"
+    },
+    "nickelPlating_unit_price": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "nickelPlating_unit_price",
+      "valueType": "nickelPlating_unit_price",
+      "comparisonValuePath": "forDebug.debugInfo.Fin-de84d80b-69a2-4ecc-ac1f-65bc8321fcbf.nickelPlating_unit_price.value"
+    },
+    "thBlProductionExpandLength": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "thBlProductionExpandLength",
+      "valueType": "thBlProductionExpandLength",
+      "comparisonValuePath": "forDebug.debugInfo.ThermalBlock-8b6beecd-f00a-4759-8fee-0f14191c84b3.thBlProductionExpandLength.value"
+    },
+    "thBlProductionExpandWidth": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "thBlProductionExpandWidth",
+      "valueType": "thBlProductionExpandWidth",
+      "comparisonValuePath": "forDebug.debugInfo.ThermalBlock-8b6beecd-f00a-4759-8fee-0f14191c84b3.thBlProductionExpandWidth.value"
+    },
+    "thBlMaterialThickness": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "thBlMaterialThickness",
+      "valueType": "thBlMaterialThickness",
+      "comparisonValuePath": "forDebug.debugInfo.ThermalBlock-8b6beecd-f00a-4759-8fee-0f14191c84b3.thBlMaterialThickness.value"
+    },
+    "thBlDensity": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "thBlDensity",
+      "valueType": "thBlDensity",
+      "comparisonValuePath": "forDebug.debugInfo.ThermalBlock-8b6beecd-f00a-4759-8fee-0f14191c84b3.thBlDensity.value"
+    },
+    "thBlMaterialCostPerKilogram": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "thBlMaterialCostPerKilogram",
+      "valueType": "thBlMaterialCostPerKilogram",
+      "comparisonValuePath": "forDebug.debugInfo.ThermalBlock-8b6beecd-f00a-4759-8fee-0f14191c84b3.thBlMaterialCostPerKilogram.value"
+    },
+    "thBlAmount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "thBlAmount",
+      "valueType": "thBlAmount",
+      "comparisonValuePath": "forDebug.debugInfo.ThermalBlock-8b6beecd-f00a-4759-8fee-0f14191c84b3.thBlAmount.value"
+    },
+    "thBlNickelPlating": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "thBlNickelPlating",
+      "valueType": "thBlNickelPlating",
+      "comparisonValuePath": "forDebug.debugInfo.ThermalBlock-8b6beecd-f00a-4759-8fee-0f14191c84b3.thBlNickelPlating.value"
+    },
+    "UltrasonicClean": {
+      "label": "超音波清洗",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "UltrasonicClean",
+      "valueType": "UltrasonicClean",
+      "comparisonValuePath": "forDebug.debugInfo.Fin-de84d80b-69a2-4ecc-ac1f-65bc8321fcbf.UltrasonicClean.value"
+    },
+    "NickelPlating": {
+      "label": "鍍鎳",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "NickelPlating",
+      "valueType": "NickelPlating",
+      "comparisonValuePath": "forDebug.debugInfo.Fin-de84d80b-69a2-4ecc-ac1f-65bc8321fcbf.NickelPlating.value"
+    },
+    "thPlProductionExpandLength": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "thPlProductionExpandLength",
+      "valueType": "thPlProductionExpandLength",
+      "comparisonValuePath": "forDebug.debugInfo.ThermalPlate-1f61b4c0-44e2-4a5c-8c56-0edc0b9ba6e4.thPlProductionExpandLength.value"
+    },
+    "thPlProductionExpandWidth": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "thPlProductionExpandWidth",
+      "valueType": "thPlProductionExpandWidth",
+      "comparisonValuePath": "forDebug.debugInfo.ThermalPlate-1f61b4c0-44e2-4a5c-8c56-0edc0b9ba6e4.thPlProductionExpandWidth.value"
+    },
+    "thPlMaterialThickness": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "thPlMaterialThickness",
+      "valueType": "thPlMaterialThickness",
+      "comparisonValuePath": "forDebug.debugInfo.ThermalPlate-1f61b4c0-44e2-4a5c-8c56-0edc0b9ba6e4.thPlMaterialThickness.value"
+    },
+    "thPlDensity": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "thPlDensity",
+      "valueType": "thPlDensity",
+      "comparisonValuePath": "forDebug.debugInfo.ThermalPlate-1f61b4c0-44e2-4a5c-8c56-0edc0b9ba6e4.thPlDensity.value"
+    },
+    "thPlMaterialCostPerKilogram": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "thPlMaterialCostPerKilogram",
+      "valueType": "thPlMaterialCostPerKilogram",
+      "comparisonValuePath": "forDebug.debugInfo.ThermalPlate-1f61b4c0-44e2-4a5c-8c56-0edc0b9ba6e4.thPlMaterialCostPerKilogram.value"
+    },
+    "thPlAmount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "thPlAmount",
+      "valueType": "thPlAmount",
+      "comparisonValuePath": "forDebug.debugInfo.ThermalPlate-1f61b4c0-44e2-4a5c-8c56-0edc0b9ba6e4.thPlAmount.value"
+    },
+    "thPlNickelPlating": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "thPlNickelPlating",
+      "valueType": "thPlNickelPlating",
+      "comparisonValuePath": "forDebug.debugInfo.ThermalPlate-1f61b4c0-44e2-4a5c-8c56-0edc0b9ba6e4.thPlNickelPlating.value"
+    },
+    "thPlRiveting": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "thPlRiveting",
+      "valueType": "thPlRiveting",
+      "comparisonValuePath": "forDebug.debugInfo.ThermalPlate-1f61b4c0-44e2-4a5c-8c56-0edc0b9ba6e4.thPlRiveting.value"
+    },
+    "NickelPlatingPrice": {
+      "label": "鍍鎳",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "NickelPlatingPrice",
+      "valueType": "NickelPlatingPrice",
+      "comparisonValuePath": "forDebug.debugInfo.ThermalPlate-1f61b4c0-44e2-4a5c-8c56-0edc0b9ba6e4.NickelPlatingPrice.value"
+    },
+    "thPlRivetingUnitPrice": {
+      "label": "鉚接單價",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "thPlRivetingUnitPrice",
+      "valueType": "thPlRivetingUnitPrice",
+      "comparisonValuePath": "forDebug.debugInfo.ThermalPlate-1f61b4c0-44e2-4a5c-8c56-0edc0b9ba6e4.thPlRivetingUnitPrice.value"
+    },
+    "thPlRivetingPrice": {
+      "label": "鉚接價格",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "thPlRivetingPrice",
+      "valueType": "thPlRivetingPrice",
+      "comparisonValuePath": "forDebug.debugInfo.ThermalPlate-1f61b4c0-44e2-4a5c-8c56-0edc0b9ba6e4.thPlRivetingPrice.value"
+    },
+    "fin_loss_rate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fin_loss_rate",
+      "valueType": "fin_loss_rate",
+      "comparisonValuePath": "forDebug.debugInfo.Fin-de84d80b-69a2-4ecc-ac1f-65bc8321fcbf.fin_loss_rate.value"
+    },
+    "finProductionExpandLength": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "finProductionExpandLength",
+      "valueType": "finProductionExpandLength",
+      "comparisonValuePath": "forDebug.debugInfo.Fin-de84d80b-69a2-4ecc-ac1f-65bc8321fcbf.finProductionExpandLength.value"
+    },
+    "finProductionExpandWidth": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "finProductionExpandWidth",
+      "valueType": "finProductionExpandWidth",
+      "comparisonValuePath": "forDebug.debugInfo.Fin-de84d80b-69a2-4ecc-ac1f-65bc8321fcbf.finProductionExpandWidth.value"
+    },
+    "finMaterialThickness": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "finMaterialThickness",
+      "valueType": "finMaterialThickness",
+      "comparisonValuePath": "forDebug.debugInfo.Fin-de84d80b-69a2-4ecc-ac1f-65bc8321fcbf.finMaterialThickness.value"
+    },
+    "finDensity": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "finDensity",
+      "valueType": "finDensity",
+      "comparisonValuePath": "forDebug.debugInfo.Fin-de84d80b-69a2-4ecc-ac1f-65bc8321fcbf.finDensity.value"
+    },
+    "finMaterialCostPerKilogram": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "finMaterialCostPerKilogram",
+      "valueType": "finMaterialCostPerKilogram",
+      "comparisonValuePath": "forDebug.debugInfo.Fin-de84d80b-69a2-4ecc-ac1f-65bc8321fcbf.finMaterialCostPerKilogram.value"
+    },
+    "finPitch": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "finPitch",
+      "valueType": "finPitch",
+      "comparisonValuePath": "forDebug.debugInfo.Fin-de84d80b-69a2-4ecc-ac1f-65bc8321fcbf.finPitch.value"
+    },
+    "finProductionLength": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "finProductionLength",
+      "valueType": "finProductionLength",
+      "comparisonValuePath": "forDebug.debugInfo.Fin-de84d80b-69a2-4ecc-ac1f-65bc8321fcbf.finProductionLength.value"
+    },
+    "finAmount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "finAmount",
+      "valueType": "finAmount",
+      "comparisonValuePath": "forDebug.debugInfo.Fin-de84d80b-69a2-4ecc-ac1f-65bc8321fcbf.finAmount.value"
+    },
+    "finNickelPlating": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "finNickelPlating",
+      "valueType": "finNickelPlating",
+      "comparisonValuePath": "forDebug.debugInfo.Fin-de84d80b-69a2-4ecc-ac1f-65bc8321fcbf.finNickelPlating.value"
+    },
+    "fin_processing_weight": {
+      "label": "加工重量",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fin_processing_weight",
+      "valueType": "fin_processing_weight",
+      "comparisonValuePath": "forDebug.debugInfo.Fin-de84d80b-69a2-4ecc-ac1f-65bc8321fcbf.fin_processing_weight.value"
+    },
+    "fin_total_piece": {
+      "label": "總片數",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fin_total_piece",
+      "valueType": "fin_total_piece",
+      "comparisonValuePath": "forDebug.debugInfo.Fin-de84d80b-69a2-4ecc-ac1f-65bc8321fcbf.fin_total_piece.value"
+    },
+    "ultrasonicClean_processing_weight": {
+      "label": "超音波清洗加工重量",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "ultrasonicClean_processing_weight",
+      "valueType": "ultrasonicClean_processing_weight",
+      "comparisonValuePath": "forDebug.debugInfo.Fin-de84d80b-69a2-4ecc-ac1f-65bc8321fcbf.ultrasonicClean_processing_weight.value"
+    },
+    "nickelPlating_processing_weight": {
+      "label": "鍍鎳加工重量",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "nickelPlating_processing_weight",
+      "valueType": "nickelPlating_processing_weight",
+      "comparisonValuePath": "forDebug.debugInfo.Fin-de84d80b-69a2-4ecc-ac1f-65bc8321fcbf.nickelPlating_processing_weight.value"
+    },
+    "pipiLenThickODiaToCostValues": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "pipiLenThickODiaToCostValues",
+      "valueType": "string",
+      "comparisonValuePath": "forDebug.debugInfo.Pipe-c743bf33-8947-4b70-8d9b-04e145301cd5.pipiLenThickODiaToCostValues.label"
+    },
+    "pipeType": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "pipeType",
+      "valueType": "pipeType",
+      "comparisonValuePath": "forDebug.debugInfo.Pipe-c743bf33-8947-4b70-8d9b-04e145301cd5.pipeType.value"
+    },
+    "lenMin": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "lenMin",
+      "valueType": "lenMin",
+      "comparisonValuePath": "forDebug.debugInfo.Pipe-c743bf33-8947-4b70-8d9b-04e145301cd5.pipiLenThickODiaToCostValues.value.values.89.lenMin"
+    },
+    "lenMax": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "lenMax",
+      "valueType": "lenMax",
+      "comparisonValuePath": "forDebug.debugInfo.Pipe-c743bf33-8947-4b70-8d9b-04e145301cd5.pipiLenThickODiaToCostValues.value.values.89.lenMax"
+    },
+    "thickMin": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "thickMin",
+      "valueType": "thickMin",
+      "comparisonValuePath": "forDebug.debugInfo.Pipe-c743bf33-8947-4b70-8d9b-04e145301cd5.pipiLenThickODiaToCostValues.value.values.89.thickMin"
+    },
+    "thickMax": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "thickMax",
+      "valueType": "thickMax",
+      "comparisonValuePath": "forDebug.debugInfo.Pipe-c743bf33-8947-4b70-8d9b-04e145301cd5.pipiLenThickODiaToCostValues.value.values.89.thickMax"
+    },
+    "pipiLenThickODiaToCost": {
+      "label": "單價",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "pipiLenThickODiaToCost",
+      "valueType": "pipiLenThickODiaToCost",
+      "comparisonValuePath": "forDebug.debugInfo.Pipe-c743bf33-8947-4b70-8d9b-04e145301cd5.pipiLenThickODiaToCost.value"
+    },
+    "pipeAmount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "pipeAmount",
+      "valueType": "pipeAmount",
+      "comparisonValuePath": "forDebug.debugInfo.Pipe-c743bf33-8947-4b70-8d9b-04e145301cd5.pipeAmount.value"
+    },
+    "outerDiameter": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "outerDiameter",
+      "valueType": "outerDiameter",
+      "comparisonValuePath": "forDebug.debugInfo.Pipe-c743bf33-8947-4b70-8d9b-04e145301cd5.outerDiameter.value"
+    },
+    "fanSizePriceValues": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fanSizePriceValues",
+      "valueType": "string",
+      "comparisonValuePath": "forDebug.debugInfo.Fan-f47239da-5bb5-412a-9490-c3c2dc5cf8b5.fanSizePriceValues.label"
+    },
+    "fanAssemblyTimeNumber": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fanAssemblyTimeNumber",
+      "valueType": "fanAssemblyTimeNumber",
+      "comparisonValuePath": "forDebug.debugInfo.Fan-f47239da-5bb5-412a-9490-c3c2dc5cf8b5.fanAssemblyTimeNumber.value"
+    },
+    "fan_loss_rate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fan_loss_rate",
+      "valueType": "fan_loss_rate",
+      "comparisonValuePath": "forDebug.debugInfo.Fan-f47239da-5bb5-412a-9490-c3c2dc5cf8b5.fan_loss_rate.value"
+    },
+    "fanLossRateValues": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fanLossRateValues",
+      "valueType": "string",
+      "comparisonValuePath": "forDebug.debugInfo.Fan-f47239da-5bb5-412a-9490-c3c2dc5cf8b5.fanLossRateValues.label"
+    },
+    "getThermalBearingAndSleeveFanValues": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "getThermalBearingAndSleeveFanValues",
+      "valueType": "string",
+      "comparisonValuePath": "forDebug.debugInfo.Fan-f47239da-5bb5-412a-9490-c3c2dc5cf8b5.getThermalBearingAndSleeveFanValues.label"
+    },
+    "material_id": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "material_id",
+      "valueType": "material_id",
+      "comparisonValuePath": "forDebug.debugInfo.Fan-f47239da-5bb5-412a-9490-c3c2dc5cf8b5.getFanBladeMaterialValues.value.values.75.material_id"
+    },
+    "fanBladeMaterial": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fanBladeMaterial",
+      "valueType": "fanBladeMaterial",
+      "comparisonValuePath": "forDebug.debugInfo.Fan-f47239da-5bb5-412a-9490-c3c2dc5cf8b5.getFanBladeMaterialValues.value.values.75.fanBladeMaterial"
+    },
+    "fan_id": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fan_id",
+      "valueType": "fan_id",
+      "comparisonValuePath": "forDebug.debugInfo.Fan-f47239da-5bb5-412a-9490-c3c2dc5cf8b5.getThermalFanMagnetValues.value.values.37.fan_id"
+    },
+    "getFanBladeMaterialValues": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "getFanBladeMaterialValues",
+      "valueType": "string",
+      "comparisonValuePath": "forDebug.debugInfo.Fan-f47239da-5bb5-412a-9490-c3c2dc5cf8b5.getFanBladeMaterialValues.label"
+    },
+    "getThermalFanMagnetValues": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "getThermalFanMagnetValues",
+      "valueType": "string",
+      "comparisonValuePath": "forDebug.debugInfo.Fan-f47239da-5bb5-412a-9490-c3c2dc5cf8b5.getThermalFanMagnetValues.label"
+    },
+    "magnet_id": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "magnet_id",
+      "valueType": "magnet_id",
+      "comparisonValuePath": "forDebug.debugInfo.Fan-f47239da-5bb5-412a-9490-c3c2dc5cf8b5.getThermalFanMagnetValues.value.values.37.magnet_id"
+    },
+    "magnetMaterialAndSize": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "magnetMaterialAndSize",
+      "valueType": "magnetMaterialAndSize",
+      "comparisonValuePath": "forDebug.debugInfo.Fan-f47239da-5bb5-412a-9490-c3c2dc5cf8b5.getThermalFanMagnetValues.value.values.37.magnetMaterialAndSize"
+    },
+    "fanAmount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fanAmount",
+      "valueType": "fanAmount",
+      "comparisonValuePath": "forDebug.debugInfo.Fan-f47239da-5bb5-412a-9490-c3c2dc5cf8b5.fanAmount.value"
+    },
+    "fanCostAdder": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fanCostAdder",
+      "valueType": "fanCostAdder",
+      "comparisonValuePath": "forDebug.debugInfo.Fan-f47239da-5bb5-412a-9490-c3c2dc5cf8b5.fanCostAdder.value"
+    },
+    "laserMarking_unit_price": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "laserMarking_unit_price",
+      "valueType": "laserMarking_unit_price",
+      "comparisonValuePath": "forDebug.debugInfo.thermalModule.laserMarking_unit_price.value"
+    },
+    "profit_percent": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "161",
+      "valuekey": "profit_percent",
+      "valueType": "profit_percent",
+      "comparisonValuePath": "forDebug.debugInfo.thermalModule.profit_percent.value"
+    },
+    "component_cost": {
+      "label": "總零件費用",
+      "excelValueLongitudinalCoordinates": "159",
+      "valuekey": "component_cost",
+      "valueType": "component_cost",
+      "comparisonValuePath": "forDebug.debugInfo.thermalModule.component_cost"
+    },
+    "assembly_cost": {
+      "label": "Assembly組裝",
+      "excelValueLongitudinalCoordinates": "141",
+      "valuekey": "assembly_cost",
+      "valueType": "assembly_cost",
+      "comparisonValuePath": "forDebug.debugInfo.thermalModule.assembly_cost.value"
+    },
+    "painting_cost": {
+      "label": "噴漆",
+      "excelValueLongitudinalCoordinates": "157",
+      "valuekey": "painting_cost",
+      "valueType": "painting_cost",
+      "comparisonValuePath": "forDebug.debugInfo.thermalModule.painting_cost.value"
+    },
+    "maskSpray_cost": {
+      "label": "遮噴費用",
+      "excelValueLongitudinalCoordinates": "145",
+      "valuekey": "maskSpray_cost",
+      "valueType": "maskSpray_cost",
+      "comparisonValuePath": "forDebug.debugInfo.thermalModule.maskSpray_cost.value"
+    },
+    "laserMarking_cost": {
+      "label": "雷雕費用",
+      "excelValueLongitudinalCoordinates": "153",
+      "valuekey": "laserMarking_cost",
+      "valueType": "laserMarking_cost",
+      "comparisonValuePath": "forDebug.debugInfo.thermalModule.laserMarking_cost.value"
+    },
+    "processing_cost": {
+      "label": "加工費",
+      "excelValueLongitudinalCoordinates": "160",
+      "valuekey": "processing_cost",
+      "valueType": "processing_cost",
+      "comparisonValuePath": "forDebug.debugInfo.thermalModule.processing_cost.value"
+    },
+    "profit_cost": {
+      "label": "管銷&利潤",
+      "excelValueLongitudinalCoordinates": "162",
+      "valuekey": "profit_cost",
+      "valueType": "profit_cost",
+      "comparisonValuePath": "forDebug.debugInfo.thermalModule.profit_cost.value"
+    }
+  }
+}

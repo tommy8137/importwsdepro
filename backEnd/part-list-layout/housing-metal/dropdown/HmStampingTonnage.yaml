@@ -1,0 +1,23 @@
+values:
+  - hmStampingMouldTypeId: A0001
+    hmStampingMachineTonnage: 0T
+    hmToolingModuleRate: 0
+  - hmStampingMouldTypeId: A0001
+    hmStampingMachineTonnage: 25T
+    hmToolingModuleRate: 0.0041
+  - hmStampingMouldTypeId: A0001
+    hmStampingMachineTonnage: 35T
+    hmToolingModuleRate: 0.0042
+  - hmStampingMouldTypeId: A0001
+    hmStampingMachineTonnage: 45T
+    hmToolingModuleRate: 0.0043
+
+  - hmStampingMouldTypeId: A0002
+    hmStampingMachineTonnage: 87T
+    hmToolingModuleRate: 0
+  - hmStampingMouldTypeId: A0002
+    hmStampingMachineTonnage: 61T
+    hmToolingModuleRate: 0.1841
+  - hmStampingMouldTypeId: A0002
+    hmStampingMachineTonnage: 44T
+    hmToolingModuleRate: 0.1842

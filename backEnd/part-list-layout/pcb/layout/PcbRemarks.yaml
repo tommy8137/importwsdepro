@@ -1,0 +1,40 @@
+multiple: false
+label: 備註
+items:
+  - key: PcbFillInPrice
+    label: 自填價錢
+    $Template:
+      - inputFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    default: null
+
+  - key: PcbStageNo
+    label: PCB No._Stage
+    $Template:
+      - inputString
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    default: null
+    disabledConfig:
+      func: "(wistronpn) => !!wistronpn"
+      params:
+        - wistronpn
+    placeholder: '填入範例：17899_SA'
+
+  - key: remark
+    label: 備註
+    $Template:
+      - textarea
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1.5
+    constrains:
+      - function: "(val) => { if(!val)return; return val.length > 50; }"
+        message: "長度不得超過 50 字"
+

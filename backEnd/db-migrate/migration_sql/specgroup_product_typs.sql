@@ -1,0 +1,1 @@
+ALTER TABLE wiprocurement.specgroup ALTER COLUMN product_type TYPE character varying;

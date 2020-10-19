@@ -1,0 +1,3 @@
+headers:
+  $xray-summary.header-pn.pn-base:
+    - headers

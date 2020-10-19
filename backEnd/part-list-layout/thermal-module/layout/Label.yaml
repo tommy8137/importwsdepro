@@ -1,0 +1,58 @@
+multiple: true
+items:
+# 可編輯的sub-title --------------------------------------------------------------------------------------------------------------------
+  - key: labelLabel
+    label: Label
+    $Template:
+      - label
+    editable: true
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+    default: Label
+    emdmMultipleKey: emdmBomInfo.cmfForm.label
+    emdmKey: labelLabel
+
+# 用量 --------------------------------------------------------------------------------------------------------------------
+  - key: labelAmount
+    label: 用量
+    $Template:
+      - inputInt
+      - ^displayConfig
+    default: 0
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.label
+    emdmKey: labelAmount
+
+# 長度 --------------------------------------------------------------------------------------------------------------------
+  - key: labelLength
+    label: 長度(L)
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.label
+    emdmKey: labelLength
+
+# 寬度 --------------------------------------------------------------------------------------------------------------------
+  - key: labelWidth
+    label: 寬度(W)
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.label
+    emdmKey: labelWidth
+
+# 厚度 --------------------------------------------------------------------------------------------------------------------
+  - key: labelThickness
+    label: 厚度(t)
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.label
+    emdmKey: labelThickness
+
+

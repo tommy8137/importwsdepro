@@ -1,0 +1,12 @@
+values:
+  - cmfPaintingAreaLW: 0
+  - cmfPaintingAreaLH: 0
+  - cmfPaintingAreaWH: 0
+
+  - cmfPaintingAreaLW: 1
+  - cmfPaintingAreaLH: 1
+  - cmfPaintingAreaWH: 1
+
+  - cmfPaintingAreaLW: 2
+  - cmfPaintingAreaLH: 2
+  - cmfPaintingAreaWH: 2

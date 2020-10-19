@@ -1,0 +1,1181 @@
+{
+  "formData": {
+    "toolingPartList": {
+      "hmUser": {
+        "level": "2",
+        "hmpartname": "metel",
+        "hmpartnumber": null,
+        "hmmaterial": "AL5052",
+        "hmmaterialdensity": 2.75,
+        "hmmaterialprice": 0,
+        "hmthickness": "1",
+        "hmpartssizespec": {
+          "hmpartssizewidth": "393",
+          "hmpartssizelength": "276",
+          "hmpartssizehigh": "4.8"
+        },
+        "hmpartsexpandsize": {
+          "hmpartsexpandwidth": "271",
+          "hmpartsexpandlength": "388"
+        },
+        "hmSecondProcess": {
+          "hmStandOff": null,
+          "hmRivetCount": null,
+          "hmTappingCount": null,
+          "hmSelfriveCount": null,
+          "hmHoleCount": 0
+        },
+        "hmMaterialLossRate": 0
+      },
+      "hmTooling": {
+        "hmToolingMaterialSize": {
+          "hmToolingMaterialWidth": 5,
+          "hmToolingMaterialLength": 5
+        },
+        "hmToolingMaterialExpandSize": {
+          "hmToolingMaterialExpandWidth": 276,
+          "hmToolingMaterialExpandLength": 393
+        },
+        "hmToolingIntervalPrice": 0.12,
+        "hmToolingWeight": 289.157,
+        "hmToolingMaterialWeight": 298.287,
+        "hmToolingHoleCount": 1,
+        "hmToolingStageDie": {
+          "hmToolingStageDieCount": 1,
+          "hmToolingStageDiePress": "200T",
+          "hmToolingStageDieModule": null,
+          "hmToolingStageDieModuleCost": 0
+        },
+        "hmToolingProgressiveDie": {
+          "hmToolingProgressiveDieCount": 1,
+          "hmToolingProgressiveDieStation": 2,
+          "hmToolingProgressiveDiePress": "250T",
+          "hmToolingProgressiveDieModule": null,
+          "hmToolingProgressiveDieModuleCost": 0
+        },
+        "hmToolingRivetingDie": {
+          "hmToolingRivetingDieCount": 1,
+          "hmToolingRivetingDiePress": "160T",
+          "hmToolingRivetingDieModule": null,
+          "hmToolingRivetingDieModuleCost": 0
+        },
+        "hmToolingTotalCount": 3,
+        "hmToolingModuleMode": "工程模+連續模+鉚合模",
+        "hmToolingModuleFeature": "修改for 新機種",
+        "hmToolingModuleFactory": "聖美",
+        "hmToolingMoldingManufacturer": "CNP",
+        "site": "WCQ",
+        "payoutSite": "WCQ",
+        "hpToolingBonded": "非保稅",
+        "hmToolingTSDate": null,
+        "hmToolingT1Date": null,
+        "hmToolingRemark": null
+      }
+    },
+    "CMFProcessList": {
+      "cmfProcessListUltrasonicClean": {
+        "cmfProcessListultrasonicCleanExist": true
+      },
+      "cmfProcessListAnode": {
+        "cmfProcessListFirstAnodeLabel": null,
+        "cmfProcessListFirstAnodeCheckBox": true,
+        "cmfProcessListFirstAnodeColor": "銀色",
+        "cmfProcessListFirstAnodePrice": 0,
+        "cmfProcessListFirstAnodeLossRate": 0,
+        "cmfProcessListSecondAnodeLabel": null,
+        "cmfProcessListSecondAnodeCheckBox": true,
+        "cmfProcessListSecondAnodeColor": "鋁本色",
+        "cmfProcessListSecondAnode": "二陽",
+        "cmfProcessListSecondAnodeQty": 0,
+        "cmfProcessListSecondAnodePrice": 0,
+        "cmfProcessListSecondAnodeLossRate": 0
+      },
+      "cmfProcessListSandBlast": {
+        "cmfProcessListSandBlastCheckBox": true,
+        "cmfProcessListSandBlastSide": "單面",
+        "cmfProcessListSandBlastSideCount": 0
+      },
+      "cmfProcessListHairLine": {
+        "cmfProcessListHairLineCheckBox": true,
+        "cmfProcessListHairLineArea": 70000
+      },
+      "cmfProcessListPainting": {
+        "cmfProcessListPaintingCheckBox": true,
+        "cmfProcessListPaintingTypeAndColor": "粉體漆：(一般素色)",
+        "CmfProcessListPaintingPriceUSD": 0,
+        "CmfProcessListPaintingPriceRMB": 0,
+        "cmfProcessListPaintingArea": 119481,
+        "cmfProcessListPaintingFilmThickness": 0.08,
+        "cmfProcessListPaintingCount": 1,
+        "cmfProcessListPaintingColor": null
+      },
+      "cmfProcessListThermalBonding": {
+        "cmfProcessListThermalBondingCheckBox": true,
+        "cmfProcessListThermalBondingGlueType": "DEVCON DV14167",
+        "cmfProcessListThermalBondingGluePrice": 0,
+        "cmfProcessListThermalBondingGlueDensity": 0.97,
+        "cmfProcessListThermalBondingPathLength": 2500,
+        "cmfProcessListThermalBondingGlueSyringeDiameter": "0.6",
+        "cmfProcessListThermalBondingGlueWeight": 0.6856542,
+        "cmfProcessListThermalBondingCycleTime": "90sec",
+        "cmfProcessListThermalBondingCycleTimeValue": null
+      },
+      "cmfProcessListSingleTapping": {
+        "cmfProcessListSingleTappingCheckBox": true,
+        "cmfProcessListSingleTappingCount": 1
+      },
+      "cmfProcessListMultiTapping": {
+        "cmfProcessListMultiTappingCheckBox": true,
+        "cmfProcessListMultiTappingCount": 1
+      },
+      "cmfProcessListSingleSpotWelding": {
+        "cmfProcessListSingleSpotWeldingCheckBox": true,
+        "cmfProcessListSingleSpotWeldingCount": 1
+      },
+      "cmfProcessListMultiSpotWelding": {
+        "cmfProcessListMultiSpotWeldingCheckBox": true,
+        "cmfProcessListMultiSpotWeldingCount": 1
+      },
+      "cmfProcessListSingleRivet": {
+        "cmfProcessListSingleRivetCheckBox": true,
+        "cmfProcessListSingleRivetCount": 1
+      },
+      "cmfProcessListMultiRivet": {
+        "cmfProcessListMultiRivetCheckBox": true,
+        "cmfProcessListMultiRivetCount": 1
+      },
+      "cmfProcessListRivet": {
+        "cmfProcessListRivetCheckBox": true,
+        "cmfProcessListRivetCount": 1
+      },
+      "cmfProcessListHandMakeDraw": {
+        "cmfProcessListHandMakeDrawCheckBox": true,
+        "cmfProcessListHandMakeDrawCount": 2000
+      },
+      "cmfProcessListScreenPrinting": {
+        "cmfProcessListScreenPrintingCheckBox": true,
+        "cmfProcessListScreenPrintingCount": 1
+      },
+      "cmfProcessListPadPrinting": {
+        "cmfProcessListPadPrintingCheckBox": true,
+        "cmfProcessListPadPrintingCount": 1
+      },
+      "cmfProcessListSilkPrint": {
+        "cmfProcessListSilkPrintCheckBox": true,
+        "cmfProcessListSilkPrintCount": 1
+      },
+      "cmfProcessListCNC": {
+        "cmfProcessListCNCCheckBox": true,
+        "cmfProcessListCNCArea": 900
+      },
+      "cmfProcessListCNCPL": {
+        "cmfProcessListCNCPLCheckBox": true,
+        "cmfProcessListCNCPLLength": 240
+      },
+      "cmfProcessListDrillCutPowerButton": {
+        "cmfProcessListDrillCutPowerButtonExist": true,
+        "cmfProcessListDrillCutPowerButtonType": "Power button 鑽切13\"",
+        "cmfProcessListDrillCutPowerButtonCost": 0
+      },
+      "cmfProcessListDrillCutTP": {
+        "cmfProcessListDrillCutTPExist": true,
+        "cmfProcessListDrillCutTPType": "TP鑽切13\"",
+        "cmfProcessListDrillCutTPCost": 0
+      },
+      "cmfProcessListDrillCutFingerprintHole": {
+        "cmfProcessListDrillCutFingerprintHoleExist": true,
+        "cmfProcessListDrillCutFingerprintHoleType": "指紋孔鑽切",
+        "cmfProcessListDrillCutFingerprintHoleCost": 0
+      },
+      "cmfProcessListDrillCutPowerHole": {
+        "cmfProcessListDrillCutPowerHoleExist": true,
+        "cmfProcessListDrillCutPowerHoleType": "電源孔鑽切",
+        "cmfProcessListDrillCutPowerHoleCost": 0
+      },
+      "cmfProcessListDrillCutFourSides": {
+        "cmfProcessListDrillCutFourSidesExist": true,
+        "cmfProcessListDrillCutFourSidesType": "全週4週邊鑽切13\"",
+        "cmfProcessListDrillCutFourSidesCost": 0
+      },
+      "cmfProcessListLaserPrint": {
+        "cmfProcessListLaserPrintCheckBox": true,
+        "cmfProcessListLaserPrintArea": 250
+      },
+      "cmfProcessListLaserPrintIcon": {
+        "cmfProcessListLaserPrintIconCheckBox": true,
+        "cmfProcessListLaserPrintIconCount": 11
+      },
+      "cmfProcessListPolishing": {
+        "cmfProcessListPolishingAutoCheckBox": true,
+        "cmfProcessListPolishingAutoArea": 7000,
+        "cmfProcessListPolishingArtificialCheckBox": true,
+        "cmfProcessListPolishingArtificialArea": 200
+      },
+      "cmfProcessListDrilling": {
+        "cmfProcessListDrillingCheckBox": true,
+        "cmfProcessListDrillingCount": 1
+      },
+      "cmfProcessListAnodizingRemoval": {
+        "cmfProcessListAnodizingRemovalCheckBox": true,
+        "cmfProcessListAnodizingRemovalCount": 1
+      }
+    },
+    "hmCeParametersTab": {
+      "hmCeParameters": {
+        "ce_patintingAreaConst1": 35
+      }
+    }
+  },
+  "calulateResult": {
+    "totalPrices": 9.299223504297068,
+    "prices": {
+      "housingMetal": {
+        "parentGroupId": null,
+        "CNCPickAndPlaceSec": 20,
+        "CNCPLPickAndPlaceSec": 20,
+        "polishingAutoPickAndPlaceSec": 20,
+        "polishingArtificialPickAndPlaceSec": 20,
+        "CNCProcessingSizeFormula1": 2.3333,
+        "packageCost": 0,
+        "material_cost": 1.37808594,
+        "stamping_cost": 0.0442,
+        "cmfProcessListCNCCycleTime": 39.285989799854285,
+        "cmfProcessListCNC": 0.12571516735953372,
+        "cmfProcessListCNCPL": 0.252,
+        "__cmfProcessListPolishingAuto": 0.05286075949367089,
+        "cmfProcessListPolishingArtificialCycleTime": 21.333333333333332,
+        "__cmfProcessListPolishingArtificial": 0.10666666666666666,
+        "cmfProcessListPolishing": 0.15952742616033755,
+        "secondary_processing_cost": 7.870307564297068,
+        "profit": 0.0066300000000000005,
+        "total": 9.299223504297068
+      }
+    },
+    "forDebug": {
+      "order": [
+        "housingMetal"
+      ],
+      "debugInfo": {
+        "housingMetal": {
+          "CNCPickAndPlaceSec": {
+            "label": "",
+            "value": 20
+          },
+          "CNCPLPickAndPlaceSec": {
+            "label": "",
+            "value": 20
+          },
+          "polishingAutoPickAndPlaceSec": {
+            "label": "",
+            "value": 20
+          },
+          "polishingArtificialPickAndPlaceSec": {
+            "label": "",
+            "value": 20
+          },
+          "CNCProcessingSizeFormula1": {
+            "label": "",
+            "value": 2.3333
+          },
+          "stageDieLossRate": {
+            "label": "",
+            "value": 0
+          },
+          "progressiveDieLossRate": {
+            "label": "",
+            "value": 0
+          },
+          "rivetingDieLossRate": {
+            "label": "",
+            "value": 0
+          },
+          "ultrasonicCleanUP": {
+            "label": "",
+            "value": 0.3529
+          },
+          "ultrasonicCleanLossRate": {
+            "label": "",
+            "value": 0
+          },
+          "sandBlastLossRate": {
+            "label": "",
+            "value": 0
+          },
+          "sandBlastUP": {
+            "label": "",
+            "value": 5
+          },
+          "hairLineLossRate": {
+            "label": "",
+            "value": 0
+          },
+          "hairLineUP": {
+            "label": "",
+            "value": 5
+          },
+          "paintingLossRate": {
+            "label": "",
+            "value": 0.15
+          },
+          "paintingConst1": {
+            "label": "",
+            "value": 8.4e-7
+          },
+          "paintingConst2": {
+            "label": "",
+            "value": 1.5
+          },
+          "thermalBondingUP": {
+            "label": "",
+            "value": 0.00303
+          },
+          "thermalBondingLossRate": {
+            "label": "",
+            "value": 0
+          },
+          "singleTappingUP": {
+            "label": "",
+            "value": 0.0078
+          },
+          "singleTappingLossRate": {
+            "label": "",
+            "value": 0
+          },
+          "multiTappingUP": {
+            "label": "",
+            "value": 0.0039
+          },
+          "multiTappingLossRate": {
+            "label": "",
+            "value": 0
+          },
+          "singleSpotWeldingUP": {
+            "label": "",
+            "value": 0.0078
+          },
+          "singleSpotWeldingLossRate": {
+            "label": "",
+            "value": 0
+          },
+          "multiSpotWeldingUP": {
+            "label": "",
+            "value": 0.0039
+          },
+          "multiSpotWeldingLossRate": {
+            "label": "",
+            "value": 0
+          },
+          "singleRivetUP": {
+            "label": "",
+            "value": 0.0078
+          },
+          "singleRivetLossRate": {
+            "label": "",
+            "value": 0
+          },
+          "multiRivetUP": {
+            "label": "",
+            "value": 0.0039
+          },
+          "multiRivetLossRate": {
+            "label": "",
+            "value": 0
+          },
+          "rivetUP": {
+            "label": "",
+            "value": 0.0078
+          },
+          "rivetLossRate": {
+            "label": "",
+            "value": 0
+          },
+          "handMakeDrawUP": {
+            "label": "",
+            "value": 0.09
+          },
+          "handMakeDrawLossRate": {
+            "label": "",
+            "value": 0
+          },
+          "handMakeDrawPerTime": {
+            "label": "",
+            "value": 40
+          },
+          "handMakeDrawPerSize": {
+            "label": "",
+            "value": 2500
+          },
+          "screenPrintingUP": {
+            "label": "",
+            "value": 0.05
+          },
+          "screenPrintingLossRate": {
+            "label": "",
+            "value": 0
+          },
+          "padPrintingUP": {
+            "label": "",
+            "value": 0.05
+          },
+          "padPrintingLossRate": {
+            "label": "",
+            "value": 0
+          },
+          "silkPrintUP": {
+            "label": "",
+            "value": 0.05
+          },
+          "silkPrintLossRate": {
+            "label": "",
+            "value": 0
+          },
+          "CNCUP": {
+            "label": "",
+            "value": 0.0032
+          },
+          "CNCLossRate": {
+            "label": "",
+            "value": 0
+          },
+          "CNCPLUP": {
+            "label": "",
+            "value": 0.0042
+          },
+          "CNCPLLossRate": {
+            "label": "",
+            "value": 0
+          },
+          "CNCPLConst1": {
+            "label": "",
+            "value": 6
+          },
+          "drillCutUP": {
+            "label": "",
+            "value": 0
+          },
+          "drillCutLossRate": {
+            "label": "",
+            "value": 0
+          },
+          "drillCutConst1": {
+            "label": "",
+            "value": 5
+          },
+          "laserPrintUP": {
+            "label": "",
+            "value": 25
+          },
+          "laserPrintLossRate": {
+            "label": "",
+            "value": 0
+          },
+          "laserPrintIconUP": {
+            "label": "",
+            "value": 0.017
+          },
+          "laserPrintIconLossRate": {
+            "label": "",
+            "value": 0
+          },
+          "polishingAutoProcessingSpeed": {
+            "label": "",
+            "value": 1738
+          },
+          "polishingAutoUP": {
+            "label": "",
+            "value": 0.0022
+          },
+          "polishingAutoLossRate": {
+            "label": "",
+            "value": 0
+          },
+          "polishingArtificialProcessingSpeed": {
+            "label": "",
+            "value": 150
+          },
+          "polishingArtificialUP": {
+            "label": "",
+            "value": 0.005
+          },
+          "polishingArtificialLossRate": {
+            "label": "",
+            "value": 0
+          },
+          "drillingConst1": {
+            "label": "",
+            "value": 0.2
+          },
+          "drillingUP": {
+            "label": "",
+            "value": 0.000071
+          },
+          "drillingLossRate": {
+            "label": "",
+            "value": 0
+          },
+          "anodizingRemovalUP": {
+            "label": "",
+            "value": 0.02
+          },
+          "anodizingRemovalLossRate": {
+            "label": "",
+            "value": 0
+          },
+          "packageCost": {
+            "label": "",
+            "value": 0
+          },
+          "profit_percent": {
+            "label": "",
+            "value": 0.15
+          },
+          "cmfProcessListDrillCutPowerButtonLossRate": {
+            "label": "",
+            "value": 0
+          },
+          "cmfProcessListDrillCutTPLossRate": {
+            "label": "",
+            "value": 0
+          },
+          "cmfProcessListDrillCutFingerprintHoleLossRate": {
+            "label": "",
+            "value": 0
+          },
+          "cmfProcessListDrillCutPowerHoleLossRate": {
+            "label": "",
+            "value": 0
+          },
+          "cmfProcessListFourSidesLossRate": {
+            "label": "",
+            "value": 0
+          },
+          "hmMaterialLossRate": {
+            "label": "",
+            "value": "0.05"
+          },
+          "hmToolingMaterialExpandWidth": {
+            "label": "",
+            "value": 276
+          },
+          "hmToolingMaterialExpandLength": {
+            "label": "",
+            "value": 393
+          },
+          "hmthickness": {
+            "label": "",
+            "value": "1"
+          },
+          "hmmaterialdensity": {
+            "label": "",
+            "value": "2.75"
+          },
+          "hmmaterialprice": {
+            "label": "",
+            "value": "4.40"
+          },
+          "hmmaterial": {
+            "label": "",
+            "value": "AL5052"
+          },
+          "hmToolingHoleCount": {
+            "label": "",
+            "value": 1
+          },
+          "hmToolingStageDieCount": {
+            "label": "",
+            "value": 1
+          },
+          "hmToolingProgressiveDieCount": {
+            "label": "",
+            "value": 1
+          },
+          "hmToolingRivetingDieCount": {
+            "label": "",
+            "value": 1
+          },
+          "hmpartsexpandwidth": {
+            "label": "",
+            "value": "271"
+          },
+          "hmpartsexpandlength": {
+            "label": "",
+            "value": "388"
+          },
+          "cmfProcessListFirstAnodePrice": {
+            "label": "",
+            "value": "15.00"
+          },
+          "cmfProcessListSecondAnodePrice": {
+            "label": "",
+            "value": "15.00"
+          },
+          "cmfProcessListFirstAnodeLossRate": {
+            "label": "",
+            "value": "0.15"
+          },
+          "cmfProcessListSecondAnodeLossRate": {
+            "label": "",
+            "value": "0.15"
+          },
+          "cmfProcessListSecondAnodeQty": {
+            "label": "",
+            "value": "1"
+          },
+          "cmfProcessListHairLineArea": {
+            "label": "",
+            "value": 70000
+          },
+          "cmfProcessListPaintingCount": {
+            "label": "",
+            "value": 1
+          },
+          "cmfProcessListPaintingFilmThickness": {
+            "label": "",
+            "value": 0.08
+          },
+          "CmfProcessListPaintingPriceUSD": {
+            "label": "",
+            "value": "5.7554"
+          },
+          "cmfProcessListThermalBondingCycleTimeValue": {
+            "label": "",
+            "value": "90"
+          },
+          "cmfProcessListThermalBondingGlueSyringeDiameter": {
+            "label": "",
+            "value": "0.6"
+          },
+          "cmfProcessListThermalBondingPathLength": {
+            "label": "",
+            "value": 2500
+          },
+          "cmfProcessListThermalBondingGlueDensity": {
+            "label": "",
+            "value": "0.97"
+          },
+          "cmfProcessListThermalBondingGluePrice": {
+            "label": "",
+            "value": "0.3428"
+          },
+          "cmfProcessListSingleTappingCount": {
+            "label": "",
+            "value": 1
+          },
+          "cmfProcessListMultiTappingCount": {
+            "label": "",
+            "value": 1
+          },
+          "cmfProcessListSingleSpotWeldingCount": {
+            "label": "",
+            "value": 1
+          },
+          "cmfProcessListMultiSpotWeldingCount": {
+            "label": "",
+            "value": 1
+          },
+          "cmfProcessListRivetCount": {
+            "label": "",
+            "value": 1
+          },
+          "cmfProcessListPaintingArea": {
+            "label": "",
+            "value": 119481
+          },
+          "cmfProcessListHandMakeDrawCount": {
+            "label": "",
+            "value": 2000
+          },
+          "cmfProcessListScreenPrintingCount": {
+            "label": "",
+            "value": 1
+          },
+          "cmfProcessListPadPrintingCount": {
+            "label": "",
+            "value": 1
+          },
+          "cmfProcessListSilkPrintCount": {
+            "label": "",
+            "value": 1
+          },
+          "cmfProcessListCNCArea": {
+            "label": "",
+            "value": 900
+          },
+          "cmfProcessListCNCPLLength": {
+            "label": "",
+            "value": 240
+          },
+          "cmfProcessListDrillCutArea": {
+            "label": ""
+          },
+          "cmfProcessListLaserPrintArea": {
+            "label": "",
+            "value": 250
+          },
+          "cmfProcessListLaserPrintIconCount": {
+            "label": "",
+            "value": 11
+          },
+          "cmfProcessListPolishingAutoArea": {
+            "label": "",
+            "value": 7000
+          },
+          "cmfProcessListPolishingAutoCheckBox": {
+            "label": "",
+            "value": true
+          },
+          "cmfProcessListPolishingArtificialCheckBox": {
+            "label": "",
+            "value": true
+          },
+          "cmfProcessListPolishingArtificialArea": {
+            "label": "",
+            "value": 200
+          },
+          "cmfProcessListDrillingCount": {
+            "label": "",
+            "value": 1
+          },
+          "cmfProcessListSandBlastSideCount": {
+            "label": "",
+            "value": "1"
+          },
+          "cmfProcessListultrasonicCleanExist": {
+            "label": "",
+            "value": true
+          },
+          "cmfProcessListFirstAnodeCheckBox": {
+            "label": "",
+            "value": true
+          },
+          "cmfProcessListSecondAnodeCheckBox": {
+            "label": "",
+            "value": true
+          },
+          "cmfProcessListSandBlastCheckBox": {
+            "label": "",
+            "value": true
+          },
+          "cmfProcessListHairLineCheckBox": {
+            "label": "",
+            "value": true
+          },
+          "cmfProcessListPaintingCheckBox": {
+            "label": "",
+            "value": true
+          },
+          "cmfProcessListThermalBondingCheckBox": {
+            "label": "",
+            "value": true
+          },
+          "cmfProcessListSingleTappingCheckBox": {
+            "label": "",
+            "value": true
+          },
+          "cmfProcessListMultiTappingCheckBox": {
+            "label": "",
+            "value": true
+          },
+          "cmfProcessListSingleSpotWeldingCheckBox": {
+            "label": "",
+            "value": true
+          },
+          "cmfProcessListMultiSpotWeldingCheckBox": {
+            "label": "",
+            "value": true
+          },
+          "cmfProcessListRivetCheckBox": {
+            "label": "",
+            "value": true
+          },
+          "cmfProcessListHandMakeDrawCheckBox": {
+            "label": "",
+            "value": true
+          },
+          "cmfProcessListScreenPrintingCheckBox": {
+            "label": "",
+            "value": true
+          },
+          "cmfProcessListPadPrintingCheckBox": {
+            "label": "",
+            "value": true
+          },
+          "cmfProcessListSilkPrintCheckBox": {
+            "label": "",
+            "value": true
+          },
+          "cmfProcessListCNCCheckBox": {
+            "label": "",
+            "value": true
+          },
+          "cmfProcessListCNCPLCheckBox": {
+            "label": "",
+            "value": true
+          },
+          "cmfProcessListDrillCutCheckBox": {
+            "label": ""
+          },
+          "cmfProcessListLaserPrintCheckBox": {
+            "label": "",
+            "value": true
+          },
+          "cmfProcessListLaserPrintIconCheckBox": {
+            "label": "",
+            "value": true
+          },
+          "cmfProcessListDrillingCheckBox": {
+            "label": "",
+            "value": true
+          },
+          "cmfProcessListSingleRivetCheckBox": {
+            "label": "",
+            "value": true
+          },
+          "cmfProcessListSingleRivetCount": {
+            "label": "",
+            "value": 1
+          },
+          "cmfProcessListMultiRivetCheckBox": {
+            "label": "",
+            "value": true
+          },
+          "cmfProcessListMultiRivetCount": {
+            "label": "",
+            "value": 1
+          },
+          "cmfProcessListAnodizingRemovalCheckBox": {
+            "label": "",
+            "value": true
+          },
+          "cmfProcessListAnodizingRemovalCount": {
+            "label": "",
+            "value": 1
+          },
+          "hmToolingStageDiePress": {
+            "label": "",
+            "value": "200T"
+          },
+          "hmToolingStageDieModule": {
+            "label": "",
+            "value": "Module 1"
+          },
+          "hmToolingStageDieModuleCost": {
+            "label": "",
+            "value": "0.0159"
+          },
+          "hmToolingProgressiveDiePress": {
+            "label": "",
+            "value": "250T"
+          },
+          "hmToolingProgressiveDieModule": {
+            "label": "",
+            "value": "Module 1"
+          },
+          "hmToolingProgressiveDieModuleCost": {
+            "label": "",
+            "value": "0.0159"
+          },
+          "hmToolingRivetingDiePress": {
+            "label": "",
+            "value": "160T"
+          },
+          "hmToolingRivetingDieModule": {
+            "label": "",
+            "value": "Module 1"
+          },
+          "hmToolingRivetingDieModuleCost": {
+            "label": "",
+            "value": "0.0124"
+          },
+          "ce_patintingAreaConst1": {
+            "label": "",
+            "value": 35
+          },
+          "cmfProcessListDrillCutPowerButtonCost": {
+            "label": "",
+            "value": "0.12"
+          },
+          "cmfProcessListDrillCutTPCost": {
+            "label": "",
+            "value": "0.22"
+          },
+          "cmfProcessListDrillCutFingerprintHoleCost": {
+            "label": "",
+            "value": "0.11"
+          },
+          "cmfProcessListDrillCutPowerHoleCost": {
+            "label": "",
+            "value": "0.11"
+          },
+          "cmfProcessListDrillCutFourSidesCost": {
+            "label": "",
+            "value": "0.8"
+          },
+          "cmfProcessListDrillCutPowerButtonExist": {
+            "label": "",
+            "value": true
+          },
+          "cmfProcessListDrillCutTPExist": {
+            "label": "",
+            "value": true
+          },
+          "cmfProcessListDrillCutFingerprintHoleExist": {
+            "label": "",
+            "value": true
+          },
+          "cmfProcessListDrillCutPowerHoleExist": {
+            "label": "",
+            "value": true
+          },
+          "cmfProcessListDrillCutFourSidesExist": {
+            "label": "",
+            "value": true
+          },
+          "_productType": {
+            "label": "",
+            "value": "NB"
+          },
+          "_type2": {
+            "label": "",
+            "value": "Metal"
+          },
+          "material_cost": {
+            "label": "材料費",
+            "value": 1.37808594
+          },
+          "isMetal": {
+            "label": "Metal and other type2",
+            "value": 1
+          },
+          "isAluminum": {
+            "label": "aluminum",
+            "value": 0
+          },
+          "hmToolingStageDieModuleCostFunc": {
+            "label": "工程模機台費",
+            "value": 0.0159
+          },
+          "hmToolingStageDieCost": {
+            "label": "工程模",
+            "value": 0.0159
+          },
+          "hmToolingProgressiveDieCost": {
+            "label": "連續模",
+            "value": 0.0159
+          },
+          "hmToolingRivetingDieCost": {
+            "label": "鉚合模",
+            "value": 0.0124
+          },
+          "stamping_cost": {
+            "label": "沖壓費",
+            "value": 0.0442
+          },
+          "productExpendSize": {
+            "label": "成品展開尺寸",
+            "value": 105148
+          },
+          "cmfProcessListUltrasonicClean": {
+            "label": "超音波清洗",
+            "value": 0.0371067292
+          },
+          "cmfProcessListFirstAnode": {
+            "label": "陽極(一陽)",
+            "value": 1.8138029999999998
+          },
+          "cmfProcessListSecondAnode": {
+            "label": "陽極(二陽)",
+            "value": 1.8138029999999998
+          },
+          "cmfProcessListAnode": {
+            "label": "陽極",
+            "value": 3.6276059999999997
+          },
+          "cmfProcessListSandBlast": {
+            "label": "噴砂",
+            "value": 0.52574
+          },
+          "cmfProcessListHairLine": {
+            "label": "髮絲",
+            "value": 0.35000000000000003
+          },
+          "patintingArea": {
+            "label": "噴塗面積",
+            "value": 165611
+          },
+          "cmfProcessListPatinting": {
+            "label": "噴漆",
+            "value": 0.2706489818172
+          },
+          "glueWeight": {
+            "label": "膠水重量",
+            "value": 0.6856542
+          },
+          "cmfProcessListThermalBonding": {
+            "label": "Thermal Bonding 熱壓",
+            "value": 0.50774225976
+          },
+          "cmfProcessListSingleTapping": {
+            "label": "單點攻牙",
+            "value": 0.0078
+          },
+          "cmfProcessListMultiTapping": {
+            "label": "多點攻牙",
+            "value": 0.0039
+          },
+          "cmfProcessListSingleSpotWelding": {
+            "label": "單點點焊",
+            "value": 0.0078
+          },
+          "cmfProcessListMultiSpotWelding": {
+            "label": "多點點焊",
+            "value": 0.0039
+          },
+          "cmfProcessListSingleRivet": {
+            "label": "單點鉚釘",
+            "value": 0.0078
+          },
+          "cmfProcessListMultiRivet": {
+            "label": "多點鉚釘",
+            "value": 0.0039
+          },
+          "cmfProcessListRivet": {
+            "label": "拉鉚釘",
+            "value": 0.0078
+          },
+          "cmfProcessListHandMakeDrawCycleTime": {
+            "label": "",
+            "value": 32
+          },
+          "cmfProcessListHandMakeDraw": {
+            "label": "手工塗黑",
+            "value": 0.048
+          },
+          "cmfProcessListScreenPrinting": {
+            "label": "Printing網印",
+            "value": 0.05
+          },
+          "cmfProcessListPadPrinting": {
+            "label": "Printing移印",
+            "value": 0.05
+          },
+          "cmfProcessListSilkPrint": {
+            "label": "Silk Print",
+            "value": 0.05
+          },
+          "cmfProcessListCNCCycleTime": {
+            "label": "",
+            "value": 39.285989799854285
+          },
+          "cmfProcessListCNC": {
+            "label": "CNC(公模面)",
+            "value": 0.12571516735953372
+          },
+          "cmfProcessListCNCPLLengthCycleTime": {
+            "label": "",
+            "value": 60
+          },
+          "cmfProcessListCNCPL": {
+            "label": "CNC(PL處)",
+            "value": 0.252
+          },
+          "cmfProcessListDrillCutPowerButton": {
+            "label": "鑽切(高光) - Power button鑽切",
+            "value": 0.12
+          },
+          "cmfProcessListDrillCutTP": {
+            "label": "鑽切(高光) - TP",
+            "value": 0.22
+          },
+          "cmfProcessListDrillCutFingerprintHole": {
+            "label": "鑽切(高光) - 指紋孔鑽切",
+            "value": 0.11
+          },
+          "cmfProcessListDrillCutPowerHole": {
+            "label": "鑽切(高光) - 電源孔鑽切",
+            "value": 0.11
+          },
+          "cmfProcessListDrillCutFourSides": {
+            "label": "鑽切(高光) - 全週4週邊鑽切",
+            "value": 0.8
+          },
+          "cmfProcessListDrillCut": {
+            "label": "鑽切(高光)",
+            "value": 1.3599999999999999
+          },
+          "cmfProcessListLaserPrint": {
+            "label": "鐳雕(公模面)",
+            "value": 0.00625
+          },
+          "cmfProcessListLaserPrintIcon": {
+            "label": "鐳雕(icon)",
+            "value": 0.187
+          },
+          "cmfProcessListPolishingAutoCycleTime": {
+            "label": "打磨(自動) cycle time",
+            "value": 24.027617951668585
+          },
+          "cmfProcessListPolishingAuto": {
+            "label": "打磨(自動)",
+            "value": 0.05286075949367089
+          },
+          "cmfProcessListPolishingArtificialCycleTime": {
+            "label": "打磨(人工) cycle time",
+            "value": 21.333333333333332
+          },
+          "cmfProcessListPolishingArtificial": {
+            "label": "打磨(人工)",
+            "value": 0.10666666666666666
+          },
+          "cmfProcessListPolishing": {
+            "label": "打磨",
+            "value": 0.15952742616033755
+          },
+          "cmfProcessListDrilling": {
+            "label": "鑽孔",
+            "value": 0.200071
+          },
+          "cmfProcessListAnodizingRemoval": {
+            "label": "陽極掛點切除",
+            "value": 0.02
+          },
+          "secondary_processing_cost": {
+            "label": "二次加工費",
+            "value": 7.870307564297068
+          },
+          "profit": {
+            "label": "管銷&利潤",
+            "value": 0.0066300000000000005
+          },
+          "total": {
+            "label": "",
+            "value": 9.299223504297068
+          }
+        }
+      },
+      "summary": {
+        "housingMetal": {
+          "parentGroupId": null,
+          "CNCPickAndPlaceSec": 20,
+          "CNCPLPickAndPlaceSec": 20,
+          "polishingAutoPickAndPlaceSec": 20,
+          "polishingArtificialPickAndPlaceSec": 20,
+          "CNCProcessingSizeFormula1": 2.3333,
+          "packageCost": 0,
+          "material_cost": 1.37808594,
+          "stamping_cost": 0.0442,
+          "cmfProcessListCNCCycleTime": 39.285989799854285,
+          "cmfProcessListCNC": 0.12571516735953372,
+          "cmfProcessListCNCPL": 0.252,
+          "__cmfProcessListPolishingAuto": 0.05286075949367089,
+          "cmfProcessListPolishingArtificialCycleTime": 21.333333333333332,
+          "__cmfProcessListPolishingArtificial": 0.10666666666666666,
+          "cmfProcessListPolishing": 0.15952742616033755,
+          "secondary_processing_cost": 7.870307564297068,
+          "profit": 0.0066300000000000005,
+          "total": 9.299223504297068
+        }
+      }
+    }
+  }
+}

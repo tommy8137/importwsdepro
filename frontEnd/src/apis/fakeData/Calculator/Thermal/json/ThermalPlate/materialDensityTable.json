@@ -1,0 +1,40 @@
+{
+  "header": [
+    {
+      "key": "material",
+      "name": "材料",
+      "typeof": "string"
+    },
+    {
+      "key": "density",
+      "name": "密度",
+      "typeof": "number"
+    }
+  ],
+  "data": [
+    {
+      "material": "CU1100",
+      "density": 8.9
+    },
+    {
+      "material": "KU400",
+      "density": 7.85
+    },
+    {
+      "material": "SGCC",
+      "density": 7.85
+    },
+    {
+      "material": "SECC",
+      "density": 7.85
+    },
+    {
+      "material": "SPCC",
+      "density": 7.85
+    },
+    {
+      "material": "C18400",
+      "density": 8.8
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+headers:
+  exportFrom:
+    label: Export from
+    $example.header-eeall.eeallTemplate:
+      - dataString
+
+  customer:
+    label: Customer
+    $example.header-eeall.eeallTemplate:
+      - dataString
+
+  project_name:
+    label: Project Name
+    $example.header-eeall.eeallTemplate:
+      - dataString
+
+  project_code:
+    label: Project Code
+    $example.header-eeall.eeallTemplate:
+      - dataString
+
+  version:
+    label: Project Name
+    $example.header-eeall.eeallTemplate:
+      - dataInt
+
+  bu_target_date:
+    label: BU Target Date
+    $example.header-eeall.eeallTemplate:
+      - dataString
+
+  bom_create_date:
+    label: BOM Create Date
+    $example.header-eeall.eeallTemplate:
+      - dataString
+
+  rfq_finish_date:
+    label: RFQ Finish Date
+    $example.header-eeall.eeallTemplate:
+      - dataString
+
+  export_date:
+    label: Export Date
+    $example.header-eeall.eeallTemplate:
+      - dataString
+
+  total_part_number_count:
+    label: Total Part Number Count
+    $example.header-eeall.eeallTemplate:
+      - dataString
+
+  total_parts_count:
+    label: Total Parts Count
+    $example.header-eeall.eeallTemplate:
+      - dataString
+
+  total_last_price_sap:
+    label: Total Last Price (SAP)
+    $example.header-eeall.eeallTemplate:
+      - dataString
+
+  total_suggestion_cost:
+    label: Total Suggestion Cost
+    $example.header-eeall.eeallTemplate:
+      - dataString
+
+  bu_target_cost:
+    label: BU Target Cost
+    $example.header-eeall.eeallTemplate:
+      - dataString
+
+  hit_rate:
+    label: Hit Rate
+    $example.header-eeall.eeallTemplate:
+      - dataString
+
+  eedm_ver:
+    label: EEDM Ver.
+    $example.header-eeall.eeallTemplate:
+      - dataString
+

@@ -1,0 +1,17 @@
+sheet:
+  label: EE-ALL GG
+  tables:
+    - key: eebomSummary
+      $Template:
+        - colTable 
+      headers:
+        $example.header-eeall.eeallsummary-excel:
+          - headers
+
+    - key: eebomItem
+      $Template:
+        - rowTable 
+      headers:
+        $example.header-eeall.eeallitem-excel:
+          - headers
+        

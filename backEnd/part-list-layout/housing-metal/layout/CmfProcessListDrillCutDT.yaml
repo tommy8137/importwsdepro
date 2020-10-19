@@ -1,0 +1,32 @@
+items:
+# 鑽切(高光)
+  - key: cmfProcessListDrillCutExist
+    label: Exist
+    $Template:
+      - checkBox
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListDrillCutExist
+
+  - key: cmfProcessListDrillCutCycleTime
+    label: Cycle Time(sec)
+    $Template:
+      - inputFloat
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfProcessListDrillCutExist: true
+      grids: 1
+      display: true
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfProcessListDrillCutExist)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfProcessListDrillCutExist
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListDrillCutCycleTime

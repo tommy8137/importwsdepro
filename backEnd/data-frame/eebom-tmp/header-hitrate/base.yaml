@@ -1,0 +1,88 @@
+headers:
+  # no:
+  #   label: NO
+  #   $Template:
+  #     - serial
+  #   style:
+  #     header:
+  #       $eebom-tmp.header-hitrate.style:
+  #         - ht-header
+  #     value:
+  #       $eebom-tmp.header-hitrate.style:
+  #         - ht-catagory
+
+  type1:
+    label: TYPE1
+    $Template:
+      - dataString
+    style:
+      header:
+        $eebom-tmp.header-hitrate.style:
+          - ht-header
+      value:
+        $eebom-tmp.header-hitrate.style:
+          - ht-catagory
+
+  type2:
+    label: TYPE2
+    $Template:
+      - dataString
+    style:
+      header:
+        $eebom-tmp.header-hitrate.style:
+          - ht-header
+      value:
+        $eebom-tmp.header-hitrate.style:
+          - ht-catagory
+
+  spec01:
+    label: Spec01
+    $Template:
+      - dataString
+    style:
+      header:
+        $eebom-tmp.header-hitrate.style:
+          - ht-header
+      value:
+        $eebom-tmp.header-hitrate.style:
+          - ht-catagory
+
+
+  bom_part_count:
+    label: BOM Part Count
+    $Template:
+      - dataInt
+    style:
+      header:
+        $eebom-tmp.header-hitrate.style:
+          - ht-header
+      value:
+        $eebom-tmp.header-hitrate.style:
+          - ht-data
+
+
+  common_parts_list:
+    label: Common Parts List
+    $Template:
+      - dataInt
+    style:
+      header:
+        $eebom-tmp.header-hitrate.style:
+          - ht-header
+      value:
+        $eebom-tmp.header-hitrate.style:
+          - ht-data
+
+
+  hitrate:
+    label: Hit-Rate %
+    $Template:
+      - dataFloat
+    style:
+      header:
+        $eebom-tmp.header-hitrate.style:
+          - ht-header
+      value:
+        $eebom-tmp.header-hitrate.style:
+          - ht-data
+

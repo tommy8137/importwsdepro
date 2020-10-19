@@ -1,0 +1,151 @@
+version: 2
+showMenu: false
+layout :
+  - key: FFCTab
+    label: FFCLabel
+    group:
+      - cableFFC
+    $Template:
+      - tab
+    items:
+      - key: FFCItems
+        $Template:
+          - composite
+        label: 不用顯示的
+        $cable-ffc.nb.layout.FFCItems:
+          - ^multiple
+          - ^items
+        visiable: false
+
+      - key: FFCConnector
+        $Template:
+          - composite
+        label: Connector
+        group:
+          - cableFfcConnector
+        $cable-ffc.nb.layout.FFCConnector:
+          - ^multiple
+          - ^items
+        minGroupCount: 0
+
+      - key: FFCProcessingContent
+        $Template:
+          - composite
+        label: 加工內容
+        $cable-ffc.nb.layout.FFCProcessingContent:
+          - ^multiple
+          - ^items
+
+      - key: FFCAccessory
+        $Template:
+          - composite
+        label: 輔料
+        group: ffcAccessory
+        $cable-ffc.nb.layout.FFCAccessory:
+          - ^multiple
+          - ^multipleItems
+
+      - key: FFCRemark
+        $Template:
+          - composite
+        label: 備註
+        $cable-ffc.nb.layout.FFCRemark:
+          - ^multiple
+          - ^items
+formulas:
+  cableFFC:
+    $cable-ffc.nb.formula.FFC:
+      - ^formula
+      - ^scope
+      - ^constant
+      - ^output
+  cableFfcConnector:
+    $cable-ffc.nb.formula.FFCConnectorGroup:
+      - ^formula
+      - ^scope
+      - ^constant
+      - ^output
+  # ffcAccessory:
+  #   $cable-ffc.nb.formula.FFCAccessoryGroup:
+  #     - ^formula
+  #     - ^scope
+  #     - ^global
+  #     - ^constant
+  #     - ^output
+  alfoil:
+    $cable-ffc.nb.formula.AlfoilGroup:
+      - ^formula
+      - ^scope
+      - ^global
+      - ^constant
+      - ^output
+  reinforcingPlate:
+    $cable-ffc.nb.formula.ReinforcingPlateGroup:
+      - ^formula
+      - ^scope
+      - ^global
+      - ^constant
+      - ^output
+  label1:
+    $cable-ffc.nb.formula.Label1Group:
+      - ^formula
+      - ^scope
+      # - ^global
+      - ^constant
+      - ^output
+  label2:
+    $cable-ffc.nb.formula.Label2Group:
+      - ^formula
+      - ^scope
+      # - ^global
+      - ^constant
+      - ^output
+  conductiveCloth:
+    $cable-ffc.nb.formula.ConductiveClothGroup:
+      - ^formula
+      - ^scope
+      - ^global
+      - ^constant
+      - ^output
+  aceticAcidCloth:
+    $cable-ffc.nb.formula.AceticAcidClothGroup:
+      - ^formula
+      - ^scope
+      - ^global
+      - ^constant
+      - ^output
+  kapton:
+    $cable-ffc.nb.formula.KaptonGroup:
+      - ^formula
+      - ^scope
+      - ^global
+      - ^constant
+      - ^output
+  doubleSideTape:
+    $cable-ffc.nb.formula.DoubleSideTapeGroup:
+      - ^formula
+      - ^scope
+      - ^global
+      - ^constant
+      - ^output
+  conductiveDoubleSideTape:
+    $cable-ffc.nb.formula.ConductiveDoubleSideTapeGroup:
+      - ^formula
+      - ^scope
+      - ^global
+      - ^constant
+      - ^output
+  mylarCY28Pet005:
+    $cable-ffc.nb.formula.MylarCY28Pet005Group:
+      - ^formula
+      - ^scope
+      - ^global
+      - ^constant
+      - ^output
+  mylarPet6027D01:
+    $cable-ffc.nb.formula.MylarPet6027D01Group:
+      - ^formula
+      - ^scope
+      - ^global
+      - ^constant
+      - ^output

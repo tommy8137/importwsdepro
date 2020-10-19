@@ -1,0 +1,52 @@
+headers:
+  part_category1:
+    label: Part Category I
+    subHeader: Total Summary Detail
+    subHeaderSite: 1
+    subHeaderMerge: 8
+    subHeaderColor: true
+    totalColor: true
+    $bom-summary.header-bom-summary.Template:
+      - boldString
+
+  part_category2:
+    label: Part Category II
+    totalColor: true
+    $bom-summary.header-bom-summary.Template:
+      - boldString
+
+  part_name:
+    label: Part Name
+    totalColor: true
+    $bom-summary.header-bom-summary.Template:
+      - dataString
+
+  sku:
+    label: SKU 1(QTY)
+    totalColor: true
+    $bom-summary.header-bom-summary.Template:
+      - dataFloat
+
+  cbg_cost:
+    label: CBG cost
+    totalColor: true
+    $bom-summary.header-bom-summary.Template:
+      - dataFloat
+
+  epro_cost:
+    label: ePro cost
+    totalColor: true
+    $bom-summary.header-bom-summary.Template:
+      - dataFloat
+
+  sourcer_cost:
+    label: Sourcer cost
+    totalColor: true
+    $bom-summary.header-bom-summary.Template:
+      - dataFloat
+
+  gap:
+    label: Gap(ePro-Sourcer)
+    totalColor: true
+    $bom-summary.header-bom-summary.Template:
+      - dataFloat

@@ -1,0 +1,29 @@
+sheet:
+  label: ME
+  tables:
+    - key: DashboardMeSummary
+      $Template:
+        - colTable
+      colLength: 6
+      headers:
+        $dashboard-me.header-dashboard-me.dashboardmesummary-excel:
+          - headers
+    - key: DashboardMeItem
+      $Template:
+        - rowTable
+      autoFilter: true
+      anchor:
+        x: A
+        y: 9
+      headers:
+        $dashboard-me.header-dashboard-me.dashboardmeitem-excel:
+          - headers
+    - key: CostTable
+      $Template:
+        - traverseTable
+      headers:
+        $dashboard-me.header-dashboard-me.dashboardmecost-excel:
+          - headers
+      anchor:
+        x: H
+        y: 8

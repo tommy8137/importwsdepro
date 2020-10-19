@@ -1,0 +1,2 @@
+ALTER TABLE wiprocurement.eedm_cost_summarytable
+DROP COLUMN eedmuploadtime;

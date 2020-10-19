@@ -1,0 +1,292 @@
+output:
+  total: total
+  # FOR GROUP SUM
+  materialPrice: materialPrice # 材料費
+  formingPrice: formingPrice # 成型費
+  processingPrice: processingPrice # 加工費
+  packingDeliverPrice: packingDeliverPrice # 全檢包裝運輸
+  managementPrice: managementPrice # 管銷 10%
+  # for debug
+  _toothLength: toothLength
+  _isPolishedRod: isPolishedRod
+  _resistantFallPrice: resistantFallPrice
+  _partWeight: partWeight
+  _threadingPrice: threadingPrice # 搓牙 (成型)
+  _circlePrice: circlePrice # 同心圓 (加工)
+  _material: material
+  _resistantFallColor: resistantFallColor # 顏色
+  _minToothDiameter: minToothDiameter
+  _maxToothDiameter: maxToothDiameter
+  _toothLengthValue: toothLengthValue # 牙長
+  _resistantFallValues: resistantFallValues # 耐落
+  _platingTotalPrice: platingTotalPrice # 電鍍
+  _toothDiameter: toothDiameter
+  management_percentage : management_percentage
+
+formula:
+  # 總價: 若為Other fill me remark則為null, 其餘則為0
+  total:
+    label: 總價
+    type: FUNC
+    formula: "(total, isOtherFill)=>{
+      const inValid = !(total && typeof total === 'number' && isFinite(total));
+      if (isOtherFill) {
+        return null;
+      } else if (inValid) {
+        return 0;
+      }
+      return total;
+    }"
+    param:
+      - totalCost
+      - isOtherFill
+
+  # 計算結果
+  totalCost:
+    label: 計算結果
+    type: MATH
+    formula: materialPrice + formingPrice + processingPrice + packingDeliverPrice + managementPrice
+
+  # 檢查是否有 Other_Fill_ME_Remark
+  isOtherFill:
+    type: FUNC
+    formula: "material => (material ===  'Other_Fill_ME_Remark')"
+    label: 檢查是否有 Other_Fill_ME_Remark
+    param:
+      - material     
+
+  # 材料費 =============================================================================================
+  materialPrice:
+    type: MATH
+    formula: materialUnitPrice * partWeight / thousand
+    label: 材料費
+
+  # Parts Weight (g)
+  partWeight:
+    type: FUNC
+    formula: "(material, headDiameter, headThickness, toothDiameter, toothLength,
+      neckDiameter, neckLength, isPolishedRod,
+      materialDensity, pi, thousand) => {
+        if (isPolishedRod) {
+          return pi * Math.pow(headDiameter / 2, 2) * headThickness * materialDensity / thousand 
+            + pi * Math.pow(toothDiameter / 2, 2) * toothLength * materialDensity / thousand
+            + pi * Math.pow(neckDiameter / 2, 2) * neckLength * materialDensity / thousand;
+        }
+        return pi * Math.pow(headDiameter / 2, 2) * headThickness * materialDensity / thousand 
+            + pi * Math.pow(toothDiameter / 2, 2) * toothLength * materialDensity / thousand;
+    };"
+    param:
+      - material
+      - headDiameter
+      - headThickness
+      - toothDiameter
+      - toothLength
+      - neckDiameter
+      - neckLength
+      - isPolishedRod
+      - materialDensity
+      - pi
+      - thousand
+
+  # 牙長值
+  toothLengthValue:
+    type: FUNC
+    formula: "(toothLength, toothLengthValues) => {
+        const isMatch = (data) => {
+          if (data.maxToothLength <= 0) {
+            return toothLength > data.minToothLength;
+          } else if (data.minToothLength <= 0) {
+            return toothLength < data.maxToothLength;
+          } else {
+            return toothLength >= data.minToothLength && toothLength <= data.maxToothLength;
+          }
+        };
+        return toothLengthValues.values.find(isMatch).toothLengthValue;
+    };"
+    param:
+      - toothLength
+      - toothLengthValues
+
+  # 成型費 =============================================================================================
+  formingPrice:
+    type: MATH
+    formula: threadingPrice + circlePrice
+    label: 成型費
+  
+  # 冷鍛打頭_搓牙
+  threadingPrice:
+    type: MATH
+    formula: threadingFormingPrice / threadingPerformance * (1 + threadingLossRate)
+    label: 冷鍛打頭_搓牙
+
+  # 同心圓
+  circlePrice:
+    type: FUNC
+    formula: "(circleFormingPrice, circlePerformance, circleLossRate, isConcentricCircle) => {
+      if (isConcentricCircle) {
+        return circleFormingPrice / circlePerformance * (1 + circleLossRate);
+      }
+      return 0;
+    };"
+    param: 
+      - circleFormingPrice
+      - circlePerformance
+      - circleLossRate
+      - isConcentricCircle
+
+    label: 同心圓
+
+  # 加工費 =============================================================================================
+  processingPrice:
+    type: MATH
+    formula: resistantFallPrice + platingTotalPrice + heatingPrice
+    label: 加工費
+
+  # 電鍍
+  platingTotalPrice:
+    type: MATH
+    formula: platingPrice * partWeight / thousand
+    label: 電鍍
+  
+  # 熱處理
+  heatingPrice:
+    type: MATH
+    formula: materialHeatingUnitPrice * partWeight / thousand
+    label: 熱處理
+  
+  # 耐落
+  resistantFallPrice:
+    type: FUNC
+    formula: "(material, resistantFallColor, minToothDiameter, maxToothDiameter, toothLengthValue, resistantFallValues) => {
+      const isMatch = (data) => {
+        if (Number(minToothDiameter) <= 0 || Number(maxToothDiameter) <= 0) {
+          return material === data.material &&
+            resistantFallColor === data.resistantFallColor &&
+            minToothDiameter === data.minToothDiameter &&
+            maxToothDiameter === data.maxToothDiameter;
+        }
+        return material === data.material &&
+          resistantFallColor === data.resistantFallColor &&
+          minToothDiameter === data.minToothDiameter &&
+          maxToothDiameter === data.maxToothDiameter &&
+          toothLengthValue === data.toothLengthValue;
+      };
+
+      return resistantFallValues.values.find(isMatch).resistantFallPrice;
+    };"
+    label: 熱處理
+    param: 
+      - material
+      - resistantFallColor
+      - minToothDiameter
+      - maxToothDiameter
+      - toothLengthValue
+      - resistantFallValues
+
+  # 管銷費 =============================================================================================  
+  managementPrice:
+    type: MATH
+    formula: (formingPrice + processingPrice) * management_percentage
+    label: 管銷費
+
+
+
+scope:
+  material: materialspec
+  materialUnitPrice: materialUnitPrice # 材料單價
+  headDiameter: headDiameter # 頭徑
+  headThickness: headThickness # 頭厚
+  toothDiameter: toothDiameter # 牙徑 user選的值
+  minToothDiameter: minToothDiameter # 牙徑最小值
+  maxToothDiameter: maxToothDiameter # 牙徑最大值
+  toothLength: toothLength # 牙長 user輸入值
+  neckDiameter: neckDiameter # 頸徑
+  neckLength: neckLength # 頸長
+  resistantFallColor: resistantFallColor # 耐落顏色值
+  isPolishedRod: isPolishedRod # 光桿 Y/N
+  materialDensity: materialDensity # 密度
+  isConcentricCircle: isConcentricCircle # 同心圓 Y/N
+  platingPrice: platingPrice # 電鍍費用
+  materialHeatingUnitPrice: materialHeatingUnitPrice # 熱處理單價
+
+
+constant:
+  # 常數: 一千
+  thousand:
+    label: 一千
+    value: 1000
+  # 常數: π
+  pi:
+    label: π
+    value: 3.14
+  # 耐落費用查表
+  resistantFallValues:
+    label: 耐落費用
+    value:
+      ?getScrewNylok:
+        - 
+      # $meothers-screw.dropdown.ResistantCostValues:
+      # - ^values
+  # 牙長值對應
+  toothLengthValues:
+    label: 牙長值對應
+    value:
+      ?getScrewNylokLength:
+        - 
+      # $meothers-screw.dropdown.ToothLengthValues:
+      # - ^values
+  # 成型費 - 冷鍛打頭_搓牙 成型加工費用 (USD)
+  threadingFormingPrice:
+    label: 成型費 - 冷鍛打頭_搓牙 成型加工費用 (USD)
+    ?getTurningCommon:
+      - me_others_screw_molding
+      - thread_rolling_unit_price
+    # value: 37.00
+  # 成型費 - 冷鍛打頭_搓牙 一班產能(數量pcs)
+  threadingPerformance:
+    label: 成型費 - 冷鍛打頭_搓牙 一班產能(數量pcs)
+    ?getTurningCommon:
+      - me_others_screw_molding
+      - thread_rolling_capacity
+    # value: 100000
+  # 成型費 - 冷鍛打頭_搓牙 LOSS RATE
+  threadingLossRate:
+    label: 成型費 - 冷鍛打頭_搓牙 LOSS RATE
+    ?getTurningCommon:
+      - me_others_screw_molding
+      - thread_rolling_loss_rate
+    # value: 0.03
+  # 成型費 - 同心圓(車修真圓度) 成型加工費用 (USD)
+  circleFormingPrice:
+    label: 成型費 - 同心圓(車修真圓度) 成型加工費用 (USD)
+    ?getTurningCommon:
+      - me_others_screw_molding
+      - lathe_circularity_unit_price
+    # value: 0.03
+  # 成型費 - 同心圓(車修真圓度) 一班產能(數量pcs)
+  circlePerformance:
+    label: 成型費 - 同心圓(車修真圓度) 一班產能(數量pcs)
+    ?getTurningCommon:
+      - me_others_screw_molding
+      - lathe_circularity_capacity
+    # value: 1
+  # 成型費 - 同心圓(車修真圓度) LOSS RATE
+  circleLossRate:
+    label: 成型費 - 同心圓(車修真圓度) LOSS RATE
+    ?getTurningCommon:
+      - me_others_screw_molding
+      - lathe_circularity_loss_rate
+    # value: 0.03
+  # 全檢包裝運輸
+  packingDeliverPrice:
+    label: 全檢包裝運輸
+    ?getTurningCommon:
+      - me_others_screw_shipping_check
+      - turning_shippingcheck_unit_price
+    # value: 0.0002
+  management_percentage:
+    label: 管銷費 比例
+    ?getTurningCommon:
+      - me_others_screw_management_and_profit
+      - management_and_profit
+    # value: 0.1

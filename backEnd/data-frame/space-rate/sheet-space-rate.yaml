@@ -1,0 +1,12 @@
+sheet:
+  label: Bom list
+  tables:
+    - key: spaceRateRes
+      $Template:
+        - rowtable2nd
+      headers:
+        $space-rate.space-rate-item-base:
+          - headers
+      anchor:
+        x: A
+        y: 2

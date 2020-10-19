@@ -1,0 +1,266 @@
+multiple: false
+label: Rubber part list info
+items:
+  # Material
+  - key: materialspec
+    emdmKey: emdmBomInfo.materialspec
+    label: Material
+    url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+    $Template:
+      - fetchData
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getStandoffMaterialSpec:
+        -
+    require: false
+
+
+  - key: material
+    emdmKey: emdmBomInfo.materialspec
+    label: 為了給materialspec轉換key
+    $Template:
+      - realtimeFormulaString
+      - ^displayConfig
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+      grids: 0
+    func: "(materialspec) => {
+      return materialspec;
+    }"
+    replaceBy:
+      - materialspec
+
+  # 單價
+  - key: materialUnitPrice
+    $Template:
+      - mappedValueFloat
+    label: 單價
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      ?getTurningMaterial:
+        -
+      # $meothers-standoff.dropdown.MaterialValues:
+      #   - ^values
+    mapFrom:
+      - material
+  # 密度
+  - key: materialDensity
+    $Template:
+      - mappedValueFloat
+    label: 密度
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      ?getTurningMaterial:
+        -
+      # $meothers-standoff.dropdown.MaterialValues:
+      #   - ^values
+    mapFrom:
+      - material
+  # 熱處理 單價
+  - key: materialHeatingUnitPrice
+    $Template:
+      - mappedValueFloat
+    label: 熱處理 單價
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      ?getTurningMaterial:
+        -
+      # $meothers-standoff.dropdown.MaterialValues:
+      #   - ^values
+    mapFrom:
+      - material
+
+
+  - key: partssizemName
+    label: 牙徑
+    $Template:
+      - ^displayConfig
+      - selectorString
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: id
+      ?getTurningDiameter:
+        -
+      # $meothers-standoff.dropdown.InnerDiameter:
+      #   - ^values
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.partssizemName
+
+  - key: partssizem
+    label: 牙徑值
+    # url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+    $Template:
+      - mappedValueFloat
+      # - fetchData
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      display: false
+    selectorConfig:
+      ?getTurningDiameter:
+        -
+      # $meothers-standoff.dropdown.InnerDiameter:
+      #   - ^values
+    mapFrom:
+      - partssizemName
+    require: false
+
+  - key: bossOuterDiameter
+    label: 凸台外徑
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.bossOuterDiameter
+
+  - key: bossOuterDiameterHeight
+    label: 凸台外徑高
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.bossOuterDiameterHeight
+
+  - key: outerDiameter
+    label: 外徑
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.outerDiameter
+
+  - key: outerDiameterHeight
+    label: 外徑高
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.outerDiameterHeight
+
+  - key: pinOuterDiameter
+    label: Pin外徑
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.pinOuterDiameter
+
+  - key: pinOuterDiameterHeight
+    label: Pin外徑高
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.pinOuterDiameterHeight
+
+  - key: innerDiameter
+    label: 內徑
+    $Template:
+      - mappedValueFloat
+    mapFrom:
+      - partssizemName
+    require: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getTurningDiameter:
+        -
+      # $meothers-standoff.dropdown.InnerDiameter:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      display: false
+
+  - key: innerDiameterHeight
+    label: 內徑高
+    $Template:
+      - realtimeFormulaFloat
+      - ^displayConfig
+    func: "(bossOuterDiameterHeight, outerDiameterHeight, pinOuterDiameterHeight) => {
+            return +bossOuterDiameterHeight + +outerDiameterHeight + +pinOuterDiameterHeight;
+          }"
+    replaceBy:
+      - bossOuterDiameterHeight
+      - outerDiameterHeight
+      - pinOuterDiameterHeight
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.innerDiameterHeight
+
+
+  # 電鍍
+  - key: enabledPlating
+    label: 電鍍
+    $Template:
+      - checkBox
+    displayConfig:
+      $Template:
+        - displayConfig
+    emdmKey: emdmBomInfo.cmfForm.enabledPlating
+
+
+  - key: materialSpecRemark
+    label: Material Remark # 雖然是顯示material remark, 但其實是顯示 material spec remark
+    $Template:
+      - textarea
+    require: true
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      depends:
+        action: lock
+        condition:
+          materialspec: "val => val === 'Other_Fill_ME_Remark'"
+    emdmKey: emdmBomInfo.materialspec1Remark

@@ -1,0 +1,22 @@
+dataString:
+  $Template:
+    - dataString
+  style:
+    header:
+      $example.header-eeall.style:
+        - summary-header
+    value:
+      $example.header-eeall.style:
+        - summary-data
+
+dataInt:
+  $Template:
+    - dataInt
+  style:
+    header:
+      $example.header-eeall.style:
+        - summary-header
+    value:
+      $example.header-eeall.style:
+        - summary-data
+

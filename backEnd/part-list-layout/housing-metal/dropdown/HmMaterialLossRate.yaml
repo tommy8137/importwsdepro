@@ -1,0 +1,9 @@
+values:
+  - type2: Metal
+    hmMaterialLossRate: 0.05
+
+  - type2: Shielding_Can
+    hmMaterialLossRate: 0.05
+
+  - type2: Aluminum
+    hmMaterialLossRate: 0.15

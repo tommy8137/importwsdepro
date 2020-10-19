@@ -1,0 +1,193 @@
+headers:
+  wistronPN:
+    label: Ref. P/N
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - dataString
+
+  spaPartNumber:
+    label: Part Number
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - dataString
+
+  spaDescription:
+    label: Description
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - dataString
+
+  spaManufacturer:
+    label: Manufacturer
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - dataString
+
+  spaVendor:
+    label: Vendor Name
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - dataString
+  spaVendorPN:
+    label: Vendor Part No.
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - dataString
+  spaSupplyType:
+    label: Supply Type
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - dataString
+  spaMrp:
+    label: Last MRP
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - dataFloat
+  spaCurrency:
+    label: Curr.
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - dataString
+  spaLastPrice:
+    label: Last Price
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - dataFloat
+  spaOriginalCurrency:
+    label: Org. Curr.
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - dataString
+  spaOriginalPrice:
+    label: Org. Last Price
+    $xray-summary.header-raw-data.rawdataTemplate: 
+      - dataFloat
+  spaValidFrom:
+    label: ValidFrom
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - dataString
+  spaPriceDiff:
+    label: Price Diff. %
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - dataString
+  spaCmp:
+    label: CMP
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - dataBold
+  spaObs:
+    label: OBS
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - dataBold
+  spaExp:
+    label: EXP/EOL
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - dataBold
+  spec01:
+    label: Spec01
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - specString
+  spec02:
+    label: Spec02
+    $xray-summary.header-raw-data.rawdataTemplate: 
+      - specString
+  spec03:
+    label: Spec03
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - specString
+  spec04:
+    label: Spec04
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - specString
+  spec05:
+    label: Spec05
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - specString
+  spec06:
+    label: Spec06
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - specString
+  spec07:
+    label: Spec07
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - specString
+  spec08:
+    label: Spec08
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - specString
+  spec09:
+    label: Spec09
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - specString
+  spec10:
+    label: Spec10
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - specString
+  spec11:
+    label: Spec11
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - specString
+  spec12:
+    label: Spec12
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - specString
+  spec13:
+    label: Spec13
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - specString
+  spec14:
+    label: Spec14
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - specString
+  spec15:
+    label: Spec15
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - specString
+  spec16:
+    label: Spec16
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - specString
+  spec17:
+    label: Spec17
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - specString
+  spec18:
+    label: Spec18
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - specString
+  spec19:
+    label: Spec19
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - specString
+  spec20:
+    label: Spec20
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - specString
+  spec21:
+    label: Spec21
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - specString
+  spec22:
+    label: Spec22
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - specString
+  spec23:
+    label: Spec23
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - specString
+  spec24:
+    label: Spec24
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - specString
+  spec25:
+    label: Spec25
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - specString
+  spec26:
+    label: Spec26
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - specString
+  spec27:
+    label: Spec27
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - specString
+  spec28:
+    label: Spec28
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - specString
+  spec29:
+    label: Spec29
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - specString
+  spec30:
+    label: Spec30
+    $xray-summary.header-raw-data.rawdataTemplate:
+      - specString

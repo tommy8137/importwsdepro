@@ -1,0 +1,18 @@
+ALTER TABLE wiprocurement.bom_item_complete_version ADD COLUMN sku0 numeric;
+ALTER TABLE wiprocurement.bom_item_complete_version ADD COLUMN sku1 numeric;
+ALTER TABLE wiprocurement.bom_item_complete_version ADD COLUMN sku2 numeric;
+ALTER TABLE wiprocurement.bom_item_complete_version ADD COLUMN sku3 numeric;
+ALTER TABLE wiprocurement.bom_item_complete_version ADD COLUMN sku4 numeric;
+ALTER TABLE wiprocurement.bom_item_complete_version ADD COLUMN sku5 numeric;
+ALTER TABLE wiprocurement.bom_item_complete_version ADD COLUMN odm_oem uuid;
+ALTER TABLE wiprocurement.bom_item_complete_version ADD COLUMN initAddModiDel uuid;
+ALTER TABLE wiprocurement.bom_item_complete_version ADD COLUMN part_number character varying(64) COLLATE pg_catalog."default";
+ALTER TABLE wiprocurement.bom_item_complete_version ALTER COLUMN qty DROP NOT NULL;
+ALTER TABLE wiprocurement.bom_item_complete_version ALTER COLUMN qty SET DEFAULT 0;
+ALTER TABLE wiprocurement.bom_item_complete_version ADD COLUMN suggestion_cost_type  character varying(20) DEFAULT null;
+ALTER TABLE wiprocurement.bom_item_complete_version ADD COLUMN spa_cost  numeric DEFAULT null;
+ALTER TABLE wiprocurement.bom_item_complete_version ADD COLUMN spa_cost_material_remark  character varying(24) DEFAULT null;
+ALTER TABLE wiprocurement.bom_item_complete_version ALTER COLUMN id type character varying(64);
+ALTER TABLE wiprocurement.bom_item_complete_version ALTER COLUMN id  SET DEFAULT (uuid_generate_v1())::character varying;
+ALTER TABLE wiprocurement.bom_item_complete_version ADD COLUMN last_price  json DEFAULT '{}'::json;
+ALTER TABLE wiprocurement.bom_item_complete_version ALTER COLUMN part_name type character varying(120);

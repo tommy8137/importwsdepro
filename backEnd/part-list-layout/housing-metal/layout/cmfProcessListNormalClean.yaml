@@ -1,0 +1,11 @@
+multiple: true
+items:
+  - key: cmfProcessListNormalCleanExist
+    label: Exist
+    $Template:
+      - checkBox
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListNormalCleanExist

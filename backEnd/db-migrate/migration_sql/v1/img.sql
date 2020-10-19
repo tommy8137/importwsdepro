@@ -1,0 +1,91 @@
+
+CREATE TABLE IF NOT EXISTS wiprocurement.t001w (
+  MANDT              text,
+  WERKS              varchar(4),
+  NAME1              varchar(30),
+  BWKEY              varchar(4),
+  KUNNR              varchar(10),
+  LIFNR              varchar(10),
+  FABKL              varchar(2),
+  NAME2              varchar(30),
+  STRAS              varchar(30),
+  PFACH              varchar(10),
+  PSTLZ              varchar(10),
+  ORT01              varchar(25),
+  EKORG              varchar(4),
+  VKORG              varchar(4),
+  CHAZV              varchar(1),
+  KKOWK              varchar(1),
+  KORDB              varchar(1),
+  BEDPL              varchar(1),
+  LAND1              varchar(3),
+  REGIO              varchar(3),
+  COUNC              varchar(3),
+  CITYC              varchar(4),
+  ADRNR              varchar(10),
+  IWERK              varchar(4),
+  TXJCD              varchar(15),
+  VTWEG              varchar(2),
+  SPART              varchar(2),
+  SPRAS              varchar(2),
+  WKSOP              varchar(1),
+  AWSLS              varchar(6),
+  CHAZV_OLD          varchar(1),
+  VLFKZ              varchar(1),
+  BZIRK              varchar(6),
+  ZONE1              varchar(10),
+  TAXIW              varchar(1),
+  BZQHL              varchar(1),
+  LET01              decimal(3),
+  LET02              decimal(3),
+  LET03              decimal(3),
+  TXNAM_MA1          varchar(16),
+  TXNAM_MA2          varchar(16),
+  TXNAM_MA3          varchar(16),
+  BETOL              numeric,
+  J_1BBRANCH         varchar(4),
+  VTBFI              varchar(2),
+  FPRFW              varchar(3),
+  ACHVM              varchar(1),
+  DVSART             varchar(1),
+  NODETYPE           varchar(3),
+  NSCHEMA            varchar(4),
+  PKOSA              varchar(1),
+  MISCH              varchar(1),
+  MGVUPD             varchar(1),
+  VSTEL              varchar(4),
+  MGVLAUPD           varchar(1),
+  MGVLAREVAL         varchar(1),
+  SOURCING           varchar(1),
+  OILIVAL            varchar(1),
+  OIHVTYPE           varchar(1),
+  OIHCREDIPI         varchar(1),
+  STORETYPE          varchar(1),
+  DEP_STORE          varchar(4),
+  primary key (MANDT, WERKS)
+);
+
+CREATE TABLE IF NOT EXISTS wiprocurement.t024 (
+  MANDT               text,
+  EKGRP               varchar(3),
+  EKNAM               varchar(18),
+  EKTEL               varchar(12),
+  LDEST               varchar(4),
+  TELFX               varchar(31),
+  TEL_NUMBER          varchar(30),
+  TEL_EXTENS          varchar(10),
+  SMTP_ADDR           varchar(241),
+  primary key (MANDT, EKGRP)
+);
+CREATE INDEX IDX_t024_ekgrp ON wiprocurement.t024(ekgrp);
+
+
+CREATE TABLE IF NOT EXISTS wiprocurement.t024w (
+  MANDT               text,
+  WERKS               varchar(4),
+  EKORG               varchar(4),
+  primary key (MANDT, WERKS, EKORG)
+);
+CREATE INDEX IDX_t024w_ekorg ON wiprocurement.t024w(ekorg);
+CREATE INDEX IDX_t024w_werks ON wiprocurement.t024w(werks);
+

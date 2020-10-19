@@ -1,0 +1,32 @@
+spec-header:
+  fontColor: 'FFFFFF'
+  fill: '808080'
+  # bold: true
+  # fontFamily: arial
+  # border: true
+
+bold-data:
+  thick:
+    # fontColor: '000000'
+    # border: true
+    bold: true
+    # borderColor: 'ED7D31'
+    # fontFamily: arial
+  thin:
+    bold: false
+    # fontColor: '000000'
+    # border: true
+    # borderColor: 'ED7D31'
+    # fontFamily: arial
+
+item-header:
+  fontColor: 'FFFFFF'
+  fill: '0070c0'
+  # bold: true
+  # fontFamily: arial
+  # border: true
+
+item-data:
+  # border: true
+  # borderColor: 'ED7D31'
+  # fontFamily: arial

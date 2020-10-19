@@ -1,0 +1,17 @@
+headers:
+  from:
+    label: From
+    $Template:
+      - dataString
+  to:
+    label: To
+    $Template:
+      - dataString
+  sap_exchange_rate:
+    label: Exchange Rate
+    $Template:
+      - dataFloat
+  date:
+    label: Date
+    $Template:
+      - dataString

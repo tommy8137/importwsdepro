@@ -1,0 +1,45 @@
+dataFloat:
+  $Template:
+    - dataFloat
+  style:
+    header:
+      $eebom-tmp.header-2nd-bom.style:
+        - item-header
+    value:
+      $eebom-tmp.header-2nd-bom.style:
+        - item-data
+      numberFormat: '#,##0.00000'
+      
+dataString:
+  $Template:
+    - dataString
+  style:
+    header:
+      $eebom-tmp.header-2nd-bom.style:
+        - item-header
+    value:
+      $eebom-tmp.header-2nd-bom.style:
+        - item-data
+
+dataBold:
+  $Template:
+    - dataBold
+  style:
+    header:
+      $eebom-tmp.header-2nd-bom.style:
+        - item-header
+    value:
+      $eebom-tmp.header-2nd-bom.style:
+        - bold-data
+
+fontRed:
+  $Template:
+    - fontRed
+  style:
+    header:
+      $eebom-tmp.header-2nd-bom.style:
+        - item-header
+    value:
+      $eebom-tmp.header-2nd-bom.style:
+        - red-data
+

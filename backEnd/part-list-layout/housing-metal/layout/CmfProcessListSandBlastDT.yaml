@@ -1,0 +1,57 @@
+multiple: true
+items:
+  - key: cmfProcessListSandBlastCheckBox
+    $Template:
+      - checkBox
+    label: Exist
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListSandBlastCheckBox
+
+  - key: cmfProcessListSandBlastSide
+    $Template:
+      - selectorString
+    label: 單雙面
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: id
+      ?getMetalSandBlastSide:
+        -
+      # $housing-metal.dropdown.CmfProcessListSandBlastSide:
+      #   - ^values
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfProcessListSandBlastCheckBox: true
+      grids: 1
+      display: true
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfProcessListSandBlastCheckBox)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfProcessListSandBlastCheckBox
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListSandBlastSide
+
+  - key: cmfProcessListSandBlastSideCount
+    $Template:
+      - mappedValueInt
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getMetalSandBlastSide:
+        -
+      # $housing-metal.dropdown.CmfProcessListSandBlastSide:
+      #   - ^values
+    mapFrom:
+      - cmfProcessListSandBlastSide

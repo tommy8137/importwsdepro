@@ -1,0 +1,100 @@
+# 機台頓數價格對應表
+values:
+  # NB
+  - productType: NB
+    rubberTon: 290T
+    rubberTonPrice: 0.1906
+
+  - productType: NB
+    rubberTon: 250T
+    rubberTonPrice: 0.1694
+
+  - productType: NB
+    rubberTon: 240T
+    rubberTonPrice: 0.1694
+
+  - productType: NB
+    rubberTon: 210T
+    rubberTonPrice: 0.1482
+
+  - productType: NB
+    rubberTon: 190T
+    rubberTonPrice: 0.1482
+
+  - productType: NB
+    rubberTon: 180T
+    rubberTonPrice: 0.1482
+
+  - productType: NB
+    rubberTon: 160T
+    rubberTonPrice: 0.1271
+
+  - productType: NB
+    rubberTon: 150T
+    rubberTonPrice: 0.1271
+
+  # DT
+  - productType: DT
+    rubberTon: 290T
+    rubberTonPrice: 0.1588
+
+  - productType: DT
+    rubberTon: 250T
+    rubberTonPrice: 0.1580
+
+  - productType: DT
+    rubberTon: 240T
+    rubberTonPrice: 0.1694
+
+  - productType: DT
+    rubberTon: 210T
+    rubberTonPrice: 0.1482
+
+  - productType: DT
+    rubberTon: 190T
+    rubberTonPrice: 0.1270
+
+  - productType: DT
+    rubberTon: 180T
+    rubberTonPrice: 0.1270
+
+  - productType: DT
+    rubberTon: 160T
+    rubberTonPrice: 0.1270
+
+  - productType: DT
+    rubberTon: 150T
+    rubberTonPrice: 0.1270
+
+  # Others
+  - productType: Others
+    rubberTon: 150T
+    rubberTonPrice: 0.127
+
+  - productType: Others
+    rubberTon: 160T
+    rubberTonPrice: 0.121538461538462
+
+  - productType: Others
+    rubberTon: 180T
+    rubberTonPrice: 0.121538461538462
+
+  - productType: Others
+    rubberTon: 190T
+    rubberTonPrice: 0.121538461538462
+
+  - productType: Others
+    rubberTon: 210T
+    rubberTonPrice: 0.121538461538462
+
+  - productType: Others
+    rubberTon: 240T
+    rubberTonPrice: 0.150769230769231
+
+  - productType: Others
+    rubberTon: 250T
+    rubberTonPrice: 0.150769230769231
+
+  - productType: Others
+    rubberTon: 290T
+    rubberTonPrice: 0.150769230769231

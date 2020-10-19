@@ -1,0 +1,11 @@
+values:
+  - cmfPaintingMachineType: N/A
+    cmfPaintingMachinePrice: 0
+  - cmfPaintingMachineType: 往復機
+    cmfPaintingMachinePrice: 0.1484
+  - cmfPaintingMachineType: Spindle
+    cmfPaintingMachinePrice: 0.2077
+  - cmfPaintingMachineType: Robot
+    cmfPaintingMachinePrice: 0.1484
+  - cmfPaintingMachineType: 蒸鍍
+    cmfPaintingMachinePrice: 0.09

@@ -1,0 +1,55 @@
+---
+name: Icon
+---
+
+import { Playground, Props } from 'docz'
+import Icon from '~~elements/Icon'
+import IconLibs from '~~elements/Icon/components/'
+import * as styles from './Icon.module.scss';
+import styled from 'styled-components';
+
+
+
+##  引用方式
+```js
+import Icon from '~~elements/Icon';
+```
+
+
+## Props
+
+<Props of={Icon}/>
+
+
+--- 
+
+## 如何使用
+
+<Playground>
+    <div className={styles['icon']}> 
+        <Icon  icon="BtnAddGroup"/>
+    </div>
+     <div className={styles['icon']}>
+        <Icon icon="BtnAddGroup" type="normal"/>
+    </div>
+     <div className={styles['icon']}>
+        <Icon icon="BtnAddGroup" type="hover"/>
+    </div>
+     <div className={styles['icon']}>
+        <Icon icon="BtnAddGroup" type="press"/>
+    </div>
+     <div className={styles['icon']}>
+        <Icon icon="BtnAddGroup" type="disable"/>
+    </div>
+</Playground>
+
+--- 
+
+## 搜尋icon
+
+<Playground>
+    <IconLibs />
+</Playground>
+
+
+

@@ -1,0 +1,30 @@
+output:
+  accessoryAssyTime: accessoryAssyTime
+  accessoryCost: accessoryCost
+
+formula:
+  accessoryAssyTime:
+    type: MATH
+    formula: FFCLabel1Qty * ffcLabel1_assy_time
+    label: 輔料組裝時間
+
+  accessoryCost:
+    type: MATH
+    formula: FFCLabel1Qty * ffcLabel1_unit_price
+    label: label1費用
+
+scope:
+  FFCLabel1Qty: FFCLabel1Qty
+constant:
+  ffcLabel1_unit_price:
+    label: label1(料號標籤)單價
+    ?getFFCCommon:
+      - cable_ffc_components
+      - label_1_cost
+    # value: 0.0015
+  ffcLabel1_assy_time:
+    label: label1(料號標籤)組裝時間
+    ?getFFCCommon:
+      - cable_ffc_components
+      - label_1_assembly
+    # value: 5

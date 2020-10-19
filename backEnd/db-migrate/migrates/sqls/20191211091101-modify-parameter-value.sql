@@ -1,0 +1,1 @@
+update formula.parameter_value set value = 0 where value = 'null';

@@ -1,0 +1,40 @@
+headers:
+  export_from:
+    label: Export From
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataString
+
+  search:
+    label: Search
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataString
+
+  space1:
+    label: null
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataString
+
+  spec2:
+    label: null
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataString
+
+  export_date:
+    label: Export Date
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataString
+
+  type1:
+    label: Type I
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataString
+
+  type2:
+    label: Type II
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataString
+
+  referencePN:
+    label: Search PN
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataString

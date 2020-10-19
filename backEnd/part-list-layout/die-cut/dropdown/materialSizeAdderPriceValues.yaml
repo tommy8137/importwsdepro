@@ -1,0 +1,21 @@
+# 下料增加尺寸對應表
+values:
+  - materialSizeMin: 0
+    materialSizeMax: 5
+    materialSizeValue: 6
+
+  - materialSizeMin: 5
+    materialSizeMax: 50
+    materialSizeValue: 7
+
+  - materialSizeMin: 50
+    materialSizeMax: 100
+    materialSizeValue: 8
+
+  - materialSizeMin: 100
+    materialSizeMax: 200
+    materialSizeValue: 10
+
+  - materialSizeMin: 200
+    materialSizeMax: 2000
+    materialSizeValue: 12

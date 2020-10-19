@@ -1,0 +1,75 @@
+output:
+  accessoryAssyTime: accessoryAssyTime
+  accessoryCost: accessoryCost
+
+formula:
+  accessoryAssyTime:
+    type: MATH
+    formula: FFCKaptonQty * ffckapton_assy_time
+    label: 輔料組裝時間
+
+  accessoryCost:
+    type: MATH
+    formula: FFCKaptonQty * ffcKapton_unit_price * ((FFCKaptonLength + ffckapton_l_side_constant ) * ( ffc_size_width + ffckapton_w_side_constant ) / ffcedge_materia_area_trans_constant ) * (1 + ffcKapton_loss_rate)
+    label: KAPTON費用
+
+  ffc_size_width:
+    type: MATH
+    formula:  (FFCPin +1) * FFCPitch
+    label: FFC尺寸(W)
+
+global:
+  FFCPin:
+    type: VARIABLE
+    label: FFC Pin
+    bykey: FFCPin
+    groups:
+      - cableFFC
+  FFCPitch:
+    type: VARIABLE
+    label: FFC Pitch
+    bykey: FFCPitch
+    groups:
+      - cableFFC
+
+scope:
+  FFCKaptonQty: FFCKaptonQty
+  FFCKaptonLength: FFCKaptonLength
+  FFCKaptonwidth: FFCKaptonwidth
+constant:
+  ffcKapton_unit_price:
+    label: KAPTON單價
+    ?getFFCCommon:
+      - cable_ffc_components
+      - kapton_cost
+    # value: 1.1527
+  ffckapton_l_side_constant:
+    label: kapton L 邊料常數
+    ?getFFCCommon:
+      - cable_ffc_components
+      - kapton_l_side_constant
+    # value: 6
+  ffckapton_w_side_constant:
+    label: kapton W 邊料常數
+    ?getFFCCommon:
+      - cable_ffc_components
+      - kapton_w_side_constant
+    # value: 6
+  ffcedge_materia_area_trans_constant:
+    label: FFC 面積單位換算
+    ?getFFCCommon:
+      - cable_ffc_components
+      - area_unit_transfer_constant
+    # value: 1000000
+  ffckapton_assy_time:
+    label: kapton組裝時間
+    ?getFFCCommon:
+      - cable_ffc_components
+      - kapton_assembly
+    # value: 5
+  ffcKapton_loss_rate:
+    label: KAPTON loss rate
+    ?getFFCCommon:
+      - cable_ffc_components
+      - kapton_loss_rate
+    # value: 0

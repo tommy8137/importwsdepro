@@ -1,0 +1,63 @@
+
+items:
+# Power button鑽切
+  - key: cmfProcessListDrillCutPowerButtonExist
+    label: Exist
+    $Template:
+      - checkBox
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListDrillCutPowerButtonExist
+
+  - key: cmfProcessListDrillCutPowerButtonType
+    $Template:
+      - selectorString
+    label: 加工特徵
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: metal_material_drill_feature_id
+      ?getMetalDrill:
+        - housing_metal_secondary_processing
+        - drill_cutting_loss_rate
+        - power_button_cutting
+      # $housing-metal.dropdown.CmfProcessListDrillCutPowerButtonType:
+      #   - ^values
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfProcessListDrillCutPowerButtonExist: true
+      grids: 1
+      display: true
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfProcessListDrillCutPowerButtonExist)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfProcessListDrillCutPowerButtonExist
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListDrillCutPowerButtonType
+
+  - key: cmfProcessListDrillCutPowerButtonCost
+    $Template:
+      - mappedValueFloat
+    mapFrom:
+      - cmfProcessListDrillCutPowerButtonType
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getMetalDrill:
+        - housing_metal_secondary_processing
+        - drill_cutting_loss_rate
+        - power_button_cutting
+      # $housing-metal.dropdown.CmfProcessListDrillCutPowerButtonType:
+      #   - ^values
+      # ?getSecondAnodeColor:
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false

@@ -1,0 +1,94 @@
+---
+name: Button
+---
+
+import { Playground, Props } from 'docz'
+import Button from '~~elements/Button'
+
+import * as styles from '~~styles/_docz-template.scss';
+
+##  引用方式
+```js
+import Button from '~~elements/Button';
+```
+
+## Props
+
+<Props of={Button}/>
+
+--- 
+
+## 使用範例
+### 在黑色背景的Modal裡面使用Button
+
+<Playground>
+    <div className={styles['display-button-theme']} style={{ background: '#333' }}>
+        <Button border={false} color="transparentInModal">white</Button>
+        <Button color="black">black</Button>
+    </div>
+</Playground>
+
+### 按鈕顏色
+
+<Playground>
+    <div className={styles['display-button-theme']}>
+        <Button >black</Button>
+        <Button inverse>black (inverse)</Button>
+        <Button color="white">white</Button>
+        <Button color="white" inverse>white (inverse)</Button>
+
+        <Button color="green">green</Button>
+        <Button color="green" inverse>green (inverse)</Button>
+
+        <Button color="transparent" border={false} width="auto">transparent</Button>
+    </div>
+</Playground>
+
+
+
+### 按鈕形狀
+
+<Playground>
+    <div className={styles['display-button-theme']}>
+        <Button color="black">Normal</Button>
+        <Button color="black" round>Round</Button>
+    </div>
+</Playground>
+
+### 按鈕邊線
+<Playground>
+    <div className={styles['display-button-theme']}>
+        <Button inverse>有邊線</Button>
+        <Button border={false} inverse>無邊線</Button>
+    </div>
+</Playground>
+
+
+### 自行設定尺寸
+<Playground>
+    <div className={styles['display-button-theme']}>
+        <Button inverse>無設定</Button>
+        <Button inverse width="300px">300px</Button>
+    </div>
+</Playground>
+
+<Playground>
+    <div className={styles['display-button-theme']}>
+        <Button inverse mini round>mini round</Button>
+        <Button inverse round>roundroundroundround</Button>
+        <Button inverse>Normal</Button>
+    </div>
+</Playground>
+
+
+### Disabled 樣式
+
+<Playground>
+    <div className={styles['display-button-theme']}>
+        <Button inverse mini round disabled>mini round</Button>
+        <Button inverse round disabled>roundroundroundround</Button>
+        <Button inverse disabled>Normal</Button>
+    </div>
+</Playground>
+
+

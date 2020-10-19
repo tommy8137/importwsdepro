@@ -1,0 +1,75 @@
+output:
+  accessoryAssyTime: accessoryAssyTime
+  accessoryCost: accessoryCost
+
+formula:
+  accessoryAssyTime:
+    type: MATH
+    formula: FFCConductiveDoubleSideTapeQty * ffcconductive_double_sided_tape_assy_time
+    label: 輔料組裝時間
+
+  accessoryCost:
+    type: MATH
+    formula: FFCConductiveDoubleSideTapeQty * ffcConductiveDoubleSideTape_unit_price * ((FFCConductiveDoubleSideTapeLength + ffcconductive_double_sided_tape_l_side_constant ) * ( ffc_size_width + ffcconductive_double_sided_tape_w_side_constant ) / ffcedge_materia_area_trans_constant ) * (1 + ffcConductiveDoubleSideTape_loss_rate)
+    label: 導電雙面膠費用
+
+  ffc_size_width:
+    type: MATH
+    formula:  (FFCPin +1) * FFCPitch
+    label: FFC尺寸(W)
+
+global:
+  FFCPin:
+    type: VARIABLE
+    label: FFC Pin
+    bykey: FFCPin
+    groups:
+      - cableFFC
+  FFCPitch:
+    type: VARIABLE
+    label: FFC Pitch
+    bykey: FFCPitch
+    groups:
+      - cableFFC
+
+scope:
+  FFCConductiveDoubleSideTapeLength: FFCConductiveDoubleSideTapeLength
+  FFCConductiveDoubleSideTapewidth: FFCConductiveDoubleSideTapewidth
+  FFCConductiveDoubleSideTapeQty: FFCConductiveDoubleSideTapeQty
+constant:
+  ffcConductiveDoubleSideTape_unit_price:
+    label: 導電雙面膠單價
+    ?getFFCCommon:
+      - cable_ffc_components
+      - conductive_double_sided_tape_cost
+    # value: 3.6764
+  ffcconductive_double_sided_tape_l_side_constant:
+    label: 導電雙面膠 L 邊料常數
+    ?getFFCCommon:
+      - cable_ffc_components
+      - conductive_double_sided_tape_l_side_constant
+    # value: 6
+  ffcconductive_double_sided_tape_w_side_constant:
+    label: 導電雙面膠 W 邊料常數
+    ?getFFCCommon:
+      - cable_ffc_components
+      - conductive_double_sided_tape_w_side_constant
+    # value: 6
+  ffcedge_materia_area_trans_constant:
+    label: FFC 面積單位換算
+    ?getFFCCommon:
+      - cable_ffc_components
+      - area_unit_transfer_constant
+    # value: 1000000
+  ffcconductive_double_sided_tape_assy_time:
+    label: 導電雙面膠組裝時間
+    ?getFFCCommon:
+      - cable_ffc_components
+      - conductive_double_sided_tape_assembly
+    # value: 5
+  ffcConductiveDoubleSideTape_loss_rate:
+    label: 導電雙面膠 loss rate
+    ?getFFCCommon:
+      - cable_ffc_components
+      - conductive_double_sided_tape_loss_rate
+    # value: 0

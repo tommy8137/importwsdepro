@@ -1,0 +1,62 @@
+items:
+# 指紋孔鑽切
+  - key: cmfProcessListDrillCutFingerprintHoleExist
+    label: Exist
+    $Template:
+      - checkBox
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListDrillCutFingerprintHoleExist
+
+  - key: cmfProcessListDrillCutFingerprintHoleType
+    $Template:
+      - selectorString
+    label: 加工特徵
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: metal_material_drill_feature_id
+      ?getMetalDrill:
+        - housing_metal_secondary_processing
+        - drill_cutting_loss_rate
+        - fingerprint_hole_cutting
+      # $housing-metal.dropdown.CmfProcessListDrillCutFingerprintHoleType:
+      #   - ^values
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfProcessListDrillCutFingerprintHoleExist: true
+      grids: 1
+      display: true
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfProcessListDrillCutFingerprintHoleExist)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfProcessListDrillCutFingerprintHoleExist
+    require: true
+    # default: 指紋孔鑽切
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListDrillCutFingerprintHoleType
+
+  - key: cmfProcessListDrillCutFingerprintHoleCost
+    $Template:
+      - mappedValueFloat
+    mapFrom:
+      - cmfProcessListDrillCutFingerprintHoleType
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getMetalDrill:
+        - housing_metal_secondary_processing
+        - drill_cutting_loss_rate
+        - fingerprint_hole_cutting
+      # $housing-metal.dropdown.CmfProcessListDrillCutFingerprintHoleType:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false

@@ -1,0 +1,27 @@
+version: 2
+showMenu: false
+layout:
+  # Partlist Tab
+  - key: nutPartlistTab
+    $Template:
+      - tab
+    label: nut Partlist
+    group:
+      - nut
+    items:
+      - key: nutPartItemInfo
+        $Template:
+          - composite
+        label: 我不應該被顯示出來
+        $meothers-nut.layout.nutPartItemInfo:
+          - ^multiple
+          - ^items
+        visiable: false
+
+formulas:
+  nut:
+    $meothers-nut.formula.nutFormula:
+      - ^formula
+      - ^output
+      - ^scope
+      - ^constant

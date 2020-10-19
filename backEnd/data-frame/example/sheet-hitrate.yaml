@@ -1,0 +1,23 @@
+sheet:
+  label: Hit-Rate
+  tables:
+    - key: hitRate
+      $Template:
+        - rowTable
+      anchor:
+        x: A
+        y: 1
+      headers:
+        $example.header-hitrate.excel:
+          - headers
+
+    - key: sumCol
+      $Template:
+        - valTable
+      anchor:
+        x: E
+        y: 27
+      headers:
+        $example.header-hitrate.sum:
+          - headers
+       

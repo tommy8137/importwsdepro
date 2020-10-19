@@ -1,0 +1,695 @@
+multiple: true
+items:
+  - key: hmToolingMaterialSize
+    $Template:
+      - compositeInline
+    label: 邊料尺寸
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0
+      display: false
+    items:
+      - key: hmToolingMaterialWidth
+        $Template:
+          - inputFloat
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 0.5
+        label: W 寬度邊料尺寸
+        default: 
+          ?getCommon:
+            byKey: value
+            params:
+              - housing_metal_material
+              - material_metal_w_side_constant
+        constrains:
+          - function: "(val) => val ==='' || val === null"
+            message: "此欄位為必填"
+        require: true
+        # emdmKey: emdmBomInfo.edgeMaterialSizeWidth
+
+      - key: hmToolingMaterialLength
+        $Template:
+          - inputFloat
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 0.5
+        label: L 長度邊料尺寸
+        default: 
+          ?getCommon:
+            byKey: value
+            params:
+              - housing_metal_material
+              - material_metal_l_side_constant
+        constrains:
+          - function: "(val) => val ==='' || val === null"
+            message: "此欄位為必填"
+        require: true
+        # emdmKey: emdmBomInfo.edgeMaterialSizeLong
+
+  - key: hmToolingMaterialExpandSize
+    $Template:
+      - compositeInline
+    label: 素材展開尺寸(mm)
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 2
+    items:
+      - key: hmToolingMaterialExpandWidth
+        $Template:
+          - realtimeFormulaFloat
+        label: W
+        # url: bom/partlist/getMaterialExpandSize/:{hmpartsexpandwidth}/:{hmpartsexpandlength}/:{hmToolingMaterialWidth}/:{hmToolingMaterialLength}
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1
+        constrains:
+          - function: "(val) => val ==='' || val === null"
+            message: "此欄位為必填"
+        require: true
+        func: "(hmpartsexpandwidth, hmToolingMaterialWidth)=>{
+          return +hmpartsexpandwidth + +hmToolingMaterialWidth;
+        }"
+        replaceBy:
+          - hmpartsexpandwidth
+          - hmToolingMaterialWidth
+
+      - key: hmToolingMaterialExpandLength
+        $Template:
+          - realtimeFormulaFloat
+        label: L
+        # url: bom/partlist/getMaterialExpandSize/:{hmpartsexpandwidth}/:{hmpartsexpandlength}/:{hmToolingMaterialWidth}/:{hmToolingMaterialLength}
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1
+        constrains:
+          - function: "(val) => val ==='' || val === null"
+            message: "此欄位為必填"
+        require: true
+        func: "(hmpartsexpandlength, hmToolingMaterialLength)=>{
+          return +hmpartsexpandlength + +hmToolingMaterialLength;
+        }"
+        replaceBy:
+          - hmpartsexpandlength
+          - hmToolingMaterialLength
+
+  - key: hmToolingIntervalPrice
+    $Template:
+      - realtimeFormulaFloat
+    label: 區間費用
+    # url: bom/partlist/getIntervalPrice/:{bom_id}/:{hmToolingMaterialExpandWidth}/:{hmToolingMaterialExpandLength}
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+      grids: 0
+    func: "(lv, weight, length)=>{
+      let result = '';
+
+      if (lv > 2) {
+        result = 0;
+      } else {
+        if (0 <= weight * length && weight * length < 5000) {
+          result = 0.025;
+        } else if (5000 <= weight * length && weight * length < 40000) {
+          result = 0.035;
+        } else if (40000 <= weight * length && weight * length < 70000) {
+          result = 0.045;
+        } else if (weight * length >= 70000) {
+          result = 0.120;
+        }
+      }
+      return result;
+    }"
+    replaceBy:
+      - level
+      - hmToolingMaterialExpandWidth
+      - hmToolingMaterialExpandLength
+
+  - key: hmToolingWeight
+    $Template:
+      - realtimeFormulaFloat
+      - ^displayConfig
+    label: 淨重(成品重量)(g)
+    # url: bom/partlist/netWeight/:{hmthickness}/:{hmpartsexpandwidth}/:{hmpartsexpandlength}/:{hmmaterial}
+    constrains:
+      - function: "(val) => val ==='' || val === null"
+        message: "此欄位為必填"
+    require: true
+    func: "(hmthickness, hmpartsexpandwidth, hmpartsexpandlength, hmmaterialdensity)=>{
+      return +hmthickness * +hmpartsexpandwidth * +hmpartsexpandlength * +hmmaterialdensity / 1000;
+    }"
+    replaceBy:
+      - hmthickness
+      - hmpartsexpandwidth
+      - hmpartsexpandlength
+      - hmmaterialdensity
+
+  - key: hmToolingMaterialWeight
+    $Template:
+      - realtimeFormulaFloat
+      - ^displayConfig
+    label: 毛重(素材重量)(g)
+    # url: bom/partlist/grossWeight/:{hmthickness}/:{hmToolingMaterialExpandWidth}/:{hmToolingMaterialExpandLength}/:{hmmaterial}
+    constrains:
+      - function: "(val) => val ==='' || val === null"
+        message: "此欄位為必填"
+    require: true
+    func: "(hmthickness, hmToolingMaterialExpandWidth, hmToolingMaterialExpandLength, hmmaterialdensity)=>{
+      return +hmthickness * +hmToolingMaterialExpandWidth * +hmToolingMaterialExpandLength * +hmmaterialdensity / 1000;
+    }"
+    replaceBy:
+      - hmthickness
+      - hmToolingMaterialExpandWidth
+      - hmToolingMaterialExpandLength
+      - hmmaterialdensity
+
+  - key: hmToolingHoleCount
+    $Template:
+      - inputInt
+      - ^displayConfig
+    label: 穴數
+    default: 1
+    constrains:
+      - function: "(val) => val ==='' || val === null"
+        message: "此欄位為必填"
+    require: true
+    emdmKey: emdmBomInfo.cavProdCavityQty1
+
+  # 工程模(凸包) Start
+  - key: hmToolingConvexHull
+    $Template:
+      - compositeInline
+    label: 工程模(凸包)
+    require: false
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+    items:
+      # 工程數
+      - key: hmToolingConvexHullCount
+        $Template:
+          - inputInt
+          - ^displayConfig
+        label: 工程數
+        constrains:
+          - function: "(val) => val ==='' || val === null"
+            message: "此欄位為必填"
+        require: true
+        emdmKey: emdmBomInfo.stageDieProjectConvexHullQty
+
+      # 沖壓機台
+      - key: hmToolingConvexHullPress
+        label: 沖壓機台(T)
+        $Template:
+          - selectorString
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1
+        require: true
+        default: '0T'
+        selectorConfig:
+          idKey: id
+          $Template:
+            - selectorConfig
+          ?getMetalTonnes:
+        constrains:
+          - function: "(val) => val == null"
+            message: "此欄位為必選"
+        emdmKey: emdmBomInfo.stageDieProjectConvexHullPressId
+
+
+      - key: hmToolingConvexHullModule
+        $Template:
+          - mappedValueString
+        displayConfig:
+          $Template:
+            - displayConfig
+          display: false
+        label: Module
+        mapFrom:
+          - productType
+          - type2
+        selectorConfig:
+          ?getModuleMachineByConvexHullDie:
+          # $Template:
+          #   - selectorConfig
+          # values:
+          #   $housing-metal.dropdown.HmModuleRateRivet:
+          #     - moduleMapping
+
+      - key: hmToolingConvexHullModuleCost
+        $Template:
+          - mappedValueFloat
+        label: 機台費
+        displayConfig:
+          $Template:
+            - displayConfig
+          display: false
+        mapFrom:
+          - hmToolingConvexHullPress
+          - hmToolingConvexHullModule
+        selectorConfig:
+          ?getModuleMachinePriceByConvexHullDie:
+          # $Template:
+          #   - selectorConfig
+          # $housing-metal.dropdown.HmModuleRateRivet:
+          #   - ^values
+
+  # 工程模(凸包) End
+
+
+  # 工程模 Start
+  - key: hmToolingStageDie
+    $Template:
+      - compositeInline
+    label: 工程模
+    require: false
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+    items:
+      - key: hmToolingStageDieCount
+        $Template:
+          - inputInt
+        label: 工程數
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1
+        constrains:
+          - function: "(val) => val ==='' || val === null"
+            message: "此欄位為必填"
+        require: true
+        emdmKey: emdmBomInfo.stageDieProjectQty
+
+      - key: hmToolingStageDiePress
+        label: 沖壓機台(T)
+        $Template:
+          - selectorString
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1
+        require: true
+        default: '0T'
+        selectorConfig:
+          idKey: id
+          $Template:
+            - selectorConfig
+          ?getMetalTonnes:
+        constrains:
+          - function: "(val) => val == null"
+            message: "此欄位為必選"
+        emdmKey: emdmBomInfo.hmToolingStageDiePress
+
+        
+
+      - key: hmToolingStageDieModule
+        $Template:
+          - mappedValueString
+        label: Module
+        displayConfig:
+          $Template:
+            - displayConfig
+          display: false
+        mapFrom:
+          - productType
+          - type2
+        selectorConfig:
+          ?getModuleMachineByStageDie:
+          # $Template:
+          #   - selectorConfig
+          # values:
+          #   $housing-metal.dropdown.HmModuleRateStage:
+          #     - moduleMapping
+
+      - key: hmToolingStageDieModuleCost
+        $Template:
+          - mappedValueFloat
+        label: 機台費
+        displayConfig:
+          $Template:
+            - displayConfig
+          display: false
+        mapFrom:
+          - hmToolingStageDiePress
+          - hmToolingStageDieModule
+        selectorConfig:
+          ?getModuleMachinePriceByStageDie:
+          # $Template:
+          #   - selectorConfig
+          # $housing-metal.dropdown.HmModuleRateStage:
+          #   - ^values
+
+
+# 工程模 End
+
+
+
+# 連續模 Start
+  - key: hmToolingProgressiveDie
+    $Template:
+      - compositeInline
+    label: 連續模
+    require: false
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+    items:
+      - key: hmToolingProgressiveDieCount
+        $Template:
+          - inputInt
+          - ^displayConfig
+        label: 工程數
+        constrains:
+          - function: "(val) => val ==='' || val === null"
+            message: "此欄位為必填"
+        require: true
+        emdmKey: emdmBomInfo.progressiveDieProjectQty
+
+      - key: hmToolingProgressiveDieStation
+        $Template:
+          - inputInt
+          - ^displayConfig
+        label: 連續模工站
+        constrains:
+          - function: "(val) => val ==='' || val === null"
+            message: "此欄位為必填"
+        require: true
+        emdmKey: emdmBomInfo.progressiveDieStationQty
+
+      - key: hmToolingProgressiveDiePress
+        label: 沖壓機台(T)
+        $Template:
+          - selectorString
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1
+        require: true
+        default: '0T'
+        selectorConfig:
+          idKey: id
+          $Template:
+            - selectorConfig
+          ?getMetalTonnes:
+        constrains:
+          - function: "(val) => val == null"
+            message: "此欄位為必選"
+        emdmKey: emdmBomInfo.hmToolingProgressiveDiePress
+
+      - key: hmToolingProgressiveDieModule
+        $Template:
+          - mappedValueString
+        label: Module
+        displayConfig:
+          $Template:
+            - displayConfig
+          display: false
+        mapFrom:
+          - productType
+          - type2
+        selectorConfig:
+          ?getModuleMachineByProgressiveDie:
+          # $Template:
+          #   - selectorConfig
+          # values:
+          #   $housing-metal.dropdown.HmModuleRateProgressive:
+          #     - moduleMapping
+
+      - key: hmToolingProgressiveDieModuleCost
+        $Template:
+          - mappedValueFloat
+        label: 機台費
+        displayConfig:
+          $Template:
+            - displayConfig
+          display: false
+        mapFrom:
+          - hmToolingProgressiveDiePress
+          - hmToolingProgressiveDieModule
+        selectorConfig:
+          ?getModuleMachinePriceByProgressiveDie:
+          # $Template:
+          #   - selectorConfig
+          # $housing-metal.dropdown.HmModuleRateProgressive:
+          #   - ^values
+
+
+  # 連續模 End
+
+
+  # 鉚合模 Start
+  - key: hmToolingRivetingDie
+    $Template:
+      - compositeInline
+    label: 鉚合模
+    require: false
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+    items:
+      - key: hmToolingRivetingDieCount
+        $Template:
+          - inputInt
+          - ^displayConfig
+        label: 工程數
+        constrains:
+          - function: "(val) => val ==='' || val === null"
+            message: "此欄位為必填"
+        require: true
+        emdmKey: emdmBomInfo.rivetingDieProjectQty
+
+      - key: hmToolingRivetingDiePress
+        label: 沖壓機台(T)
+        $Template:
+          - selectorString
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1
+        require: true
+        default: '0T'
+        selectorConfig:
+          idKey: id
+          $Template:
+            - selectorConfig
+          ?getMetalTonnes:
+        constrains:
+          - function: "(val) => val == null"
+            message: "此欄位為必選"
+        emdmKey: emdmBomInfo.hmToolingRivetingDiePress
+
+
+      - key: hmToolingRivetingDieModule
+        $Template:
+          - mappedValueString
+        label: Module
+        displayConfig:
+          $Template:
+            - displayConfig
+          display: false
+        mapFrom:
+          - productType
+          - type2
+        selectorConfig:
+          ?getModuleMachineByRivetingDie:
+          # $Template:
+          #   - selectorConfig
+          # values:
+          #   $housing-metal.dropdown.HmModuleRateRivet:
+          #     - moduleMapping
+
+      - key: hmToolingRivetingDieModuleCost
+        $Template:
+          - mappedValueFloat
+        label: 機台費
+        displayConfig:
+          $Template:
+            - displayConfig
+          display: false
+        mapFrom:
+          - hmToolingRivetingDiePress
+          - hmToolingRivetingDieModule
+        selectorConfig:
+          ?getModuleMachinePriceByRivetingDie:
+          # $Template:
+          #   - selectorConfig
+          # $housing-metal.dropdown.HmModuleRateRivet:
+          #   - ^values
+
+
+  # 鉚合模 End
+
+
+
+  - key: hmToolingTotalCount
+    $Template:
+      - realtimeFormulaInt
+      - ^displayConfig
+    label: 總工程數
+    # url: bom/partlist/getDieInfo/:{hmToolingStageDieCount}/:{hmToolingProgressiveDieCount}/:{hmToolingRivetingDieCount}
+    func: "(hmToolingConvexHullCount, hmToolingStageDieCount, hmToolingProgressiveDieCount, hmToolingRivetingDieCount)=>{
+      return hmToolingConvexHullCount + hmToolingStageDieCount + hmToolingProgressiveDieCount + hmToolingRivetingDieCount;
+    }"
+    replaceBy:
+      - hmToolingConvexHullCount
+      - hmToolingStageDieCount
+      - hmToolingProgressiveDieCount
+      - hmToolingRivetingDieCount
+
+  - key: hmToolingModuleMode
+    $Template:
+      - realtimeFormulaString
+      - ^displayConfig
+    label: 模具型式
+    # url: bom/partlist/getDieInfo/:{hmToolingStageDieCount}/:{hmToolingProgressiveDieCount}/:{hmToolingRivetingDieCount}
+    func: "(hmToolingConvexHullCount, hmToolingStageDieCount, hmToolingProgressiveDieCount, hmToolingRivetingDieCount)=>{
+      const mode = [];
+      if (+hmToolingStageDieCount > 0) {
+        mode.push('工程模');
+      }
+      if (+hmToolingProgressiveDieCount > 0) {
+        mode.push('連續模');
+      }
+      if (+hmToolingRivetingDieCount > 0) {
+        mode.push('鉚合模');
+      }
+      if (+hmToolingConvexHullCount > 0) {
+        mode.push('工程模(凸包)');
+      }
+      
+      return mode.join('+');
+    }"
+    replaceBy:
+      - hmToolingConvexHullCount
+      - hmToolingStageDieCount
+      - hmToolingProgressiveDieCount
+      - hmToolingRivetingDieCount
+
+  - key: hmToolingModuleFeature
+    $Template:
+      - inputString
+      - ^displayConfig
+    label: 模具特徵
+    emdmKey: emdmBomInfo.moldFeature
+
+  - key: hmToolingModuleFactory
+    $Template:
+      - inputString
+      - ^displayConfig
+    label: 模具廠
+    emdmKey: emdmBomInfo.moldFactory
+
+  - key: hmToolingMoldingManufacturer
+    $Template:
+      - inputString
+      - ^displayConfig
+    label: 成型廠商
+    emdmKey: emdmBomInfo.moldingFactory
+
+  - key: site
+    label: 生產地
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: id
+      ?getCommonSite:
+        -
+      # $meothers-rubber.dropdown.rubberSiteValues:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    require: false
+    emdmKey: emdmBomInfo.producePlace
+
+  - key: payoutSite
+    label: 掛帳廠別
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: id
+      ?getCommonSite:
+        -
+      # $meothers-rubber.dropdown.rubberSiteValues:
+        - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    require: false
+    emdmKey: emdmBomInfo.openAcctFactory
+
+  - key: hpToolingBonded
+    $Template:
+      - selectorString
+    label: 保稅or非保稅
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: id
+      ?getPlasticToolingBonder:
+        -
+      # $housing-plastic.dropdown.HpToolingBonded:
+      #   - ^values
+      default: null
+    displayConfig:
+      grids: 1
+      display: true
+    emdmKey: emdmBomInfo.bondId
+
+  - key: hmToolingTSDate
+    $Template:
+      - inputDate
+    label: TS Date
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      display: true
+    emdmKey: emdmBomInfo.moldMakingDate
+
+  - key: hmToolingT1Date
+    $Template:
+      - inputDate
+    label: T1 Date
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      display: true
+    emdmKey: emdmBomInfo.moldTrialDate1
+
+  - key: hmToolingRemark
+    $Template:
+      - textarea
+    label: 備註
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1.5
+      display: true
+    constrains:
+      - function: "(val) => { if(!val)return; return val.length > 100; }"
+        message: "長度不得超過 100 字"
+    emdmKey: emdmBomInfo.toolingRemark
+
+

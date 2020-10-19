@@ -1,0 +1,10 @@
+headers:
+  importFile:
+    label: Import File
+    $xray-summary.header-type.typeTemplate:
+      - infoLeftString
+
+  importDate:
+    label: Import Date
+    $xray-summary.header-type.typeTemplate:
+      - infoRightString

@@ -1,0 +1,51 @@
+{
+  "header": [
+    {
+      "key": "material",
+      "name": "材料",
+      "typeof": "string"
+    },
+    {
+      "key": "materialThickness",
+      "name": "材料厚度",
+      "typeof": "number"
+    },
+    {
+      "key": "materialCostPerKilogram",
+      "name": "材料每公斤費用",
+      "typeof": "number"
+    }
+  ],
+  "data": [
+    {
+      "material": "AL1050",
+      "materialThickness": 0.15,
+      "materialCostPerKilogram": 3.6
+    },
+    {
+      "material": "AL1050",
+      "materialThickness": 0.2,
+      "materialCostPerKilogram": 2.9
+    },
+    {
+      "material": "AL1050",
+      "materialThickness": 0.3,
+      "materialCostPerKilogram": 2.9
+    },
+    {
+      "material": "CU1100",
+      "materialThickness": 0.1,
+      "materialCostPerKilogram": 8.6
+    },
+    {
+      "material": "CU1100",
+      "materialThickness": 0.2,
+      "materialCostPerKilogram": 8.2
+    },
+    {
+      "material": "CU1100",
+      "materialThickness": 0.3,
+      "materialCostPerKilogram": 8.2
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+excel:
+  sheets:
+    - $pcb-cls.sheet-pcb:
+      - sheet
+    - $eebom-tmp.sheet-exchange-rate:
+      - sheet

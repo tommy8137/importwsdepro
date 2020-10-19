@@ -1,0 +1,25 @@
+<svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Check Mark/Reject to Member</title>
+    <desc>Created with Sketch.</desc>
+    <!-- <defs>
+        <rect id="path-1" x="0" y="0" width="24" height="24"></rect>
+    </defs> -->
+    <g id="Check-Mark/Reject-to-Member" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ico_red_fail_0">
+            <!-- <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask> -->
+            <g id="Rectangle"></g>
+            <g mask="url(#mask-2)">
+                <g id="btn_reset_n" fill="#E93823" fill-rule="nonzero">
+                    <circle id="Ellipse_6" cx="12" cy="12" r="12"></circle>
+                </g>
+                <g id="Group_5958" transform="translate(6.666667, 6.666667)" stroke="#FFFFFF" stroke-linecap="round" stroke-width="1.33333333">
+                    <path d="M0.666666667,0.666666667 L10,10" id="Line_270"></path>
+                    <path d="M10,0.666666667 L0.666666667,10" id="Line_271"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

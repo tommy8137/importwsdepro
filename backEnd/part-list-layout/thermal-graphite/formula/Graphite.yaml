@@ -1,0 +1,104 @@
+output:
+  total: total
+  # FOR GROUP SUM
+  graphiteTotalPrice1: graphiteTotalPrice1
+  graphiteTotalPrice2: graphiteTotalPrice2
+  glueDoubleTotalPrice1: glueDoubleTotalPrice1
+  glueDoubleTotalPrice2: glueDoubleTotalPrice2
+  petSingleTotalPrice: petSingleTotalPrice
+  workProcessingTotalPrice: workProcessingTotalPrice
+  # for debug
+  _partssizelength: partssizelength
+  _partssizewidth: partssizewidth
+  _graphiteLengthBorder: graphiteLengthBorder
+  _graphiteWidthBorder: graphiteWidthBorder
+  _graphiteLW: graphiteLW
+  _graphiteLWBorder: graphiteLWBorder
+  _graphiteLayerPrice1: graphiteLayerPrice1
+  _graphiteLayerPrice2: graphiteLayerPrice2
+  _glueDoublePrice1: glueDoublePrice1
+  _glueDoublePrice2: glueDoublePrice2
+  totalThickness: totalThickness
+
+
+formula:
+  # 總價 = 石墨片價錢1 + Glue雙面膠價錢1 + 石墨片價錢2 + Glue雙面膠價錢2 + PET單面膠價錢 + 封邊價錢
+  total:
+    type: MATH
+    formula: "(graphiteTotalPrice1 + glueDoubleTotalPrice1 + graphiteTotalPrice2 + glueDoubleTotalPrice2 + petSingleTotalPrice + workProcessingTotalPrice)"
+    label: graphiteTotalPrice
+  # 面積無邊料
+  graphiteLW:
+    type: MATH
+    formula: (partssizelength * partssizewidth) / squareMeter
+    label: graphiteLW
+  # 面積含邊料 = (L + L邊料) * (W + W邊料) / 1000000
+  graphiteLWBorder:
+    type: MATH
+    formula: (partssizelength + graphiteLengthBorder) * (partssizewidth + graphiteWidthBorder) / squareMeter
+    label: graphiteLW
+  # 石墨片價錢1 = 面積含邊料 * 石墨1單價
+  graphiteTotalPrice1:
+    type: MATH
+    formula: "graphiteLWBorder * graphiteLayerPrice1"
+    label: graphiteTotalPrice1
+  # Glue雙面膠價錢1 = 面積無邊料 * 雙面膠1單價
+  glueDoubleTotalPrice1:
+    type: MATH
+    formula: "graphiteLW * glueDoublePrice1"
+    label: glueDoubleTotalPrice1
+  # 石墨片價錢2 = 面積含邊料 * 石墨2單價
+  graphiteTotalPrice2:
+    type: MATH
+    formula: "(isEnabled2 ? graphiteLWBorder * graphiteLayerPrice2 : 0)"
+    label: graphiteTotalPrice2
+  # Glue雙面膠價錢2 = 面積無邊料 * 雙面膠2單價
+  glueDoubleTotalPrice2:
+    type: MATH
+    formula: "(isEnabled2 ? graphiteLW * glueDoublePrice2 : 0)"
+    label: glueDoubleTotalPrice2
+  # PET單面膠價錢 = 面積無邊料 * 單面膠單價
+  petSingleTotalPrice:
+    type: MATH
+    formula: graphiteLW * petSinglePrice
+    label: petSingleTotalPrice
+  # 封邊價錢
+  workProcessingTotalPrice:
+    type: MATH
+    formula: workProcessingPrice + 0
+    label: petSingleTotalPrice
+
+scope:
+  partssizelength: partssizelength
+  partssizewidth: partssizewidth
+  # graphiteLengthBorder: graphiteLengthBorder
+  # graphiteWidthBorder: graphiteWidthBorder
+  # isEnabled1: isEnabled1
+  graphiteLayerPrice1: graphiteLayerPrice1
+  glueDoublePrice1: glueDoublePrice1
+  isEnabled2: isEnabled2
+  graphiteLayerPrice2: graphiteLayerPrice2
+  glueDoublePrice2: glueDoublePrice2
+  petSinglePrice: petSinglePrice
+  workProcessingPrice: workProcessingPrice
+  totalThickness: totalThickness
+  graphiteLayer2: graphiteLayer2
+
+constant:
+  # 平方米
+  squareMeter:
+    label: 平方米
+    value: 1000000
+  # 長邊料
+  graphiteLengthBorder:
+    label: 長邊料
+    ?getGraphiteCommon:
+      - thermal_graphite_components
+      - graphite_l_side_constant
+  # 寬邊料
+  graphiteWidthBorder:
+    label: 寬邊料
+    ?getGraphiteCommon:
+      - thermal_graphite_components
+      - graphite_w_side_constant
+

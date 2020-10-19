@@ -1,0 +1,75 @@
+output:
+  accessoryAssyTime: accessoryAssyTime
+  accessoryCost: accessoryCost
+
+formula:
+  accessoryAssyTime:
+    type: MATH
+    formula: FFCAlFoilQty * ffcal_foil_assy_time
+    label: 輔料組裝時間
+
+  accessoryCost:
+    type: MATH
+    formula: FFCAlFoilQty * ffcAlFoil_unit_price * ((FFCAlFoilLength + ffcal_foil_l_side_constant ) * ( ffc_size_width + ffcal_foil_w_side_constant ) / ffcedge_materia_area_trans_constant ) * ( 1 + ffcal_foil_loss_rate)
+    label:  ffcAlFoil費用
+
+  ffc_size_width:
+    type: MATH
+    formula:  (FFCPin +1) * FFCPitch
+    label: FFC尺寸(W)
+
+global:
+  FFCPin:
+    type: VARIABLE
+    label: FFC Pin
+    bykey: FFCPin
+    groups:
+      - cableFFC
+  FFCPitch:
+    type: VARIABLE
+    label: FFC Pitch
+    bykey: FFCPitch
+    groups:
+      - cableFFC
+
+scope:
+  FFCAlFoilLength: FFCAlFoilLength
+  FFCAlFoilQty: FFCAlFoilQty
+  FFCReinforcingPlateQty: FFCReinforcingPlateQty
+constant:
+  ffcAlFoil_unit_price:
+    label: Al foil 單價
+    ?getFFCCommon:
+      - cable_ffc_components
+      - al_foil_cost
+    # value: 2.97
+  ffcal_foil_l_side_constant:
+    label: Al foil L 邊料常數
+    ?getFFCCommon:
+      - cable_ffc_components
+      - al_foil_l_side_constant
+    # value: 6
+  ffcal_foil_w_side_constant:
+    label: Al foil W 邊料常數
+    ?getFFCCommon:
+      - cable_ffc_components
+      - al_foil_w_side_constant
+    # value: 6
+  ffcedge_materia_area_trans_constant:
+    label: FFC 面積單位換算
+    ?getFFCCommon:
+      - cable_ffc_components
+      - area_unit_transfer_constant
+    # value: 1000000
+  ffcal_foil_loss_rate:
+    label: Al foil loss rate
+    ?getFFCCommon:
+      - cable_ffc_components
+      - al_foil_loss_rate
+    # value: 0.01
+  ffcal_foil_assy_time:
+    label: Al foil 組裝時間
+    ?getFFCCommon:
+      - cable_ffc_components
+      - al_foil_assembly
+    # value: 12

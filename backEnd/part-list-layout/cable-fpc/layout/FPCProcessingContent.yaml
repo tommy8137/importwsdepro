@@ -1,0 +1,60 @@
+multiple: false
+label: 加工內容
+items:
+
+  - key: FPCBendTimes
+    label: 折彎(次)
+    $Template:
+      - selectorString
+      - ^displayConfig
+    require: true
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: id
+      ?getFPCBendtime:
+        -
+      # $cable-fpc.dropdown.FPCBendTimesValues:
+      #   - ^values
+    constrains:
+      - function: "(val) => val == null"
+        message: "此欄位為必選"
+    emdmKey: emdmBomInfo.cmfForm.FPCBendTimes
+
+  - key: FPCPrint
+    label: 印刷(面)
+    $Template:
+      - selectorString
+      - ^displayConfig
+    require: true
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: id
+      ?getFPCPrinttime:
+        -
+      # $cable-fpc.dropdown.FPCPrintValues:
+      #   - ^values
+    constrains:
+      - function: "(val) => val == null"
+        message: "此欄位為必選"
+    emdmKey: emdmBomInfo.cmfForm.FPCPrint
+
+  - key: FPCStopLine
+    label: 停⽌線(條)
+    $Template:
+      - selectorString
+      - ^displayConfig
+    require: true
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: id
+      ?getFPCStopLine:
+        -
+      # $cable-fpc.dropdown.FPCStopLineValues:
+      #   - ^values
+    constrains:
+      - function: "(val) => val == null"
+        message: "此欄位為必選"
+    emdmKey: emdmBomInfo.cmfForm.FPCStopLine

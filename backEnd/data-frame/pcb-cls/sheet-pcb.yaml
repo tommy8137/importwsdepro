@@ -1,0 +1,19 @@
+sheet:
+  label: PCB
+  tables:
+    - key: pcbSummary
+      $Template:
+        - colTable
+      colLength: 1
+      headers:
+        $pcb-cls.header-pcb.pcbsummary-excel:
+          - headers
+    - key: pcbItem
+      $Template:
+        - rowTable
+      anchor:
+        x: A
+        y: 3
+      headers:
+        $pcb-cls.header-pcb.pcbitem-excel:
+          - headers

@@ -1,0 +1,243 @@
+# 材料每公斤費用
+values:
+ - thPlMaterial: AL1050
+   thPlMaterialThickness: 0.15
+   thPlMaterialCostPerKilogram: 3.6
+ - thPlMaterial: AL1050
+   thPlMaterialThickness: 0.2
+   thPlMaterialCostPerKilogram: 2.9
+ - thPlMaterial: AL1050
+   thPlMaterialThickness: 0.3
+   thPlMaterialCostPerKilogram: 2.9
+ - thPlMaterial: AL1050
+   thPlMaterialThickness: 0.4
+   thPlMaterialCostPerKilogram: 2.9
+ - thPlMaterial: AL1050
+   thPlMaterialThickness: 0.5
+   thPlMaterialCostPerKilogram: 2.9
+ - thPlMaterial: AL1050
+   thPlMaterialThickness: 0.6
+   thPlMaterialCostPerKilogram: 2.9
+ - thPlMaterial: AL1050
+   thPlMaterialThickness: 0.8
+   thPlMaterialCostPerKilogram: 2.9
+ - thPlMaterial: AL1050
+   thPlMaterialThickness: 1
+   thPlMaterialCostPerKilogram: 0
+ - thPlMaterial: AL1050
+   thPlMaterialThickness: 1.2
+   thPlMaterialCostPerKilogram: 0
+ - thPlMaterial: AL1050
+   thPlMaterialThickness: 1.5
+   thPlMaterialCostPerKilogram: 0
+ - thPlMaterial: AL1050
+   thPlMaterialThickness: 1.6
+   thPlMaterialCostPerKilogram: 0
+ - thPlMaterial: AL1050
+   thPlMaterialThickness: 2
+   thPlMaterialCostPerKilogram: 0
+ - thPlMaterial: AL1050
+   thPlMaterialThickness: 3
+   thPlMaterialCostPerKilogram: 0
+ - thPlMaterial: AL5052
+   thPlMaterialThickness: 0.3
+   thPlMaterialCostPerKilogram: 0
+ - thPlMaterial: AL5052
+   thPlMaterialThickness: 0.4
+   thPlMaterialCostPerKilogram: 0
+ - thPlMaterial: AL5052
+   thPlMaterialThickness: 0.5
+   thPlMaterialCostPerKilogram: 0
+ - thPlMaterial: AL5052
+   thPlMaterialThickness: 0.6
+   thPlMaterialCostPerKilogram: 0
+ - thPlMaterial: AL5052
+   thPlMaterialThickness: 0.8
+   thPlMaterialCostPerKilogram: 0
+ - thPlMaterial: AL5052
+   thPlMaterialThickness: 1
+   thPlMaterialCostPerKilogram: 5
+ - thPlMaterial: AL5052
+   thPlMaterialThickness: 1.2
+   thPlMaterialCostPerKilogram: 0
+ - thPlMaterial: AL5052
+   thPlMaterialThickness: 1.5
+   thPlMaterialCostPerKilogram: 0
+ - thPlMaterial: AL5052
+   thPlMaterialThickness: 1.6
+   thPlMaterialCostPerKilogram: 0
+ - thPlMaterial: AL5052
+   thPlMaterialThickness: 2
+   thPlMaterialCostPerKilogram: 0
+ - thPlMaterial: AL5052
+   thPlMaterialThickness: 3
+   thPlMaterialCostPerKilogram: 0
+ - thPlMaterial: AL6063
+   thPlMaterialThickness: 1
+   thPlMaterialCostPerKilogram: 4
+ - thPlMaterial: SGCC
+   thPlMaterialThickness: 0.5
+   thPlMaterialCostPerKilogram: 1
+ - thPlMaterial: SGCC
+   thPlMaterialThickness: 0.6
+   thPlMaterialCostPerKilogram: 1
+ - thPlMaterial: SGCC
+   thPlMaterialThickness: 0.8
+   thPlMaterialCostPerKilogram: 1
+ - thPlMaterial: SGCC
+   thPlMaterialThickness: 1
+   thPlMaterialCostPerKilogram: 1
+ - thPlMaterial: SGCC
+   thPlMaterialThickness: 1.2
+   thPlMaterialCostPerKilogram: 1
+ - thPlMaterial: SGCC
+   thPlMaterialThickness: 1.6
+   thPlMaterialCostPerKilogram: 1
+ - thPlMaterial: SGCC
+   thPlMaterialThickness: 2
+   thPlMaterialCostPerKilogram: 1
+ - thPlMaterial: SECC
+   thPlMaterialThickness: 0.5
+   thPlMaterialCostPerKilogram: 1
+ - thPlMaterial: SECC
+   thPlMaterialThickness: 0.6
+   thPlMaterialCostPerKilogram: 1
+ - thPlMaterial: SECC
+   thPlMaterialThickness: 0.8
+   thPlMaterialCostPerKilogram: 1
+ - thPlMaterial: SECC
+   thPlMaterialThickness: 1
+   thPlMaterialCostPerKilogram: 1
+ - thPlMaterial: SECC
+   thPlMaterialThickness: 1.2
+   thPlMaterialCostPerKilogram: 1
+ - thPlMaterial: SECC
+   thPlMaterialThickness: 1.6
+   thPlMaterialCostPerKilogram: 1
+ - thPlMaterial: SECC
+   thPlMaterialThickness: 2
+   thPlMaterialCostPerKilogram: 1
+ - thPlMaterial: SPCC
+   thPlMaterialThickness: 0.5
+   thPlMaterialCostPerKilogram: 0
+ - thPlMaterial: SPCC
+   thPlMaterialThickness: 0.6
+   thPlMaterialCostPerKilogram: 0
+ - thPlMaterial: SPCC
+   thPlMaterialThickness: 0.8
+   thPlMaterialCostPerKilogram: 0
+ - thPlMaterial: SPCC
+   thPlMaterialThickness: 1
+   thPlMaterialCostPerKilogram: 0
+ - thPlMaterial: SPCC
+   thPlMaterialThickness: 1.2
+   thPlMaterialCostPerKilogram: 0
+ - thPlMaterial: SPCC
+   thPlMaterialThickness: 1.6
+   thPlMaterialCostPerKilogram: 0
+ - thPlMaterial: SPTE
+   thPlMaterialThickness: 0.15
+   thPlMaterialCostPerKilogram: 2.4
+ - thPlMaterial: SPTE
+   thPlMaterialThickness: 0.2
+   thPlMaterialCostPerKilogram: 0
+ - thPlMaterial: SPTE
+   thPlMaterialThickness: 0.3
+   thPlMaterialCostPerKilogram: 2.1
+ - thPlMaterial: SPTE
+   thPlMaterialThickness: 0.5
+   thPlMaterialCostPerKilogram: 0
+ - thPlMaterial: PH-CU
+   thPlMaterialThickness: 0.1
+   thPlMaterialCostPerKilogram: 0
+ - thPlMaterial: PH-CU
+   thPlMaterialThickness: 0.15
+   thPlMaterialCostPerKilogram: 0
+ - thPlMaterial: PH-CU
+   thPlMaterialThickness: 0.2
+   thPlMaterialCostPerKilogram: 0
+ - thPlMaterial: PH-CU
+   thPlMaterialThickness: 0.3
+   thPlMaterialCostPerKilogram: 0
+ - thPlMaterial: CU01
+   thPlMaterialThickness: 0.3
+   thPlMaterialCostPerKilogram: 0
+ - thPlMaterial: C1840
+   thPlMaterialThickness: 0.3
+   thPlMaterialCostPerKilogram: 0
+ - thPlMaterial: CU1100
+   thPlMaterialThickness: 0.1
+   thPlMaterialCostPerKilogram: 8.6
+ - thPlMaterial: CU1100
+   thPlMaterialThickness: 0.2
+   thPlMaterialCostPerKilogram: 8.2
+ - thPlMaterial: CU1100
+   thPlMaterialThickness: 0.3
+   thPlMaterialCostPerKilogram: 8.2
+ - thPlMaterial: CU1100
+   thPlMaterialThickness: 0.5
+   thPlMaterialCostPerKilogram: 8.2
+ - thPlMaterial: CU1100
+   thPlMaterialThickness: 0.6
+   thPlMaterialCostPerKilogram: 8.2
+ - thPlMaterial: CU1100
+   thPlMaterialThickness: 0.8
+   thPlMaterialCostPerKilogram: 8.2
+ - thPlMaterial: TMS02
+   thPlMaterialThickness: 0.3
+   thPlMaterialCostPerKilogram: 0
+ - thPlMaterial: KU400
+   thPlMaterialThickness: 0.5
+   thPlMaterialCostPerKilogram: 1.5
+ - thPlMaterial: KU400
+   thPlMaterialThickness: 0.8
+   thPlMaterialCostPerKilogram: 1.5
+ - thPlMaterial: KU400
+   thPlMaterialThickness: 1
+   thPlMaterialCostPerKilogram: 1.5
+ - thPlMaterial: KU400
+   thPlMaterialThickness: 1.2
+   thPlMaterialCostPerKilogram: 1.5
+ - thPlMaterial: KU400
+   thPlMaterialThickness: 1.5
+   thPlMaterialCostPerKilogram: 1.5
+ - thPlMaterial: KU400
+   thPlMaterialThickness: 2
+   thPlMaterialCostPerKilogram: 1.5
+ - thPlMaterial: KU400i
+   thPlMaterialThickness: 0.5
+   thPlMaterialCostPerKilogram: 4.29
+ - thPlMaterial: SUS410
+   thPlMaterialThickness: null
+   thPlMaterialCostPerKilogram: 4.41
+ - thPlMaterial: SUS301
+   thPlMaterialThickness: 0.15
+   thPlMaterialCostPerKilogram: 6.6
+ - thPlMaterial: SUS301
+   thPlMaterialThickness: 0.3
+   thPlMaterialCostPerKilogram: 6
+ - thPlMaterial: SUS301
+   thPlMaterialThickness: 0.5
+   thPlMaterialCostPerKilogram: 5.8
+ - thPlMaterial: SUS301
+   thPlMaterialThickness: 1
+   thPlMaterialCostPerKilogram: 5.8
+ - thPlMaterial: SUS304
+   thPlMaterialThickness: 0.15
+   thPlMaterialCostPerKilogram: 6.6
+ - thPlMaterial: SUS304
+   thPlMaterialThickness: 0.3
+   thPlMaterialCostPerKilogram: 6
+ - thPlMaterial: SUS304
+   thPlMaterialThickness: 0.5
+   thPlMaterialCostPerKilogram: 5.8
+ - thPlMaterial: SUS304
+   thPlMaterialThickness: 1
+   thPlMaterialCostPerKilogram: 5.8
+ - thPlMaterial: 低碳鋼18A
+   thPlMaterialThickness: null
+   thPlMaterialCostPerKilogram: 2.14
+ - thPlMaterial: 快削鋼
+   thPlMaterialThickness: null
+   thPlMaterialCostPerKilogram: null
+

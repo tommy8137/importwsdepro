@@ -1,0 +1,84 @@
+values:
+  - motorArchitecture: 單相
+    fanSize: 60*60*3.5
+    motorArchitecturePrice: 0
+  - motorArchitecture: 三相
+    fanSize: 60*60*3.5
+    motorArchitecturePrice: 0
+
+  - motorArchitecture: 單相
+    fanSize: 60*60*4
+    motorArchitecturePrice: 0
+  - motorArchitecture: 三相
+    fanSize: 60*60*4
+    motorArchitecturePrice: 0
+
+  - motorArchitecture: 單相
+    fanSize: 60*60*4.5
+    motorArchitecturePrice: 0
+  - motorArchitecture: 三相
+    fanSize: 60*60*4.5
+    motorArchitecturePrice: 0
+
+  - motorArchitecture: 單相
+    fanSize: 60*60*5
+    motorArchitecturePrice: 0
+  - motorArchitecture: 三相
+    fanSize: 60*60*5
+    motorArchitecturePrice: 0.25
+
+  - motorArchitecture: 單相
+    fanSize: 60*60*5.5
+    motorArchitecturePrice: 0
+  - motorArchitecture: 三相
+    fanSize: 60*60*5.5
+    motorArchitecturePrice: 0.25
+
+  - motorArchitecture: 單相
+    fanSize: 60*60*6
+    motorArchitecturePrice: 0
+  - motorArchitecture: 三相
+    fanSize: 60*60*6
+    motorArchitecturePrice: 0.25
+
+  - motorArchitecture: 單相
+    fanSize: 60*60*6.5
+    motorArchitecturePrice: 0
+  - motorArchitecture: 三相
+    fanSize: 60*60*6.5
+    motorArchitecturePrice: 0.25
+
+  - motorArchitecture: 單相
+    fanSize: 60*60*7
+    motorArchitecturePrice: 0
+  - motorArchitecture: 三相
+    fanSize: 60*60*7
+    motorArchitecturePrice: 0.25
+
+  - motorArchitecture: 單相
+    fanSize: 60*60*7.5
+    motorArchitecturePrice: 0
+  - motorArchitecture: 三相
+    fanSize: 60*60*7.5
+    motorArchitecturePrice: 0.25
+
+  - motorArchitecture: 單相
+    fanSize: 70*70*5
+    motorArchitecturePrice: 0
+  - motorArchitecture: 三相
+    fanSize: 70*70*5
+    motorArchitecturePrice: 0.25
+
+  - motorArchitecture: 單相
+    fanSize: 80*80*5
+    motorArchitecturePrice: 0
+  - motorArchitecture: 三相
+    fanSize: 80*80*5
+    motorArchitecturePrice: 0.25
+
+
+
+
+
+
+

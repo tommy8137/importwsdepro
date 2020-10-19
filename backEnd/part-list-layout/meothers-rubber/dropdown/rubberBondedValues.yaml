@@ -1,0 +1,4 @@
+# 保稅/非保稅 下拉
+values:
+  - rubberBonded: 非保稅
+  - rubberBonded: 保稅

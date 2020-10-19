@@ -1,0 +1,492 @@
+multiple: false
+label: Rubber part list info
+items:
+  # partnumber 由bom得來
+  - key: partname
+    emdmKey: emdmBomInfo.wistronPartName
+    label: Part Name
+    url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+    $Template:
+      - fetchData
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 2
+    require: false
+
+  # partnumber 由bom得來
+  - key: partnumber
+    emdmKey: emdmBomInfo.wpn
+    label: Part Number
+    url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+    $Template:
+      - fetchData
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    require: false
+
+  - key: materialspec
+    label: Material Spec.
+    url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+    $Template:
+      - fetchData
+      - ^displayConfig
+    constrains:
+      - function: "(val) => val ==='' || val === null"
+        message: "此欄位為必填"
+    require: true
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      mappedKey: 
+        materialspec: materialspec
+      ?getRubberMaterialWithSpec:
+    emdmKey: emdmBomInfo.materialspec
+
+  - key: material
+    label: Material
+    url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+    $Template:
+      - fetchData
+    require: true
+    displayConfig: 
+      $Template:
+        - displayConfig
+      depends:
+        action: lock
+        condition:
+          materialspec: "val => {
+            return val !== 'Other_Fill_ME_Remark';
+          }"
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      mappedKey:
+        material: material
+        materialspec: materialSpecName
+      ?getRubberMaterialDropDownList:
+        -
+      depends: 
+        - materialspec
+        # - type2
+    emdmKey: emdmBomInfo.material
+
+
+  - key: materialColor
+    label: Material Color
+    $Template:
+      - inputString
+      - ^displayConfig
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+
+  - key: density
+    label: 密度
+    $Template:
+      - mappedValueFloat
+    selectorConfig:
+      ?getRubberMaterialSpecDensity:
+        -
+      # $meothers-rubber.dropdown.rubberDensityValues:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    mapFrom:
+      - materialspec
+
+  - key: rubberMaterialPerCost
+    label: 材料單價
+    $Template:
+      - mappedValueFloat
+    mapFrom:
+      - material
+      - materialspec
+    selectorConfig:
+      ?getRubberMaterial:
+        -
+      # $meothers-rubber.dropdown.rubberMaterialPerCostValues:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+
+  - key: materialSize
+    label: Parts Size/Spec (1.W*L*H mm;2.Ф=L*W)
+    $Template:
+      - compositeInline
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1.5
+    items:
+      - key: partssizelength
+        emdmKey: emdmBomInfo.partLong
+        label: L(mm)
+        require: false
+        url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+        $Template:
+          - fetchData
+          - ^displayConfig
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1
+
+      - key: partssizewidth
+        emdmKey: emdmBomInfo.partWidth
+        label: W(mm)
+        require: false
+        url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+        $Template:
+          - fetchData
+          - ^displayConfig
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1
+
+      - key: partssizehigh
+        emdmKey: emdmBomInfo.partHeight
+        label: H(mm)
+        require: false
+        url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+        $Template:
+          - fetchData
+          - ^displayConfig
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1
+
+  - key: rubberStampingTypeName
+    emdmKey: emdmBomInfo.cmfForm.rubberStampingTypeName
+    label: 成品沖型
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: id
+      ?getRubberStamping:
+        -
+      # $meothers-rubber.dropdown.rubberStampingTypeValues:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    require: true
+
+  - key: rubberStampingTypePrice
+    label: 成品沖型價格
+    $Template:
+      - mappedValueFloat
+    selectorConfig:
+      ?getRubberStamping:
+        -
+      # $meothers-rubber.dropdown.rubberStampingTypeValues:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    mapFrom:
+      - rubberStampingTypeName
+
+  - key: rubberStampingTypeCycleTime
+    label: 成品沖型 Cycle time
+    $Template:
+      - mappedValueFloat
+    selectorConfig:
+      ?getRubberStamping:
+        -
+      # $meothers-rubber.dropdown.rubberStampingTypeValues:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    mapFrom:
+      - rubberStampingTypeName
+
+  - key: rubberStampingTypeAmount
+    label: 成品沖型Amount
+    $Template:
+      - mappedValueFloat
+    selectorConfig:
+      ?getRubberStamping:
+        -
+      # $meothers-rubber.dropdown.rubberStampingTypeValues:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    mapFrom:
+      - rubberStampingTypeName
+
+  # === 外觀印刷 ====
+  - key: rubberPrintingType
+    emdmKey: emdmBomInfo.cmfForm.rubberPrintingName
+    label: 外觀印刷
+    $Template:
+      - compositeInline
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1.5
+    items:
+      # 外觀印刷
+      - key: rubberPrintingName
+        emdmKey: emdmBomInfo.cmfForm.rubberPrintingName
+        label: TYPE
+        $Template:
+          - selectorString
+        selectorConfig:
+          $Template:
+            - selectorConfig
+          idKey: id
+          ?getRubberPrinting:
+            -
+          # $meothers-rubber.dropdown.rubberPrintingTypeValues:
+          #   - ^values
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1.5
+        require: true
+
+      # 外觀印刷數量
+      - key: rubberPrintingAmount
+        emdmKey: emdmBomInfo.cmfForm.rubberPrintingAmount
+        label: 幾道
+        $Template:
+          - selectorInt
+        selectorConfig:
+          $Template:
+            - selectorConfig
+          ?getRubberPrintingAmount:
+            -
+          idKey: rubberPrintingAmountId
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1.5
+        require: true
+
+  # 外觀印刷價格
+  - key: rubberPrintingPrice
+    label: 外觀印刷價格
+    $Template:
+      - mappedValueFloat
+    mapFrom:
+      - rubberPrintingName
+    require: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getRubberPrinting:
+        -
+      # $meothers-rubber.dropdown.rubberPrintingTypeValues:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      display: false
+
+  # 成型時間
+  - key: rubberCycleTime
+    # emdmKey: emdmBomInfo.cmfForm.rubberCycleTime
+    label: Cycle Time
+    $Template:
+      - realtimeFormulaFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+      grids: 0
+    func: "() => {
+      return 300;
+    }"
+
+  # === 外觀印刷 ====
+  - key: rubberAdhesiveLabel
+    label: 背膠類型
+    $Template:
+      - compositeInline
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1.5
+    items:
+      # 
+      - key: rubberAdhesiveTypeName
+        $Template:
+          - realtimeFormulaString
+        label: 貼背膠
+        displayConfig:
+          $Template:
+            - displayConfig
+          display: false
+          grids: 0
+        func: "()=> '整版貼'"
+
+      - key: rubberAdhesiveTypePrice
+        label: 貼背膠價格
+        $Template:
+          - mappedValueFloat
+        selectorConfig:
+          ?getRubberAdhesive:
+            -
+          # $meothers-rubber.dropdown.rubberAdhesiveTypeValues:
+          #   - ^values
+        displayConfig:
+          $Template:
+            - displayConfig
+          display: false
+          grids: 0
+        mapFrom:
+          - rubberAdhesiveTypeName
+
+      - key: rubberAdhesiveTypeCycleTime
+        label: 貼背膠 cycleTime
+        $Template:
+          - mappedValueFloat
+        selectorConfig:
+          ?getRubberAdhesive:
+            -
+          # $meothers-rubber.dropdown.rubberAdhesiveTypeValues:
+          #   - ^values
+        displayConfig:
+          $Template:
+            - displayConfig
+          display: false
+          grids: 0
+        mapFrom:
+          - rubberAdhesiveTypeName
+
+      - key: rubberAdhesiveTypeAmount
+        label: 貼背膠 Amount
+        $Template:
+          - mappedValueFloat
+        selectorConfig:
+          ?getRubberAdhesive:
+            -
+          # $meothers-rubber.dropdown.rubberAdhesiveTypeValues:
+          #   - ^values
+        displayConfig:
+          $Template:
+            - displayConfig
+          display: false
+          grids: 0
+        mapFrom:
+          - rubberAdhesiveTypeName
+  
+      - key: rubberAdhesiveThickness
+        emdmKey: emdmBomInfo.cmfForm.rubberAdhesiveThickness
+        label: 厚度T(mm)
+        $Template:
+          - selectorString
+        selectorConfig:
+          $Template:
+            - selectorConfig
+          idKey: thickness_id
+          ?getRubberAdhesiveSetting:
+            -
+          # $meothers-rubber.dropdown.rubberAdhesiveTypeValues:
+          #   - ^values
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1.5
+        require: true
+
+      - key: rubberAdhesiveMaterial
+        emdmKey: emdmBomInfo.cmfForm.rubberAdhesiveMaterial
+        label: 背膠型號
+        $Template:
+          - selectorString
+        selectorConfig:
+          $Template:
+            - selectorConfig
+          idKey: material_id
+          ?getRubberAdhesiveSetting:
+            -
+          # $meothers-rubber.dropdown.rubberAdhesiveTypeValues:
+          #   - ^values
+          depends:
+            - rubberAdhesiveThickness
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1.5
+        require: true
+
+      - key: rubberAdhesiveMaterialPrice
+        label: 背膠型號單價
+        $Template:
+          - mappedValueFloat
+        mapFrom:
+          - rubberAdhesiveMaterial
+        selectorConfig:
+          ?getRubberAdhesiveSetting:
+            -
+          # $meothers-rubber.dropdown.rubberAdhesiveTypeValues:
+          #   - ^values
+
+        displayConfig:
+          $Template:
+            - displayConfig
+          display: false
+          grids: 0
+
+  - key: rubberRemark
+    label: 備註
+    require: false
+    emdmKey: emdmBomInfo.cmfForm.rubberRemark
+    $Template:
+      - textarea
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+
+      
+  - key: materialSpecRemark
+    label: Material Spec Remark
+    $Template:
+      - textarea
+    require: true
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      depends:
+        action: lock
+        condition:
+          materialspec: "val => val === 'Other_Fill_ME_Remark'"
+    emdmKey: emdmBomInfo.materialspec1Remark
+
+
+  - key: materialRemark
+    label: Material Remark
+    $Template:
+      - textarea
+    require: true
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      depends:
+        action: lock
+        condition:
+          material: "val => val === 'Other_Fill_ME_Remark'"
+    emdmKey: emdmBomInfo.materialRemark

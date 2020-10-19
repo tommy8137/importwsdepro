@@ -1,0 +1,21 @@
+output:
+  total: total
+  # FOR GROUP SUM
+  # for debug
+  # graphiteLength: graphiteLength
+  
+
+formula:
+  # 總total
+  total:
+    type: GROUPSUM
+    label: Screw總價
+    bykey: total
+    groups:
+      - Screw
+
+scope:
+  # graphiteLength: graphiteLength
+
+constant:
+  

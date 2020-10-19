@@ -1,0 +1,44 @@
+output:
+  total: total
+  unit_price: oRing_unit_price
+  qty: oRAmount
+  assemblyTime: assemblyTime
+
+formula:
+# O-Ring零件費 = 單價 * 用量 * (1 + O-Ring loss rate) -----------------------------------------------------------------------------------------------------------------
+  total:
+    type: MATH
+    formula: oRing_unit_price * oRAmount * (1 + oRing_loss_rate)
+    label: O-Ring零件費
+
+  # 組裝時間
+  assemblyTime:
+    label: ORing 組裝時間
+    type: MATH
+    formula: oRAmount * worktimeSec
+
+scope:
+  oRAmount: oRAmount
+
+constant:
+  worktimeSec:
+    label: Assembly組裝工時(sec)
+    value: 0
+    # ?getThermalCommon:
+    #   - thermal_module_processing
+    #   - assembly_spend_time
+    # value: 12
+
+  oRing_unit_price:
+    label: O-Ring單價
+    ?getThermalCommon:
+      - thermal_module_components
+      - oring_cost
+    # value: 0.002
+
+  oRing_loss_rate:
+    label: O-Ring loss rate
+    ?getThermalCommon:
+      - thermal_module_components
+      - oring_loss_rate
+    # value: 0.015

@@ -1,0 +1,96 @@
+output:
+  total: total
+  unit_price: unit_price
+  qty: spongeAmount
+  assemblyTime: assemblyTime
+  isOtherFill: isOtherFill
+
+formula:
+  # sponge零件費 = 單價 * 用量 * (1 + sponge loss rate) -----------------------------------------------------------------------------------------------------------------
+  total:
+    type: MATH
+    formula: unit_price * spongeAmount * (1 + sponge_loss_rate)
+    label: sponge零件費
+
+  # 是否有填寫 Other_Fill_ME_Remark
+  isOtherFill:
+    type: FUNC
+    formula: "(...params) => params.some(p => p === 'Other_Fill_ME_Remark')"
+    label: 材料費
+    param:
+      - spongeMaterialThickness
+      - spongeMaterial
+
+  # 單價 = 成品材料費 + 二次加工費 + 管銷&利潤 -----------------------------------------------------------------------------------------------------------------
+  unit_price:
+    type: MATH
+    formula: production_material_cost + secondary_processing_cost + profit
+    label: 單價
+
+  # 成品材料費 = = (長 * 寬 * 材料每M²費用 / 1000000) * (1+ 成品材料費loss rate) -----------------------------------------------------------------------------------------------------------------
+  production_material_cost:
+    type: MATH
+    formula: spongeLength * spongeWidth * spongeMaterialCostPerMM / 1000000 * (1 + production_material_loss_rate)
+    label: 成品材料費
+
+  # 二次加工費 = (用量 / 60) * 二次加工費係數 -----------------------------------------------------------------------------------------------------------------
+  secondary_processing_cost:
+    type: MATH
+    formula: spongeAmount / 60 * secondary_processing_cost_param
+    label: 二次加工費
+
+  # 管銷&利潤 = 二次加工費 * 管銷利潤 -----------------------------------------------------------------------------------------------------------------
+  profit:
+    type: MATH
+    formula: secondary_processing_cost * profit_rate
+    label: 管銷&利潤
+
+  # 組裝時間
+  assemblyTime:
+    label: sponge 組裝時間
+    type: MATH
+    formula: spongeAmount * worktimeSec
+
+scope:
+  spongeLength: spongeLength
+  spongeWidth: spongeWidth
+  spongeMaterialCostPerMM: spongeMaterialCostPerMM
+  spongeAmount: spongeAmount
+  spongeMaterialThickness: spongeMaterialThickness
+  spongeMaterial: spongeMaterial
+
+constant:
+  worktimeSec:
+    label: Assembly組裝工時(sec)
+    ?getThermalCommon:
+      - thermal_module_processing
+      - assembly_spend_time
+    # value: 12
+
+  sponge_loss_rate:
+    label: sponge loss rate
+    ?getThermalCommon:
+      - thermal_module_components
+      - sponge_loss_rate
+    # value: 0.015
+
+  production_material_loss_rate:
+    label: 成品材料費loss rate
+    ?getThermalCommon:
+      - thermal_module_components
+      - sponge_material_loss_rate
+    # value: 0.05
+
+  secondary_processing_cost_param:
+    label: 二次加工費係數
+    ?getThermalCommon:
+      - thermal_module_components
+      - sponge_secondary_processing
+    # value: 0.045
+
+  profit_rate:
+    label: 管銷利潤
+    ?getThermalCommon:
+      - thermal_module_components
+      - sponge_management_and_profit
+    # value: 0.15

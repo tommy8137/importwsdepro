@@ -1,0 +1,81 @@
+version: 2
+showMenu: false
+layout:
+  - key: dieCutTab
+    $Template:
+      - tab
+    label: dieCutTab
+    group:
+      - dieCut
+    items:
+      - key: DieCutPartItemInfo
+        $Template:
+          - composite
+        label: 我不應該被顯示出來
+        $die-cut.layout.partItemInfo:
+          - ^multiple
+          - ^items
+        visiable: false
+
+      # 主要材料費
+      - key: MainMaterial
+        $Template:
+          - composite
+        label: 主要材料
+        group:
+          - materialCost
+        $die-cut.layout.mainMaterial:
+          - ^items
+
+      # 次主要材料費
+      - key: minorMaterialCost
+        $Template:
+          - composite
+        label: 次主要材料
+        group:
+          - minorMaterialCost
+        $die-cut.layout.minorMaterial:
+          - ^multiple
+          - ^items
+        minGroupCount: 0
+        maxGroupCount: 1
+
+      # 輔料
+      - key: usingSubMaterial
+        $Template:
+          - composite
+        label: 輔料
+        group:
+          - subMaterialCost
+        $die-cut.layout.subMaterial:
+          - ^items
+        minGroupCount: 0
+        maxGroupCount: 10
+        multiple: 新增輔料
+
+formulas:
+  dieCut:
+    $die-cut.formula.DieCutFormula:
+      - ^formula
+      - ^output
+      - ^scope
+      - ^global
+      - ^constant
+  materialCost:
+    $die-cut.formula.materialCost:
+      - ^formula
+      - ^output
+      - ^scope
+      - ^constant
+  minorMaterialCost:
+    $die-cut.formula.minorMaterialCost:
+      - ^formula
+      - ^output
+      - ^scope
+      - ^constant
+  subMaterialCost:
+    $die-cut.formula.subMaterialCost:
+      - ^formula
+      - ^output
+      - ^scope
+      - ^constant

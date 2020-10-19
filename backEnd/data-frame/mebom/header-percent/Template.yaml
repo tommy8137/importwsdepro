@@ -1,0 +1,80 @@
+mainHeader:
+  $Template:
+    - dataString
+  twoHeader: true
+  threeHeader: true
+  style:
+    header:
+      $mebom.header-percent.style:
+        - header
+      borderLeft: true
+    subHeader:
+      $mebom.header-percent.style:
+        - cost-header
+    mainHeader:
+      $mebom.header-percent.style:
+        - sub-header
+      borderRight: true
+      borderBottom: true
+    value:
+      $mebom.header-percent.style:
+        - border-data-left
+
+
+subHeader:
+  $Template:
+    - dataString
+  twoHeader: true
+  style:
+    header:
+      $mebom.header-percent.style:
+        - header
+      borderLeft: true
+    subHeader:
+      $mebom.header-percent.style:
+        - sub-header
+      borderRight: true
+    value:
+      $mebom.header-percent.style:
+        - border-data-left
+
+costHeader:
+  $Template:
+    - dataString
+  twoHeader: true
+  style:
+    header:
+      $mebom.header-percent.style:
+        - header
+    subHeader:
+      $mebom.header-percent.style:
+        - header
+      borderRight: true
+      borderBottom: true
+    value:
+      $mebom.header-percent.style:
+        - data
+
+
+
+dataInt:
+  $Template:
+    - dataInt
+  style:
+    header:
+      $mebom.header-percent.style:
+        - header
+    value:
+      $mebom.header-percent.style:
+        - data
+
+dataMaterial:
+  $Template:
+    - dataInt
+  style:
+    header:
+      $mebom.header-percent.style:
+        - border-header-right
+    value:
+      $mebom.header-percent.style:
+        - border-data-right

@@ -1,0 +1,247 @@
+multiple: true
+items:
+# 可編輯的sub-title --------------------------------------------------------------------------------------------------------------------
+  - key: pipeLabel
+    label: Pipe
+    $Template:
+      - label
+    editable: true
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+    default: Pipe
+    emdmMultipleKey: emdmBomInfo.cmfForm.pipe
+    emdmKey: pipeLabel
+
+# 用量 --------------------------------------------------------------------------------------------------------------------
+  - key: pipeAmount
+    label: 用量
+    $Template:
+      - inputInt
+      - ^displayConfig
+    default: 0
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.pipe
+    emdmKey: pipeAmount
+
+# Pipe型式 --------------------------------------------------------------------------------------------------------------------
+  - key: pipeType
+    label: Pipe型式
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: id
+      ?getThermalPipeType:
+        -
+      # $thermal-module.dropdown.PipeTypeValues:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.pipe
+    emdmKey: pipeType
+
+# 外徑 --------------------------------------------------------------------------------------------------------------------
+  - key: outerDiameter
+    label: 外徑
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: diameter_id
+      ?getThermalPipeDiameterType:
+        -
+      # $thermal-module.dropdown.PipeTypeValues:
+      #   - ^values
+      depends:
+        - pipeType
+    displayConfig:
+      $Template:
+        - displayConfig
+      depends:
+        action: lock
+        condition:
+          pipeType: true
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.pipe
+    emdmKey: outerDiameter
+
+# 長度 --------------------------------------------------------------------------------------------------------------------
+  - key: pipeLength
+    label: 長度(L)
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    emdmMultipleKey: emdmBomInfo.cmfForm.pipe
+    emdmKey: pipeLength
+
+# 打扁厚度 --------------------------------------------------------------------------------------------------------------------
+  - key: pipeFlatteningThickness
+    label: 打扁厚度
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    require: true  
+    emdmMultipleKey: emdmBomInfo.cmfForm.pipe
+    emdmKey: pipeFlatteningThickness
+
+# Mapping Cost (目前這兩個都沒用到) --------------------------------------------------------------------------------------------------------------------
+
+  - key: pipiLenODiaToCost
+    $Template:
+      - mappedFuncFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    mapFrom:
+      - outerDiameter
+      - pipeLength
+    func: "(od, len) => {
+            let cost = 0;
+            switch(od) {
+              case 'D4_':
+                if(len >=250) {
+                  return 0.75;
+                }
+                if(len>=200 && len < 250){
+                  return 0.7;
+                }
+                if(len>=175 && len < 200){
+                  return 0.65;
+                }
+                if(len>0 && len < 175){
+                  return 0.6;
+                }
+              case 'D6_':
+                if(len >=250) {
+                  return 0.75;
+                }
+                if(len>=200 && len < 250){
+                  return 0.7;
+                }
+                if(len>=175 && len < 200){
+                  return 0.65;
+                }
+                if(len>0 && len < 175){
+                  return 0.6;
+                }
+              case 'D8_':
+                if(len >=250) {
+                  return 0.95;
+                }
+                if(len>=200 && len < 250){
+                  return 0.9;
+                }
+                if(len>=175 && len < 200){
+                  return 0.85;
+                }
+                if(len>0 && len < 175){
+                  return 0.8;
+                }
+              default:
+                console.log('INVALID CASE');
+                return null;
+            }
+          }"
+
+  - key: pipiFlThickODiaToCost
+    $Template:
+      - mappedFuncFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    mapFrom:
+      - outerDiameter
+      - pipeFlatteningThickness
+    func: "(od, flth) => {
+            let cost = 0;
+            switch(od) {
+              case 'D4_':
+                if(flth >= 2) {
+                  return 0;
+                }
+                if(flth >= 1.8 && flth < 2){
+                  return 0.15;
+                }
+                if(flth >= 1.6 && flth < 1.8){
+                  return 0.2;
+                }
+                if(flth >= 1.4 && flth < 1.6){
+                  return 0.25;
+                }
+                if(flth >= 1.2 && flth < 1.4){
+                  return 0.35;
+                }
+                if(flth >= 1.0 && flth < 1.2){
+                  return 0.45;
+                }
+                if(flth >= 0.8 && flth < 1.0){
+                  return 0.6;
+                }
+                if(flth >= 0.6 && flth < 0.8){
+                  return 0.8;
+                }
+                if(flth >= 0.0 && flth < 0.6){
+                  return 1;
+                }
+              case 'D6_':
+                if(flth >= 2) {
+                  return 0;
+                }
+                if(flth >= 1.8 && flth < 2){
+                  return 0.15;
+                }
+                if(flth >= 1.6 && flth < 1.8){
+                  return 0.2;
+                }
+                if(flth >= 1.4 && flth < 1.6){
+                  return 0.25;
+                }
+                if(flth >= 1.2 && flth < 1.4){
+                  return 0.35;
+                }
+                if(flth >= 1.0 && flth < 1.2){
+                  return 0.45;
+                }
+                if(flth >= 0.8 && flth < 1.0){
+                  return 0.6;
+                }
+                if(flth >= 0.0 && flth < 0.8){
+                  return 1;
+                }
+              case 'D8_':
+                if(flth >= 2) {
+                  return 0;
+                }
+                if(flth >= 1.8 && flth < 2){
+                  return 0.25;
+                }
+                if(flth >= 1.6 && flth < 1.8){
+                  return 0.3;
+                }
+                if(flth >= 1.4 && flth < 1.6){
+                  return 0.4;
+                }
+                if(flth >= 1.2 && flth < 1.4){
+                  return 0.5;
+                }
+                if(flth >= 1.0 && flth < 1.2){
+                  return 0.6;
+                }
+                if(flth >= 0.0 && flth < 1.0){
+                  return 1;
+                }
+              default:
+                console.log('INVALID CASE');
+                return null;
+            }
+          }"
+
+

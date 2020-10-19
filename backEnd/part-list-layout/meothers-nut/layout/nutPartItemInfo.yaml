@@ -1,0 +1,263 @@
+multiple: false
+label: Rubber part list info
+items:
+  - key: nutType
+    $Template:
+      - mappedValueString
+    label: Type
+    displayConfig:
+      $Template:
+        - displayConfig
+      # display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getNutTypeValues:
+        -
+      # $meothers-nut.dropdown.nutTypeValues:
+      #   - ^values
+    mapFrom:
+      - materialspec
+
+  # Material
+  - key: materialspec
+    emdmKey: emdmBomInfo.materialspec
+    label: Material
+    url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+    $Template:
+      - fetchData
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getNutTypeValues:
+        -
+    require: false
+ 
+  - key: material
+    emdmKey: emdmBomInfo.materialspec
+    label: 為了給materialspec轉換key
+    $Template:
+      - realtimeFormulaString
+      - ^displayConfig
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+      grids: 0
+    func: "(materialspec) => {
+      return materialspec;
+    }"
+    replaceBy:
+      - materialspec
+
+  - key: materialUnitPrice
+    label: 材料單價
+    $Template:
+      - mappedValueFloat
+    selectorConfig:
+      ?getTurningMaterial:
+        -
+      # $meothers-nut.dropdown.nutMaterialUnitPriceValues:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    mapFrom:
+      - material
+
+  - key: materialHeatingUnitPrice
+    $Template:
+      - mappedValueFloat
+    label: 熱處理單價
+    selectorConfig:
+      ?getTurningMaterial:
+        -
+      # $meothers-nut.dropdown.nutMaterialUnitPriceValues:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      display: false
+    mapFrom:
+      - material
+
+  - key: materialDensity
+    label: 材料密度
+    $Template:
+      - mappedValueFloat
+    selectorConfig:
+      ?getTurningMaterial:
+        -
+      # $meothers-nut.dropdown.nutMaterialUnitPriceValues:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    mapFrom:
+      - material
+
+  - key: partssizemName
+    label: 牙徑(M)
+    $Template:
+      - selectorString
+    selectorConfig:
+      idKey: id
+      ?getTurningDiameter:
+        -
+      # $meothers-nut.dropdown.nutToothDiameterValues:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.partssizemName
+
+  - key: partssizem
+    label: 牙徑(M) value
+    $Template:
+      - mappedValueFloat
+    selectorConfig:
+      ?getTurningDiameter:
+        -
+      # $meothers-nut.dropdown.nutToothDiameterValues:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    mapFrom:
+      - partssizemName
+
+
+  - key: d1OutterDiameter
+    label: D1外徑
+    $Template:
+      - inputFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+    require: true
+    default: 0
+    emdmKey: emdmBomInfo.cmfForm.d1OutterDiameter
+
+  - key: d1Height
+    label: D1高
+    $Template:
+      - inputFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+    require: true
+    default: 0
+    emdmKey: emdmBomInfo.cmfForm.d1Height
+
+  - key: d2Diameter
+    label: D2直徑
+    $Template:
+      - ^displayConfig
+      - inputFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      depends:
+        action: lock
+        condition:
+          nutType: "nutType => nutType === 'Bracket NUT'"
+    default: 0
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.d2Diameter
+
+
+  - key: d2Height
+    label: D2高
+    $Template:
+      - inputFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      depends:
+        action: lock
+        condition:
+          nutType: "nutType => nutType === 'Bracket NUT'"
+    default: 0
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.d2Height
+
+
+  - key: innerDiameter
+    label: OD內徑
+    $Template:
+      - mappedValueFloat
+    selectorConfig:
+      ?getTurningDiameter:
+        -
+      # $meothers-nut.dropdown.nutToothDiameterValues:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+    mapFrom:
+      - partssizemName
+
+  - key: innerDiameterHeight
+    $Template:
+      - realtimeFormulaFloat
+    label: OD內徑高
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    func: "(d1Height, d2Height)=>{
+      return +d1Height + +d2Height;
+    }"
+    replaceBy:
+      - d1Height
+      - d2Height
+
+  # 電鍍
+  - key: enabledPlating
+    label: 電鍍
+    $Template:
+      - checkBox
+    displayConfig:
+      $Template:
+        - displayConfig
+    emdmKey: emdmBomInfo.cmfForm.enabledPlating
+
+  # 熱處理
+  - key: enabledHeat
+    label: 熱處理
+    $Template:
+      - checkBox
+    displayConfig:
+      $Template:
+        - displayConfig
+    emdmKey: emdmBomInfo.cmfForm.enabledHeat
+
+
+  - key: materialSpecRemark
+    label: Material Remark # 雖然是顯示material remark, 但其實是顯示 material spec remark
+    $Template:
+      - textarea
+    require: true
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      depends:
+        action: lock
+        condition:
+          materialspec: "val => val === 'Other_Fill_ME_Remark'"
+    emdmKey: emdmBomInfo.materialspec1Remark
+
+
+

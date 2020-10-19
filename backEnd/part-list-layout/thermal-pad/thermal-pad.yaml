@@ -1,0 +1,45 @@
+version: 2
+layout:
+  - key: thermal-pad
+    group:
+      - ThermalPad
+    label: default
+    visiable: false
+    $Template:
+      - tab
+    items:
+      # $XXX(ex, $Fan) need first than $template-composite
+      - key: Process
+        $Template:
+          - composite
+        label: 二次加工
+        $thermal-pad.layout.Process:
+          - ^items
+
+      - key: Pad
+        $Template:
+          - composite
+        label: Thermal Pad
+        group:
+          - Pad
+        $thermal-pad.layout.ThermalPad:
+          - ^multiple
+          - ^items
+        minGroupCount: 0
+
+
+formulas:
+  ThermalPad:
+    $thermal-pad.formula.ThermalPad:
+      - ^formula
+      - ^scope
+      - ^constant
+      - ^output
+
+  Pad:
+    $thermal-pad.formula.Pad:
+      - ^formula
+      - ^constant
+      - ^output
+      - ^scope
+

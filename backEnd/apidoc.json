@@ -1,0 +1,8 @@
+{
+    "name": "WiEProcurement",
+    "version": "1.0.0",
+    "description": "apiDoc for API Document",
+    "title": "WiEProcurement API Document",
+    "url": "https://localhost:3000", 
+    "sampleUrl": "https://localhost:3000"
+  }

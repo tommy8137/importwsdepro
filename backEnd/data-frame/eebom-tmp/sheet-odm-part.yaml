@@ -1,0 +1,38 @@
+sheet:
+  label: ODM Part-BOM
+  tables:
+    - key: odmPartSummary
+      $Template:
+        - colTable
+      headers:
+        $eebom-tmp.header-full-bom.fullbomsummary-excel:
+          - headers
+    - key: odmPartItem
+      $Template:
+        - rowTable
+      headers:
+        $eebom-tmp.header-full-bom.fullbomitem-excel:
+          - headers
+    - key: exchangeRateDefault
+      $Template:
+        - traverseTable
+      headers:
+        $eebom-tmp.header-full-bom.fullbomexchange-excel:
+          - headers
+
+    - key: costFilter
+      $Template:
+        - listTable
+      anchor:
+        x: F
+        y: 1
+      headers:
+        $eebom-tmp.header-full-bom.fullbomcost-excel:
+          - headers
+
+    - key: opportunityFilter
+      $Template:
+        - listTable
+      headers:
+        $eebom-tmp.header-full-bom.fullbomopportunity-excel:
+          - headers

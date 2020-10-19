@@ -1,0 +1,13 @@
+values:
+  - teflonGuage: 24
+    teflonUnitPrice: 0.09
+  - teflonGuage: 26
+    teflonUnitPrice: 0.062
+  - teflonGuage: 28
+    teflonUnitPrice: 0.06
+  - teflonGuage: 30
+    teflonUnitPrice: 0.052
+  - teflonGuage: 34
+    teflonUnitPrice: 0.028
+  - teflonGuage: 36
+    teflonUnitPrice: 0.028

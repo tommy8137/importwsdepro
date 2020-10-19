@@ -1,0 +1,32 @@
+multiple: true
+items:
+  - key: cmfProcessListCNCPLCheckBox
+    $Template:
+      - checkBox
+    label: Exist
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListCNCPLCheckBox
+
+  - key: cmfProcessListCNCPLLength
+    $Template:
+      - inputFloat
+    label: 加工長度(mm)
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfProcessListCNCPLCheckBox: true
+      grids: 1
+      display: true
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfProcessListCNCPLCheckBox)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfProcessListCNCPLCheckBox
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListCNCPLLength

@@ -1,0 +1,209 @@
+items:
+  # - key: fcst_allowance
+  #   label: FCST寬放值
+  #   $Template:
+  #     - inputFloat
+  #     - ^displayConfig
+  #   default:
+  #     ?getPlasticCommon:
+  #       byKey: value
+  #       params:
+  #         - housing_plastic_material
+  #         - fcst_allowance
+  - key: painting
+    label: "噴塗"
+    $Template:
+      - label
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+    level: 1
+
+
+  - key: paintingAreaLengthAllowance
+    label: 噴塗面積寬放(L)
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    default:  # 0
+      ?getPlasticCommon:
+        byKey: value
+        params:
+          - housing_plastic_paint
+          - paint_top_area_L
+
+  - key: paintingAreaWidthAllowance
+    label: 噴塗面積寬放(W)
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    default: # 0
+      ?getPlasticCommon:
+        byKey: value
+        params:
+          - housing_plastic_paint
+          - paint_top_area_W
+
+ 
+  - key: cmfPaintingCycleTime
+    label: 噴塗 Cycle Time
+    $Template:
+      - inputFloat
+    displayConfig:
+      $Template:
+        - ^displayConfig
+      grids: 1
+      display: true
+    func: "(productType, cmfPaintingMachineType)=>{
+      if(productType === 'NB' && cmfPaintingMachineType === '往復機') {
+        return 60;
+      } else if(cmfPaintingMachineType === 'ABB_ROBOT') {
+        return 120;
+      } else {
+        return 40;
+      }
+    }"
+    replaceBy:
+      - productType
+      - cmfPaintingMachineType
+
+
+  - key: paintingLossRate
+    label: 噴漆塗料耗損(%)
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    defaultCalc: "(val) => { return val * 100; }"
+    default:
+      ?getPlasticCommon:
+        byKey: value
+        params:
+          - housing_plastic_paint
+          - paint_single_finishing_loss_rate
+    displayConfig:
+      $Template:
+        - displayConfig
+
+  - key: cmfPaintingMachineType
+    $Template:
+      - selectorString
+    label: 機台類型
+    default: '往復機'
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      # $housing-plastic.dropdown.CmfPaintingMachineType:
+      #   - ^values
+      ?getPlasticPainMachine:
+        -
+    displayConfig:
+      grids: 1
+      display: true
+    require: true
+
+    # 一次可噴成品數量 (pcs)
+    # 改為自動帶入
+  - key: cmfPPaintingPcs
+    label: 一次可噴成品數量 (pcs)
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    func: "(type, l, w)=>{
+        if(!l || !w) {
+          return 0;
+        }
+        if(type === '往復機') {
+          return parseInt((1000 + 50) / (l + 50), 10) * 
+                parseInt((1000 - 50) / (w + 50), 10);
+        } else if (type === 'ABB_ROBOT') {
+          return 4;
+        } else {
+          return 1;
+        }
+    }"
+    replaceBy:
+      - cmfPaintingMachineType
+      - cmfPaintingLength
+      - cmfPaintingWidth
+
+  - key: cmfPaintingAreaLW
+    $Template:
+      - selectorInt
+    label: 噴漆面 頂面數
+    default: 1
+    displayConfig:
+      grids: 1
+      display: true
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      $housing-plastic.dropdown.CmfPPaintingFaces:
+        - ^values
+    require: true
+
+  - key: cmfPaintingAreaLH
+    $Template:
+      - selectorInt
+    label: 噴漆面 長側面數
+    displayConfig:
+      grids: 1
+      display: true
+    default: 2
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      $housing-plastic.dropdown.CmfPPaintingFaces:
+        - ^values
+    require: true
+
+  # 噴漆面 短側面數
+  - key: cmfPaintingAreaWH
+    $Template:
+      - selectorInt
+    label: 噴漆面 短側面數
+    displayConfig:
+      grids: 1
+      display: true
+    default: 2
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      $housing-plastic.dropdown.CmfPPaintingFaces:
+        - ^values
+    require: true
+
+  - key: painting_ncvm
+    label: "NCVM"
+    $Template:
+      - label
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+    level: 1
+
+  - key: NCVMAreaLengthAllowance
+    label: NCVM面積寬放(L)
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    default: # 0
+      ?getPlasticCommon:
+        byKey: value
+        params:
+          - housing_plastic_secondary_processing
+          - NCVM_paint_top_area_L
+
+  - key: NCVMAreaWidthAllowance
+    label: NCVM面積寬放(W)
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    default: # 0
+      ?getPlasticCommon:
+        byKey: value
+        params:
+          - housing_plastic_secondary_processing
+          - NCVM_paint_top_area_W
+

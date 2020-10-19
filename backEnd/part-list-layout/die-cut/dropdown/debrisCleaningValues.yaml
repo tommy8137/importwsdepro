@@ -1,0 +1,6 @@
+# 除屑清理/ 排廢料費 ㄑ
+values:
+  - debrisCleaning: Y
+    debrisCleaningCount: 1
+  - debrisCleaning: N
+    debrisCleaningCount: 0

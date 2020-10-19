@@ -1,0 +1,15 @@
+headers:
+  no:
+    label: NO
+    $Template:
+      - serial
+    style:
+      header:
+        $example.header-hitrate.style:
+          - ht-header
+      value:
+        $example.header-hitrate.style:
+          - ht-catagory
+
+  $example.header-hitrate.base:
+    - headers

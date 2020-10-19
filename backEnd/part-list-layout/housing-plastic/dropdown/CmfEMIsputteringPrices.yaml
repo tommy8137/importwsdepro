@@ -1,0 +1,459 @@
+values:
+  # WKS, PC+ABS
+  - cmfPEMISputtering: N/A
+    site: WKS
+    cmfPEMISputteringBaseMaterial: PC+ABS
+    cmfEMIsputteringPrice: null
+  - cmfPEMISputtering: 10
+    site: WKS
+    cmfPEMISputteringBaseMaterial: PC+ABS
+    cmfEMIsputteringPrice: 0.27
+  - cmfPEMISputtering: 11
+    site: WKS
+    cmfPEMISputteringBaseMaterial: PC+ABS
+    cmfEMIsputteringPrice: 0.27
+  - cmfPEMISputtering: 12
+    site: WKS
+    cmfPEMISputteringBaseMaterial: PC+ABS
+    cmfEMIsputteringPrice: 0.35
+  - cmfPEMISputtering: 13
+    site: WKS
+    cmfPEMISputteringBaseMaterial: PC+ABS
+    cmfEMIsputteringPrice: 0.35
+  - cmfPEMISputtering: 14
+    site: WKS
+    cmfPEMISputteringBaseMaterial: PC+ABS
+    cmfEMIsputteringPrice: 0.42
+  - cmfPEMISputtering: 15
+    site: WKS
+    cmfPEMISputteringBaseMaterial: PC+ABS
+    cmfEMIsputteringPrice: 0.44
+  - cmfPEMISputtering: 16
+    site: WKS
+    cmfPEMISputteringBaseMaterial: PC+ABS
+    cmfEMIsputteringPrice: 0.44
+  - cmfPEMISputtering: 17
+    site: WKS
+    cmfPEMISputteringBaseMaterial: PC+ABS
+    cmfEMIsputteringPrice: 0.58
+
+
+  # WKS, PC+GF≦25%
+  - cmfPEMISputtering: N/A
+    site: WKS
+    cmfPEMISputteringBaseMaterial: PC+GF≦25%
+    cmfEMIsputteringPrice: null
+  - cmfPEMISputtering: 10
+    site: WKS
+    cmfPEMISputteringBaseMaterial: PC+GF≦25%
+    cmfEMIsputteringPrice: 0.30
+  - cmfPEMISputtering: 11
+    site: WKS
+    cmfPEMISputteringBaseMaterial: PC+GF≦25%
+    cmfEMIsputteringPrice: 0.30
+  - cmfPEMISputtering: 12
+    site: WKS
+    cmfPEMISputteringBaseMaterial: PC+GF≦25%
+    cmfEMIsputteringPrice: 0.38
+  - cmfPEMISputtering: 13
+    site: WKS
+    cmfPEMISputteringBaseMaterial: PC+GF≦25%
+    cmfEMIsputteringPrice: 0.38
+  - cmfPEMISputtering: 14
+    site: WKS
+    cmfPEMISputteringBaseMaterial: PC+GF≦25%
+    cmfEMIsputteringPrice: 0.42
+  - cmfPEMISputtering: 15
+    site: WKS
+    cmfPEMISputteringBaseMaterial: PC+GF≦25%
+    cmfEMIsputteringPrice: 0.44
+  - cmfPEMISputtering: 16
+    site: WKS
+    cmfPEMISputteringBaseMaterial: PC+GF≦25%
+    cmfEMIsputteringPrice: 0.44
+  - cmfPEMISputtering: 17
+    site: WKS
+    cmfPEMISputteringBaseMaterial: PC+GF≦25%
+    cmfEMIsputteringPrice: 0.58
+
+  # WKS, PC+GF>25%
+  - cmfPEMISputtering: N/A
+    site: WKS
+    cmfPEMISputteringBaseMaterial: PC+GF>25%
+    cmfEMIsputteringPrice: null
+  - cmfPEMISputtering: 10
+    site: WKS
+    cmfPEMISputteringBaseMaterial: PC+GF>25%
+    cmfEMIsputteringPrice: 0.3
+  - cmfPEMISputtering: 11
+    site: WKS
+    cmfPEMISputteringBaseMaterial: PC+GF>25%
+    cmfEMIsputteringPrice: 0.3
+  - cmfPEMISputtering: 12
+    site: WKS
+    cmfPEMISputteringBaseMaterial: PC+GF>25%
+    cmfEMIsputteringPrice: 0.38
+  - cmfPEMISputtering: 13
+    site: WKS
+    cmfPEMISputteringBaseMaterial: PC+GF>25%
+    cmfEMIsputteringPrice: 0.38
+  - cmfPEMISputtering: 14
+    site: WKS
+    cmfPEMISputteringBaseMaterial: PC+GF>25%
+    cmfEMIsputteringPrice: 0.47
+  - cmfPEMISputtering: 15
+    site: WKS
+    cmfPEMISputteringBaseMaterial: PC+GF>25%
+    cmfEMIsputteringPrice: 0.53
+  - cmfPEMISputtering: 16
+    site: WKS
+    cmfPEMISputteringBaseMaterial: PC+GF>25%
+    cmfEMIsputteringPrice: 0.53
+  - cmfPEMISputtering: 17
+    site: WKS
+    cmfPEMISputteringBaseMaterial: PC+GF>25%
+    cmfEMIsputteringPrice: 0.63
+
+      # WZS, PC+ABS
+  - cmfPEMISputtering: N/A
+    site: WZS
+    cmfPEMISputteringBaseMaterial: PC+ABS
+    cmfEMIsputteringPrice: null
+  - cmfPEMISputtering: 10
+    site: WZS
+    cmfPEMISputteringBaseMaterial: PC+ABS
+    cmfEMIsputteringPrice: 0.27
+  - cmfPEMISputtering: 11
+    site: WZS
+    cmfPEMISputteringBaseMaterial: PC+ABS
+    cmfEMIsputteringPrice: 0.27
+  - cmfPEMISputtering: 12
+    site: WZS
+    cmfPEMISputteringBaseMaterial: PC+ABS
+    cmfEMIsputteringPrice: 0.35
+  - cmfPEMISputtering: 13
+    site: WZS
+    cmfPEMISputteringBaseMaterial: PC+ABS
+    cmfEMIsputteringPrice: 0.35
+  - cmfPEMISputtering: 14
+    site: WZS
+    cmfPEMISputteringBaseMaterial: PC+ABS
+    cmfEMIsputteringPrice: 0.42
+  - cmfPEMISputtering: 15
+    site: WZS
+    cmfPEMISputteringBaseMaterial: PC+ABS
+    cmfEMIsputteringPrice: 0.44
+  - cmfPEMISputtering: 16
+    site: WZS
+    cmfPEMISputteringBaseMaterial: PC+ABS
+    cmfEMIsputteringPrice: 0.44
+  - cmfPEMISputtering: 17
+    site: WZS
+    cmfPEMISputteringBaseMaterial: PC+ABS
+    cmfEMIsputteringPrice: 0.58
+
+
+  # WZS, PC+GF≦25%
+  - cmfPEMISputtering: N/A
+    site: WZS
+    cmfPEMISputteringBaseMaterial: PC+GF≦25%
+    cmfEMIsputteringPrice: null
+  - cmfPEMISputtering: 10
+    site: WZS
+    cmfPEMISputteringBaseMaterial: PC+GF≦25%
+    cmfEMIsputteringPrice: 0.30
+  - cmfPEMISputtering: 11
+    site: WZS
+    cmfPEMISputteringBaseMaterial: PC+GF≦25%
+    cmfEMIsputteringPrice: 0.30
+  - cmfPEMISputtering: 12
+    site: WZS
+    cmfPEMISputteringBaseMaterial: PC+GF≦25%
+    cmfEMIsputteringPrice: 0.38
+  - cmfPEMISputtering: 13
+    site: WZS
+    cmfPEMISputteringBaseMaterial: PC+GF≦25%
+    cmfEMIsputteringPrice: 0.38
+  - cmfPEMISputtering: 14
+    site: WZS
+    cmfPEMISputteringBaseMaterial: PC+GF≦25%
+    cmfEMIsputteringPrice: 0.42
+  - cmfPEMISputtering: 15
+    site: WZS
+    cmfPEMISputteringBaseMaterial: PC+GF≦25%
+    cmfEMIsputteringPrice: 0.44
+  - cmfPEMISputtering: 16
+    site: WZS
+    cmfPEMISputteringBaseMaterial: PC+GF≦25%
+    cmfEMIsputteringPrice: 0.44
+  - cmfPEMISputtering: 17
+    site: WZS
+    cmfPEMISputteringBaseMaterial: PC+GF≦25%
+    cmfEMIsputteringPrice: 0.58
+
+  # WZS, PC+GF>25%
+  - cmfPEMISputtering: N/A
+    site: WZS
+    cmfPEMISputteringBaseMaterial: PC+GF>25%
+    cmfEMIsputteringPrice: null
+  - cmfPEMISputtering: 10
+    site: WZS
+    cmfPEMISputteringBaseMaterial: PC+GF>25%
+    cmfEMIsputteringPrice: 0.3
+  - cmfPEMISputtering: 11
+    site: WZS
+    cmfPEMISputteringBaseMaterial: PC+GF>25%
+    cmfEMIsputteringPrice: 0.3
+  - cmfPEMISputtering: 12
+    site: WZS
+    cmfPEMISputteringBaseMaterial: PC+GF>25%
+    cmfEMIsputteringPrice: 0.38
+  - cmfPEMISputtering: 13
+    site: WZS
+    cmfPEMISputteringBaseMaterial: PC+GF>25%
+    cmfEMIsputteringPrice: 0.38
+  - cmfPEMISputtering: 14
+    site: WZS
+    cmfPEMISputteringBaseMaterial: PC+GF>25%
+    cmfEMIsputteringPrice: 0.47
+  - cmfPEMISputtering: 15
+    site: WZS
+    cmfPEMISputteringBaseMaterial: PC+GF>25%
+    cmfEMIsputteringPrice: 0.53
+  - cmfPEMISputtering: 16
+    site: WZS
+    cmfPEMISputteringBaseMaterial: PC+GF>25%
+    cmfEMIsputteringPrice: 0.53
+  - cmfPEMISputtering: 17
+    site: WZS
+    cmfPEMISputteringBaseMaterial: PC+GF>25%
+    cmfEMIsputteringPrice: 0.63
+ # WCQ, PC+ABS
+  - cmfPEMISputtering: N/A
+    site: WCQ
+    cmfPEMISputteringBaseMaterial: PC+ABS
+    cmfEMIsputteringPrice: null
+  - cmfPEMISputtering: 10
+    site: WCQ
+    cmfPEMISputteringBaseMaterial: PC+ABS
+    cmfEMIsputteringPrice: 0.35
+  - cmfPEMISputtering: 11
+    site: WCQ
+    cmfPEMISputteringBaseMaterial: PC+ABS
+    cmfEMIsputteringPrice: 0.35
+  - cmfPEMISputtering: 12
+    site: WCQ
+    cmfPEMISputteringBaseMaterial: PC+ABS
+    cmfEMIsputteringPrice: 0.39
+  - cmfPEMISputtering: 13
+    site: WCQ
+    cmfPEMISputteringBaseMaterial: PC+ABS
+    cmfEMIsputteringPrice: 0.39
+  - cmfPEMISputtering: 14
+    site: WCQ
+    cmfPEMISputteringBaseMaterial: PC+ABS
+    cmfEMIsputteringPrice: 0.43
+  - cmfPEMISputtering: 15
+    site: WCQ
+    cmfPEMISputteringBaseMaterial: PC+ABS
+    cmfEMIsputteringPrice: 0.46
+  - cmfPEMISputtering: 16
+    site: WCQ
+    cmfPEMISputteringBaseMaterial: PC+ABS
+    cmfEMIsputteringPrice: 0.46
+  - cmfPEMISputtering: 17
+    site: WCQ
+    cmfPEMISputteringBaseMaterial: PC+ABS
+    cmfEMIsputteringPrice: 0.58
+
+
+  # WCQ, PC+GF≦25%
+  - cmfPEMISputtering: N/A
+    site: WCQ
+    cmfPEMISputteringBaseMaterial: PC+GF≦25%
+    cmfEMIsputteringPrice: null
+  - cmfPEMISputtering: 10
+    site: WCQ
+    cmfPEMISputteringBaseMaterial: PC+GF≦25%
+    cmfEMIsputteringPrice: 0.35
+  - cmfPEMISputtering: 11
+    site: WCQ
+    cmfPEMISputteringBaseMaterial: PC+GF≦25%
+    cmfEMIsputteringPrice: 0.35
+  - cmfPEMISputtering: 12
+    site: WCQ
+    cmfPEMISputteringBaseMaterial: PC+GF≦25%
+    cmfEMIsputteringPrice: 0.39
+  - cmfPEMISputtering: 13
+    site: WCQ
+    cmfPEMISputteringBaseMaterial: PC+GF≦25%
+    cmfEMIsputteringPrice: 0.39
+  - cmfPEMISputtering: 14
+    site: WCQ
+    cmfPEMISputteringBaseMaterial: PC+GF≦25%
+    cmfEMIsputteringPrice: 0.43
+  - cmfPEMISputtering: 15
+    site: WCQ
+    cmfPEMISputteringBaseMaterial: PC+GF≦25%
+    cmfEMIsputteringPrice: 0.46
+  - cmfPEMISputtering: 16
+    site: WCQ
+    cmfPEMISputteringBaseMaterial: PC+GF≦25%
+    cmfEMIsputteringPrice: 0.46
+  - cmfPEMISputtering: 17
+    site: WCQ
+    cmfPEMISputteringBaseMaterial: PC+GF≦25%
+    cmfEMIsputteringPrice: 0.58
+
+  # WCQ, PC+GF>25%
+  - cmfPEMISputtering: N/A
+    site: WCQ
+    cmfPEMISputteringBaseMaterial: PC+GF>25%
+    cmfEMIsputteringPrice: null
+  - cmfPEMISputtering: 10
+    site: WCQ
+    cmfPEMISputteringBaseMaterial: PC+GF>25%
+    cmfEMIsputteringPrice: 0.35
+  - cmfPEMISputtering: 11
+    site: WCQ
+    cmfPEMISputteringBaseMaterial: PC+GF>25%
+    cmfEMIsputteringPrice: 0.35
+  - cmfPEMISputtering: 12
+    site: WCQ
+    cmfPEMISputteringBaseMaterial: PC+GF>25%
+    cmfEMIsputteringPrice: 0.39
+  - cmfPEMISputtering: 13
+    site: WCQ
+    cmfPEMISputteringBaseMaterial: PC+GF>25%
+    cmfEMIsputteringPrice: 0.39
+  - cmfPEMISputtering: 14
+    site: WCQ
+    cmfPEMISputteringBaseMaterial: PC+GF>25%
+    cmfEMIsputteringPrice: 0.47
+  - cmfPEMISputtering: 15
+    site: WCQ
+    cmfPEMISputteringBaseMaterial: PC+GF>25%
+    cmfEMIsputteringPrice: 0.53
+  - cmfPEMISputtering: 16
+    site: WCQ
+    cmfPEMISputteringBaseMaterial: PC+GF>25%
+    cmfEMIsputteringPrice: 0.53
+  - cmfPEMISputtering: 17
+    site: WCQ
+    cmfPEMISputteringBaseMaterial: PC+GF>25%
+    cmfEMIsputteringPrice: 0.63
+
+      # WCD, PC+ABS
+  - cmfPEMISputtering: N/A
+    site: WCD
+    cmfPEMISputteringBaseMaterial: PC+ABS
+    cmfEMIsputteringPrice: null
+  - cmfPEMISputtering: 10
+    site: WCD
+    cmfPEMISputteringBaseMaterial: PC+ABS
+    cmfEMIsputteringPrice: 0.35
+  - cmfPEMISputtering: 11
+    site: WCD
+    cmfPEMISputteringBaseMaterial: PC+ABS
+    cmfEMIsputteringPrice: 0.35
+  - cmfPEMISputtering: 12
+    site: WCD
+    cmfPEMISputteringBaseMaterial: PC+ABS
+    cmfEMIsputteringPrice: 0.39
+  - cmfPEMISputtering: 13
+    site: WCD
+    cmfPEMISputteringBaseMaterial: PC+ABS
+    cmfEMIsputteringPrice: 0.39
+  - cmfPEMISputtering: 14
+    site: WCD
+    cmfPEMISputteringBaseMaterial: PC+ABS
+    cmfEMIsputteringPrice: 0.43
+  - cmfPEMISputtering: 15
+    site: WCD
+    cmfPEMISputteringBaseMaterial: PC+ABS
+    cmfEMIsputteringPrice: 0.46
+  - cmfPEMISputtering: 16
+    site: WCD
+    cmfPEMISputteringBaseMaterial: PC+ABS
+    cmfEMIsputteringPrice: 0.46
+  - cmfPEMISputtering: 17
+    site: WCD
+    cmfPEMISputteringBaseMaterial: PC+ABS
+    cmfEMIsputteringPrice: 0.58
+
+
+  # WCD, PC+GF≦25%
+  - cmfPEMISputtering: N/A
+    site: WCD
+    cmfPEMISputteringBaseMaterial: PC+GF≦25%
+    cmfEMIsputteringPrice: null
+  - cmfPEMISputtering: 10
+    site: WCD
+    cmfPEMISputteringBaseMaterial: PC+GF≦25%
+    cmfEMIsputteringPrice: 0.35
+  - cmfPEMISputtering: 11
+    site: WCD
+    cmfPEMISputteringBaseMaterial: PC+GF≦25%
+    cmfEMIsputteringPrice: 0.35
+  - cmfPEMISputtering: 12
+    site: WCD
+    cmfPEMISputteringBaseMaterial: PC+GF≦25%
+    cmfEMIsputteringPrice: 0.39
+  - cmfPEMISputtering: 13
+    site: WCD
+    cmfPEMISputteringBaseMaterial: PC+GF≦25%
+    cmfEMIsputteringPrice: 0.39
+  - cmfPEMISputtering: 14
+    site: WCD
+    cmfPEMISputteringBaseMaterial: PC+GF≦25%
+    cmfEMIsputteringPrice: 0.43
+  - cmfPEMISputtering: 15
+    site: WCD
+    cmfPEMISputteringBaseMaterial: PC+GF≦25%
+    cmfEMIsputteringPrice: 0.46
+  - cmfPEMISputtering: 16
+    site: WCD
+    cmfPEMISputteringBaseMaterial: PC+GF≦25%
+    cmfEMIsputteringPrice: 0.46
+  - cmfPEMISputtering: 17
+    site: WCD
+    cmfPEMISputteringBaseMaterial: PC+GF≦25%
+    cmfEMIsputteringPrice: 0.58
+
+  # WCD, PC+GF>25%
+  - cmfPEMISputtering: N/A
+    site: WCD
+    cmfPEMISputteringBaseMaterial: PC+GF>25%
+    cmfEMIsputteringPrice: null
+  - cmfPEMISputtering: 10
+    site: WCD
+    cmfPEMISputteringBaseMaterial: PC+GF>25%
+    cmfEMIsputteringPrice: 0.35
+  - cmfPEMISputtering: 11
+    site: WCD
+    cmfPEMISputteringBaseMaterial: PC+GF>25%
+    cmfEMIsputteringPrice: 0.35
+  - cmfPEMISputtering: 12
+    site: WCD
+    cmfPEMISputteringBaseMaterial: PC+GF>25%
+    cmfEMIsputteringPrice: 0.39
+  - cmfPEMISputtering: 13
+    site: WCD
+    cmfPEMISputteringBaseMaterial: PC+GF>25%
+    cmfEMIsputteringPrice: 0.39
+  - cmfPEMISputtering: 14
+    site: WCD
+    cmfPEMISputteringBaseMaterial: PC+GF>25%
+    cmfEMIsputteringPrice: 0.47
+  - cmfPEMISputtering: 15
+    site: WCD
+    cmfPEMISputteringBaseMaterial: PC+GF>25%
+    cmfEMIsputteringPrice: 0.53
+  - cmfPEMISputtering: 16
+    site: WCD
+    cmfPEMISputteringBaseMaterial: PC+GF>25%
+    cmfEMIsputteringPrice: 0.53
+  - cmfPEMISputtering: 17
+    site: WCD
+    cmfPEMISputteringBaseMaterial: PC+GF>25%
+    cmfEMIsputteringPrice: 0.63

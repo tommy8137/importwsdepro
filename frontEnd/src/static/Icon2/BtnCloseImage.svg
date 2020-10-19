@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+    <defs>
+        <style>
+            .cls-1{fill:#333}.cls-2{fill:#fff}
+        </style>
+    </defs>
+    <g id="btn_close_image" data-name="btn_close image" transform="translate(-1068 -69)">
+        <circle id="Ellipse_6" cx="15" cy="15" r="15" class="cls-1" data-name="Ellipse 6" transform="translate(1068 69)"/>
+        <path id="Union_4" d="M7.5 16V8.5H0v-1h7.5V0h1v7.5H16v1H8.5V16z" class="cls-2" data-name="Union 4" transform="rotate(45 453.538 1344.176)"/>
+    </g>
+</svg>

@@ -1,0 +1,46 @@
+multiple: true
+items:
+  - key: fanLabel
+    label: Fan
+    pen: true
+    $Template:
+      - inputString
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+      display: true
+
+  - key: tab1InputDate
+    label: TS Date
+    $Template:
+      - inputDate
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      display: true
+
+  - key: tab1UploadImage
+    label: 圖示
+    $Template:
+      - uploadImage
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      display: true
+    uploadUrl: ooo/xxx
+    getUrl: ooo/xxx
+
+  - key: fanType
+    $Template:
+      - selectorString
+      - ^displayConfig
+    label: 風扇型式
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      $thermal-module.FanTypeValues:
+        - ^values
+

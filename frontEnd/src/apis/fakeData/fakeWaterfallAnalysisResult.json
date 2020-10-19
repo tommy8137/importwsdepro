@@ -1,0 +1,135 @@
+{
+    "category": "manufactor",
+    "requestData": {
+        "plant": [
+            "F230",
+            "F231",
+            "F715"
+        ],
+        "user": [
+            "S01",
+            "S02",
+            "S98"
+        ],
+        "dateFrom": "2018-10-09",
+        "dateTo": "2018-10-30",
+        "type1": [
+            "BTY",
+            "CONVERTER"
+        ],
+        "type2": [],
+        "supplyType": [],
+        "category": "manufactor",
+        "measure": "grQty"
+    },
+    "waterfall": [
+        {
+            "category": "LG",
+            "quantity": 3,
+            "USDAmount": 0.0117,
+            "NTDAmount": 0.371904,
+            "pn": 6,
+            "suppliers": 6,
+            "percentage": "94%"
+        },
+        {
+            "category": "SYNAPTIC",
+            "quantity": 6,
+            "USDAmount": 0.00075,
+            "NTDAmount": 0.02384,
+            "pn": 5,
+            "suppliers": 5,
+            "percentage": "6%"
+        },
+        {
+            "category": "LG",
+            "quantity": 3,
+            "USDAmount": 0.0117,
+            "NTDAmount": 0.371904,
+            "pn": 6,
+            "suppliers": 6,
+            "percentage": "94%"
+        },
+        {
+            "category": "SYNAPTIC",
+            "quantity": 6,
+            "USDAmount": 0.00075,
+            "NTDAmount": 0.02384,
+            "pn": 5,
+            "suppliers": 5,
+            "percentage": "6%"
+        },
+        {
+            "category": "LG",
+            "quantity": 3,
+            "USDAmount": 0.0117,
+            "NTDAmount": 0.371904,
+            "pn": 6,
+            "suppliers": 6,
+            "percentage": "94%"
+        },
+        {
+            "category": "SYNAPTIC",
+            "quantity": 6,
+            "USDAmount": 0.00075,
+            "NTDAmount": 0.02384,
+            "pn": 5,
+            "suppliers": 5,
+            "percentage": "6%"
+        },
+        {
+            "category": "LG",
+            "quantity": 3,
+            "USDAmount": 0.0117,
+            "NTDAmount": 0.371904,
+            "pn": 6,
+            "suppliers": 6,
+            "percentage": "94%"
+        },
+        {
+            "category": "SYNAPTIC",
+            "quantity": 6,
+            "USDAmount": 0.00075,
+            "NTDAmount": 0.02384,
+            "pn": 5,
+            "suppliers": 5,
+            "percentage": "6%"
+        },
+        {
+            "category": "LG",
+            "quantity": 3,
+            "USDAmount": 0.0117,
+            "NTDAmount": 0.371904,
+            "pn": 6,
+            "suppliers": 6,
+            "percentage": "94%"
+        },
+        {
+            "category": "SYNAPTIC",
+            "quantity": 6,
+            "USDAmount": 0.00075,
+            "NTDAmount": 0.02384,
+            "pn": 5,
+            "suppliers": 5,
+            "percentage": "6%"
+        },
+        {
+            "category": "LG",
+            "quantity": 3,
+            "USDAmount": 0.0117,
+            "NTDAmount": 0.371904,
+            "pn": 6,
+            "suppliers": 6,
+            "percentage": "94%"
+        },
+        {
+            "category": "total",
+            "quantity": 93,
+            "USDAmount": 0.01245,
+            "NTDAmount": 0.395744,
+            "percentage": "100%",
+            "suppliers": 11,
+            "pn": 11
+        }
+    ]
+}

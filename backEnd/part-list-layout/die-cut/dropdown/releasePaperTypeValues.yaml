@@ -1,0 +1,9 @@
+values:
+  - releasePaperType: 離型紙/透明離型膜
+    releasePaperTypePrice: 0.735294117647 
+
+  - releasePaperType: 蓝色離型膜
+    releasePaperTypePrice: 1.176470588235
+
+  - releasePaperType: 材料自帶離型紙
+    releasePaperTypePrice: 0

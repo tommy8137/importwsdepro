@@ -1,0 +1,744 @@
+{
+  "xlsxName": "Test_Data_NB_cablefpc.xlsx",
+  "sheetName": "NB_CableFPC",
+  "startHorizontalCoordinates": "C",
+  "transferMode": "createPath",
+  "formate": "cable-fpc",
+  "metadata": {
+    "productType": {
+      "createPath": "productType",
+      "valuekey": "productType",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "11"
+    },
+    "testLabel": {
+      "createPath": "testLabel",
+      "valuekey": "testLabel",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "12"
+    },
+    "type1": {
+      "createPath": "type1",
+      "valuekey": "type1",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "7"
+    },
+    "type2": {
+      "createPath": "type2",
+      "valuekey": "type2",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "8"
+    }
+  },
+  "transferPartlistInfo": {
+    "formData,FPCTab,FPCItems,partname": {
+      "createPath": "formData.FPCTab.FPCItems.partname",
+      "valuekey": "partname",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 3,
+      "default": null
+    },
+    "formData,FPCTab,FPCItems,partnumber": {
+      "createPath": "formData.FPCTab.FPCItems.partnumber",
+      "valuekey": "partnumber",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": 4,
+      "default": null
+    },
+    "formData,FPCTab,FPCItems,FPCQty": {
+      "createPath": "formData.FPCTab.FPCItems.FPCQty",
+      "valuekey": "FPCQty",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 10,
+      "default": 0
+    },
+    "formData,FPCTab,FPCItems,FPCPin": {
+      "createPath": "formData.FPCTab.FPCItems.FPCPin",
+      "valuekey": "FPCPin",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 16,
+      "default": 0
+    },
+    "formData,FPCTab,FPCItems,FPCPitch": {
+      "createPath": "formData.FPCTab.FPCItems.FPCPitch",
+      "valuekey": "FPCPitch",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 17,
+      "default": 0
+    },
+    "formData,FPCTab,FPCItems,FPCCableSize,FPCCableLength": {
+      "createPath": "formData.FPCTab.FPCItems.FPCCableSize.FPCCableLength",
+      "valuekey": "FPCCableLength",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 18,
+      "default": 0
+    },
+    "formData,FPCTab,FPCItems,FPCCableSize,FPCCableWidth": {
+      "createPath": "formData.FPCTab.FPCItems.FPCCableSize.FPCCableWidth",
+      "valuekey": "FPCCableWidth",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 19,
+      "default": 0
+    },
+    "formData,FPCTab,FPCItems,FPCIncreaseSize,FPCCableIncreaseLength": {
+      "createPath": "formData.FPCTab.FPCItems.FPCIncreaseSize.FPCCableIncreaseLength",
+      "valuekey": "FPCCableIncreaseLength",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 20,
+      "default": 0
+    },
+    "formData,FPCTab,FPCItems,FPCIncreaseSize,FPCCableIncreaseWidth": {
+      "createPath": "formData.FPCTab.FPCItems.FPCIncreaseSize.FPCCableIncreaseWidth",
+      "valuekey": "FPCCableIncreaseWidth",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 21,
+      "default": 0
+    },
+    "formData,FPCTab,FPCItems,FPCProductNumber": {
+      "createPath": "formData.FPCTab.FPCItems.FPCProductNumber",
+      "valuekey": "FPCProductNumber",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 9,
+      "default": null
+    },
+    "formData,FPCTab,FFCProcessingContent,FPCBendTimes": {
+      "createPath": "formData.FPCTab.FFCProcessingContent.FPCBendTimes",
+      "valuekey": "FPCBendTimes",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 34,
+      "default": null
+    },
+    "formData,FPCTab,FFCProcessingContent,FPCPrint": {
+      "createPath": "formData.FPCTab.FFCProcessingContent.FPCPrint",
+      "valuekey": "FPCPrint",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 38,
+      "default": null
+    },
+    "formData,FPCTab,FFCProcessingContent,FPCStopLine": {
+      "createPath": "formData.FPCTab.FFCProcessingContent.FPCStopLine",
+      "valuekey": "FPCStopLine",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 42,
+      "default": null
+    },
+    "formData,FPCTab,FPCMainMaterial,FPCConductor": {
+      "createPath": "formData.FPCTab.FPCMainMaterial.FPCConductor",
+      "valuekey": "FPCConductor",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,FPCTab,FPCMainMaterial,FPCConductorType": {
+      "createPath": "formData.FPCTab.FPCMainMaterial.FPCConductorType",
+      "valuekey": "FPCConductorType",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 14,
+      "default": null
+    },
+    "formData,FPCTab,FPCMainMaterial,FPCConductorTypeRemark": {
+      "createPath": "formData.FPCTab.FPCMainMaterial.FPCConductorTypeRemark",
+      "valuekey": "FPCConductorTypeRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,FPCTab,FPCMainMaterial,FPCConductorTypeUnitPrice": {
+      "createPath": "formData.FPCTab.FPCMainMaterial.FPCConductorTypeUnitPrice",
+      "valuekey": "FPCConductorTypeUnitPrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 15,
+      "default": 0
+    },
+    "formData,FPCTab,FPCAccessory,0,uuid": {
+      "createPath": "formData.FPCTab.FPCAccessory.0.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,FPCTab,FPCAccessory,0,layoutKey": {
+      "createPath": "formData.FPCTab.FPCAccessory.0.layoutKey",
+      "valuekey": "layoutKey",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 52,
+      "default": null
+    },
+    "formData,FPCTab,FPCAccessory,0,FPCShieldingType": {
+      "createPath": "formData.FPCTab.FPCAccessory.0.FPCShieldingType",
+      "valuekey": "FPCShieldingType",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 47,
+      "default": null
+    },
+    "formData,FPCTab,FPCAccessory,0,FPCShieldingQty": {
+      "createPath": "formData.FPCTab.FPCAccessory.0.FPCShieldingQty",
+      "valuekey": "FPCShieldingQty",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 48,
+      "default": null
+    },
+    "formData,FPCTab,FPCAccessory,1,uuid": {
+      "createPath": "formData.FPCTab.FPCAccessory.1.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,FPCTab,FPCAccessory,1,layoutKey": {
+      "createPath": "formData.FPCTab.FPCAccessory.1.layoutKey",
+      "valuekey": "layoutKey",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 60,
+      "default": null
+    },
+    "formData,FPCTab,FPCAccessory,1,FPCReinforcingPlateQty": {
+      "createPath": "formData.FPCTab.FPCAccessory.1.FPCReinforcingPlateQty",
+      "valuekey": "FPCReinforcingPlateQty",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 57,
+      "default": null
+    },
+    "formData,FPCTab,FPCAccessory,2,uuid": {
+      "createPath": "formData.FPCTab.FPCAccessory.2.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,FPCTab,FPCAccessory,2,layoutKey": {
+      "createPath": "formData.FPCTab.FPCAccessory.2.layoutKey",
+      "valuekey": "layoutKey",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 68,
+      "default": null
+    },
+    "formData,FPCTab,FPCAccessory,2,FPCLabelQty": {
+      "createPath": "formData.FPCTab.FPCAccessory.2.FPCLabelQty",
+      "valuekey": "FPCLabelQty",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 65,
+      "default": null
+    },
+    "formData,FPCTab,FPCAccessory,3,uuid": {
+      "createPath": "formData.FPCTab.FPCAccessory.3.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,FPCTab,FPCAccessory,3,layoutKey": {
+      "createPath": "formData.FPCTab.FPCAccessory.3.layoutKey",
+      "valuekey": "layoutKey",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 79,
+      "default": null
+    },
+    "formData,FPCTab,FPCAccessory,3,FPCAdhesiveLength": {
+      "createPath": "formData.FPCTab.FPCAccessory.3.FPCAdhesiveLength",
+      "valuekey": "FPCAdhesiveLength",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 72,
+      "default": null
+    },
+    "formData,FPCTab,FPCAccessory,3,FPCAdhesivewidth": {
+      "createPath": "formData.FPCTab.FPCAccessory.3.FPCAdhesivewidth",
+      "valuekey": "FPCAdhesivewidth",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 73,
+      "default": null
+    },
+    "formData,FPCTab,FPCAccessory,3,FPCAdhesiveQty": {
+      "createPath": "formData.FPCTab.FPCAccessory.3.FPCAdhesiveQty",
+      "valuekey": "FPCAdhesiveQty",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 75,
+      "default": null
+    },
+    "formData,FPCTab,FFCRemark,FPCRemarks": {
+      "createPath": "formData.FPCTab.FFCRemark.FPCRemarks",
+      "valuekey": "FPCRemarks",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    }
+  },
+  "verifyInfo": {
+    "totalPrices": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "totalPrices",
+      "valueType": "totalPrices",
+      "comparisonValuePath": "totalPrices"
+    },
+    "parentGroupId": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "parentGroupId",
+      "valueType": "parentGroupId",
+      "comparisonValuePath": "forDebug.summary.cableFPC.parentGroupId"
+    },
+    "areatransferunit": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "areatransferunit",
+      "valueType": "areatransferunit",
+      "comparisonValuePath": "forDebug.summary.fpcAdhesive-c1b9fdd5-90c6-44e1-84ec-2e16d5eb1a94.areatransferunit"
+    },
+    "accessoryAssyTime": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "accessoryAssyTime",
+      "valueType": "accessoryAssyTime",
+      "comparisonValuePath": "forDebug.summary.fpcReinforcingPlate-f61ad30b-527a-4763-9b77-f2604796c221.accessoryAssyTime"
+    },
+    "accessoryCost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "accessoryCost",
+      "valueType": "accessoryCost",
+      "comparisonValuePath": "forDebug.summary.fpcShielding-7fbb0287-39fb-41b3-bb65-d4a5f4691ea5.accessoryCost"
+    },
+    "_FPCConductorType": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "_FPCConductorType",
+      "valueType": "_FPCConductorType",
+      "comparisonValuePath": "forDebug.summary.cableFPC._FPCConductorType"
+    },
+    "_isOtherFillMeRemark": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "_isOtherFillMeRemark",
+      "valueType": "_isOtherFillMeRemark",
+      "comparisonValuePath": "forDebug.summary.cableFPC._isOtherFillMeRemark"
+    },
+    "A_material_cost": {
+      "label": "A.材料費",
+      "excelValueLongitudinalCoordinates": "82",
+      "valuekey": "A_material_cost",
+      "valueType": "A_material_cost",
+      "comparisonValuePath": "forDebug.summary.cableFPC.A_material_cost"
+    },
+    "B_secondary_processing_cost": {
+      "label": "B.二次加工費",
+      "excelValueLongitudinalCoordinates": "83",
+      "valuekey": "B_secondary_processing_cost",
+      "valueType": "B_secondary_processing_cost",
+      "comparisonValuePath": "forDebug.summary.cableFPC.B_secondary_processing_cost"
+    },
+    "C_sumAccessoryCost": {
+      "label": "C.零件費",
+      "excelValueLongitudinalCoordinates": "84",
+      "valuekey": "C_sumAccessoryCost",
+      "valueType": "C_sumAccessoryCost",
+      "comparisonValuePath": "forDebug.summary.cableFPC.C_sumAccessoryCost"
+    },
+    "D_cost_of_selling_and_profit": {
+      "label": "D.管銷&利潤",
+      "excelValueLongitudinalCoordinates": "86",
+      "valuekey": "D_cost_of_selling_and_profit",
+      "valueType": "D_cost_of_selling_and_profit",
+      "comparisonValuePath": "forDebug.summary.cableFPC.D_cost_of_selling_and_profit"
+    },
+    "total": {
+      "label": "E. 成品總價",
+      "excelValueLongitudinalCoordinates": "87",
+      "valuekey": "total",
+      "valueType": "total",
+      "comparisonValuePath": "forDebug.summary.cableFPC.total"
+    },
+    "fpcAdhesive_assy_time": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fpcAdhesive_assy_time",
+      "valueType": "fpcAdhesive_assy_time",
+      "comparisonValuePath": "forDebug.debugInfo.fpcAdhesive-c1b9fdd5-90c6-44e1-84ec-2e16d5eb1a94.fpcAdhesive_assy_time.value"
+    },
+    "fpcAdhesive_unit_price": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fpcAdhesive_unit_price",
+      "valueType": "fpcAdhesive_unit_price",
+      "comparisonValuePath": "forDebug.debugInfo.fpcAdhesive-c1b9fdd5-90c6-44e1-84ec-2e16d5eb1a94.fpcAdhesive_unit_price.value"
+    },
+    "fpcAdhesive_loss_rate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fpcAdhesive_loss_rate",
+      "valueType": "fpcAdhesive_loss_rate",
+      "comparisonValuePath": "forDebug.debugInfo.fpcAdhesive-c1b9fdd5-90c6-44e1-84ec-2e16d5eb1a94.fpcAdhesive_loss_rate.value"
+    },
+    "FPCAdhesiveLength": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "FPCAdhesiveLength",
+      "valueType": "FPCAdhesiveLength",
+      "comparisonValuePath": "forDebug.debugInfo.fpcAdhesive-c1b9fdd5-90c6-44e1-84ec-2e16d5eb1a94.FPCAdhesiveLength.value"
+    },
+    "FPCAdhesivewidth": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "FPCAdhesivewidth",
+      "valueType": "FPCAdhesivewidth",
+      "comparisonValuePath": "forDebug.debugInfo.fpcAdhesive-c1b9fdd5-90c6-44e1-84ec-2e16d5eb1a94.FPCAdhesivewidth.value"
+    },
+    "FPCAdhesiveQty": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "FPCAdhesiveQty",
+      "valueType": "FPCAdhesiveQty",
+      "comparisonValuePath": "forDebug.debugInfo.fpcAdhesive-c1b9fdd5-90c6-44e1-84ec-2e16d5eb1a94.FPCAdhesiveQty.value"
+    },
+    "fpcAdhesive_AssyTime_Sum": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fpcAdhesive_AssyTime_Sum",
+      "valueType": "fpcAdhesive_AssyTime_Sum",
+      "comparisonValuePath": "forDebug.debugInfo.fpcAdhesive-c1b9fdd5-90c6-44e1-84ec-2e16d5eb1a94.fpcAdhesive_AssyTime_Sum.value"
+    },
+    "fpcAdhesive_cost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fpcAdhesive_cost",
+      "valueType": "fpcAdhesive_cost",
+      "comparisonValuePath": "forDebug.debugInfo.fpcAdhesive-c1b9fdd5-90c6-44e1-84ec-2e16d5eb1a94.fpcAdhesive_cost.value"
+    },
+    "fpcLabel_assy_time": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fpcLabel_assy_time",
+      "valueType": "fpcLabel_assy_time",
+      "comparisonValuePath": "forDebug.debugInfo.fpcLabel-c9a80dac-5dda-47a2-a658-78eb0c4d83ae.fpcLabel_assy_time.value"
+    },
+    "fpcLabel_unit_price": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fpcLabel_unit_price",
+      "valueType": "fpcLabel_unit_price",
+      "comparisonValuePath": "forDebug.debugInfo.fpcLabel-c9a80dac-5dda-47a2-a658-78eb0c4d83ae.fpcLabel_unit_price.value"
+    },
+    "fpcLabel_loss_rate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fpcLabel_loss_rate",
+      "valueType": "fpcLabel_loss_rate",
+      "comparisonValuePath": "forDebug.debugInfo.fpcLabel-c9a80dac-5dda-47a2-a658-78eb0c4d83ae.fpcLabel_loss_rate.value"
+    },
+    "FPCLabelQty": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "FPCLabelQty",
+      "valueType": "FPCLabelQty",
+      "comparisonValuePath": "forDebug.debugInfo.fpcLabel-c9a80dac-5dda-47a2-a658-78eb0c4d83ae.FPCLabelQty.value"
+    },
+    "fpcLabel_AssyTime_Sum": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fpcLabel_AssyTime_Sum",
+      "valueType": "fpcLabel_AssyTime_Sum",
+      "comparisonValuePath": "forDebug.debugInfo.fpcLabel-c9a80dac-5dda-47a2-a658-78eb0c4d83ae.fpcLabel_AssyTime_Sum.value"
+    },
+    "fpcLabel_cost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fpcLabel_cost",
+      "valueType": "fpcLabel_cost",
+      "comparisonValuePath": "forDebug.debugInfo.fpcLabel-c9a80dac-5dda-47a2-a658-78eb0c4d83ae.fpcLabel_cost.value"
+    },
+    "fpcReinforcingPlate_assy_time": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fpcReinforcingPlate_assy_time",
+      "valueType": "fpcReinforcingPlate_assy_time",
+      "comparisonValuePath": "forDebug.debugInfo.fpcReinforcingPlate-f61ad30b-527a-4763-9b77-f2604796c221.fpcReinforcingPlate_assy_time.value"
+    },
+    "fpcReinforcingPlate_unit_price": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fpcReinforcingPlate_unit_price",
+      "valueType": "fpcReinforcingPlate_unit_price",
+      "comparisonValuePath": "forDebug.debugInfo.fpcReinforcingPlate-f61ad30b-527a-4763-9b77-f2604796c221.fpcReinforcingPlate_unit_price.value"
+    },
+    "fpcReinforcingPlate_loss_rate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fpcReinforcingPlate_loss_rate",
+      "valueType": "fpcReinforcingPlate_loss_rate",
+      "comparisonValuePath": "forDebug.debugInfo.fpcReinforcingPlate-f61ad30b-527a-4763-9b77-f2604796c221.fpcReinforcingPlate_loss_rate.value"
+    },
+    "FPCReinforcingPlateQty": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "FPCReinforcingPlateQty",
+      "valueType": "FPCReinforcingPlateQty",
+      "comparisonValuePath": "forDebug.debugInfo.fpcReinforcingPlate-f61ad30b-527a-4763-9b77-f2604796c221.FPCReinforcingPlateQty.value"
+    },
+    "fpcReinforcingPlate_AssyTime_Sum": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fpcReinforcingPlate_AssyTime_Sum",
+      "valueType": "fpcReinforcingPlate_AssyTime_Sum",
+      "comparisonValuePath": "forDebug.debugInfo.fpcReinforcingPlate-f61ad30b-527a-4763-9b77-f2604796c221.fpcReinforcingPlate_AssyTime_Sum.value"
+    },
+    "fpcReinforcingPlate_cost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fpcReinforcingPlate_cost",
+      "valueType": "fpcReinforcingPlate_cost",
+      "comparisonValuePath": "forDebug.debugInfo.fpcReinforcingPlate-f61ad30b-527a-4763-9b77-f2604796c221.fpcReinforcingPlate_cost.value"
+    },
+    "shielding_loss_rate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "shielding_loss_rate",
+      "valueType": "shielding_loss_rate",
+      "comparisonValuePath": "forDebug.debugInfo.fpcShielding-7fbb0287-39fb-41b3-bb65-d4a5f4691ea5.shielding_loss_rate.value"
+    },
+    "FPCShieldingQty": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "FPCShieldingQty",
+      "valueType": "FPCShieldingQty",
+      "comparisonValuePath": "forDebug.debugInfo.fpcShielding-7fbb0287-39fb-41b3-bb65-d4a5f4691ea5.FPCShieldingQty.value"
+    },
+    "FPCShieldingTypeUnitPrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "FPCShieldingTypeUnitPrice",
+      "valueType": "FPCShieldingTypeUnitPrice",
+      "comparisonValuePath": "forDebug.debugInfo.fpcShielding-7fbb0287-39fb-41b3-bb65-d4a5f4691ea5.FPCShieldingTypeUnitPrice.value"
+    },
+    "FPCShieldingType": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "FPCShieldingType",
+      "valueType": "FPCShieldingType",
+      "comparisonValuePath": "forDebug.debugInfo.fpcShielding-7fbb0287-39fb-41b3-bb65-d4a5f4691ea5.FPCShieldingType.value"
+    },
+    "FPCCableLength": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "FPCCableLength",
+      "valueType": "FPCCableLength",
+      "comparisonValuePath": "forDebug.debugInfo.cableFPC.FPCCableLength.value"
+    },
+    "FPCCableWidth": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "FPCCableWidth",
+      "valueType": "FPCCableWidth",
+      "comparisonValuePath": "forDebug.debugInfo.cableFPC.FPCCableWidth.value"
+    },
+    "fpcSielding_cost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fpcSielding_cost",
+      "valueType": "fpcSielding_cost",
+      "comparisonValuePath": "forDebug.debugInfo.fpcShielding-7fbb0287-39fb-41b3-bb65-d4a5f4691ea5.fpcSielding_cost.value"
+    },
+    "otherFillMeRemarkName": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "otherFillMeRemarkName",
+      "valueType": "otherFillMeRemarkName",
+      "comparisonValuePath": "forDebug.debugInfo.cableFPC.otherFillMeRemarkName.value"
+    },
+    "material_loss_rate": {
+      "label": "material_loss_rate",
+      "excelValueLongitudinalCoordinates": "26",
+      "valuekey": "material_loss_rate",
+      "valueType": "material_loss_rate",
+      "comparisonValuePath": "forDebug.debugInfo.cableFPC.material_loss_rate.value"
+    },
+    "fpcBend_unit_price": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fpcBend_unit_price",
+      "valueType": "fpcBend_unit_price",
+      "comparisonValuePath": "forDebug.debugInfo.cableFPC.fpcBend_unit_price.value"
+    },
+    "fpcPrint_unit_price": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fpcPrint_unit_price",
+      "valueType": "fpcPrint_unit_price",
+      "comparisonValuePath": "forDebug.debugInfo.cableFPC.fpcPrint_unit_price.value"
+    },
+    "fpcStopLine_unit_price": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fpcStopLine_unit_price",
+      "valueType": "fpcStopLine_unit_price",
+      "comparisonValuePath": "forDebug.debugInfo.cableFPC.fpcStopLine_unit_price.value"
+    },
+    "fpcassembly_spend_time": {
+      "label": "FPC 時間單位換算",
+      "excelValueLongitudinalCoordinates": "31",
+      "valuekey": "fpcassembly_spend_time",
+      "valueType": "fpcassembly_spend_time",
+      "comparisonValuePath": "forDebug.debugInfo.cableFPC.fpcassembly_spend_time.value"
+    },
+    "fpcassembly_cost": {
+      "label": "每件組裝工時花費",
+      "excelValueLongitudinalCoordinates": "30",
+      "valuekey": "fpcassembly_cost",
+      "valueType": "fpcassembly_cost",
+      "comparisonValuePath": "forDebug.debugInfo.cableFPC.fpcassembly_cost.value"
+    },
+    "fpcarea_unit_transfer_constant": {
+      "label": "單位面積轉換常數",
+      "excelValueLongitudinalCoordinates": "25",
+      "valuekey": "fpcarea_unit_transfer_constant",
+      "valueType": "fpcarea_unit_transfer_constant",
+      "comparisonValuePath": "forDebug.debugInfo.cableFPC.fpcarea_unit_transfer_constant.value"
+    },
+    "fpcmanagement_and_profit": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fpcmanagement_and_profit",
+      "valueType": "fpcmanagement_and_profit",
+      "comparisonValuePath": "forDebug.debugInfo.cableFPC.fpcmanagement_and_profit.value"
+    },
+    "FPCCableIncreaseLength": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "FPCCableIncreaseLength",
+      "valueType": "FPCCableIncreaseLength",
+      "comparisonValuePath": "forDebug.debugInfo.cableFPC.FPCCableIncreaseLength.value"
+    },
+    "FPCCableIncreaseWidth": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "FPCCableIncreaseWidth",
+      "valueType": "FPCCableIncreaseWidth",
+      "comparisonValuePath": "forDebug.debugInfo.cableFPC.FPCCableIncreaseWidth.value"
+    },
+    "FPCProductNumber": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "FPCProductNumber",
+      "valueType": "FPCProductNumber",
+      "comparisonValuePath": "forDebug.debugInfo.cableFPC.FPCProductNumber.value"
+    },
+    "FPCConductorTypeUnitPrice": {
+      "label": "材料單價",
+      "excelValueLongitudinalCoordinates": "15",
+      "valuekey": "FPCConductorTypeUnitPrice",
+      "valueType": "FPCConductorTypeUnitPrice",
+      "comparisonValuePath": "forDebug.debugInfo.cableFPC.FPCConductorTypeUnitPrice.value"
+    },
+    "FPCBendTimes": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "FPCBendTimes",
+      "valueType": "FPCBendTimes",
+      "comparisonValuePath": "forDebug.debugInfo.cableFPC.FPCBendTimes.value"
+    },
+    "FPCPrint": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "FPCPrint",
+      "valueType": "FPCPrint",
+      "comparisonValuePath": "forDebug.debugInfo.cableFPC.FPCPrint.value"
+    },
+    "FPCStopLine": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "FPCStopLine",
+      "valueType": "FPCStopLine",
+      "comparisonValuePath": "forDebug.debugInfo.cableFPC.FPCStopLine.value"
+    },
+    "FPCConductorType": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "FPCConductorType",
+      "valueType": "FPCConductorType",
+      "comparisonValuePath": "forDebug.debugInfo.cableFPC.FPCConductorType.value"
+    },
+    "isOtherFillMeRemark": {
+      "label": "判斷是不是other fill me remark",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "isOtherFillMeRemark",
+      "valueType": "isOtherFillMeRemark",
+      "comparisonValuePath": "forDebug.debugInfo.cableFPC.isOtherFillMeRemark.value"
+    },
+    "panel_size": {
+      "label": "單位併版面積(mm²)",
+      "excelValueLongitudinalCoordinates": "22",
+      "valuekey": "panel_size",
+      "valueType": "panel_size",
+      "comparisonValuePath": "forDebug.debugInfo.cableFPC.panel_size.value"
+    },
+    "amortization_size": {
+      "label": "單件成品攤提面積(mm²)",
+      "excelValueLongitudinalCoordinates": "24",
+      "valuekey": "amortization_size",
+      "valueType": "amortization_size",
+      "comparisonValuePath": "forDebug.debugInfo.cableFPC.amortization_size.value"
+    },
+    "material_cost": {
+      "label": "材料費",
+      "excelValueLongitudinalCoordinates": "13",
+      "valuekey": "material_cost",
+      "valueType": "material_cost",
+      "comparisonValuePath": "forDebug.debugInfo.cableFPC.material_cost.value"
+    },
+    "sumAccessoryAssyTime": {
+      "label": "輔料總組裝秒數(sec)",
+      "excelValueLongitudinalCoordinates": "29",
+      "valuekey": "sumAccessoryAssyTime",
+      "valueType": "sumAccessoryAssyTime",
+      "comparisonValuePath": "forDebug.debugInfo.cableFPC.sumAccessoryAssyTime.value"
+    },
+    "assembly_cost": {
+      "label": "組裝費",
+      "excelValueLongitudinalCoordinates": "33",
+      "valuekey": "assembly_cost",
+      "valueType": "assembly_cost",
+      "comparisonValuePath": "forDebug.debugInfo.cableFPC.assembly_cost.value"
+    },
+    "fpcBend_cost": {
+      "label": "折彎費",
+      "excelValueLongitudinalCoordinates": "37",
+      "valuekey": "fpcBend_cost",
+      "valueType": "fpcBend_cost",
+      "comparisonValuePath": "forDebug.debugInfo.cableFPC.fpcBend_cost.value"
+    },
+    "fpcPrint_cost": {
+      "label": "印刷費",
+      "excelValueLongitudinalCoordinates": "41",
+      "valuekey": "fpcPrint_cost",
+      "valueType": "fpcPrint_cost",
+      "comparisonValuePath": "forDebug.debugInfo.cableFPC.fpcPrint_cost.value"
+    },
+    "fpcStopLine_cost": {
+      "label": "停止線費用",
+      "excelValueLongitudinalCoordinates": "45",
+      "valuekey": "fpcStopLine_cost",
+      "valueType": "fpcStopLine_cost",
+      "comparisonValuePath": "forDebug.debugInfo.cableFPC.fpcStopLine_cost.value"
+    },
+    "secondary_processing_cost": {
+      "label": "二次加工費",
+      "excelValueLongitudinalCoordinates": "83",
+      "valuekey": "secondary_processing_cost",
+      "valueType": "secondary_processing_cost",
+      "comparisonValuePath": "forDebug.debugInfo.cableFPC.secondary_processing_cost.value"
+    },
+    "sumAccessoryCost": {
+      "label": "零件費小計",
+      "excelValueLongitudinalCoordinates": "84",
+      "valuekey": "sumAccessoryCost",
+      "valueType": "sumAccessoryCost",
+      "comparisonValuePath": "forDebug.debugInfo.cableFPC.sumAccessoryCost.value"
+    },
+    "cost_of_selling_and_profit": {
+      "label": "管銷利潤",
+      "excelValueLongitudinalCoordinates": "86",
+      "valuekey": "cost_of_selling_and_profit",
+      "valueType": "cost_of_selling_and_profit",
+      "comparisonValuePath": "forDebug.debugInfo.cableFPC.cost_of_selling_and_profit.value"
+    }
+  }
+}

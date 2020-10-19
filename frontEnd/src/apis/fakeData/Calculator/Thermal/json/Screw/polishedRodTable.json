@@ -1,0 +1,17 @@
+{
+  "header": [
+    {
+      "key": "type",
+      "name": "光桿",
+      "typeof": "string"
+    }
+  ],
+  "data": [
+    {
+      "type": "Yes"
+    },
+    {
+      "type": "No"
+    }
+  ]
+}

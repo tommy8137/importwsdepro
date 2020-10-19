@@ -1,0 +1,22 @@
+sheet:
+  label: Opportunity-PN
+  tables:
+    - key: opportunityPN
+      $Template:
+        - rowTable
+      headers:
+        $xray-summary.header-pn.pn-excel:
+          - headers
+      anchor:
+        x: A
+        y: 6
+
+    - key: exchangeRateDefault
+      $Template:
+        - traverseTable
+      headers:
+        $eebom-tmp.header-full-bom.fullbomexchange-excel:
+          - headers
+      anchor:
+        x: F
+        y: 1

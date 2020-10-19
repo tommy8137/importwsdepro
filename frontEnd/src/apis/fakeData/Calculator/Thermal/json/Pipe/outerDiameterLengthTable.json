@@ -1,0 +1,98 @@
+{
+  "header": [
+    {
+      "key": "outerDiameter",
+      "name": "外徑",
+      "typeof": "string"
+    },
+    {
+      "key": "lengthRange",
+      "name": "長度範圍",
+      "typeof": "string"
+    },
+    {
+      "key": "math",
+      "name": "數學",
+      "typeof": "number"
+    },
+    {
+      "key": "cost",
+      "name": "cost",
+      "typeof": "number"
+    }
+  ],
+  "data": [
+    {
+      "outerDiameter": "D4_",
+      "lengthRange": ">=250",
+      "math": 250,
+      "cost": 0.75
+    },
+    {
+      "outerDiameter": "D4_",
+      "lengthRange": ">=200",
+      "math": 200,
+      "cost": 0.7
+    },
+    {
+      "outerDiameter": "D4_",
+      "lengthRange": ">=175",
+      "math": 175,
+      "cost": 0.65
+    },
+    {
+      "outerDiameter": "D4_",
+      "lengthRange": ">=0",
+      "math": 0,
+      "cost": 0.6
+    },
+    {
+      "outerDiameter": "D6_",
+      "lengthRange": ">=250",
+      "math": 250,
+      "cost": 0.75
+    },
+    {
+      "outerDiameter": "D6_",
+      "lengthRange": ">=200",
+      "math": 200,
+      "cost": 0.7
+    },
+    {
+      "outerDiameter": "D6_",
+      "lengthRange": ">=175",
+      "math": 175,
+      "cost": 0.65
+    },
+    {
+      "outerDiameter": "D6_",
+      "lengthRange": ">=0",
+      "math": 0,
+      "cost": 0.6
+    },
+    {
+      "outerDiameter": "D8_",
+      "lengthRange": ">=250",
+      "math": 250,
+      "cost": 0.95
+    },
+    {
+      "outerDiameter": "D8_",
+      "lengthRange": ">=200",
+      "math": 200,
+      "cost": 0.9
+    },
+    {
+      "outerDiameter": "D8_",
+      "lengthRange": ">=175",
+      "math": 175,
+      "cost": 0.85
+    },
+    {
+      "outerDiameter": "D8_",
+      "lengthRange": ">=0",
+      "math": 0,
+      "cost": 0.8
+    }
+  ]
+}

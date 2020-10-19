@@ -1,0 +1,115 @@
+headers:
+  export_from:
+    label: Export From
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataString
+
+  customer:
+    label: Customer
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataString
+
+  product_type:
+    label: Product Type
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataString
+
+  project_name:
+    label: Project Name
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataString
+
+  project_code:
+    label: Project Code
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataString
+
+  platform:
+    label: Platform
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataString
+
+  sku:
+    label: SKU
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataString
+
+  pcb_no_stage:
+    label: PCB No._Stage
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataString
+
+
+  purchase_org_plant:
+    label: Purchase Org.:Plant
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataString
+
+  stage:
+    label: Stage
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataString
+
+  null_column:
+    label: null
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataString
+
+
+  export_date:
+    label: Export Date
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataString
+
+  eedm_ver:
+    label: eEDM Ver.
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataString
+
+  total_part_number_count:
+    label: Total Part Number Count
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataInt
+
+  total_parts_count:
+    label: Total Parts Count
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataInt
+
+  total_with_mlcc:
+    label: EE BOM Cost (Main, w/ MLCC 2nd high)
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataFloat
+
+  total_without_mlcc:
+    label: EE BOM Cost (Main, w/o MLCC)
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataFloat
+
+  total_suggestion_cost:
+    label: Lowest EE BOM Simulation (ALT lower than main, w/o MLCC)
+    $eebom-tmp.header-2nd-summary.2ndTemplate:
+      - wrapFloat
+
+  total_mlcc_lowest:
+    label: MLCC Lowest
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataFloat
+
+  total_mlcc_highest:
+    label: MLCC Highest
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataFloat
+
+  total_mlcc_2nd_highest:
+    label: MLCC 2nd High
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataFloat
+
+  total_pcb_cost:
+    label: PCB Cost
+    remark: ['*EE BOM Cost w/o PCB']
+    remarkSite: [2]
+    $eebom-tmp.header-full-bom.fullbomTemplate:
+      - dataFloat
+

@@ -1,0 +1,57 @@
+multiple: true
+items:
+# 可編輯的sub-title --------------------------------------------------------------------------------------------------------------------
+  - key: oRLabel
+    label: O-Ring
+    $Template:
+      - label
+    editable: true
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+    default: O-Ring
+    emdmMultipleKey: emdmBomInfo.cmfForm.oring
+    emdmKey: oRLabel
+
+# 用量 --------------------------------------------------------------------------------------------------------------------
+  - key: oRAmount
+    label: 用量
+    $Template:
+      - inputInt
+      - ^displayConfig
+    default: 0
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.oring
+    emdmKey: oRAmount
+
+# 外徑 --------------------------------------------------------------------------------------------------------------------
+  - key: oROuterDiameter
+    label: 外徑(ø)
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.oring
+    emdmKey: oROuterDiameter
+
+# 內徑 --------------------------------------------------------------------------------------------------------------------
+  - key: oRInnerDiameter
+    label: 內徑(ø)
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.oring
+    emdmKey: oRInnerDiameter
+
+# 厚度 --------------------------------------------------------------------------------------------------------------------
+  - key: oRThickness
+    label: 厚度(t)
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.oring
+    emdmKey: oRThickness
+

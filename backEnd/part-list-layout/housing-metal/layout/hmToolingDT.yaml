@@ -1,0 +1,348 @@
+multiple: true
+items:
+  - key: hmToolingMaterialSize
+    $Template:
+      - compositeInline
+    label: 邊料尺寸
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0
+      display: false
+    items:
+      - key: hmToolingMaterialWidth
+        $Template:
+          - inputFloat
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 0.5
+        label: W 寬度邊料尺寸
+        default: 
+          ?getCommon:
+            byKey: value
+            params:
+              - housing_metal_material
+              - material_metal_w_side_constant
+        constrains:
+          - function: "(val) => val ==='' || val === null"
+            message: "此欄位為必填"
+        require: true
+        # emdmKey: emdmBomInfo.edgeMaterialSizeWidth
+
+      - key: hmToolingMaterialLength
+        $Template:
+          - inputFloat
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 0.5
+        label: L 長度邊料尺寸
+        default: 
+          ?getCommon:
+            byKey: value
+            params:
+              - housing_metal_material
+              - material_metal_l_side_constant
+        constrains:
+          - function: "(val) => val ==='' || val === null"
+            message: "此欄位為必填"
+        require: true
+        # emdmKey: emdmBomInfo.edgeMaterialSizeLong
+
+  - key: hmToolingMaterialExpandSize
+    $Template:
+      - compositeInline
+    label: 素材展開尺寸(mm)
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1.5
+    items:
+      - key: hmToolingMaterialExpandWidth
+        $Template:
+          - realtimeFormulaFloat
+        label: W
+        # url: bom/partlist/getMaterialExpandSize/:{hmpartsexpandwidth}/:{hmpartsexpandlength}/:{hmToolingMaterialWidth}/:{hmToolingMaterialLength}
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1.5
+        constrains:
+          - function: "(val) => val ==='' || val === null"
+            message: "此欄位為必填"
+        require: true
+        func: "(hmpartsexpandwidth, hmToolingMaterialWidth)=>{
+          return +hmpartsexpandwidth + +hmToolingMaterialWidth;
+        }"
+        replaceBy:
+          - hmpartsexpandwidth
+          - hmToolingMaterialWidth
+
+      - key: hmToolingMaterialExpandLength
+        $Template:
+          - realtimeFormulaFloat
+        label: L
+        # url: bom/partlist/getMaterialExpandSize/:{hmpartsexpandwidth}/:{hmpartsexpandlength}/:{hmToolingMaterialWidth}/:{hmToolingMaterialLength}
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1.5
+        constrains:
+          - function: "(val) => val ==='' || val === null"
+            message: "此欄位為必填"
+        require: true
+        func: "(hmpartsexpandlength, hmToolingMaterialLength)=>{
+          return +hmpartsexpandlength + +hmToolingMaterialLength;
+        }"
+        replaceBy:
+          - hmpartsexpandlength
+          - hmToolingMaterialLength
+
+  - key: hmToolingIntervalPrice
+    $Template:
+      - realtimeFormulaFloat
+    label: 區間費用
+    # url: bom/partlist/getIntervalPrice/:{bom_id}/:{hmToolingMaterialExpandWidth}/:{hmToolingMaterialExpandLength}
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+      grids: 0
+    func: "(lv, weight, length)=>{
+      let result = '';
+
+      if (lv > 2) {
+        result = 0;
+      } else {
+        if (0 <= weight * length && weight * length < 5000) {
+          result = 0.025;
+        } else if (5000 <= weight * length && weight * length < 40000) {
+          result = 0.035;
+        } else if (40000 <= weight * length && weight * length < 70000) {
+          result = 0.045;
+        } else if (weight * length >= 70000) {
+          result = 0.120;
+        }
+      }
+      return result;
+    }"
+    replaceBy:
+      - level
+      - hmToolingMaterialExpandWidth
+      - hmToolingMaterialExpandLength
+
+  - key: hmToolingWeight
+    $Template:
+      - realtimeFormulaFloat
+      - ^displayConfig
+    label: 淨重(成品重量)(g)
+    # url: bom/partlist/netWeight/:{hmthickness}/:{hmpartsexpandwidth}/:{hmpartsexpandlength}/:{hmmaterial}
+    constrains:
+      - function: "(val) => val ==='' || val === null"
+        message: "此欄位為必填"
+    require: true
+    func: "(hmthickness, hmpartsexpandwidth, hmpartsexpandlength, hmmaterialdensity)=>{
+      return +hmthickness * +hmpartsexpandwidth * +hmpartsexpandlength * +hmmaterialdensity / 1000;
+    }"
+    replaceBy:
+      - hmthickness
+      - hmpartsexpandwidth
+      - hmpartsexpandlength
+      - hmmaterialdensity
+
+  - key: hmToolingMaterialWeight
+    $Template:
+      - realtimeFormulaFloat
+      - ^displayConfig
+    label: 毛重(素材重量)(g)
+    # url: bom/partlist/grossWeight/:{hmthickness}/:{hmToolingMaterialExpandWidth}/:{hmToolingMaterialExpandLength}/:{hmmaterial}
+    constrains:
+      - function: "(val) => val ==='' || val === null"
+        message: "此欄位為必填"
+    require: true
+    func: "(hmthickness, hmToolingMaterialExpandWidth, hmToolingMaterialExpandLength, hmmaterialdensity)=>{
+      return +hmthickness * +hmToolingMaterialExpandWidth * +hmToolingMaterialExpandLength * +hmmaterialdensity / 1000;
+    }"
+    replaceBy:
+      - hmthickness
+      - hmToolingMaterialExpandWidth
+      - hmToolingMaterialExpandLength
+      - hmmaterialdensity
+
+  - key: hmToolingHoleCount
+    $Template:
+      - inputInt
+      - ^displayConfig
+    label: 穴數
+    default: 1
+    constrains:
+      - function: "val => (val === '' || val === null)"
+        message: "此欄位為必填"
+      - function: "val => (+val <= 0)"
+        message: "穴數須大於0"
+    require: true
+    emdmKey: emdmBomInfo.cavProdCavityQty1
+
+
+  # ===== START: 無限沖壓 ===================
+  - key: hmToolingStamping
+    $Template:
+      - composite
+    label: 沖壓
+    group:
+      - stamping
+    $housing-metal.layout.hmToolingStamping:
+      - ^multiple
+      - ^items
+    minGroupCount: 1
+  - key: space
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+
+  - key: hmToolingTotalCount
+    $Template:
+      - realtimeFormulaInt
+      - ^displayConfig
+    label: 總工程數
+    func: "(list=[]) => {
+      const result = list.reduce((prev, current) => +current.hmStampingCount + prev, 0);
+      return result;
+    }"
+    replaceBy:
+      - hmToolingStamping
+
+  - key: hmToolingModuleMode
+    $Template:
+      - realtimeFormulaString
+      - ^displayConfig
+    label: 模具型式
+    func: "(list = []) => {
+      const mode = list.reduce((prev, current) => {
+        const mtype = current.hmStampingMouldType;
+        if (!prev.includes(mtype)) {
+          prev.push(mtype);
+        }
+
+        return prev;
+      } , [])
+      
+      return mode.join('+');
+    }"
+    replaceBy:
+      - hmToolingStamping
+
+  # ===== END: 無限沖壓 ===================
+  - key: hmToolingModuleFeature
+    $Template:
+      - inputString
+      - ^displayConfig
+    label: 模具特徵
+    emdmKey: emdmBomInfo.moldFeature
+
+  - key: hmToolingModuleFactory
+    $Template:
+      - inputString
+      - ^displayConfig
+    label: 模具廠
+    emdmKey: emdmBomInfo.moldFactory
+
+  - key: hmToolingMoldingManufacturer
+    $Template:
+      - inputString
+      - ^displayConfig
+    label: 成型廠商
+    emdmKey: emdmBomInfo.moldingFactory
+
+  - key: site
+    label: 生產地
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: id
+      ?getCommonSite:
+        -
+      # $meothers-rubber.dropdown.rubberSiteValues:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    require: false
+    emdmKey: emdmBomInfo.producePlace
+
+  - key: payoutSite
+    label: 掛帳廠別
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: id
+      ?getCommonSite:
+        -
+      # $meothers-rubber.dropdown.rubberSiteValues:
+        - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    require: false
+    emdmKey: emdmBomInfo.openAcctFactory
+
+  - key: hpToolingBonded
+    $Template:
+      - selectorString
+    label: 保稅or非保稅
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: id
+      ?getPlasticToolingBonder:
+        -
+      # $housing-plastic.dropdown.HpToolingBonded:
+      #   - ^values
+      default: null
+    displayConfig:
+      grids: 1
+      display: true
+    emdmKey: emdmBomInfo.bondId
+
+  - key: hmToolingTSDate
+    $Template:
+      - inputDate
+    label: TS Date
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      display: true
+    emdmKey: emdmBomInfo.moldMakingDate
+
+  - key: hmToolingT1Date
+    $Template:
+      - inputDate
+    label: T1 Date
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      display: true
+    emdmKey: emdmBomInfo.moldTrialDate1
+
+  - key: hmToolingRemark
+    $Template:
+      - textarea
+    label: 備註
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1.5
+      display: true
+    emdmKey: emdmBomInfo.toolingRemark
+
+

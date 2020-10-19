@@ -1,0 +1,18 @@
+multiple: false
+label: 選擇Manufacturer
+items:
+  - key: manufacturer
+    label: Manufacturer(可複選)
+    $Template:
+      - multiSelectorString
+      - ^displayConfig
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      $pcb.dropdown.PcbManufacturerValues:
+        - ^values
+    default: []
+    require: true
+    constrains:
+      - function: "(val) => val.length === 0"
+        message: "此欄位為必選"

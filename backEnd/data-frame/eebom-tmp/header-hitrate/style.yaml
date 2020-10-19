@@ -1,0 +1,24 @@
+ht-header:
+  fontColor: FFFFFF
+  fill: 4682B4
+  bold: true
+  fontFamily: arial
+  horizontalAlignment: center
+  border: true      
+
+ht-catagory:
+  fontColor: 0000CD
+  fill: ADD8E6
+  bold: true
+  fontFamily: arial
+  horizontalAlignment: center
+  border: true
+
+ht-data:
+  border: true
+  bold: true
+  fontFamily: arial
+  horizontalAlignment: center
+
+ht-sum:
+  bold: true

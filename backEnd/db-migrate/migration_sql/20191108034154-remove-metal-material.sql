@@ -1,0 +1,4 @@
+delete from formula.parameter_value pv where pv.parameter_id in (select id from formula.material_thinkness mt where mt.material_metal_id in (select id from formula.material_metal mm where mm."name" in ('SUS410','低碳鋼1018', 'TMS02')));
+delete from formula.material_thinkness mt where mt.material_metal_id in (select id from formula.material_metal mm where mm."name" in ('SUS410','低碳鋼1018', 'TMS02'));
+delete from formula.part_category_material_metal pcmm where pcmm.material_metal_id in (select id from formula.material_metal mm where mm."name" in ('SUS410','低碳鋼1018', 'TMS02'));
+delete from formula.material_metal mm where mm."name" in ('SUS410','低碳鋼1018', 'TMS02');

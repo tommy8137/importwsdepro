@@ -1,0 +1,1 @@
+ALTER TABLE wiprocurement.eebom_detail ADD COLUMN IF NOT EXISTS sheet character varying;

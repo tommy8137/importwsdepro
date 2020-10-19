@@ -1,0 +1,55 @@
+version: '1.0'
+layout:
+  - key: tab1
+    label: tab1
+    $Template:
+      - tab
+    items:
+      # $XXX(ex, $Fan) need first than $template-composite
+      - key: tab1Examples
+        label: Tab1 Examples
+        $example.ExampleInput:
+          - ^multiple
+          - ^items
+        $Template:
+          - composite
+
+  - key: tab2
+    label: tab2
+    visiable: true
+    $Template:
+      - tab
+    items:
+      # $XXX(ex, $Fan) need first than $template-composite
+      - key: tab2UploadMultiImage
+        label: Image
+        $example.MultiImage:
+          - ^multiple
+          - ^items
+        $Template:
+          - compositeMultiUpload
+      - key: multiInputs
+        label: Fill by tooling Team
+        $example.CompositeField:
+          - ^multiple
+          - ^items
+        $Template:
+          - composite
+
+      - key: dependency
+        label: Dependency example
+        $example.Dependency:
+          - ^multiple
+          - ^items
+        $Template:
+          - composite
+
+      - key: valueDependency
+        label: Value Dependency example
+        $example.ValueDependency:
+          - ^multiple
+          - ^items
+#        $Template:
+#          - composite
+
+formulas: []

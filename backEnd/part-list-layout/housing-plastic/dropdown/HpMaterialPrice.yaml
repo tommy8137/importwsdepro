@@ -1,0 +1,269 @@
+values:
+    - hpmaterial: Sabic_BPL1000
+      hpPrice: 5.95
+    - hpmaterial: Sabic_ML7681
+      hpPrice: 7.05
+    - hpmaterial: Sabic_FXD9810
+      hpPrice: 9.25
+    - hpmaterial: Sabic_121R / 141R /123R-CC
+      hpPrice: 4.85
+    - hpmaterial: Dupont_HTNFR55G50NHLWSF
+      hpPrice: 10.05
+    - hpmaterial: Dupont_HTN59G55LWSF
+      hpPrice: 15.00
+    - hpmaterial: Sabic_EXL1414
+      hpPrice: 5.52
+    - hpmaterial: Teijin_L-1225L
+      hpPrice: 4.20
+    - hpmaterial: Teijin_L-1225Y
+      hpPrice: 4.20
+    - hpmaterial: Teijin_L-1250Y
+      hpPrice: 4.20
+    - hpmaterial: Teijin_LN2520A
+      hpPrice: 5.00
+    - hpmaterial: Teijin_MN-4800
+      hpPrice: 6.50
+    - hpmaterial: Teijin_MN-3709EE
+      hpPrice: 4.60
+    - hpmaterial: Sabic_RCX7243
+      hpPrice: 5.17
+    - hpmaterial: MEP_FPR3500
+      hpPrice: 6.25
+    - hpmaterial: MEP_FPL3500
+      hpPrice: 6.25
+    - hpmaterial: Sabic_D151
+      hpPrice: 7.90
+    - hpmaterial: Teijin_GV-3510R
+      hpPrice: 6.00
+    - hpmaterial: LG_LUPOY ER2102
+      hpPrice: 4.20
+    - hpmaterial: MEP_CP2015N2
+      hpPrice: 15.85
+    - hpmaterial: Sabic_DC0041PQ
+      hpPrice: 11.32
+    - hpmaterial: Sabic_DC0041PR
+      hpPrice: 11.62
+    - hpmaterial: Sabic_D251
+      hpPrice: 7.90
+    - hpmaterial: Teijin_GV-3520R
+      hpPrice: 6.50
+    - hpmaterial: LG_LUPOY GN2253F
+      hpPrice: 4.85
+    - hpmaterial: Sabic_BM5225Y
+      hpPrice: 3.90
+    - hpmaterial: Teijin_DN-5325B
+      hpPrice: 4.00
+    - hpmaterial: Teijin_DN-5325S
+      hpPrice: 3.85
+    - hpmaterial: Teijin_DN-5325SEF
+      hpPrice: 4.50
+    - hpmaterial: Sabic_RCM6224
+      hpPrice: 4.38
+    - hpmaterial: Covestro_GF9016
+      hpPrice: 5.00
+    - hpmaterial: LG_LUPOY GN2303F
+      hpPrice: 4.90
+    - hpmaterial: Sabic_D351
+      hpPrice: 7.00
+    - hpmaterial: Teijin_GXV-3530UH
+      hpPrice: 5.80
+    - hpmaterial: Covestro_GF9012MF
+      hpPrice: 5.90
+    - hpmaterial: Covestro_GF9018
+      hpPrice: 5.70
+    - hpmaterial: LG_LUPOY GN2403FT
+      hpPrice: 5.50
+    - hpmaterial: Sabic_D451
+      hpPrice: 8.50
+    - hpmaterial: Sabic_D452
+      hpPrice: 8.50
+    - hpmaterial: Teijin_GN-3540RI
+      hpPrice: 7.50
+    - hpmaterial: LG_LUPOY ER2403F
+      hpPrice: 6.00
+    - hpmaterial: Teijin_GXV-3545WI
+      hpPrice: 8.00
+    - hpmaterial: Covestro_GF9020
+      hpPrice: 7.50
+    - hpmaterial: LG_LUPOY GN2503F
+      hpPrice: 6.75
+    - hpmaterial: Sabic_D551
+      hpPrice: 8.73
+    - hpmaterial: Teijin_GXV-3550WI
+      hpPrice: 8.50
+    - hpmaterial: Covestro_M4004GR
+      hpPrice: 4.05
+    - hpmaterial: LG_LUPOY ER2503F
+      hpPrice: 7.45
+    - hpmaterial: Sabic_D551RC
+      hpPrice: 8.73
+    - hpmaterial: Covestro_FR3002
+      hpPrice: 3.50
+    - hpmaterial: Covestro_FR3008
+      hpPrice: 3.25
+    - hpmaterial: Covestro_FR3040
+      hpPrice: 4.70
+    - hpmaterial: LG_LUPOY GN5001RFD
+      hpPrice: 3.50
+    - hpmaterial: MEP_MB1800
+      hpPrice: 3.50
+    - hpmaterial: Sabic_CX2244ME
+      hpPrice: NT $305
+    - hpmaterial: Sabic_CX7240
+      hpPrice: 5.90
+    - hpmaterial: Sabic_CY6120
+      hpPrice: 4.10
+    - hpmaterial: Teijin_TN-7000A
+      hpPrice: 3.55
+    - hpmaterial: Teijin_TN-7690A
+      hpPrice: 4.29
+    - hpmaterial: LOTTE_NH-1021
+      hpPrice: 3.70
+    - hpmaterial: LOTTE_NH-1015V
+      hpPrice: 3.80
+    - hpmaterial: Covestro_FR630GR
+      hpPrice: 3.70
+    - hpmaterial: LG_LUPOY ER5001RFA
+      hpPrice: 3.50
+    - hpmaterial: Sabic_RCY6214
+      hpPrice: 4.13
+    - hpmaterial: Teijin_TN 7050
+      hpPrice: 5.80
+    - hpmaterial: Teijin_TN 7050Y
+      hpPrice: 4.80
+    - hpmaterial: LG_LUPOY GN5121RF
+      hpPrice: 3.80
+    - hpmaterial: MEP_TMB1412
+      hpPrice: 3.00
+    - hpmaterial: Covestro_FR3021
+      hpPrice: 3.10
+    - hpmaterial: LG_LUPOY GN5151RFA
+      hpPrice: 3.10
+    - hpmaterial: MEP_TMB1615
+      hpPrice: 3.00
+    - hpmaterial: Sabic_C7230P
+      hpPrice: 3.90
+    - hpmaterial: Teijin_TN-3715B
+      hpPrice: 3.30
+    - hpmaterial: Teijin_TN-3715BW
+      hpPrice: 3.30
+    - hpmaterial: Teijin_TN-3715BX
+      hpPrice: 3.55
+    - hpmaterial: Teijin_TN-3740B
+      hpPrice: 3.00
+    - hpmaterial: LOTTE_NH-1150HH
+      hpPrice: 3.30
+    - hpmaterial: Covestro_FR3021BBS910
+      hpPrice: 3.50
+    - hpmaterial: Teijin_TN-3715BZ
+      hpPrice: 4.15
+    - hpmaterial: Teijin_TN 3745BEC
+      hpPrice: 3.56
+    - hpmaterial: Covestro_FR3021GR
+      hpPrice: 3.60
+    - hpmaterial: LG_LUPOY ER5151RFL
+      hpPrice: 3.40
+    - hpmaterial: Sabic_RCM6123
+      hpPrice: 4.10
+    - hpmaterial: Teijin_TN 3745BEF
+      hpPrice: 3.40
+    - hpmaterial: Covestro_FR3023
+      hpPrice: 3.60
+    - hpmaterial: Covestro_FR3025
+      hpPrice: 3.40
+    - hpmaterial: LG_LUPOY GN5254FD
+      hpPrice: 3.40
+    - hpmaterial: LG_LUPOY ER5254F
+      hpPrice: 4.00
+    - hpmaterial: Covestro_FR3025R35
+      hpPrice: 4.20
+    - hpmaterial: MEP_MB1700
+      hpPrice: 3.50
+    - hpmaterial: Covestro_FR3020
+      hpPrice: 3.50
+    - hpmaterial: LG_LUPOY GN5101RF
+      hpPrice: 3.35
+    - hpmaterial: Sabic_C7210A
+      hpPrice: 4.90
+    - hpmaterial: Sabic_C7410
+      hpPrice: 4.55
+    - hpmaterial: Teijin_TN-3713B
+      hpPrice: 3.45
+    - hpmaterial: Teijin_TN-3713BX
+      hpPrice: 3.55
+    - hpmaterial: Teijin_TN-7100F
+      hpPrice: 3.10
+    - hpmaterial: Teijin_TN-7200B
+      hpPrice: 4.15
+    - hpmaterial: Sabic_RCM6134
+      hpPrice: 4.09
+    - hpmaterial: Sabic_CM6140
+      hpPrice: 4.10
+    - hpmaterial: LG_LUPOY SG-5009FA
+      hpPrice: 4.50
+    - hpmaterial: MEP_BCB992
+      hpPrice: 8.00
+    - hpmaterial: MEP_7025A OAT223
+      hpPrice: 9.75
+    - hpmaterial: MEP_F20-03
+      hpPrice: 2.80
+    - hpmaterial: Dupont_Delrin 100
+      hpPrice: 4.85
+    - hpmaterial: Dupont_HTNFE170016
+      hpPrice: 10.05
+    - hpmaterial: Dupont_HTNFE170023
+      hpPrice: 12.00
+    - hpmaterial: Toray_A305M45B
+      hpPrice: 9.80
+    - hpmaterial: Toray_A595H
+      hpPrice: 10.20
+    - hpmaterial: LG_EGP2500
+      hpPrice: 7.00
+    - hpmaterial: Toray_A695H
+      hpPrice: 9.85
+    - hpmaterial: Dupont_Hytrel ®  3046
+      hpPrice: 9.50
+    - hpmaterial: Dupont_Hytrel ®  3078
+      hpPrice: 9.20
+    - hpmaterial: Dupont_Hytrel ®  4056
+      hpPrice: 7.50
+    - hpmaterial: Dupont_Hytrel® RS30F7
+      hpPrice: 15.30
+    - hpmaterial: Dupont_Hytrel® RS40F2
+      hpPrice: 15.30
+    - hpmaterial: Covestro_UDS70AU
+      hpPrice: 10.80
+    - hpmaterial: Covestro_IT85AU
+      hpPrice: 14.20
+    - hpmaterial: Covestro_8785A
+      hpPrice: 6.20
+    - hpmaterial: Covestro_1070AU
+      hpPrice: 12.30
+    - hpmaterial: Covestro_5377A
+      hpPrice: 14.80
+    - hpmaterial: Covestro_1065AU
+      hpPrice: 6.70
+    - hpmaterial: Huntsman_AVALON 85AE
+      hpPrice: 6.00
+    - hpmaterial: Huntsman_AVALON 80AE
+      hpPrice: 6.10
+    - hpmaterial: Huntsman_AVALON 75AE
+      hpPrice: 6.50
+    - hpmaterial: Huntsman_AVALON 65AB
+      hpPrice: 6.80
+    - hpmaterial: Sabic_LNP Lubriloy D20001
+      hpPrice: 12.20
+    - hpmaterial: Dupont_HTR8813
+      hpPrice: 16.00
+    - hpmaterial: Dupont_HTR8837
+      hpPrice: 11.50
+    - hpmaterial: Teijin_MN-3600H
+      hpPrice: 4.70
+    - hpmaterial: Teijin_L-1225Z100
+      hpPrice: 4.40
+    - hpmaterial: MEP_EFD8000
+      hpPrice: 8.00
+    - hpmaterial: MEP_EFD3304U
+      hpPrice: 6.00
+    - hpmaterial: Teijin_ML-1103
+      hpPrice: 8.00

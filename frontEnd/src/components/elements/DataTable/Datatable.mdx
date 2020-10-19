@@ -1,0 +1,126 @@
+---
+name: DataTable
+---
+
+import { Playground, Props } from 'docz'
+import Table from '~~elements/DataTable';
+import TableHeaderColumn from '~~elements/DataTable/TableHeaderColumn';
+import { State } from 'react-powerplug';
+import * as styles from '~~styles/_docz-template.scss';
+
+##  使用方式
+
+### 引用
+```js
+import Table from '~~elements/DataTable';
+```
+### 說明
+
+使用的方式基本上要帶兩個props: `rows`和`headers`。    
+`headers`參數說明請看Props。    
+rows就是table的資料。    
+我們會把資料整理完變成`rows`和`headers`，讓你自己去return想要的東西，只要有照著TableStyles的class命名，就可以吃到css樣式。    
+可以參考範例
+
+```js
+<Table rows={} headers={} >
+{({ rows, headers }) => {
+  return (
+    <p>你想要的東西</p>
+  )
+}}
+</Table>
+```
+
+## Props
+
+<Props of={Table} />
+
+--- 
+
+## 範例
+
+
+<Playground>
+  <h3>Table</h3>
+  <div className={styles['display-table-theme']}>
+    <State initial={{
+        header: [
+            {
+                dataIndex: 'name',
+                key: 'name',
+                title: 'Name',
+                sortable: true,
+                sortOrder: 'desc'
+            },
+            {
+                dataIndex: 'job',
+                key: 'job',
+                title: 'Job',
+                sortable: true,
+                sortOrder: 'desc'
+            },
+            {
+                // dataIndex: 'isAdmin',
+                renderCell: (row) => {
+                    return row.isAdmin ? 'OK' : 'NO';
+                },
+                key: 'isAdmin',
+                title: 'Is Admin',
+                sortable: false,
+                sortOrder: null
+            },
+        ],
+        rows: [
+            { name: 'Amy', job: 'RD', isAdmin: true },
+            { name: 'Bob', job: 'PM', isAdmin: false }
+        ]
+    }}>
+        {({ state, setState }) => {
+            return (
+                <Table rows={state.rows} headers={state.header}>
+                    {({ rows, headers }) => {
+                        return (
+                            <div>
+                                <div className="table">
+                                    <div className="table-thead">
+                                        <div className="table-tr">
+                                            {headers.map(item => {
+                                                return (
+                                                    <TableHeaderColumn
+                                                        data={item}
+                                                        onSortChange={this.onSortChange}
+                                                        key={item.key}
+                                                    />
+                                                );
+                                            })}
+                                        </div>
+                                    </div>
+                                    <div className="table-tbody">                                 
+                                      {rows.map(row => {
+                                              console.log('row', row);
+                                              return  (<div className="table-tr">
+                                                {row.cells.map(cell => {
+                                                    return (
+                                                        <div className="table-td" key={cell.id}>
+                                                            {cell.value}
+                                                        </div>
+                                                    );
+                                                })}
+                                              </div>); 
+                                          })
+                                      }
+                                    </div>
+                                </div>
+                            </div>
+
+                        );
+                    }}
+                </Table>
+            )
+        }}
+    </State>
+  </div>  
+</Playground>
+
+

@@ -1,0 +1,23 @@
+values:
+  - fanSize: 60*60*3.5
+    fanSizePrice: 5.5
+  - fanSize: 60*60*4
+    fanSizePrice: 3.7
+  - fanSize: 60*60*4.5
+    fanSizePrice: 3.5
+  - fanSize: 60*60*5
+    fanSizePrice: 2.5
+  - fanSize: 60*60*5.5
+    fanSizePrice: 2.1
+  - fanSize: 60*60*6
+    fanSizePrice: 1.75
+  - fanSize: 60*60*6.5
+    fanSizePrice: 1.65
+  - fanSize: 60*60*7
+    fanSizePrice: 1.4
+  - fanSize: 60*60*7.5
+    fanSizePrice: 1.4
+  - fanSize: 70*70*5
+    fanSizePrice: 1.4
+  - fanSize: 80*80*5
+    fanSizePrice: 2.2

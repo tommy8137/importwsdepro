@@ -1,0 +1,55 @@
+headers:
+  product_line:
+    label: Product Line
+    $bom-summary.header-bom-summary.Template:
+      - bomDataString
+
+  project_name:
+    label: Project Name
+    $bom-summary.header-bom-summary.Template:
+      - bomDataString
+
+  project_code:
+    label: Project Code
+    $bom-summary.header-bom-summary.Template:
+      - bomDataString
+
+  stage:
+    label: Stage
+    $bom-summary.header-bom-summary.Template:
+      - bomDataString
+
+  site:
+    label: Site
+    $bom-summary.header-bom-summary.Template:
+      - bomDataString
+
+  odm_oem:
+    label: ODM/OEM
+    $bom-summary.header-bom-summary.Template:
+      - bomDataString
+
+  project_description:
+    label: Project Description
+    $bom-summary.header-bom-summary.Template:
+      - bomDataString
+
+  currency:
+    label: currency
+    $bom-summary.header-bom-summary.Template:
+      - bomDataString
+
+  total_sku_cost:
+    label: Total SKU Cost
+    $bom-summary.header-bom-summary.Template:
+      - bomDataFloat
+
+  emdm_version:
+    label: EMDM Version
+    $bom-summary.header-bom-summary.Template:
+      - bomDataString
+
+  cost_version:
+    label: Cost Version
+    $bom-summary.header-bom-summary.Template:
+      - bomDataString

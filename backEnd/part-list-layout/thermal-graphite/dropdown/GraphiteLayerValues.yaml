@@ -1,0 +1,22 @@
+# 石墨層
+values:
+ - graphiteLayer: 合成石墨(K=450-650)
+   graphiteLayerThickness: 0.045
+   graphiteLayerPrice: 29.00
+ - graphiteLayer: 合成石墨(K=450-650)
+   graphiteLayerThickness: 0.065
+   graphiteLayerPrice: 36.50
+ - graphiteLayer: 合成石墨(K=450-650)
+   graphiteLayerThickness: 0.11
+   graphiteLayerPrice: 45.50
+ - graphiteLayer: 人工石墨(K=1200~1500)
+   graphiteLayerThickness: 0.025
+   graphiteLayerPrice: 30.00
+ - graphiteLayer: 人工石墨(K=1200~1500)
+   graphiteLayerThickness: 0.04
+   graphiteLayerPrice: 43.50
+ - graphiteLayer: 人工石墨(K=1200~1500)
+   graphiteLayerThickness: 0.075
+   graphiteLayerPrice: 63.50
+
+

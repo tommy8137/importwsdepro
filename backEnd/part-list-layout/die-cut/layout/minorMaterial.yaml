@@ -1,0 +1,210 @@
+multiple: 新增次主要材料
+label: 次主要材料
+items:
+  - key: minorMaterialLabel
+    label: 次主要材料
+    $Template:
+      - label
+    level: 2
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+      display: false
+
+  - key: minorType2
+    label: Part Category II from db
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: minorCategory_2_id
+      ?getDiecutMaterial:
+        -
+      # $die-cut.dropdown.materialPerCostValues:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.dieCutMinor
+    emdmKey: minorType2
+
+
+  - key: minorMaterialspec
+    label: Material Spec.
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: minorMaterial_spec_id
+      ?getDiecutMaterial:
+        -
+      # $die-cut.dropdown.materialPerCostValues:
+      #   - ^values
+      depends:
+        - minorType2
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      depends:
+        action: lock
+        condition:
+          minorType2: true
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.dieCutMinor
+    emdmKey: minorMaterialspec
+
+  - key: minorMaterial
+    label: Material
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: minorMaterial_id
+      ?getDiecutMaterial:
+        -
+      # $die-cut.dropdown.materialPerCostValues:
+      #   - ^values
+      depends:
+        - minorType2
+        - minorMaterialspec
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      depends:
+        action: lock
+        condition:
+          minorType2: true
+          # minorMaterialspec: true
+          minorMaterialspec: "(minorMaterialspec, props) => {
+            const { FFCConnectorFunctionName } = props;
+            const otherFillMeRemarkText = 'Other_Fill_ME_Remark';
+            const isOtherFillMeRemark = minorMaterialspec === otherFillMeRemarkText;
+            return !isOtherFillMeRemark;
+          }"
+          # minorType2: (minorType2) => { return minorType2 !== 'Gasket'; }
+    require: true
+    constrains:
+      - function: "(val, props) => {
+          const { minorMaterialspec } = props;
+          const otherFillMeRemarkText = 'Other_Fill_ME_Remark';
+          const isOtherFillMeRemark = minorMaterialspec === otherFillMeRemarkText;
+          return (val ==='' || val === null) && !isOtherFillMeRemark
+        }"
+        message: "此欄位為必填"
+        params:
+          - minorMaterialspec
+    emdmMultipleKey: emdmBomInfo.cmfForm.dieCutMinor
+    emdmKey: minorMaterial
+
+  - key: materialSizeCompisite
+    label: 次主材料尺寸
+    $Template:
+      - compositeInline
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1.5
+      spaceConfig: 
+        after: 1.5
+    items:
+      - key: minorPartssizelength
+        label: L(mm)
+        $Template:
+          - inputFloat
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.dieCutMinor
+        emdmKey: minorPartssizelength
+
+      - key: minorPartssizewidth
+        label: W(mm)
+        $Template:
+          - inputFloat
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.dieCutMinor
+        emdmKey: minorPartssizewidth
+
+      - key: minorPartssizehigh
+        label: H(mm)
+        $Template:
+          - inputFloat
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1
+          depends:
+            action: lock
+            condition:
+              minorType2: "(minorType2, props) => {
+                const minorMaterialspec = props.minorMaterialspec;
+                const result = minorType2 !== 'Gasket' || (minorMaterialspec === 'Non_UL_Eco_Form' || minorMaterialspec === 'UL_Eco_Form');
+                return !result;
+              }"
+              minorMaterialspec: true
+        require: true
+        enableDefault: false
+        emdmMultipleKey: emdmBomInfo.cmfForm.dieCutMinor
+        emdmKey: minorPartssizehigh
+
+  - key: minorMaterialPerCost
+    label: 主材料單價
+    $Template:
+      - mappedValueFloat
+    mapFrom:
+      - minorMaterial
+      - minorMaterialspec
+    selectorConfig:
+      ?getDiecutMaterial:
+        -
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+
+
+  - key: minorMaterialspecRemark
+    label: Material Spec Remark
+    $Template:
+      - textarea
+    require: true
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      depends:
+        action: lock
+        condition:
+          minorMaterialspec: "val => val === 'Other_Fill_ME_Remark'"
+    emdmMultipleKey: emdmBomInfo.cmfForm.dieCutMinor
+    emdmKey: minorMaterialspecRemark   
+
+  - key: minorMaterialRemark
+    label: Material Remark
+    $Template:
+      - textarea
+    require: true
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      depends:
+        action: lock
+        condition:
+          minorMaterial: "val => val === 'Other_Fill_ME_Remark'"
+    emdmMultipleKey: emdmBomInfo.cmfForm.dieCutMinor
+    emdmKey: minorMaterialRemark   

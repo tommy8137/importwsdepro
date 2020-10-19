@@ -1,0 +1,180 @@
+headers:
+  type1:
+    label: Type I
+    $Template:
+      - dataString
+
+  type2:
+    label: Type II
+    $Template:
+      - dataString
+
+  part_number:
+    label: Part Number
+    $Template:
+      - dataString
+
+  description:
+    label: Description
+    $Template:
+      - dataString
+
+  manufacturer:
+    label: Manufacturer
+    $Template:
+      - dataString
+
+  vendor:
+    label: Vendor Name
+    $Template:
+      - dataString
+
+  vendor_part_no:
+    label: Vendor P/N
+    $Template:
+      - dataString
+
+  supply_type:
+    label: Supply Type
+    $Template:
+      - dataString
+
+  supply_type_list:
+    label: All Supply Type List
+    $Template:
+      - dataString
+
+  avap:
+    label: eEDM AVAP
+    $Template:
+      - fontRed
+
+
+  obs:
+    label: OBS
+    $Template:
+      - fontRed
+
+  exp:
+    label: EXP.
+    $Template:
+      - fontRed
+  qty:
+    label: QTY
+    $Template:
+      - dataInt
+
+  price_usd_l:
+    label: Price (USD)
+    $Template:
+      - dataFloat
+
+  avl_alt_lowest_pn_without_main_pn:
+    label: ALT. P/N
+    subHeader: e-Pro. ALT Lowest Suggestion(w/ AVL)
+    subHeaderSite: 1
+    subHeaderMerge: 4
+    $Template:
+      - dataString
+
+  avl_alt_lowest_manufacturer_without_main_pn:
+    label: ALT. Manufacturer
+    $Template:
+      - dataString
+
+  avl_alt_lowest_cost_without_main_pn:
+    label: ALT. Price
+    $Template:
+      - dataFloat
+
+  price_gap_main_avl_alt_without_main_pn:
+    label: Price Gap(Main - ALT)*QTY
+    $Template:
+      - dataFloat
+
+  main_sourcer_priority:
+    label: Priority
+    subHeader: Main Source
+    remark: ['*若Main Price > ALT Price, 帶入2, 若Main Price <= ALT Price, 帶入1', '*Main Common part=Y, Main & Alt 淺灰色註記']
+    remarkSite: [2, 3]
+    subHeaderSite: 1
+    subHeaderMerge: 2
+    needFillMain: true
+    $eebom-tmp.header-2nd-bom.2ndTemplate:
+      - dataString
+
+  main_sourcer_remark:
+    label: Remark
+    needFillMain: true
+    $eebom-tmp.header-2nd-bom.2ndTemplate:
+      - dataString
+
+  alter_sugg_sourcer_priority:
+    label: Priority
+    subHeader: Alternative Suggestion by Sourcer
+    remark: ['*若Main Price > ALT Price, 帶入1, 若Main Price <= ALT Price, 帶入2', '*Main Common part=N, Alt Priority 1 or 空格 , Alt 黃色註記 (不含MLCC & RES)', '*MLCC & RES, Alt for reference only']
+    remarkSite: [2, 3, 4]
+    subHeaderSite: 1
+    subHeaderMerge: 6
+    needFillAlter: true
+    $eebom-tmp.header-2nd-bom.2ndTemplate:
+      - dataString
+
+  alter_sugg_sourcer_part_number:
+    label: Wistron p/n
+    needFillAlter: true
+    $eebom-tmp.header-2nd-bom.2ndTemplate:
+      - dataString
+
+  alter_sugg_sourcer_brand:
+    label: Brand
+    needFillAlter: true
+    $eebom-tmp.header-2nd-bom.2ndTemplate:
+      - dataString
+
+  alter_sugg_sourcer_vendor_part_no:
+    label: Vendor p/n
+    needFillAlter: true
+    $eebom-tmp.header-2nd-bom.2ndTemplate:
+      - dataString
+
+  alter_sugg_sourcer_price:
+    label: U/P (USD)
+    needFillAlter: true
+    $eebom-tmp.header-2nd-bom.2ndTemplate:
+      - dataFloat
+
+  alter_sugg_sourcer_remark:
+    label: Remark
+    needFillAlter: true
+    $eebom-tmp.header-2nd-bom.2ndTemplate:
+      - dataString
+
+
+  is_common_parts:
+    label: Main P/N CMP
+    subHeader: e-Pro. Common Part Check(Y/N)
+    subHeaderSite: 1
+    subHeaderMerge: 2
+    $Template:
+      - fontRed
+
+  avl_alt_is_common_parts_without_main_pn:
+    label: ALT P/N CMP
+    $Template:
+      - fontRed
+
+  org_pn_avl:
+    label: Main P/N AVL
+    subHeader: e-Pro. AVL Check(Y/N/NA)
+    remark: ['Y 代表是；N 代表否。NA 代表無法進行比較。 空白沒有限定邏輯。']
+    remarkSite: [2]
+    subHeaderSite: 1
+    subHeaderMerge: 2
+    $Template:
+      - fontRed
+
+  avl_alt_pn_avl_without_main_pn:
+    label: ALT P/N AVL
+    $Template:
+      - fontRed

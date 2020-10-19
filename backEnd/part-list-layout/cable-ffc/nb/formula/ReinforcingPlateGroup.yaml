@@ -1,0 +1,74 @@
+output:
+  accessoryAssyTime: accessoryAssyTime
+  accessoryCost: accessoryCost
+
+formula:
+  accessoryAssyTime:
+    type: MATH
+    formula: FFCReinforcingPlateQty * ffcstiffener_assy_time
+    label: 輔料組裝時間
+  accessoryCost:
+    type: MATH
+    formula: FFCReinforcingPlateQty * ffcReinforcingPlate_unit_price * ((FFCReinforcingPlateLength + ffcstiffener_l_side_constant ) * ( ffc_size_width + ffcstiffener_w_side_constant ) / ffcedge_materia_area_trans_constant ) * ( 1 + ffcstiffener_loss_rate)
+    label: 補強板費用
+  ffc_size_width:
+    type: MATH
+    formula:  (FFCPin +1) * FFCPitch
+    label: FFC尺寸(W)
+
+global:
+  FFCPin:
+    type: VARIABLE
+    label: FFC Pin
+    bykey: FFCPin
+    groups:
+      - cableFFC
+  FFCPitch:
+    type: VARIABLE
+    label: FFC Pitch
+    bykey: FFCPitch
+    groups:
+      - cableFFC
+
+scope:
+  FFCReinforcingPlateQty: FFCReinforcingPlateQty
+constant:
+  ffcReinforcingPlate_unit_price:
+    label: 補強板單價
+    ?getFFCCommon:
+      - cable_ffc_components
+      - stiffener_cost
+    # value: 2.6090
+  FFCReinforcingPlateLength:
+    label: 補強板長度
+    value: 10
+  ffcstiffener_l_side_constant:
+    label: 補強板 L 邊料常數
+    ?getFFCCommon:
+      - cable_ffc_components
+      - stiffener_l_side_constant
+    # value: 6
+  ffcstiffener_w_side_constant:
+    label: 補強板 W 邊料常數
+    ?getFFCCommon:
+      - cable_ffc_components
+      - stiffener_w_side_constant
+    # value: 6
+  ffcedge_materia_area_trans_constant:
+    label: FFC 面積單位換算
+    ?getFFCCommon:
+      - cable_ffc_components
+      - area_unit_transfer_constant
+    # value: 1000000
+  ffcstiffener_loss_rate:
+    label: 補強板 loss rate
+    ?getFFCCommon:
+      - cable_ffc_components
+      - stiffener_loss_rate
+    # value: 0.01
+  ffcstiffener_assy_time:
+    label: 補強板組裝時間
+    ?getFFCCommon:
+      - cable_ffc_components
+      - stiffener_assembly
+    # value: 12

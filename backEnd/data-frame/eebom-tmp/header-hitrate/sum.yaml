@@ -1,0 +1,37 @@
+headers:
+  sume2e26:
+    $Template:
+      - formula
+    value: =SUM(D2:D26)
+    style:
+      header:
+        $eebom-tmp.header-hitrate.style:
+          - ht-header
+      value:
+        $eebom-tmp.header-hitrate.style:
+          - ht-sum
+
+  sumf2f26:
+    $Template:
+       - formula
+    value: =SUM(E2:E26)
+    style:
+      header:
+        $eebom-tmp.header-hitrate.style:
+          - ht-header
+      value:
+        $eebom-tmp.header-hitrate.style:
+          - ht-sum
+
+  divf27e27:
+    $Template:
+      - formula
+    value: =IFERROR((E27/D27)*100,#N/A)
+    style:
+      header:
+        $eebom-tmp.header-hitrate.style:
+          - ht-header
+      value:
+        $eebom-tmp.header-hitrate.style:
+          - ht-sum
+

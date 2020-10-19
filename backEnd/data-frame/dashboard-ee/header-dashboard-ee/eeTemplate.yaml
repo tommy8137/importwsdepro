@@ -1,0 +1,77 @@
+dataFloat:
+  $Template:
+    - dataFloat
+  style:
+    header:
+      $dashboard-ee.header-dashboard-ee.style:
+        - item-header
+    value:
+      $dashboard-ee.header-dashboard-ee.style:
+        - item-data
+      numberFormat: '#,##0.00000'
+
+dataString:
+  $Template:
+    - dataString
+  style:
+    header:
+      $dashboard-ee.header-dashboard-ee.style:
+        - item-header
+    value:
+      $dashboard-ee.header-dashboard-ee.style:
+        - item-data
+
+dataInt:
+  $Template:
+    - dataInt
+  style:
+    header:
+      $dashboard-ee.header-dashboard-ee.style:
+        - item-header
+    value:
+      $dashboard-ee.header-dashboard-ee.style:
+        - item-data
+      numberFormat: '#,##0'
+dataPercent:
+  $Template:
+    - dataFloat
+  style:
+    header:
+      $dashboard-ee.header-dashboard-ee.style:
+        - item-header
+    value:
+      $dashboard-ee.header-dashboard-ee.style:
+        - item-data
+      numberFormat: '#,##0.00'
+
+dataBold:
+  $Template:
+    - dataBold
+  style:
+    header:
+      $dashboard-ee.header-dashboard-ee.style:
+        - item-header
+    value:
+      $dashboard-ee.header-dashboard-ee.style:
+        - bold-data
+
+
+keyBold:
+  $Template:
+    - keyBold
+  style:
+    header:
+      $dashboard-ee.header-dashboard-ee.style:
+        - item-header
+    value:
+      thick:
+        horizontalAlignment: center
+        borderColor: 'ED7D31'
+        border: true
+        bold: true
+        numberFormat: '#,##0.00000'
+      thin:
+        border: true
+        numberFormat: '#,##0.00000'
+        horizontalAlignment: center
+        borderColor: 'ED7D31'

@@ -1,0 +1,64 @@
+values:
+    - hpmaterial2: Sabic_EXL1414
+      hpPrice2: 5.52
+      hpmaterialspec2: PC
+    - hpmaterial2: Teijin_L-1225L
+      hpPrice2: 4.20
+      hpmaterialspec2: PC
+    - hpmaterial2: Teijin_L-1225Y
+      hpPrice2: 4.20
+      hpmaterialspec2: PC
+    - hpmaterial2: Teijin_L-1250Y
+      hpPrice2: 4.20
+      hpmaterialspec2: PC
+    - hpmaterial2: Teijin_LN2520A
+      hpPrice2: 5.00
+      hpmaterialspec2: PC
+    - hpmaterial2: Teijin_MN-4800
+      hpPrice2: 6.50
+      hpmaterialspec2: PC
+    - hpmaterial2: Dupont_Hytrel ®  3046
+      hpPrice2: 9.50
+      hpmaterialspec2: TPEE 
+    - hpmaterial2: Dupont_Hytrel ®  3078
+      hpPrice2: 9.20
+      hpmaterialspec2: TPEE 
+    - hpmaterial2: Dupont_Hytrel ®  4056
+      hpPrice2: 7.50
+      hpmaterialspec2: TPEE 
+    - hpmaterial2: Dupont_Hytrel® RS30F7
+      hpPrice2: 15.30
+      hpmaterialspec2: TPEE 
+    - hpmaterial2: Dupont_Hytrel® RS40F2
+      hpPrice2: 15.30
+      hpmaterialspec2: TPEE 
+    - hpmaterial2: Covestro_UDS70AU
+      hpPrice2: 10.80
+      hpmaterialspec2: TPU 
+    - hpmaterial2: Covestro_IT85AU
+      hpPrice2: 14.20
+      hpmaterialspec2: TPU 
+    - hpmaterial2: Covestro_8785A
+      hpPrice2: 6.20
+      hpmaterialspec2: TPU 
+    - hpmaterial2: Covestro_1070AU
+      hpPrice2: 12.30
+      hpmaterialspec2: TPU 
+    - hpmaterial2: Covestro_5377A
+      hpPrice2: 14.80
+      hpmaterialspec2: TPU 
+    - hpmaterial2: Covestro_1065AU
+      hpPrice2: 6.70
+      hpmaterialspec2: TPU 
+    - hpmaterial2: Huntsman_AVALON 85AE
+      hpPrice2: 6.00
+      hpmaterialspec2: TPU 
+    - hpmaterial2: Huntsman_AVALON 80AE
+      hpPrice2: 6.10
+      hpmaterialspec2: TPU 
+    - hpmaterial2: Huntsman_AVALON 75AE
+      hpPrice2: 6.50
+      hpmaterialspec2: TPU 
+    - hpmaterial2: Huntsman_AVALON 65AB
+      hpPrice2: 6.80
+      hpmaterialspec2: TPU 

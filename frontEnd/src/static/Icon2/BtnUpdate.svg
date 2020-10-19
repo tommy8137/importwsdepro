@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+    <defs>
+        <style>
+            .cls-1{fill:#333}.cls-2{fill:none}.cls-3{fill:#fff}.cls-4{filter:url(#Rectangle_233)}
+        </style>
+        <filter id="Rectangle_233" width="48" height="48" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g id="btn_update_n" transform="translate(-1168 -398)">
+        <g class="cls-4" transform="translate(1168 398)">
+            <rect id="Rectangle_233-2" width="30" height="30" class="cls-1" data-name="Rectangle 233" rx="15" transform="translate(9 6)"/>
+        </g>
+        <rect id="btn_update_n-2" width="30" height="30" class="cls-2" data-name="btn_update_n" rx="4" transform="translate(1177 404)"/>
+        <path id="Union_152" d="M-1244-11259v-4h2v4zm-14 0v-4h14v2h-12v2z" class="cls-3" data-name="Union 152" transform="rotate(180 -29 -5418.5)"/>
+        <path id="Path_972" d="M14 21h3v5h4v-5h3l-5-7z" class="cls-3" data-name="Path 972" transform="translate(1173 395)"/>
+    </g>
+</svg>

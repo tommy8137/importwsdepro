@@ -1,0 +1,367 @@
+multiple: true
+label: 輔料
+multipleItems:
+  - item: Al Foil
+    emdmMultipleKey: emdmBomInfo.cmfForm.ffcAlFoil
+    group: alfoil
+    layout:
+      - key: FFCAlFoil
+        label: Al Foil
+        $Template:
+          - label
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 3
+
+      - key: FFCAlFoilLength
+        label: L(mm)
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.ffcAlFoil
+        emdmKey: FFCAlFoilLength
+
+      - key: FFCAlFoilQty
+        label: QTY
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.ffcAlFoil
+        emdmKey: FFCAlFoilQty
+
+  - item: 補強板
+    emdmMultipleKey: emdmBomInfo.cmfForm.FFCReinforcingPlate
+    group: reinforcingPlate
+    layout:
+      - key: FFCReinforcingPlate
+        label: 補強板
+        $Template:
+          - label
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 3
+
+      - key: FFCReinforcingPlateQty
+        label: QTY
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.FFCReinforcingPlate
+        emdmKey: FFCReinforcingPlateQty
+
+  - item: Label 料號標籤
+    emdmMultipleKey: emdmBomInfo.cmfForm.FFCLabel1
+    group: label1
+    layout:
+      - key: FFCLabel1
+        label: Label 料號標籤
+        $Template:
+          - label
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 3
+
+      - key: FFCLabel1Qty
+        label: QTY
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.FFCLabel1
+        emdmKey: FFCLabel1Qty
+
+  - item: Label 白底黑字
+    emdmMultipleKey: emdmBomInfo.cmfForm.FFCLabel2
+    group: label2
+    layout:
+      - key: FFCLabel2
+        label: Label 白底黑字
+        $Template:
+          - label
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 3
+
+      - key: FFCLabel2Qty
+        label: QTY
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.FFCLabel2
+        emdmKey: FFCLabel2Qty
+
+  - item: 導電布
+    emdmMultipleKey: emdmBomInfo.cmfForm.FFCConductiveCloth
+    group: conductiveCloth
+    layout:
+      - key: FFCConductiveCloth
+        label: 導電布
+        $Template:
+          - label
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 3
+      - key: FFCConductiveClothLength
+        label: L(mm)
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.FFCConductiveCloth
+        emdmKey: FFCConductiveClothLength
+
+      - key: FFCConductiveClothQty
+        label: QTY
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.FFCConductiveCloth
+        emdmKey: FFCConductiveClothQty
+
+  - item: 醋酸布
+    emdmMultipleKey: emdmBomInfo.cmfForm.FFCAceticAcidCloth
+    group: aceticAcidCloth
+    layout:
+      - key: FFCAceticAcidCloth
+        label: 醋酸布
+        $Template:
+          - label
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 3
+
+      - key: FFCAceticAcidClothLength
+        label: L(mm)
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.FFCAceticAcidCloth
+        emdmKey: FFCAceticAcidClothLength
+
+      - key: FFCAceticAcidClothwidth
+        label: W(mm)
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.FFCAceticAcidCloth
+        emdmKey: FFCAceticAcidClothwidth
+
+      - key: FFCAceticAcidClothQty
+        label: QTY
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.FFCAceticAcidCloth
+        emdmKey: FFCAceticAcidClothQty
+
+  - item: KAPTON
+    emdmMultipleKey: emdmBomInfo.cmfForm.FFCKapton
+    group: kapton
+    layout:
+      - key: FFCKapton
+        label: KAPTON
+        $Template:
+          - label
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 3
+
+      - key: FFCKaptonLength
+        label: L(mm)
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.FFCKapton
+        emdmKey: FFCKaptonLength
+
+      - key: FFCKaptonwidth
+        label: W(mm)
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.FFCKapton
+        emdmKey: FFCKaptonwidth
+
+      - key: FFCKaptonQty
+        label: QTY
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.FFCKapton
+        emdmKey: FFCKaptonQty
+
+  - item: 雙面膠
+    emdmMultipleKey: emdmBomInfo.cmfForm.FFCDoubleSideTape
+    group: doubleSideTape
+    layout:
+      - key: FFCDoubleSideTape
+        label: 雙面膠
+        $Template:
+          - label
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 3
+
+      - key: FFCDoubleSideTapeLength
+        label: L(mm)
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.FFCDoubleSideTape
+        emdmKey: FFCDoubleSideTapeLength
+
+      - key: FFCDoubleSideTapewidth
+        label: W(mm)
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.FFCDoubleSideTape
+        emdmKey: FFCDoubleSideTapewidth
+
+      - key: FFCDoubleSideTapeQty
+        label: QTY
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.FFCDoubleSideTape
+        emdmKey: FFCDoubleSideTapeQty
+
+  - item: 導電雙面膠
+    emdmMultipleKey: emdmBomInfo.cmfForm.FFCConductiveDoubleSideTape
+    group: conductiveDoubleSideTape
+    layout:
+      - key: FFCConductiveDoubleSideTape
+        label: 導電雙面膠
+        $Template:
+          - label
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 3
+
+      - key: FFCConductiveDoubleSideTapeLength
+        label: L(mm)
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.FFCConductiveDoubleSideTape
+        emdmKey: FFCConductiveDoubleSideTapeLength
+
+      - key: FFCConductiveDoubleSideTapewidth
+        label: W(mm)
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.FFCConductiveDoubleSideTape
+        emdmKey: FFCConductiveDoubleSideTapewidth
+
+      - key: FFCConductiveDoubleSideTapeQty
+        label: QTY
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.FFCConductiveDoubleSideTape
+        emdmKey: FFCConductiveDoubleSideTapeQty
+
+  - item: Mylar(CY28_PET) T=0.05
+    emdmMultipleKey: emdmBomInfo.cmfForm.FFCMylarCY28Pet005
+    group: mylarCY28Pet005
+    layout:
+      - key: FFCMylarCY28Pet005
+        label: Mylar(CY28_PET) T=0.05
+        $Template:
+          - label
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 3
+      - key: FFCMylarCY28Pet005Length
+        label: L(mm)
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.FFCMylarCY28Pet005
+        emdmKey: FFCMylarCY28Pet005Length
+
+      - key: FFCMylarCY28Pet005width
+        label: W(mm)
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.FFCMylarCY28Pet005
+        emdmKey: FFCMylarCY28Pet005width
+
+      - key: FFCMylarCY28Pet005Qty
+        label: QTY
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.FFCMylarCY28Pet005
+        emdmKey: FFCMylarCY28Pet005Qty
+
+  - item: Mylar(PET_6027D) T=0.1
+    emdmMultipleKey: emdmBomInfo.cmfForm.FFCMylarPet6027D01
+    group: mylarPet6027D01
+    layout:
+      - key: FFCMylarPet6027D01
+        label: Mylar(PET_6027D) T=0.1
+        $Template:
+          - label
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 3
+      - key: FFCMylarPet6027D01Length
+        label: L(mm)
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.FFCMylarPet6027D01
+        emdmKey: FFCMylarPet6027D01Length
+
+      - key: FFCMylarPet6027D01width
+        label: W(mm)
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.FFCMylarPet6027D01
+        emdmKey: FFCMylarPet6027D01width
+
+      - key: FFCMylarPet6027D01Qty
+        label: QTY
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.FFCMylarPet6027D01
+        emdmKey: FFCMylarPet6027D01Qty

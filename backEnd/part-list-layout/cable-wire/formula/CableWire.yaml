@@ -1,0 +1,473 @@
+output:
+  total: total
+  totalCost: totalCost
+  a_sumCableMaterialPrice: a_sumCableMaterialPrice
+  b_secondary_processing_cost: b_secondary_processing_cost
+  b_1_secondary_processing_cal: secondary_processing_cal
+  b_2_ffc_secondary_cost: ffc_secondary_cost
+  c_component_cost: c_component_cost
+  d_profit: d_profit
+  b_assembly: b_assembly
+  # FOR DEBUG
+  spenginghourup: spenginghourup
+  timeunittransferconstant: timeunittransferconstant
+  isOtherFill: isOtherFill
+  sumConnectorCost: sumConnectorCost
+  consumable_cost: consumable_cost
+  supportCost: supportCost
+  CWDefaultAceticAcidClothCost: CWDefaultAceticAcidClothCost
+  CWDefaultConductiveClothCost: CWDefaultConductiveClothCost
+
+formula:
+  # 如果connect 有填 other fill me remark
+  # total 就給他一槓
+  total:
+    label: 總價
+    type: FUNC
+    formula: "(total, isOtherFill)=>{
+      const inValid = !(total && typeof total === 'number' && isFinite(total));
+      if (isOtherFill) {
+        return null;
+      } else if (inValid) {
+        return 0;
+      }
+      return total;
+    }"
+    param:
+      - totalCost
+      - isOtherFill
+
+  totalCost:
+    type: MATH
+    label: 總費用
+    formula: a_sumCableMaterialPrice + b_secondary_processing_cost + c_component_cost + d_profit
+
+  # 檢查是否有connect, 線材 是否有任何欄位填寫 other fill me remark
+  isOtherFill:
+    type: GROUPFUNC
+    label: "檢查是否有connect, 線材 是否有任何欄位填寫 other fill me remark"
+    bykey:
+      - isOtherFillMeRemark
+      - otherFillMeRemarkExist
+    groups:
+      - cableConnector
+      - cableWireMaterial
+    func: "(values = []) => values.some(obj => obj.isOtherFillMeRemark || obj.otherFillMeRemarkExist)"
+
+  a_sumCableMaterialPrice:
+    type: GROUPSUM
+    label: 材料費
+    bykey: wirePrice
+    groups:
+      - cableWireMaterial
+
+  b_secondary_processing_cost:
+    type: MATH
+    formula: "secondary_processing_cal + ffc_secondary_cost"
+    label: B. 二次加工費
+
+  # 二次加工費 = Assembly + (Assembly * 寬放時間比例) / 60(時間單位換算常數) * 工時費用
+  secondary_processing_cal:
+    label: 二次加工費
+    type: MATH
+    formula: "materialPreparationSec / timeunittransferconstant * spenginghourup"
+
+  materialPreparationSec:
+    label: 備料時間
+    type: MATH
+    formula: "(b_assembly + (b_assembly * 0.04))"
+
+  ffc_secondary_cost:
+    label: FFC 二次加工費總和
+    type: GROUPSUM
+    bykey: ffcSecondaryCost
+    groups:
+      - cableWireMaterial
+
+  b_assembly:
+    type: MATH
+    label: 組裝時間
+    formula: sumConnectorAssembly + b_sub_assyTime + CWDefaultAceticAcidClothAssy + CWDefaultConductiveClothAssy
+
+  sumConnectorAssembly:
+    type: GROUPSUM
+    label: connector組裝時間總和
+    bykey: connectorAssembly
+    groups:
+      - cableConnector
+
+  b_sub_assyTime:
+    type: GROUPSUM
+    label: 二次加工費-組裝時間加總
+    bykey: assemblyTime
+    groups:
+      - cableSupport
+
+  c_component_cost:
+    label: C. 零件費
+    type: FUNC
+    formula: "(sumConnectorCost, consumable_cost, supportCost) => {
+     return (+sumConnectorCost + +consumable_cost + +supportCost);
+    }"
+    param:
+      - sumConnectorCost
+      - consumable_cost
+      - supportCost
+
+
+  sumConnectorCost:
+    type: GROUPSUM
+    label: connector total
+    bykey: connectorPrice
+    groups:
+      - cableConnector
+
+  supportCost:
+    type: MATH
+    formula: b_sub_cost + CWDefaultAceticAcidClothCost + CWDefaultConductiveClothCost
+    label: 輔料小計
+
+  b_sub_cost:
+    type: GROUPSUM
+    label: 成本小計
+    bykey: supportCost
+    groups:
+      - cableSupport
+
+  CWDefaultAceticAcidClothAssy:
+    type: MATH
+    formula: CWDefaultAceticAcidClothQty?(CWDefaultAceticAcidClothAssyCoefficient):0
+    label: 醋酸布組裝時間
+
+  CWDefaultAceticAcidClothAssyCoefficient:
+    type: MATH
+    formula: CWDefaultAceticAcidClothQty?(sumCableMaterialLength>300? aceticacidclothbigger_300assytime:aceticacidclothsmaller_300assytime):0
+    label: 醋酸布組裝時間係數
+
+  CWDefaultConductiveClothAssy:
+    type: MATH
+    formula: CWDefaultConductiveClothQty? CWDefaultConductiveClothAssyCoefficient * CWDefaultConductiveClothQty:0
+    label: 導電布組裝時間
+
+  CWDefaultConductiveClothAssyCoefficient:
+    type: MATH
+    formula: CWDefaultConductiveClothQty?(sumCableMaterialLength > 300? conductiveClothbigger_300assytime:conductiveClothsmaller_300assytime):0
+    label: 導電布組裝時間係數
+
+  CWDefaultAceticAcidClothCost:
+    type: MATH
+    formula: CWDefaultAceticAcidClothQty? CWDefaultAceticAcidClothQty*(sumCableMaterialLength*CWDefaultAceticAcidClothW/areaunittrnsferconstant)*aceticacidclothup*(1+aceticacidclothlossrate):0
+    label: 醋酸布拉帶成本
+
+  CWDefaultConductiveClothCost:
+    type: MATH
+    formula: CWDefaultConductiveClothQty? CWDefaultConductiveClothQty*(sumCableMaterialLength*CWDefaultConductiveClothW/areaunittrnsferconstant)*conductiveclothup*(1+conductiveclothlossrate):0
+    label: 導電布成本
+
+
+  sumCableMaterialLength:
+    type: GROUPSUM
+    label: 材料長度總和
+    bykey: cableMaterialLength
+    groups:
+      - cableWireMaterial
+
+  consumable_cost:
+    type: FUNC
+    formula: "(materialPrice, fluxCost, alcoholCost, doublesidedtapesCost, maskingtapesCost, issuepaperCost, pitapesCost, askingtapeshightempCost, peupCost, solderwireCost) => {
+      if (materialPrice > 0) {
+        return fluxCost + alcoholCost + doublesidedtapesCost + maskingtapesCost + issuepaperCost + pitapesCost + askingtapeshightempCost + peupCost + solderwireCost
+      }
+      return null;
+    }"
+    label: 耗材費用
+    param:
+     - a_sumCableMaterialPrice
+     - fluxCost
+     - alcoholCost
+     - doublesidedtapesCost
+     - maskingtapesCost
+     - issuepaperCost
+     - pitapesCost
+     - askingtapeshightempCost
+     - peupCost
+     - solderwireCost
+
+  fluxCost:
+    type: MATH
+    formula: 1 * fluxup * ( 1+ fluxlossrate)
+    label: 助焊劑
+
+  alcoholCost:
+    type: MATH
+    formula: 1 * alcoholup * ( 1+ alcohollossrate)
+    label: 酒精
+
+  doublesidedtapesCost:
+    type: MATH
+    formula: 1 * doublesidedtapesup * ( 1+ doublesidedtapeslossrate)
+    label: 雙面膠紙
+
+  maskingtapesCost:
+    type: MATH
+    formula: 1 * maskingtapesup * ( 1+ maskingtapeslossrate)
+    label: 美紋膠紙
+
+  issuepaperCost:
+    type: MATH
+    formula: 1 * tissuepaperup * ( 1+ tissuepaperlossrate)
+    label: 棉紙
+
+  pitapesCost:
+    type: MATH
+    formula: 1 * pitapesup * ( 1+ pitapeslossrate)
+    label: 防焊膠紙
+
+  askingtapeshightempCost:
+    type: MATH
+    formula: 1 * maskingtapeshightempup * ( 1+ maskingtapeshightemplossrate)
+    label: 美紋紙 耐高溫型
+
+  peupCost:
+    type: MATH
+    formula: 1 * peup * ( 1 + pelossrate)
+    label: PE膜
+
+  solderwireCost:
+    type: MATH
+    formula: 1 * solderwireup * ( 1+ solderwirelossrate)
+    label: 錫絲
+
+  d_profit:
+    type: MATH
+    formula: (b_secondary_processing_cost * managementAndProfit)
+    label: 管銷&利潤
+
+scope:
+  CWDefaultAceticAcidClothQty: CWDefaultAceticAcidClothQty
+  CWDefaultConductiveClothQty: CWDefaultConductiveClothQty
+
+constant:
+  materialPreparationLossRate:
+    label: 備料lossRate
+    value: 0.04
+  prepare_constant:
+    label: '備料常數'
+    ?getCableWireCommon:
+      - cable_wire_secondary_processing
+      - prepare_constant
+
+  CWDefaultAceticAcidClothW:
+    label: "醋酸布1 材料預設寬度"
+    # value: 8
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - default_acetic_acid_cloth_w
+
+  CWDefaultConductiveClothW:
+    label: "導電布1 材料預設寬度"
+    # value: 8
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - default_conductive_cloth_w
+
+  managementAndProfit:
+    label: 管銷&利潤
+    # value: 0.1
+    ?getCableWireCommon:
+      - cable_wire_management_and_profit
+      - management_and_profit
+
+  timeunittransferconstant:
+    label: 時間單位換算常數
+    ?getCableWireCommon:
+      - cable_wire_secondary_processing
+      - time_unit_transfer_constant
+    # value: 60
+
+  spenginghourup:
+    label: 工時費用
+    ?getCableWireCommon:
+      - cable_wire_secondary_processing
+      - spend_working_hour
+    # value: 0.045
+
+  aceticacidclothbigger_300assytime:
+    label: 醋酸布組裝時間 長度總和大於 300
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - acetate_cloth_default_bigger_300_assembly
+    # value: 50
+  aceticacidclothsmaller_300assytime:
+    label: 醋酸布組裝時間
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - conductive_fabri_default_smaller_300_assembly
+    # value: 15
+  conductiveClothbigger_300assytime:
+    label: 導電布組裝時間 長度總和大於 300
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - conductive_fabri_default_bigger_300_assembly
+    # value: 50
+  conductiveClothsmaller_300assytime:
+    label: 導電布組裝時間 長度總和小於 300
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - conductive_fabri_default_smaller_300_assembly
+    # value: 15
+  aceticacidclothup:
+    label: 醋酸布單價
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - acetate_cloth_cost
+    # value: 4.044
+  areaunittrnsferconstant:
+    label: 輔料費 面積單位換算常數
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - area_unit_trnsfer_constant
+    # value: 1000000
+  aceticacidclothlossrate:
+    label: 醋酸布 loss rate
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - acetate_cloth_default_loss_rate
+    # value: 0.015
+  conductiveclothup:
+     label: 導電布單價
+     ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - conductive_fabric_cost
+    #  value: 19.5
+  conductiveclothlossrate:
+    label: 導電布 loss rate
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - conductive_fabric_loss_rate
+    # value: 0.015
+  fluxup:
+    label: 助焊劑單價
+    ?getCableWireCommon:
+      - cable_wire_expendables
+      - flux_cost
+    # value: 0.0001
+  fluxlossrate:
+    label: 助焊劑 loss rate
+    ?getCableWireCommon:
+      - cable_wire_expendables
+      - flux_loss_rate
+    # value: 0.015
+  alcoholup:
+    label: 酒精單價
+    ?getCableWireCommon:
+      - cable_wire_expendables
+      - alcohol_cost
+    # value: 0.015
+  alcohollossrate:
+    label: 酒精 loss rate
+    ?getCableWireCommon:
+      - cable_wire_expendables
+      - alcohol_loss_rate
+    # value: 0.015
+  doublesidedtapesup:
+    label: 雙面膠紙單價
+    ?getCableWireCommon:
+      - cable_wire_expendables
+      - double_sided_tapes_cost
+    # value: 0.0003
+  doublesidedtapeslossrate:
+    label: 雙面膠紙 loss rate
+    ?getCableWireCommon:
+      - cable_wire_expendables
+      - double_sided_tapes_loss_rate
+    # value: 0.015
+  maskingtapesup:
+    label: 美紋膠紙單價
+    ?getCableWireCommon:
+      - cable_wire_expendables
+      - masking_tapes_cost
+    # value: 0
+  maskingtapeslossrate:
+    label: 美紋膠紙 loss rate
+    ?getCableWireCommon:
+      - cable_wire_expendables
+      - masking_tapes_loss_rate
+    # value: 0.015
+  tissuepaperup:
+    label: 棉紙單價
+    ?getCableWireCommon:
+      - cable_wire_expendables
+      - tissue_paper_cost
+    # value: 0.0001
+  tissuepaperlossrate:
+    label: 棉紙 loss rate
+    ?getCableWireCommon:
+      - cable_wire_expendables
+      - tissue_paper_loss_rate
+    # value: 0.015
+  pitapesup:
+    label: 防焊膠紙單價
+    ?getCableWireCommon:
+      - cable_wire_expendables
+      - pi_tapes_cost
+    # value: 0.0007
+  pitapeslossrate:
+    label: 防焊膠紙 loss rate
+    ?getCableWireCommon:
+      - cable_wire_expendables
+      - pi_tapes_loss_rate
+    # value: 0.015
+  maskingtapeshightempup:
+    label: 美紋紙 耐高溫型 單價
+    ?getCableWireCommon:
+      - cable_wire_expendables
+      - masking_tapes_high_temp_cost
+    # value: 0.0108
+  maskingtapeshightemplossrate:
+    label: 美紋紙 耐高溫型 loss rate
+    ?getCableWireCommon:
+      - cable_wire_expendables
+      - masking_tapes_high_temp_loss_rate
+    # value: 0.015
+  peup:
+    label: PE膜單價
+    ?getCableWireCommon:
+      - cable_wire_expendables
+      - pe_cost
+    # value: 0.0047
+  pelossrate:
+    label: PE膜loss rate
+    ?getCableWireCommon:
+      - cable_wire_expendables
+      - pe_loss_rate
+    # value: 0.015
+  solderwireup:
+    label: 錫絲單價
+    ?getCableWireCommon:
+      - cable_wire_expendables
+      - solder_wire_cost
+    # value: 0.0068
+  solderwirelossrate:
+    label: 錫絲loss rate
+    ?getCableWireCommon:
+      - cable_wire_expendables
+      - solder_wire_loss_rate
+    # value: 0.015
+
+  heatshrinkabletubingsbigger_300_assytime:
+    label: 熱縮套管組裝時間
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - heat_shrinkable_sleeve_bigger_300_assembly
+    # value: 30
+  heatshrinkabletubingssmaller_300_assytime:
+    label: 熱縮套管組裝時間
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - heat_shrinkable_sleeve_smaller_300_assembly
+    # value: 15
+
+  materialPreparationSecPercentage:
+    label: 寬放時間比例
+    value: 0.04

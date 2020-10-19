@@ -1,0 +1,28 @@
+{
+  "header": [
+    {
+      "key": "type",
+      "name": "磁石材料",
+      "typeof": "string"
+    },
+    {
+      "key": "price",
+      "name": "價格",
+      "typeof": "number"
+    }
+  ],
+  "data": [
+    {
+      "type": "橡膠_H<=7.5",
+      "price": 0
+    },
+    {
+      "type": "MQ_H<= 5.5",
+      "price": 0.1
+    },
+    {
+      "type": "MQ_H>=6",
+      "price": 0.15
+    }
+  ]
+}

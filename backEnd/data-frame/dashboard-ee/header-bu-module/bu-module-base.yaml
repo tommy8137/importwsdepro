@@ -1,0 +1,35 @@
+headers:
+  module:
+    label: Module
+    $dashboard-ee.header-bu-module.bumoduleTemplate:
+      - eeDataString
+
+  total_parts_count:
+    label: Total Parts Count
+    $dashboard-ee.header-bu-module.bumoduleTemplate:
+      - eeDataInt
+
+  total_last:
+    label: Total Parts Count Last Price (SAP)
+    $dashboard-ee.header-bu-module.bumoduleTemplate:
+      - eeDataFloat
+
+  suggestion:
+    label: Total Parts Count Suggestion Cost
+    $dashboard-ee.header-bu-module.bumoduleTemplate:
+      - eeDataFloat
+
+  cost_diff_first:
+    label: Cost Diff.
+    $dashboard-ee.header-bu-module.bumoduleTemplate:
+      - eeDataFloat
+
+  bu_target_cost:
+    label: BU Target Cost
+    $dashboard-ee.header-bu-module.bumoduleTemplate:
+      - eeDataFloat
+
+  cost_diff_second:
+    label: Cost Diff.
+    $dashboard-ee.header-bu-module.bumoduleTemplate:
+      - eeDataFloat

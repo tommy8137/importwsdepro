@@ -1,0 +1,11 @@
+multiple: true
+items:
+  - key: cmfProcessListSandBlastCheckBox
+    $Template:
+      - checkBox
+    label: Exist
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListSandBlastCheckBox

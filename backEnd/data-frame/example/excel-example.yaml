@@ -1,0 +1,8 @@
+excel:
+  sheets:
+    - $example.sheet-eeall:
+      - sheet        
+    - $example.sheet-hitrate:
+      - sheet
+    - $example.sheet-hitrate-dynamic:
+      - sheet

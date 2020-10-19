@@ -1,0 +1,23 @@
+multiple: false
+label: 不用顯示
+items:
+  - key: partname
+    label: Part Name
+    require: false
+    url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+    $Template:
+      - fetchData
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 2
+    emdmKey: emdmBomInfo.wistronPartName
+
+  - key: partnumber
+    label: Part Number
+    require: false
+    url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+    $Template:
+      - fetchData
+      - ^displayConfig
+    emdmKey: emdmBomInfo.wpn

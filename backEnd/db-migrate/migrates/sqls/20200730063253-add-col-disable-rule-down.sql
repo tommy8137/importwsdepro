@@ -1,0 +1,1 @@
+drop table if exists wiprocurement.col_disable;

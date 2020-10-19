@@ -1,0 +1,4357 @@
+values:
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.05Mylar
+    material: 透明
+    materialPerCost: 0.638235294
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.05Mylar
+    minorMaterialspec: T0.05Mylar
+    subMaterial: 透明
+    minorMaterial: 透明
+    subMaterialPerCost: 0.638235294
+    minorMaterialPerCost: 0.638235294
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.05Mylar
+    material: CY28_PET
+    materialPerCost: 0.511764706
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.05Mylar
+    minorMaterialspec: T0.05Mylar
+    subMaterial: CY28_PET
+    minorMaterial: CY28_PET
+    subMaterialPerCost: 0.511764706
+    minorMaterialPerCost: 0.511764706
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.05Mylar
+    material: 黑色
+    materialPerCost: 0.794117647
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.05Mylar
+    minorMaterialspec: T0.05Mylar
+    subMaterial: 黑色
+    minorMaterial: 黑色
+    subMaterialPerCost: 0.794117647
+    minorMaterialPerCost: 0.794117647
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.05Mylar
+    material: PC1860
+    materialPerCost: 1.161764706
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.05Mylar
+    minorMaterialspec: T0.05Mylar
+    subMaterial: PC1860
+    minorMaterial: PC1860
+    subMaterialPerCost: 1.161764706
+    minorMaterialPerCost: 1.161764706
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.05Mylar
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.05Mylar
+    minorMaterialspec: T0.05Mylar
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.075Mylar
+    material: PC1860
+    materialPerCost: 1.25
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.075Mylar
+    minorMaterialspec: T0.075Mylar
+    subMaterial: PC1860
+    minorMaterial: PC1860
+    subMaterialPerCost: 1.25
+    minorMaterialPerCost: 1.25
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.075Mylar
+    material: DFR117
+    materialPerCost: 2.5
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.075Mylar
+    minorMaterialspec: T0.075Mylar
+    subMaterial: DFR117
+    minorMaterial: DFR117
+    subMaterialPerCost: 2.5
+    minorMaterialPerCost: 2.5
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.075Mylar
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.075Mylar
+    minorMaterialspec: T0.075Mylar
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.1Mylar
+    material: PET6027D
+    materialPerCost: 0.576470588
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.1Mylar
+    minorMaterialspec: T0.1Mylar
+    subMaterial: PET6027D
+    minorMaterial: PET6027D
+    subMaterialPerCost: 0.576470588
+    minorMaterialPerCost: 0.576470588
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.1Mylar
+    material: PET6023D
+    materialPerCost: 0.716176471
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.1Mylar
+    minorMaterialspec: T0.1Mylar
+    subMaterial: PET6023D
+    minorMaterial: PET6023D
+    subMaterialPerCost: 0.716176471
+    minorMaterialPerCost: 0.716176471
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.1Mylar
+    material: 透明
+    materialPerCost: 0.992647059
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.1Mylar
+    minorMaterialspec: T0.1Mylar
+    subMaterial: 透明
+    minorMaterial: 透明
+    subMaterialPerCost: 0.992647059
+    minorMaterialPerCost: 0.992647059
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.1Mylar
+    material: CY28_PET
+    materialPerCost: 0.970588235
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.1Mylar
+    minorMaterialspec: T0.1Mylar
+    subMaterial: CY28_PET
+    minorMaterial: CY28_PET
+    subMaterialPerCost: 0.970588235
+    minorMaterialPerCost: 0.970588235
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.1Mylar
+    material: 黑色
+    materialPerCost: 0.992647059
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.1Mylar
+    minorMaterialspec: T0.1Mylar
+    subMaterial: 黑色
+    minorMaterial: 黑色
+    subMaterialPerCost: 0.992647059
+    minorMaterialPerCost: 0.992647059
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.1Mylar
+    material: PC1860
+    materialPerCost: 1.617647059
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.1Mylar
+    minorMaterialspec: T0.1Mylar
+    subMaterial: PC1860
+    minorMaterial: PC1860
+    subMaterialPerCost: 1.617647059
+    minorMaterialPerCost: 1.617647059
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.1Mylar
+    material: DFR117
+    materialPerCost: 1.811764706
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.1Mylar
+    minorMaterialspec: T0.1Mylar
+    subMaterial: DFR117
+    minorMaterial: DFR117
+    subMaterialPerCost: 1.811764706
+    minorMaterialPerCost: 1.811764706
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.1Mylar
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.1Mylar
+    minorMaterialspec: T0.1Mylar
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.125Mylar
+    material: DFR_BK_PP
+    materialPerCost: 1.145588235
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.125Mylar
+    minorMaterialspec: T0.125Mylar
+    subMaterial: DFR_BK_PP
+    minorMaterial: DFR_BK_PP
+    subMaterialPerCost: 1.145588235
+    minorMaterialPerCost: 1.145588235
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.125Mylar
+    material: DFR117
+    materialPerCost: 1.976470588
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.125Mylar
+    minorMaterialspec: T0.125Mylar
+    subMaterial: DFR117
+    minorMaterial: DFR117
+    subMaterialPerCost: 1.976470588
+    minorMaterialPerCost: 1.976470588
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.125Mylar
+    material: PC1860
+    materialPerCost: 1.498529412
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.125Mylar
+    minorMaterialspec: T0.125Mylar
+    subMaterial: PC1860
+    minorMaterial: PC1860
+    subMaterialPerCost: 1.498529412
+    minorMaterialPerCost: 1.498529412
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.125Mylar
+    material: DFR116ECOB
+    materialPerCost: 1.941176471
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.125Mylar
+    minorMaterialspec: T0.125Mylar
+    subMaterial: DFR116ECOB
+    minorMaterial: DFR116ECOB
+    subMaterialPerCost: 1.941176471
+    minorMaterialPerCost: 1.941176471
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.125Mylar
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.125Mylar
+    minorMaterialspec: T0.125Mylar
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.175Mylar
+    material: DFR_BK_PP
+    materialPerCost: 1.492647059
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.175Mylar
+    minorMaterialspec: T0.175Mylar
+    subMaterial: DFR_BK_PP
+    minorMaterial: DFR_BK_PP
+    subMaterialPerCost: 1.492647059
+    minorMaterialPerCost: 1.492647059
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.175Mylar
+    material: DFR117
+    materialPerCost: 2.172058824
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.175Mylar
+    minorMaterialspec: T0.175Mylar
+    subMaterial: DFR117
+    minorMaterial: DFR117
+    subMaterialPerCost: 2.172058824
+    minorMaterialPerCost: 2.172058824
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.175Mylar
+    material: DFR116ECOB
+    materialPerCost: 2.426470588
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.175Mylar
+    minorMaterialspec: T0.175Mylar
+    subMaterial: DFR116ECOB
+    minorMaterial: DFR116ECOB
+    subMaterialPerCost: 2.426470588
+    minorMaterialPerCost: 2.426470588
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.175Mylar
+    material: 透明PC
+    materialPerCost: 2.220588235
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.175Mylar
+    minorMaterialspec: T0.175Mylar
+    subMaterial: 透明PC
+    minorMaterial: 透明PC
+    subMaterialPerCost: 2.220588235
+    minorMaterialPerCost: 2.220588235
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.175Mylar
+    material: PC1860
+    materialPerCost: 2.1
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.175Mylar
+    minorMaterialspec: T0.175Mylar
+    subMaterial: PC1860
+    minorMaterial: PC1860
+    subMaterialPerCost: 2.1
+    minorMaterialPerCost: 2.1
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.175Mylar
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.175Mylar
+    minorMaterialspec: T0.175Mylar
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.188Mylar
+    material: PET6027D
+    materialPerCost: 1.083823529
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.188Mylar
+    minorMaterialspec: T0.188Mylar
+    subMaterial: PET6027D
+    minorMaterial: PET6027D
+    subMaterialPerCost: 1.083823529
+    minorMaterialPerCost: 1.083823529
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.188Mylar
+    material: PET6023D
+    materialPerCost: 1.397058824
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.188Mylar
+    minorMaterialspec: T0.188Mylar
+    subMaterial: PET6023D
+    minorMaterial: PET6023D
+    subMaterialPerCost: 1.397058824
+    minorMaterialPerCost: 1.397058824
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.188Mylar
+    material: CY28_PET
+    materialPerCost: 1.852941176
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.188Mylar
+    minorMaterialspec: T0.188Mylar
+    subMaterial: CY28_PET
+    minorMaterial: CY28_PET
+    subMaterialPerCost: 1.852941176
+    minorMaterialPerCost: 1.852941176
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.188Mylar
+    material: 黑色
+    materialPerCost: 1.911764706
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.188Mylar
+    minorMaterialspec: T0.188Mylar
+    subMaterial: 黑色
+    minorMaterial: 黑色
+    subMaterialPerCost: 1.911764706
+    minorMaterialPerCost: 1.911764706
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.188Mylar
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.188Mylar
+    minorMaterialspec: T0.188Mylar
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.25Mylar
+    material: DFR_BK_PP
+    materialPerCost: 1.745588235
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.25Mylar
+    minorMaterialspec: T0.25Mylar
+    subMaterial: DFR_BK_PP
+    minorMaterial: DFR_BK_PP
+    subMaterialPerCost: 1.745588235
+    minorMaterialPerCost: 1.745588235
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.25Mylar
+    material: CY28_PET
+    materialPerCost: 2.191176471
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.25Mylar
+    minorMaterialspec: T0.25Mylar
+    subMaterial: CY28_PET
+    minorMaterial: CY28_PET
+    subMaterialPerCost: 2.191176471
+    minorMaterialPerCost: 2.191176471
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.25Mylar
+    material: DFR117
+    materialPerCost: 2.205882353
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.25Mylar
+    minorMaterialspec: T0.25Mylar
+    subMaterial: DFR117
+    minorMaterial: DFR117
+    subMaterialPerCost: 2.205882353
+    minorMaterialPerCost: 2.205882353
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.25Mylar
+    material: PC1860
+    materialPerCost: 2.933823529
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.25Mylar
+    minorMaterialspec: T0.25Mylar
+    subMaterial: PC1860
+    minorMaterial: PC1860
+    subMaterialPerCost: 2.933823529
+    minorMaterialPerCost: 2.933823529
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.25Mylar
+    material: DFR116ECOB
+    materialPerCost: 3.882352941
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.25Mylar
+    minorMaterialspec: T0.25Mylar
+    subMaterial: DFR116ECOB
+    minorMaterial: DFR116ECOB
+    subMaterialPerCost: 3.882352941
+    minorMaterialPerCost: 3.882352941
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.25Mylar
+    material: 黑色
+    materialPerCost: 3.191176471
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.25Mylar
+    minorMaterialspec: T0.25Mylar
+    subMaterial: 黑色
+    minorMaterial: 黑色
+    subMaterialPerCost: 3.191176471
+    minorMaterialPerCost: 3.191176471
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.25Mylar
+    material: PC8010
+    materialPerCost: 4.411764706
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.25Mylar
+    minorMaterialspec: T0.25Mylar
+    subMaterial: PC8010
+    minorMaterial: PC8010
+    subMaterialPerCost: 4.411764706
+    minorMaterialPerCost: 4.411764706
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.25Mylar
+    material: 透明PC
+    materialPerCost: 2.886764706
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.25Mylar
+    minorMaterialspec: T0.25Mylar
+    subMaterial: 透明PC
+    minorMaterial: 透明PC
+    subMaterialPerCost: 2.886764706
+    minorMaterialPerCost: 2.886764706
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.25Mylar
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.25Mylar
+    minorMaterialspec: T0.25Mylar
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.38Mylar
+    material: DFR117
+    materialPerCost: 2.647058824
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.38Mylar
+    minorMaterialspec: T0.38Mylar
+    subMaterial: DFR117
+    minorMaterial: DFR117
+    subMaterialPerCost: 2.647058824
+    minorMaterialPerCost: 2.647058824
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.38Mylar
+    material: DF8D35T
+    materialPerCost: 3.176470588
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.38Mylar
+    minorMaterialspec: T0.38Mylar
+    subMaterial: DF8D35T
+    minorMaterial: DF8D35T
+    subMaterialPerCost: 3.176470588
+    minorMaterialPerCost: 3.176470588
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.38Mylar
+    material: PC1860
+    materialPerCost: 3.316176471
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.38Mylar
+    minorMaterialspec: T0.38Mylar
+    subMaterial: PC1860
+    minorMaterial: PC1860
+    subMaterialPerCost: 3.316176471
+    minorMaterialPerCost: 3.316176471
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.38Mylar
+    material: 透明PC
+    materialPerCost: 4.330882353
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.38Mylar
+    minorMaterialspec: T0.38Mylar
+    subMaterial: 透明PC
+    minorMaterial: 透明PC
+    subMaterialPerCost: 4.330882353
+    minorMaterialPerCost: 4.330882353
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.38Mylar
+    material: PC8010
+    materialPerCost: 5.588235294
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.38Mylar
+    minorMaterialspec: T0.38Mylar
+    subMaterial: PC8010
+    minorMaterial: PC8010
+    subMaterialPerCost: 5.588235294
+    minorMaterialPerCost: 5.588235294
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.38Mylar
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.38Mylar
+    minorMaterialspec: T0.38Mylar
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.43Mylar
+    material: DFR_BK_PP
+    materialPerCost: 2.873529412
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.43Mylar
+    minorMaterialspec: T0.43Mylar
+    subMaterial: DFR_BK_PP
+    minorMaterial: DFR_BK_PP
+    subMaterialPerCost: 2.873529412
+    minorMaterialPerCost: 2.873529412
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.43Mylar
+    material: PC1860
+    materialPerCost: 4.117647059
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.43Mylar
+    minorMaterialspec: T0.43Mylar
+    subMaterial: PC1860
+    minorMaterial: PC1860
+    subMaterialPerCost: 4.117647059
+    minorMaterialPerCost: 4.117647059
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.43Mylar
+    material: DFR117
+    materialPerCost: 4.138235294
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.43Mylar
+    minorMaterialspec: T0.43Mylar
+    subMaterial: DFR117
+    minorMaterial: DFR117
+    subMaterialPerCost: 4.138235294
+    minorMaterialPerCost: 4.138235294
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.43Mylar
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.43Mylar
+    minorMaterialspec: T0.43Mylar
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.5Mylar
+    material: PC8010
+    materialPerCost: 5.882352941
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.5Mylar
+    minorMaterialspec: T0.5Mylar
+    subMaterial: PC8010
+    minorMaterial: PC8010
+    subMaterialPerCost: 5.882352941
+    minorMaterialPerCost: 5.882352941
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.5Mylar
+    material: 透明PC
+    materialPerCost: 5.626470588
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.5Mylar
+    minorMaterialspec: T0.5Mylar
+    subMaterial: 透明PC
+    minorMaterial: 透明PC
+    subMaterialPerCost: 5.626470588
+    minorMaterialPerCost: 5.626470588
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.5Mylar
+    material: PC1860
+    materialPerCost: 6.617647059
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.5Mylar
+    minorMaterialspec: T0.5Mylar
+    subMaterial: PC1860
+    minorMaterial: PC1860
+    subMaterialPerCost: 6.617647059
+    minorMaterialPerCost: 6.617647059
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.5Mylar
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.5Mylar
+    minorMaterialspec: T0.5Mylar
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.76Mylar
+    material: DFR_BK_PP
+    materialPerCost: 5.373529412
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.76Mylar
+    minorMaterialspec: T0.76Mylar
+    subMaterial: DFR_BK_PP
+    minorMaterial: DFR_BK_PP
+    subMaterialPerCost: 5.373529412
+    minorMaterialPerCost: 5.373529412
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.76Mylar
+    material: PC1860
+    materialPerCost: 9.079411765
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.76Mylar
+    minorMaterialspec: T0.76Mylar
+    subMaterial: PC1860
+    minorMaterial: PC1860
+    subMaterialPerCost: 9.079411765
+    minorMaterialPerCost: 9.079411765
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.76Mylar
+    material: DFR117
+    materialPerCost: 8.152941176
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.76Mylar
+    minorMaterialspec: T0.76Mylar
+    subMaterial: DFR117
+    minorMaterial: DFR117
+    subMaterialPerCost: 8.152941176
+    minorMaterialPerCost: 8.152941176
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.76Mylar
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.76Mylar
+    minorMaterialspec: T0.76Mylar
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.8Mylar
+    material: PC8010
+    materialPerCost: 7.352941176
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.8Mylar
+    minorMaterialspec: T0.8Mylar
+    subMaterial: PC8010
+    minorMaterial: PC8010
+    subMaterialPerCost: 7.352941176
+    minorMaterialPerCost: 7.352941176
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.8Mylar
+    material: 透明PC
+    materialPerCost: 9.222058824
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.8Mylar
+    minorMaterialspec: T0.8Mylar
+    subMaterial: 透明PC
+    minorMaterial: 透明PC
+    subMaterialPerCost: 9.222058824
+    minorMaterialPerCost: 9.222058824
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T0.8Mylar
+    material: Other_Fill_ME_Remark
+    materialPerCost: 0
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.8Mylar
+    minorMaterialspec: T0.8Mylar
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 0
+    minorMaterialPerCost: 0
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T1.0Mylar
+    material: PC8010
+    materialPerCost: 8.235294118
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T1.0Mylar
+    minorMaterialspec: T1.0Mylar
+    subMaterial: PC8010
+    minorMaterial: PC8010
+    subMaterialPerCost: 8.235294118
+    minorMaterialPerCost: 8.235294118
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T1.0Mylar
+    material: 透明PC
+    materialPerCost: 11.68088235
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T1.0Mylar
+    minorMaterialspec: T1.0Mylar
+    subMaterial: 透明PC
+    minorMaterial: 透明PC
+    subMaterialPerCost: 11.68088235
+    minorMaterialPerCost: 11.68088235
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T1.0Mylar
+    material: PC1860
+    materialPerCost: 12.94117647
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T1.0Mylar
+    minorMaterialspec: T1.0Mylar
+    subMaterial: PC1860
+    minorMaterial: PC1860
+    subMaterialPerCost: 12.94117647
+    minorMaterialPerCost: 12.94117647
+  - type2: Mylar_of_Mylar_Sponge_Poron
+    materialspec: T1.0Mylar
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Mylar_of_Mylar_Sponge_Poron
+    minorType2: Mylar_of_Mylar_Sponge_Poron
+    subMaterialspec: T1.0Mylar
+    minorMaterialspec: T1.0Mylar
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T0.2Sponge
+    material: KVH200
+    materialPerCost: 8.970588235
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.2Sponge
+    minorMaterialspec: T0.2Sponge
+    subMaterial: KVH200
+    minorMaterial: KVH200
+    subMaterialPerCost: 8.970588235
+    minorMaterialPerCost: 8.970588235
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T0.2Sponge
+    material: PORON_SRS32P
+    materialPerCost: 27.35294118
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.2Sponge
+    minorMaterialspec: T0.2Sponge
+    subMaterial: PORON_SRS32P
+    minorMaterial: PORON_SRS32P
+    subMaterialPerCost: 27.35294118
+    minorMaterialPerCost: 27.35294118
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T0.2Sponge
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.2Sponge
+    minorMaterialspec: T0.2Sponge
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T0.3Sponge
+    material: KVH200
+    materialPerCost: 7.352941176
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.3Sponge
+    minorMaterialspec: T0.3Sponge
+    subMaterial: KVH200
+    minorMaterial: KVH200
+    subMaterialPerCost: 7.352941176
+    minorMaterialPerCost: 7.352941176
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T0.3Sponge
+    material: PORON_SRS48P
+    materialPerCost: 11.76470588
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.3Sponge
+    minorMaterialspec: T0.3Sponge
+    subMaterial: PORON_SRS48P
+    minorMaterial: PORON_SRS48P
+    subMaterialPerCost: 11.76470588
+    minorMaterialPerCost: 11.76470588
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T0.3Sponge
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.3Sponge
+    minorMaterialspec: T0.3Sponge
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T0.4Sponge
+    material: KVH200
+    materialPerCost: 6.764705882
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.4Sponge
+    minorMaterialspec: T0.4Sponge
+    subMaterial: KVH200
+    minorMaterial: KVH200
+    subMaterialPerCost: 6.764705882
+    minorMaterialPerCost: 6.764705882
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T0.4Sponge
+    material: PORON_SRS40P
+    materialPerCost: 13.23529412
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.4Sponge
+    minorMaterialspec: T0.4Sponge
+    subMaterial: PORON_SRS40P
+    minorMaterial: PORON_SRS40P
+    subMaterialPerCost: 13.23529412
+    minorMaterialPerCost: 13.23529412
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T0.4Sponge
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.4Sponge
+    minorMaterialspec: T0.4Sponge
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T0.5Sponge
+    material: CR1015
+    materialPerCost: 0.882352941
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.5Sponge
+    minorMaterialspec: T0.5Sponge
+    subMaterial: CR1015
+    minorMaterial: CR1015
+    subMaterialPerCost: 0.882352941
+    minorMaterialPerCost: 0.882352941
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T0.5Sponge
+    material: EVA
+    materialPerCost: 1.029411765
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.5Sponge
+    minorMaterialspec: T0.5Sponge
+    subMaterial: EVA
+    minorMaterial: EVA
+    subMaterialPerCost: 1.029411765
+    minorMaterialPerCost: 1.029411765
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T0.5Sponge
+    material: E4308
+    materialPerCost: 2.058823529
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.5Sponge
+    minorMaterialspec: T0.5Sponge
+    subMaterial: E4308
+    minorMaterial: E4308
+    subMaterialPerCost: 2.058823529
+    minorMaterialPerCost: 2.058823529
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T0.5Sponge
+    material: YU55
+    materialPerCost: 4.044117647
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.5Sponge
+    minorMaterialspec: T0.5Sponge
+    subMaterial: YU55
+    minorMaterial: YU55
+    subMaterialPerCost: 4.044117647
+    minorMaterialPerCost: 4.044117647
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T0.5Sponge
+    material: YU356
+    materialPerCost: 0.772058824
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.5Sponge
+    minorMaterialspec: T0.5Sponge
+    subMaterial: YU356
+    minorMaterial: YU356
+    subMaterialPerCost: 0.772058824
+    minorMaterialPerCost: 0.772058824
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T0.5Sponge
+    material: E4382
+    materialPerCost: 4.411764706
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.5Sponge
+    minorMaterialspec: T0.5Sponge
+    subMaterial: E4382
+    minorMaterial: E4382
+    subMaterialPerCost: 4.411764706
+    minorMaterialPerCost: 4.411764706
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T0.5Sponge
+    material: SM55
+    materialPerCost: 3.088235294
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.5Sponge
+    minorMaterialspec: T0.5Sponge
+    subMaterial: SM55
+    minorMaterial: SM55
+    subMaterialPerCost: 3.088235294
+    minorMaterialPerCost: 3.088235294
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T0.5Sponge
+    material: KVH200
+    materialPerCost: 6.029411765
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.5Sponge
+    minorMaterialspec: T0.5Sponge
+    subMaterial: KVH200
+    minorMaterial: KVH200
+    subMaterialPerCost: 6.029411765
+    minorMaterialPerCost: 6.029411765
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T0.5Sponge
+    material: LV100
+    materialPerCost: 7.794117647
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.5Sponge
+    minorMaterialspec: T0.5Sponge
+    subMaterial: LV100
+    minorMaterial: LV100
+    subMaterialPerCost: 7.794117647
+    minorMaterialPerCost: 7.794117647
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T0.5Sponge
+    material: PORON_SRS40P
+    materialPerCost: 13.23529412
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.5Sponge
+    minorMaterialspec: T0.5Sponge
+    subMaterial: PORON_SRS40P
+    minorMaterial: PORON_SRS40P
+    subMaterialPerCost: 13.23529412
+    minorMaterialPerCost: 13.23529412
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T0.5Sponge
+    material: PORON_SRS32P
+    materialPerCost: 15.88235294
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.5Sponge
+    minorMaterialspec: T0.5Sponge
+    subMaterial: PORON_SRS32P
+    minorMaterial: PORON_SRS32P
+    subMaterialPerCost: 15.88235294
+    minorMaterialPerCost: 15.88235294
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T0.5Sponge
+    material: PORON_ML32
+    materialPerCost: 10.95294118
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.5Sponge
+    minorMaterialspec: T0.5Sponge
+    subMaterial: PORON_ML32
+    minorMaterial: PORON_ML32
+    subMaterialPerCost: 10.95294118
+    minorMaterialPerCost: 10.95294118
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T0.5Sponge
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.5Sponge
+    minorMaterialspec: T0.5Sponge
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T0.6Sponge
+    material: PORON_SRS32P
+    materialPerCost: 16.17647059
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.6Sponge
+    minorMaterialspec: T0.6Sponge
+    subMaterial: PORON_SRS32P
+    minorMaterial: PORON_SRS32P
+    subMaterialPerCost: 16.17647059
+    minorMaterialPerCost: 16.17647059
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T0.6Sponge
+    material: PORON_SRS40P
+    materialPerCost: 18.60294118
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.6Sponge
+    minorMaterialspec: T0.6Sponge
+    subMaterial: PORON_SRS40P
+    minorMaterial: PORON_SRS40P
+    subMaterialPerCost: 18.60294118
+    minorMaterialPerCost: 18.60294118
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T0.6Sponge
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.6Sponge
+    minorMaterialspec: T0.6Sponge
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T0.7Sponge
+    material: YU356
+    materialPerCost: 3.823529412
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.7Sponge
+    minorMaterialspec: T0.7Sponge
+    subMaterial: YU356
+    minorMaterial: YU356
+    subMaterialPerCost: 3.823529412
+    minorMaterialPerCost: 3.823529412
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T0.7Sponge
+    material: KVH200
+    materialPerCost: 5.147058824
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.7Sponge
+    minorMaterialspec: T0.7Sponge
+    subMaterial: KVH200
+    minorMaterial: KVH200
+    subMaterialPerCost: 5.147058824
+    minorMaterialPerCost: 5.147058824
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T0.7Sponge
+    material: LV100
+    materialPerCost: 7.058823529
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.7Sponge
+    minorMaterialspec: T0.7Sponge
+    subMaterial: LV100
+    minorMaterial: LV100
+    subMaterialPerCost: 7.058823529
+    minorMaterialPerCost: 7.058823529
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T0.7Sponge
+    material: PORON_SRS40P
+    materialPerCost: 15.04411765
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.7Sponge
+    minorMaterialspec: T0.7Sponge
+    subMaterial: PORON_SRS40P
+    minorMaterial: PORON_SRS40P
+    subMaterialPerCost: 15.04411765
+    minorMaterialPerCost: 15.04411765
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T0.7Sponge
+    material: PORON_SRS24P
+    materialPerCost: 16.02941176
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.7Sponge
+    minorMaterialspec: T0.7Sponge
+    subMaterial: PORON_SRS24P
+    minorMaterial: PORON_SRS24P
+    subMaterialPerCost: 16.02941176
+    minorMaterialPerCost: 16.02941176
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T0.7Sponge
+    material: PORON_SRS32P
+    materialPerCost: 16.98529412
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.7Sponge
+    minorMaterialspec: T0.7Sponge
+    subMaterial: PORON_SRS32P
+    minorMaterial: PORON_SRS32P
+    subMaterialPerCost: 16.98529412
+    minorMaterialPerCost: 16.98529412
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T0.7Sponge
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.7Sponge
+    minorMaterialspec: T0.7Sponge
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T0.8Sponge
+    material: CR1015
+    materialPerCost: 1.029411765
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.8Sponge
+    minorMaterialspec: T0.8Sponge
+    subMaterial: CR1015
+    minorMaterial: CR1015
+    subMaterialPerCost: 1.029411765
+    minorMaterialPerCost: 1.029411765
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T0.8Sponge
+    material: KVH200
+    materialPerCost: 4.852941176
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.8Sponge
+    minorMaterialspec: T0.8Sponge
+    subMaterial: KVH200
+    minorMaterial: KVH200
+    subMaterialPerCost: 4.852941176
+    minorMaterialPerCost: 4.852941176
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T0.8Sponge
+    material: SM55
+    materialPerCost: 3.088235294
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.8Sponge
+    minorMaterialspec: T0.8Sponge
+    subMaterial: SM55
+    minorMaterial: SM55
+    subMaterialPerCost: 3.088235294
+    minorMaterialPerCost: 3.088235294
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T0.8Sponge
+    material: PORON_SRS24P
+    materialPerCost: 18.45588235
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.8Sponge
+    minorMaterialspec: T0.8Sponge
+    subMaterial: PORON_SRS24P
+    minorMaterial: PORON_SRS24P
+    subMaterialPerCost: 18.45588235
+    minorMaterialPerCost: 18.45588235
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T0.8Sponge
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.8Sponge
+    minorMaterialspec: T0.8Sponge
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T0.9Sponge
+    material: PORON_SRS24P
+    materialPerCost: 19.63235294
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.9Sponge
+    minorMaterialspec: T0.9Sponge
+    subMaterial: PORON_SRS24P
+    minorMaterial: PORON_SRS24P
+    subMaterialPerCost: 19.63235294
+    minorMaterialPerCost: 19.63235294
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T0.9Sponge
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.9Sponge
+    minorMaterialspec: T0.9Sponge
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T1.0Sponge
+    material: EVA
+    materialPerCost: 0.772058824
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T1.0Sponge
+    minorMaterialspec: T1.0Sponge
+    subMaterial: EVA
+    minorMaterial: EVA
+    subMaterialPerCost: 0.772058824
+    minorMaterialPerCost: 0.772058824
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T1.0Sponge
+    material: CR1015
+    materialPerCost: 1.176470588
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T1.0Sponge
+    minorMaterialspec: T1.0Sponge
+    subMaterial: CR1015
+    minorMaterial: CR1015
+    subMaterialPerCost: 1.176470588
+    minorMaterialPerCost: 1.176470588
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T1.0Sponge
+    material: E4308
+    materialPerCost: 2.058823529
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T1.0Sponge
+    minorMaterialspec: T1.0Sponge
+    subMaterial: E4308
+    minorMaterial: E4308
+    subMaterialPerCost: 2.058823529
+    minorMaterialPerCost: 2.058823529
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T1.0Sponge
+    material: YU55
+    materialPerCost: 4.044117647
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T1.0Sponge
+    minorMaterialspec: T1.0Sponge
+    subMaterial: YU55
+    minorMaterial: YU55
+    subMaterialPerCost: 4.044117647
+    minorMaterialPerCost: 4.044117647
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T1.0Sponge
+    material: KVH200
+    materialPerCost: 4.411764706
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T1.0Sponge
+    minorMaterialspec: T1.0Sponge
+    subMaterial: KVH200
+    minorMaterial: KVH200
+    subMaterialPerCost: 4.411764706
+    minorMaterialPerCost: 4.411764706
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T1.0Sponge
+    material: YU356
+    materialPerCost: 0.772058824
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T1.0Sponge
+    minorMaterialspec: T1.0Sponge
+    subMaterial: YU356
+    minorMaterial: YU356
+    subMaterialPerCost: 0.772058824
+    minorMaterialPerCost: 0.772058824
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T1.0Sponge
+    material: E4382
+    materialPerCost: 4.411764706
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T1.0Sponge
+    minorMaterialspec: T1.0Sponge
+    subMaterial: E4382
+    minorMaterial: E4382
+    subMaterialPerCost: 4.411764706
+    minorMaterialPerCost: 4.411764706
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T1.0Sponge
+    material: SM55
+    materialPerCost: 2.254411765
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T1.0Sponge
+    minorMaterialspec: T1.0Sponge
+    subMaterial: SM55
+    minorMaterial: SM55
+    subMaterialPerCost: 2.254411765
+    minorMaterialPerCost: 2.254411765
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T1.0Sponge
+    material: PMP1800
+    materialPerCost: 5.294117647
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T1.0Sponge
+    minorMaterialspec: T1.0Sponge
+    subMaterial: PMP1800
+    minorMaterial: PMP1800
+    subMaterialPerCost: 5.294117647
+    minorMaterialPerCost: 5.294117647
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T1.0Sponge
+    material: LV100
+    materialPerCost: 6.323529412
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T1.0Sponge
+    minorMaterialspec: T1.0Sponge
+    subMaterial: LV100
+    minorMaterial: LV100
+    subMaterialPerCost: 6.323529412
+    minorMaterialPerCost: 6.323529412
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T1.0Sponge
+    material: CR2030
+    materialPerCost: 6.825
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T1.0Sponge
+    minorMaterialspec: T1.0Sponge
+    subMaterial: CR2030
+    minorMaterial: CR2030
+    subMaterialPerCost: 6.825
+    minorMaterialPerCost: 6.825
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T1.0Sponge
+    material: PORON_SRS40P
+    materialPerCost: 14.70588235
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T1.0Sponge
+    minorMaterialspec: T1.0Sponge
+    subMaterial: PORON_SRS40P
+    minorMaterial: PORON_SRS40P
+    subMaterialPerCost: 14.70588235
+    minorMaterialPerCost: 14.70588235
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T1.0Sponge
+    material: PORON_ML32
+    materialPerCost: 10.33529412
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T1.0Sponge
+    minorMaterialspec: T1.0Sponge
+    subMaterial: PORON_ML32
+    minorMaterial: PORON_ML32
+    subMaterialPerCost: 10.33529412
+    minorMaterialPerCost: 10.33529412
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T1.0Sponge
+    material: PORON_SRS24P
+    materialPerCost: 19.41176471
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T1.0Sponge
+    minorMaterialspec: T1.0Sponge
+    subMaterial: PORON_SRS24P
+    minorMaterial: PORON_SRS24P
+    subMaterialPerCost: 19.41176471
+    minorMaterialPerCost: 19.41176471
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T1.0Sponge
+    material: PORON_SRS32P
+    materialPerCost: 20.38235294
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T1.0Sponge
+    minorMaterialspec: T1.0Sponge
+    subMaterial: PORON_SRS32P
+    minorMaterial: PORON_SRS32P
+    subMaterialPerCost: 20.38235294
+    minorMaterialPerCost: 20.38235294
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T1.0Sponge
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T1.0Sponge
+    minorMaterialspec: T1.0Sponge
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T1.5Sponge
+    material: CR1015
+    materialPerCost: 2.205882353
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T1.5Sponge
+    minorMaterialspec: T1.5Sponge
+    subMaterial: CR1015
+    minorMaterial: CR1015
+    subMaterialPerCost: 2.205882353
+    minorMaterialPerCost: 2.205882353
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T1.5Sponge
+    material: E4308
+    materialPerCost: 3.088235294
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T1.5Sponge
+    minorMaterialspec: T1.5Sponge
+    subMaterial: E4308
+    minorMaterial: E4308
+    subMaterialPerCost: 3.088235294
+    minorMaterialPerCost: 3.088235294
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T1.5Sponge
+    material: YU356
+    materialPerCost: 1.158823529
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T1.5Sponge
+    minorMaterialspec: T1.5Sponge
+    subMaterial: YU356
+    minorMaterial: YU356
+    subMaterialPerCost: 1.158823529
+    minorMaterialPerCost: 1.158823529
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T1.5Sponge
+    material: KVH200
+    materialPerCost: 5
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T1.5Sponge
+    minorMaterialspec: T1.5Sponge
+    subMaterial: KVH200
+    minorMaterial: KVH200
+    subMaterialPerCost: 5
+    minorMaterialPerCost: 5
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T1.5Sponge
+    material: PMP1800
+    materialPerCost: 5.882352941
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T1.5Sponge
+    minorMaterialspec: T1.5Sponge
+    subMaterial: PMP1800
+    minorMaterial: PMP1800
+    subMaterialPerCost: 5.882352941
+    minorMaterialPerCost: 5.882352941
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T1.5Sponge
+    material: SM55
+    materialPerCost: 3.088235294
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T1.5Sponge
+    minorMaterialspec: T1.5Sponge
+    subMaterial: SM55
+    minorMaterial: SM55
+    subMaterialPerCost: 3.088235294
+    minorMaterialPerCost: 3.088235294
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T1.5Sponge
+    material: E4382
+    materialPerCost: 6.617647059
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T1.5Sponge
+    minorMaterialspec: T1.5Sponge
+    subMaterial: E4382
+    minorMaterial: E4382
+    subMaterialPerCost: 6.617647059
+    minorMaterialPerCost: 6.617647059
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T1.5Sponge
+    material: PORON_ML32
+    materialPerCost: 13.60294118
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T1.5Sponge
+    minorMaterialspec: T1.5Sponge
+    subMaterial: PORON_ML32
+    minorMaterial: PORON_ML32
+    subMaterialPerCost: 13.60294118
+    minorMaterialPerCost: 13.60294118
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T1.5Sponge
+    material: PORON_SRS32P
+    materialPerCost: 16.17647059
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T1.5Sponge
+    minorMaterialspec: T1.5Sponge
+    subMaterial: PORON_SRS32P
+    minorMaterial: PORON_SRS32P
+    subMaterialPerCost: 16.17647059
+    minorMaterialPerCost: 16.17647059
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T1.5Sponge
+    material: PORON_SRS24P
+    materialPerCost: 19.26470588
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T1.5Sponge
+    minorMaterialspec: T1.5Sponge
+    subMaterial: PORON_SRS24P
+    minorMaterial: PORON_SRS24P
+    subMaterialPerCost: 19.26470588
+    minorMaterialPerCost: 19.26470588
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T1.5Sponge
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T1.5Sponge
+    minorMaterialspec: T1.5Sponge
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T2.0Sponge
+    material: CR1015
+    materialPerCost: 2.352941176
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T2.0Sponge
+    minorMaterialspec: T2.0Sponge
+    subMaterial: CR1015
+    minorMaterial: CR1015
+    subMaterialPerCost: 2.352941176
+    minorMaterialPerCost: 2.352941176
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T2.0Sponge
+    material: YU356
+    materialPerCost: 1.544117647
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T2.0Sponge
+    minorMaterialspec: T2.0Sponge
+    subMaterial: YU356
+    minorMaterial: YU356
+    subMaterialPerCost: 1.544117647
+    minorMaterialPerCost: 1.544117647
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T2.0Sponge
+    material: SM55
+    materialPerCost: 3.088235294
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T2.0Sponge
+    minorMaterialspec: T2.0Sponge
+    subMaterial: SM55
+    minorMaterial: SM55
+    subMaterialPerCost: 3.088235294
+    minorMaterialPerCost: 3.088235294
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T2.0Sponge
+    material: KVH200
+    materialPerCost: 5.441176471
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T2.0Sponge
+    minorMaterialspec: T2.0Sponge
+    subMaterial: KVH200
+    minorMaterial: KVH200
+    subMaterialPerCost: 5.441176471
+    minorMaterialPerCost: 5.441176471
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T2.0Sponge
+    material: PMP1800
+    materialPerCost: 5.882352941
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T2.0Sponge
+    minorMaterialspec: T2.0Sponge
+    subMaterial: PMP1800
+    minorMaterial: PMP1800
+    subMaterialPerCost: 5.882352941
+    minorMaterialPerCost: 5.882352941
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T2.0Sponge
+    material: PORON_ML32
+    materialPerCost: 13.97058824
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T2.0Sponge
+    minorMaterialspec: T2.0Sponge
+    subMaterial: PORON_ML32
+    minorMaterial: PORON_ML32
+    subMaterialPerCost: 13.97058824
+    minorMaterialPerCost: 13.97058824
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T2.0Sponge
+    material: PORON_SRS32P
+    materialPerCost: 19.11764706
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T2.0Sponge
+    minorMaterialspec: T2.0Sponge
+    subMaterial: PORON_SRS32P
+    minorMaterial: PORON_SRS32P
+    subMaterialPerCost: 19.11764706
+    minorMaterialPerCost: 19.11764706
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T2.0Sponge
+    material: PORON_SRS24P
+    materialPerCost: 25.55588235
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T2.0Sponge
+    minorMaterialspec: T2.0Sponge
+    subMaterial: PORON_SRS24P
+    minorMaterial: PORON_SRS24P
+    subMaterialPerCost: 25.55588235
+    minorMaterialPerCost: 25.55588235
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T2.0Sponge
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T2.0Sponge
+    minorMaterialspec: T2.0Sponge
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T2.5Sponge
+    material: CR1015
+    materialPerCost: 3.529411765
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T2.5Sponge
+    minorMaterialspec: T2.5Sponge
+    subMaterial: CR1015
+    minorMaterial: CR1015
+    subMaterialPerCost: 3.529411765
+    minorMaterialPerCost: 3.529411765
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T2.5Sponge
+    material: E4308
+    materialPerCost: 5.147058824
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T2.5Sponge
+    minorMaterialspec: T2.5Sponge
+    subMaterial: E4308
+    minorMaterial: E4308
+    subMaterialPerCost: 5.147058824
+    minorMaterialPerCost: 5.147058824
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T2.5Sponge
+    material: SM55
+    materialPerCost: 3.705882353
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T2.5Sponge
+    minorMaterialspec: T2.5Sponge
+    subMaterial: SM55
+    minorMaterial: SM55
+    subMaterialPerCost: 3.705882353
+    minorMaterialPerCost: 3.705882353
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T2.5Sponge
+    material: PMP1800
+    materialPerCost: 7.058823529
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T2.5Sponge
+    minorMaterialspec: T2.5Sponge
+    subMaterial: PMP1800
+    minorMaterial: PMP1800
+    subMaterialPerCost: 7.058823529
+    minorMaterialPerCost: 7.058823529
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T2.5Sponge
+    material: KVH200
+    materialPerCost: 7.794117647
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T2.5Sponge
+    minorMaterialspec: T2.5Sponge
+    subMaterial: KVH200
+    minorMaterial: KVH200
+    subMaterialPerCost: 7.794117647
+    minorMaterialPerCost: 7.794117647
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T2.5Sponge
+    material: E4382
+    materialPerCost: 11.02941176
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T2.5Sponge
+    minorMaterialspec: T2.5Sponge
+    subMaterial: E4382
+    minorMaterial: E4382
+    subMaterialPerCost: 11.02941176
+    minorMaterialPerCost: 11.02941176
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T2.5Sponge
+    material: PORON_ML32
+    materialPerCost: 16.17647059
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T2.5Sponge
+    minorMaterialspec: T2.5Sponge
+    subMaterial: PORON_ML32
+    minorMaterial: PORON_ML32
+    subMaterialPerCost: 16.17647059
+    minorMaterialPerCost: 16.17647059
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T2.5Sponge
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T2.5Sponge
+    minorMaterialspec: T2.5Sponge
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T3.0Sponge
+    material: CR1015
+    materialPerCost: 3.529411765
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T3.0Sponge
+    minorMaterialspec: T3.0Sponge
+    subMaterial: CR1015
+    minorMaterial: CR1015
+    subMaterialPerCost: 3.529411765
+    minorMaterialPerCost: 3.529411765
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T3.0Sponge
+    material: SM55
+    materialPerCost: 4.264705882
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T3.0Sponge
+    minorMaterialspec: T3.0Sponge
+    subMaterial: SM55
+    minorMaterial: SM55
+    subMaterialPerCost: 4.264705882
+    minorMaterialPerCost: 4.264705882
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T3.0Sponge
+    material: YU356
+    materialPerCost: 2.316176471
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T3.0Sponge
+    minorMaterialspec: T3.0Sponge
+    subMaterial: YU356
+    minorMaterial: YU356
+    subMaterialPerCost: 2.316176471
+    minorMaterialPerCost: 2.316176471
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T3.0Sponge
+    material: PMP1800
+    materialPerCost: 7.352941176
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T3.0Sponge
+    minorMaterialspec: T3.0Sponge
+    subMaterial: PMP1800
+    minorMaterial: PMP1800
+    subMaterialPerCost: 7.352941176
+    minorMaterialPerCost: 7.352941176
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T3.0Sponge
+    material: KVH200
+    materialPerCost: 9.705882353
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T3.0Sponge
+    minorMaterialspec: T3.0Sponge
+    subMaterial: KVH200
+    minorMaterial: KVH200
+    subMaterialPerCost: 9.705882353
+    minorMaterialPerCost: 9.705882353
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T3.0Sponge
+    material: PORON_ML32
+    materialPerCost: 14.70588235
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T3.0Sponge
+    minorMaterialspec: T3.0Sponge
+    subMaterial: PORON_ML32
+    minorMaterial: PORON_ML32
+    subMaterialPerCost: 14.70588235
+    minorMaterialPerCost: 14.70588235
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T3.0Sponge
+    material: PORON_SRS24P
+    materialPerCost: 22.05882353
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T3.0Sponge
+    minorMaterialspec: T3.0Sponge
+    subMaterial: PORON_SRS24P
+    minorMaterial: PORON_SRS24P
+    subMaterialPerCost: 22.05882353
+    minorMaterialPerCost: 22.05882353
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T3.0Sponge
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T3.0Sponge
+    minorMaterialspec: T3.0Sponge
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T3.5Sponge
+    material: E4308
+    materialPerCost: 7.205882353
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T3.5Sponge
+    minorMaterialspec: T3.5Sponge
+    subMaterial: E4308
+    minorMaterial: E4308
+    subMaterialPerCost: 7.205882353
+    minorMaterialPerCost: 7.205882353
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T3.5Sponge
+    material: SM55
+    materialPerCost: 5.352941176
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T3.5Sponge
+    minorMaterialspec: T3.5Sponge
+    subMaterial: SM55
+    minorMaterial: SM55
+    subMaterialPerCost: 5.352941176
+    minorMaterialPerCost: 5.352941176
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T3.5Sponge
+    material: E4382
+    materialPerCost: 15.44117647
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T3.5Sponge
+    minorMaterialspec: T3.5Sponge
+    subMaterial: E4382
+    minorMaterial: E4382
+    subMaterialPerCost: 15.44117647
+    minorMaterialPerCost: 15.44117647
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T3.5Sponge
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T3.5Sponge
+    minorMaterialspec: T3.5Sponge
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T4.0Sponge
+    material: CR1015
+    materialPerCost: 4.705882353
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T4.0Sponge
+    minorMaterialspec: T4.0Sponge
+    subMaterial: CR1015
+    minorMaterial: CR1015
+    subMaterialPerCost: 4.705882353
+    minorMaterialPerCost: 4.705882353
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T4.0Sponge
+    material: SM55
+    materialPerCost: 5.147058824
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T4.0Sponge
+    minorMaterialspec: T4.0Sponge
+    subMaterial: SM55
+    minorMaterial: SM55
+    subMaterialPerCost: 5.147058824
+    minorMaterialPerCost: 5.147058824
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T4.0Sponge
+    material: KVH200
+    materialPerCost: 11.91176471
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T4.0Sponge
+    minorMaterialspec: T4.0Sponge
+    subMaterial: KVH200
+    minorMaterial: KVH200
+    subMaterialPerCost: 11.91176471
+    minorMaterialPerCost: 11.91176471
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T4.0Sponge
+    material: PORON_ML32
+    materialPerCost: 22.5
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T4.0Sponge
+    minorMaterialspec: T4.0Sponge
+    subMaterial: PORON_ML32
+    minorMaterial: PORON_ML32
+    subMaterialPerCost: 22.5
+    minorMaterialPerCost: 22.5
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T4.0Sponge
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T4.0Sponge
+    minorMaterialspec: T4.0Sponge
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T4.5Sponge
+    material: EVA
+    materialPerCost: 3.475
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T4.5Sponge
+    minorMaterialspec: T4.5Sponge
+    subMaterial: EVA
+    minorMaterial: EVA
+    subMaterialPerCost: 3.475
+    minorMaterialPerCost: 3.475
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T4.5Sponge
+    material: SM55
+    materialPerCost: 5.588235294
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T4.5Sponge
+    minorMaterialspec: T4.5Sponge
+    subMaterial: SM55
+    minorMaterial: SM55
+    subMaterialPerCost: 5.588235294
+    minorMaterialPerCost: 5.588235294
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T4.5Sponge
+    material: E4308
+    materialPerCost: 9.264705882
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T4.5Sponge
+    minorMaterialspec: T4.5Sponge
+    subMaterial: E4308
+    minorMaterial: E4308
+    subMaterialPerCost: 9.264705882
+    minorMaterialPerCost: 9.264705882
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T4.5Sponge
+    material: YU55
+    materialPerCost: 11.61764706
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T4.5Sponge
+    minorMaterialspec: T4.5Sponge
+    subMaterial: YU55
+    minorMaterial: YU55
+    subMaterialPerCost: 11.61764706
+    minorMaterialPerCost: 11.61764706
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T4.5Sponge
+    material: E4382
+    materialPerCost: 19.85294118
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T4.5Sponge
+    minorMaterialspec: T4.5Sponge
+    subMaterial: E4382
+    minorMaterial: E4382
+    subMaterialPerCost: 19.85294118
+    minorMaterialPerCost: 19.85294118
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T4.5Sponge
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T4.5Sponge
+    minorMaterialspec: T4.5Sponge
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T5.0Sponge
+    material: CR1015
+    materialPerCost: 5.882352941
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T5.0Sponge
+    minorMaterialspec: T5.0Sponge
+    subMaterial: CR1015
+    minorMaterial: CR1015
+    subMaterialPerCost: 5.882352941
+    minorMaterialPerCost: 5.882352941
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T5.0Sponge
+    material: SM55
+    materialPerCost: 6.617647059
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T5.0Sponge
+    minorMaterialspec: T5.0Sponge
+    subMaterial: SM55
+    minorMaterial: SM55
+    subMaterialPerCost: 6.617647059
+    minorMaterialPerCost: 6.617647059
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T5.0Sponge
+    material: KVH200
+    materialPerCost: 16.17647059
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T5.0Sponge
+    minorMaterialspec: T5.0Sponge
+    subMaterial: KVH200
+    minorMaterial: KVH200
+    subMaterialPerCost: 16.17647059
+    minorMaterialPerCost: 16.17647059
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T5.0Sponge
+    material: PORON_ML32
+    materialPerCost: 22.23529412
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T5.0Sponge
+    minorMaterialspec: T5.0Sponge
+    subMaterial: PORON_ML32
+    minorMaterial: PORON_ML32
+    subMaterialPerCost: 22.23529412
+    minorMaterialPerCost: 22.23529412
+  - type2: Sponge_of_Mylar_Sponge_Poron
+    materialspec: T5.0Sponge
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Sponge_of_Mylar_Sponge_Poron
+    minorType2: Sponge_of_Mylar_Sponge_Poron
+    subMaterialspec: T5.0Sponge
+    minorMaterialspec: T5.0Sponge
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Protection_Film_of_Mylar_Sponge_Poron
+    materialspec: T0.05Protection
+    material: FZ_015E保護膜_8515B
+    materialPerCost: 0.389117647
+    subType2: Protection_Film_of_Mylar_Sponge_Poron
+    minorType2: Protection_Film_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.05Protection
+    minorMaterialspec: T0.05Protection
+    subMaterial: FZ_015E保護膜_8515B
+    minorMaterial: FZ_015E保護膜_8515B
+    subMaterialPerCost: 0.389117647
+    minorMaterialPerCost: 0.389117647
+  - type2: Protection_Film_of_Mylar_Sponge_Poron
+    materialspec: T0.05Protection
+    material: PE_T_58保護膜
+    materialPerCost: 0.389117647
+    subType2: Protection_Film_of_Mylar_Sponge_Poron
+    minorType2: Protection_Film_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.05Protection
+    minorMaterialspec: T0.05Protection
+    subMaterial: PE_T_58保護膜
+    minorMaterial: PE_T_58保護膜
+    subMaterialPerCost: 0.389117647
+    minorMaterialPerCost: 0.389117647
+  - type2: Protection_Film_of_Mylar_Sponge_Poron
+    materialspec: T0.05Protection
+    material: SJ_450P保護膜
+    materialPerCost: 0.389117647
+    subType2: Protection_Film_of_Mylar_Sponge_Poron
+    minorType2: Protection_Film_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.05Protection
+    minorMaterialspec: T0.05Protection
+    subMaterial: SJ_450P保護膜
+    minorMaterial: SJ_450P保護膜
+    subMaterialPerCost: 0.389117647
+    minorMaterialPerCost: 0.389117647
+  - type2: Protection_Film_of_Mylar_Sponge_Poron
+    materialspec: T0.05Protection
+    material: PE_W150保護膜
+    materialPerCost: 0.389117647
+    subType2: Protection_Film_of_Mylar_Sponge_Poron
+    minorType2: Protection_Film_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.05Protection
+    minorMaterialspec: T0.05Protection
+    subMaterial: PE_W150保護膜
+    minorMaterial: PE_W150保護膜
+    subMaterialPerCost: 0.389117647
+    minorMaterialPerCost: 0.389117647
+  - type2: Protection_Film_of_Mylar_Sponge_Poron
+    materialspec: T0.05Protection
+    material: TR-5001-LP
+    materialPerCost: 1.058823529
+    subType2: Protection_Film_of_Mylar_Sponge_Poron
+    minorType2: Protection_Film_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.05Protection
+    minorMaterialspec: T0.05Protection
+    subMaterial: TR-5001-LP
+    minorMaterial: TR-5001-LP
+    subMaterialPerCost: 1.058823529
+    minorMaterialPerCost: 1.058823529
+  - type2: Protection_Film_of_Mylar_Sponge_Poron
+    materialspec: T0.05Protection
+    material: TR-5001-MP
+    materialPerCost: 1.094117647
+    subType2: Protection_Film_of_Mylar_Sponge_Poron
+    minorType2: Protection_Film_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.05Protection
+    minorMaterialspec: T0.05Protection
+    subMaterial: TR-5001-MP
+    minorMaterial: TR-5001-MP
+    subMaterialPerCost: 1.094117647
+    minorMaterialPerCost: 1.094117647
+  - type2: Protection_Film_of_Mylar_Sponge_Poron
+    materialspec: T0.05Protection
+    material: TR-5001-HP
+    materialPerCost: 1.235294118
+    subType2: Protection_Film_of_Mylar_Sponge_Poron
+    minorType2: Protection_Film_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.05Protection
+    minorMaterialspec: T0.05Protection
+    subMaterial: TR-5001-HP
+    minorMaterial: TR-5001-HP
+    subMaterialPerCost: 1.235294118
+    minorMaterialPerCost: 1.235294118
+  - type2: Protection_Film_of_Mylar_Sponge_Poron
+    materialspec: T0.05Protection
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Protection_Film_of_Mylar_Sponge_Poron
+    minorType2: Protection_Film_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.05Protection
+    minorMaterialspec: T0.05Protection
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Protection_Film_of_Mylar_Sponge_Poron
+    materialspec: T0.06Protection
+    material: RH7027
+    materialPerCost: 0.648529412
+    subType2: Protection_Film_of_Mylar_Sponge_Poron
+    minorType2: Protection_Film_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.06Protection
+    minorMaterialspec: T0.06Protection
+    subMaterial: RH7027
+    minorMaterial: RH7027
+    subMaterialPerCost: 0.648529412
+    minorMaterialPerCost: 0.648529412
+  - type2: Protection_Film_of_Mylar_Sponge_Poron
+    materialspec: T0.06Protection
+    material: PET_E_006
+    materialPerCost: 0.782352941
+    subType2: Protection_Film_of_Mylar_Sponge_Poron
+    minorType2: Protection_Film_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.06Protection
+    minorMaterialspec: T0.06Protection
+    subMaterial: PET_E_006
+    minorMaterial: PET_E_006
+    subMaterialPerCost: 0.782352941
+    minorMaterialPerCost: 0.782352941
+  - type2: Protection_Film_of_Mylar_Sponge_Poron
+    materialspec: T0.06Protection
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Protection_Film_of_Mylar_Sponge_Poron
+    minorType2: Protection_Film_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.06Protection
+    minorMaterialspec: T0.06Protection
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Protection_Film_of_Mylar_Sponge_Poron
+    materialspec: T0.075Protection
+    material: QLD-G1208P-60A
+    materialPerCost: 2.470588235
+    subType2: Protection_Film_of_Mylar_Sponge_Poron
+    minorType2: Protection_Film_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.075Protection
+    minorMaterialspec: T0.075Protection
+    subMaterial: QLD-G1208P-60A
+    minorMaterial: QLD-G1208P-60A
+    subMaterialPerCost: 2.470588235
+    minorMaterialPerCost: 2.470588235
+  - type2: Protection_Film_of_Mylar_Sponge_Poron
+    materialspec: T0.075Protection
+    material: TR-7501-H2P
+    materialPerCost: 1.5
+    subType2: Protection_Film_of_Mylar_Sponge_Poron
+    minorType2: Protection_Film_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.075Protection
+    minorMaterialspec: T0.075Protection
+    subMaterial: TR-7501-H2P
+    minorMaterial: TR-7501-H2P
+    subMaterialPerCost: 1.5
+    minorMaterialPerCost: 1.5
+  - type2: Protection_Film_of_Mylar_Sponge_Poron
+    materialspec: T0.075Protection
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Protection_Film_of_Mylar_Sponge_Poron
+    minorType2: Protection_Film_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.075Protection
+    minorMaterialspec: T0.075Protection
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Protection_Film_of_Mylar_Sponge_Poron
+    materialspec: T0.1Protection
+    material: TR_1001_H_20_30G
+    materialPerCost: 1.176470588
+    subType2: Protection_Film_of_Mylar_Sponge_Poron
+    minorType2: Protection_Film_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.1Protection
+    minorMaterialspec: T0.1Protection
+    subMaterial: TR_1001_H_20_30G
+    minorMaterial: TR_1001_H_20_30G
+    subMaterialPerCost: 1.176470588
+    minorMaterialPerCost: 1.176470588
+  - type2: Protection_Film_of_Mylar_Sponge_Poron
+    materialspec: T0.1Protection
+    material: TR_1001_L_6_12G
+    materialPerCost: 1.176470588
+    subType2: Protection_Film_of_Mylar_Sponge_Poron
+    minorType2: Protection_Film_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.1Protection
+    minorMaterialspec: T0.1Protection
+    subMaterial: TR_1001_L_6_12G
+    minorMaterial: TR_1001_L_6_12G
+    subMaterialPerCost: 1.176470588
+    minorMaterialPerCost: 1.176470588
+  - type2: Protection_Film_of_Mylar_Sponge_Poron
+    materialspec: T0.1Protection
+    material: TR_1001_LL_3_6G
+    materialPerCost: 1.176470588
+    subType2: Protection_Film_of_Mylar_Sponge_Poron
+    minorType2: Protection_Film_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.1Protection
+    minorMaterialspec: T0.1Protection
+    subMaterial: TR_1001_LL_3_6G
+    minorMaterial: TR_1001_LL_3_6G
+    subMaterialPerCost: 1.176470588
+    minorMaterialPerCost: 1.176470588
+  - type2: Protection_Film_of_Mylar_Sponge_Poron
+    materialspec: T0.1Protection
+    material: TR_1001_LLL_1_3G
+    materialPerCost: 1.176470588
+    subType2: Protection_Film_of_Mylar_Sponge_Poron
+    minorType2: Protection_Film_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.1Protection
+    minorMaterialspec: T0.1Protection
+    subMaterial: TR_1001_LLL_1_3G
+    minorMaterial: TR_1001_LLL_1_3G
+    subMaterialPerCost: 1.176470588
+    minorMaterialPerCost: 1.176470588
+  - type2: Protection_Film_of_Mylar_Sponge_Poron
+    materialspec: T0.1Protection
+    material: TR_1001_LP_6_12G
+    materialPerCost: 1.176470588
+    subType2: Protection_Film_of_Mylar_Sponge_Poron
+    minorType2: Protection_Film_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.1Protection
+    minorMaterialspec: T0.1Protection
+    subMaterial: TR_1001_LP_6_12G
+    minorMaterial: TR_1001_LP_6_12G
+    subMaterialPerCost: 1.176470588
+    minorMaterialPerCost: 1.176470588
+  - type2: Protection_Film_of_Mylar_Sponge_Poron
+    materialspec: T0.1Protection
+    material: TR_1001_M 12_20G
+    materialPerCost: 1.323529412
+    subType2: Protection_Film_of_Mylar_Sponge_Poron
+    minorType2: Protection_Film_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.1Protection
+    minorMaterialspec: T0.1Protection
+    subMaterial: TR_1001_M 12_20G
+    minorMaterial: TR_1001_M 12_20G
+    subMaterialPerCost: 1.323529412
+    minorMaterialPerCost: 1.323529412
+  - type2: Protection_Film_of_Mylar_Sponge_Poron
+    materialspec: T0.1Protection
+    material: TR_1001_MP
+    materialPerCost: 1.323529412
+    subType2: Protection_Film_of_Mylar_Sponge_Poron
+    minorType2: Protection_Film_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.1Protection
+    minorMaterialspec: T0.1Protection
+    subMaterial: TR_1001_MP
+    minorMaterial: TR_1001_MP
+    subMaterialPerCost: 1.323529412
+    minorMaterialPerCost: 1.323529412
+  - type2: Protection_Film_of_Mylar_Sponge_Poron
+    materialspec: T0.1Protection
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Protection_Film_of_Mylar_Sponge_Poron
+    minorType2: Protection_Film_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.1Protection
+    minorMaterialspec: T0.1Protection
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.05Adhesive
+    material: DST_5
+    materialPerCost: 1.5
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.05Adhesive
+    minorMaterialspec: T0.05Adhesive
+    subMaterial: DST_5
+    minorMaterial: DST_5
+    subMaterialPerCost: 1.5
+    minorMaterialPerCost: 1.5
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.05Adhesive
+    material: DS_5
+    materialPerCost: 1.029411765
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.05Adhesive
+    minorMaterialspec: T0.05Adhesive
+    subMaterial: DS_5
+    minorMaterial: DS_5
+    subMaterialPerCost: 1.029411765
+    minorMaterialPerCost: 1.029411765
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.05Adhesive
+    material: 皇冠7972G
+    materialPerCost: 1.544117647
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.05Adhesive
+    minorMaterialspec: T0.05Adhesive
+    subMaterial: 皇冠7972G
+    minorMaterial: 皇冠7972G
+    subMaterialPerCost: 1.544117647
+    minorMaterialPerCost: 1.544117647
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.05Adhesive
+    material: PW_05
+    materialPerCost: 2.085294118
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.05Adhesive
+    minorMaterialspec: T0.05Adhesive
+    subMaterial: PW_05
+    minorMaterial: PW_05
+    subMaterialPerCost: 2.085294118
+    minorMaterialPerCost: 2.085294118
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.05Adhesive
+    material: JA305
+    materialPerCost: 2.102941176
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.05Adhesive
+    minorMaterialspec: T0.05Adhesive
+    subMaterial: JA305
+    minorMaterial: JA305
+    subMaterialPerCost: 2.102941176
+    minorMaterialPerCost: 2.102941176
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.05Adhesive
+    material: JP005B
+    materialPerCost: 2.007352941
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.05Adhesive
+    minorMaterialspec: T0.05Adhesive
+    subMaterial: JP005B
+    minorMaterial: JP005B
+    subMaterialPerCost: 2.007352941
+    minorMaterialPerCost: 2.007352941
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.05Adhesive
+    material: NITTO_GA835_上海產
+    materialPerCost: 3.211764706
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.05Adhesive
+    minorMaterialspec: T0.05Adhesive
+    subMaterial: NITTO_GA835_上海產
+    minorMaterial: NITTO_GA835_上海產
+    subMaterialPerCost: 3.211764706
+    minorMaterialPerCost: 3.211764706
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.05Adhesive
+    material: NITTO_GA835_日本產
+    materialPerCost: 4.264705882
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.05Adhesive
+    minorMaterialspec: T0.05Adhesive
+    subMaterial: NITTO_GA835_日本產
+    minorMaterial: NITTO_GA835_日本產
+    subMaterialPerCost: 4.264705882
+    minorMaterialPerCost: 4.264705882
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.05Adhesive
+    material: 3M_467MP
+    materialPerCost: 4.694117647
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.05Adhesive
+    minorMaterialspec: T0.05Adhesive
+    subMaterial: 3M_467MP
+    minorMaterial: 3M_467MP
+    subMaterialPerCost: 4.694117647
+    minorMaterialPerCost: 4.694117647
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.05Adhesive
+    material: 3M_55256
+    materialPerCost: 4.2
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.05Adhesive
+    minorMaterialspec: T0.05Adhesive
+    subMaterial: 3M_55256
+    minorMaterial: 3M_55256
+    subMaterialPerCost: 4.2
+    minorMaterialPerCost: 4.2
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.05Adhesive
+    material: TESA_68842
+    materialPerCost: 4.852941176
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.05Adhesive
+    minorMaterialspec: T0.05Adhesive
+    subMaterial: TESA_68842
+    minorMaterial: TESA_68842
+    subMaterialPerCost: 4.852941176
+    minorMaterialPerCost: 4.852941176
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.05Adhesive
+    material: TESA_68742
+    materialPerCost: 4.852941176
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.05Adhesive
+    minorMaterialspec: T0.05Adhesive
+    subMaterial: TESA_68742
+    minorMaterial: TESA_68742
+    subMaterialPerCost: 4.852941176
+    minorMaterialPerCost: 4.852941176
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.05Adhesive
+    material: SONY_NP203
+    materialPerCost: 5.147058824
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.05Adhesive
+    minorMaterialspec: T0.05Adhesive
+    subMaterial: SONY_NP203
+    minorMaterial: SONY_NP203
+    subMaterialPerCost: 5.147058824
+    minorMaterialPerCost: 5.147058824
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.05Adhesive
+    material: TESA_4972
+    materialPerCost: 5.441176471
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.05Adhesive
+    minorMaterialspec: T0.05Adhesive
+    subMaterial: TESA_4972
+    minorMaterial: TESA_4972
+    subMaterialPerCost: 5.441176471
+    minorMaterialPerCost: 5.441176471
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.05Adhesive
+    material: TESA_51972
+    materialPerCost: 6.691176471
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.05Adhesive
+    minorMaterialspec: T0.05Adhesive
+    subMaterial: TESA_51972
+    minorMaterial: TESA_51972
+    subMaterialPerCost: 6.691176471
+    minorMaterialPerCost: 6.691176471
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.05Adhesive
+    material: NITTO_56605B
+    materialPerCost: 6.764705882
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.05Adhesive
+    minorMaterialspec: T0.05Adhesive
+    subMaterial: NITTO_56605B
+    minorMaterial: NITTO_56605B
+    subMaterialPerCost: 6.764705882
+    minorMaterialPerCost: 6.764705882
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.05Adhesive
+    material: 3M_9460PC
+    materialPerCost: 7.058823529
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.05Adhesive
+    minorMaterialspec: T0.05Adhesive
+    subMaterial: 3M_9460PC
+    minorMaterial: 3M_9460PC
+    subMaterialPerCost: 7.058823529
+    minorMaterialPerCost: 7.058823529
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.05Adhesive
+    material: 3M_9671LE
+    materialPerCost: 7.794117647
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.05Adhesive
+    minorMaterialspec: T0.05Adhesive
+    subMaterial: 3M_9671LE
+    minorMaterial: 3M_9671LE
+    subMaterialPerCost: 7.794117647
+    minorMaterialPerCost: 7.794117647
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.05Adhesive
+    material: 3M_8228B
+    materialPerCost: 8.529411765
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.05Adhesive
+    minorMaterialspec: T0.05Adhesive
+    subMaterial: 3M_8228B
+    minorMaterial: 3M_8228B
+    subMaterialPerCost: 8.529411765
+    minorMaterialPerCost: 8.529411765
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.05Adhesive
+    material: 3M_9626
+    materialPerCost: 11.76470588
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.05Adhesive
+    minorMaterialspec: T0.05Adhesive
+    subMaterial: 3M_9626
+    minorMaterial: 3M_9626
+    subMaterialPerCost: 11.76470588
+    minorMaterialPerCost: 11.76470588
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.05Adhesive
+    material: TT219導電背膠
+    materialPerCost: 3.676470588
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.05Adhesive
+    minorMaterialspec: T0.05Adhesive
+    subMaterial: TT219導電背膠
+    minorMaterial: TT219導電背膠
+    subMaterialPerCost: 3.676470588
+    minorMaterialPerCost: 3.676470588
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.05Adhesive
+    material: JC205導電背膠
+    materialPerCost: 2.75
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.05Adhesive
+    minorMaterialspec: T0.05Adhesive
+    subMaterial: JC205導電背膠
+    minorMaterial: JC205導電背膠
+    subMaterialPerCost: 2.75
+    minorMaterialPerCost: 2.75
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.05Adhesive
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.05Adhesive
+    minorMaterialspec: T0.05Adhesive
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.07Adhesive
+    material: DSTT_7N
+    materialPerCost: 3.382352941
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.07Adhesive
+    minorMaterialspec: T0.07Adhesive
+    subMaterial: DSTT_7N
+    minorMaterial: DSTT_7N
+    subMaterialPerCost: 3.382352941
+    minorMaterialPerCost: 3.382352941
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.07Adhesive
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.07Adhesive
+    minorMaterialspec: T0.07Adhesive
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.1Adhesive
+    material: DS_10B
+    materialPerCost: 1.911764706
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.1Adhesive
+    minorMaterialspec: T0.1Adhesive
+    subMaterial: DS_10B
+    minorMaterial: DS_10B
+    subMaterialPerCost: 1.911764706
+    minorMaterialPerCost: 1.911764706
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.1Adhesive
+    material: DST_10
+    materialPerCost: 1.875
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.1Adhesive
+    minorMaterialspec: T0.1Adhesive
+    subMaterial: DST_10
+    minorMaterial: DST_10
+    subMaterialPerCost: 1.875
+    minorMaterialPerCost: 1.875
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.1Adhesive
+    material: PW_10
+    materialPerCost: 2.779411765
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.1Adhesive
+    minorMaterialspec: T0.1Adhesive
+    subMaterial: PW_10
+    minorMaterial: PW_10
+    subMaterialPerCost: 2.779411765
+    minorMaterialPerCost: 2.779411765
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.1Adhesive
+    material: 3M_468MP
+    materialPerCost: 6.392647059
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.1Adhesive
+    minorMaterialspec: T0.1Adhesive
+    subMaterial: 3M_468MP
+    minorMaterial: 3M_468MP
+    subMaterialPerCost: 6.392647059
+    minorMaterialPerCost: 6.392647059
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.1Adhesive
+    material: TESA_4982
+    materialPerCost: 9.542647059
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.1Adhesive
+    minorMaterialspec: T0.1Adhesive
+    subMaterial: TESA_4982
+    minorMaterial: TESA_4982
+    subMaterialPerCost: 9.542647059
+    minorMaterialPerCost: 9.542647059
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.1Adhesive
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.1Adhesive
+    minorMaterialspec: T0.1Adhesive
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.13Adhesive
+    material: DSTT_13N
+    materialPerCost: 3.705882353
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.13Adhesive
+    minorMaterialspec: T0.13Adhesive
+    subMaterial: DSTT_13N
+    minorMaterial: DSTT_13N
+    subMaterialPerCost: 3.705882353
+    minorMaterialPerCost: 3.705882353
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.13Adhesive
+    material: 3M_468C
+    materialPerCost: 7.983823529
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.13Adhesive
+    minorMaterialspec: T0.13Adhesive
+    subMaterial: 3M_468C
+    minorMaterial: 3M_468C
+    subMaterialPerCost: 7.983823529
+    minorMaterialPerCost: 7.983823529
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.13Adhesive
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.13Adhesive
+    minorMaterialspec: T0.13Adhesive
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.15Adhesive
+    material: DS_15
+    materialPerCost: 1.852941176
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.15Adhesive
+    minorMaterialspec: T0.15Adhesive
+    subMaterial: DS_15
+    minorMaterial: DS_15
+    subMaterialPerCost: 1.852941176
+    minorMaterialPerCost: 1.852941176
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.15Adhesive
+    material: DS_15B
+    materialPerCost: 2.647058824
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.15Adhesive
+    minorMaterialspec: T0.15Adhesive
+    subMaterial: DS_15B
+    minorMaterial: DS_15B
+    subMaterialPerCost: 2.647058824
+    minorMaterialPerCost: 2.647058824
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.15Adhesive
+    material: SONY_G4000
+    materialPerCost: 4.117647059
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.15Adhesive
+    minorMaterialspec: T0.15Adhesive
+    subMaterial: SONY_G4000
+    minorMaterial: SONY_G4000
+    subMaterialPerCost: 4.117647059
+    minorMaterialPerCost: 4.117647059
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.15Adhesive
+    material: 3M_9888T
+    materialPerCost: 4.941176471
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.15Adhesive
+    minorMaterialspec: T0.15Adhesive
+    subMaterial: 3M_9888T
+    minorMaterial: 3M_9888T
+    subMaterialPerCost: 4.941176471
+    minorMaterialPerCost: 4.941176471
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.15Adhesive
+    material: SONY_G9000
+    materialPerCost: 4.411764706
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.15Adhesive
+    minorMaterialspec: T0.15Adhesive
+    subMaterial: SONY_G9000
+    minorMaterial: SONY_G9000
+    subMaterialPerCost: 4.411764706
+    minorMaterialPerCost: 4.411764706
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.15Adhesive
+    material: 3M_9080HL
+    materialPerCost: 4.558823529
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.15Adhesive
+    minorMaterialspec: T0.15Adhesive
+    subMaterial: 3M_9080HL
+    minorMaterial: 3M_9080HL
+    subMaterialPerCost: 4.558823529
+    minorMaterialPerCost: 4.558823529
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.15Adhesive
+    material: NITTO_5000NS
+    materialPerCost: 5.294117647
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.15Adhesive
+    minorMaterialspec: T0.15Adhesive
+    subMaterial: NITTO_5000NS
+    minorMaterial: NITTO_5000NS
+    subMaterialPerCost: 5.294117647
+    minorMaterialPerCost: 5.294117647
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.15Adhesive
+    material: 3M_9448AB
+    materialPerCost: 5.25
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.15Adhesive
+    minorMaterialspec: T0.15Adhesive
+    subMaterial: 3M_9448AB
+    minorMaterial: 3M_9448AB
+    subMaterialPerCost: 5.25
+    minorMaterialPerCost: 5.25
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.15Adhesive
+    material: SONY_G9900
+    materialPerCost: 5.588235294
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.15Adhesive
+    minorMaterialspec: T0.15Adhesive
+    subMaterial: SONY_G9900
+    minorMaterial: SONY_G9900
+    subMaterialPerCost: 5.588235294
+    minorMaterialPerCost: 5.588235294
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.15Adhesive
+    material: G9500R
+    materialPerCost: 6.439705882
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.15Adhesive
+    minorMaterialspec: T0.15Adhesive
+    subMaterial: G9500R
+    minorMaterial: G9500R
+    subMaterialPerCost: 6.439705882
+    minorMaterialPerCost: 6.439705882
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.15Adhesive
+    material: NITTO_5000NSLV
+    materialPerCost: 6.617647059
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.15Adhesive
+    minorMaterialspec: T0.15Adhesive
+    subMaterial: NITTO_5000NSLV
+    minorMaterial: NITTO_5000NSLV
+    subMaterialPerCost: 6.617647059
+    minorMaterialPerCost: 6.617647059
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.15Adhesive
+    material: NITTO_5000NCB
+    materialPerCost: 7.926470588
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.15Adhesive
+    minorMaterialspec: T0.15Adhesive
+    subMaterial: NITTO_5000NCB
+    minorMaterial: NITTO_5000NCB
+    subMaterialPerCost: 7.926470588
+    minorMaterialPerCost: 7.926470588
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.15Adhesive
+    material: NT5000NSLV
+    materialPerCost: 7.861764706
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.15Adhesive
+    minorMaterialspec: T0.15Adhesive
+    subMaterial: NT5000NSLV
+    minorMaterial: NT5000NSLV
+    subMaterialPerCost: 7.861764706
+    minorMaterialPerCost: 7.861764706
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.15Adhesive
+    material: 3M_4914VHB
+    materialPerCost: 63.23529412
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.15Adhesive
+    minorMaterialspec: T0.15Adhesive
+    subMaterial: 3M_4914VHB
+    minorMaterial: 3M_4914VHB
+    subMaterialPerCost: 63.23529412
+    minorMaterialPerCost: 63.23529412
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.15Adhesive
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.15Adhesive
+    minorMaterialspec: T0.15Adhesive
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.2Adhesive
+    material: DS_20
+    materialPerCost: 3.676470588
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.2Adhesive
+    minorMaterialspec: T0.2Adhesive
+    subMaterial: DS_20
+    minorMaterial: DS_20
+    subMaterialPerCost: 3.676470588
+    minorMaterialPerCost: 3.676470588
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.2Adhesive
+    material: TESA_68644
+    materialPerCost: 5.105882353
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.2Adhesive
+    minorMaterialspec: T0.2Adhesive
+    subMaterial: TESA_68644
+    minorMaterial: TESA_68644
+    subMaterialPerCost: 5.105882353
+    minorMaterialPerCost: 5.105882353
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.2Adhesive
+    material: TESA_61365
+    materialPerCost: 12.5
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.2Adhesive
+    minorMaterialspec: T0.2Adhesive
+    subMaterial: TESA_61365
+    minorMaterial: TESA_61365
+    subMaterialPerCost: 12.5
+    minorMaterialPerCost: 12.5
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.2Adhesive
+    material: TESA_61395
+    materialPerCost: 17.93235294
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.2Adhesive
+    minorMaterialspec: T0.2Adhesive
+    subMaterial: TESA_61395
+    minorMaterial: TESA_61395
+    subMaterialPerCost: 17.93235294
+    minorMaterialPerCost: 17.93235294
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.2Adhesive
+    material: TESA_62624
+    materialPerCost: 26.06323529
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.2Adhesive
+    minorMaterialspec: T0.2Adhesive
+    subMaterial: TESA_62624
+    minorMaterial: TESA_62624
+    subMaterialPerCost: 26.06323529
+    minorMaterialPerCost: 26.06323529
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.2Adhesive
+    material: 3M_WT_20
+    materialPerCost: 43.97058824
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.2Adhesive
+    minorMaterialspec: T0.2Adhesive
+    subMaterial: 3M_WT_20
+    minorMaterial: 3M_WT_20
+    subMaterialPerCost: 43.97058824
+    minorMaterialPerCost: 43.97058824
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.2Adhesive
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.2Adhesive
+    minorMaterialspec: T0.2Adhesive
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.25Adhesive
+    material: SLR1125
+    materialPerCost: 33.82352941
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.25Adhesive
+    minorMaterialspec: T0.25Adhesive
+    subMaterial: SLR1125
+    minorMaterial: SLR1125
+    subMaterialPerCost: 33.82352941
+    minorMaterialPerCost: 33.82352941
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.25Adhesive
+    material: TESA_62645
+    materialPerCost: 26.72058824
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.25Adhesive
+    minorMaterialspec: T0.25Adhesive
+    subMaterial: TESA_62645
+    minorMaterial: TESA_62645
+    subMaterialPerCost: 26.72058824
+    minorMaterialPerCost: 26.72058824
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.25Adhesive
+    material: 3M_4914VHB
+    materialPerCost: 38.67647059
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.25Adhesive
+    minorMaterialspec: T0.25Adhesive
+    subMaterial: 3M_4914VHB
+    minorMaterial: 3M_4914VHB
+    subMaterialPerCost: 38.67647059
+    minorMaterialPerCost: 38.67647059
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.25Adhesive
+    material: 3M_SR5625
+    materialPerCost: 50.95588235
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.25Adhesive
+    minorMaterialspec: T0.25Adhesive
+    subMaterial: 3M_SR5625
+    minorMaterial: 3M_SR5625
+    subMaterialPerCost: 50.95588235
+    minorMaterialPerCost: 50.95588235
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.25Adhesive
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.25Adhesive
+    minorMaterialspec: T0.25Adhesive
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.3Adhesive
+    material: NITTO_GA6330
+    materialPerCost: 14.82352941
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.3Adhesive
+    minorMaterialspec: T0.3Adhesive
+    subMaterial: NITTO_GA6330
+    minorMaterial: NITTO_GA6330
+    subMaterialPerCost: 14.82352941
+    minorMaterialPerCost: 14.82352941
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.3Adhesive
+    material: SONY_UT1430
+    materialPerCost: 19.48529412
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.3Adhesive
+    minorMaterialspec: T0.3Adhesive
+    subMaterial: SONY_UT1430
+    minorMaterial: SONY_UT1430
+    subMaterialPerCost: 19.48529412
+    minorMaterialPerCost: 19.48529412
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.3Adhesive
+    material: TESA_61315
+    materialPerCost: 19.63235294
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.3Adhesive
+    minorMaterialspec: T0.3Adhesive
+    subMaterial: TESA_61315
+    minorMaterial: TESA_61315
+    subMaterialPerCost: 19.63235294
+    minorMaterialPerCost: 19.63235294
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.3Adhesive
+    material: TESA_62626
+    materialPerCost: 20.86764706
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.3Adhesive
+    minorMaterialspec: T0.3Adhesive
+    subMaterial: TESA_62626
+    minorMaterial: TESA_62626
+    subMaterialPerCost: 20.86764706
+    minorMaterialPerCost: 20.86764706
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.3Adhesive
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.3Adhesive
+    minorMaterialspec: T0.3Adhesive
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.4Adhesive
+    material: NITTO_DY_040N
+    materialPerCost: 23.89705882
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.4Adhesive
+    minorMaterialspec: T0.4Adhesive
+    subMaterial: NITTO_DY_040N
+    minorMaterial: NITTO_DY_040N
+    subMaterialPerCost: 23.89705882
+    minorMaterialPerCost: 23.89705882
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.4Adhesive
+    material: 3M_BD041VHB
+    materialPerCost: 26.32352941
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.4Adhesive
+    minorMaterialspec: T0.4Adhesive
+    subMaterial: 3M_BD041VHB
+    minorMaterial: 3M_BD041VHB
+    subMaterialPerCost: 26.32352941
+    minorMaterialPerCost: 26.32352941
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.4Adhesive
+    material: 3M_4920VHB
+    materialPerCost: 31.32352941
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.4Adhesive
+    minorMaterialspec: T0.4Adhesive
+    subMaterial: 3M_4920VHB
+    minorMaterial: 3M_4920VHB
+    subMaterialPerCost: 31.32352941
+    minorMaterialPerCost: 31.32352941
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.4Adhesive
+    material: DIC_8404B
+    materialPerCost: 36.39705882
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.4Adhesive
+    minorMaterialspec: T0.4Adhesive
+    subMaterial: DIC_8404B
+    minorMaterial: DIC_8404B
+    subMaterialPerCost: 36.39705882
+    minorMaterialPerCost: 36.39705882
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.4Adhesive
+    material: 3M_5915VHB
+    materialPerCost: 39.41176471
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.4Adhesive
+    minorMaterialspec: T0.4Adhesive
+    subMaterial: 3M_5915VHB
+    minorMaterial: 3M_5915VHB
+    subMaterialPerCost: 39.41176471
+    minorMaterialPerCost: 39.41176471
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.4Adhesive
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.4Adhesive
+    minorMaterialspec: T0.4Adhesive
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.64Adhesive
+    material: 3M_5925VHB替代料_科捷龍_KJ6064B
+    materialPerCost: 14.70588235
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.64Adhesive
+    minorMaterialspec: T0.64Adhesive
+    subMaterial: 3M_5925VHB替代料_科捷龍_KJ6064B
+    minorMaterial: 3M_5925VHB替代料_科捷龍_KJ6064B
+    subMaterialPerCost: 14.70588235
+    minorMaterialPerCost: 14.70588235
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.64Adhesive
+    material: NITTO_DY064N
+    materialPerCost: 26.72941176
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.64Adhesive
+    minorMaterialspec: T0.64Adhesive
+    subMaterial: NITTO_DY064N
+    minorMaterial: NITTO_DY064N
+    subMaterialPerCost: 26.72941176
+    minorMaterialPerCost: 26.72941176
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.64Adhesive
+    material: 3M_5925VHB
+    materialPerCost: 26.76470588
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.64Adhesive
+    minorMaterialspec: T0.64Adhesive
+    subMaterial: 3M_5925VHB
+    minorMaterial: 3M_5925VHB
+    subMaterialPerCost: 26.76470588
+    minorMaterialPerCost: 26.76470588
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.64Adhesive
+    material: 3M_BD065VHB
+    materialPerCost: 30
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.64Adhesive
+    minorMaterialspec: T0.64Adhesive
+    subMaterial: 3M_BD065VHB
+    minorMaterial: 3M_BD065VHB
+    subMaterialPerCost: 30
+    minorMaterialPerCost: 30
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.64Adhesive
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.64Adhesive
+    minorMaterialspec: T0.64Adhesive
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.7Adhesive
+    material: SDTT_7N
+    materialPerCost: 3.382352941
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.7Adhesive
+    minorMaterialspec: T0.7Adhesive
+    subMaterial: SDTT_7N
+    minorMaterial: SDTT_7N
+    subMaterialPerCost: 3.382352941
+    minorMaterialPerCost: 3.382352941
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.7Adhesive
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.7Adhesive
+    minorMaterialspec: T0.7Adhesive
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.8Adhesive
+    material: NITTO_DY_080N
+    materialPerCost: 28.41176471
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.8Adhesive
+    minorMaterialspec: T0.8Adhesive
+    subMaterial: NITTO_DY_080N
+    minorMaterial: NITTO_DY_080N
+    subMaterialPerCost: 28.41176471
+    minorMaterialPerCost: 28.41176471
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.8Adhesive
+    material: 3M_5930VHB
+    materialPerCost: 40.73529412
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.8Adhesive
+    minorMaterialspec: T0.8Adhesive
+    subMaterial: 3M_5930VHB
+    minorMaterial: 3M_5930VHB
+    subMaterialPerCost: 40.73529412
+    minorMaterialPerCost: 40.73529412
+  - type2: Adhesive_of_Mylar_Sponge_Poron
+    materialspec: T0.8Adhesive
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Adhesive_of_Mylar_Sponge_Poron
+    minorType2: Adhesive_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.8Adhesive
+    minorMaterialspec: T0.8Adhesive
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Acetate_Tape_of_Mylar_Sponge_Poron
+    materialspec: T0.12非阻燃醋酸
+    material: 非阻燃醋酸膠布
+    materialPerCost: 2.720588235
+    subType2: Acetate_Tape_of_Mylar_Sponge_Poron
+    minorType2: Acetate_Tape_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.12非阻燃醋酸
+    minorMaterialspec: T0.12非阻燃醋酸
+    subMaterial: 非阻燃醋酸膠布
+    minorMaterial: 非阻燃醋酸膠布
+    subMaterialPerCost: 2.720588235
+    minorMaterialPerCost: 2.720588235
+  - type2: Acetate_Tape_of_Mylar_Sponge_Poron
+    materialspec: T0.25非阻燃醋酸
+    material: 非阻燃醋酸膠布
+    materialPerCost: 2.941176471
+    subType2: Acetate_Tape_of_Mylar_Sponge_Poron
+    minorType2: Acetate_Tape_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.25非阻燃醋酸
+    minorMaterialspec: T0.25非阻燃醋酸
+    subMaterial: 非阻燃醋酸膠布
+    minorMaterial: 非阻燃醋酸膠布
+    subMaterialPerCost: 2.941176471
+    minorMaterialPerCost: 2.941176471
+  - type2: Acetate_Tape_of_Mylar_Sponge_Poron
+    materialspec: T0.25阻燃醋酸
+    material: 阻燃醋酸膠布
+    materialPerCost: 4.044117647
+    subType2: Acetate_Tape_of_Mylar_Sponge_Poron
+    minorType2: Acetate_Tape_of_Mylar_Sponge_Poron
+    subMaterialspec: T0.25阻燃醋酸
+    minorMaterialspec: T0.25阻燃醋酸
+    subMaterial: 阻燃醋酸膠布
+    minorMaterial: 阻燃醋酸膠布
+    subMaterialPerCost: 4.044117647
+    minorMaterialPerCost: 4.044117647
+  - type2: Absorber
+    materialspec: T0.1Absorber
+    material: 4010
+    materialPerCost: 71.17647059
+    subType2: Absorber
+    minorType2: Absorber
+    subMaterialspec: T0.1Absorber
+    minorMaterialspec: T0.1Absorber
+    subMaterial: 4010
+    minorMaterial: 4010
+    subMaterialPerCost: 71.17647059
+    minorMaterialPerCost: 71.17647059
+  - type2: Absorber
+    materialspec: T0.1Absorber
+    material: YJC75005
+    materialPerCost: 72.79411765
+    subType2: Absorber
+    minorType2: Absorber
+    subMaterialspec: T0.1Absorber
+    minorMaterialspec: T0.1Absorber
+    subMaterial: YJC75005
+    minorMaterial: YJC75005
+    subMaterialPerCost: 72.79411765
+    minorMaterialPerCost: 72.79411765
+  - type2: Absorber
+    materialspec: T0.1Absorber
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Absorber
+    minorType2: Absorber
+    subMaterialspec: T0.1Absorber
+    minorMaterialspec: T0.1Absorber
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Absorber
+    materialspec: T0.15Absorber
+    material: G566_10
+    materialPerCost: 72.79411765
+    subType2: Absorber
+    minorType2: Absorber
+    subMaterialspec: T0.15Absorber
+    minorMaterialspec: T0.15Absorber
+    subMaterial: G566_10
+    minorMaterial: G566_10
+    subMaterialPerCost: 72.79411765
+    minorMaterialPerCost: 72.79411765
+  - type2: Absorber
+    materialspec: T0.15Absorber
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Absorber
+    minorType2: Absorber
+    subMaterialspec: T0.15Absorber
+    minorMaterialspec: T0.15Absorber
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Absorber
+    materialspec: T0.2Absorber
+    material: G566_20
+    materialPerCost: 115.5882353
+    subType2: Absorber
+    minorType2: Absorber
+    subMaterialspec: T0.2Absorber
+    minorMaterialspec: T0.2Absorber
+    subMaterial: G566_20
+    minorMaterial: G566_20
+    subMaterialPerCost: 115.5882353
+    minorMaterialPerCost: 115.5882353
+  - type2: Absorber
+    materialspec: T0.2Absorber
+    material: YJC75015
+    materialPerCost: 65.44117647
+    subType2: Absorber
+    minorType2: Absorber
+    subMaterialspec: T0.2Absorber
+    minorMaterialspec: T0.2Absorber
+    subMaterial: YJC75015
+    minorMaterial: YJC75015
+    subMaterialPerCost: 65.44117647
+    minorMaterialPerCost: 65.44117647
+  - type2: Absorber
+    materialspec: T0.2Absorber
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Absorber
+    minorType2: Absorber
+    subMaterialspec: T0.2Absorber
+    minorMaterialspec: T0.2Absorber
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Absorber
+    materialspec: T0.25Absorber
+    material: G566_25
+    materialPerCost: 84.11764706
+    subType2: Absorber
+    minorType2: Absorber
+    subMaterialspec: T0.25Absorber
+    minorMaterialspec: T0.25Absorber
+    subMaterial: G566_25
+    minorMaterial: G566_25
+    subMaterialPerCost: 84.11764706
+    minorMaterialPerCost: 84.11764706
+  - type2: Absorber
+    materialspec: T0.25Absorber
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Absorber
+    minorType2: Absorber
+    subMaterialspec: T0.25Absorber
+    minorMaterialspec: T0.25Absorber
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Absorber
+    materialspec: T0.3Absorber
+    material: 3M_AB5030
+    materialPerCost: 308.8235294
+    subType2: Absorber
+    minorType2: Absorber
+    subMaterialspec: T0.3Absorber
+    minorMaterialspec: T0.3Absorber
+    subMaterial: 3M_AB5030
+    minorMaterial: 3M_AB5030
+    subMaterialPerCost: 308.8235294
+    minorMaterialPerCost: 308.8235294
+  - type2: Absorber
+    materialspec: T0.3Absorber
+    material: YJC75025
+    materialPerCost: 79.41176471
+    subType2: Absorber
+    minorType2: Absorber
+    subMaterialspec: T0.3Absorber
+    minorMaterialspec: T0.3Absorber
+    subMaterial: YJC75025
+    minorMaterial: YJC75025
+    subMaterialPerCost: 79.41176471
+    minorMaterialPerCost: 79.41176471
+  - type2: Absorber
+    materialspec: T0.3Absorber
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Absorber
+    minorType2: Absorber
+    subMaterialspec: T0.3Absorber
+    minorMaterialspec: T0.3Absorber
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Absorber
+    materialspec: T0.35Absorber
+    material: G566_30
+    materialPerCost: 88.23529412
+    subType2: Absorber
+    minorType2: Absorber
+    subMaterialspec: T0.35Absorber
+    minorMaterialspec: T0.35Absorber
+    subMaterial: G566_30
+    minorMaterial: G566_30
+    subMaterialPerCost: 88.23529412
+    minorMaterialPerCost: 88.23529412
+  - type2: Absorber
+    materialspec: T0.35Absorber
+    material: 4030
+    materialPerCost: 88.23529412
+    subType2: Absorber
+    minorType2: Absorber
+    subMaterialspec: T0.35Absorber
+    minorMaterialspec: T0.35Absorber
+    subMaterial: 4030
+    minorMaterial: 4030
+    subMaterialPerCost: 88.23529412
+    minorMaterialPerCost: 88.23529412
+  - type2: Absorber
+    materialspec: T0.35Absorber
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Absorber
+    minorType2: Absorber
+    subMaterialspec: T0.35Absorber
+    minorMaterialspec: T0.35Absorber
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Absorber
+    materialspec: T0.55Absorber
+    material: G566_50
+    materialPerCost: 123.5294118
+    subType2: Absorber
+    minorType2: Absorber
+    subMaterialspec: T0.55Absorber
+    minorMaterialspec: T0.55Absorber
+    subMaterial: G566_50
+    minorMaterial: G566_50
+    subMaterialPerCost: 123.5294118
+    minorMaterialPerCost: 123.5294118
+  - type2: Absorber
+    materialspec: T0.55Absorber
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Absorber
+    minorType2: Absorber
+    subMaterialspec: T0.55Absorber
+    minorMaterialspec: T0.55Absorber
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Absorber
+    materialspec: T1.0Absorber
+    material: YJC75100
+    materialPerCost: 145.5882353
+    subType2: Absorber
+    minorType2: Absorber
+    subMaterialspec: T1.0Absorber
+    minorMaterialspec: T1.0Absorber
+    subMaterial: YJC75100
+    minorMaterial: YJC75100
+    subMaterialPerCost: 145.5882353
+    minorMaterialPerCost: 145.5882353
+  - type2: Absorber
+    materialspec: T1.0Absorber
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Absorber
+    minorType2: Absorber
+    subMaterialspec: T1.0Absorber
+    minorMaterialspec: T1.0Absorber
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Absorber
+    materialspec: T2.5Absorber
+    material: YJC75200
+    materialPerCost: 250.7352941
+    subType2: Absorber
+    minorType2: Absorber
+    subMaterialspec: T2.5Absorber
+    minorMaterialspec: T2.5Absorber
+    subMaterial: YJC75200
+    minorMaterial: YJC75200
+    subMaterialPerCost: 250.7352941
+    minorMaterialPerCost: 250.7352941
+  - type2: Absorber
+    materialspec: T2.5Absorber
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Absorber
+    minorType2: Absorber
+    subMaterialspec: T2.5Absorber
+    minorMaterialspec: T2.5Absorber
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Conductive_Tape
+    material: Non_UL導電布灰
+    materialspec: T0.085
+    materialPerCost: 26
+    subType2: Conductive_Tape
+    minorType2: Conductive_Tape
+    subMaterialspec: T0.085
+    minorMaterialspec: T0.085
+    subMaterial: Non_UL導電布灰
+    minorMaterial: Non_UL導電布灰
+    subMaterialPerCost: 26
+    minorMaterialPerCost: 26
+  - type2: Conductive_Tape
+    material: UL導電布灰
+    materialspec: T0.13
+    materialPerCost: 17
+    subType2: Conductive_Tape
+    minorType2: Conductive_Tape
+    subMaterialspec: T0.13
+    minorMaterialspec: T0.13
+    subMaterial: UL導電布灰
+    minorMaterial: UL導電布灰
+    subMaterialPerCost: 17
+    minorMaterialPerCost: 17
+  - type2: Conductive_Tape
+    material: Non_UL導電布灰
+    materialspec: T0.13
+    materialPerCost: 6.744117647
+    subType2: Conductive_Tape
+    minorType2: Conductive_Tape
+    subMaterialspec: T0.13
+    minorMaterialspec: T0.13
+    subMaterial: Non_UL導電布灰
+    minorMaterial: Non_UL導電布灰
+    subMaterialPerCost: 6.744117647
+    minorMaterialPerCost: 6.744117647
+  - type2: Conductive_Tape
+    material: UL導電布黑
+    materialspec: T0.13
+    materialPerCost: 19.5
+    subType2: Conductive_Tape
+    minorType2: Conductive_Tape
+    subMaterialspec: T0.13
+    minorMaterialspec: T0.13
+    subMaterial: UL導電布黑
+    minorMaterial: UL導電布黑
+    subMaterialPerCost: 19.5
+    minorMaterialPerCost: 19.5
+  - type2: Conductive_Tape
+    material: Non_UL導電布黑
+    materialspec: T0.13
+    materialPerCost: 8.817647059
+    subType2: Conductive_Tape
+    minorType2: Conductive_Tape
+    subMaterialspec: T0.13
+    minorMaterialspec: T0.13
+    subMaterial: Non_UL導電布黑
+    minorMaterial: Non_UL導電布黑
+    subMaterialPerCost: 8.817647059
+    minorMaterialPerCost: 8.817647059
+  - type2: Conductive_Tape
+    material: 
+    materialspec: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Conductive_Tape
+    minorType2: Conductive_Tape
+    subMaterialspec: Other_Fill_ME_Remark
+    minorMaterialspec: Other_Fill_ME_Remark
+    subMaterial: 
+    minorMaterial: 
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Gasket
+    materialspec: ULGasket灰
+    material: 0
+    materialPerCost: 22
+    subType2: Gasket
+    minorType2: Gasket
+    subMaterialspec: ULGasket灰
+    minorMaterialspec: ULGasket灰
+    subMaterial: 0
+    minorMaterial: 0
+    subMaterialPerCost: 22
+    minorMaterialPerCost: 22
+  - type2: Gasket
+    material: Non_ULGasket灰
+    materialspec: 0
+    materialPerCost: 18
+    subType2: Gasket
+    minorType2: Gasket
+    subMaterialspec: 0
+    minorMaterialspec: 0
+    subMaterial: Non_ULGasket灰
+    minorMaterial: Non_ULGasket灰
+    subMaterialPerCost: 18
+    minorMaterialPerCost: 18
+  - type2: Gasket
+    material: ULGasket黑
+    materialspec: 0
+    materialPerCost: 25
+    subType2: Gasket
+    minorType2: Gasket
+    subMaterialspec: 0
+    minorMaterialspec: 0
+    subMaterial: ULGasket黑
+    minorMaterial: ULGasket黑
+    subMaterialPerCost: 25
+    minorMaterialPerCost: 25
+  - type2: Gasket
+    material: Non_ULGasket黑
+    materialspec: 0
+    materialPerCost: 21
+    subType2: Gasket
+    minorType2: Gasket
+    subMaterialspec: 0
+    minorMaterialspec: 0
+    subMaterial: Non_ULGasket黑
+    minorMaterial: Non_ULGasket黑
+    subMaterialPerCost: 21
+    minorMaterialPerCost: 21
+  - type2: Gasket
+    material: UL_Eco_Form
+    materialspec: T1.0
+    materialPerCost: 120
+    subType2: Gasket
+    minorType2: Gasket
+    subMaterialspec: T1.0
+    minorMaterialspec: T1.0
+    subMaterial: UL_Eco_Form
+    minorMaterial: UL_Eco_Form
+    subMaterialPerCost: 120
+    minorMaterialPerCost: 120
+  - type2: Gasket
+    material: Non_UL_Eco_Form
+    materialspec: T1.0
+    materialPerCost: 100
+    subType2: Gasket
+    minorType2: Gasket
+    subMaterialspec: T1.0
+    minorMaterialspec: T1.0
+    subMaterial: Non_UL_Eco_Form
+    minorMaterial: Non_UL_Eco_Form
+    subMaterialPerCost: 100
+    minorMaterialPerCost: 100
+  - type2: Gasket
+    material: UL_Eco_Form
+    materialspec: T1.5
+    materialPerCost: 140
+    subType2: Gasket
+    minorType2: Gasket
+    subMaterialspec: T1.5
+    minorMaterialspec: T1.5
+    subMaterial: UL_Eco_Form
+    minorMaterial: UL_Eco_Form
+    subMaterialPerCost: 140
+    minorMaterialPerCost: 140
+  - type2: Gasket
+    material: Non_UL_Eco_Form
+    materialspec: T1.5
+    materialPerCost: 120
+    subType2: Gasket
+    minorType2: Gasket
+    subMaterialspec: T1.5
+    minorMaterialspec: T1.5
+    subMaterial: Non_UL_Eco_Form
+    minorMaterial: Non_UL_Eco_Form
+    subMaterialPerCost: 120
+    minorMaterialPerCost: 120
+  - type2: Gasket
+    material: UL_Eco_Form
+    materialspec: T2.0
+    materialPerCost: 160
+    subType2: Gasket
+    minorType2: Gasket
+    subMaterialspec: T2.0
+    minorMaterialspec: T2.0
+    subMaterial: UL_Eco_Form
+    minorMaterial: UL_Eco_Form
+    subMaterialPerCost: 160
+    minorMaterialPerCost: 160
+  - type2: Gasket
+    material: Non_UL_Eco_Form
+    materialspec: T2.0
+    materialPerCost: 140
+    subType2: Gasket
+    minorType2: Gasket
+    subMaterialspec: T2.0
+    minorMaterialspec: T2.0
+    subMaterial: Non_UL_Eco_Form
+    minorMaterial: Non_UL_Eco_Form
+    subMaterialPerCost: 140
+    minorMaterialPerCost: 140
+  - type2: Gasket
+    material: 
+    materialspec: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Gasket
+    minorType2: Gasket
+    subMaterialspec: Other_Fill_ME_Remark
+    minorMaterialspec: Other_Fill_ME_Remark
+    subMaterial: 
+    minorMaterial: 
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Mesh
+    materialspec: T0.125Mesh
+    material: DFR117網孔0.8_P1.2
+    materialPerCost: 5.147058824
+    subType2: Mesh
+    minorType2: Mesh
+    subMaterialspec: T0.125Mesh
+    minorMaterialspec: T0.125Mesh
+    subMaterial: DFR117網孔0.8_P1.2
+    minorMaterial: DFR117網孔0.8_P1.2
+    subMaterialPerCost: 5.147058824
+    minorMaterialPerCost: 5.147058824
+  - type2: Mesh
+    materialspec: T0.125Mesh
+    material: DFR117網孔0.5_P0.9
+    materialPerCost: 5.147058824
+    subType2: Mesh
+    minorType2: Mesh
+    subMaterialspec: T0.125Mesh
+    minorMaterialspec: T0.125Mesh
+    subMaterial: DFR117網孔0.5_P0.9
+    minorMaterial: DFR117網孔0.5_P0.9
+    subMaterialPerCost: 5.147058824
+    minorMaterialPerCost: 5.147058824
+  - type2: Mesh
+    materialspec: T0.125Mesh
+    material: DFR117網孔0.5_P0.7
+    materialPerCost: 5.147058824
+    subType2: Mesh
+    minorType2: Mesh
+    subMaterialspec: T0.125Mesh
+    minorMaterialspec: T0.125Mesh
+    subMaterial: DFR117網孔0.5_P0.7
+    minorMaterial: DFR117網孔0.5_P0.7
+    subMaterialPerCost: 5.147058824
+    minorMaterialPerCost: 5.147058824
+  - type2: Mesh
+    materialspec: T0.125Mesh
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Mesh
+    minorType2: Mesh
+    subMaterialspec: T0.125Mesh
+    minorMaterialspec: T0.125Mesh
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Mesh
+    materialspec: T0.175Mesh
+    material: DFR117網孔0.8_P1.2
+    materialPerCost: 5.882352941
+    subType2: Mesh
+    minorType2: Mesh
+    subMaterialspec: T0.175Mesh
+    minorMaterialspec: T0.175Mesh
+    subMaterial: DFR117網孔0.8_P1.2
+    minorMaterial: DFR117網孔0.8_P1.2
+    subMaterialPerCost: 5.882352941
+    minorMaterialPerCost: 5.882352941
+  - type2: Mesh
+    materialspec: T0.175Mesh
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Mesh
+    minorType2: Mesh
+    subMaterialspec: T0.175Mesh
+    minorMaterialspec: T0.175Mesh
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Mesh
+    materialspec: T0.178Mesh
+    material: DFR117網孔0.5_P0.9
+    materialPerCost: 5.882352941
+    subType2: Mesh
+    minorType2: Mesh
+    subMaterialspec: T0.178Mesh
+    minorMaterialspec: T0.178Mesh
+    subMaterial: DFR117網孔0.5_P0.9
+    minorMaterial: DFR117網孔0.5_P0.9
+    subMaterialPerCost: 5.882352941
+    minorMaterialPerCost: 5.882352941
+  - type2: Mesh
+    materialspec: T0.178Mesh
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Mesh
+    minorType2: Mesh
+    subMaterialspec: T0.178Mesh
+    minorMaterialspec: T0.178Mesh
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Mesh
+    materialspec: T0.25Mesh
+    material: DFR117網孔0.8_P1.2
+    materialPerCost: 5.945588235
+    subType2: Mesh
+    minorType2: Mesh
+    subMaterialspec: T0.25Mesh
+    minorMaterialspec: T0.25Mesh
+    subMaterial: DFR117網孔0.8_P1.2
+    minorMaterial: DFR117網孔0.8_P1.2
+    subMaterialPerCost: 5.945588235
+    minorMaterialPerCost: 5.945588235
+  - type2: Mesh
+    materialspec: T0.25Mesh
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Mesh
+    minorType2: Mesh
+    subMaterialspec: T0.25Mesh
+    minorMaterialspec: T0.25Mesh
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Cu_Foil
+    materialspec: T0.05_AlCu
+    material: AL_Mylar_不含背膠
+    materialPerCost: 1.176470588
+    subType2: Cu_Foil
+    minorType2: Cu_Foil
+    subMaterialspec: T0.05_AlCu
+    minorMaterialspec: T0.05_AlCu
+    subMaterial: AL_Mylar_不含背膠
+    minorMaterial: AL_Mylar_不含背膠
+    subMaterialPerCost: 1.176470588
+    minorMaterialPerCost: 1.176470588
+  - type2: Cu_Foil
+    materialspec: T0.05_AlCu
+    material: 軟鋁S_不含背膠
+    materialPerCost: 1.176470588
+    subType2: Cu_Foil
+    minorType2: Cu_Foil
+    subMaterialspec: T0.05_AlCu
+    minorMaterialspec: T0.05_AlCu
+    subMaterial: 軟鋁S_不含背膠
+    minorMaterial: 軟鋁S_不含背膠
+    subMaterialPerCost: 1.176470588
+    minorMaterialPerCost: 1.176470588
+  - type2: Cu_Foil
+    materialspec: T0.06_AlCu
+    material: 雙導鋁(含導電膠)
+    materialPerCost: 3.242647059
+    subType2: Cu_Foil
+    minorType2: Cu_Foil
+    subMaterialspec: T0.06_AlCu
+    minorMaterialspec: T0.06_AlCu
+    subMaterial: 雙導鋁(含導電膠)
+    minorMaterial: 雙導鋁(含導電膠)
+    subMaterialPerCost: 3.242647059
+    minorMaterialPerCost: 3.242647059
+  - type2: Cu_Foil
+    materialspec: T0.075_AlCu
+    material: AL_Mylar_不含背膠
+    materialPerCost: 1.176470588
+    subType2: Cu_Foil
+    minorType2: Cu_Foil
+    subMaterialspec: T0.075_AlCu
+    minorMaterialspec: T0.075_AlCu
+    subMaterial: AL_Mylar_不含背膠
+    minorMaterial: AL_Mylar_不含背膠
+    subMaterialPerCost: 1.176470588
+    minorMaterialPerCost: 1.176470588
+  - type2: Cu_Foil
+    materialspec: T0.1_AlCu
+    material: AL_Mylar_不含背膠
+    materialPerCost: 1.470588235
+    subType2: Cu_Foil
+    minorType2: Cu_Foil
+    subMaterialspec: T0.1_AlCu
+    minorMaterialspec: T0.1_AlCu
+    subMaterial: AL_Mylar_不含背膠
+    minorMaterial: AL_Mylar_不含背膠
+    subMaterialPerCost: 1.470588235
+    minorMaterialPerCost: 1.470588235
+  - type2: Cu_Foil
+    materialspec: T0.1_AlCu
+    material: 雙導鋁(含導電膠)
+    materialPerCost: 2.647058824
+    subType2: Cu_Foil
+    minorType2: Cu_Foil
+    subMaterialspec: T0.1_AlCu
+    minorMaterialspec: T0.1_AlCu
+    subMaterial: 雙導鋁(含導電膠)
+    minorMaterial: 雙導鋁(含導電膠)
+    subMaterialPerCost: 2.647058824
+    minorMaterialPerCost: 2.647058824
+  - type2: Cu_Foil
+    materialspec: T0.1_AlCu
+    material: 軟鋁S_不含背膠
+    materialPerCost: 1.470588235
+    subType2: Cu_Foil
+    minorType2: Cu_Foil
+    subMaterialspec: T0.1_AlCu
+    minorMaterialspec: T0.1_AlCu
+    subMaterial: 軟鋁S_不含背膠
+    minorMaterial: 軟鋁S_不含背膠
+    subMaterialPerCost: 1.470588235
+    minorMaterialPerCost: 1.470588235
+  - type2: Cu_Foil
+    materialspec: T0.1_AlCu
+    material: 軟銅_不含背膠
+    materialPerCost: 14.70588235
+    subType2: Cu_Foil
+    minorType2: Cu_Foil
+    subMaterialspec: T0.1_AlCu
+    minorMaterialspec: T0.1_AlCu
+    subMaterial: 軟銅_不含背膠
+    minorMaterial: 軟銅_不含背膠
+    subMaterialPerCost: 14.70588235
+    minorMaterialPerCost: 14.70588235
+  - type2: Cu_Foil
+    materialspec: T0.1_AlCu
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: Cu_Foil
+    minorType2: Cu_Foil
+    subMaterialspec: T0.1_AlCu
+    minorMaterialspec: T0.1_AlCu
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Cu_Foil
+    materialspec: T0.15_AlCu
+    material: 雙導鋁(含導電膠)
+    materialPerCost: 2.941176471
+    subType2: Cu_Foil
+    minorType2: Cu_Foil
+    subMaterialspec: T0.15_AlCu
+    minorMaterialspec: T0.15_AlCu
+    subMaterial: 雙導鋁(含導電膠)
+    minorMaterial: 雙導鋁(含導電膠)
+    subMaterialPerCost: 2.941176471
+    minorMaterialPerCost: 2.941176471
+  - type2: Cu_Foil
+    materialspec: T0.15_AlCu
+    material: 軟銅_不含背膠
+    materialPerCost: 22.05882353
+    subType2: Cu_Foil
+    minorType2: Cu_Foil
+    subMaterialspec: T0.15_AlCu
+    minorMaterialspec: T0.15_AlCu
+    subMaterial: 軟銅_不含背膠
+    minorMaterial: 軟銅_不含背膠
+    subMaterialPerCost: 22.05882353
+    minorMaterialPerCost: 22.05882353
+  - type2: Cu_Foil
+    materialspec: T0.15_AlCu
+    material: AL_Mylar_不含背膠
+    materialPerCost: 4.338235294
+    subType2: Cu_Foil
+    minorType2: Cu_Foil
+    subMaterialspec: T0.15_AlCu
+    minorMaterialspec: T0.15_AlCu
+    subMaterial: AL_Mylar_不含背膠
+    minorMaterial: AL_Mylar_不含背膠
+    subMaterialPerCost: 4.338235294
+    minorMaterialPerCost: 4.338235294
+  - type2: Cu_Foil
+    materialspec: T0.20_AlCu
+    material: 雙導鋁(含導電膠)
+    materialPerCost: 6.691176471
+    subType2: Cu_Foil
+    minorType2: Cu_Foil
+    subMaterialspec: T0.20_AlCu
+    minorMaterialspec: T0.20_AlCu
+    subMaterial: 雙導鋁(含導電膠)
+    minorMaterial: 雙導鋁(含導電膠)
+    subMaterialPerCost: 6.691176471
+    minorMaterialPerCost: 6.691176471
+  - type2: Cu_Foil
+    materialspec: T0.25_AlCu
+    material: 雙導銅(含導電膠)
+    materialPerCost: 28.16176471
+    subType2: Cu_Foil
+    minorType2: Cu_Foil
+    subMaterialspec: T0.25_AlCu
+    minorMaterialspec: T0.25_AlCu
+    subMaterial: 雙導銅(含導電膠)
+    minorMaterial: 雙導銅(含導電膠)
+    subMaterialPerCost: 28.16176471
+    minorMaterialPerCost: 28.16176471
+  - type2: PMMA
+    materialspec: T0.3PMMA
+    material: 雙面硬化 0.3 PMMA
+    materialPerCost: 64.41176471
+    subType2: PMMA
+    minorType2: PMMA
+    subMaterialspec: T0.3PMMA
+    minorMaterialspec: T0.3PMMA
+    subMaterial: 雙面硬化 0.3 PMMA
+    minorMaterial: 雙面硬化 0.3 PMMA
+    subMaterialPerCost: 64.41176471
+    minorMaterialPerCost: 64.41176471
+  - type2: PMMA
+    materialspec: T0.3PMMA
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: PMMA
+    minorType2: PMMA
+    subMaterialspec: T0.3PMMA
+    minorMaterialspec: T0.3PMMA
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: PMMA
+    materialspec: T0.4PMMA
+    material: 雙面硬化 0.4 PMMA
+    materialPerCost: 40.58823529
+    subType2: PMMA
+    minorType2: PMMA
+    subMaterialspec: T0.4PMMA
+    minorMaterialspec: T0.4PMMA
+    subMaterial: 雙面硬化 0.4 PMMA
+    minorMaterial: 雙面硬化 0.4 PMMA
+    subMaterialPerCost: 40.58823529
+    minorMaterialPerCost: 40.58823529
+  - type2: PMMA
+    materialspec: T0.4PMMA
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: PMMA
+    minorType2: PMMA
+    subMaterialspec: T0.4PMMA
+    minorMaterialspec: T0.4PMMA
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: PMMA
+    materialspec: T0.5PMMA
+    material: 雙面硬化 0.5 PMMA
+    materialPerCost: 30.88235294
+    subType2: PMMA
+    minorType2: PMMA
+    subMaterialspec: T0.5PMMA
+    minorMaterialspec: T0.5PMMA
+    subMaterial: 雙面硬化 0.5 PMMA
+    minorMaterial: 雙面硬化 0.5 PMMA
+    subMaterialPerCost: 30.88235294
+    minorMaterialPerCost: 30.88235294
+  - type2: PMMA
+    materialspec: T0.5PMMA
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: PMMA
+    minorType2: PMMA
+    subMaterialspec: T0.5PMMA
+    minorMaterialspec: T0.5PMMA
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: PMMA
+    materialspec: T0.8PMMA
+    material: 雙面硬化 0.8 PMMA
+    materialPerCost: 32.64705882
+    subType2: PMMA
+    minorType2: PMMA
+    subMaterialspec: T0.8PMMA
+    minorMaterialspec: T0.8PMMA
+    subMaterial: 雙面硬化 0.8 PMMA
+    minorMaterial: 雙面硬化 0.8 PMMA
+    subMaterialPerCost: 32.64705882
+    minorMaterialPerCost: 32.64705882
+  - type2: PMMA
+    materialspec: T0.8PMMA
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: PMMA
+    minorType2: PMMA
+    subMaterialspec: T0.8PMMA
+    minorMaterialspec: T0.8PMMA
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: PMMA
+    materialspec: T1.0PMMA
+    material: 雙面硬化 1.0 PMMA
+    materialPerCost: 31.76470588
+    subType2: PMMA
+    minorType2: PMMA
+    subMaterialspec: T1.0PMMA
+    minorMaterialspec: T1.0PMMA
+    subMaterial: 雙面硬化 1.0 PMMA
+    minorMaterial: 雙面硬化 1.0 PMMA
+    subMaterialPerCost: 31.76470588
+    minorMaterialPerCost: 31.76470588
+  - type2: PMMA
+    materialspec: T1.0PMMA
+    material: Other_Fill_ME_Remark
+    materialPerCost: 
+    subType2: PMMA
+    minorType2: PMMA
+    subMaterialspec: T1.0PMMA
+    minorMaterialspec: T1.0PMMA
+    subMaterial: Other_Fill_ME_Remark
+    minorMaterial: Other_Fill_ME_Remark
+    subMaterialPerCost: 
+    minorMaterialPerCost: 
+  - type2: Acetate
+    materialspec: T0.12非阻燃醋酸
+    material: 非阻燃醋酸膠布
+    materialPerCost: 2.720588235
+    subType2: Acetate
+    minorType2: Acetate
+    subMaterialspec: T0.12非阻燃醋酸
+    minorMaterialspec: T0.12非阻燃醋酸
+    subMaterial: 非阻燃醋酸膠布
+    minorMaterial: 非阻燃醋酸膠布
+    subMaterialPerCost: 2.720588235
+    minorMaterialPerCost: 2.720588235
+  - type2: Acetate
+    materialspec: 非阻燃醋酸膠布
+    material: 非阻燃醋酸膠布
+    materialPerCost: 3.382352941
+    subType2: Acetate
+    minorType2: Acetate
+    subMaterialspec: 非阻燃醋酸膠布
+    minorMaterialspec: 非阻燃醋酸膠布
+    subMaterial: 非阻燃醋酸膠布
+    minorMaterial: 非阻燃醋酸膠布
+    subMaterialPerCost: 3.382352941
+    minorMaterialPerCost: 3.382352941
+  - type2: Acetate
+    materialspec: 阻燃醋酸膠布
+    material: 阻燃醋酸膠布
+    materialPerCost: 4.044117647
+    subType2: Acetate
+    minorType2: Acetate
+    subMaterialspec: 阻燃醋酸膠布
+    minorMaterialspec: 阻燃醋酸膠布
+    subMaterial: 阻燃醋酸膠布
+    minorMaterial: 阻燃醋酸膠布
+    subMaterialPerCost: 4.044117647
+    minorMaterialPerCost: 4.044117647
+  - type2: Non_Woven
+    materialspec: 非阻燃黑色不織布
+    material: 非阻燃黑色不織布
+    materialPerCost: 1.029411765
+    subType2: Non_Woven
+    minorType2: Non_Woven
+    subMaterialspec: 非阻燃黑色不織布
+    minorMaterialspec: 非阻燃黑色不織布
+    subMaterial: 非阻燃黑色不織布
+    minorMaterial: 非阻燃黑色不織布
+    subMaterialPerCost: 1.029411765
+    minorMaterialPerCost: 1.029411765
+  - type2: Non_Woven
+    materialspec: 阻燃黑色不織布
+    material: 阻燃黑色不織布
+    materialPerCost: 2.647058824
+    subType2: Non_Woven
+    minorType2: Non_Woven
+    subMaterialspec: 阻燃黑色不織布
+    minorMaterialspec: 阻燃黑色不織布
+    subMaterial: 阻燃黑色不織布
+    minorMaterial: 阻燃黑色不織布
+    subMaterialPerCost: 2.647058824
+    minorMaterialPerCost: 2.647058824
+  - type2: Non_Woven
+    materialspec: T0.35Non_Woven
+    material: Non_Woven
+    materialPerCost: 2.205882353
+    subType2: Non_Woven
+    minorType2: Non_Woven
+    subMaterialspec: T0.35Non_Woven
+    minorMaterialspec: T0.35Non_Woven
+    subMaterial: Non_Woven
+    minorMaterial: Non_Woven
+    subMaterialPerCost: 2.205882353
+    minorMaterialPerCost: 2.205882353

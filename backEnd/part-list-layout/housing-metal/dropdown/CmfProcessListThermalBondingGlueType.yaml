@@ -1,0 +1,7 @@
+values:
+  - cmfProcessListThermalBondingGlueType: DEVCON DV14167
+    cmfProcessListThermalBondingGluePrice: 0.3428
+    cmfProcessListThermalBondingGlueDensity: 0.97
+  # - cmfProcessListThermalBondingGlueType: 3M 8160
+  #   cmfProcessListThermalBondingGluePrice: null
+  #   cmfProcessListThermalBondingGlueDensity: null

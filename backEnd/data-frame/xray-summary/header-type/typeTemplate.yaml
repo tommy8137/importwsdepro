@@ -1,0 +1,76 @@
+dataInt:
+  $Template:
+    - dataInt
+  style:
+    header:
+      $xray-summary.header-type.style:
+        - summary-header
+    value:
+      $xray-summary.header-type.style:
+        - summary-data
+      numberFormat: '#,##0'
+
+dataFloat:
+  $Template:
+    - dataFloat
+  style:
+    header:
+      $xray-summary.header-type.style:
+        - summary-header
+    value:
+      $xray-summary.header-type.style:
+        - summary-data
+      numberFormat: '#,##0.00000'
+
+dataString:
+  $Template:
+    - dataString
+  style:
+    header:
+      $xray-summary.header-type.style:
+        - summary-header
+    value:
+      $xray-summary.header-type.style:
+        - summary-data
+
+headerString:
+  $Template:
+    - dataString
+  style:
+    header:
+      $xray-summary.header-type.style:
+        - border-header
+    value:
+      $xray-summary.header-type.style:
+        - border-data
+
+
+infoLeftString:
+  $Template:
+    - dataString
+  style:
+    header:
+      $xray-summary.header-type.style:
+        - info-left-header
+    value:
+      $xray-summary.header-type.style:
+        - info-left-data
+
+infoRightString:
+  $Template:
+    - dataString
+  style:
+    header:
+      $xray-summary.header-type.style:
+        - info-right-header
+    value:
+      $xray-summary.header-type.style:
+        - info-right-data
+
+unitString:
+  $Template:
+    - dataString
+  style:
+    value:
+      $xray-summary.header-type.style:
+        - unit-data

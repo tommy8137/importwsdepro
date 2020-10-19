@@ -1,0 +1,391 @@
+output:
+  # total
+  total: total
+  # FOR debug
+  A_materialCost: materialCost
+  A_1_materialSizeCost: materialSizeCost
+  A_2_adhesiveMaterialCost: adhesiveMaterialCost
+  B_formingCost: formingCost
+  C_secondaryProcessingCost: secondaryProcessingCost
+  C_1.stampingTypeCost: stampingTypeCost
+  C_2.adhesiveCost: adhesiveCost
+  C_3.printingCost: printingCost
+  C_4.brushingCost: brushingCost
+  C_5.debrisCleaningCost: debrisCleaningCost
+  D_managementCost: managementCost
+  # from Bom
+  productType: productType
+  rubberMaterialPerCost: rubberMaterialPerCost
+  density: density
+  # for debug
+  # mapped value
+  1.rubberCycleTime: rubberCycleTime
+  2.rubberAdhesiveMaterialPrice: rubberAdhesiveMaterialPrice
+  3.moldCavityCount: moldCavityCount
+  4.rubberAllowanceValue: rubberAllowanceValue
+  5.formingLossRate: formingLossRate
+  6.rubberAdhesiveTypePrice: rubberAdhesiveTypePrice
+  7.rubberAdhesiveTypeCycleTime: rubberAdhesiveTypeCycleTime
+  # 
+  # from DB veriable
+  _rubberAdhesiveTypeAmount: rubberAdhesiveTypeAmount
+  brushingLossRate: brushingLossRate
+  _brushingPrice: brushingPrice
+  _brushingCycleTime: brushingCycleTime
+  _brushingAmount: brushingAmount
+  _debrisCleaningCycleTime: debrisCleaningCycleTime
+  _debrisCleaningPrice: debrisCleaningPrice
+  _debrisCleaningAmount: debrisCleaningAmount
+  _adhesivePrice: adhesivePrice
+  _fullSizeLength: fullSizeLength
+  _fullSizeWidth: fullSizeWidth
+  _adhesiveTypeLossRate: adhesiveTypeLossRate
+  _management_percentage: management_percentage
+  rubberAdhesiveTypeName: rubberAdhesiveTypeName
+  materialArea: materialArea
+  fullSizeArea: fullSizeArea
+
+formula:
+  # 總價: 若為Other fill me remark則為null, 其餘則為0
+  total:
+    label: 總價
+    type: FUNC
+    formula: "(total, isOtherFill)=>{
+      const inValid = !(total && typeof total === 'number' && isFinite(total));
+      if (isOtherFill) {
+        return null;
+      } else if (inValid) {
+        return 0;
+      }
+      return total;
+    }"
+    param:
+      - totalCost
+      - isOtherFill
+
+  # Rubber總total = A.材料費 + B.成型費 + C.二次加工費 + D.管銷&利潤
+  totalCost:
+    type: MATH
+    label: total
+    formula: materialCost + formingCost + secondaryProcessingCost + managementCost
+
+
+  # 是否有填寫 Other_Fill_ME_Remark
+  isOtherFill:
+    type: FUNC
+    formula: "(...params) => params.some(p => p === 'Other_Fill_ME_Remark')"
+    label: 材料費
+    param:
+      - materialspec
+      - material
+
+  # A.材料費 =  A-1.材料面積費用 + A-2.材料面積費用
+  materialCost:
+    label: A.材料費 = A-1.材料面積費用 + A-2.背膠面積價格
+    type: MATH
+    formula: "materialSizeCost + adhesiveMaterialCost"
+
+  # A-1.材料面積費用 = 材料單價 / 1000 * 成品重量 * 2 * (1 + 材料lossRate)
+  materialSizeCost:
+    label: A-1.材料面積費用
+    type: MATH
+    formula: "rubberMaterialPerCost / 1000 * materialWeight * 2 * (1 + materialLossRate)"
+
+  # 成品重量 = (密度/ 1000 * (L * W * H))
+  materialWeight:
+    label: 成品重量
+    type: MATH
+    formula: "density / 1000 * materialVolume"
+
+  # 體積 V
+  materialVolume:
+    label: "體積 V"
+    type: MATH
+    formula: "partssizelength * partssizewidth *  partssizehigh"
+
+  # A-2.背膠材料費用 = 
+  # 背膠材料單價 / 1000000 * 成品面積 * (整版面積 / (partL + 10 * 2) * (partW + 10 * 2)))*(1+背膠材料lossRate)
+  adhesiveMaterialCost:
+    label: A-2.背膠面積價格
+    type: MATH
+    formula: "rubberAdhesiveMaterialPrice / 1000000 * materialArea * (fullSizeArea / ((partssizelength + 10 * 2) * (partssizewidth + 10 * 2))) * (1 + adhesiveMaterialLossRate)"
+ 
+  # 成品面積 = partL * partW
+  materialArea:
+    label: "成品面積(mm^2)"
+    type: MATH
+    formula: "partssizelength * partssizewidth"
+
+  # 整版面積
+  fullSizeArea:
+    label: "整版面積(mm^2)"
+    type: MATH
+    formula: fullSizeLength * fullSizeWidth
+
+  # B. 成型費 = ((成型時間 / 60 * 機台費) / 模穴數) * (1 + 成型放寬 ) * (1 + loss rate)
+  #  成型放寬 : 來自 CE 小天地
+  formingCost: 
+    label: B.成型費
+    type: MATH
+    formula: "((rubberCycleTime / 60 * rubberMachineTonPrice) / moldCavityCount) * (1 + rubberAllowanceValue) * (1 + formingLossRate)"
+
+  # 模穴數 =  ( 有效面積 / ((L + 10 * 2) * (W + 10 * 2)) )   (無條件進位到整數)
+  moldCavityCount:
+    label: 模穴數
+    type: FUNC
+    formula: "(partssizelength, partssizewidth, toolingSizeArea) => {
+      const length = Number(partssizelength); 
+      const width = Number(partssizewidth);
+      return Math.ceil(toolingSizeArea / (( length + 10 * 2) * (width + 10 * 2)));
+    }"
+    param:
+      - partssizelength
+      - partssizewidth
+      - toolingSizeArea
+
+  # 有效面積 = (機台噸數Length - 50) * (機台噸數Width - 50) (excel公式在moduleRate那邊)
+  toolingSizeArea:
+    label: "有效面積(mm^2)"
+    type: FUNC
+    formula: "(length, width) => {
+      return (length - 50) * (width - 50);
+    }"
+    param:
+      - rubberToolingSizeLength
+      - rubberToolingSizeWidth
+
+
+  # C. 二次加工費 = C-1.成品沖型 + C-2.貼背膠_3M + C-3.外觀印刷 + C-4.刷膠製程 + C-5.去毛邊/排廢
+  secondaryProcessingCost: 
+    label: B.二次加工費
+    type: MATH
+    formula: stampingTypeCost + adhesiveCost + printingCost + brushingCost + debrisCleaningCost
+
+  # C-1.成品沖型 = 沖型時間 / 60 * 沖型價格 / 模穴數 * 沖型數量 * ( 1 + 沖型loss rate)
+  stampingTypeCost: 
+    label: C-1.成品沖型
+    type: MATH
+    formula: "(rubberStampingTypeCycleTime / 60 * rubberStampingTypePrice) / moldCavityCount * 
+    (1 + stampingTypeLossRate)"
+
+  # C-2.貼背膠 費用 = 貼背膠時間 / 60 * 貼背膠價格 / 模穴數 * 貼背膠amount * (1 + 貼背膠 loass rate) * 貼背膠 Amount
+  adhesiveCost: 
+    label: C-2.貼背膠
+    type: MATH
+    formula: "(rubberAdhesiveTypeCycleTime / 60 * rubberAdhesiveTypePrice) / moldCavityCount * (1 + adhesiveTypeLossRate) * rubberAdhesiveTypeAmount"
+
+  # C-3.外觀印刷 費用 = 外觀印刷佳格 * 外觀印刷數量 * (1 + 外觀印刷loss rate)
+  printingCost:
+    label: C-3.外觀印刷
+    type: MATH
+    formula: "rubberPrintingPrice * rubberPrintingAmount * (1 + printingLossRate)"
+
+  # C-4.刷膠製程 費用 = (刷膠time / 60 * 刷膠價格) / 模穴數 * ( 1 + 刷膠loss rate) * 刷膠amount
+  brushingCost:
+    label: C-4.刷膠製程
+    type: MATH
+    formula: (brushingCycleTime / 60 * brushingPrice) / moldCavityCount * (1 + brushingLossRate) * brushingAmount
+
+  # C-5.去毛邊/排廢 費用 = (排廢time / 60 * 排廢價格) / 模穴數 * ( 1 + 排廢loss rate) * 排廢amount
+  debrisCleaningCost:
+    label: C-3.去毛邊/排廢
+    type: MATH
+    formula: "(debrisCleaningCycleTime / 60 *  debrisCleaningPrice) / moldCavityCount * (1 +  debrisCleaningLossRate) * debrisCleaningAmount"
+
+
+  # D.管銷費 ＝ B. 成型費 * 管銷費 比例
+  managementCost: 
+    label: D.管銷費
+    type: MATH
+    formula: formingCost * management_percentage 
+
+  rubberAllowanceValue:
+    label: 成型寬寬 value
+    type: MATH
+    formula: "rubberAllowance / 100"
+
+
+
+scope:
+  # partItemInfo
+  materialspec: materialspec
+  rubberMaterialPerCost: rubberMaterialPerCost
+  partssizelength: partssizelength
+  partssizewidth: partssizewidth
+  partssizehigh: partssizehigh
+  density: density
+  # 成型
+  rubberCycleTime: rubberCycleTime
+  # 成品沖型
+  rubberStampingTypeCycleTime: rubberStampingTypeCycleTime
+  rubberStampingTypePrice: rubberStampingTypePrice
+  rubberStampingTypeAmount: rubberStampingTypeAmount
+  rubberPrintingPrice: rubberPrintingPrice
+  rubberPrintingAmount: rubberPrintingAmount
+  # 背膠材料價格
+  rubberAdhesiveMaterialPrice: rubberAdhesiveMaterialPrice
+  # 貼背膠
+  rubberAdhesiveTypeName: rubberAdhesiveTypeName
+  rubberAdhesiveTypePrice: rubberAdhesiveTypePrice
+  rubberAdhesiveTypeCycleTime: rubberAdhesiveTypeCycleTime
+  rubberAdhesiveTypeAmount: rubberAdhesiveTypeAmount
+   # CE小天地
+  rubberMachineTon: rubberMachineTon
+  rubberAllowance: rubberAllowance
+  rubberMachineTonPrice: rubberMachineTonPrice # Machine/T 價格
+  rubberToolingSizeLength: rubberToolingSizeLength # Machine/T tooling length
+  rubberToolingSizeWidth: rubberToolingSizeWidth #   # Machine/T tooling width
+
+global:
+  productType:
+    type: VARIABLE
+    label: productType
+    bykey: productType
+    groups:
+      - partItemInfo
+  
+constant:
+  # ======== loss rate  ========
+  # 材料 loss rate
+  materialLossRate:
+    label: 材料 loss rate
+    # value: 0.03
+    ?getRubberCommon:
+      - me_others_rubber_material
+      - material_lossrate
+
+  adhesiveMaterialLossRate:
+    label: 背膠材料 loss rate
+    # value: 0.03
+    ?getRubberCommon:
+      - me_others_rubber_material
+      - adhesive_material_lossrate
+
+  # 成型 loss rate
+  formingLossRate:
+    label: loss rate
+    ?getRubberCommon:
+      - me_others_rubber_forming
+      - forming_loss_rate
+    # value: 0.1
+
+  # 成品沖型 loss rate
+  stampingTypeLossRate:
+    label: 成品沖型 loss rate
+    ?getRubberCommon:
+      - me_others_rubber_second_process
+      - stamping_loss_rate
+    # value: 0.01
+
+  # 貼背膠 loss rate
+  adhesiveTypeLossRate:
+    label: 貼背膠 loss rate
+    ?getRubberCommon:
+      - me_others_rubber_second_process
+      - adhesive_loss_rate
+    # value: 0.03
+
+  # 外觀印刷 loss rate
+  printingLossRate:
+    label: 外觀印刷 loss rate
+    ?getRubberCommon:
+      - me_others_rubber_second_process
+      - printing_loss_rate
+    # value: 0.01
+
+  # 刷膠製程 loss rate
+  brushingLossRate:
+    label: 刷膠製程 loss rate
+    ?getRubberCommon:
+      - me_others_rubber_second_process
+      - glue_loss_rate
+    # value: 0.01
+
+  # 去毛邊/排廢 loss rate
+  debrisCleaningLossRate:
+    label: 去毛邊/排廢 loss rate
+    ?getRubberCommon:
+      - me_others_rubber_second_process
+      - burring_loss_rate
+    # value: 0.03
+
+
+ # ======== loss rate end ========
+
+  # ======== 固定參數 ========
+
+  # 刷膠製程 固定參數
+  brushingPrice:
+    label: 刷膠製程 價格
+    ?getRubberCommon:
+      - me_others_rubber_second_process
+      - glue_unit_price
+    # value: 0.0660
+
+  brushingCycleTime:
+    label: 刷膠製程 時間
+    ?getRubberCommon:
+      - me_others_rubber_second_process
+      - glue_syscle_time
+    # value: 30
+
+  brushingAmount:
+    label: 刷膠製程 amount
+    ?getRubberCommon:
+      - me_others_rubber_second_process
+      - glue_usage_amount
+    # value: 1
+
+  # 去毛邊/排廢 固定參數
+  debrisCleaningCycleTime:
+    label: 去毛邊/排廢 時間
+    ?getRubberCommon:
+      - me_others_rubber_second_process
+      - burring_cycle_time
+    # value: 30
+
+  debrisCleaningPrice:
+    label: 去毛邊/排廢 價格
+    ?getRubberCommon:
+      - me_others_rubber_second_process
+      - burring_unit_price
+    # value:  0.0660 
+
+  debrisCleaningAmount:
+    label: 去毛邊/排廢 數量
+    ?getRubberCommon:
+      - me_others_rubber_second_process
+      - burring_usage_amount
+    # value: 1
+
+  # 貼背膠材料單價
+  adhesivePrice:
+    label: 背膠材料單價
+    ?getRubberCommon:
+      - me_others_rubber_material
+      - material_adhesive_unit_price
+    # value: 15
+
+  # 整版尺寸L
+  fullSizeLength:
+    label: 整版尺寸L
+    ?getRubberCommon:
+      - me_others_rubber_material
+      - material_all_size_L
+    # value: 350
+
+  # 整版尺寸W
+  fullSizeWidth:
+    label: 整版尺寸W
+    ?getRubberCommon:
+      - me_others_rubber_material
+      - material_all_size_W
+    # value: 350
+
+  management_percentage:
+    label: 管銷費 比例
+    ?getRubberCommon:
+      - me_others_rubber_management_and_profit
+      - management_and_profit
+    # value:0.15
+

@@ -1,0 +1,144 @@
+import React, { useEffect } from 'react';
+import { connect } from 'react-redux';
+import _find from 'lodash/find';
+import Icon from '~~elements/Icon';
+import Select from '~~elements/Select';
+import FilterBarPanel, { FilterBarGroup, FilterBarBox } from '~~elements/FilterBarPanel';
+import Field from '~~elements/Field';
+import * as BomManagementActions from '../BomManagementActions';
+
+
+const FilterBar = (props) => {
+  const {
+    // props
+    table,
+    getBomList,
+    // state
+    searchValue,
+    updateSearchKeyword,
+    filterType,
+    filterValue,
+    filterTypeList,
+    filterValueList,
+    getFilterType,
+    getFilterValue,
+    updateFilterType,
+    updateFilterValue,
+  } = props;
+
+  useEffect(() => {
+    getFilterType(table);
+  }, []);
+
+  // 當選擇ITEM時
+  function onFilterTypeChange(value) {
+    const { value: val } = value;
+    updateFilterType(val);
+    updateFilterValue('');
+    getFilterValue({
+      role: table,
+      type: val,
+    });
+  }
+  // 當選擇BY ITEM時
+  function onFilterTypeValue(value) {
+    const { value: val } = value;
+    updateFilterValue(val);
+  }
+
+  // 輸入關鍵字時
+  function handleInputChange(e) {
+    const { target: { value: project } } = e;
+    updateSearchKeyword(project);
+  }
+
+  // 按下搜尋按鈕時
+  function handleClickFilter() {
+    props.getBomList({
+      column: filterType,
+      keyword: filterValue,
+      project: searchValue,
+    });
+  }
+
+  function handleReset() {
+    updateFilterType('');
+    updateFilterValue('');
+    updateSearchKeyword('');
+    getBomList({
+      column: '',
+      keyword: '',
+      project: '',
+    });
+  }
+
+  /**
+   * 檢查search是否要disabled
+   */
+  function checkDisableSearch() {
+    if (!(filterValue || searchValue)) return true;
+    if (filterType && !filterValue) return true;
+    return false;
+  }
+
+  return (
+    <FilterBarPanel
+      width="50rem"
+      onReset={handleReset}
+      filterDisabled={checkDisableSearch()}
+      onFilter={handleClickFilter}
+    >
+      <FilterBarGroup icon={<Icon icon="IcoFilterBarFilter" />}>
+        <FilterBarBox className="e2e_filterbar_select_1">
+          <Select
+            placeholder="All Items"
+            value={_find(filterTypeList, (o) => o.value === filterType)}
+            options={filterTypeList}
+            onChange={onFilterTypeChange}
+            target="box"
+            border={false}
+          />
+        </FilterBarBox>
+        <FilterBarBox className="e2e_filterbar_select_2">
+          <Select
+            placeholder="By Items"
+            value={_find(filterValueList, (o) => o.value === filterValue)}
+            options={filterValueList}
+            onChange={onFilterTypeValue}
+            disabled={!filterType}
+            target="box"
+            border={false}
+          />
+        </FilterBarBox>
+      </FilterBarGroup>
+      <FilterBarGroup width="65%" icon={<Icon icon="IcoFilterBarSearch" />}>
+        <Field.Input
+          className="e2e_filterbar_input"
+          styledType="filterBar"
+          placeholder="請輸入Project Name or Code"
+          value={searchValue}
+          onChange={handleInputChange}
+        />
+      </FilterBarGroup>
+    </FilterBarPanel>
+  );
+};
+
+export default connect(
+  (state) => {
+    return {
+      filterType: state.bomManagement.filterType,
+      filterValue: state.bomManagement.filterValue,
+      filterTypeList: state.bomManagement.filterTypeList,
+      filterValueList: state.bomManagement.filterValueList,
+      searchValue: state.bomManagement.searchValue,
+    };
+  },
+  {
+    getFilterType: BomManagementActions.getFilterType,
+    getFilterValue: BomManagementActions.getFilterValue,
+    updateFilterType: BomManagementActions.updateFilterType,
+    updateFilterValue: BomManagementActions.updateFilterValue,
+    updateSearchKeyword: BomManagementActions.updateSearchKeyword,
+  }
+)(FilterBar);

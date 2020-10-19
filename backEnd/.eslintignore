@@ -1,0 +1,8 @@
+# /node_modules/* and /bower_components/* ignored by default
+db-migrate/
+comverage/
+.nyc_output/
+ssl/
+static/
+mochawesome-report/
+logs/

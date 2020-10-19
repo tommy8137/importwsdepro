@@ -1,0 +1,37 @@
+version: 2
+showMenu: false
+layout:
+  - key: thermal-graphite
+    $Template:
+      - tab
+    group:
+      - thermalgraphite
+    label: default
+    visiable: false
+    items:
+      # $XXX(ex, $Fan) need first than $template-composite
+      - key: Graphite
+        $Template:
+          - composite
+        label: Graphite
+        group:
+          - Graphite
+        $thermal-graphite.layout.Graphite:
+          - ^multiple
+          - ^items
+        minGroupCount: 1
+
+
+formulas:
+  thermalgraphite:
+    $thermal-graphite.formula.thermalgraphite:
+      - ^formula
+      - ^scope
+      - ^constant
+      - ^output
+  Graphite:
+    $thermal-graphite.formula.Graphite:
+      - ^formula
+      - ^scope
+      - ^constant
+      - ^output

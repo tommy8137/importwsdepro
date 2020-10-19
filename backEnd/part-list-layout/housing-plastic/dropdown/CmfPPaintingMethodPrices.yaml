@@ -1,0 +1,41 @@
+values:
+  - productType: NB
+    cmfPPaintingMethod: 一般噴塗
+    cmfPPaintingMethodPrice: 792
+  - productType: DT
+    cmfPPaintingMethod: 一般噴塗
+    cmfPPaintingMethodPrice: 403.2
+  - productType: Others
+    cmfPPaintingMethod: 一般噴塗
+    cmfPPaintingMethodPrice: 309.6
+
+
+  - productType: NB
+    cmfPPaintingMethod: 碳纖板類
+    cmfPPaintingMethodPrice: 1122
+  - productType: DT
+    cmfPPaintingMethod: 碳纖板類
+    cmfPPaintingMethodPrice: 504
+  - productType: Others
+    cmfPPaintingMethod: 碳纖板類
+    cmfPPaintingMethodPrice: null
+
+  - productType: NB
+    cmfPPaintingMethod: RHCM
+    cmfPPaintingMethodPrice: 594
+  - productType: DT
+    cmfPPaintingMethod: RHCM
+    cmfPPaintingMethodPrice: 403.2
+  - productType: Others
+    cmfPPaintingMethod: RHCM
+    cmfPPaintingMethodPrice: null
+
+  - productType: NB
+    cmfPPaintingMethod: NCVM
+    cmfPPaintingMethodPrice: 198
+  - productType: DT
+    cmfPPaintingMethod: NCVM
+    cmfPPaintingMethodPrice: null
+  - productType: Others
+    cmfPPaintingMethod: NCVM
+    cmfPPaintingMethodPrice: null

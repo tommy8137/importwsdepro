@@ -1,0 +1,1 @@
+alter table wiprocurement.bom_partlist_value add column partlist_price json default '{}';

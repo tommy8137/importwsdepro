@@ -1,0 +1,25 @@
+sheet:
+  label: EE-ALL
+  tables:
+    - key: eeSummary
+      $Template:
+        - colTable
+      headers:
+        $dashboard-ee.header-dashboard-ee.eesummary-excel:
+          - headers
+      colLength: 8
+    - key: eeItem
+      $Template:
+        - rowTable
+      headers:
+        $dashboard-ee.header-dashboard-ee.eeitem-excel:
+          - headers
+      anchor:
+        x: A
+        y: 10
+    - key: exchangeRateDefault
+      $Template:
+        - traverseTable
+      headers:
+        $eebom-tmp.header-full-bom.fullbomexchange-excel:
+          - headers

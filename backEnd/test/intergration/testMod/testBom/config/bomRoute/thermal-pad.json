@@ -1,0 +1,366 @@
+{
+  "xlsxName": "Test_Data_Thermal_Pad_NB.xlsx",
+  "sheetName": "thermal-pad",
+  "startHorizontalCoordinates": "C",
+  "transferMode": "createPath",
+  "formate": "thermal-pad",
+  "metadata": {
+    "productType": {
+      "createPath": "productType",
+      "valuekey": "productType",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "2"
+    },
+    "testLabel": {
+      "createPath": "testLabel",
+      "valuekey": "testLabel",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "3"
+    },
+    "type1": {
+      "createPath": "type1",
+      "valuekey": "type1",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "8"
+    },
+    "type2": {
+      "createPath": "type2",
+      "valuekey": "type2",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "9"
+    }
+  },
+  "transferPartlistInfo": {
+    "formData,thermal-pad,Process,process,appearanceProcess": {
+      "createPath": "formData.thermal-pad.Process.process.appearanceProcess",
+      "valuekey": "appearanceProcess",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": 38,
+      "default": true
+    },
+    "formData,thermal-pad,Process,process,maskSpray": {
+      "createPath": "formData.thermal-pad.Process.process.maskSpray",
+      "valuekey": "maskSpray",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": 22,
+      "default": true
+    },
+    "formData,thermal-pad,Process,laserMarking": {
+      "createPath": "formData.thermal-pad.Process.laserMarking",
+      "valuekey": "laserMarking",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": 27,
+      "default": true
+    },
+    "formData,thermal-pad,Process,laserMarkingArea": {
+      "createPath": "formData.thermal-pad.Process.laserMarkingArea",
+      "valuekey": "laserMarkingArea",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 30,
+      "default": null
+    },
+    "formData,thermal-pad,Pad,0,uuid": {
+      "createPath": "formData.thermal-pad.Pad.0.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,thermal-pad,Pad,0,thermalPadLabel": {
+      "createPath": "formData.thermal-pad.Pad.0.thermalPadLabel",
+      "valuekey": "thermalPadLabel",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,thermal-pad,Pad,0,thermalPadAmount": {
+      "createPath": "formData.thermal-pad.Pad.0.thermalPadAmount",
+      "valuekey": "thermalPadAmount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 17,
+      "default": null
+    },
+    "formData,thermal-pad,Pad,0,thermalPadHeatTransferCoefficient": {
+      "createPath": "formData.thermal-pad.Pad.0.thermalPadHeatTransferCoefficient",
+      "valuekey": "thermalPadHeatTransferCoefficient",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 15,
+      "default": null
+    },
+    "formData,thermal-pad,Pad,0,thermalPadShore": {
+      "createPath": "formData.thermal-pad.Pad.0.thermalPadShore",
+      "valuekey": "thermalPadShore",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 14,
+      "default": null
+    },
+    "formData,thermal-pad,Pad,0,thermalPadThickness": {
+      "createPath": "formData.thermal-pad.Pad.0.thermalPadThickness",
+      "valuekey": "thermalPadThickness",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 13,
+      "default": null
+    },
+    "formData,thermal-pad,Pad,0,thermalPadLength": {
+      "createPath": "formData.thermal-pad.Pad.0.thermalPadLength",
+      "valuekey": "thermalPadLength",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 11,
+      "default": null
+    },
+    "formData,thermal-pad,Pad,0,thermalPadWidth": {
+      "createPath": "formData.thermal-pad.Pad.0.thermalPadWidth",
+      "valuekey": "thermalPadWidth",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 12,
+      "default": null
+    },
+    "formData,thermal-pad,Pad,0,thermalPadPrice": {
+      "createPath": "formData.thermal-pad.Pad.0.thermalPadPrice",
+      "valuekey": "thermalPadPrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    }
+  },
+  "verifyInfo": {
+    "totalPrices": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "totalPrices",
+      "valueType": "totalPrices",
+      "comparisonValuePath": "totalPrices"
+    },
+    "parentGroupId": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "parentGroupId",
+      "valueType": "parentGroupId",
+      "comparisonValuePath": "forDebug.summary.ThermalPad.parentGroupId"
+    },
+    "qty": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "qty",
+      "valueType": "qty",
+      "comparisonValuePath": "forDebug.summary.Pad-69b5f40b-0bbd-4ded-b1b8-1d344fb5f092.qty"
+    },
+    "unit_price": {
+      "label": "單價",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "unit_price",
+      "valueType": "unit_price",
+      "comparisonValuePath": "forDebug.summary.Pad-69b5f40b-0bbd-4ded-b1b8-1d344fb5f092.unit_price"
+    },
+    "total": {
+      "label": "總價",
+      "excelValueLongitudinalCoordinates": "42",
+      "valuekey": "total",
+      "valueType": "total",
+      "comparisonValuePath": "forDebug.summary.ThermalPad.total"
+    },
+    "assemblyVariable": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "assemblyVariable",
+      "valueType": "assemblyVariable",
+      "comparisonValuePath": "forDebug.summary.ThermalPad.assemblyVariable"
+    },
+    "worktimeSec": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "worktimeSec",
+      "valueType": "worktimeSec",
+      "comparisonValuePath": "forDebug.summary.ThermalPad.worktimeSec"
+    },
+    "worktimeCost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "worktimeCost",
+      "valueType": "worktimeCost",
+      "comparisonValuePath": "forDebug.summary.ThermalPad.worktimeCost"
+    },
+    "painting_unit_price": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "painting_unit_price",
+      "valueType": "painting_unit_price",
+      "comparisonValuePath": "forDebug.summary.ThermalPad.painting_unit_price"
+    },
+    "appearanceProcess": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "appearanceProcess",
+      "valueType": "appearanceProcess",
+      "comparisonValuePath": "forDebug.summary.ThermalPad.appearanceProcess"
+    },
+    "maskSpray": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "maskSpray",
+      "valueType": "maskSpray",
+      "comparisonValuePath": "forDebug.summary.ThermalPad.maskSpray"
+    },
+    "laserMarking": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "laserMarking",
+      "valueType": "laserMarking",
+      "comparisonValuePath": "forDebug.summary.ThermalPad.laserMarking"
+    },
+    "laserMarkingArea": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "laserMarkingArea",
+      "valueType": "laserMarkingArea",
+      "comparisonValuePath": "forDebug.summary.ThermalPad.laserMarkingArea"
+    },
+    "component_cost": {
+      "label": "總零件費用",
+      "excelValueLongitudinalCoordinates": "39",
+      "valuekey": "component_cost",
+      "valueType": "component_cost",
+      "comparisonValuePath": "forDebug.summary.ThermalPad.component_cost"
+    },
+    "sumAssemblyTime": {
+      "label": "assemblyTime 總和",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "sumAssemblyTime",
+      "valueType": "sumAssemblyTime",
+      "comparisonValuePath": "forDebug.summary.ThermalPad.sumAssemblyTime"
+    },
+    "totalAssemblyTime": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "totalAssemblyTime",
+      "valueType": "totalAssemblyTime",
+      "comparisonValuePath": "forDebug.summary.ThermalPad.totalAssemblyTime"
+    },
+    "assembly_cost": {
+      "label": "Assembly組裝",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "assembly_cost",
+      "valueType": "assembly_cost",
+      "comparisonValuePath": "forDebug.summary.ThermalPad.assembly_cost"
+    },
+    "painting_cost": {
+      "label": "噴漆",
+      "excelValueLongitudinalCoordinates": "37",
+      "valuekey": "painting_cost",
+      "valueType": "painting_cost",
+      "comparisonValuePath": "forDebug.summary.ThermalPad.painting_cost"
+    },
+    "maskSpray_cost": {
+      "label": "遮噴費用",
+      "excelValueLongitudinalCoordinates": "26",
+      "valuekey": "maskSpray_cost",
+      "valueType": "maskSpray_cost",
+      "comparisonValuePath": "forDebug.summary.ThermalPad.maskSpray_cost"
+    },
+    "laserMarking_cost": {
+      "label": "雷雕費用",
+      "excelValueLongitudinalCoordinates": "33",
+      "valuekey": "laserMarking_cost",
+      "valueType": "laserMarking_cost",
+      "comparisonValuePath": "forDebug.summary.ThermalPad.laserMarking_cost"
+    },
+    "processing_cost": {
+      "label": "加工費",
+      "excelValueLongitudinalCoordinates": "40",
+      "valuekey": "processing_cost",
+      "valueType": "processing_cost",
+      "comparisonValuePath": "forDebug.summary.ThermalPad.processing_cost"
+    },
+    "thermal_pad_loss_rate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "thermal_pad_loss_rate",
+      "valueType": "thermal_pad_loss_rate",
+      "comparisonValuePath": "forDebug.debugInfo.Pad-69b5f40b-0bbd-4ded-b1b8-1d344fb5f092.thermal_pad_loss_rate.value"
+    },
+    "thermalPadLength": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "thermalPadLength",
+      "valueType": "thermalPadLength",
+      "comparisonValuePath": "forDebug.debugInfo.Pad-69b5f40b-0bbd-4ded-b1b8-1d344fb5f092.thermalPadLength.value"
+    },
+    "thermalPadWidth": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "thermalPadWidth",
+      "valueType": "thermalPadWidth",
+      "comparisonValuePath": "forDebug.debugInfo.Pad-69b5f40b-0bbd-4ded-b1b8-1d344fb5f092.thermalPadWidth.value"
+    },
+    "thermalPadPrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "thermalPadPrice",
+      "valueType": "thermalPadPrice",
+      "comparisonValuePath": "forDebug.debugInfo.Pad-69b5f40b-0bbd-4ded-b1b8-1d344fb5f092.thermalPadPrice.value"
+    },
+    "thermalPadAmount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "thermalPadAmount",
+      "valueType": "thermalPadAmount",
+      "comparisonValuePath": "forDebug.debugInfo.Pad-69b5f40b-0bbd-4ded-b1b8-1d344fb5f092.thermalPadAmount.value"
+    },
+    "maskSpray_unit_price": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "23",
+      "valuekey": "maskSpray_unit_price",
+      "valueType": "maskSpray_unit_price",
+      "comparisonValuePath": "forDebug.debugInfo.ThermalPad.maskSpray_unit_price.value"
+    },
+    "laserMarking_unit_price": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "28",
+      "valuekey": "laserMarking_unit_price",
+      "valueType": "laserMarking_unit_price",
+      "comparisonValuePath": "forDebug.debugInfo.ThermalPad.laserMarking_unit_price.value"
+    },
+    "profit_percent": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "profit_percent",
+      "valueType": "profit_percent",
+      "comparisonValuePath": "forDebug.debugInfo.ThermalPad.profit_percent.value"
+    },
+    "laserMarking_area_unit_price": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "laserMarking_area_unit_price",
+      "valueType": "laserMarking_area_unit_price",
+      "comparisonValuePath": "forDebug.debugInfo.ThermalPad.laserMarking_area_unit_price.value"
+    },
+    "laserMarking_area": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "laserMarking_area",
+      "valueType": "laserMarking_area",
+      "comparisonValuePath": "forDebug.debugInfo.ThermalPad.laserMarking_area.value"
+    },
+    "laserMarkingVariable": {
+      "label": "雷雕固定參數",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "laserMarkingVariable",
+      "valueType": "laserMarkingVariable",
+      "comparisonValuePath": "forDebug.debugInfo.ThermalPad.laserMarkingVariable.value"
+    },
+    "profit_cost": {
+      "label": "管銷&利潤",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "profit_cost",
+      "valueType": "profit_cost",
+      "comparisonValuePath": "forDebug.debugInfo.ThermalPad.profit_cost.value"
+    },
+    "totalCost": {
+      "label": "D. 成品總價(USD)",
+      "excelValueLongitudinalCoordinates": "42",
+      "valuekey": "totalCost",
+      "valueType": "totalCost",
+      "comparisonValuePath": "forDebug.debugInfo.ThermalPad.totalCost.value"
+    }
+  }
+}

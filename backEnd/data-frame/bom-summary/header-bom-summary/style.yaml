@@ -1,0 +1,38 @@
+summary-header:
+  fontColor: '000000'
+  fill: DDEBD6
+  fontFamily: arial
+  horizontalAlignment: center
+  verticalAlignment: center
+  border: true
+
+summary-data:
+  border: true
+
+bom-summary-header:
+  fontColor: '000000'
+  fill: FFBB66
+  fontFamily: arial
+  horizontalAlignment: center
+  verticalAlignment: center
+  border: true
+  bold: true
+
+sub-data:
+  fontColor: 'FFFFFF'
+  fill: '0E70C0'
+  fontFamily: arial
+  horizontalAlignment: center
+  verticalAlignment: center
+  border: true
+
+total-data:
+  fontColor: '000000'
+  fill: 'DDEBF7'
+  fontFamily: arial
+  border: true
+  bold: true
+
+bold-data:
+  border: true
+  bold: true

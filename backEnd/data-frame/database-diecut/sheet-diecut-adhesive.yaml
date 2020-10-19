@@ -1,0 +1,12 @@
+sheet:
+  label: Adhesive
+  tables:
+    - key: adhesive
+      $Template:
+        - rowTable
+      anchor:
+        x: F
+        y: 1
+      headers:
+        $database-diecut.header-diecut.diecut-base:
+          - headers

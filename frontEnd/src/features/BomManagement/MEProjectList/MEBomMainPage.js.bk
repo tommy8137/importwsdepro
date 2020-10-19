@@ -1,0 +1,151 @@
+import React, { useEffect } from 'react';
+import { connect } from 'react-redux';
+
+import Pagination from '~~elements/Pagination';
+import RoundButton from '~~elements/RoundButton';
+import SearchBar from '~~elements/SearchInput';
+import Icon from '~~elements/Icon';
+import CommonUtils from '~~utils/CommonUtils';
+import checkingRbac from '~~hoc/CheckingRbac';
+
+import * as BomManagementActions from '../BomManagementActions';
+import FilterBar from '../component/FilterBar';
+import { CreateBomModal, EditBomModal } from './Modal';
+import MEBomTableSection from './MEBomTableSection';
+import Div from '../ProjectListStyles';
+
+
+function MEBomMainPage(props) {
+  const ROLE = 'ME';
+  const DEFAULT_SORTER = [{
+    sortOrder: 'desc',
+    dataIndex: 'create_time'
+  }];
+  const { isCreateOpen, isEditOpen, bomData, searchValue, getRbacPath } = props;
+  const canCreate = getRbacPath(['CreateNextStatus', 'allow', 'me_bom_projects']);
+
+  useEffect(() => {
+    console.log('我有來MEBomMainPage');
+    props.getBomList({
+      orderBy: CommonUtils.genOrderByFormat(DEFAULT_SORTER),
+      role: ROLE,
+    });
+    props.updateSortInfo(DEFAULT_SORTER);
+    props.switchTable(ROLE);
+
+    return () => {
+      console.log('離開MEBomMainPage');
+      props.resetAllData();
+    };
+  }, []);
+
+  // 整理哪些欄位需要排序
+  const getHeaderFormat = (headerBase) => {
+    const result = headerBase.map(item => {
+      const info = item.dataIndex && props.sortInfo.find(d => d.dataIndex === item.dataIndex);
+      if (info) {
+        return {
+          ...item,
+          sortOrder: info.sortOrder
+        };
+      }
+      return item;
+    });
+
+    return result;
+  };
+
+  const handlePageChange = (current, pageSize) => {
+    // update page info
+    props.updatePageInfo(current, pageSize);
+    props.getBomList({
+      pages: current,
+      items: pageSize,
+    });
+  };
+
+  // 按下filter
+  const handleClickFilter = (data) => {
+    props.updatePageInfo(1, props.pageSize);
+    props.getBomList({
+      pages: 1,
+      ...data
+    });
+  };
+
+  return (
+    <Div>
+      <CreateBomModal
+        isOpen={isCreateOpen}
+        onClickCancel={props.closeCreateBomModal}
+        onSubmitStep1={props.saveCreateBomStep1}
+        onSubmitStep2={props.doCreateBom}
+      />
+      <EditBomModal
+        isOpen={isEditOpen}
+        bomData={bomData}
+        onClickCancel={props.closeEditBomModal}
+        onDetailChange={props.updateBomDetail}
+        onClickSave={props.doEditBom}
+      />
+      <div className="upper-area">
+        <div className="upper-left">
+          {/* Filter bar */}
+          <FilterBar
+            table={ROLE}
+            getBomList={handleClickFilter}
+          />
+        </div>
+        {/* Add Button */}
+        {canCreate &&
+          <RoundButton.BlackButton className="btn-create" onClick={props.openCreateBom}>
+            <Icon icon="IcoAddWhite" className="icon" />
+            Create BOM
+          </RoundButton.BlackButton>
+        }
+      </div>
+      {<MEBomTableSection getHeaderFormat={getHeaderFormat} />}
+      <div className="pagination">
+        <Pagination
+          pageSize={props.pageSize}
+          total={props.total}
+          currentPage={props.currentPage}
+          onChange={handlePageChange}
+        />
+      </div>
+    </Div>
+  );
+}
+
+const mapStateToProps = (state) => {
+  return {
+    sortInfo: state.bomManagement.sortInfo,
+    currentPage: state.bomManagement.currentPage,
+    pageSize: state.bomManagement.pageSize,
+    total: state.bomManagement.total,
+    isCreateOpen: state.bomManagement.isCreateOpen,
+    isEditOpen: state.bomManagement.isEditOpen,
+    bomData: state.bomManagement.bomData,
+  };
+};
+const mapDispatchToProps = {
+  closeCreateBomModal: BomManagementActions.closeCreateBomModal,
+  updateBomDetail: BomManagementActions.updateBomDetail,
+  doEditBom: BomManagementActions.doEditBom,
+  getBomList: BomManagementActions.getBomList,
+  updatePageInfo: BomManagementActions.updatePageInfo,
+  openCreateBom: BomManagementActions.openCreateBom,
+  saveCreateBomStep1: BomManagementActions.saveCreateBomStep1,
+  doCreateBom: BomManagementActions.doCreateBom,
+  closeEditBomModal: BomManagementActions.closeEditBomModal,
+  resetAllData: BomManagementActions.resetAllData,
+  switchTable: BomManagementActions.switchTable,
+  updateSortInfo: BomManagementActions.updateSortInfo,
+};
+
+
+const allowList = [
+  ['List', 'allow', 'me_bom_projects'],
+];
+
+export default connect(mapStateToProps, mapDispatchToProps)(checkingRbac(allowList)(MEBomMainPage));

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>Search/icon/Search</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Search/icon/Search" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="search" transform="translate(1.000000, 0.000000)">
+            <g id="Ellipse_2" transform="translate(9.899831, 10.617354) rotate(-45.000000) translate(-9.899831, -10.617354) translate(2.899831, 3.617354)">
+                <circle id="Oval" cx="6.8" cy="6.8" r="6.8"></circle>
+                <circle id="Oval" stroke="#333333" stroke-width="1.6" cx="6.8" cy="6.8" r="6"></circle>
+            </g>
+            <path d="M15.770899,15.1712641 L18.170899,15.1712641 L18.170899,19.5712641 C18.170899,20.2340058 17.6336407,20.7712641 16.970899,20.7712641 L16.970899,20.7712641 C16.3081573,20.7712641 15.770899,20.2340058 15.770899,19.5712641 L15.770899,15.1712641 Z" id="Rectangle_7" fill="#333333" fill-rule="nonzero" transform="translate(16.970899, 17.971264) rotate(-45.000000) translate(-16.970899, -17.971264) "></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,3 @@
+headers:
+  $dashboard-ee.header-bu-module.bu-module-base:
+    - headers

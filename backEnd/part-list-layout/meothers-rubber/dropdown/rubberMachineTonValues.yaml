@@ -1,0 +1,15 @@
+values:
+  - rubberMachineTon: "200T"
+    rubberToolingSizeLength: 550
+    rubberToolingSizeWidth: 550
+    rubberMachineTonPrice: 0.096824885047
+
+  - rubberMachineTon: "250T"
+    rubberToolingSizeLength: 450
+    rubberToolingSizeWidth: 450
+    rubberMachineTonPrice: 0.115073522928
+
+  - rubberMachineTon: "300T"
+    rubberToolingSizeLength: 400
+    rubberToolingSizeWidth: 400
+    rubberMachineTonPrice: 0.130013133031

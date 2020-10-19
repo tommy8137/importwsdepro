@@ -1,0 +1,92 @@
+# 沖切次數對照表
+values:
+  - subAreaTimesMin: 0
+    subAreaTimesMax: 25
+    subAreaTimesValue: 5
+    areaTimesMin: 0
+    areaTimesMax: 25
+    areaTimesValue: 5
+    minorAreaTimesMin: 0
+    minorAreaTimesMax: 25
+    minorAreaTimesValue: 5
+  - subAreaTimesMin: 25
+    subAreaTimesMax: 2500
+    subAreaTimesValue: 5
+    areaTimesMin: 25
+    areaTimesMax: 2500
+    areaTimesValue: 5
+    minorAreaTimesMin: 25
+    minorAreaTimesMax: 2500
+    minorAreaTimesValue: 5
+  - subAreaTimesMin: 2500
+    subAreaTimesMax: 5000
+    subAreaTimesValue: 4
+    areaTimesMin: 2500
+    areaTimesMax: 5000
+    areaTimesValue: 4
+    minorAreaTimesMin: 2500
+    minorAreaTimesMax: 5000
+    minorAreaTimesValue: 4
+  - subAreaTimesMin: 5000
+    subAreaTimesMax: 10000
+    subAreaTimesValue: 4
+    areaTimesMin: 5000
+    areaTimesMax: 10000
+    areaTimesValue: 4
+    minorAreaTimesMin: 5000
+    minorAreaTimesMax: 10000
+    minorAreaTimesValue: 4
+  - subAreaTimesMin: 10000
+    subAreaTimesMax: 15000
+    subAreaTimesValue: 4
+    areaTimesMin: 10000
+    areaTimesMax: 15000
+    areaTimesValue: 4
+    minorAreaTimesMin: 10000
+    minorAreaTimesMax: 15000
+    minorAreaTimesValue: 4
+  - subAreaTimesMin: 15000
+    subAreaTimesMax: 20000
+    subAreaTimesValue: 3
+    areaTimesMin: 15000
+    areaTimesMax: 20000
+    areaTimesValue: 3
+    minorAreaTimesMin: 15000
+    minorAreaTimesMax: 20000
+    minorAreaTimesValue: 3
+  - subAreaTimesMin: 20000
+    subAreaTimesMax: 25000
+    subAreaTimesValue: 2
+    areaTimesMin: 20000
+    areaTimesMax: 25000
+    areaTimesValue: 2
+    minorAreaTimesMin: 20000
+    minorAreaTimesMax: 25000
+    minorAreaTimesValue: 2
+  - subAreaTimesMin: 25000
+    subAreaTimesMax: 30000
+    subAreaTimesValue: 2
+    areaTimesMin: 25000
+    areaTimesMax: 30000
+    areaTimesValue: 2
+    minorAreaTimesMin: 25000
+    minorAreaTimesMax: 30000
+    minorAreaTimesValue: 2
+  - subAreaTimesMin: 30000
+    subAreaTimesMax: 35000
+    subAreaTimesValue: 1
+    areaTimesMin: 30000
+    areaTimesMax: 35000
+    areaTimesValue: 1
+    minorAreaTimesMin: 30000
+    minorAreaTimesMax: 35000
+    minorAreaTimesValue: 1
+  - subAreaTimesMin: 35000
+    subAreaTimesMax: 40000
+    subAreaTimesValue: 1
+    areaTimesMin: 35000
+    areaTimesMax: 40000
+    areaTimesValue: 1
+    minorAreaTimesMin: 35000
+    minorAreaTimesMax: 40000
+    minorAreaTimesValue: 1

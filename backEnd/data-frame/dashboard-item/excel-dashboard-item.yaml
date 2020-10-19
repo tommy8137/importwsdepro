@@ -1,0 +1,6 @@
+excel:
+  sheets:
+    - $dashboard-item.sheet-dashboard-item:
+      - sheet
+    - $eebom-tmp.sheet-exchange-rate:
+      - sheet

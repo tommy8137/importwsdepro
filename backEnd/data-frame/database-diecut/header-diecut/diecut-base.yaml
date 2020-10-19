@@ -1,0 +1,20 @@
+headers:
+  materialSpec:
+    label: Material Spec
+    $Template:
+      - dataString
+
+  material:
+    label: Material
+    $Template:
+      - dataString
+
+  modify:
+    label: Modify
+    $Template:
+      - dataString
+
+  current:
+    label: Price USD/m2
+    $Template:
+      - dataFloat

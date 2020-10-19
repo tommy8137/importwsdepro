@@ -1,0 +1,93 @@
+values:
+  - material: CR1015
+    materialThickness: 0.5
+    materialCostPerMM: 0.98
+  - material: CR1015
+    materialThickness: 0.8
+    materialCostPerMM: 1.15
+  - material: CR1015
+    materialThickness: 1
+    materialCostPerMM: 1.31
+  - material: CR1015
+    materialThickness: 1.5
+    materialCostPerMM: 2.62
+  - material: CR1015
+    materialThickness: 2
+    materialCostPerMM: 2.62
+  - material: CR1015
+    materialThickness: 2.5
+    materialCostPerMM: 3.93
+  - material: CR1015
+    materialThickness: 3
+    materialCostPerMM: 3.93
+  - material: CR1015
+    materialThickness: 4
+    materialCostPerMM: 5.25
+  - material: CR1015
+    materialThickness: 5
+    materialCostPerMM: 6.56
+  - material: SM55
+    materialThickness: 2
+    materialCostPerMM: 4.43
+  - material: SM55
+    materialThickness: 2.5
+    materialCostPerMM: 4.59
+  - material: SM55
+    materialThickness: 3
+    materialCostPerMM: 4.75
+  - material: SM55
+    materialThickness: 4
+    materialCostPerMM: 5.74
+  - material: SM55
+    materialThickness: 4.5
+    materialCostPerMM: 6.23
+  - material: SM55
+    materialThickness: 5
+    materialCostPerMM: 7.38
+  - material: 藍色PMP1800
+    materialThickness: 1
+    materialCostPerMM: 5.9
+  - material: 藍色PMP1800
+    materialThickness: 1.5
+    materialCostPerMM: 6.56
+  - material: 藍色PMP1800
+    materialThickness: 2
+    materialCostPerMM: 6.56
+  - material: 藍色PMP1800
+    materialThickness: 2.5
+    materialCostPerMM: 7.87
+  - material: 黑色PMP1800
+    materialThickness: 1
+    materialCostPerMM: 5.9
+  - material: 黑色PMP1800
+    materialThickness: 2
+    materialCostPerMM: 6.5
+  - material: 黑色PMP1800
+    materialThickness: 3
+    materialCostPerMM: 8.2
+  - material: E4382
+    materialThickness: 0.5
+    materialCostPerMM: 4.92
+  - material: E4382
+    materialThickness: 1
+    materialCostPerMM: 4.92
+  - material: E4382
+    materialThickness: 1.5
+    materialCostPerMM: 7.38
+  - material: E4382
+    materialThickness: 2.5
+    materialCostPerMM: 12.3
+  - material: E4382
+    materialThickness: 3.5
+    materialCostPerMM: 17.21
+  - material: E4382
+    materialThickness: 4.5
+    materialCostPerMM: 22.13
+
+
+
+
+
+
+
+

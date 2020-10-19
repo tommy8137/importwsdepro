@@ -1,0 +1,11 @@
+sheet:
+  label: Exchange Rate
+  tables:
+    - key: exchangeRate
+      tableType: rowtable
+      anchor:
+        x: A
+        y: 1
+      headers:
+        $eebom-tmp.header-exchange-rate.exchangerate-excel:
+          - headers

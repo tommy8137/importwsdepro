@@ -1,0 +1,242 @@
+values:
+ - finMaterial: AL1050
+   finMaterialThickness: 0.15
+   finMaterialCostPerKilogram: 3.6
+ - finMaterial: AL1050
+   finMaterialThickness: 0.2
+   finMaterialCostPerKilogram: 2.9
+ - finMaterial: AL1050
+   finMaterialThickness: 0.3
+   finMaterialCostPerKilogram: 2.9
+ - finMaterial: AL1050
+   finMaterialThickness: 0.4
+   finMaterialCostPerKilogram: 2.9
+ - finMaterial: AL1050
+   finMaterialThickness: 0.5
+   finMaterialCostPerKilogram: 2.9
+ - finMaterial: AL1050
+   finMaterialThickness: 0.6
+   finMaterialCostPerKilogram: 2.9
+ - finMaterial: AL1050
+   finMaterialThickness: 0.8
+   finMaterialCostPerKilogram: 2.9
+ - finMaterial: AL1050
+   finMaterialThickness: 1
+   finMaterialCostPerKilogram: 0
+ - finMaterial: AL1050
+   finMaterialThickness: 1.2
+   finMaterialCostPerKilogram: 0
+ - finMaterial: AL1050
+   finMaterialThickness: 1.5
+   finMaterialCostPerKilogram: 0
+ - finMaterial: AL1050
+   finMaterialThickness: 1.6
+   finMaterialCostPerKilogram: 0
+ - finMaterial: AL1050
+   finMaterialThickness: 2
+   finMaterialCostPerKilogram: 0
+ - finMaterial: AL1050
+   finMaterialThickness: 3
+   finMaterialCostPerKilogram: 0
+ - finMaterial: AL5052
+   finMaterialThickness: 0.3
+   finMaterialCostPerKilogram: 0
+ - finMaterial: AL5052
+   finMaterialThickness: 0.4
+   finMaterialCostPerKilogram: 0
+ - finMaterial: AL5052
+   finMaterialThickness: 0.5
+   finMaterialCostPerKilogram: 0
+ - finMaterial: AL5052
+   finMaterialThickness: 0.6
+   finMaterialCostPerKilogram: 0
+ - finMaterial: AL5052
+   finMaterialThickness: 0.8
+   finMaterialCostPerKilogram: 0
+ - finMaterial: AL5052
+   finMaterialThickness: 1
+   finMaterialCostPerKilogram: 5
+ - finMaterial: AL5052
+   finMaterialThickness: 1.2
+   finMaterialCostPerKilogram: 0
+ - finMaterial: AL5052
+   finMaterialThickness: 1.5
+   finMaterialCostPerKilogram: 0
+ - finMaterial: AL5052
+   finMaterialThickness: 1.6
+   finMaterialCostPerKilogram: 0
+ - finMaterial: AL5052
+   finMaterialThickness: 2
+   finMaterialCostPerKilogram: 0
+ - finMaterial: AL5052
+   finMaterialThickness: 3
+   finMaterialCostPerKilogram: 0
+ - finMaterial: AL6063
+   finMaterialThickness: 1
+   finMaterialCostPerKilogram: 4
+ - finMaterial: SGCC
+   finMaterialThickness: 0.5
+   finMaterialCostPerKilogram: 1
+ - finMaterial: SGCC
+   finMaterialThickness: 0.6
+   finMaterialCostPerKilogram: 1
+ - finMaterial: SGCC
+   finMaterialThickness: 0.8
+   finMaterialCostPerKilogram: 1
+ - finMaterial: SGCC
+   finMaterialThickness: 1
+   finMaterialCostPerKilogram: 1
+ - finMaterial: SGCC
+   finMaterialThickness: 1.2
+   finMaterialCostPerKilogram: 1
+ - finMaterial: SGCC
+   finMaterialThickness: 1.6
+   finMaterialCostPerKilogram: 1
+ - finMaterial: SGCC
+   finMaterialThickness: 2
+   finMaterialCostPerKilogram: 1
+ - finMaterial: SECC
+   finMaterialThickness: 0.5
+   finMaterialCostPerKilogram: 1
+ - finMaterial: SECC
+   finMaterialThickness: 0.6
+   finMaterialCostPerKilogram: 1
+ - finMaterial: SECC
+   finMaterialThickness: 0.8
+   finMaterialCostPerKilogram: 1
+ - finMaterial: SECC
+   finMaterialThickness: 1
+   finMaterialCostPerKilogram: 1
+ - finMaterial: SECC
+   finMaterialThickness: 1.2
+   finMaterialCostPerKilogram: 1
+ - finMaterial: SECC
+   finMaterialThickness: 1.6
+   finMaterialCostPerKilogram: 1
+ - finMaterial: SECC
+   finMaterialThickness: 2
+   finMaterialCostPerKilogram: 1
+ - finMaterial: SPCC
+   finMaterialThickness: 0.5
+   finMaterialCostPerKilogram: 0
+ - finMaterial: SPCC
+   finMaterialThickness: 0.6
+   finMaterialCostPerKilogram: 0
+ - finMaterial: SPCC
+   finMaterialThickness: 0.8
+   finMaterialCostPerKilogram: 0
+ - finMaterial: SPCC
+   finMaterialThickness: 1
+   finMaterialCostPerKilogram: 0
+ - finMaterial: SPCC
+   finMaterialThickness: 1.2
+   finMaterialCostPerKilogram: 0
+ - finMaterial: SPCC
+   finMaterialThickness: 1.6
+   finMaterialCostPerKilogram: 0
+ - finMaterial: SPTE
+   finMaterialThickness: 0.15
+   finMaterialCostPerKilogram: 2.4
+ - finMaterial: SPTE
+   finMaterialThickness: 0.2
+   finMaterialCostPerKilogram: 0
+ - finMaterial: SPTE
+   finMaterialThickness: 0.3
+   finMaterialCostPerKilogram: 2.1
+ - finMaterial: SPTE
+   finMaterialThickness: 0.5
+   finMaterialCostPerKilogram: 0
+ - finMaterial: PH-CU
+   finMaterialThickness: 0.1
+   finMaterialCostPerKilogram: 0
+ - finMaterial: PH-CU
+   finMaterialThickness: 0.15
+   finMaterialCostPerKilogram: 0
+ - finMaterial: PH-CU
+   finMaterialThickness: 0.2
+   finMaterialCostPerKilogram: 0
+ - finMaterial: PH-CU
+   finMaterialThickness: 0.3
+   finMaterialCostPerKilogram: 0
+ - finMaterial: CU01
+   finMaterialThickness: 0.3
+   finMaterialCostPerKilogram: 0
+ - finMaterial: C1840
+   finMaterialThickness: 0.3
+   finMaterialCostPerKilogram: 0
+ - finMaterial: CU1100
+   finMaterialThickness: 0.1
+   finMaterialCostPerKilogram: 8.6
+ - finMaterial: CU1100
+   finMaterialThickness: 0.2
+   finMaterialCostPerKilogram: 8.2
+ - finMaterial: CU1100
+   finMaterialThickness: 0.3
+   finMaterialCostPerKilogram: 8.2
+ - finMaterial: CU1100
+   finMaterialThickness: 0.5
+   finMaterialCostPerKilogram: 8.2
+ - finMaterial: CU1100
+   finMaterialThickness: 0.6
+   finMaterialCostPerKilogram: 8.2
+ - finMaterial: CU1100
+   finMaterialThickness: 0.8
+   finMaterialCostPerKilogram: 8.2
+ - finMaterial: TMS02
+   finMaterialThickness: 0.3
+   finMaterialCostPerKilogram: 0
+ - finMaterial: KU400
+   finMaterialThickness: 0.5
+   finMaterialCostPerKilogram: 1.5
+ - finMaterial: KU400
+   finMaterialThickness: 0.8
+   finMaterialCostPerKilogram: 1.5
+ - finMaterial: KU400
+   finMaterialThickness: 1
+   finMaterialCostPerKilogram: 1.5
+ - finMaterial: KU400
+   finMaterialThickness: 1.2
+   finMaterialCostPerKilogram: 1.5
+ - finMaterial: KU400
+   finMaterialThickness: 1.5
+   finMaterialCostPerKilogram: 1.5
+ - finMaterial: KU400
+   finMaterialThickness: 2
+   finMaterialCostPerKilogram: 1.5
+ - finMaterial: KU400i
+   finMaterialThickness: 0.5
+   finMaterialCostPerKilogram: 4.29
+ - finMaterial: SUS410
+   finMaterialThickness: null
+   finMaterialCostPerKilogram: 4.41
+ - finMaterial: SUS301
+   finMaterialThickness: 0.15
+   finMaterialCostPerKilogram: 6.6
+ - finMaterial: SUS301
+   finMaterialThickness: 0.3
+   finMaterialCostPerKilogram: 6
+ - finMaterial: SUS301
+   finMaterialThickness: 0.5
+   finMaterialCostPerKilogram: 5.8
+ - finMaterial: SUS301
+   finMaterialThickness: 1
+   finMaterialCostPerKilogram: 5.8
+ - finMaterial: SUS304
+   finMaterialThickness: 0.15
+   finMaterialCostPerKilogram: 6.6
+ - finMaterial: SUS304
+   finMaterialThickness: 0.3
+   finMaterialCostPerKilogram: 6
+ - finMaterial: SUS304
+   finMaterialThickness: 0.5
+   finMaterialCostPerKilogram: 5.8
+ - finMaterial: SUS304
+   finMaterialThickness: 1
+   finMaterialCostPerKilogram: 5.8
+ - finMaterial: 低碳鋼18A
+   finMaterialThickness: null
+   finMaterialCostPerKilogram: 2.14
+ - finMaterial: 快削鋼
+   finMaterialThickness: null
+   finMaterialCostPerKilogram: null
+

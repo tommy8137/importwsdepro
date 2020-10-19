@@ -1,0 +1,221 @@
+output:
+  wirePrice: wirePrice
+  cableMaterialLength: cableMaterialLength
+  teflonPrice: teflonPrice
+  coaxialPrice: coaxialPrice
+  ffcPrice: ffcPrice
+  ffcSecondaryCost: ffcSecondaryCost
+  # 用來判斷這個線材是否有other fill me remark
+  otherFillMeRemarkExist: otherFillMeRemarkExist
+  # FFC
+  CWFBendTImesCost: CWFBendTImesCost
+  CWFFCPrintCost: CWFFCPrintCost
+  CWFFCFlushCost: CWFFCFlushCost
+  CWFFCGoldPlatingCost: CWFFCGoldPlatingCost
+  CWFFCStopLineCost: CWFFCStopLineCost
+  CWFFCWelderCost: CWFFCWelderCost
+formula:
+  wirePrice:
+    type: FUNC
+    formula: "(teflonPrice, coaxialPrice, ffcPrice) => {
+      return teflonPrice || coaxialPrice || ffcPrice;
+    }"
+    label: 材料費小計
+    param:
+      - teflonPrice
+      - coaxialPrice
+      - ffcPrice
+
+  cableMaterialLength:
+    type: MATH
+    formula: teflonLength?teflonLength:0 + coaxialLength?coaxialLength:0
+    label: 材料長度小計
+
+  teflonPrice:
+    type: MATH
+    formula: (teflonUnitPrice * 0.001) * teflonLength *teflonPin *(1+loss_rate) * teflonQty
+    label: 鐵氟龍線價格
+
+  coaxialPrice:
+    type: MATH
+    formula: (coaxialUnitPrice  * 0.001) * coaxialLength *coaxialPin *(1+loss_rate) * coaxialQty
+    label: 同軸線價格
+
+  #  FFC 價格 = CWFFCLength * ( W + 邊料 ) * ( 材料單價(Price/m²) / 1000000 ) * ( 1 + CWFFCMaterialLossRate )
+  ffcPrice:
+    label: FFC 價格
+    type: MATH
+    formula: "CWFFCLength * ( ffcWidth + ffcMaterialSide ) * ( CWFFCMaterialPrice / 1000000 ) * ( 1 + CWFFCMaterialLossRate )"
+
+  # W = (Pin + 1) * Pitch 
+  ffcWidth:
+    label: W
+    type: MATH
+    formula: "(CWFFCPin + 1) * CWFFCPitch"
+
+  # 邊料 = 2 + 沖型(次) * (1.25 * 2)
+  ffcMaterialSide:
+    label: 邊料
+    type: MATH
+    formula: "2 + CWFFCFlushCount * (1.25 * 2)"
+
+  # FFC 二次加工費用
+  ffcSecondaryCost:
+    type: FUNC
+    formula: "(ffcPrice, ffcSecondaryCal) => {
+      if(ffcPrice) {
+        return ffcSecondaryCal;
+      }
+      return 0;
+    }"
+    label: 材料費小計
+    param:
+      - ffcPrice
+      - ffcSecondaryCal
+
+
+  # FFC 二次加工費 = 折彎費用 + 印刷(面)費用 + 沖型(次)費用 + 金手指掛鍍(鍍金）費用 + 停止線(條) 費用 + 焊工 費用
+  ffcSecondaryCal:
+    type: MATH
+    formula: "CWFBendTImesCost + CWFFCPrintCost + CWFFCFlushCost + CWFFCGoldPlatingCost + CWFFCStopLineCost + CWFFCWelderCost"
+    label: FFC 二次加工費小計
+
+  # 折彎(次) 費用 = 折彎(次) *  折彎(次) 單價
+  CWFBendTImesCost:
+    label: 折彎(次) 費用
+    type: MATH
+    formula: "CWFFCBendTImes * CWFFCBendTImesPrice"
+
+  # 印刷(面) 費用 = 印刷(面) * 印刷(面) 單價
+  CWFFCPrintCost:
+    label: 印刷(面) 單價
+    type: MATH
+    formula: "CWFFCPrint * CWFFCPrintPrice"
+
+  # 沖型(次) 費用 = 沖型(次)) * 沖型(次) 單價
+  CWFFCFlushCost:
+    label: 印刷(面) 費用
+    type: MATH
+    formula: "CWFFCFlushCount * CWFFCFlushCountPrice"
+
+
+  # 金手指掛鍍(鍍金）/次 費用 = 金手指掛鍍(鍍金）/次 * pin * (pitch * 0.6) * 5 * 金手指單價 *
+  CWFFCGoldPlatingCost:
+    label: 金手指掛鍍(鍍金） 費用
+    type: MATH
+    formula: "CWFFCGoldPlating * CWFFCPin * (CWFFCPitch * 0.6) * 5 * CWFFCGoldPlatingPrice * 2"
+
+  # 停止線 費用 = 停止線 * 停止線 單價
+  CWFFCStopLineCost:
+    label: 停止線 費用
+    type: MATH
+    formula: "CWFFCStopLine * CWFFCStopLinePrice"
+
+  # 焊工 費用 = 焊工參數 / 60 * 焊工單價
+  CWFFCWelderCost:
+    label: 焊工 費用
+    type: MATH
+    formula: "CWFFCWelderConst / 60 * CWFFCWelderPrice"
+
+  # 焊工參數 = 焊工(工時/pin) * Pin
+  CWFFCWelderConst:
+    label: 焊工參數
+    type: MATH
+    formula: CWFFCWelderSecPerPin * CWFFCPin
+
+
+scope:
+  # 鐵氟龍線
+  teflonUnitPrice: teflonUnitPrice
+  teflonLength: teflonLength
+  teflonPin: teflonPin
+  teflonQty: teflonQty
+  # 同軸線
+  coaxialUnitPrice: coaxialUnitPrice
+  coaxialLength: coaxialLength
+  coaxialPin: coaxialPin
+  coaxialQty: coaxialQty
+  otherFillMeRemarkExist: otherFillMeRemarkExist
+
+  # FFC
+  CWFFCQty: CWFFCQty # QTY
+  CWFFCLength: CWFFCLength # Cable Length(mm)
+  CWFFCPin: CWFFCPin # Pin
+  CWFFCPitch: CWFFCPitch # Pitch
+  CWFFCBendTImes: CWFFCBendTImes # 折彎(次)
+  CWFFCPrint: CWFFCPrint # 印刷(面)
+  CWFFCFlushCount: CWFFCFlushCount # 沖型(次)
+  CWFFCGoldPlating: CWFFCGoldPlating # 金手指掛鍍(鍍金)
+  CWFFCStopLine: CWFFCStopLine # 停止線(條)
+
+constant:
+  loss_rate:
+    label: loss_rate
+    # value: 0.03
+    ?getCableWireCommon:
+      - cable_wire_material
+      - material_loss_rate
+
+  # FFC (注意是來自 Cable FFC 的 parameter)
+  CWFFCMaterialLossRate:
+    label: ffc 材料費 loss rate
+    # value: 0.03
+    ?getFFCCommon:
+      - cable_ffc_material
+      - material_loss_rate
+
+  CWFFCMaterialPrice:
+    label: ffc 材料 單價
+    # value: 18
+    ?getFFCCommon:
+      - cable_ffc_material
+      - material_cost
+
+  CWFFCBendTImesPrice:
+    label: 折彎(次) 單價
+    # value: 0.0080
+    ?getFFCCommon:
+      - cable_ffc_secondary_processing
+      - knee_bend_cost
+
+  CWFFCPrintPrice:
+    label: 印刷(面) 單價
+    # value: 0.0060
+    ?getFFCCommon:
+      - cable_ffc_secondary_processing
+      - print_cost
+
+  CWFFCFlushCountPrice:
+    label: 沖型(次) 單價
+    # value: 0.0160
+    ?getFFCCommon:
+      - cable_ffc_secondary_processing
+      - punching_cost
+
+  CWFFCGoldPlatingPrice:
+    label: 金手指掛鍍 單價
+    # value: 0.00017
+    ?getFFCCommon:
+      - cable_ffc_secondary_processing
+      - golden_finger_rack_plating_cost
+
+  CWFFCStopLinePrice:
+    label: 停止線 單價
+    # value: 0.0080
+    ?getFFCCommon:
+      - cable_ffc_secondary_processing
+      - stop_line_cost
+
+  CWFFCWelderPrice:
+    label: 焊工單價
+    # value: 0.06
+    ?getFFCCommon:
+      - cable_ffc_secondary_processing
+      - ffc_welding_price
+
+  CWFFCWelderSecPerPin:
+    label: 焊工(工時/pin)
+    # value: 4
+    ?getFFCCommon:
+      - cable_ffc_secondary_processing
+      - ffc_welding_time

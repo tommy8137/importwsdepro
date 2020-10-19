@@ -1,0 +1,41 @@
+output:
+  accessoryAssyTime: fpcReinforcingPlate_AssyTime_Sum
+  accessoryCost: fpcReinforcingPlate_cost
+
+formula:
+# 補強版組裝時間總和 = Qty * 補強板組裝時間 -------------------------------------------------------------------------------------------------------------------
+  fpcReinforcingPlate_AssyTime_Sum:
+    type: MATH
+    formula: FPCReinforcingPlateQty * fpcReinforcingPlate_assy_time
+    label: 補強版組裝時間總和(sec)
+
+# 補強板費用 =  Qty * 補強板單價 * (1 + 補強板 loss rate) -------------------------------------------------------------------------------------------------------------------
+  fpcReinforcingPlate_cost:
+    type: MATH
+    formula: FPCReinforcingPlateQty * fpcReinforcingPlate_unit_price * (1 + fpcReinforcingPlate_loss_rate)
+    label: 補強板費用
+
+scope:
+  FPCReinforcingPlateQty: FPCReinforcingPlateQty
+
+constant:
+  fpcReinforcingPlate_assy_time:
+    label: 補強板組裝時間
+    ?getFPCCommon:
+      - cable_fpc_auxiliary_materials
+      - stiffener_assy_time
+    # value: 4
+
+  fpcReinforcingPlate_unit_price:
+    label: 補強板單價
+    ?getFPCCommon:
+      - cable_fpc_auxiliary_materials
+      - stiffener_cost
+    # value: 0.01
+
+  fpcReinforcingPlate_loss_rate:
+    label: 補強板 loss rate
+    ?getFPCCommon:
+      - cable_fpc_auxiliary_materials
+      - stiffener_loss_rate
+    # value: 0.015

@@ -1,0 +1,118 @@
+multiple: true
+items:
+# 可編輯的sub-title --------------------------------------------------------------------------------------------------------------------
+  - key: screwLabel
+    label: Screw
+    $Template:
+      - label
+    editable: true
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+    default: Screw
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.screw
+    emdmKey: screwLabel
+
+# 用量 --------------------------------------------------------------------------------------------------------------------
+  - key: screwAmount
+    label: 用量
+    $Template:
+      - inputInt
+      - ^displayConfig
+    default: 0
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.screw
+    emdmKey: screwAmount
+
+# 牙徑 --------------------------------------------------------------------------------------------------------------------
+  - key: screwToothpath
+    label: 牙徑(M)
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.screw
+    emdmKey: screwToothpath
+
+# 頭徑 --------------------------------------------------------------------------------------------------------------------
+  - key: screwHeadDiameter
+    label: 頭徑(ø)
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.screw
+    emdmKey: screwHeadDiameter
+
+# 頭厚 --------------------------------------------------------------------------------------------------------------------
+  - key: screwHeadThickness
+    label: 頭厚(t)
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.screw
+    emdmKey: screwHeadThickness
+
+# 長度 --------------------------------------------------------------------------------------------------------------------
+  - key: screwLength
+    label: 長度(L)
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.screw
+    emdmKey: screwLength
+
+# 光桿 --------------------------------------------------------------------------------------------------------------------
+  - key: screwPolishedRod
+    label: 光桿
+    $Template:
+      - checkBox
+      - ^displayConfig
+    emdmMultipleKey: emdmBomInfo.cmfForm.screw
+    emdmKey: screwPolishedRod
+
+# 頸徑 --------------------------------------------------------------------------------------------------------------------
+  - key: screwNeckDiameter
+    label: 頸徑
+    $Template:
+      - inputFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      depends:
+        action: lock
+        condition:
+          screwPolishedRod: true
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.screw
+    emdmKey: screwNeckDiameter
+
+# 頸高 --------------------------------------------------------------------------------------------------------------------
+  - key: screwNeckLength
+    label: 頸高
+    $Template:
+      - inputFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      depends:
+        action: lock
+        condition:
+          screwPolishedRod: true
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.screw
+    emdmKey: screwNeckLength
+
+# 耐落 --------------------------------------------------------------------------------------------------------------------
+  - key: screwResistantFall
+    label: 耐落
+    $Template:
+      - checkBox
+      - ^displayConfig
+    emdmMultipleKey: emdmBomInfo.cmfForm.screw
+    emdmKey: screwResistantFall
+

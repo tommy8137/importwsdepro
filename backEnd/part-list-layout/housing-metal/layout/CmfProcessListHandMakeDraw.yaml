@@ -1,0 +1,32 @@
+multiple: true
+items:
+  - key: cmfProcessListHandMakeDrawCheckBox
+    $Template:
+      - checkBox
+    label: Exist
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListHandMakeDrawCheckBox
+
+  - key: cmfProcessListHandMakeDrawCount
+    $Template:
+      - inputFloat
+    label: 加工面積(mm²)
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfProcessListHandMakeDrawCheckBox: true
+      grids: 1
+      display: true
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfProcessListHandMakeDrawCheckBox)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfProcessListHandMakeDrawCheckBox
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListHandMakeDrawCount

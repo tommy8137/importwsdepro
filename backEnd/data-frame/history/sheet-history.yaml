@@ -1,0 +1,12 @@
+sheet:
+  label: Edit history list
+  tables:
+    - key: historyList
+      $Template:
+        - rowTable
+      headers:
+        $history.history-base:
+          - headers
+      anchor:
+        x: A
+        y: 1

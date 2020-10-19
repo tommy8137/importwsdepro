@@ -1,0 +1,6 @@
+values:
+  - SPEC11: '>10'
+  - SPEC11: '>15'
+  - SPEC11: '>30'
+  - SPEC11: '<30'
+  - SPEC11: NA

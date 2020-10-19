@@ -1,0 +1,443 @@
+{
+  "xlsxName": "Test_Data_NB_standoff.xlsx",
+  "sheetName": "NB_Standoff",
+  "startHorizontalCoordinates": "C",
+  "transferMode": "createPath",
+  "formate": "meothers-standoff",
+  "metadata": {
+    "productType": {
+      "createPath": "productType",
+      "valuekey": "productType",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "1"
+    },
+    "testLabel": {
+      "createPath": "testLabel",
+      "valuekey": "testLabel",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "2"
+    },
+    "type1": {
+      "createPath": "type1",
+      "valuekey": "type1",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "3"
+    },
+    "type2": {
+      "createPath": "type2",
+      "valuekey": "type2",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "4"
+    }
+  },
+  "transferPartlistInfo": {
+    "formData,standoffTab,standOffParts,materialspec": {
+      "createPath": "formData.standoffTab.standOffParts.materialspec",
+      "valuekey": "materialspec",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 10,
+      "default": null
+    },
+    "formData,standoffTab,standOffParts,material": {
+      "createPath": "formData.standoffTab.standOffParts.material",
+      "valuekey": "material",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 10,
+      "default": null
+    },
+    "formData,standoffTab,standOffParts,materialUnitPrice": {
+      "createPath": "formData.standoffTab.standOffParts.materialUnitPrice",
+      "valuekey": "materialUnitPrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,standoffTab,standOffParts,materialDensity": {
+      "createPath": "formData.standoffTab.standOffParts.materialDensity",
+      "valuekey": "materialDensity",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,standoffTab,standOffParts,materialHeatingUnitPrice": {
+      "createPath": "formData.standoffTab.standOffParts.materialHeatingUnitPrice",
+      "valuekey": "materialHeatingUnitPrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,standoffTab,standOffParts,partssizemName": {
+      "createPath": "formData.standoffTab.standOffParts.partssizemName",
+      "valuekey": "partssizemName",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 11,
+      "default": null
+    },
+    "formData,standoffTab,standOffParts,partssizem": {
+      "createPath": "formData.standoffTab.standOffParts.partssizem",
+      "valuekey": "partssizem",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,standoffTab,standOffParts,bossOuterDiameter": {
+      "createPath": "formData.standoffTab.standOffParts.bossOuterDiameter",
+      "valuekey": "bossOuterDiameter",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 12,
+      "default": null
+    },
+    "formData,standoffTab,standOffParts,bossOuterDiameterHeight": {
+      "createPath": "formData.standoffTab.standOffParts.bossOuterDiameterHeight",
+      "valuekey": "bossOuterDiameterHeight",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 13,
+      "default": null
+    },
+    "formData,standoffTab,standOffParts,outerDiameter": {
+      "createPath": "formData.standoffTab.standOffParts.outerDiameter",
+      "valuekey": "outerDiameter",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 14,
+      "default": null
+    },
+    "formData,standoffTab,standOffParts,outerDiameterHeight": {
+      "createPath": "formData.standoffTab.standOffParts.outerDiameterHeight",
+      "valuekey": "outerDiameterHeight",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 15,
+      "default": null
+    },
+    "formData,standoffTab,standOffParts,pinOuterDiameter": {
+      "createPath": "formData.standoffTab.standOffParts.pinOuterDiameter",
+      "valuekey": "pinOuterDiameter",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 16,
+      "default": null
+    },
+    "formData,standoffTab,standOffParts,pinOuterDiameterHeight": {
+      "createPath": "formData.standoffTab.standOffParts.pinOuterDiameterHeight",
+      "valuekey": "pinOuterDiameterHeight",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 17,
+      "default": null
+    },
+    "formData,standoffTab,standOffParts,innerDiameter": {
+      "createPath": "formData.standoffTab.standOffParts.innerDiameter",
+      "valuekey": "innerDiameter",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 18,
+      "default": 0
+    },
+    "formData,standoffTab,standOffParts,innerDiameterHeight": {
+      "createPath": "formData.standoffTab.standOffParts.innerDiameterHeight",
+      "valuekey": "innerDiameterHeight",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 19,
+      "default": null
+    },
+    "formData,standoffTab,standOffParts,enabledPlating": {
+      "createPath": "formData.standoffTab.standOffParts.enabledPlating",
+      "valuekey": "enabledPlating",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": 24,
+      "default": true
+    },
+    "formData,standoffTab,standOffParts,materialSpecRemark": {
+      "createPath": "formData.standoffTab.standOffParts.materialSpecRemark",
+      "valuekey": "materialSpecRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    }
+  },
+  "verifyInfo": {
+    "totalPrices": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "totalPrices",
+      "valueType": "totalPrices",
+      "comparisonValuePath": "totalPrices"
+    },
+    "parentGroupId": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "parentGroupId",
+      "valueType": "parentGroupId",
+      "comparisonValuePath": "forDebug.summary.standoff.parentGroupId"
+    },
+    "materialUnitPrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "materialUnitPrice",
+      "valueType": "materialUnitPrice",
+      "comparisonValuePath": "forDebug.summary.standoff.materialUnitPrice"
+    },
+    "materialHeatingUnitPrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "materialHeatingUnitPrice",
+      "valueType": "materialHeatingUnitPrice",
+      "comparisonValuePath": "forDebug.summary.standoff.materialHeatingUnitPrice"
+    },
+    "material": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "material",
+      "valueType": "material",
+      "comparisonValuePath": "forDebug.summary.standoff.material"
+    },
+    "materialspec": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "materialspec",
+      "valueType": "materialspec",
+      "comparisonValuePath": "forDebug.summary.standoff.materialspec"
+    },
+    "production_weight": {
+      "label": "成品重量",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "production_weight",
+      "valueType": "production_weight",
+      "comparisonValuePath": "forDebug.summary.standoff.production_weight"
+    },
+    "A_materialCost": {
+      "label": "材料費",
+      "excelValueLongitudinalCoordinates": "27",
+      "valuekey": "A_materialCost",
+      "valueType": "A_materialCost",
+      "comparisonValuePath": "forDebug.summary.standoff.A_materialCost"
+    },
+    "B_formingCost": {
+      "label": "成型費",
+      "excelValueLongitudinalCoordinates": "28",
+      "valuekey": "B_formingCost",
+      "valueType": "B_formingCost",
+      "comparisonValuePath": "forDebug.summary.standoff.B_formingCost"
+    },
+    "electroplating": {
+      "label": "電鍍",
+      "excelValueLongitudinalCoordinates": "25",
+      "valuekey": "electroplating",
+      "valueType": "electroplating",
+      "comparisonValuePath": "forDebug.summary.standoff.electroplating"
+    },
+    "heat_treatments": {
+      "label": "熱處理",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "heat_treatments",
+      "valueType": "heat_treatments",
+      "comparisonValuePath": "forDebug.summary.standoff.heat_treatments"
+    },
+    "C_secondaryProcessingCost": {
+      "label": "二次加工費",
+      "excelValueLongitudinalCoordinates": "29",
+      "valuekey": "C_secondaryProcessingCost",
+      "valueType": "C_secondaryProcessingCost",
+      "comparisonValuePath": "forDebug.summary.standoff.C_secondaryProcessingCost"
+    },
+    "D_packageCost": {
+      "label": "D.全檢包裝運輸",
+      "excelValueLongitudinalCoordinates": "30",
+      "valuekey": "D_packageCost",
+      "valueType": "D_packageCost",
+      "comparisonValuePath": "forDebug.summary.standoff.D_packageCost"
+    },
+    "E_managementCost": {
+      "label": "管銷利潤",
+      "excelValueLongitudinalCoordinates": "31",
+      "valuekey": "E_managementCost",
+      "valueType": "E_managementCost",
+      "comparisonValuePath": "forDebug.summary.standoff.E_managementCost"
+    },
+    "total": {
+      "label": "成品總價",
+      "excelValueLongitudinalCoordinates": "32",
+      "valuekey": "total",
+      "valueType": "total",
+      "comparisonValuePath": "forDebug.summary.standoff.total"
+    },
+    "tapping_process_cost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "tapping_process_cost",
+      "valueType": "tapping_process_cost",
+      "comparisonValuePath": "forDebug.debugInfo.standoff.tapping_process_cost.value"
+    },
+    "tapping_production_capacity": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "tapping_production_capacity",
+      "valueType": "tapping_production_capacity",
+      "comparisonValuePath": "forDebug.debugInfo.standoff.tapping_production_capacity.value"
+    },
+    "tapping_loss_rate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "tapping_loss_rate",
+      "valueType": "tapping_loss_rate",
+      "comparisonValuePath": "forDebug.debugInfo.standoff.tapping_loss_rate.value"
+    },
+    "electroplating_unit_price": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "electroplating_unit_price",
+      "valueType": "electroplating_unit_price",
+      "comparisonValuePath": "forDebug.debugInfo.standoff.electroplating_unit_price.value"
+    },
+    "heat_treatment_unit_price": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "heat_treatment_unit_price",
+      "valueType": "heat_treatment_unit_price",
+      "comparisonValuePath": "forDebug.debugInfo.standoff.heat_treatment_unit_price.value"
+    },
+    "package_cost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "package_cost",
+      "valueType": "package_cost",
+      "comparisonValuePath": "forDebug.debugInfo.standoff.package_cost.value"
+    },
+    "management_percentage": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "management_percentage",
+      "valueType": "management_percentage",
+      "comparisonValuePath": "forDebug.debugInfo.standoff.management_percentage.value"
+    },
+    "partssizem": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "partssizem",
+      "valueType": "partssizem",
+      "comparisonValuePath": "forDebug.debugInfo.standoff.partssizem.value"
+    },
+    "bossOuterDiameter": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "bossOuterDiameter",
+      "valueType": "bossOuterDiameter",
+      "comparisonValuePath": "forDebug.debugInfo.standoff.bossOuterDiameter.value"
+    },
+    "bossOuterDiameterHeight": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "bossOuterDiameterHeight",
+      "valueType": "bossOuterDiameterHeight",
+      "comparisonValuePath": "forDebug.debugInfo.standoff.bossOuterDiameterHeight.value"
+    },
+    "outerDiameter": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "outerDiameter",
+      "valueType": "outerDiameter",
+      "comparisonValuePath": "forDebug.debugInfo.standoff.outerDiameter.value"
+    },
+    "outerDiameterHeight": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "outerDiameterHeight",
+      "valueType": "outerDiameterHeight",
+      "comparisonValuePath": "forDebug.debugInfo.standoff.outerDiameterHeight.value"
+    },
+    "pinOuterDiameter": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "pinOuterDiameter",
+      "valueType": "pinOuterDiameter",
+      "comparisonValuePath": "forDebug.debugInfo.standoff.pinOuterDiameter.value"
+    },
+    "pinOuterDiameterHeight": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "pinOuterDiameterHeight",
+      "valueType": "pinOuterDiameterHeight",
+      "comparisonValuePath": "forDebug.debugInfo.standoff.pinOuterDiameterHeight.value"
+    },
+    "innerDiameterHeight": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "innerDiameterHeight",
+      "valueType": "innerDiameterHeight",
+      "comparisonValuePath": "forDebug.debugInfo.standoff.innerDiameterHeight.value"
+    },
+    "innerDiameter": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "innerDiameter",
+      "valueType": "innerDiameter",
+      "comparisonValuePath": "forDebug.debugInfo.standoff.innerDiameter.value"
+    },
+    "materialDensity": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "materialDensity",
+      "valueType": "materialDensity",
+      "comparisonValuePath": "forDebug.debugInfo.standoff.materialDensity.value"
+    },
+    "enabledPlating": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "enabledPlating",
+      "valueType": "enabledPlating",
+      "comparisonValuePath": "forDebug.debugInfo.standoff.enabledPlating.value"
+    },
+    "materialCost": {
+      "label": "A. 材料費",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "materialCost",
+      "valueType": "materialCost",
+      "comparisonValuePath": "forDebug.debugInfo.standoff.materialCost.value"
+    },
+    "tapping_cost": {
+      "label": "攻牙 費用",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "tapping_cost",
+      "valueType": "tapping_cost",
+      "comparisonValuePath": "forDebug.debugInfo.standoff.tapping_cost.value"
+    },
+    "formingCost": {
+      "label": "B.成型費",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "formingCost",
+      "valueType": "formingCost",
+      "comparisonValuePath": "forDebug.debugInfo.standoff.formingCost.value"
+    },
+    "secondaryProcessingCost": {
+      "label": "C.二次加工費",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "secondaryProcessingCost",
+      "valueType": "secondaryProcessingCost",
+      "comparisonValuePath": "forDebug.debugInfo.standoff.secondaryProcessingCost.value"
+    },
+    "packageCost": {
+      "label": "D.全檢包裝運輸",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "packageCost",
+      "valueType": "packageCost",
+      "comparisonValuePath": "forDebug.debugInfo.standoff.packageCost.value"
+    },
+    "managementCost": {
+      "label": "E.管銷費",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "managementCost",
+      "valueType": "managementCost",
+      "comparisonValuePath": "forDebug.debugInfo.standoff.managementCost.value"
+    },
+    "totalCost": {
+      "label": "計算結果",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "totalCost",
+      "valueType": "totalCost",
+      "comparisonValuePath": "forDebug.debugInfo.standoff.totalCost.value"
+    },
+    "isOtherFill": {
+      "label": "檢查是否有 Other_Fill_ME_Remark",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "isOtherFill",
+      "valueType": "isOtherFill",
+      "comparisonValuePath": "forDebug.debugInfo.standoff.isOtherFill.value"
+    }
+  }
+}

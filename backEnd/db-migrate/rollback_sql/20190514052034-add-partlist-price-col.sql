@@ -1,0 +1,1 @@
+alter table wiprocurement.bom_partlist_value drop column partlist_price;

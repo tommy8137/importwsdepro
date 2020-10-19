@@ -1,0 +1,7 @@
+values:
+  - materialspec: 快削鋼-1215
+    nutType: Bracket NUT
+  - materialspec: 無鉛環保銅
+    nutType: Insert NUT
+  - materialspec: 黃銅-C3604
+    nutType: Insert NUT

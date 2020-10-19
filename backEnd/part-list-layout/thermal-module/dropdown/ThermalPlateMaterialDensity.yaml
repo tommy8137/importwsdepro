@@ -1,0 +1,51 @@
+values:
+ - thPlMaterial: AL1050
+   thPlDensity: 2.75
+ - thPlMaterial: AL5052
+   thPlDensity: 2.75
+ - thPlMaterial: SUS301
+   thPlDensity: 7.93
+ - thPlMaterial: SUS304
+   thPlDensity: 7.93
+ - thPlMaterial: SUS403
+   thPlDensity: 7.93
+ - thPlMaterial: SUS430
+   thPlDensity: 7.93
+ - thPlMaterial: SECC
+   thPlDensity: 7.85
+ - thPlMaterial: SGCC
+   thPlDensity: 7.85
+ - thPlMaterial: SPCC
+   thPlDensity: 7.85
+ - thPlMaterial: SGLD
+   thPlDensity: 7.85
+ - thPlMaterial: SPTE
+   thPlDensity: 7.85
+ - thPlMaterial: Cu3604
+   thPlDensity: 8.9
+ - thPlMaterial: 低碳鋼1018
+   thPlDensity: 7.85
+ - thPlMaterial: 快削鋼
+   thPlDensity: 7.85
+ - thPlMaterial: SUS410
+   thPlDensity: 7.93
+ - thPlMaterial: 磷青銅
+   thPlDensity: 8.9
+ - thPlMaterial: PH-CU
+   thPlDensity: 8.9
+ - thPlMaterial: CU1100
+   thPlDensity: 8.9
+ - thPlMaterial: CU01
+   thPlDensity: 8.9
+ - thPlMaterial: C18400
+   thPlDensity: 8.8
+ - thPlMaterial: AL6061
+   thPlDensity: 2.75
+ - thPlMaterial: AL6063
+   thPlDensity: 2.75
+ - thPlMaterial: KU400
+   thPlDensity: 7.85
+ - thPlMaterial: KU400i
+   thPlDensity: 7.85
+ - thPlMaterial: 皮銅
+   thPlDensity: 8.8

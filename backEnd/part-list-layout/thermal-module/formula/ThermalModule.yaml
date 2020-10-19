@@ -1,0 +1,287 @@
+output:
+  total: total
+  totalCost: totalCost
+  B.processing_cost: processing_cost
+  A.component_cost: component_cost
+  C.profit_cost: profit_cost
+  B-1.assembly_cost: assembly_cost
+  B-2.painting_cost: painting_cost
+  B-3.maskSpray_cost: maskSpray_cost
+  B-4.laserMarking_cost: laserMarking_cost
+  # FOR DEBUG
+  sumAssemblyTime: sumAssemblyTime
+  totalAssemblyTime: totalAssemblyTime
+  appearanceProcess: appearanceProcess
+  maskSpray: maskSpray
+  laserMarking: laserMarking
+  laserMarkingArea: laserMarkingArea
+  worktimeSec: worktimeSec
+  worktimeCost: worktimeCost
+  painting_unit_price: painting_unit_price
+  assemblyVariable: assemblyVariable
+  laserMarkingVariable: laserMarkingVariable
+  laserMarking_area_unit_price: laserMarking_area_unit_price
+  maskSpray_unit_price: maskSpray_unit_price
+  laserMarking_area: laserMarking_area
+
+formula:
+  total:
+    label: 成品總價
+    type: FUNC
+    formula: "(total, isOtherFill) => {
+      const isEmpty = !(total && typeof total === 'number' && isFinite(total));
+      if (isOtherFill) {
+        return null;
+      } else if (isEmpty) {
+        return 0;
+      }
+      return total;
+    }"
+    param:
+      - totalCost
+      - isOtherFill
+
+  totalCost:
+    label: 計算結果
+    type: MATH
+    formula: component_cost + processing_cost + profit_cost
+
+# A.零件費用
+# 如果Thermal
+  component_cost:
+    type: GROUPFUNC
+    label: 總零件費用
+    bykey: 
+      - total
+    groups:
+      - Fan
+      - Pipe
+      - Fin
+      - ThermalPlate
+      - ThermalBlock
+      - Screw
+      - Spring
+      - ORing
+      - Label
+      - Sponge
+      - Mylar
+      - Grease
+    func: "(values) => {
+      if (!values.length) return null;
+      return values.reduce((prev, curr) => {
+        const { total } = curr; 
+        if (total === null || prev === null) { return null; } 
+        return prev + total;
+      }, 0);
+    }"
+
+  # 整理是否有填寫 Other_Fill_ME_Remark, 只要有一個就算不出錢
+  isOtherFill:
+    type: GROUPFUNC
+    label: 是否有欄位填寫 Other_Fill_ME_Remark
+    bykey: 
+      - isOtherFill
+    groups:
+      - Fan
+      - Pipe
+      - Fin
+      - ThermalPlate
+      - ThermalBlock
+      - Screw
+      - Spring
+      - ORing
+      - Label
+      - Sponge
+      - Mylar
+      - Grease
+    func: "values => values.some(obj => obj.isOtherFill)"
+
+  # B.加工費 = Assembly組裝 + 塗黑費用 + 遮噴費用 + 雷雕費用
+  processing_cost:
+    type: FUNC
+    formula: "(assembly_cost, painting_cost, maskSpray_cost, laserMarking_cost) => {
+      return assembly_cost + painting_cost + maskSpray_cost + laserMarking_cost;
+    }"
+    label: 加工費
+    param:
+      - assembly_cost
+      - painting_cost
+      - maskSpray_cost
+      - laserMarking_cost
+
+  # B.1 組裝費
+  assembly_cost:
+    label: Assembly組裝
+    type: FUNC
+    formula: "(totalAssemblyTime, worktimeSec, worktimeCost) => {
+      if (totalAssemblyTime <= 0) { 
+        return 0; 
+      }
+      return totalAssemblyTime / 60 * worktimeCost;
+    }"
+    param:
+      - totalAssemblyTime
+      - worktimeSec
+      - worktimeCost
+
+  # 總組裝時間 - 一次組裝時間 
+  totalAssemblyTime:
+    type: MATH
+    formula: "sumAssemblyTime - assemblyVariable"
+
+  # 組裝工時合計
+  sumAssemblyTime:
+    type: GROUPSUM
+    label: assemblyTime 總和
+    bykey: assemblyTime
+    groups:
+      - Fan
+      - Pipe
+      - Fin
+      - ThermalPlate
+      - ThermalBlock
+      - Screw
+      - Spring
+      - ORing
+      - Label
+      - Sponge
+      - Mylar
+      - Grease
+
+  # B.2 噴漆費用
+  painting_cost:
+    label: 噴漆
+    type: FUNC
+    formula: "(appearanceProcess, painting_unit_price) => { 
+      if(appearanceProcess) {
+        return painting_unit_price;
+      }
+      return 0;
+    }"
+    param:
+      - appearanceProcess
+      - painting_unit_price
+      
+
+  # B.3 遮噴費用
+  maskSpray_cost:
+    label: 遮噴費用
+    type: FUNC
+    formula: "(maskSpray, maskSpray_unit_price) => { 
+      if(maskSpray) {
+        return maskSpray_unit_price;
+      }
+      return 0;
+    }"
+    param:
+      - maskSpray
+      - maskSpray_unit_price
+
+
+  # B.3 雷雕費用 = 雷雕面積 / 雷雕固定參數
+  laserMarking_cost:
+    label: 雷雕費用
+    type: FUNC
+    formula: "(laserMarking, laserMarkingArea, laserMarkingVariable, laserMarking_unit_price) => { 
+      if (laserMarking && laserMarkingArea) {
+        return (laserMarkingArea / laserMarkingVariable) + laserMarking_unit_price;
+      }
+      return 0;
+    }"
+    param:
+      - laserMarking
+      - laserMarkingArea
+      - laserMarkingVariable
+      - laserMarking_unit_price
+
+  # 雷雕固定參數
+  laserMarkingVariable:
+    type: MATH
+    label: 雷雕固定參數
+    formula: laserMarking_area / laserMarking_area_unit_price
+
+  # C.管銷&利潤
+  profit_cost:
+    type: MATH
+    formula: processing_cost * profit_percent
+    label: 管銷&利潤
+
+scope: 
+  # 塗黑
+  appearanceProcess: appearanceProcess
+  # 遮噴
+  maskSpray: maskSpray
+  # 雷雕
+  laserMarking: laserMarking
+  #  雷雕面積
+  laserMarkingArea: laserMarkingArea
+  
+constant:
+  # 組裝費固定參數
+  assemblyVariable:
+    label: Assembly組裝工時(sec)
+    ?getThermalCommon:
+      - thermal_module_processing
+      - assembly_spend_time
+    # value: 12
+
+  # 組裝工時
+  worktimeSec:
+    label: 組裝工時(sec)
+    ?getThermalCommon:
+      - thermal_module_processing
+      - assembly_spend_time
+    # value: 12
+
+  # 工時費
+  worktimeCost:
+    label: 工時費
+    ?getThermalCommon:
+      - thermal_module_processing
+      - assembly_cost
+    # value: 0.045
+
+  # 噴漆單價
+  painting_unit_price:
+    label: 噴漆單價
+    ?getThermalCommon:
+      - thermal_module_processing
+      - paint_with_black_cost
+    # value: 0.045
+
+  # 遮噴單價
+  maskSpray_unit_price:
+    label: 遮噴單價
+    ?getThermalCommon:
+      - thermal_module_processing
+      - mask_spray_unit_price
+    #value: 0.035
+
+  # 雷雕單價
+  laserMarking_unit_price:
+    label: 雷雕單價
+    ?getThermalCommon:
+      - thermal_module_processing
+      - laser_marking_cost
+    #value: 0.01
+  
+  # 雷雕面積單價
+  laserMarking_area_unit_price:
+    label: 雷雕面積單價
+    ?getThermalCommon:
+      - thermal_module_processing
+      - laser_marking_unit_price
+
+  # 鐳雕單位面積
+  laserMarking_area:
+    label: 鐳雕單位面積
+    ?getThermalCommon:
+      - thermal_module_processing
+      - laser_marking_area
+
+  profit_percent:
+    label: 管銷&利潤倍數
+    ?getThermalCommon:
+      - thermal_module_management_and_profit
+      - management_and_profit
+    # value: 0.15

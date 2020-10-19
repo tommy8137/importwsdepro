@@ -1,0 +1,14 @@
+values:
+  - cmfPPrintingType: N/A
+    cmfPPriningUP: 0
+    cmfPPriningLossRate: 0
+  - cmfPPrintingType: 網印
+    cmfPPriningUP: 0.04
+    cmfPPriningLossRate: 0
+
+  - cmfPPrintingType: 移印
+    cmfPPriningUP: 0.045
+    cmfPPriningLossRate: 0
+  - cmfPPrintingType: 套印
+    cmfPPriningUP: 1.26
+    cmfPPriningLossRate: 0

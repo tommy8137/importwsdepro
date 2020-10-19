@@ -1,0 +1,58 @@
+output:
+  connectorAsstTime: connectorAsstTime
+  connectorCost: connectorCost
+  # FOR DEBUG
+  FFCConnectorUnitPrice: FFCConnectorUnitPrice
+  processtime: processtime
+  cableWireFfcConnectorValues: cableWireFfcConnectorValues
+  FFCConnectorFunctionName: FFCConnectorFunctionName
+  FFCConnectorVendorPn: FFCConnectorVendorPn
+  FFCConnectorType: FFCConnectorType
+  isOtherFillMeRemark: isOtherFillMeRemark
+  cableWireFfcConnectorLossRate: cableWireFfcConnectorLossRate
+
+formula:
+  connectorAsstTime:
+    type: MATH
+    formula: FFCConnectorQty * processtime
+    label: connector 組裝時間
+  connectorCost:
+    type: MATH
+    formula: FFCConnectorQty * FFCConnectorUnitPrice * (1 + cableWireFfcConnectorLossRate)
+    label: connector 組裝成本
+
+  isOtherFillMeRemark:
+    type: FUNC
+    label: 判斷是不是other fill me remark
+    formula: "(otherFillMeRemarkName, FFCConnectorFunctionName, FFCConnectorType) => {
+      return FFCConnectorFunctionName === otherFillMeRemarkName || FFCConnectorType === otherFillMeRemarkName;
+    }"
+    param:
+      - otherFillMeRemarkName
+      - FFCConnectorFunctionName
+      - FFCConnectorType
+
+scope:
+  FFCConnectorUnitPrice: FFCConnectorUnitPrice
+  FFCConnectorQty: FFCConnectorQty
+  processtime: processtime
+  FFCConnectorFunctionName: FFCConnectorFunctionName
+  FFCConnectorVendorPn: FFCConnectorVendorPn
+  FFCConnectorType: FFCConnectorType
+
+constant:
+  otherFillMeRemarkName:
+    label: Other_Fill_ME_Remark
+    value: Other_Fill_ME_Remark
+
+  cableWireFfcConnectorValues:
+    label: cable wire FFC connect 下拉對照表
+    value:
+      ?getCableWireFfcConnector:
+        -
+  cableWireFfcConnectorLossRate:
+    label: cable wire FFC connector loss rate
+    ?getFFCCommon:
+      - cable_ffc_components
+      - connector_loss_rate
+    # value: 0.001

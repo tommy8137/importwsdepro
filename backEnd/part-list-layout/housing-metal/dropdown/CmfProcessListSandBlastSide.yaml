@@ -1,0 +1,5 @@
+values:
+  - cmfProcessListSandBlastSide: 單面
+    cmfProcessListSandBlastSideCount: 1
+  - cmfProcessListSandBlastSide: 雙面
+    cmfProcessListSandBlastSideCount: 2

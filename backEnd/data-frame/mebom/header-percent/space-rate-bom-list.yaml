@@ -1,0 +1,38 @@
+headers:
+  stage:
+    label: null
+    subHeader: BOM List
+    subHeaderSite: 1
+    subHeaderMerge: 3
+    $mebom.header-percent.Template:
+      - subHeader
+
+  bom_item_include:
+    label: 含母階的BOM Item數
+    $mebom.header-percent.Template:
+      - dataInt
+
+  bom_item_not_include:
+    label: 不含母階的BOM Item數
+    $mebom.header-percent.Template:
+      - dataInt
+
+  sourcer_space:
+    label: Sourcer 空格數
+    subHeader: 空格數量(%)
+    subHeaderSite: 1
+    subHeaderMerge: 3
+    $mebom.header-percent.Template:
+      - subHeader
+
+  rd_space:
+    label: RD 空格數
+    needMerge: true
+    $mebom.header-percent.Template:
+      - dataInt
+
+  new_material:
+    label: 新材質新材料
+    needMerge: true
+    $mebom.header-percent.Template:
+      - dataMaterial

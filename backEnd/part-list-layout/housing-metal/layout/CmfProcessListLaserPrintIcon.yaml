@@ -1,0 +1,32 @@
+multiple: true
+items:
+  - key: cmfProcessListLaserPrintIconCheckBox
+    $Template:
+      - checkBox
+    label: Exist
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListLaserPrintIconCheckBox
+
+  - key: cmfProcessListLaserPrintIconCount
+    $Template:
+      - inputFloat
+    label: 數量
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfProcessListLaserPrintIconCheckBox: true
+      grids: 1
+      display: true
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfProcessListLaserPrintIconCheckBox)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfProcessListLaserPrintIconCheckBox
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListLaserPrintIconCount

@@ -1,0 +1,245 @@
+headers:
+  type1:
+    label: Type I
+    $Template:
+      - dataString
+
+  type2:
+    label: Type II(PTH or HDI)
+    $Template:
+      - dataString
+
+  part_number:
+    label: Part Number
+    $Template:
+      - dataString
+
+  description:
+    label: Description
+    $Template:
+      - dataString
+
+  PcbStageNo:
+    label: PCB No._Stage
+    $Template:
+    - dataString
+
+  manufacturer:
+    label: Manufacturer
+    $Template:
+      - dataString
+
+  supplyType:
+    label: SupplyType
+    $Template:
+      - dataString
+
+  parallelBoard:
+    label: Merged
+    $Template:
+      - dataString
+
+  remark:
+    label: Remark
+    $Template:
+      - dataString
+
+  sourcer_cost:
+    label: Sourcer Cost
+    $Template:
+      - dataFloat
+
+  current_price:
+    label: Last Price
+    $Template:
+      - dataFloat
+
+  currency:
+    label: Org. Curr. 
+    $Template:
+      - dataString
+
+  last_price_currency_price:
+    label: Org. Last Price 
+    $Template:
+      - dataFloat
+
+  valid_date:
+    label: ValidFrom
+    $Template:
+      - dataString
+
+  cleanSheetCost:
+    label: Clean Sheet Cost(U/P)
+    $Template:
+      - dataFloat
+
+  ce_cost:
+    label: CE Cost(U/P)
+    $Template:
+      - dataFloat
+
+  suggestion_cost:
+    label: Suggestion Cost(U/P)
+    $Template:
+      - dataFloat
+
+  qty:
+    label: QTY
+    $Template:
+      - dataInt
+
+  sub_total_last_price:
+    label: Sub Total Last Price
+    $Template:
+      - dataFloat
+
+  sub_total_suggestion_cost:
+    label: Sub Total Suggestion cost
+    $Template:
+      - dataFloat
+
+  count:
+    label: Count
+    $Template:
+      - dataString
+
+  spec01:
+    label: Spec 1
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec02:
+    label: Spec 2
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec03:
+    label: Spec 3
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec04:
+    label: Spec 4
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec05:
+    label: Spec 5
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec06:
+    label: Spec 6
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec07:
+    label: Spec 7
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec08:
+    label: Spec 8
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec09:
+    label: Spec 9
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec10:
+    label: Spec 10
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec11:
+    label: Spec 11
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec12:
+    label: Spec 12
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec13:
+    label: Spec 13
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec14:
+    label: Spec 14
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec15:
+    label: Spec 15
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec16:
+    label: Spec 16
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec17:
+    label: Spec 17
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specArray
+
+  spec18:
+    label: Spec 18
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specArray
+
+  spec19:
+    label: Spec 19
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specArray
+
+  spec20:
+    label: Spec 20
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specArray
+
+  spec21:
+    label: Spec 21
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec22:
+    label: Spec 22
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec23:
+    label: Spec 23
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec24:
+    label: Spec 24
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec25:
+    label: Spec 25
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec26:
+    label: Spec 26
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  vendor:
+    label: Vendor Name
+    $Template:
+      - dataString
+      
+  vendor_part_no:
+    label: Vendor P/N
+    $Template:
+      - dataString

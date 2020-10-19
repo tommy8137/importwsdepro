@@ -1,0 +1,469 @@
+multiple: true
+items:
+  - key: pipeLabel
+    label: Pipe
+    editable: true
+    $Template:
+      - inputString
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+      display: true
+    default: Pipe
+
+  - key: pipeAmount
+    $Template:
+      - inputInt
+      - ^displayConfig
+    label: 用量
+    default: 0
+
+  - key: pipeType
+    $Template:
+      - selectorString
+      - ^displayConfig
+    label: Pipe型式
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      $thermal-module.PipeTypeValues:
+        - ^values
+
+  - key: outerDiameter
+    $Template:
+      - selectorString
+      - ^displayConfig
+    label: 外徑
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      $thermal-module.PipeOuterDiameterValues:
+        - ^values
+
+  - key: pipeLength
+    $Template:
+      - inputFloat
+    label: 長度(L)
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+
+  - key: pipiLenThickODiaToCost
+    $Template:
+      - mappedFuncFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    mapFrom:
+      - outerDiameter
+      - pipeLength
+      - pipeFlatteningThickness
+    func: "(od, len, flth) => {
+            let cost = 0;
+            switch(od) {
+              case 'CD6_':
+                if(len >= 300) {
+                  if(flth <= 1.0){
+                    return 1.05;
+                  }
+                  if(flth > 1.0 && flth <= 1.2){
+                    return 0.95;
+                  }
+                  if(flth > 1.2 && flth <= 1.5){
+                    return 0.85;
+                  }
+                  if(flth > 1.5 && flth <= 2.0){
+                    return 0.70;
+                  }
+                  if(flth > 2.0 && flth <= 2.5){
+                    return 0.62;
+                  }
+                  if(flth > 2.5){
+                    return 0.62;
+                  }
+                }
+                if(len >= 150 && len < 300 ) {
+                  if(flth <= 1.0){
+                    return 1;
+                  }
+                  if(flth > 1.0 && flth <= 1.2){
+                    return 0.95;
+                  }
+                  if(flth > 1.2 && flth <= 1.5){
+                    return 0.85;
+                  }
+                  if(flth > 1.5 && flth <= 2.0){
+                    return 0.65;
+                  }
+                  if(flth > 2.0 && flth <= 2.5){
+                    return 0.60;
+                  }
+                  if(flth > 2.5){
+                    return 0.60;
+                  }
+                }
+                if(len < 150 ) {
+                  if(flth <= 1.0){
+                    return 0.90;
+                  }
+                  if(flth > 1.0 && flth <= 1.2){
+                    return 0.95;
+                  }
+                  if(flth > 1.2 && flth <= 1.5){
+                    return 0.75;
+                  }
+                  if(flth > 1.5 && flth <= 2.0){
+                    return 0.62;
+                  }
+                  if(flth > 2.0 && flth <= 2.5){
+                    return 0.60;
+                  }
+                  if(flth > 2.5){
+                    return 0.60;
+                  }
+                }
+              case 'CD8_':
+                if(len >= 300) {
+                  if(flth <= 1.0){
+                    return 0.9;
+                  }
+                  if(flth > 1.0 && flth <= 1.2){
+                    return 0.95;
+                  }
+                  if(flth > 1.2 && flth <= 1.5){
+                    return 1.20;
+                  }
+                  if(flth > 1.5 && flth <= 2.0){
+                    return 1.00;
+                  }
+                  if(flth > 2.0 && flth <= 2.5){
+                    return 0.85;
+                  }
+                  if(flth > 2.5){
+                    return 0.85;
+                  }
+                }
+                if(len >= 150 && len < 300 ) {
+                  if(flth <= 1.5){
+                    return 1.10;
+                  }
+                  if(flth > 1.5 && flth <= 2.0){
+                    return 0.90;
+                  }
+                  if(flth > 2.0 && flth <= 2.5){
+                    return 0.80;
+                  }
+                  if(flth > 2.5){
+                    return 0.80;
+                  }
+                }
+                if(len < 150 ) {
+                  if(flth <= 1.5){
+                    return 1.00;
+                  }
+                  if(flth > 1.5 && flth <= 2.0){
+                    return 0.80;
+                  }
+                  if(flth > 2.0 && flth <= 2.5){
+                    return 0.75;
+                  }
+                  if(flth > 2.5){
+                    return 0.75;
+                  }
+                }
+              case 'PD6_':
+                if(len >= 300) {
+                  if(flth <= 1.0){
+                    return 0.9;
+                  }
+                  if(flth > 1.0 && flth <= 1.2){
+                    return 0.95;
+                  }
+                  if(flth > 1.2 && flth <= 1.5){
+                    return 0.80;
+                  }
+                  if(flth > 1.5 && flth <= 2.0){
+                    return 0.65;
+                  }
+                  if(flth > 2.0 && flth <= 2.5){
+                    return 0.60;
+                  }
+                  if(flth > 2.5){
+                    return 0.60;
+                  }
+                }
+                if(len >= 150 && len < 300 ) {
+                  if(flth <= 1.0){
+                    return 0.80;
+                  }
+                  if(flth > 1.0 && flth <= 1.2){
+                    return 0.95;
+                  }
+                  if(flth > 1.2 && flth <= 1.5){
+                    return 0.75;
+                  }
+                  if(flth > 1.5 && flth <= 2.0){
+                    return 0.60;
+                  }
+                  if(flth > 2.0 && flth <= 2.5){
+                    return 0.60;
+                  }
+                  if(flth > 2.5){
+                    return 0.60;
+                  }
+                }
+                if(len < 150 ) {
+                  if(flth <= 1.0){
+                    return 0.80;
+                  }
+                  if(flth > 1.0 && flth <= 1.2){
+                    return 0.85;
+                  }
+                  if(flth > 1.2 && flth <= 1.5){
+                    return 0.62;
+                  }
+                  if(flth > 1.5 && flth <= 2.0){
+                    return 0.60;
+                  }
+                  if(flth > 2.0 && flth <= 2.5){
+                    return 0.60;
+                  }
+                  if(flth > 2.5){
+                    return 0.60;
+                  }
+                }
+              case 'PD8_':
+                if(len >= 300) {
+                  if(flth <= 1.5){
+                    return 1.10;
+                  }
+                  if(flth > 1.5 && flth <= 2.0){
+                    return 0.90;
+                  }
+                  if(flth > 2.0 && flth <= 2.5){
+                    return 0.75;
+                  }
+                  if(flth > 2.5){
+                    return 0.75;
+                  }
+                }
+                if(len >= 150 && len < 300 ) {
+                  if(flth <= 1.5){
+                    return 1.00;
+                  }
+                  if(flth > 1.5 && flth <= 2.0){
+                    return 0.80;
+                  }
+                  if(flth > 2.0 && flth <= 2.5){
+                    return 0.75;
+                  }
+                  if(flth > 2.5){
+                    return 0.75;
+                  }
+                }
+                if(len < 150 ) {
+                  if(flth <= 1.5){
+                    return 0.90;
+                  }
+                  if(flth > 1.5 && flth <= 2.0){
+                    return 0.75;
+                  }
+                  if(flth > 2.0 && flth <= 2.5){
+                    return 0.75;
+                  }
+                  if(flth > 2.5){
+                    return 0.75;
+                  }
+                }
+
+            }
+          }"
+
+
+  - key: pipiLenODiaToCost
+    $Template:
+      - mappedFuncFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    mapFrom:
+      - outerDiameter
+      - pipeLength
+    func: "(od, len) => {
+            let cost = 0;
+            switch(od) {
+              case 'D4_':
+                if(len >=250) {
+                  return 0.75;
+                }
+                if(len>=200 && len < 250){
+                  return 0.7;
+                }
+                if(len>=175 && len < 200){
+                  return 0.65;
+                }
+                if(len>0 && len < 175){
+                  return 0.6;
+                }
+              case 'D6_':
+                if(len >=250) {
+                  return 0.75;
+                }
+                if(len>=200 && len < 250){
+                  return 0.7;
+                }
+                if(len>=175 && len < 200){
+                  return 0.65;
+                }
+                if(len>0 && len < 175){
+                  return 0.6;
+                }
+              case 'D8_':
+                if(len >=250) {
+                  return 0.95;
+                }
+                if(len>=200 && len < 250){
+                  return 0.9;
+                }
+                if(len>=175 && len < 200){
+                  return 0.85;
+                }
+                if(len>0 && len < 175){
+                  return 0.8;
+                }
+              default:
+                console.log('INVALID CASE');
+                return null;
+            }
+          }"
+
+  - key: pipeFlatteningThickness
+    label: 打扁厚度
+    $Template:
+      - inputFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+
+  - key: pipiFlThickODiaToCost
+    $Template:
+      - mappedFuncFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    mapFrom:
+      - outerDiameter
+      - pipeFlatteningThickness
+    func: "(od, flth) => {
+            let cost = 0;
+            switch(od) {
+              case 'D4_':
+                if(flth >= 2) {
+                  return 0;
+                }
+                if(flth >= 1.8 && flth < 2){
+                  return 0.15;
+                }
+                if(flth >= 1.6 && flth < 1.8){
+                  return 0.2;
+                }
+                if(flth >= 1.4 && flth < 1.6){
+                  return 0.25;
+                }
+                if(flth >= 1.2 && flth < 1.4){
+                  return 0.35;
+                }
+                if(flth >= 1.0 && flth < 1.2){
+                  return 0.45;
+                }
+                if(flth >= 0.8 && flth < 1.0){
+                  return 0.6;
+                }
+                if(flth >= 0.6 && flth < 0.8){
+                  return 0.8;
+                }
+                if(flth >= 0.0 && flth < 0.6){
+                  return 1;
+                }
+              case 'D6_':
+                if(flth >= 2) {
+                  return 0;
+                }
+                if(flth >= 1.8 && flth < 2){
+                  return 0.15;
+                }
+                if(flth >= 1.6 && flth < 1.8){
+                  return 0.2;
+                }
+                if(flth >= 1.4 && flth < 1.6){
+                  return 0.25;
+                }
+                if(flth >= 1.2 && flth < 1.4){
+                  return 0.35;
+                }
+                if(flth >= 1.0 && flth < 1.2){
+                  return 0.45;
+                }
+                if(flth >= 0.8 && flth < 1.0){
+                  return 0.6;
+                }
+                if(flth >= 0.0 && flth < 0.8){
+                  return 1;
+                }
+              case 'D8_':
+                if(flth >= 2) {
+                  return 0;
+                }
+                if(flth >= 1.8 && flth < 2){
+                  return 0.25;
+                }
+                if(flth >= 1.6 && flth < 1.8){
+                  return 0.3;
+                }
+                if(flth >= 1.4 && flth < 1.6){
+                  return 0.4;
+                }
+                if(flth >= 1.2 && flth < 1.4){
+                  return 0.5;
+                }
+                if(flth >= 1.0 && flth < 1.2){
+                  return 0.6;
+                }
+                if(flth >= 0.0 && flth < 1.0){
+                  return 1;
+                }
+              default:
+                console.log('INVALID CASE');
+                return null;
+            }
+          }"
+
+
+  - key: pipeAppearanceProcess1
+    label: 外觀表面處理#1
+    $Template:
+      - selectorString
+      - ^displayConfig
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      $thermal-module.PipeAppearanceProcess1:
+        - ^values
+
+  - key: pipeAppearanceProcess2
+    label: 外觀表面處理#2
+    $Template:
+      - selectorString
+      - ^displayConfig
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      $thermal-module.PipeAppearanceProcess2:
+        - ^values
+

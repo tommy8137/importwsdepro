@@ -1,0 +1,12 @@
+sheet:
+  label: EE-By BU
+  tables:
+    - key: buItem
+      $Template:
+        - rowTable
+      headers:
+        $dashboard-ee.header-bu-module.bu-module-excel:
+          - headers
+      anchor:
+        x: B
+        y: 2

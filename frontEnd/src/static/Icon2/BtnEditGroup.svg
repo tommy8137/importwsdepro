@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+    <defs>
+        <style>
+            .cls-1,.cls-3,.cls-5{fill:none}.cls-1,.cls-3{stroke:#333}.cls-2{fill:#333}.cls-3{opacity:0}.cls-4{stroke:none}
+        </style>
+    </defs>
+    <g id="btn_edit_group_n" transform="translate(-1161 -264)">
+        <g id="Ellipse_3" class="cls-1" data-name="Ellipse 3" transform="translate(1161 264)">
+            <circle cx="18" cy="18" r="18" class="cls-4"/>
+            <circle cx="18" cy="18" r="17.5" class="cls-5"/>
+        </g>
+        <path id="Union_3" d="M48.121 18.385v-4.242l4.243 4.243zm.707-4.95L60.143 2.121l4.243 4.243-11.315 11.314zM60.849 1.414l.707-.706a1 1 0 0 1 1.414 0l2.83 2.827a1 1 0 0 1 0 1.415l-.707.707z" class="cls-2" data-name="Union 3" transform="translate(1121.879 272.586)"/>
+        <g id="btn_edit_group_n-2" class="cls-3" data-name="btn_edit_group_n" transform="translate(1161 264)">
+            <circle cx="18" cy="18" r="18" class="cls-4"/>
+            <circle cx="18" cy="18" r="17.5" class="cls-5"/>
+        </g>
+    </g>
+</svg>

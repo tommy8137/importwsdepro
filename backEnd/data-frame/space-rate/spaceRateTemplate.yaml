@@ -1,0 +1,73 @@
+dataStringProject:
+  $Template:
+    - dataString
+  twoHeader: true
+  style:
+    header:
+      $space-rate.style:
+        - space-header
+    subHeader:
+      $space-rate.style:
+        - space-sub-header-1
+    value:
+      $space-rate.style:
+        - space-data
+
+dataFloatSpace:
+  $Template:
+    - dataFloat
+  twoHeader: true
+  style:
+    header:
+      $space-rate.style:
+        - space-header-yellow
+    subHeader:
+      $space-rate.style:
+        - space-sub-header-2
+    value:
+      $space-rate.style:
+        - space-data
+
+dataPercentSpace:
+  $Template:
+    - dataInt
+  twoHeader: true
+  style:
+    header:
+      $space-rate.style:
+        - space-header-yellow
+    subHeader:
+      $space-rate.style:
+        - space-sub-header-2
+    value:
+      $space-rate.style:
+        - space-data
+      numberFormat: '#,##0%'
+
+
+dataStringRemark:
+  $Template:
+    - dataString
+  twoHeader: true
+  style:
+    header:
+      $space-rate.style:
+        - space-header
+    subHeader:
+      $space-rate.style:
+        - space-sub-header-3
+    value:
+      $space-rate.style:
+        - space-data
+
+
+# dataString:
+#   $Template:
+#     - dataString
+#   style:
+#     header:
+#       $eebom-alternative.style:
+#         - summary-header
+#     value:
+#       $eebom-alternative.style:
+#         - summary-data

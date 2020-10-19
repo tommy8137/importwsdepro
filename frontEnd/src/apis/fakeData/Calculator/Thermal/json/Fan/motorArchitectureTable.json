@@ -1,0 +1,28 @@
+{
+  "header": [
+    {
+      "key": "type",
+      "name": "馬達",
+      "typeof": "string"
+    },
+    {
+      "key": "price",
+      "name": "價格",
+      "typeof": "number"
+    }
+  ],
+  "data": [
+    {
+      "type": "1_phase_H<=7.5",
+      "price": 0
+    },
+    {
+      "type": "3_phase_H<=4.5",
+      "price": 0
+    },
+    {
+      "type": "3_phase_H>=5.0",
+      "price": 0.25
+    }
+  ]
+}

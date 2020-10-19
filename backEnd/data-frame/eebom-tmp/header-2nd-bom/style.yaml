@@ -1,0 +1,25 @@
+item-header:
+  fontColor: 'FFFFFF'
+  fill: ED7D31
+  border: true
+  bold: true
+
+item-data:
+  border: true
+
+bold-data:
+  thick:
+    fontColor: '000000'
+    border: true
+    bold: true
+  thin:
+    fontColor: '000000'
+    border: true
+
+red-data:
+  exist:
+    fontColor: 'FF0000'
+    border: true
+  no_exist:
+    fontColor: '000000'
+    border: true

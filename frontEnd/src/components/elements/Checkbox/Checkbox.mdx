@@ -1,0 +1,75 @@
+---
+name: Checkbox
+---
+
+import { Playground, Props } from 'docz'
+import Checkbox from '~~elements/Checkbox'
+import { State } from 'react-powerplug';
+
+
+##  引用方式
+```js
+import Checkbox from '~~elements/Checkbox';
+```
+
+## Props
+
+<Props of={Checkbox}/>
+
+--- 
+
+## 如何使用
+
+<Playground>
+    <State initial={{ chkls: new Set() }}>
+    {({ state: { chkls }, setState }) => {
+        const handleChangeCheckbox = (e) => {
+          const { checked, value } = e.target;
+          if (!checked && chkls.has(value)) {
+            chkls.delete(value);
+          } else if (checked && !chkls.has(value)) {
+            chkls.add(value);
+          }
+          setState({
+            chkls,
+          });
+        }
+        return (
+          <div>
+            <div>
+              <Checkbox
+                value="A"
+                checked={chkls.has('A')}
+                onChange={handleChangeCheckbox}
+              >
+                Checkbox A
+              </Checkbox>
+            </div>
+            <div>
+              <Checkbox
+                value="B"
+                checked={chkls.has('B')}
+                indeterminate={true}
+                onChange={handleChangeCheckbox}
+              >
+                Checkbox B
+              </Checkbox>
+            </div>
+            <div>
+              <Checkbox
+                value="C"
+                checked={true}
+                disabled={true}
+                onChange={handleChangeCheckbox}
+              >
+                Checkbox C
+              </Checkbox>
+            </div>
+          </div>
+        )
+    }
+    }
+    </State>
+</Playground>
+
+

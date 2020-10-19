@@ -1,0 +1,55 @@
+headers:
+  partnumber:
+    label: Part Number
+    $Template:
+      - dataString
+    fieldType: noStyle
+
+  cate:
+    label: Cate
+    $Template:
+      - dataString
+    fieldType: noStyle
+
+  common_parts:
+    label: Common Parts
+    $Template:
+      - dataString
+    fieldType: noStyle
+
+  description:
+    label: Description
+    $Template:
+      - dataString
+    fieldType: noStyle
+
+  ruleby:
+    label: Rule By
+    $Template:
+      - dataString
+    fieldType: noStyle
+
+  groupmap:
+    label: Group Map
+    $Template:
+      - dataString
+    fieldType: noStyle
+
+  create_time:
+    label: Create Time
+    $Template:
+      - dataString
+    fieldType: noStyle
+
+  create_by:
+    label: Create By
+    $Template:
+      - dataString
+    fieldType: noStyle
+
+  update_time:
+    label: Update Time
+    $Template:
+      - dataString
+    fieldType: noStyle
+

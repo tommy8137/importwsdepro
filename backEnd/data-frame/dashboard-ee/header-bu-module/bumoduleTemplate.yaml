@@ -1,0 +1,35 @@
+eeDataFloat:
+  $Template:
+    - dataInt
+  style:
+    header:
+      $dashboard-ee.header-bu-module.style:
+        - item-header
+    value:
+      $dashboard-ee.header-bu-module.style:
+        - item-data
+      numberFormat: '#,##0.00000'
+
+eeDataString:
+  $Template:
+    - dataString
+  style:
+    header:
+      $dashboard-ee.header-bu-module.style:
+        - item-header
+    value:
+      $dashboard-ee.header-bu-module.style:
+        - item-data
+
+eeDataInt:
+  $Template:
+    - dataInt
+  style:
+    header:
+      $dashboard-ee.header-bu-module.style:
+        - item-header
+    value:
+      $dashboard-ee.header-bu-module.style:
+        - item-data
+      numberFormat: '#,##0'
+

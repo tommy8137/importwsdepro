@@ -1,0 +1,86 @@
+headers:
+  opportunity_merge:
+    label: ALT Source Opportunity
+    rowMerge: true
+    columnMerge: true
+    $eebom-alternative.alternativeTemplate:
+      - dataString
+
+  opportunity_non_merge_1:
+    label: null
+    rowMerge: false
+    columnMerge: false
+    $eebom-alternative.alternativeTemplate:
+      - dataString
+
+  alt_analysis_merge:
+    label: ALT Analysis
+    rowMerge: true
+    columnMerge: false
+    $eebom-alternative.alternativeTemplate:
+      - dataString
+
+  alt_analysis_non_merge:
+    label: null
+    rowMerge: false
+    columnMerge: false
+    $eebom-alternative.alternativeTemplate:
+      - dataString
+
+  avl_check_merge:
+    label: AVL Check
+    rowMerge: true
+    columnMerge: false
+    $eebom-alternative.alternativeTemplate:
+      - dataString
+
+  avl_check_non_merge:
+    label: null
+    rowMerge: false
+    columnMerge: false
+    $eebom-alternative.alternativeTemplate:
+      - dataString
+
+
+  opportunity_non_merge_2:
+    label: null
+    rowMerge: false
+    columnMerge: false
+    $eebom-alternative.alternativeTemplate:
+      - dataString
+
+  opportunity_non_merge_3:
+    label: null
+    rowMerge: false
+    columnMerge: false
+    $eebom-alternative.alternativeTemplate:
+      - dataString
+
+
+  is_common_parts:
+    label: Already common pool
+    rowMerge: false
+    columnMerge: false
+    $eebom-alternative.alternativeTemplate:
+      - dataString
+
+  non_common_parts:
+    label: Not common pool
+    rowMerge: false
+    columnMerge: false
+    $eebom-alternative.alternativeTemplate:
+      - dataString
+
+  avl_filter:
+    label: AVL Filter(Y/N)
+    rowMerge: false
+    columnMerge: false
+    $eebom-alternative.alternativeTemplate:
+      - dataString
+
+  avl_doc_ver:
+    label: AVL Doc._Ver
+    rowMerge: false
+    columnMerge: false
+    $eebom-alternative.alternativeTemplate:
+      - dataString

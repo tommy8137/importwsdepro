@@ -1,0 +1,9 @@
+values:
+  - cmfProcessListDrillCutFourSidesType: 全週4週邊鑽切13"
+    cmfProcessListDrillCutFourSidesCost: 0.8
+  - cmfProcessListDrillCutFourSidesType: 全週4週邊鑽切14"
+    cmfProcessListDrillCutFourSidesCost: 0.85
+  - cmfProcessListDrillCutFourSidesType: 全週4週邊鑽切15"
+    cmfProcessListDrillCutFourSidesCost: 0.85
+  - cmfProcessListDrillCutFourSidesType: 全週4週邊鑽切17"
+    cmfProcessListDrillCutFourSidesCost: 1

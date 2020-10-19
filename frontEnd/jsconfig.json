@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    // 一定要用commonjs，才可以解析省略沒寫的/index.js
+    "module": "commonjs",
+    "allowSyntheticDefaultImports": false,
+    "experimentalDecorators": true,
+    "baseUrl": "./",
+    "paths": {
+      "~~utils/*": ["src/utils/*"],
+      "~~features/*": ["src/features/*"],
+      "~~hoc/*": ["src/hoc/*"],
+      "~~styles/*": ["src/styles/*"],
+      "~~elements/*": ["src/components/elements/*"],
+      "~~containers/*": ["src/containers/*"],
+      "~~actions/*": ["src/actions/*"],
+      "~~apis/*": ["src/apis/*"],
+      "~~config": ["src/config"],
+      "~~hooks": ["src/hooks/*"],
+      "~~reducers": ["src/reducers"],
+      "~~sagas": ["src/sagas"],
+      "~~epics": ["src/epics"],
+      "~~store": ["src/store"],
+      "~~middlewares": ["src/middlewares"],
+      "~~middlewares/*": ["src/middlewares/*"],
+      "~~redux/*": ["src/redux/*"],
+    }
+  },
+  "exclude": ["node_modules", "dist"]
+}

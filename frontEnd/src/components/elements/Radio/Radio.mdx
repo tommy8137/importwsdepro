@@ -1,0 +1,43 @@
+---
+name: Radio
+---
+
+import { Playground, Props } from 'docz'
+import Radio from '~~elements/Radio'
+
+import { State } from 'react-powerplug';
+
+
+##  引用方式
+```js
+import Radio from '~~elements/Radio';
+```
+
+## Props
+
+<Props of={Radio} />
+
+--- 
+
+## 基本
+
+<Playground>
+    <State initial={{ radio: '1' }}>
+    {({ state, setState }) => {
+        const handleChangeRadio = (e) => {
+            setState({ radio: e.target.value })
+        }
+        return (
+            <div>
+            <Radio name="g1" value="1" onChange={handleChangeRadio} checked={state.radio === '1'}>1</Radio>
+            <Radio name="g1" value="2" onChange={handleChangeRadio} checked={state.radio === '2'}>2</Radio>
+            </div>
+        )
+    }
+    }
+    </State>
+</Playground>
+
+
+
+

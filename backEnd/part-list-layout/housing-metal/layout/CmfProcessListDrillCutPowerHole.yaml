@@ -1,0 +1,64 @@
+items:
+# 電源孔鑽切
+  - key: cmfProcessListDrillCutPowerHoleExist
+    label: Exist
+    $Template:
+      - checkBox
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListDrillCutPowerHoleExist
+
+  - key: cmfProcessListDrillCutPowerHoleType
+    $Template:
+      - selectorString
+    label: 加工特徵
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: metal_material_drill_feature_id
+      ?getMetalDrill:
+        - housing_metal_secondary_processing
+        - drill_cutting_loss_rate
+        - power_hole_cutting
+      # $housing-metal.dropdown.CmfProcessListDrillCutPowerHoleType:
+      #   - ^values
+      # ?getGlue:
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfProcessListDrillCutPowerHoleExist: true
+      grids: 1
+      display: true
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfProcessListDrillCutPowerHoleExist)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfProcessListDrillCutPowerHoleExist
+    require: true
+    # default: 電源孔鑽切
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListDrillCutPowerHoleType
+
+  - key: cmfProcessListDrillCutPowerHoleCost
+    $Template:
+      - mappedValueFloat
+    mapFrom:
+      - cmfProcessListDrillCutPowerHoleType
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getMetalDrill:
+        - housing_metal_secondary_processing
+        - drill_cutting_loss_rate
+        - power_hole_cutting
+      # $housing-metal.dropdown.CmfProcessListDrillCutPowerHoleType:
+      #   - ^values
+      # ?getSecondAnodeColor:
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false

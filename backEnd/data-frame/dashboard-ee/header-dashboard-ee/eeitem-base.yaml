@@ -1,0 +1,196 @@
+headers:
+  type1:
+    label: Type I
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataString
+
+  type2:
+    label: Type II
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataString
+
+  part_number:
+    label: Part Number
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataString
+
+  description:
+    label: Description
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataString
+
+  manufacturer:
+    label: Manufacturer
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataString
+
+  vendor:
+    label: Vendor Name
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataString
+
+  vendor_part_no:
+    label: Vendor P/N
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataString
+
+  supply_type:
+    label: Supply Type
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataString
+
+  PcbStageNo:
+    label: PCB No._Stage
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataString
+
+  parallelBoard:
+    label: Merged
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataString
+
+  sourcer_cost:
+    label: Sourcer Cost
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataFloat
+
+  cleanSheetCost:
+    label: Clean Sheet Cost
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataFloat
+
+  current_price:
+    label: Last Price
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataFloat
+
+  currency:
+    label: Org. Curr. 
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataString
+
+  last_price_currency_price:
+    label: Org. Last Price 
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataFloat
+
+  valid_date:
+    label: ValidFrom
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataString
+
+  spa:
+    label: SPA Cost
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataFloat
+
+  spaOriginCurrency:
+    label: SPA Org. Curr. 
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataString
+
+  spaOriginPrice:
+    label: SPA Org. Cost 
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataFloat
+
+  spaValidFrom:
+    label: SPA ValidFrom
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataString
+
+  spaPartNumber:
+    label: SPA P/N
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataString
+
+  spaManufacturer:
+    label: SPA Manufacturer
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataString
+
+  spaSupplyType:
+    label: SPA Supply Type
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataString
+
+  alt_lowest_price:
+    label: ALT. Lowest Cost
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataFloat
+
+  alt_lowest_partnumber:
+    label: ALT. Lowest  P/N
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataString
+
+  alt_manufacturer:
+    label: ALT. Lowest Manufacturer
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataString
+
+  alt_grouping:
+    label: ALT. Grouping
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataString
+
+  lpp:
+    label: LPP Cost
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataFloat
+
+  currrent_price_adj_percentage:
+    label: CE ADJ %
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataPercent
+
+  ce_cost:
+    label: CE Cost
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataFloat
+
+  suggestion_cost:
+    label: Suggestion Cost
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataFloat
+
+  remark:
+    label: Remark
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataString
+
+  qty:
+    label: QTY
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataInt
+
+  sub_total_last_price:
+    label: Sub Total Last Price
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataFloat
+
+  sub_total_suggestion_cost:
+    label: Sub Total Suggestion cost
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataFloat
+
+  is_common_parts:
+    label: CMP
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataBold
+
+  obs:
+    label: OBS
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataBold
+
+  exp:
+    label: EXP.
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataBold
+
+  costDiff:
+    label: Cost Diff.
+    $dashboard-ee.header-dashboard-ee.eeTemplate:
+      - dataFloat
+

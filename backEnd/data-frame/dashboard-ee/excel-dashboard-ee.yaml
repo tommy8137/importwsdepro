@@ -1,0 +1,14 @@
+excel:
+  sheets:
+    - $dashboard-ee.sheet-ee-all:
+      - sheet
+    - $dashboard-ee.sheet-bu:
+      - sheet
+
+    - $dashboard-ee.sheet-module:
+      - sheet
+
+    - $eebom-tmp.sheet-hitrate:
+      - sheet
+    - $eebom-tmp.sheet-exchange-rate:
+      - sheet

@@ -1,0 +1,10 @@
+dataString:
+  $Template:
+    - dataString
+  style:
+    header:
+      $history.style:
+        - summary-header
+    value:
+      $history.style:
+        - summary-data

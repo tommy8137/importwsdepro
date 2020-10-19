@@ -1,0 +1,12 @@
+items:
+  - key: multiUploadImage
+    $Template:
+      - uploadImage
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+      display: true
+    uploadUrl: bom/partlist/uploadImage
+    getUrl: bom/partlist/getImage/:{imageid}
+    default: []

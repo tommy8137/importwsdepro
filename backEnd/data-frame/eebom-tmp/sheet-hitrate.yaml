@@ -1,0 +1,23 @@
+sheet:
+  label: CMP Hit-Rate
+  tables:
+    - key: hitRate
+      $Template:
+        - rowTable
+      anchor:
+        x: A
+        y: 1
+      headers:
+        $eebom-tmp.header-hitrate.excel:
+          - headers
+
+    - key: sumCol
+      $Template:
+        - valTable
+      anchor:
+        x: D
+        y: 27
+      headers:
+        $eebom-tmp.header-hitrate.sum:
+          - headers
+       

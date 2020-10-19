@@ -1,0 +1,8 @@
+headers:
+  $example.header-eeall.eeallitem-base:
+    - headers
+  type2:
+    label: Type II
+    $Template:
+      - dataString
+

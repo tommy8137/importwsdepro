@@ -1,0 +1,134 @@
+dataFloat:
+  $Template:
+    - dataFloat
+  style:
+    header:
+      $eebom-tmp.header-pcb.style:
+        - summary-header
+    value:
+      $eebom-tmp.header-pcb.style:
+        - summary-data
+      numberFormat: '#,##0.00000'
+
+dataString:
+  $Template:
+    - dataString
+  style:
+    header:
+      $eebom-tmp.header-pcb.style:
+        - summary-header
+    value:
+      $eebom-tmp.header-pcb.style:
+        - summary-data
+
+dataInt:
+  $Template:
+    - dataInt
+  style:
+    header:
+      $eebom-tmp.header-pcb.style:
+        - summary-header
+    value:
+      $eebom-tmp.header-pcb.style:
+        - summary-data
+      numberFormat: '#,##0'
+dataMerge:
+  $Template:
+    - mergeCell
+  verticalDirection: true
+  mergeLength: 2
+  style:
+    header:
+      $eebom-tmp.header-pcb.style:
+        - summary-header
+    value:
+      $eebom-tmp.header-pcb.style:
+        - summary-data
+      numberFormat: '#,##0.00000'
+
+exchangeHeader:
+  $Template:
+    - mergeCell
+  data: false
+  verticalDirection: true
+  mergeLength: 3
+  style:
+    header:
+      $eebom-tmp.header-pcb.style:
+        - exchange-rate-header
+    value:
+      $eebom-tmp.header-pcb.style:
+        - exchange-rate-data
+
+exchangeData:
+  $Template:
+    - dataString
+  data: true
+  style:
+    header:
+      $eebom-tmp.header-pcb.style:
+        - exchange-rate-data
+    value:
+      $eebom-tmp.header-pcb.style:
+        - exchange-rate-data
+
+listHeader:
+  $Template:
+    - dataString
+  data: false
+  style:
+    header:
+      $eebom-tmp.header-pcb.style:
+        - list-header
+    value:
+      $eebom-tmp.header-pcb.style:
+        - list-data
+
+listFloat:
+  $Template:
+    - dataFloat
+  data: true
+  style:
+    header:
+      $eebom-tmp.header-pcb.style:
+        - list-header
+    value:
+      $eebom-tmp.header-pcb.style:
+        - list-data
+      numberFormat: '#,##0.00000'
+
+listString:
+  $Template:
+    - dataString
+  data: true
+  style:
+    header:
+      $eebom-tmp.header-pcb.style:
+        - list-header
+    value:
+      $eebom-tmp.header-pcb.style:
+        - list-data
+
+specString:
+  $Template:
+    - dataString
+  data: true
+  style:
+    header:
+      $eebom-tmp.header-pcb.style:
+        - spec-header
+    value:
+      $eebom-tmp.header-pcb.style:
+        - spec-data
+
+specArray:
+  $Template:
+    - dataArray
+  data: true
+  style:
+    header:
+      $eebom-tmp.header-pcb.style:
+        - spec-header
+    value:
+      $eebom-tmp.header-pcb.style:
+        - spec-data

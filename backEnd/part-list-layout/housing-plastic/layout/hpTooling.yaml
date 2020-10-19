@@ -1,0 +1,267 @@
+multiple: true
+items:
+  - key: hpToolingPartsWeightSpec1
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    label: 料頭重(g)(一射成品)
+    require: true
+    constrains:
+      - function: "(val, props) => {
+          return val ==='' || val === null
+        }"
+        message: "此欄位為必填"
+    emdmKey: emdmBomInfo.feedingHeadWeightInjection1
+
+  - key: hpToolingPartsWeightSpec2
+    $Template:
+      - inputFloat
+    label: 料頭重(g)(二射成品)
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          hpmaterialspec2: true
+      grids: 1
+      display: true
+    default: null
+    constrains:
+      - function: "(val, props) => {
+          const { hpmaterialspec2 } = props;
+          const isNull = (val === '' || val === null || val === undefined) && hpmaterialspec2;
+          return isNull;
+        }"
+        message: "此欄位為必填"
+        params:
+          - hpmaterialspec2
+    require: true
+    emdmKey: emdmBomInfo.feedingHeadWeightInjection2
+
+  - key: hpToolingMachineTon
+    $Template:
+      - selectorString
+    label: 機台噸數
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: tonId
+      ?getPlasticMachine:
+        -
+      # $housing-plastic.dropdown.machineTon:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    require: true
+    constrains:
+      - function: "(val) => val ==='' || val === null"
+        message: "此欄位為必填"
+    emdmKey: emdmBomInfo.machineTonId
+
+  - key: hpToolingModule
+    $Template:
+      - mappedValueString
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getPlasticModuleMachine:
+        -
+      # values:
+      #   $housing-plastic.dropdown.HpModule:
+      #     - values
+    mapFrom:
+      - productType
+      - hpProcess
+
+  - key: hpToolingMachinePrice
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      ?getPlasticModuleMachinePrice:
+        -
+      # $housing-plastic.dropdown.HpMachinePrice:
+      #   - ^values
+    mapFrom:
+      - hpToolingModule
+      - hpToolingMachineTon
+
+
+  - key: hpToolingHole
+    $Template:
+      - inputInt
+    label: 穴數
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    require: true
+    constrains:
+      - function: "(val) => val ==='' || val === null"
+        message: "此欄位為必填"
+    emdmKey: emdmBomInfo.cavProdCavityQty1
+
+  # - key: hpToolingSizeHole
+  #   $Template:
+  #     - compositeInline
+  #   label: 穴數
+  #   displayConfig:
+  #     $Template:
+  #       - displayConfig
+  #     grids: 1
+  #   items:
+  #     - key: hpToolingHoleProduct1
+  #       $Template:
+  #         - inputInt
+  #       label: 產品一
+  #       displayConfig:
+  #         $Template:
+  #           - displayConfig
+  #         grids: 0.5
+
+  #     - key: hpToolingHoleProduct2
+  #       $Template:
+  #         - inputInt
+  #       label: 產品二
+  #       displayConfig:
+  #         $Template:
+  #           - displayConfig
+  #         grids: 0.5
+
+  - key: hpToolingCT
+    $Template:
+      - inputInt
+    label: C/T(秒)
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    require: true
+    constrains:
+      - function: "(val) => val ==='' || val === null"
+        message: "此欄位為必填"
+    emdmKey: emdmBomInfo.moldInjectionSec
+
+  - key: hpToolingShrinkRate
+    $Template:
+      - inputFloat
+    label: 縮水率(N/1000)
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    emdmKey: emdmBomInfo.shrinkage
+
+  - key: hpToolingModuleFactory
+    $Template:
+      - inputString
+      - ^displayConfig
+    label: 模具廠
+    require: false
+    emdmKey: emdmBomInfo.moldFactory
+
+  - key: hpToolingMoldingManufacturer
+    $Template:
+      - inputString
+      - ^displayConfig
+    label: 成型廠
+    require: false
+    emdmKey: emdmBomInfo.moldingFactory
+
+  - key: site
+    emdmKey: emdmBomInfo.producePlace
+    label: 生產地
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: id
+      ?getCommonSite:
+        -
+      # $meothers-rubber.dropdown.rubberSiteValues:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    require: false
+
+
+  - key: payoutSite
+    emdmKey: emdmBomInfo.openAcctFactory
+    label: 掛帳廠別
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: id
+      ?getCommonSite:
+        -
+      # $meothers-rubber.dropdown.rubberSiteValues:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    require: false
+
+
+  - key: hpToolingBonded
+    $Template:
+      - selectorString
+    label: 保稅or非保稅
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: id
+      ?getPlasticToolingBonder:
+        -
+      # $housing-plastic.dropdown.HpToolingBonded:
+      #   - ^values
+      default: null
+    displayConfig:
+      grids: 1
+      display: true
+    emdmKey: emdmBomInfo.bondId
+
+  - key: hpToolingTSDate
+    $Template:
+      - inputDate
+    label: TS Date
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      display: true
+    emdmKey: emdmBomInfo.moldMakingDate
+
+  - key: hpToolingT1Date
+    $Template:
+      - inputDate
+    label: T1 Date
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      display: true
+    emdmKey: emdmBomInfo.moldTrialDate1
+
+  - key: hpToolingRemark
+    $Template:
+      - textarea
+    label: 備註
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1.5
+    emdmKey: emdmBomInfo.toolingRemark

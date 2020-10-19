@@ -1,0 +1,27 @@
+sheet:
+  label: Summary - Type I II
+  tables:
+    - key: summaryByType
+      $Template:
+        - xraySummaryTable
+      headers:
+        $xray-summary.header-type.type-excel:
+          - headers
+
+    - key: fileInfo
+      $Template:
+        - rowTable
+      headers:
+        $xray-summary.header-type.info-excel:
+          - headers
+      anchor:
+        x: A
+        y: 1
+      autoFilter: false
+
+    - key: fileInfo
+      $Template:
+        - unitTable
+      headers:
+        $xray-summary.header-type.unit-excel:
+          - headers

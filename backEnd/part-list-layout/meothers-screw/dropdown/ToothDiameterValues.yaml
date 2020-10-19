@@ -1,0 +1,18 @@
+# 牙徑
+values:
+ - toothDiameterName: M1.6
+   toothDiameter: 1.6
+   minToothDiameter: '0'
+   maxToothDiameter: '2'
+ - toothDiameterName: M2.0
+   toothDiameter: 2.0
+   minToothDiameter: '2'
+   maxToothDiameter: '3'
+ - toothDiameterName: M2.5
+   toothDiameter: 2.5
+   minToothDiameter: '2'
+   maxToothDiameter: '3'
+ - toothDiameterName: M3.0
+   toothDiameter: 3.0
+   minToothDiameter: '3'
+   maxToothDiameter: '-1'

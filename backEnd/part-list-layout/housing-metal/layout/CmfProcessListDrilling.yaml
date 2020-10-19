@@ -1,0 +1,32 @@
+multiple: true
+items:
+  - key: cmfProcessListDrillingCheckBox
+    $Template:
+      - checkBox
+    label: Exist
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListDrillingCheckBox
+
+  - key: cmfProcessListDrillingCount
+    $Template:
+      - inputInt
+    label: 數量
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfProcessListDrillingCheckBox: true
+      grids: 1
+      display: true
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfProcessListDrillingCheckBox)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfProcessListDrillingCheckBox
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListDrillingCount

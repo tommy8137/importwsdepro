@@ -1,0 +1,147 @@
+multiple: true
+items:
+  - key: cmfProcessListThermalBondingCheckBox
+    label: Exist
+    $Template:
+      - checkBox
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+
+  - key: cmfProcessListThermalBondingGlueType
+    label: 膠水型號
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      $housing-metal.dropdown.CmfProcessListThermalBondingGlueType:
+        - ^values
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfProcessListThermalBondingCheckBox: true
+      grids: 1
+      display: true
+
+  - key: cmfProcessListThermalBondingGluePrice
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    mapFrom:
+      - cmfProcessListThermalBondingGlueType
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      $housing-metal.dropdown.CmfProcessListThermalBondingGlueType:
+        - ^values
+
+  - key: cmfProcessListThermalBondingGlueDensity
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    mapFrom:
+      - cmfProcessListThermalBondingGlueType
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      $housing-metal.dropdown.CmfProcessListThermalBondingGlueType:
+        - ^values
+
+  - key: cmfProcessListThermalBondingPathLength
+    label: 路徑總長
+    $Template:
+      - inputInt
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfProcessListThermalBondingCheckBox: true
+      grids: 1
+      display: true
+    default: 0
+
+  - key: cmfProcessListThermalBondingGlueSyringeDiameter
+    label: 膠水針筒內徑
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      $housing-metal.dropdown.CmfProcessListThermalBondingGlueSyringeDiameter:
+        - ^values
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfProcessListThermalBondingCheckBox: true
+      grids: 1
+      display: true
+
+  - key: cmfProcessListThermalBondingGlueWeight
+    label: 膠水重量
+    url: bom/partlist/getGlueWeight/:{productType}/:{cmfProcessListThermalBondingPathLength}/:{cmfProcessListThermalBondingGlueSyringeDiameter}
+    $Template:
+      - fetchData
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfProcessListThermalBondingCheckBox: true
+      grids: 1
+      display: true
+
+  - key: cmfProcessListThermalBondingCycleTime
+    label: Cycle Time(sec)
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      $housing-metal.dropdown.CmfProcessListCycleTime:
+        - ^values
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfProcessListThermalBondingCheckBox: true
+      grids: 1
+      display: true
+
+  - key: cmfProcessListThermalBondingCycleTimePrice
+    $Template:
+      - mappedValueString
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    mapFrom:
+      - cmfProcessListThermalBondingCycleTime
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      $housing-metal.dropdown.CmfProcessListCycleTime:
+        - ^values
+
+  - key: cmfProcessListThermalBondingCycleTimeValue
+    $Template:
+      - mappedValueString
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    mapFrom:
+      - cmfProcessListThermalBondingCycleTime
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      $housing-metal.dropdown.CmfProcessListCycleTime:
+        - ^values

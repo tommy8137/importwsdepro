@@ -1,0 +1,1017 @@
+values:
+
+
+# Pipe Type And Outer Diameter: CD4 ------------------------------------------------------------------------------
+  # 0 <= len <= 250
+  - pipeType: CD4
+    lenMinSymbol: GE
+    lenMin: 0
+    lenMaxSymbol: LE
+    lenMax: 250
+    thickMinSymbol: GE
+    thickMin: 0
+    thickMaxSymbol: LT
+    thickMax: 0.6
+    pipiLenThickODiaToCost: 1.20
+
+  - pipeType: CD4
+    lenMinSymbol: GE
+    lenMin: 0
+    lenMaxSymbol: LE
+    lenMax: 250
+    thickMinSymbol: GE
+    thickMin: 0.6
+    thickMaxSymbol: LT
+    thickMax: 0.8
+    pipiLenThickODiaToCost: 1.20
+
+  - pipeType: CD4
+    lenMinSymbol: GE
+    lenMin: 0
+    lenMaxSymbol: LE
+    lenMax: 250
+    thickMinSymbol: GE
+    thickMin: 0.8
+    thickMaxSymbol: LT
+    thickMax: 1.0
+    pipiLenThickODiaToCost: 1.10
+
+  - pipeType: CD4
+    lenMinSymbol: GE
+    lenMin: 0
+    lenMaxSymbol: LE
+    lenMax: 250
+    thickMinSymbol: GE
+    thickMin: 1.0
+    thickMaxSymbol: LT
+    thickMax: 1.5
+    pipiLenThickODiaToCost: 0.90
+
+  - pipeType: CD4
+    lenMinSymbol: GE
+    lenMin: 0
+    lenMaxSymbol: LE
+    lenMax: 250
+    thickMinSymbol: GE
+    thickMin: 1.5
+    thickMaxSymbol: LT
+    thickMax: -1
+    pipiLenThickODiaToCost: 0.85
+
+  # 250 < len <= 300
+  - pipeType: CD4
+    lenMinSymbol: GT
+    lenMin: 250
+    lenMaxSymbol: LE
+    lenMax: 300
+    thickMinSymbol: GE
+    thickMin: 0
+    thickMaxSymbol: LT
+    thickMax: 0.6
+    pipiLenThickODiaToCost: 1.30
+
+  - pipeType: CD4
+    lenMinSymbol: GT
+    lenMin: 250
+    lenMaxSymbol: LE
+    lenMax: 300
+    thickMinSymbol: GE
+    thickMin: 0.6
+    thickMaxSymbol: LT
+    thickMax: 0.8
+    pipiLenThickODiaToCost: 1.30
+  
+  - pipeType: CD4
+    lenMinSymbol: GT
+    lenMin: 250
+    lenMaxSymbol: LE
+    lenMax: 300
+    thickMinSymbol: GE
+    thickMin: 0.8
+    thickMaxSymbol: LT
+    thickMax: 1.0
+    pipiLenThickODiaToCost: 1.20
+
+  - pipeType: CD4
+    lenMinSymbol: GT
+    lenMin: 250
+    lenMaxSymbol: LE
+    lenMax: 300
+    thickMinSymbol: GE
+    thickMin: 1.0
+    thickMaxSymbol: LT
+    thickMax: 1.5
+    pipiLenThickODiaToCost: 1.0
+
+  - pipeType: CD4
+    lenMinSymbol: GT
+    lenMin: 250
+    lenMaxSymbol: LE
+    lenMax: 300
+    thickMinSymbol: GE
+    thickMin: 1.5
+    thickMaxSymbol: LT
+    thickMax: -1
+    pipiLenThickODiaToCost: 0.92
+
+  # 300 < len <= -1
+  - pipeType: CD4
+    lenMinSymbol: GT
+    lenMin: 300
+    lenMaxSymbol: LE
+    lenMax: -1
+    thickMinSymbol: GE
+    thickMin: 0
+    thickMaxSymbol: LT
+    thickMax: 0.6
+    pipiLenThickODiaToCost: 1.55
+  
+  - pipeType: CD4
+    lenMinSymbol: GT
+    lenMin: 300
+    lenMaxSymbol: LE
+    lenMax: -1
+    thickMinSymbol: GE
+    thickMin: 0.6
+    thickMaxSymbol: LT
+    thickMax: 0.8
+    pipiLenThickODiaToCost: 1.55
+
+  - pipeType: CD4
+    lenMinSymbol: GT
+    lenMin: 300
+    lenMaxSymbol: LE
+    lenMax: -1
+    thickMinSymbol: GE
+    thickMin: 0.8
+    thickMaxSymbol: LT
+    thickMax: 1.0
+    pipiLenThickODiaToCost: 1.45
+  
+  - pipeType: CD4
+    lenMinSymbol: GT
+    lenMin: 300
+    lenMaxSymbol: LE
+    lenMax: -1
+    thickMinSymbol: GE
+    thickMin: 1.0
+    thickMaxSymbol: LT
+    thickMax: 1.5
+    pipiLenThickODiaToCost: 1.10
+
+  - pipeType: CD4
+    lenMinSymbol: GT
+    lenMin: 300
+    lenMaxSymbol: LE
+    lenMax: -1
+    thickMinSymbol: GE
+    thickMin: 1.5
+    thickMaxSymbol: LT
+    thickMax: -1
+    pipiLenThickODiaToCost: 1.0
+
+# Pipe Type And Outer Diameter: CD6 ------------------------------------------------------------------------------
+  # 0 <= len <= 250
+  - pipeType: CD6
+    lenMinSymbol: GE
+    lenMin: 0
+    lenMaxSymbol: LE
+    lenMax: 250
+    thickMinSymbol: GE
+    thickMin: 0
+    thickMaxSymbol: LT
+    thickMax: 1.0
+    pipiLenThickODiaToCost: 0.85
+
+  - pipeType: CD6
+    lenMinSymbol: GE
+    lenMin: 0
+    lenMaxSymbol: LE
+    lenMax: 250
+    thickMinSymbol: GE
+    thickMin: 1.0
+    thickMaxSymbol: LT
+    thickMax: 1.2
+    pipiLenThickODiaToCost: 0.85
+
+  - pipeType: CD6
+    lenMinSymbol: GE
+    lenMin: 0
+    lenMaxSymbol: LE
+    lenMax: 250
+    thickMinSymbol: GE
+    thickMin: 1.2
+    thickMaxSymbol: LT
+    thickMax: 1.5
+    pipiLenThickODiaToCost: 0.95
+
+  - pipeType: CD6
+    lenMinSymbol: GE
+    lenMin: 0
+    lenMaxSymbol: LE
+    lenMax: 250
+    thickMinSymbol: GE
+    thickMin: 1.5
+    thickMaxSymbol: LT
+    thickMax: 2.0
+    pipiLenThickODiaToCost: 0.80
+
+  - pipeType: CD6
+    lenMinSymbol: GE
+    lenMin: 0
+    lenMaxSymbol: LE
+    lenMax: 250
+    thickMinSymbol: GE
+    thickMin: 2.0
+    thickMaxSymbol: LT
+    thickMax: 2.5
+    pipiLenThickODiaToCost: 0.65
+
+  - pipeType: CD6
+    lenMinSymbol: GE
+    lenMin: 0
+    lenMaxSymbol: LE
+    lenMax: 250
+    thickMinSymbol: GE
+    thickMin: 2.5
+    thickMaxSymbol: LT
+    thickMax: -1
+    pipiLenThickODiaToCost: 0.60
+
+  # 250 < len <= 300
+  - pipeType: CD6
+    lenMinSymbol: GT
+    lenMin: 250
+    lenMaxSymbol: LE
+    lenMax: 300
+    thickMinSymbol: GE
+    thickMin: 0
+    thickMaxSymbol: LT
+    thickMax: 1.0
+    pipiLenThickODiaToCost: 0.95
+
+  - pipeType: CD6
+    lenMinSymbol: GT
+    lenMin: 250
+    lenMaxSymbol: LE
+    lenMax: 300
+    thickMinSymbol: GE
+    thickMin: 1.0
+    thickMaxSymbol: LT
+    thickMax: 1.2
+    pipiLenThickODiaToCost: 0.95
+
+  - pipeType: CD6
+    lenMinSymbol: GT
+    lenMin: 250
+    lenMaxSymbol: LE
+    lenMax: 300
+    thickMinSymbol: GE
+    thickMin: 1.2
+    thickMaxSymbol: LT
+    thickMax: 1.5
+    pipiLenThickODiaToCost: 0.95
+
+  - pipeType: CD6
+    lenMinSymbol: GT
+    lenMin: 250
+    lenMaxSymbol: LE
+    lenMax: 300
+    thickMinSymbol: GE
+    thickMin: 1.5
+    thickMaxSymbol: LT
+    thickMax: 2.0
+    pipiLenThickODiaToCost: 0.90
+
+  - pipeType: CD6
+    lenMinSymbol: GT
+    lenMin: 250
+    lenMaxSymbol: LE
+    lenMax: 300
+    thickMinSymbol: GE
+    thickMin: 2.0
+    thickMaxSymbol: LT
+    thickMax: 2.5
+    pipiLenThickODiaToCost: 0.70
+
+  - pipeType: CD6
+    lenMinSymbol: GT
+    lenMin: 250
+    lenMaxSymbol: LE
+    lenMax: 300
+    thickMinSymbol: GE
+    thickMin: 2.5
+    thickMaxSymbol: LT
+    thickMax: -1
+    pipiLenThickODiaToCost: 0.63
+
+  # 300 < len <= -1
+  - pipeType: CD6
+    lenMinSymbol: GT
+    lenMin: 300
+    lenMaxSymbol: LE
+    lenMax: -1
+    thickMinSymbol: GE
+    thickMin: 0
+    thickMaxSymbol: LT
+    thickMax: 1.0
+    pipiLenThickODiaToCost: 1.05
+  
+  - pipeType: CD6
+    lenMinSymbol: GT
+    lenMin: 300
+    lenMaxSymbol: LE
+    lenMax: -1
+    thickMinSymbol: GE
+    thickMin: 1.0
+    thickMaxSymbol: LT
+    thickMax: 1.2
+    pipiLenThickODiaToCost: 1.05
+
+  - pipeType: CD6
+    lenMinSymbol: GT
+    lenMin: 300
+    lenMaxSymbol: LE
+    lenMax: -1
+    thickMinSymbol: GE
+    thickMin: 1.2
+    thickMaxSymbol: LT
+    thickMax: 1.5
+    pipiLenThickODiaToCost: 0.95
+
+  - pipeType: CD6
+    lenMinSymbol: GT
+    lenMin: 300
+    lenMaxSymbol: LE
+    lenMax: -1
+    thickMinSymbol: GE
+    thickMin: 1.5
+    thickMaxSymbol: LT
+    thickMax: 2.0
+    pipiLenThickODiaToCost: 0.95
+  
+  - pipeType: CD6
+    lenMinSymbol: GT
+    lenMin: 300
+    lenMaxSymbol: LE
+    lenMax: -1
+    thickMinSymbol: GE
+    thickMin: 2.0
+    thickMaxSymbol: LT
+    thickMax: 2.5
+    pipiLenThickODiaToCost: 0.70
+
+  - pipeType: CD6
+    lenMinSymbol: GT
+    lenMin: 300
+    lenMaxSymbol: LE
+    lenMax: -1
+    thickMinSymbol: GE
+    thickMin: 2.5
+    thickMaxSymbol: LT
+    thickMax: -1
+    pipiLenThickODiaToCost: 0.65
+
+# Pipe Type And Outer Diameter: CD8 ------------------------------------------------------------------------------
+  # 0 <= len <= 250
+  - pipeType: CD8
+    lenMinSymbol: GE
+    lenMin: 0
+    lenMaxSymbol: LE
+    lenMax: 250
+    thickMinSymbol: GE
+    thickMin: 0
+    thickMaxSymbol: LT
+    thickMax: 1.5
+    pipiLenThickODiaToCost: 1.0
+
+  - pipeType: CD8
+    lenMinSymbol: GE
+    lenMin: 0
+    lenMaxSymbol: LE
+    lenMax: 250
+    thickMinSymbol: GE
+    thickMin: 1.5
+    thickMaxSymbol: LT
+    thickMax: 2.0
+    pipiLenThickODiaToCost: 1.0
+
+  - pipeType: CD8
+    lenMinSymbol: GE
+    lenMin: 0
+    lenMaxSymbol: LE
+    lenMax: 250
+    thickMinSymbol: GE
+    thickMin: 2.0
+    thickMaxSymbol: LT
+    thickMax: 2.5
+    pipiLenThickODiaToCost: 0.80
+
+  - pipeType: CD8
+    lenMinSymbol: GE
+    lenMin: 0
+    lenMaxSymbol: LE
+    lenMax: 250
+    thickMinSymbol: GE
+    thickMin: 2.5
+    thickMaxSymbol: LT
+    thickMax: -1
+    pipiLenThickODiaToCost: 0.80
+
+  # 250 < len <= 300
+  - pipeType: CD8
+    lenMinSymbol: GT
+    lenMin: 250
+    lenMaxSymbol: LE
+    lenMax: 300
+    thickMinSymbol: GE
+    thickMin: 0
+    thickMaxSymbol: LT
+    thickMax: 1.5
+    pipiLenThickODiaToCost: 1.10
+
+  - pipeType: CD8
+    lenMinSymbol: GT
+    lenMin: 250
+    lenMaxSymbol: LE
+    lenMax: 300
+    thickMinSymbol: GE
+    thickMin: 1.5
+    thickMaxSymbol: LT
+    thickMax: 2.0
+    pipiLenThickODiaToCost: 1.10
+
+  - pipeType: CD8
+    lenMinSymbol: GT
+    lenMin: 250
+    lenMaxSymbol: LE
+    lenMax: 300
+    thickMinSymbol: GE
+    thickMin: 2.0
+    thickMaxSymbol: LT
+    thickMax: 2.5
+    pipiLenThickODiaToCost: 0.90
+
+  - pipeType: CD8
+    lenMinSymbol: GT
+    lenMin: 250
+    lenMaxSymbol: LE
+    lenMax: 300
+    thickMinSymbol: GE
+    thickMin: 2.5
+    thickMaxSymbol: LT
+    thickMax: -1
+    pipiLenThickODiaToCost: 0.88
+
+  # 300 < len <= -1
+  - pipeType: CD8
+    lenMinSymbol: GT
+    lenMin: 300
+    lenMaxSymbol: LE
+    lenMax: -1
+    thickMinSymbol: GE
+    thickMin: 0
+    thickMaxSymbol: LT
+    thickMax: 1.5
+    pipiLenThickODiaToCost: 1.20
+  
+  - pipeType: CD8
+    lenMinSymbol: GT
+    lenMin: 300
+    lenMaxSymbol: LE
+    lenMax: -1
+    thickMinSymbol: GE
+    thickMin: 1.5
+    thickMaxSymbol: LT
+    thickMax: 2.0
+    pipiLenThickODiaToCost: 1.20
+
+  - pipeType: CD8
+    lenMinSymbol: GT
+    lenMin: 300
+    lenMaxSymbol: LE
+    lenMax: -1
+    thickMinSymbol: GE
+    thickMin: 2.0
+    thickMaxSymbol: LT
+    thickMax: 2.5
+    pipiLenThickODiaToCost: 1.0
+  
+  - pipeType: CD8
+    lenMinSymbol: GT
+    lenMin: 300
+    lenMaxSymbol: LE
+    lenMax: -1
+    thickMinSymbol: GE
+    thickMin: 2.5
+    thickMaxSymbol: LT
+    thickMax: -1
+    pipiLenThickODiaToCost: 0.95
+
+# Pipe Type And Outer Diameter: PD4  ------------------------------------------------------------------------------
+  # 0 <= len <= 250
+  - pipeType: PD4
+    lenMinSymbol: GE
+    lenMin: 0
+    lenMaxSymbol: LE
+    lenMax: 250
+    thickMinSymbol: GE
+    thickMin: 0
+    thickMaxSymbol: LT
+    thickMax: 0.6
+    pipiLenThickODiaToCost: 1.30
+
+  - pipeType: PD4
+    lenMinSymbol: GE
+    lenMin: 0
+    lenMaxSymbol: LE
+    lenMax: 250
+    thickMinSymbol: GE
+    thickMin: 0.6
+    thickMaxSymbol: LT
+    thickMax: 0.8
+    pipiLenThickODiaToCost: 1.30
+
+  - pipeType: PD4
+    lenMinSymbol: GE
+    lenMin: 0
+    lenMaxSymbol: LE
+    lenMax: 250
+    thickMinSymbol: GE
+    thickMin: 0.8
+    thickMaxSymbol: LT
+    thickMax: 1.0
+    pipiLenThickODiaToCost: 1.20
+
+  - pipeType: PD4
+    lenMinSymbol: GE
+    lenMin: 0
+    lenMaxSymbol: LE
+    lenMax: 250
+    thickMinSymbol: GE
+    thickMin: 1.0
+    thickMaxSymbol: LT
+    thickMax: 1.5
+    pipiLenThickODiaToCost: 1.10
+
+  - pipeType: PD4
+    lenMinSymbol: GE
+    lenMin: 0
+    lenMaxSymbol: LE
+    lenMax: 250
+    thickMinSymbol: GE
+    thickMin: 1.5
+    thickMaxSymbol: LT
+    thickMax: -1
+    pipiLenThickODiaToCost: 1.00
+
+  # 250 < len <= 300
+  - pipeType: PD4
+    lenMinSymbol: GT
+    lenMin: 250
+    lenMaxSymbol: LE
+    lenMax: 300
+    thickMinSymbol: GE
+    thickMin: 0
+    thickMaxSymbol: LT
+    thickMax: 0.6
+    pipiLenThickODiaToCost: 1.40
+
+  - pipeType: PD4
+    lenMinSymbol: GT
+    lenMin: 250
+    lenMaxSymbol: LE
+    lenMax: 300
+    thickMinSymbol: GE
+    thickMin: 0.6
+    thickMaxSymbol: LT
+    thickMax: 0.8
+    pipiLenThickODiaToCost: 1.40
+  
+  - pipeType: PD4
+    lenMinSymbol: GT
+    lenMin: 250
+    lenMaxSymbol: LE
+    lenMax: 300
+    thickMinSymbol: GE
+    thickMin: 0.8
+    thickMaxSymbol: LT
+    thickMax: 1.0
+    pipiLenThickODiaToCost: 1.30
+
+  - pipeType: PD4
+    lenMinSymbol: GT
+    lenMin: 250
+    lenMaxSymbol: LE
+    lenMax: 300
+    thickMinSymbol: GE
+    thickMin: 1.0
+    thickMaxSymbol: LT
+    thickMax: 1.5
+    pipiLenThickODiaToCost: 1.20
+
+  - pipeType: PD4
+    lenMinSymbol: GT
+    lenMin: 250
+    lenMaxSymbol: LE
+    lenMax: 300
+    thickMinSymbol: GE
+    thickMin: 1.5
+    thickMaxSymbol: LT
+    thickMax: -1
+    pipiLenThickODiaToCost: 1.10
+  
+  # 300 < len <= -1
+  - pipeType: PD4
+    lenMinSymbol: GT
+    lenMin: 300
+    lenMaxSymbol: LE
+    lenMax: -1
+    thickMinSymbol: GE
+    thickMin: 0
+    thickMaxSymbol: LT
+    thickMax: 0.6
+    pipiLenThickODiaToCost: 1.50
+  
+  - pipeType: PD4
+    lenMinSymbol: GT
+    lenMin: 300
+    lenMaxSymbol: LE
+    lenMax: -1
+    thickMinSymbol: GE
+    thickMin: 0.6
+    thickMaxSymbol: LT
+    thickMax: 0.8
+    pipiLenThickODiaToCost: 1.50
+
+  - pipeType: PD4
+    lenMinSymbol: GT
+    lenMin: 300
+    lenMaxSymbol: LE
+    lenMax: -1
+    thickMinSymbol: GE
+    thickMin: 0.8
+    thickMaxSymbol: LT
+    thickMax: 1.0
+    pipiLenThickODiaToCost: 1.40
+  
+  - pipeType: PD4
+    lenMinSymbol: GT
+    lenMin: 300
+    lenMaxSymbol: LE
+    lenMax: -1
+    thickMinSymbol: GE
+    thickMin: 1.0
+    thickMaxSymbol: LT
+    thickMax: 1.5
+    pipiLenThickODiaToCost: 1.30
+
+  - pipeType: PD4
+    lenMinSymbol: GT
+    lenMin: 300
+    lenMaxSymbol: LE
+    lenMax: -1
+    thickMinSymbol: GE
+    thickMin: 1.5
+    thickMaxSymbol: LT
+    thickMax: -1
+    pipiLenThickODiaToCost: 1.20
+
+# Pipe Type And Outer Diameter: PD6 ------------------------------------------------------------------------------
+  # 0 <= len <= 250
+  - pipeType: PD6
+    lenMinSymbol: GE
+    lenMin: 0
+    lenMaxSymbol: LE
+    lenMax: 250
+    thickMinSymbol: GE
+    thickMin: 0
+    thickMaxSymbol: LT
+    thickMax: 1.0
+    pipiLenThickODiaToCost: 0.83
+
+  - pipeType: PD6
+    lenMinSymbol: GE
+    lenMin: 0
+    lenMaxSymbol: LE
+    lenMax: 250
+    thickMinSymbol: GE
+    thickMin: 1.0
+    thickMaxSymbol: LT
+    thickMax: 1.2
+    pipiLenThickODiaToCost: 0.83
+
+  - pipeType: PD6
+    lenMinSymbol: GE
+    lenMin: 0
+    lenMaxSymbol: LE
+    lenMax: 250
+    thickMinSymbol: GE
+    thickMin: 1.2
+    thickMaxSymbol: LT
+    thickMax: 1.5
+    pipiLenThickODiaToCost: 0.95
+
+  - pipeType: PD6
+    lenMinSymbol: GE
+    lenMin: 0
+    lenMaxSymbol: LE
+    lenMax: 250
+    thickMinSymbol: GE
+    thickMin: 1.5
+    thickMaxSymbol: LT
+    thickMax: 2.0
+    pipiLenThickODiaToCost: 0.75
+
+  - pipeType: PD6
+    lenMinSymbol: GE
+    lenMin: 0
+    lenMaxSymbol: LE
+    lenMax: 250
+    thickMinSymbol: GE
+    thickMin: 2.0
+    thickMaxSymbol: LT
+    thickMax: 2.5
+    pipiLenThickODiaToCost: 0.63
+
+  - pipeType: PD6
+    lenMinSymbol: GE
+    lenMin: 0
+    lenMaxSymbol: LE
+    lenMax: 250
+    thickMinSymbol: GE
+    thickMin: 2.5
+    thickMaxSymbol: LT
+    thickMax: -1
+    pipiLenThickODiaToCost: 0.60
+
+  # 250 < len <= 300
+  - pipeType: PD6
+    lenMinSymbol: GT
+    lenMin: 250
+    lenMaxSymbol: LE
+    lenMax: 300
+    thickMinSymbol: GE
+    thickMin: 0
+    thickMaxSymbol: LT
+    thickMax: 1.0
+    pipiLenThickODiaToCost: 0.93
+
+  - pipeType: PD6
+    lenMinSymbol: GT
+    lenMin: 250
+    lenMaxSymbol: LE
+    lenMax: 300
+    thickMinSymbol: GE
+    thickMin: 1.0
+    thickMaxSymbol: LT
+    thickMax: 1.2
+    pipiLenThickODiaToCost: 0.93
+
+  - pipeType: PD6
+    lenMinSymbol: GT
+    lenMin: 250
+    lenMaxSymbol: LE
+    lenMax: 300
+    thickMinSymbol: GE
+    thickMin: 1.2
+    thickMaxSymbol: LT
+    thickMax: 1.5
+    pipiLenThickODiaToCost: 0.95
+
+  - pipeType: PD6
+    lenMinSymbol: GT
+    lenMin: 250
+    lenMaxSymbol: LE
+    lenMax: 300
+    thickMinSymbol: GE
+    thickMin: 1.5
+    thickMaxSymbol: LT
+    thickMax: 2.0
+    pipiLenThickODiaToCost: 0.85
+
+  - pipeType: PD6
+    lenMinSymbol: GT
+    lenMin: 250
+    lenMaxSymbol: LE
+    lenMax: 300
+    thickMinSymbol: GE
+    thickMin: 2.0
+    thickMaxSymbol: LT
+    thickMax: 2.5
+    pipiLenThickODiaToCost: 0.65
+
+  - pipeType: PD6
+    lenMinSymbol: GT
+    lenMin: 250
+    lenMaxSymbol: LE
+    lenMax: 300
+    thickMinSymbol: GE
+    thickMin: 2.5
+    thickMaxSymbol: LT
+    thickMax: -1
+    pipiLenThickODiaToCost: 0.65
+
+  # 300 < len <= -1
+  - pipeType: PD6
+    lenMinSymbol: GT
+    lenMin: 300
+    lenMaxSymbol: LE
+    lenMax: -1
+    thickMinSymbol: GE
+    thickMin: 0
+    thickMaxSymbol: LT
+    thickMax: 1.0
+    pipiLenThickODiaToCost: 1.03
+  
+  - pipeType: PD6
+    lenMinSymbol: GT
+    lenMin: 300
+    lenMaxSymbol: LE
+    lenMax: -1
+    thickMinSymbol: GE
+    thickMin: 1.0
+    thickMaxSymbol: LT
+    thickMax: 1.2
+    pipiLenThickODiaToCost: 1.03
+
+  - pipeType: PD6
+    lenMinSymbol: GT
+    lenMin: 300
+    lenMaxSymbol: LE
+    lenMax: -1
+    thickMinSymbol: GE
+    thickMin: 1.2
+    thickMaxSymbol: LT
+    thickMax: 1.5
+    pipiLenThickODiaToCost: 0.95
+
+  - pipeType: PD6
+    lenMinSymbol: GT
+    lenMin: 300
+    lenMaxSymbol: LE
+    lenMax: -1
+    thickMinSymbol: GE
+    thickMin: 1.5
+    thickMaxSymbol: LT
+    thickMax: 2.0
+    pipiLenThickODiaToCost: 0.90
+  
+  - pipeType: PD6
+    lenMinSymbol: GT
+    lenMin: 300
+    lenMaxSymbol: LE
+    lenMax: -1
+    thickMinSymbol: GE
+    thickMin: 2.0
+    thickMaxSymbol: LT
+    thickMax: 2.5
+    pipiLenThickODiaToCost: 0.75
+
+  - pipeType: PD6
+    lenMinSymbol: GT
+    lenMin: 300
+    lenMaxSymbol: LE
+    lenMax: -1
+    thickMinSymbol: GE
+    thickMin: 2.5
+    thickMaxSymbol: LT
+    thickMax: -1
+    pipiLenThickODiaToCost: 0.65
+
+# Pipe Type And Outer Diameter: PD8 ------------------------------------------------------------------------------
+  # 0 <= len <= 250
+  - pipeType: PD8
+    lenMinSymbol: GE
+    lenMin: 0
+    lenMaxSymbol: LE
+    lenMax: 250
+    thickMinSymbol: GE
+    thickMin: 0
+    thickMaxSymbol: LT
+    thickMax: 1.5
+    pipiLenThickODiaToCost: 0.90
+
+  - pipeType: PD8
+    lenMinSymbol: GE
+    lenMin: 0
+    lenMaxSymbol: LE
+    lenMax: 250
+    thickMinSymbol: GE
+    thickMin: 1.5
+    thickMaxSymbol: LT
+    thickMax: 2.0
+    pipiLenThickODiaToCost: 0.90
+
+  - pipeType: PD8
+    lenMinSymbol: GE
+    lenMin: 0
+    lenMaxSymbol: LE
+    lenMax: 250
+    thickMinSymbol: GE
+    thickMin: 2.0
+    thickMaxSymbol: LT
+    thickMax: 2.5
+    pipiLenThickODiaToCost: 0.75
+
+  - pipeType: PD8
+    lenMinSymbol: GE
+    lenMin: 0
+    lenMaxSymbol: LE
+    lenMax: 250
+    thickMinSymbol: GE
+    thickMin: 2.5
+    thickMaxSymbol: LT
+    thickMax: -1
+    pipiLenThickODiaToCost: 0.75
+
+  # 250 < len <= 300
+  - pipeType: PD8
+    lenMinSymbol: GT
+    lenMin: 250
+    lenMaxSymbol: LE
+    lenMax: 300
+    thickMinSymbol: GE
+    thickMin: 0
+    thickMaxSymbol: LT
+    thickMax: 1.5
+    pipiLenThickODiaToCost: 1.0
+
+  - pipeType: PD8
+    lenMinSymbol: GT
+    lenMin: 250
+    lenMaxSymbol: LE
+    lenMax: 300
+    thickMinSymbol: GE
+    thickMin: 1.5
+    thickMaxSymbol: LT
+    thickMax: 2.0
+    pipiLenThickODiaToCost: 1.0
+
+  - pipeType: PD8
+    lenMinSymbol: GT
+    lenMin: 250
+    lenMaxSymbol: LE
+    lenMax: 300
+    thickMinSymbol: GE
+    thickMin: 2.0
+    thickMaxSymbol: LT
+    thickMax: 2.5
+    pipiLenThickODiaToCost: 0.85
+
+  - pipeType: PD8
+    lenMinSymbol: GT
+    lenMin: 250
+    lenMaxSymbol: LE
+    lenMax: 300
+    thickMinSymbol: GE
+    thickMin: 2.5
+    thickMaxSymbol: LT
+    thickMax: -1
+    pipiLenThickODiaToCost: 0.85
+
+  # 300 < len <= -1
+  - pipeType: PD8
+    lenMinSymbol: GT
+    lenMin: 300
+    lenMaxSymbol: LE
+    lenMax: -1
+    thickMinSymbol: GE
+    thickMin: 0
+    thickMaxSymbol: LT
+    thickMax: 1.5
+    pipiLenThickODiaToCost: 1.10
+  
+  - pipeType: PD8
+    lenMinSymbol: GT
+    lenMin: 300
+    lenMaxSymbol: LE
+    lenMax: -1
+    thickMinSymbol: GE
+    thickMin: 1.5
+    thickMaxSymbol: LT
+    thickMax: 2.0
+    pipiLenThickODiaToCost: 1.10
+
+  - pipeType: PD8
+    lenMinSymbol: GT
+    lenMin: 300
+    lenMaxSymbol: LE
+    lenMax: -1
+    thickMinSymbol: GE
+    thickMin: 2.0
+    thickMaxSymbol: LT
+    thickMax: 2.5
+    pipiLenThickODiaToCost: 0.95
+  
+  - pipeType: PD8
+    lenMinSymbol: GT
+    lenMin: 300
+    lenMaxSymbol: LE
+    lenMax: -1
+    thickMinSymbol: GE
+    thickMin: 2.5
+    thickMaxSymbol: LT
+    thickMax: -1
+    pipiLenThickODiaToCost: 0.92
+

@@ -1,0 +1,107 @@
+{
+  "xlsxName": "Test_Data_Magnet_NB.xlsx",
+  "sheetName": "NB_Magnet",
+  "startHorizontalCoordinates": "C",
+  "transferMode": "createPath",
+  "formate": "emc-magnet",
+  "metadata": {
+    "productType": {
+      "createPath": "productType",
+      "valuekey": "productType",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "1"
+    },
+    "testLabel": {
+      "createPath": "testLabel",
+      "valuekey": "testLabel",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "2"
+    },
+    "type1": {
+      "createPath": "type1",
+      "valuekey": "type1",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "3"
+    },
+    "type2": {
+      "createPath": "type2",
+      "valuekey": "type2",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "4"
+    }
+  },
+  "transferPartlistInfo": {
+    "materialLength": {
+      "createPath": "emcmagnet.materialLength",
+      "valuekey": "materialLength",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "12",
+      "default": ""
+    },
+    "materialWidth": {
+      "createPath": "emcmagnet.materialWidth",
+      "valuekey": "materialWidth",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "13",
+      "default": ""
+    },
+    "materialHeight": {
+      "createPath": "emcmagnet.materialHeight",
+      "valuekey": "materialHeight",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "11",
+      "default": ""
+    },
+    "materialSpecId": {
+      "createPath": "emcmagnet.materialSpecId",
+      "valuekey": "materialSpecId",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": "133734ac-1259-11ea-a83a-0242ac110002"
+    }
+  },
+  "verifyInfo": {
+    "totalPrices": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "27",
+      "valuekey": "totalPrices",
+      "valueType": "totalPrices",
+      "comparisonValuePath": "totalPrices"
+    },
+    "parentGroupId": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "parentGroupId",
+      "valueType": "parentGroupId",
+      "comparisonValuePath": "forDebug.summary.emcmagnet.parentGroupId"
+    },
+    "a_material_cost": {
+      "label": "A.材料費",
+      "excelValueLongitudinalCoordinates": "22",
+      "valuekey": "a_material_cost",
+      "valueType": "a_material_cost",
+      "comparisonValuePath": "forDebug.summary.emcmagnet.a_material_cost"
+    },
+    "b_secondary_processing_cost": {
+      "label": "B.二次加工費",
+      "excelValueLongitudinalCoordinates": "24",
+      "valuekey": "b_secondary_processing_cost",
+      "valueType": "b_secondary_processing_cost",
+      "comparisonValuePath": "forDebug.summary.emcmagnet.b_secondary_processing_cost"
+    },
+    "c_package_cost": {
+      "label": "運包檢",
+      "excelValueLongitudinalCoordinates": "25",
+      "valuekey": "c_package_cost",
+      "valueType": "c_package_cost",
+      "comparisonValuePath": "forDebug.summary.emcmagnet.c_package_cost"
+    },
+    "d_profit": {
+      "label": "管銷&利潤",
+      "excelValueLongitudinalCoordinates": "26",
+      "valuekey": "d_profit",
+      "valueType": "d_profit",
+      "comparisonValuePath": "forDebug.summary.emcmagnet.d_profit"
+    }
+  }
+}

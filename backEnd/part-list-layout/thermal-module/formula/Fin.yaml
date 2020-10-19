@@ -1,0 +1,156 @@
+output:
+  total: total
+  unit_price: unit_price
+  qty: finAmount
+  assemblyTime: assemblyTime
+
+formula:
+# fin零件費 = 單價 * 用量 * (1 + fin loss rate) -----------------------------------------------------------------------------------------------------------------
+  total:
+    type: MATH
+    formula: unit_price * finAmount * (1 + fin_loss_rate)
+    label: fin零件費
+
+# 單價 = 成品材料費 + 沖壓費 + 二次加工費 + 管銷&利潤 -----------------------------------------------------------------------------------------------------------------
+  unit_price:
+    type: MATH
+    formula: production_material_cost + stamping_cost + secondary_processing_cost + profit
+    label: 單價
+
+# 成品材料費 = 加工重量 * 材料每公斤費用 * (1 + 成品材料費loss rate) * 總片數 -----------------------------------------------------------------------------------------------------------------
+  production_material_cost:
+    type: MATH
+    formula: fin_processing_weight * finMaterialCostPerKilogram * (1 + production_material_loss_rate) * fin_total_piece
+    label: 成品材料費
+
+  # 加工重量 = 成品展開尺寸L * 成品展開尺寸W * 材料厚度(t) * 材料密度 / 1000000
+  fin_processing_weight:
+    type: MATH
+    formula: finProductionExpandLength * finProductionExpandWidth * finMaterialThickness * finDensity / 1000000
+    label: 加工重量
+
+  # 總片數 = 成品尺寸L / Pitch (無條件進位至整數位)
+  fin_total_piece:
+    type: FUNC
+    formula: (finProductionLength, finPitch) => Math.ceil(finProductionLength / finPitch)
+    label: 總片數
+    param:
+      - finProductionLength
+      - finPitch
+
+# 二次加工費 = 超音波清洗 + 鍍鎳 -----------------------------------------------------------------------------------------------------------------
+  secondary_processing_cost:
+    type: MATH
+    formula: UltrasonicClean + NickelPlating
+    label: 二次加工費
+  
+  # 超音波清洗 = 超音波清洗加工重量 * 單價 / 1000 * ( 1 + 超音波清洗loss rate) * 總片數
+  UltrasonicClean:
+    type: MATH
+    formula: "ultrasonicClean_processing_weight * ultrasonicClean_unit_price / 1000 * ( 1 + ultrasonicClean_loss_rate)"
+    label: 超音波清洗
+
+  # 超音波清洗加工重量 = 成品展開尺寸L * 成品展開尺寸W * 材料厚度(t) * 材料密度 / 1000
+  ultrasonicClean_processing_weight:
+    type: MATH
+    formula: finProductionExpandLength * finProductionExpandWidth * finMaterialThickness * finDensity / 1000 * fin_total_piece
+    label: 超音波清洗加工重量
+
+  # 鍍鎳 = 鍍鎳加工重量 * 單價 * (1 + 鍍鎳loss rate) / 1000 * 總片數
+  NickelPlating:
+    type: MATH
+    formula: "finNickelPlating ? nickelPlating_processing_weight * nickelPlating_unit_price * ( 1 + nickelPlating_loss_rate) / 1000 :0"
+    label: 鍍鎳
+
+  # 鍍鎳加工重量 = 成品展開尺寸L * 成品展開尺寸W * 材料厚度(t) * 材料密度 / 1000
+  nickelPlating_processing_weight:
+    type: MATH
+    formula: finProductionExpandLength * finProductionExpandWidth * finMaterialThickness * finDensity / 1000 * fin_total_piece
+    label: 鍍鎳加工重量
+    
+# 管銷&利潤 = 沖壓費 * 管銷利潤 -----------------------------------------------------------------------------------------------------------------
+  profit:
+    type: MATH
+    formula: stamping_cost * profit_rate
+    label: 管銷&利潤
+
+  # 組裝時間
+  assemblyTime:
+    label: Fin 組裝時間
+    type: MATH
+    formula: finAmount * worktimeSec
+
+scope:
+  finProductionExpandLength: finProductionExpandLength
+  finProductionExpandWidth: finProductionExpandWidth
+  finMaterialThickness: finMaterialThickness
+  finDensity: finDensity
+  finMaterialCostPerKilogram: finMaterialCostPerKilogram
+  finPitch: finPitch
+  finProductionLength: finProductionLength
+  finAmount: finAmount
+  finNickelPlating: finNickelPlating
+
+constant:
+  worktimeSec:
+    label: Assembly組裝工時(sec)
+    ?getThermalCommon:
+      - thermal_module_processing
+      - assembly_spend_time
+    # value: 12
+  fin_loss_rate:
+    label: fin loss rate
+    ?getThermalCommon:
+      - thermal_module_components
+      - fin_components_total_loss_rate
+    # value: 0.015
+
+  production_material_loss_rate:
+    label: 成品材料費loss rate
+    ?getThermalCommon:
+      - thermal_module_components
+      - fin_material_loss_rate
+    # value: 0.03
+
+  stamping_cost:
+    label: 沖壓費
+    ?getThermalCommon:
+      - thermal_module_components
+      - fin_stamping_cost
+    # value: 0.018
+
+  ultrasonicClean_unit_price:
+    label: 超音波清洗單價
+    ?getThermalCommon:
+      - thermal_module_components
+      - fin_ultrasonic_cleaning_cost
+    # value: 0.3529
+
+  ultrasonicClean_loss_rate:
+    label: 超音波清洗 loss rate
+    ?getThermalCommon:
+      - thermal_module_components
+      - fin_ultrasonic_cleaning_lost_rate
+    # value: 0.03
+
+  nickelPlating_unit_price:
+    label: 鍍鎳單價
+    ?getThermalCommon:
+      - thermal_module_components
+      - fin_nickelplated_cost
+    # value: 5.71
+
+  nickelPlating_loss_rate:
+    label: 鍍鎳 loss rate
+    ?getThermalCommon:
+      - thermal_module_components
+      - fin_nickelplated_loss_rate
+    # value: 0.03
+
+  profit_rate:
+    label: 管銷利潤
+    ?getThermalCommon:
+      - thermal_module_components
+      - fin_management_and_profit
+    # value: 0.15
+

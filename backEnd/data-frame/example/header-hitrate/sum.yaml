@@ -1,0 +1,37 @@
+headers:
+  sume2e26:
+    $Template:
+      - formula
+    value: =SUM(E2:E26)
+    style:
+      header:
+        $example.header-hitrate.style:
+          - ht-header
+      value:
+        $example.header-hitrate.style:
+          - ht-catagory
+
+  sumf2f26:
+    $Template:
+       - formula
+    value: =SUM(F2:F26)
+    style:
+      header:
+        $example.header-hitrate.style:
+          - ht-header
+      value:
+        $example.header-hitrate.style:
+          - ht-catagory
+
+  divf27e27:
+    $Template:
+      - formula
+    value: =(F27/E27)*100
+    style:
+      header:
+        $example.header-hitrate.style:
+          - ht-header
+      value:
+        $example.header-hitrate.style:
+          - ht-catagory
+

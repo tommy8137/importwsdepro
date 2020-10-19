@@ -1,0 +1,460 @@
+output:
+  assemblyTime: assemblyTime
+  supportCost: supportCost
+  sumCableMaterialLength: sumCableMaterialLength
+
+formula:
+  assemblyTime:
+    type: MATH
+    formula: CWGroundFilmAssy + CWKaptonAssy + CWAceticAcidClothAssy + CWTeflonTapeAssy + CWConductiveClothAssy + CWTwistedWireAssy + CWUvGlueAssy + CWLabelAssy + CWHeatShrinkableTubingsAssy + CWDrawLineAssy + CWConductiveDoubleSideTapeAssy + CWMylarCY28Pet005Assy + CWMylarPet6027D01Assy + CWDoubleSideTapeAssy
+    label: 輔料組裝時間
+  CWGroundFilmAssy:
+    type: MATH
+    formula: CWGroundFilmQty?CWGroundFilmQty * groundfilmassytime:0
+    label: 地片組裝時間
+  CWKaptonAssy:
+    type: MATH
+    formula: CWKaptonQty?CWKaptonQty * kaptonassytime:0
+    label: Kapton組裝時間
+  CWAceticAcidClothAssy:
+    type: MATH
+    formula: CWAceticAcidClothQty?CWAceticAcidClothQty * aceticacidclothassytime:0
+    label: 醋酸布拉帶組裝時間
+  CWTeflonTapeAssy:
+    type: MATH
+    formula: CWTeflonTapeQty?CWTeflonTapeQty * teflontapeassytime :0
+    label: Teflon膠带組裝時間
+  CWConductiveClothAssy:
+    type: MATH
+    formula: CWConductiveClothQty?CWConductiveClothQty * conductiveclothassytime:0
+    label: 導電布組裝時間
+  CWTwistedWireAssy:
+    type: MATH
+    formula: CWTwistedWireQty?CWTwistedWireQty * twistedwireassytime :0
+    label: 絞線組裝時間
+  CWUvGlueAssy:
+    type: MATH
+    formula: CWUvGlueQty?CWUvGlueQty * uvglueassytime:0
+    label: UV GLUE組裝時間
+  CWLabelAssy:
+    type: MATH
+    formula: CWLabelQty?CWLabelQty * labelassytime:0
+    label: Label管組裝時間
+  CWHeatShrinkableTubingsAssy:
+    type: MATH
+    formula: CWHeatShrinkableTubingsQty?(CWHeatShrinkableTubingsAssyCoefficient) * CWHeatShrinkableTubingsQty:0
+    label: 熱縮套管組裝時間
+  CWHeatShrinkableTubingsAssyCoefficient:
+    type: MATH
+    formula: CWHeatShrinkableTubingsQty?(sumCableMaterialLength > 300 ? heatshrinkabletubingsbigger_300_assytime :heatshrinkabletubingssmaller_300_assytime):0
+    label: 熱縮套管組裝時間係數
+  CWDrawLineAssy:
+    type: MATH
+    formula: CWDrawLineQty?CWDrawLineQty * drawlineassytime:0
+    label: 畫線組裝時間
+  CWConductiveDoubleSideTapeAssy:
+    type: MATH
+    formula: CWConductiveDoubleSideTapeQty?CWConductiveDoubleSideTapeQty * conductivedoublesidetapeassytime:0
+    label: 導電雙面膠組裝時間
+  CWMylarCY28Pet005Assy:
+    type: MATH
+    formula: CWMylarCY28Pet005Qty?CWMylarCY28Pet005Qty * mylarCY28Pet005assytime:0
+    label: Mylar(CY28_PET) T=0.05組裝時間
+  CWMylarPet6027D01Assy:
+    type: MATH
+    formula: CWMylarPet6027D01Qty?CWMylarPet6027D01Qty * mylarPet6027D01assytime:0
+    label: Mylar(PET_6027D) T=0.1組裝時間
+  CWDoubleSideTapeAssy:
+    type: MATH
+    formula: CWDoubleSideTapeQty?CWDoubleSideTapeQty * doublesidetapeassytime:0
+    label: 雙面膠組裝時間
+
+  supportCost:
+    type: MATH
+    formula: CWGroundFilmCost + CWKaptonCost + CWAceticAcidClothCost + CWTeflonTapeCost + CWConductiveClothCost + CWTwistedWireCost + CWUvGlueCost + CWLabelCost + CWHeatShrinkableTubingsCost + CWDrawLineCost + CWConductiveDoubleSideTapeCost + CWMylarCY28Pet005Cost + CWMylarPet6027D01Cost + CWDoubleSideTapeCost
+    label: 輔料成本
+  CWGroundFilmCost:
+    type: MATH
+    formula: CWGroundFilmQty?CWGroundFilmQty * groundfilmup * (1 + groundfilmuplossrate):0
+    label: 地片成本
+  CWKaptonCost:
+    type: MATH
+    formula: CWKaptonQty?CWKaptonQty* kaptonup *(CWKaptonLength*CWKaptonwidth / areaunittrnsferconstant)*(1 + kaptonlossrate):0
+    label: Kapton成本
+  CWTeflonTapeCost:
+    type: MATH
+    formula: CWTeflonTapeQty?CWTeflonTapeQty* teflonTapeup *(CWTeflonTapeLength*CWTeflonTapeWidth / areaunittrnsferconstant)*(1 + teflonTapelossrate):0
+    label: Teflon膠带成本
+  CWAceticAcidClothCost:
+    type: MATH
+    formula: CWAceticAcidClothQty? CWAceticAcidClothQty * aceticacidclothup *(CWAceticAcidClothLength*CWAceticAcidClothwidth / areaunittrnsferconstant)*(1 + aceticacidclothlossrate):0
+    label: 醋酸布拉帶成本
+  CWConductiveClothCost:
+    type: MATH
+    formula: CWConductiveClothQty?CWConductiveClothQty * (CWConductiveClothLength*CWConductiveClothWidth / areaunittrnsferconstant) * conductiveclothup * (1 + conductiveclothlossrate):0
+    label: 導電布成本
+  CWTwistedWireCost:
+    type: MATH
+    formula: CWTwistedWireQty?CWTwistedWireQty * twistedwireup * (1 + twistedwirelossrate):0
+    label: 絞線成本
+  CWUvGlueCost:
+    type: MATH
+    formula: CWUvGlueQty?CWUvGlueQty * uvglueup * (1 + uvgluelossrate):0
+    label: UV GLUE成本
+  CWLabelCost:
+    type: MATH
+    formula: CWLabelQty?CWLabelQty * labelup * (1 + labellossrate):0
+    label: Label成本
+  CWHeatShrinkableTubingsCost:
+    type: MATH
+    formula: CWHeatShrinkableTubingsQty?CWHeatShrinkableTubingsQty * heatshrinkabletubingsup * (1 + heatshrinkabletubingslossrate):0
+    label: 熱縮套管成本
+  CWDrawLineCost:
+    type: MATH
+    formula: CWDrawLineQty?CWDrawLineQty * drawLineup * (1 + drawLinelossrate):0
+    label: 畫線成本
+  CWConductiveDoubleSideTapeCost:
+    type: MATH
+    formula: CWConductiveDoubleSideTapeQty?CWConductiveDoubleSideTapeQty * (CWConductiveDoubleSideTapeLength*CWConductiveDoubleSideTapewidth * 0.000001) * conductivedoublesidetapeup * (1 + conductivedoublesidetapelossrate):0
+    label: 導電雙面膠成本
+  CWMylarCY28Pet005Cost:
+    type: MATH
+    formula: CWMylarCY28Pet005Qty?CWMylarCY28Pet005Qty * (CWMylarCY28Pet005Length*CWMylarCY28Pet005width  *0.000001)* mylarCY28Pet005up * (1 + mylarCY28Pet005lossrate):0
+    label: Mylar(CY28_PET) T=0.05成本
+  CWMylarPet6027D01Cost:
+    type: MATH
+    formula: CWMylarPet6027D01Qty?CWMylarPet6027D01Qty * (CWMylarPet6027D01Length*CWMylarPet6027D01width * 0.000001)* mylarPet6027D01up * (1 + mylarPet6027D01lossrate):0
+    label: Mylar(PET_6027D) T=0.1成本
+  CWDoubleSideTapeCost:
+    type: MATH
+    formula: CWDoubleSideTapeQty?CWDoubleSideTapeQty * (CWDoubleSideTapeLength*CWDoubleSideTapewidth * 0.000001)* doubleSideTapeup * (1 + doubleSideTapelossrate):0
+    label: 雙面膠成本
+
+global:
+  # 所有線材長度加總：跨group拿到 cableWireMaterial 欄位裡面的value
+  sumCableMaterialLength:
+    type: GROUPFUNC
+    label: 材料長度總和
+    groups:
+      - cableWireMaterial
+    func: "list => list.reduce((prev, curr) =>{
+      const { teflonLength = 0, coaxialLength = 0 } = curr;
+      const length = teflonLength || coaxialLength;
+      return +length + prev;
+    }, 0)"
+
+scope:
+  CWGroundFilmQty: CWGroundFilmQty
+
+  CWKaptonLength: CWKaptonLength
+  CWKaptonwidth: CWKaptonwidth
+  CWKaptonQty: CWKaptonQty
+
+  CWAceticAcidClothLength: CWAceticAcidClothLength
+  CWAceticAcidClothwidth: CWAceticAcidClothwidth
+  CWAceticAcidClothQty: CWAceticAcidClothQty
+
+  CWTeflonTapeLength: CWTeflonTapeLength
+  CWTeflonTapeWidth: CWTeflonTapeWidth
+  CWTeflonTapeQty: CWTeflonTapeQty
+
+  CWConductiveClothLength: CWConductiveClothLength
+  CWConductiveClothWidth: CWConductiveClothWidth
+  CWConductiveClothQty: CWConductiveClothQty
+
+  CWTwistedWireQty: CWTwistedWireQty
+
+  CWUvGlueQty: CWUvGlueQty
+
+  CWLabelQty: CWLabelQty
+
+  CWHeatShrinkableTubingsQty: CWHeatShrinkableTubingsQty
+
+  CWDrawLineQty: CWDrawLineQty
+
+  CWConductiveDoubleSideTapeLength: CWConductiveDoubleSideTapeLength
+  CWConductiveDoubleSideTapewidth: CWConductiveDoubleSideTapewidth
+  CWConductiveDoubleSideTapeQty: CWConductiveDoubleSideTapeQty
+
+  CWMylarCY28Pet005Length: CWMylarCY28Pet005Length
+  CWMylarCY28Pet005width: CWMylarCY28Pet005width
+  CWMylarCY28Pet005Qty: CWMylarCY28Pet005Qty
+
+  CWMylarPet6027D01Length: CWMylarPet6027D01Length
+  CWMylarPet6027D01width: CWMylarPet6027D01width
+  CWMylarPet6027D01Qty: CWMylarPet6027D01Qty
+
+  CWDoubleSideTapeLength: CWDoubleSideTapeLength
+  CWDoubleSideTapewidth: CWDoubleSideTapewidth
+  CWDoubleSideTapeQty: CWDoubleSideTapeQty
+
+  layoutKey: layoutKey
+
+constant:
+  groundfilmup:
+    label: 地片單價
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - earth_tag_cost
+    # value: 0.0049
+  groundfilmuplossrate:
+    label: 地片Loss rate
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - earth_tag_loss_rate
+    # value: 0.015
+  groundfilmassytime:
+    label: 地片組裝時間
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - earth_tag_assembly
+    # value: 14
+  labelup:
+    label: label單價
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - label_cost
+    # value: 0.001
+  labellossrate:
+    label: label Loss rate
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - label_loss_rate
+    # value: 0.005
+  labelassytime:
+    label: Label組裝時間
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - label_assembly
+    # value: 5
+  uvglueup:
+    label: UV GLUE單價
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - uv_glue_cost
+    # value: 0.001
+  uvgluelossrate:
+    label: UV GLUE Loss rate
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - uv_glue_loss_rate
+    # value: 0.015
+  uvglueassytime:
+    label: UV GLUE組裝時間
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - uv_glue_assembly
+    # value: 12
+  kaptonup:
+    label: KAPTON單價
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - kapton_cost
+    # value: 1.1527
+  kaptonlossrate:
+    label: KAPTON Loss rate
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - kapton_loss_rate
+    # value: 0.015
+  kaptonassytime:
+    label: Kapton組裝時間
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - kapton_loss_assembly
+    # value: 5
+  teflonTapeup:
+    label: Teflon膠带單價
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - teflon_tape_cost
+    # value: 3.0259
+  teflonTapelossrate:
+    label: Teflon膠带 Loss rate
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - teflon_tape_loss_rate
+    # value: 0.015
+  teflontapeassytime:
+    label: Teflon膠带組裝時間
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - teflon_tape_assembly
+    # value: 5
+  aceticacidclothup:
+    label: 醋酸布單價
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - acetate_cloth_cost
+    # value: 4.044
+  aceticacidclothlossrate:
+    label: 醋酸布 loss rate
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - acetate_cloth_loss_rate
+    # value: 0.005
+  aceticacidclothassytime:
+    label: 醋酸布組裝時間
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - acetate_cloth_assembly
+    # value: 5
+  conductiveclothup:
+    label: 導電布單價
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - conductive_fabric_cost
+    #  value: 19.5
+  conductiveclothlossrate:
+    label: 導電布 loss rate
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - conductive_fabric_loss_rate
+    # value: 0.015
+  conductiveclothconstant:
+    label: 導電布常數
+    value: 0.000001
+  conductiveclothassytime:
+    label: 導電布組裝時間
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - conductive_fabric_assembly
+    # value: 5
+  twistedwireup:
+    label: 絞線單價
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - stranded_wire_cost
+    # value: 0.0001
+  twistedwirelossrate:
+    label: 絞線 loss rate
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - stranded_wire_loss_rate
+    # value: 0.005
+  twistedwireassytime:
+    label: 絞線組裝時間
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - stranded_wire_assembly
+    # value: 8
+  drawLineup:
+    label: 畫線單價
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - draw_line_cost
+    # value: 0.0001
+  drawLinelossrate:
+    label: 畫線loss rate
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - draw_line_loss_rate
+    # value: 0.005
+  drawlineassytime:
+    label: 畫線組裝時間
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - draw_line_assembly
+    # value: 5
+  conductivedoublesidetapeup:
+    label: 導電雙面膠單價
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - conductive_double_sided_tape_cost
+    # value: 3.6764
+  conductivedoublesidetapelossrate:
+    label: 導電雙面膠loss rate
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - conductive_double_sided_tape_loss_rate
+    # value: 0.005
+  conductivedoublesidetapeassytime:
+    label: 導電雙面膠組裝時間
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - conductive_double_sided_tape_assembly
+    # value: 5
+  mylarCY28Pet005up:
+    label: Mylar(CY28_PET) T=0.05單價
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - mylar_cy28_pet_t_0.05_cost
+    # value: 0.51176
+  mylarCY28Pet005lossrate:
+    label: Mylar(CY28_PET) T=0.05 loss rate
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - mylar_cy28_pet_t_0.05_loss_rate
+    # value: 0.005
+  mylarCY28Pet005assytime:
+    label: Mylar(CY28_PET) T=0.05 組裝時間
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - mylar_cy28_pet_t_0.05_assembly
+    # value: 5
+  mylarPet6027D01up:
+    label: Mylar(PET_6027D) T=0.1單價
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - mylar_pet_6027d_t_0.1_cost
+    # value: 0.5764
+  mylarPet6027D01lossrate:
+    label: Mylar(PET_6027D) T=0.1 loss rate
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - mylar_pet_6027d_t_0.1_loss_rate
+    # value: 0.005
+  mylarPet6027D01assytime:
+    label: Mylar(PET_6027D) T=0.1 組裝時間
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - mylar_pet_6027d_t_0.1_assembly
+    # value: 5
+  doubleSideTapeup:
+    label: 雙面膠單價
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - double_sided_tape_cost
+    # value: 1.875
+  doubleSideTapelossrate:
+    label: 雙面膠loss rate
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - double_sided_tape_loss_rate
+    # value: 0.005
+  doublesidetapeassytime:
+    label: 雙面膠組裝時間
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - double_sided_tape_assembly
+    # value: 5
+  heatshrinkabletubingsup:
+    label: 熱縮套管單價
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - heat_shrinkable_sleeve_cost
+    # value: 0.001
+  heatshrinkabletubingslossrate:
+    label: 熱縮套管 loss rate
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - heat_shrinkable_sleeve_loss_rate
+    # value: 0.005
+  heatshrinkabletubingsbigger_300_assytime:
+    label: 熱縮套管組裝時間
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - heat_shrinkable_sleeve_bigger_300_assembly
+    # value: 30
+  heatshrinkabletubingssmaller_300_assytime:
+    label: 熱縮套管組裝時間
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - heat_shrinkable_sleeve_smaller_300_assembly
+    # value: 15
+  areaunittrnsferconstant:
+    label: 輔料費 面積單位換算常數
+    ?getCableWireCommon:
+      - cable_wire_auxiliary_materials
+      - area_unit_trnsfer_constant
+    # value: 1000000

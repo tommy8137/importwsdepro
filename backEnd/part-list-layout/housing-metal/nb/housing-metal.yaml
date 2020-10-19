@@ -1,0 +1,322 @@
+version: 2
+layout:
+  - key: toolingPartList
+    $Template:
+      - tab
+    label: Tooling Part List
+    # visiable: true
+    group:
+      - housingMetal
+    items:
+      - key: hmUser
+        $Template:
+          - composite
+        label: Fill by ME RD
+        $housing-metal.layout.HMUser:
+          - ^items
+        multiple: false
+
+      - key: hmTooling
+        $Template:
+          - composite
+        label: Fill by tooling Team
+        $housing-metal.layout.hmTooling:
+          - ^items
+        multiple: false
+
+  - key: CMFProcessList
+    $Template:
+      - tab
+    label: CMF and Process List
+    visiable: false
+    group:
+      - housingMetal
+    items:
+      - key: cmfProcessListUltrasonicClean
+        $Template:
+          - composite
+        label: 超音波清洗
+        $housing-metal.layout.CmfProcessListUltrasonicClean:
+          - ^items
+        multiple: false
+        showCostByKey: cmfProcessListUltrasonicClean
+
+      - key: cmfProcessListAnode
+        $Template:
+          - composite
+        label: 陽極
+        $housing-metal.layout.CmfProcessListAnode:
+          - ^items
+        multiple: false
+        showCostByKey: cmfProcessListAnode
+
+      - key: cmfProcessListSandBlast
+        $Template:
+          - composite
+        label: 噴砂
+        $housing-metal.layout.CmfProcessListSandBlast:
+          - ^items
+        multiple: false
+        showCostByKey: cmfProcessListSandBlast
+
+      - key: cmfProcessListHairLine
+        $Template:
+          - composite
+        label: 髮絲
+        $housing-metal.layout.CmfProcessListHairLine:
+          - ^items
+        multiple: false
+        showCostByKey: cmfProcessListHairLine
+
+      - key: cmfProcessListPainting
+        $Template:
+          - composite
+        label: Painting噴漆
+        $housing-metal.layout.CmfProcessListPainting:
+          - ^items
+        multiple: false
+        showCostByKey: cmfProcessListPatinting
+
+      - key: cmfProcessListThermalBonding
+        $Template:
+          - composite
+        label: Thermal Bonding熱壓
+        $housing-metal.layout.CmfProcessListThermalBonding:
+          - ^items
+        multiple: false
+        showCostByKey: cmfProcessListThermalBonding
+
+      - key: cmfProcessListSingleTapping
+        $Template:
+          - composite
+        label: 單點攻牙
+        $housing-metal.layout.CmfProcessListSingleTapping:
+          - ^items
+        multiple: false
+        showCostByKey: cmfProcessListSingleTapping
+
+      - key: cmfProcessListMultiTapping
+        $Template:
+          - composite
+        label: 多點攻牙
+        $housing-metal.layout.CmfProcessListMultiTapping:
+          - ^items
+        multiple: false
+        showCostByKey: cmfProcessListMultiTapping
+
+      - key: cmfProcessListSingleSpotWelding
+        $Template:
+          - composite
+        label: 單點點焊
+        $housing-metal.layout.CmfProcessListSingleSpotWelding:
+          - ^items
+        multiple: false
+        showCostByKey: cmfProcessListSingleSpotWelding
+
+      - key: cmfProcessListMultiSpotWelding
+        $Template:
+          - composite
+        label: 多點點焊
+        $housing-metal.layout.CmfProcessListMultiSpotWelding:
+          - ^items
+        multiple: false
+        showCostByKey: cmfProcessListMultiSpotWelding
+
+      # - key: cmfProcessListSingleRivet
+      #   $Template:
+      #     - composite
+      #   label: 單點鉚釘
+      #   $housing-metal.layout.CmfProcessListSingleRivet:
+      #     - ^items
+      #   multiple: false
+      #   showCostByKey: cmfProcessListSingleRivet
+
+      # - key: cmfProcessListMultiRivet
+      #   $Template:
+      #     - composite
+      #   label: 多點鉚釘
+      #   $housing-metal.layout.CmfProcessListMultiRivet:
+      #     - ^items
+      #   multiple: false
+      #   showCostByKey: cmfProcessListMultiRivet
+
+      # - key: cmfProcessListRivet
+      #   $Template:
+      #     - composite
+      #   label: 拉鉚釘
+      #   $housing-metal.layout.CmfProcessListRivet:
+      #     - ^items
+      #   multiple: false
+      #   showCostByKey: cmfProcessListRivet
+
+      - key: cmfProcessListHandMakeDraw
+        $Template:
+          - composite
+        label: 手工塗黑
+        $housing-metal.layout.CmfProcessListHandMakeDraw:
+          - ^items
+        multiple: false
+        showCostByKey: cmfProcessListHandMakeDraw
+
+      - key: cmfProcessListScreenPrinting
+        $Template:
+          - composite
+        label: Printing網印
+        $housing-metal.layout.CmfProcessListScreenPrinting:
+          - ^items
+        multiple: false
+        showCostByKey: cmfProcessListScreenPrinting
+
+      - key: cmfProcessListPadPrinting
+        $Template:
+          - composite
+        label: Printing移印
+        $housing-metal.layout.CmfProcessListPadPrinting:
+          - ^items
+        multiple: false
+        showCostByKey: cmfProcessListPadPrinting
+
+      - key: cmfProcessListSilkPrint
+        $Template:
+          - composite
+        label: Silk Print
+        $housing-metal.layout.CmfProcessListSilkPrint:
+          - ^items
+        multiple: false
+        showCostByKey: cmfProcessListSilkPrint
+
+      - key: cmfProcessListCNC
+        $Template:
+          - composite
+        label: CNC(公模面)
+        $housing-metal.layout.CmfProcessListCNC:
+          - ^items
+        multiple: false
+        showCostByKey: cmfProcessListCNC
+
+      - key: cmfProcessListCNCPL
+        $Template:
+          - composite
+        label: CNC(PL處)
+        $housing-metal.layout.CmfProcessListCNCPL:
+          - ^items
+        multiple: false
+        showCostByKey: cmfProcessListCNCPL
+
+      - key: cmfProcessListDrillCutPowerButton
+        $Template:
+          - composite
+        label: 鑽切(高光) - Power button鑽切
+        $housing-metal.layout.CmfProcessListDrillCutPowerButtom:
+          - ^items
+        multiple: false
+        showCostByKey: cmfProcessListDrillCutPowerButton
+      - key: cmfProcessListDrillCutTP
+        $Template:
+          - composite
+        label: 鑽切(高光) - TP鑽切
+        $housing-metal.layout.CmfProcessListDrillCutTP:
+          - ^items
+        multiple: false
+        showCostByKey: cmfProcessListDrillCutTP
+      - key: cmfProcessListDrillCutFingerprintHole
+        $Template:
+          - composite
+        label: 鑽切(高光) - 指紋孔鑽切
+        $housing-metal.layout.CmfProcessListDrillCutTPFingerprintHole:
+          - ^items
+        multiple: false
+        showCostByKey: cmfProcessListDrillCutFingerprintHole
+      - key: cmfProcessListDrillCutPowerHole
+        $Template:
+          - composite
+        label: 鑽切(高光) - 電源孔鑽切
+        $housing-metal.layout.CmfProcessListDrillCutPowerHole:
+          - ^items
+        multiple: false
+        showCostByKey: cmfProcessListDrillCutPowerHole
+      - key: cmfProcessListDrillCutFourSides
+        $Template:
+          - composite
+        label: 鑽切(高光) - 全週4週邊鑽切
+        $housing-metal.layout.CmfProcessListDrillCutFourSides:
+          - ^items
+        multiple: false
+        showCostByKey: cmfProcessListDrillCutFourSides
+
+      - key: cmfProcessListLaserPrint
+        $Template:
+          - composite
+        label: 鐳雕(公模面)
+        $housing-metal.layout.CmfProcessListLaserPrint:
+          - ^items
+        multiple: false
+        showCostByKey: cmfProcessListLaserPrint
+
+      - key: cmfProcessListLaserPrintIcon
+        $Template:
+          - composite
+        label: 鐳雕(icon)
+        $housing-metal.layout.CmfProcessListLaserPrintIcon:
+          - ^items
+        multiple: false
+        showCostByKey: cmfProcessListLaserPrintIcon
+
+      - key: cmfProcessListPolishing
+        $Template:
+          - composite
+        label: 打磨
+        $housing-metal.layout.CmfProcessListPolishing:
+          - ^items
+        multiple: false
+        showCostByKey: cmfProcessListPolishing
+
+      - key: cmfProcessListDrilling
+        $Template:
+          - composite
+        label: 鑽孔
+        $housing-metal.layout.CmfProcessListDrilling:
+          - ^items
+        multiple: false
+        showCostByKey: cmfProcessListDrilling
+
+      - key: cmfProcessListAnodizingRemoval
+        $Template:
+          - composite
+        label: 陽極掛點切除
+        $housing-metal.layout.CmfProcessListAnodizingRemoval:
+          - ^items
+        multiple: false
+        showCostByKey: cmfProcessListAnodizingRemoval
+
+  - key: hmCeParametersTab
+    $Template:
+      - tab
+    label: CE 可調整係數
+    # visiable: true
+    group:
+      - housingMetal
+    items:
+      - key: hmCeParameters
+        $Template:
+          - composite
+        $housing-metal.layout.hmCeParameters:
+          - ^items
+        multiple: false
+        visiable: false
+    needCePolicy: true
+formulas:
+  housingMetal:
+    $housing-metal.nb.formula.HousingMetal:
+      - ^formula
+      - ^scope
+      - ^constant
+      - ^output
+      - ^global
+  stamping:
+    $housing-metal.nb.formula.HmToolingStampingFormula:
+      - ^formula
+      - ^scope
+      - ^constant
+      - ^output
+      - ^global

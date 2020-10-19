@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 18 16">
+    <defs>
+        <style>
+            .cls-1{fill:#ec0c0c}
+        </style>
+    </defs>
+    <path id="ico_alarm_red" d="M-2854 16h-18l9-16 9 16zm-10-4v2h2v-2zm0-6v5h2V6h-2z" class="cls-1" transform="translate(2872)" />
+</svg>

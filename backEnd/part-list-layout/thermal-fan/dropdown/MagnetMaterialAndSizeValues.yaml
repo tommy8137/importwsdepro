@@ -1,0 +1,77 @@
+values:
+  - magnetMaterialAndSize: 橡膠
+    fanSize: 60*60*3.5
+    magnetMaterialAndSizePrice: 0
+  - magnetMaterialAndSize: MQ
+    fanSize: 60*60*3.5
+    magnetMaterialAndSizePrice: 0.1
+
+  - magnetMaterialAndSize: 橡膠
+    fanSize: 60*60*4
+    magnetMaterialAndSizePrice: 0
+  - magnetMaterialAndSize: MQ
+    fanSize: 60*60*4
+    magnetMaterialAndSizePrice: 0.1
+
+  - magnetMaterialAndSize: 橡膠
+    fanSize: 60*60*4.5
+    magnetMaterialAndSizePrice: 0
+  - magnetMaterialAndSize: MQ
+    fanSize: 60*60*4.5
+    magnetMaterialAndSizePrice: 0.1
+
+  - magnetMaterialAndSize: 橡膠
+    fanSize: 60*60*5
+    magnetMaterialAndSizePrice: 0
+  - magnetMaterialAndSize: MQ
+    fanSize: 60*60*5
+    magnetMaterialAndSizePrice: 0.1
+
+  - magnetMaterialAndSize: 橡膠
+    fanSize: 60*60*5.5
+    magnetMaterialAndSizePrice: 0
+  - magnetMaterialAndSize: MQ
+    fanSize: 60*60*5.5
+    magnetMaterialAndSizePrice: 0.1
+
+  - magnetMaterialAndSize: 橡膠
+    fanSize: 60*60*6
+    magnetMaterialAndSizePrice: 0
+  - magnetMaterialAndSize: MQ
+    fanSize: 60*60*6
+    magnetMaterialAndSizePrice: 0.15
+
+  - magnetMaterialAndSize: 橡膠
+    fanSize: 60*60*6.5
+    magnetMaterialAndSizePrice: 0
+  - magnetMaterialAndSize: MQ
+    fanSize: 60*60*6.5
+    magnetMaterialAndSizePrice: 0.15
+
+  - magnetMaterialAndSize: 橡膠
+    fanSize: 60*60*7
+    magnetMaterialAndSizePrice: 0
+  - magnetMaterialAndSize: MQ
+    fanSize: 60*60*7
+    magnetMaterialAndSizePrice: 0.15
+
+  - magnetMaterialAndSize: 橡膠
+    fanSize: 60*60*7.5
+    magnetMaterialAndSizePrice: 0
+  - magnetMaterialAndSize: MQ
+    fanSize: 60*60*7.5
+    magnetMaterialAndSizePrice: 0.15
+
+  - magnetMaterialAndSize: 橡膠
+    fanSize: 70*70*5
+    magnetMaterialAndSizePrice: 0
+  - magnetMaterialAndSize: MQ
+    fanSize: 70*70*5
+    magnetMaterialAndSizePrice: 0.15
+
+  - magnetMaterialAndSize: 橡膠
+    fanSize: 80*80*5
+    magnetMaterialAndSizePrice: 0
+  - magnetMaterialAndSize: MQ
+    fanSize: 80*80*5
+    magnetMaterialAndSizePrice: 0.15

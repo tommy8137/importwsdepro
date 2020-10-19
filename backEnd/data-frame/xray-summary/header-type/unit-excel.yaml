@@ -1,0 +1,5 @@
+headers:
+  unit:
+    label: Unit
+    $xray-summary.header-type.typeTemplate:
+      - unitString

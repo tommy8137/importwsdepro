@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}
+        </style>
+    </defs>
+    <path id="btn_logout_n" d="M0-848a10.011 10.011 0 0 1 10-10 10 10 0 0 1 7.517 3.411l-1.417 1.418A7.989 7.989 0 0 0 10-856a8.009 8.009 0 0 0-8 8 8.01 8.01 0 0 0 8 8 7.991 7.991 0 0 0 6.1-2.831l1.418 1.417A10.006 10.006 0 0 1 10-838a10.011 10.011 0 0 1-10-10zm17 1H9v-2h8v-2l4 3-4 3z" class="cls-1" transform="translate(0 858)"/>
+</svg>

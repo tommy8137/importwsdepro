@@ -1,0 +1,12 @@
+# Material
+values:
+ - material: SUS410
+   materialUnitPrice: 4.41
+   materialSyntax: SUS
+   materialDensity: 7.93
+   materialHeatingUnitPrice: 2.64705882352941
+ - material: 低碳鋼18A
+   materialUnitPrice: 2.14
+   materialSyntax: S18
+   materialDensity: 7.85
+   materialHeatingUnitPrice: 0.735294117647059

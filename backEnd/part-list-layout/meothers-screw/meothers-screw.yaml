@@ -1,0 +1,37 @@
+version: 2
+showMenu: false
+layout:
+  - key: meothers-screw
+    $Template:
+      - tab
+    # group:
+    #   - meothersscrew
+    label: default
+    visiable: false
+    items:
+      # $XXX(ex, $Fan) need first than $template-composite
+      - key: Screw
+        $Template:
+          - composite
+        label: Screw
+        group:
+          - Screw
+        $meothers-screw.layout.Screw:
+          - ^multiple
+          - ^items
+        minGroupCount: 1
+
+
+formulas:
+  meothersscrew:
+    $meothers-screw.formula.meothersscrew:
+      - ^formula
+      - ^scope
+      - ^constant
+      - ^output
+  Screw:
+    $meothers-screw.formula.Screw:
+      - ^formula
+      - ^scope
+      - ^constant
+      - ^output

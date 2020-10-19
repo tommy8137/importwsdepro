@@ -1,0 +1,1787 @@
+{
+  "xlsxName": "Test_Data_Die_Cut_NB.xlsx",
+  "sheetName": "NB_Die_Cut",
+  "startHorizontalCoordinates": "C",
+  "transferMode": "createPath",
+  "formate": "die-cut",
+  "metadata": {
+    "productType": {
+      "createPath": "productType",
+      "valuekey": "productType",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "1"
+    },
+    "testLabel": {
+      "createPath": "testLabel",
+      "valuekey": "testLabel",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "2"
+    },
+    "type1": {
+      "createPath": "type1",
+      "valuekey": "type1",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "3"
+    },
+    "type2": {
+      "createPath": "type2",
+      "valuekey": "type2",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "4"
+    }
+  },
+  "transferPartlistInfo": {
+    "formData,dieCutTab,DieCutPartItemInfo,partname": {
+      "createPath": "formData.dieCutTab.DieCutPartItemInfo.partname",
+      "valuekey": "partname",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 6,
+      "default": null
+    },
+    "formData,dieCutTab,DieCutPartItemInfo,partnumber": {
+      "createPath": "formData.dieCutTab.DieCutPartItemInfo.partnumber",
+      "valuekey": "partnumber",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": 7,
+      "default": null
+    },
+    "formData,dieCutTab,DieCutPartItemInfo,debrisCleaning": {
+      "createPath": "formData.dieCutTab.DieCutPartItemInfo.debrisCleaning",
+      "valuekey": "debrisCleaning",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 107,
+      "default": null
+    },
+    "formData,dieCutTab,DieCutPartItemInfo,debrisCleaningCount": {
+      "createPath": "formData.dieCutTab.DieCutPartItemInfo.debrisCleaningCount",
+      "valuekey": "debrisCleaningCount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,dieCutTab,DieCutPartItemInfo,releasePaperType": {
+      "createPath": "formData.dieCutTab.DieCutPartItemInfo.releasePaperType",
+      "valuekey": "releasePaperType",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 8,
+      "default": null
+    },
+    "formData,dieCutTab,DieCutPartItemInfo,releasePaperTypePrice": {
+      "createPath": "formData.dieCutTab.DieCutPartItemInfo.releasePaperTypePrice",
+      "valuekey": "releasePaperTypePrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,dieCutTab,DieCutPartItemInfo,printingCount": {
+      "createPath": "formData.dieCutTab.DieCutPartItemInfo.printingCount",
+      "valuekey": "printingCount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 9,
+      "default": null
+    },
+    "formData,dieCutTab,DieCutPartItemInfo,dieCutRemark": {
+      "createPath": "formData.dieCutTab.DieCutPartItemInfo.dieCutRemark",
+      "valuekey": "dieCutRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": 10,
+      "default": null
+    },
+    "formData,dieCutTab,MainMaterial,type2": {
+      "createPath": "formData.dieCutTab.MainMaterial.type2",
+      "valuekey": "type2",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 12,
+      "default": null
+    },
+    "formData,dieCutTab,MainMaterial,materialspec": {
+      "createPath": "formData.dieCutTab.MainMaterial.materialspec",
+      "valuekey": "materialspec",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 13,
+      "default": null
+    },
+    "formData,dieCutTab,MainMaterial,material": {
+      "createPath": "formData.dieCutTab.MainMaterial.material",
+      "valuekey": "material",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 14,
+      "default": null
+    },
+    "formData,dieCutTab,MainMaterial,mainMaterialSize,partssizelength": {
+      "createPath": "formData.dieCutTab.MainMaterial.mainMaterialSize.partssizelength",
+      "valuekey": "partssizelength",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 15,
+      "default": null
+    },
+    "formData,dieCutTab,MainMaterial,mainMaterialSize,partssizewidth": {
+      "createPath": "formData.dieCutTab.MainMaterial.mainMaterialSize.partssizewidth",
+      "valuekey": "partssizewidth",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 16,
+      "default": null
+    },
+    "formData,dieCutTab,MainMaterial,mainMaterialSize,partssizehigh": {
+      "createPath": "formData.dieCutTab.MainMaterial.mainMaterialSize.partssizehigh",
+      "valuekey": "partssizehigh",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": 17,
+      "default": null
+    },
+    "formData,dieCutTab,MainMaterial,materialPerCost": {
+      "createPath": "formData.dieCutTab.MainMaterial.materialPerCost",
+      "valuekey": "materialPerCost",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,dieCutTab,MainMaterial,materialspecRemark": {
+      "createPath": "formData.dieCutTab.MainMaterial.materialspecRemark",
+      "valuekey": "materialspecRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,dieCutTab,MainMaterial,materialRemark": {
+      "createPath": "formData.dieCutTab.MainMaterial.materialRemark",
+      "valuekey": "materialRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,dieCutTab,minorMaterialCost,0,uuid": {
+      "createPath": "formData.dieCutTab.minorMaterialCost.0.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,dieCutTab,minorMaterialCost,0,minorMaterialLabel": {
+      "createPath": "formData.dieCutTab.minorMaterialCost.0.minorMaterialLabel",
+      "valuekey": "minorMaterialLabel",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,dieCutTab,minorMaterialCost,0,minorType2": {
+      "createPath": "formData.dieCutTab.minorMaterialCost.0.minorType2",
+      "valuekey": "minorType2",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 21,
+      "default": null
+    },
+    "formData,dieCutTab,minorMaterialCost,0,minorMaterialspec": {
+      "createPath": "formData.dieCutTab.minorMaterialCost.0.minorMaterialspec",
+      "valuekey": "minorMaterialspec",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 22,
+      "default": null
+    },
+    "formData,dieCutTab,minorMaterialCost,0,minorMaterial": {
+      "createPath": "formData.dieCutTab.minorMaterialCost.0.minorMaterial",
+      "valuekey": "minorMaterial",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 23,
+      "default": null
+    },
+    "formData,dieCutTab,minorMaterialCost,0,materialSizeCompisite,minorPartssizelength": {
+      "createPath": "formData.dieCutTab.minorMaterialCost.0.materialSizeCompisite.minorPartssizelength",
+      "valuekey": "minorPartssizelength",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 24,
+      "default": null
+    },
+    "formData,dieCutTab,minorMaterialCost,0,materialSizeCompisite,minorPartssizewidth": {
+      "createPath": "formData.dieCutTab.minorMaterialCost.0.materialSizeCompisite.minorPartssizewidth",
+      "valuekey": "minorPartssizewidth",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 25,
+      "default": null
+    },
+    "formData,dieCutTab,minorMaterialCost,0,materialSizeCompisite,minorPartssizehigh": {
+      "createPath": "formData.dieCutTab.minorMaterialCost.0.materialSizeCompisite.minorPartssizehigh",
+      "valuekey": "minorPartssizehigh",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 26,
+      "default": 0
+    },
+    "formData,dieCutTab,minorMaterialCost,0,minorMaterialPerCost": {
+      "createPath": "formData.dieCutTab.minorMaterialCost.0.minorMaterialPerCost",
+      "valuekey": "minorMaterialPerCost",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,dieCutTab,minorMaterialCost,0,minorMaterialspecRemark": {
+      "createPath": "formData.dieCutTab.minorMaterialCost.0.minorMaterialspecRemark",
+      "valuekey": "minorMaterialspecRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,dieCutTab,minorMaterialCost,0,minorMaterialRemark": {
+      "createPath": "formData.dieCutTab.minorMaterialCost.0.minorMaterialRemark",
+      "valuekey": "minorMaterialRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,0,uuid": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.0.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,0,subMaterialLabel": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.0.subMaterialLabel",
+      "valuekey": "subMaterialLabel",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,0,subType2": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.0.subType2",
+      "valuekey": "subType2",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 46,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,0,subMaterialspec": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.0.subMaterialspec",
+      "valuekey": "subMaterialspec",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 47,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,0,subMaterial": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.0.subMaterial",
+      "valuekey": "subMaterial",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 48,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,0,materialSize,subPartssizelength": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.0.materialSize.subPartssizelength",
+      "valuekey": "subPartssizelength",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 49,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,0,materialSize,subPartssizewidth": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.0.materialSize.subPartssizewidth",
+      "valuekey": "subPartssizewidth",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 50,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,0,materialSize,subPartssizehigh": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.0.materialSize.subPartssizehigh",
+      "valuekey": "subPartssizehigh",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 51,
+      "default": 0
+    },
+    "formData,dieCutTab,usingSubMaterial,0,assyCount": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.0.assyCount",
+      "valuekey": "assyCount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 52,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,0,subMaterialRemark": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.0.subMaterialRemark",
+      "valuekey": "subMaterialRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,0,subMaterialPerCost": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.0.subMaterialPerCost",
+      "valuekey": "subMaterialPerCost",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,dieCutTab,usingSubMaterial,0,subMaterialspecRemark": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.0.subMaterialspecRemark",
+      "valuekey": "subMaterialspecRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,0,subMaterialOtherFillMeRemark": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.0.subMaterialOtherFillMeRemark",
+      "valuekey": "subMaterialOtherFillMeRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,1,uuid": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.1.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,1,subMaterialLabel": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.1.subMaterialLabel",
+      "valuekey": "subMaterialLabel",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,1,subType2": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.1.subType2",
+      "valuekey": "subType2",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 55,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,1,subMaterialspec": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.1.subMaterialspec",
+      "valuekey": "subMaterialspec",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 56,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,1,subMaterial": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.1.subMaterial",
+      "valuekey": "subMaterial",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 57,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,1,materialSize,subPartssizelength": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.1.materialSize.subPartssizelength",
+      "valuekey": "subPartssizelength",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 58,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,1,materialSize,subPartssizewidth": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.1.materialSize.subPartssizewidth",
+      "valuekey": "subPartssizewidth",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 59,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,1,materialSize,subPartssizehigh": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.1.materialSize.subPartssizehigh",
+      "valuekey": "subPartssizehigh",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 60,
+      "default": 0
+    },
+    "formData,dieCutTab,usingSubMaterial,1,assyCount": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.1.assyCount",
+      "valuekey": "assyCount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 61,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,1,subMaterialRemark": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.1.subMaterialRemark",
+      "valuekey": "subMaterialRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,1,subMaterialPerCost": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.1.subMaterialPerCost",
+      "valuekey": "subMaterialPerCost",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,dieCutTab,usingSubMaterial,1,subMaterialspecRemark": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.1.subMaterialspecRemark",
+      "valuekey": "subMaterialspecRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,1,subMaterialOtherFillMeRemark": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.1.subMaterialOtherFillMeRemark",
+      "valuekey": "subMaterialOtherFillMeRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,2,uuid": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.2.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,2,subMaterialLabel": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.2.subMaterialLabel",
+      "valuekey": "subMaterialLabel",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,2,subType2": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.2.subType2",
+      "valuekey": "subType2",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 64,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,2,subMaterialspec": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.2.subMaterialspec",
+      "valuekey": "subMaterialspec",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 65,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,2,subMaterial": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.2.subMaterial",
+      "valuekey": "subMaterial",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 66,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,2,materialSize,subPartssizelength": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.2.materialSize.subPartssizelength",
+      "valuekey": "subPartssizelength",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 67,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,2,materialSize,subPartssizewidth": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.2.materialSize.subPartssizewidth",
+      "valuekey": "subPartssizewidth",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 68,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,2,materialSize,subPartssizehigh": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.2.materialSize.subPartssizehigh",
+      "valuekey": "subPartssizehigh",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 69,
+      "default": 0
+    },
+    "formData,dieCutTab,usingSubMaterial,2,assyCount": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.2.assyCount",
+      "valuekey": "assyCount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 70,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,2,subMaterialRemark": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.2.subMaterialRemark",
+      "valuekey": "subMaterialRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,2,subMaterialPerCost": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.2.subMaterialPerCost",
+      "valuekey": "subMaterialPerCost",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,dieCutTab,usingSubMaterial,2,subMaterialspecRemark": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.2.subMaterialspecRemark",
+      "valuekey": "subMaterialspecRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,2,subMaterialOtherFillMeRemark": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.2.subMaterialOtherFillMeRemark",
+      "valuekey": "subMaterialOtherFillMeRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,3,uuid": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.3.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,3,subMaterialLabel": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.3.subMaterialLabel",
+      "valuekey": "subMaterialLabel",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,3,subType2": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.3.subType2",
+      "valuekey": "subType2",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 73,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,3,subMaterialspec": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.3.subMaterialspec",
+      "valuekey": "subMaterialspec",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 74,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,3,subMaterial": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.3.subMaterial",
+      "valuekey": "subMaterial",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 75,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,3,materialSize,subPartssizelength": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.3.materialSize.subPartssizelength",
+      "valuekey": "subPartssizelength",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 76,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,3,materialSize,subPartssizewidth": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.3.materialSize.subPartssizewidth",
+      "valuekey": "subPartssizewidth",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 77,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,3,materialSize,subPartssizehigh": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.3.materialSize.subPartssizehigh",
+      "valuekey": "subPartssizehigh",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 78,
+      "default": 0
+    },
+    "formData,dieCutTab,usingSubMaterial,3,assyCount": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.3.assyCount",
+      "valuekey": "assyCount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 79,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,3,subMaterialRemark": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.3.subMaterialRemark",
+      "valuekey": "subMaterialRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,3,subMaterialPerCost": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.3.subMaterialPerCost",
+      "valuekey": "subMaterialPerCost",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,dieCutTab,usingSubMaterial,3,subMaterialspecRemark": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.3.subMaterialspecRemark",
+      "valuekey": "subMaterialspecRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,3,subMaterialOtherFillMeRemark": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.3.subMaterialOtherFillMeRemark",
+      "valuekey": "subMaterialOtherFillMeRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,4,uuid": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.4.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,4,subMaterialLabel": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.4.subMaterialLabel",
+      "valuekey": "subMaterialLabel",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,4,subType2": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.4.subType2",
+      "valuekey": "subType2",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 82,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,4,subMaterialspec": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.4.subMaterialspec",
+      "valuekey": "subMaterialspec",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 83,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,4,subMaterial": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.4.subMaterial",
+      "valuekey": "subMaterial",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 84,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,4,materialSize,subPartssizelength": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.4.materialSize.subPartssizelength",
+      "valuekey": "subPartssizelength",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 85,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,4,materialSize,subPartssizewidth": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.4.materialSize.subPartssizewidth",
+      "valuekey": "subPartssizewidth",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 86,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,4,materialSize,subPartssizehigh": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.4.materialSize.subPartssizehigh",
+      "valuekey": "subPartssizehigh",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 87,
+      "default": 0
+    },
+    "formData,dieCutTab,usingSubMaterial,4,assyCount": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.4.assyCount",
+      "valuekey": "assyCount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 88,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,4,subMaterialRemark": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.4.subMaterialRemark",
+      "valuekey": "subMaterialRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,4,subMaterialPerCost": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.4.subMaterialPerCost",
+      "valuekey": "subMaterialPerCost",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,dieCutTab,usingSubMaterial,4,subMaterialspecRemark": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.4.subMaterialspecRemark",
+      "valuekey": "subMaterialspecRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,4,subMaterialOtherFillMeRemark": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.4.subMaterialOtherFillMeRemark",
+      "valuekey": "subMaterialOtherFillMeRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,5,uuid": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.5.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,5,subMaterialLabel": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.5.subMaterialLabel",
+      "valuekey": "subMaterialLabel",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,5,subType2": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.5.subType2",
+      "valuekey": "subType2",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 91,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,5,subMaterialspec": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.5.subMaterialspec",
+      "valuekey": "subMaterialspec",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 92,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,5,subMaterial": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.5.subMaterial",
+      "valuekey": "subMaterial",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 93,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,5,materialSize,subPartssizelength": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.5.materialSize.subPartssizelength",
+      "valuekey": "subPartssizelength",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 94,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,5,materialSize,subPartssizewidth": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.5.materialSize.subPartssizewidth",
+      "valuekey": "subPartssizewidth",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 95,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,5,materialSize,subPartssizehigh": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.5.materialSize.subPartssizehigh",
+      "valuekey": "subPartssizehigh",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 96,
+      "default": 0
+    },
+    "formData,dieCutTab,usingSubMaterial,5,assyCount": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.5.assyCount",
+      "valuekey": "assyCount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 97,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,5,subMaterialRemark": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.5.subMaterialRemark",
+      "valuekey": "subMaterialRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,5,subMaterialPerCost": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.5.subMaterialPerCost",
+      "valuekey": "subMaterialPerCost",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,dieCutTab,usingSubMaterial,5,subMaterialspecRemark": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.5.subMaterialspecRemark",
+      "valuekey": "subMaterialspecRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,dieCutTab,usingSubMaterial,5,subMaterialOtherFillMeRemark": {
+      "createPath": "formData.dieCutTab.usingSubMaterial.5.subMaterialOtherFillMeRemark",
+      "valuekey": "subMaterialOtherFillMeRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    }
+  },
+  "verifyInfo": {
+    "0": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "0",
+      "valueType": "0",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.ecoFormValues.value.values.0"
+    },
+    "1": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "1",
+      "valueType": "1",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.ecoFormValues.value.values.1"
+    },
+    "totalPrices": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "totalPrices",
+      "valueType": "totalPrices",
+      "comparisonValuePath": "totalPrices"
+    },
+    "parentGroupId": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "parentGroupId",
+      "valueType": "parentGroupId",
+      "comparisonValuePath": "forDebug.summary.dieCut.parentGroupId"
+    },
+    "subMateriallossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "subMateriallossRate",
+      "valueType": "subMateriallossRate",
+      "comparisonValuePath": "forDebug.summary.subMaterialCost-fbf05755-79de-4438-8936-2eaae8996637.subMateriallossRate"
+    },
+    "type2": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "type2",
+      "valueType": "type2",
+      "comparisonValuePath": "forDebug.summary.dieCut.materialList.7.prevObj.type2"
+    },
+    "material": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "material",
+      "valueType": "material",
+      "comparisonValuePath": "forDebug.summary.materialCost.material"
+    },
+    "materialspec": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "materialspec",
+      "valueType": "materialspec",
+      "comparisonValuePath": "forDebug.summary.materialCost.materialspec"
+    },
+    "partssizelength": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "partssizelength",
+      "valueType": "partssizelength",
+      "comparisonValuePath": "forDebug.summary.dieCut.materialList.7.prevObj.partssizelength"
+    },
+    "partssizewidth": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "partssizewidth",
+      "valueType": "partssizewidth",
+      "comparisonValuePath": "forDebug.summary.dieCut.materialList.7.prevObj.partssizewidth"
+    },
+    "subMaterialPerCost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "subMaterialPerCost",
+      "valueType": "subMaterialPerCost",
+      "comparisonValuePath": "forDebug.summary.subMaterialCost-fbf05755-79de-4438-8936-2eaae8996637.subMaterialPerCost"
+    },
+    "assyCount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "assyCount",
+      "valueType": "assyCount",
+      "comparisonValuePath": "forDebug.summary.dieCut.materialList.7.prevObj.assyCount"
+    },
+    "isGasket": {
+      "label": "下料面積",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "isGasket",
+      "valueType": "isGasket",
+      "comparisonValuePath": "forDebug.summary.dieCut.materialList.7.prevObj.isGasket"
+    },
+    "materialSize": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "materialSize",
+      "valueType": "materialSize",
+      "comparisonValuePath": "forDebug.summary.materialCost.materialSize"
+    },
+    "total": {
+      "label": "總價",
+      "excelValueLongitudinalCoordinates": "116",
+      "valuekey": "total",
+      "valueType": "total",
+      "comparisonValuePath": "forDebug.summary.dieCut.total"
+    },
+    "machineType": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "machineType",
+      "valueType": "machineType",
+      "comparisonValuePath": "forDebug.summary.materialCost.machineTypeObject.machineType"
+    },
+    "length": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "length",
+      "valueType": "length",
+      "comparisonValuePath": "forDebug.summary.materialCost.machineTypeObject.length"
+    },
+    "width": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "width",
+      "valueType": "width",
+      "comparisonValuePath": "forDebug.summary.materialCost.machineTypeObject.width"
+    },
+    "machinePrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "machinePrice",
+      "valueType": "machinePrice",
+      "comparisonValuePath": "forDebug.summary.materialCost.machineTypeObject.machinePrice"
+    },
+    "areaTimes": {
+      "label": "數量/次",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "areaTimes",
+      "valueType": "areaTimes",
+      "comparisonValuePath": "forDebug.summary.dieCut.materialList.7.prevObj.areaTimes"
+    },
+    "stampingCost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "stampingCost",
+      "valueType": "stampingCost",
+      "comparisonValuePath": "forDebug.summary.dieCut.materialList.7.prevObj.stampingCost"
+    },
+    "isOtherFillMeRemark": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "isOtherFillMeRemark",
+      "valueType": "isOtherFillMeRemark",
+      "comparisonValuePath": "forDebug.summary.materialCost.isOtherFillMeRemark"
+    },
+    "mainMaterialLossRate": {
+      "label": "mainMaterialLossRate",
+      "excelValueLongitudinalCoordinates": "119",
+      "valuekey": "mainMaterialLossRate",
+      "valueType": "mainMaterialLossRate",
+      "comparisonValuePath": "forDebug.summary.materialCost.mainMaterialLossRate"
+    },
+    "minorMaterialPerCost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "minorMaterialPerCost",
+      "valueType": "minorMaterialPerCost",
+      "comparisonValuePath": "forDebug.summary.minorMaterialCost-08c4d550-6ad6-49b9-bd4c-5be2dabfde20.minorMaterialPerCost"
+    },
+    "materialPerCost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "materialPerCost",
+      "valueType": "materialPerCost",
+      "comparisonValuePath": "forDebug.summary.materialCost.materialPerCost"
+    },
+    "secondaryProcessingPrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "secondaryProcessingPrice",
+      "valueType": "secondaryProcessingPrice",
+      "comparisonValuePath": "forDebug.summary.dieCut.secondaryProcessingPrice"
+    },
+    "managementAndProfit": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "managementAndProfit",
+      "valueType": "managementAndProfit",
+      "comparisonValuePath": "forDebug.summary.dieCut.managementAndProfit"
+    },
+    "releasePaperTypePrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "releasePaperTypePrice",
+      "valueType": "releasePaperTypePrice",
+      "comparisonValuePath": "forDebug.summary.dieCut.releasePaperTypePrice"
+    },
+    "hasOtherFillMeRemark": {
+      "label": "檢查是否有group material, materialSpec 有填 Other_Fill_ME_Remark",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "hasOtherFillMeRemark",
+      "valueType": "hasOtherFillMeRemark",
+      "comparisonValuePath": "forDebug.summary.dieCut.hasOtherFillMeRemark"
+    },
+    "A-1_materialCostTotal": {
+      "label": "A-1.主要材料費",
+      "excelValueLongitudinalCoordinates": "19",
+      "valuekey": "A-1_materialCostTotal",
+      "valueType": "A-1_materialCostTotal",
+      "comparisonValuePath": "forDebug.summary.dieCut.A-1_materialCostTotal"
+    },
+    "A-2_minorMaterialCostTotal": {
+      "label": "A-2次主料材料費",
+      "excelValueLongitudinalCoordinates": "28",
+      "valuekey": "A-2_minorMaterialCostTotal",
+      "valueType": "A-2_minorMaterialCostTotal",
+      "comparisonValuePath": "forDebug.summary.dieCut.A-2_minorMaterialCostTotal"
+    },
+    "A-3_releasePaperTypeCost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "A-3_releasePaperTypeCost",
+      "valueType": "A-3_releasePaperTypeCost",
+      "comparisonValuePath": "forDebug.summary.dieCut.A-3_releasePaperTypeCost"
+    },
+    "A_mainMaterialCostTotal": {
+      "label": "A.主要材料費",
+      "excelValueLongitudinalCoordinates": "11",
+      "valuekey": "A_mainMaterialCostTotal",
+      "valueType": "A_mainMaterialCostTotal",
+      "comparisonValuePath": "forDebug.summary.dieCut.A_mainMaterialCostTotal"
+    },
+    "B_subMaterialCostTotal": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "B_subMaterialCostTotal",
+      "valueType": "B_subMaterialCostTotal",
+      "comparisonValuePath": "forDebug.summary.dieCut.B_subMaterialCostTotal"
+    },
+    "stickingCount": {
+      "label": "總貼合數量 = 貼合數量加總  - 1",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "stickingCount",
+      "valueType": "stickingCount",
+      "comparisonValuePath": "forDebug.summary.dieCut.stickingCount"
+    },
+    "stampingCount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "stampingCount",
+      "valueType": "stampingCount",
+      "comparisonValuePath": "forDebug.summary.dieCut.materialList.7.stampingCount"
+    },
+    "stampingProcessCost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "stampingProcessCost",
+      "valueType": "stampingProcessCost",
+      "comparisonValuePath": "forDebug.summary.dieCut.materialList.7.stampingProcessCost"
+    },
+    "hasSameSize": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "hasSameSize",
+      "valueType": "hasSameSize",
+      "comparisonValuePath": "forDebug.summary.dieCut.materialList.7.hasSameSize"
+    },
+    "prevObj": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "prevObj",
+      "valueType": "prevObj",
+      "comparisonValuePath": "forDebug.summary.dieCut.materialList.0.prevObj"
+    },
+    "C_stampingCostTotal": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "C_stampingCostTotal",
+      "valueType": "C_stampingCostTotal",
+      "comparisonValuePath": "forDebug.summary.dieCut.C_stampingCostTotal"
+    },
+    "D_printingCost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "D_printingCost",
+      "valueType": "D_printingCost",
+      "comparisonValuePath": "forDebug.summary.dieCut.D_printingCost"
+    },
+    "E-1_stickingCost": {
+      "label": "手工貼合/轉貼費",
+      "excelValueLongitudinalCoordinates": "106",
+      "valuekey": "E-1_stickingCost",
+      "valueType": "E-1_stickingCost",
+      "comparisonValuePath": "forDebug.summary.dieCut.E-1_stickingCost"
+    },
+    "E-2_debrisCleaningCost": {
+      "label": "除屑清理/ 排廢料費費用",
+      "excelValueLongitudinalCoordinates": "108",
+      "valuekey": "E-2_debrisCleaningCost",
+      "valueType": "E-2_debrisCleaningCost",
+      "comparisonValuePath": "forDebug.summary.dieCut.E-2_debrisCleaningCost"
+    },
+    "E_secondaryProcessingCost": {
+      "label": "E.二次加工費",
+      "excelValueLongitudinalCoordinates": "104",
+      "valuekey": "E_secondaryProcessingCost",
+      "valueType": "E_secondaryProcessingCost",
+      "comparisonValuePath": "forDebug.summary.dieCut.E_secondaryProcessingCost"
+    },
+    "F_managementCost": {
+      "label": "F. 管銷&利潤  ",
+      "excelValueLongitudinalCoordinates": "115",
+      "valuekey": "F_managementCost",
+      "valueType": "F_managementCost",
+      "comparisonValuePath": "forDebug.summary.dieCut.F_managementCost"
+    },
+    "stampingTimes": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "stampingTimes",
+      "valueType": "stampingTimes",
+      "comparisonValuePath": "forDebug.summary.dieCut.stampingTimes"
+    },
+    "m1MachinePrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "m1MachinePrice",
+      "valueType": "m1MachinePrice",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.m1MachinePrice.value"
+    },
+    "m2MachinePrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "m2MachinePrice",
+      "valueType": "m2MachinePrice",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.m2MachinePrice.value"
+    },
+    "m3MachinePrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "m3MachinePrice",
+      "valueType": "m3MachinePrice",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.m3MachinePrice.value"
+    },
+    "m1EffectiveAreaL": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "m1EffectiveAreaL",
+      "valueType": "m1EffectiveAreaL",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.m1EffectiveAreaL.value"
+    },
+    "m2EffectiveAreaL": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "m2EffectiveAreaL",
+      "valueType": "m2EffectiveAreaL",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.m2EffectiveAreaL.value"
+    },
+    "m3EffectiveAreaL": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "m3EffectiveAreaL",
+      "valueType": "m3EffectiveAreaL",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.m3EffectiveAreaL.value"
+    },
+    "m1EffectiveAreaW": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "m1EffectiveAreaW",
+      "valueType": "m1EffectiveAreaW",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.m1EffectiveAreaW.value"
+    },
+    "m2EffectiveAreaW": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "m2EffectiveAreaW",
+      "valueType": "m2EffectiveAreaW",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.m2EffectiveAreaW.value"
+    },
+    "m3EffectiveAreaW": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "m3EffectiveAreaW",
+      "valueType": "m3EffectiveAreaW",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.m3EffectiveAreaW.value"
+    },
+    "otherFillMeRemarkName": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "otherFillMeRemarkName",
+      "valueType": "otherFillMeRemarkName",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.otherFillMeRemarkName.value"
+    },
+    "ecoFormValues": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "ecoFormValues",
+      "valueType": "string",
+      "comparisonValuePath": "forDebug.debugInfo.subMaterialCost-36772e81-23db-4d40-b5e7-c5f396a8c122.ecoFormValues.label"
+    },
+    "materialSizeAdderPrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "materialSizeAdderPrice",
+      "valueType": "string",
+      "comparisonValuePath": "forDebug.debugInfo.subMaterialCost-36772e81-23db-4d40-b5e7-c5f396a8c122.materialSizeAdderPrice.label"
+    },
+    "materialSizeMin": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "materialSizeMin",
+      "valueType": "materialSizeMin",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.materialSizeAdderPrice.value.values.4.materialSizeMin"
+    },
+    "materialSizeMax": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "materialSizeMax",
+      "valueType": "materialSizeMax",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.materialSizeAdderPrice.value.values.4.materialSizeMax"
+    },
+    "materialSizeValue": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "materialSizeValue",
+      "valueType": "materialSizeValue",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.materialSizeAdderPrice.value.values.4.materialSizeValue"
+    },
+    "activate_date": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "activate_date",
+      "valueType": "activate_date",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.materialPerCostValues.value.values.562.activate_date"
+    },
+    "subAreaTimesValues": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "subAreaTimesValues",
+      "valueType": "string",
+      "comparisonValuePath": "forDebug.debugInfo.subMaterialCost-36772e81-23db-4d40-b5e7-c5f396a8c122.subAreaTimesValues.label"
+    },
+    "id": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "id",
+      "valueType": "id",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.stampingTypePriceValues.value.values.1.id"
+    },
+    "sub_id": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "sub_id",
+      "valueType": "sub_id",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.stampingTypePriceValues.value.values.1.sub_id"
+    },
+    "min_id": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "min_id",
+      "valueType": "min_id",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.areaTimesValues.value.values.9.min_id"
+    },
+    "areaTimesMin": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "areaTimesMin",
+      "valueType": "areaTimesMin",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.areaTimesValues.value.values.9.areaTimesMin"
+    },
+    "areaTimesMax": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "areaTimesMax",
+      "valueType": "areaTimesMax",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.areaTimesValues.value.values.9.areaTimesMax"
+    },
+    "areaTimesValue": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "areaTimesValue",
+      "valueType": "areaTimesValue",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.areaTimesValues.value.values.9.areaTimesValue"
+    },
+    "subAreaTimesMin": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "subAreaTimesMin",
+      "valueType": "subAreaTimesMin",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.areaTimesValues.value.values.9.subAreaTimesMin"
+    },
+    "subAreaTimesMax": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "subAreaTimesMax",
+      "valueType": "subAreaTimesMax",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.areaTimesValues.value.values.9.subAreaTimesMax"
+    },
+    "subAreaTimesValue": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "subAreaTimesValue",
+      "valueType": "subAreaTimesValue",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.areaTimesValues.value.values.9.subAreaTimesValue"
+    },
+    "minorAreaTimesMin": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "minorAreaTimesMin",
+      "valueType": "minorAreaTimesMin",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.areaTimesValues.value.values.9.minorAreaTimesMin"
+    },
+    "minorAreaTimesMax": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "minorAreaTimesMax",
+      "valueType": "minorAreaTimesMax",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.areaTimesValues.value.values.9.minorAreaTimesMax"
+    },
+    "minorAreaTimesValue": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "minorAreaTimesValue",
+      "valueType": "minorAreaTimesValue",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.areaTimesValues.value.values.9.minorAreaTimesValue"
+    },
+    "subStampingTypePriceValues": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "subStampingTypePriceValues",
+      "valueType": "string",
+      "comparisonValuePath": "forDebug.debugInfo.subMaterialCost-36772e81-23db-4d40-b5e7-c5f396a8c122.subStampingTypePriceValues.label"
+    },
+    "stampingTypeName": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "stampingTypeName",
+      "valueType": "stampingTypeName",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.stampingTypePriceValues.value.values.1.stampingTypeName"
+    },
+    "stampingTypePrice": {
+      "label": "沖工費(USD)",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "stampingTypePrice",
+      "valueType": "stampingTypePrice",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.stampingTypePrice.value"
+    },
+    "minor_id": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "minor_id",
+      "valueType": "minor_id",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.stampingTypePriceValues.value.values.1.minor_id"
+    },
+    "minorStampingTypeName": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "minorStampingTypeName",
+      "valueType": "minorStampingTypeName",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.stampingTypePriceValues.value.values.1.minorStampingTypeName"
+    },
+    "minorStampingTypePrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "minorStampingTypePrice",
+      "valueType": "minorStampingTypePrice",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.stampingTypePriceValues.value.values.1.minorStampingTypePrice"
+    },
+    "subStampingTypeName": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "subStampingTypeName",
+      "valueType": "subStampingTypeName",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.stampingTypePriceValues.value.values.1.subStampingTypeName"
+    },
+    "subStampingTypePrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "subStampingTypePrice",
+      "valueType": "subStampingTypePrice",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.stampingTypePriceValues.value.values.1.subStampingTypePrice"
+    },
+    "stampingType": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "stampingType",
+      "valueType": "stampingType",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.stampingTypePriceValues.value.values.1.stampingType"
+    },
+    "minorStampingType": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "minorStampingType",
+      "valueType": "minorStampingType",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.stampingTypePriceValues.value.values.1.minorStampingType"
+    },
+    "subStampingType": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "subStampingType",
+      "valueType": "subStampingType",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.stampingTypePriceValues.value.values.1.subStampingType"
+    },
+    "subType2": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "subType2",
+      "valueType": "subType2",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.materialPerCostValues.value.values.562.subType2"
+    },
+    "subMaterial": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "subMaterial",
+      "valueType": "subMaterial",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.materialPerCostValues.value.values.562.subMaterial"
+    },
+    "subMaterialspec": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "subMaterialspec",
+      "valueType": "subMaterialspec",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.materialPerCostValues.value.values.562.subMaterialspec"
+    },
+    "subPartssizelength": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "subPartssizelength",
+      "valueType": "subPartssizelength",
+      "comparisonValuePath": "forDebug.debugInfo.subMaterialCost-fbf05755-79de-4438-8936-2eaae8996637.subPartssizelength.value"
+    },
+    "subPartssizewidth": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "subPartssizewidth",
+      "valueType": "subPartssizewidth",
+      "comparisonValuePath": "forDebug.debugInfo.subMaterialCost-fbf05755-79de-4438-8936-2eaae8996637.subPartssizewidth.value"
+    },
+    "subPartssizehigh": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "subPartssizehigh",
+      "valueType": "subPartssizehigh",
+      "comparisonValuePath": "forDebug.debugInfo.subMaterialCost-fbf05755-79de-4438-8936-2eaae8996637.subPartssizehigh.value"
+    },
+    "materialSizeAdderWidth": {
+      "label": "下料面積尺寸增加寬度",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "materialSizeAdderWidth",
+      "valueType": "materialSizeAdderWidth",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.materialSizeAdderWidth.value"
+    },
+    "materialSizeAdderLength": {
+      "label": "下料面積尺寸增加長度",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "materialSizeAdderLength",
+      "valueType": "materialSizeAdderLength",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.materialSizeAdderLength.value"
+    },
+    "commonMaterialSize": {
+      "label": "下料面積",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "commonMaterialSize",
+      "valueType": "commonMaterialSize",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.commonMaterialSize.value"
+    },
+    "gasketMaterialSize": {
+      "label": "Gasket下料面積",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "gasketMaterialSize",
+      "valueType": "gasketMaterialSize",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.gasketMaterialSize.value"
+    },
+    "machineTypeList": {
+      "label": "機台類型",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "machineTypeList",
+      "valueType": "string",
+      "comparisonValuePath": "forDebug.debugInfo.subMaterialCost-36772e81-23db-4d40-b5e7-c5f396a8c122.machineTypeList.label"
+    },
+    "machineTypeObject": {
+      "label": "機台類型Object",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "machineTypeObject",
+      "valueType": "string",
+      "comparisonValuePath": "forDebug.debugInfo.subMaterialCost-36772e81-23db-4d40-b5e7-c5f396a8c122.machineTypeObject.label"
+    },
+    "machineWidthCount": {
+      "label": "機台類型",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "machineWidthCount",
+      "valueType": "machineWidthCount",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.machineWidthCount.value"
+    },
+    "machineLengthCount": {
+      "label": "機台類型",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "machineLengthCount",
+      "valueType": "machineLengthCount",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.machineLengthCount.value"
+    },
+    "minorAreaTimesValues": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "minorAreaTimesValues",
+      "valueType": "string",
+      "comparisonValuePath": "forDebug.debugInfo.minorMaterialCost-08c4d550-6ad6-49b9-bd4c-5be2dabfde20.minorAreaTimesValues.label"
+    },
+    "minorPartssizehigh": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "minorPartssizehigh",
+      "valueType": "minorPartssizehigh",
+      "comparisonValuePath": "forDebug.debugInfo.minorMaterialCost-08c4d550-6ad6-49b9-bd4c-5be2dabfde20.minorPartssizehigh.value"
+    },
+    "minorPartssizelength": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "minorPartssizelength",
+      "valueType": "minorPartssizelength",
+      "comparisonValuePath": "forDebug.debugInfo.minorMaterialCost-08c4d550-6ad6-49b9-bd4c-5be2dabfde20.minorPartssizelength.value"
+    },
+    "minorPartssizewidth": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "minorPartssizewidth",
+      "valueType": "minorPartssizewidth",
+      "comparisonValuePath": "forDebug.debugInfo.minorMaterialCost-08c4d550-6ad6-49b9-bd4c-5be2dabfde20.minorPartssizewidth.value"
+    },
+    "minorType2": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "minorType2",
+      "valueType": "minorType2",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.materialPerCostValues.value.values.562.minorType2"
+    },
+    "minorMaterial": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "minorMaterial",
+      "valueType": "minorMaterial",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.materialPerCostValues.value.values.562.minorMaterial"
+    },
+    "minorMaterialspec": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "minorMaterialspec",
+      "valueType": "minorMaterialspec",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.materialPerCostValues.value.values.562.minorMaterialspec"
+    },
+    "lossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "lossRate",
+      "valueType": "lossRate",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.lossRate.value"
+    },
+    "areaTimesValues": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "areaTimesValues",
+      "valueType": "string",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.areaTimesValues.label"
+    },
+    "materialPerCostValues": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "materialPerCostValues",
+      "valueType": "string",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.materialPerCostValues.label"
+    },
+    "category_2_id": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "category_2_id",
+      "valueType": "category_2_id",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.materialPerCostValues.value.values.562.category_2_id"
+    },
+    "material_spec_id": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "material_spec_id",
+      "valueType": "material_spec_id",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.materialPerCostValues.value.values.562.material_spec_id"
+    },
+    "material_id": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "material_id",
+      "valueType": "material_id",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.materialPerCostValues.value.values.562.material_id"
+    },
+    "subCategory_2_id": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "subCategory_2_id",
+      "valueType": "subCategory_2_id",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.materialPerCostValues.value.values.562.subCategory_2_id"
+    },
+    "subMaterial_spec_id": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "subMaterial_spec_id",
+      "valueType": "subMaterial_spec_id",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.materialPerCostValues.value.values.562.subMaterial_spec_id"
+    },
+    "subMaterial_id": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "subMaterial_id",
+      "valueType": "subMaterial_id",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.materialPerCostValues.value.values.562.subMaterial_id"
+    },
+    "minorCategory_2_id": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "minorCategory_2_id",
+      "valueType": "minorCategory_2_id",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.materialPerCostValues.value.values.562.minorCategory_2_id"
+    },
+    "minorMaterial_spec_id": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "minorMaterial_spec_id",
+      "valueType": "minorMaterial_spec_id",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.materialPerCostValues.value.values.562.minorMaterial_spec_id"
+    },
+    "minorMaterial_id": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "minorMaterial_id",
+      "valueType": "minorMaterial_id",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.materialPerCostValues.value.values.562.minorMaterial_id"
+    },
+    "stampingTypePriceValues": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "stampingTypePriceValues",
+      "valueType": "string",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.stampingTypePriceValues.label"
+    },
+    "partssizehigh": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "partssizehigh",
+      "valueType": "partssizehigh",
+      "comparisonValuePath": "forDebug.debugInfo.materialCost.partssizehigh.value"
+    },
+    "releasingPaperLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "releasingPaperLossRate",
+      "valueType": "releasingPaperLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.dieCut.releasingPaperLossRate.value"
+    },
+    "printingPrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "printingPrice",
+      "valueType": "printingPrice",
+      "comparisonValuePath": "forDebug.debugInfo.dieCut.printingPrice.value"
+    },
+    "assyTime": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "assyTime",
+      "valueType": "assyTime",
+      "comparisonValuePath": "forDebug.debugInfo.dieCut.assyTime.value"
+    },
+    "debrisCleaningConstant": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "debrisCleaningConstant",
+      "valueType": "debrisCleaningConstant",
+      "comparisonValuePath": "forDebug.debugInfo.dieCut.debrisCleaningConstant.value"
+    },
+    "printingCount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "printingCount",
+      "valueType": "printingCount",
+      "comparisonValuePath": "forDebug.debugInfo.dieCut.printingCount.value"
+    },
+    "debrisCleaningCount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "debrisCleaningCount",
+      "valueType": "debrisCleaningCount",
+      "comparisonValuePath": "forDebug.debugInfo.dieCut.debrisCleaningCount.value"
+    },
+    "materialSizePrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "materialSizePrice",
+      "valueType": "materialSizePrice",
+      "comparisonValuePath": "forDebug.debugInfo.dieCut.materialSizePrice.value"
+    },
+    "minorMaterialSizePrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "minorMaterialSizePrice",
+      "valueType": "minorMaterialSizePrice",
+      "comparisonValuePath": "forDebug.debugInfo.dieCut.minorMaterialSizePrice.value"
+    },
+    "minorMaterialSize": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "minorMaterialSize",
+      "valueType": "minorMaterialSize",
+      "comparisonValuePath": "forDebug.debugInfo.dieCut.minorMaterialSize.value"
+    },
+    "materialCostTotal": {
+      "label": "主料總total",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "materialCostTotal",
+      "valueType": "materialCostTotal",
+      "comparisonValuePath": "forDebug.debugInfo.dieCut.materialCostTotal.value"
+    },
+    "minorMaterialCostTotal": {
+      "label": "次料總total",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "minorMaterialCostTotal",
+      "valueType": "minorMaterialCostTotal",
+      "comparisonValuePath": "forDebug.debugInfo.dieCut.minorMaterialCostTotal.value"
+    },
+    "mainMaterialSize": {
+      "label": "主要材料 面積",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "mainMaterialSize",
+      "valueType": "mainMaterialSize",
+      "comparisonValuePath": "forDebug.debugInfo.dieCut.mainMaterialSize.value"
+    },
+    "releasePaperTypeCost": {
+      "label": "A-3.離型紙/模 費用： 離型紙/模的下料面積價錢",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "releasePaperTypeCost",
+      "valueType": "releasePaperTypeCost",
+      "comparisonValuePath": "forDebug.debugInfo.dieCut.releasePaperTypeCost.value"
+    },
+    "materialTotal": {
+      "label": "主要材料費： A-1.主要材料費 + A-2次主料材料費 + A-3離型紙/模的下料面積費用",
+      "excelValueLongitudinalCoordinates": "110",
+      "valuekey": "materialTotal",
+      "valueType": "materialTotal",
+      "comparisonValuePath": "forDebug.debugInfo.dieCut.materialTotal.value"
+    },
+    "subMaterialCostTotal": {
+      "label": "B.配件材料費",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "subMaterialCostTotal",
+      "valueType": "subMaterialCostTotal",
+      "comparisonValuePath": "forDebug.debugInfo.dieCut.subMaterialCostTotal.value"
+    },
+    "materialList": {
+      "label": "一般材料沖工費邏輯整理",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "materialList",
+      "valueType": "string",
+      "comparisonValuePath": "forDebug.debugInfo.dieCut.materialList.label"
+    },
+    "stampingCostTotal": {
+      "label": "C.沖切加工費",
+      "excelValueLongitudinalCoordinates": "112",
+      "valuekey": "stampingCostTotal",
+      "valueType": "stampingCostTotal",
+      "comparisonValuePath": "forDebug.debugInfo.dieCut.stampingCostTotal.value"
+    },
+    "printingCost": {
+      "label": "單色印刷單價 * 印刷次數",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "printingCost",
+      "valueType": "printingCost",
+      "comparisonValuePath": "forDebug.debugInfo.dieCut.printingCost.value"
+    },
+    "stickingCost": {
+      "label": "手工貼合/轉貼費",
+      "excelValueLongitudinalCoordinates": "106",
+      "valuekey": "stickingCost",
+      "valueType": "stickingCost",
+      "comparisonValuePath": "forDebug.debugInfo.dieCut.stickingCost.value"
+    },
+    "debrisCleaningPrice": {
+      "label": "除屑清理/ 排廢料費 單價(USD)",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "debrisCleaningPrice",
+      "valueType": "debrisCleaningPrice",
+      "comparisonValuePath": "forDebug.debugInfo.dieCut.debrisCleaningPrice.value"
+    },
+    "debrisCleaningCost": {
+      "label": "除屑清理/ 排廢料費費用",
+      "excelValueLongitudinalCoordinates": "108",
+      "valuekey": "debrisCleaningCost",
+      "valueType": "debrisCleaningCost",
+      "comparisonValuePath": "forDebug.debugInfo.dieCut.debrisCleaningCost.value"
+    },
+    "secondaryProcessingCost": {
+      "label": "E.二次加工費",
+      "excelValueLongitudinalCoordinates": "114",
+      "valuekey": "secondaryProcessingCost",
+      "valueType": "secondaryProcessingCost",
+      "comparisonValuePath": "forDebug.debugInfo.dieCut.secondaryProcessingCost.value"
+    },
+    "managementCost": {
+      "label": "E.管銷費用",
+      "excelValueLongitudinalCoordinates": "115",
+      "valuekey": "managementCost",
+      "valueType": "managementCost",
+      "comparisonValuePath": "forDebug.debugInfo.dieCut.managementCost.value"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+item-data:
+  # border: true
+
+bold-data:
+  thick:
+    # fontColor: '000000'
+    # border: true
+    bold: true
+  thin:
+    bold: false
+    # fontColor: '000000'
+    # border: true
+
+ori-header:
+  fontColor: 'FFFFFF'
+  fill: '808080'
+  bold: true
+  # fontFamily: arial
+  # border: true
+
+sugg-header:
+  fontColor: 'FFFFFF'
+  fill: '70ad47'
+  bold: true
+  # fontFamily: arial
+  # border: true
+
+spa-header:
+  fontColor: 'FFFFFF'
+  fill: '0070c0'
+  bold: true
+  # fontFamily: arial
+  # border: true
+
+alt-header:
+  fontColor: 'FFFFFF'
+  fill: 'ffc000'
+  bold: true
+  # fontFamily: arial
+  # border: true
+

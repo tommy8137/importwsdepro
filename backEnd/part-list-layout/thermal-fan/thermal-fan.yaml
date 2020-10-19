@@ -1,0 +1,43 @@
+version: 2
+layout:
+  - key: thermal-fan
+    group:
+      - thermalFan
+    label: default
+    visiable: false
+    $Template:
+      - tab
+    items:
+      - key: Process
+        $Template:
+          - composite
+        label: 二次加工
+        $thermal-fan.layout.Process:
+          - ^items
+
+      - key: Fan
+        $Template:
+          - composite
+        label: Fan
+        group:
+          - Fan
+        $thermal-fan.layout.Fan:
+          - ^multiple
+          - ^items
+        minGroupCount: 0
+
+formulas:
+  Fan:
+    $thermal-fan.formula.Fan:
+      - ^formula
+      - ^scope
+      - ^constant
+      - ^output
+
+  thermalFan:
+    $thermal-fan.formula.ThermalFan:
+      - ^formula
+      - ^constant
+      - ^output
+      - ^scope
+

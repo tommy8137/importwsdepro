@@ -1,0 +1,16 @@
+sheet:
+  label: Plastic
+  tables:
+    - key: plastic
+      $Template:
+        - wsdTable
+      headers:
+        $bom-summary.header-plastic.plastic:
+          - headers
+
+    - key: plastic
+      $Template:
+        - calGapTable
+      headers:
+        $bom-summary.header-plastic.cal-gap:
+          - headers

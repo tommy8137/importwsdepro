@@ -1,0 +1,202 @@
+output:
+  total: total
+  totalCost: totalCost
+  A_material_cost: material_cost
+  B_secondary_processing_cost: secondary_processing_cost
+  C_sumAccessoryCost: sumAccessoryCost
+  D_cost_of_selling_and_profit: cost_of_selling_and_profit
+  _isOtherFillMeRemark: isOtherFillMeRemark
+  _FPCConductorType: FPCConductorType
+
+formula:
+  # 總價: 若為Other fill me remark則為null, 其餘則為0
+  total:
+    label: 總價
+    type: FUNC
+    formula: "(total, isOtherFill)=>{
+      const inValid = !(total && typeof total === 'number' && isFinite(total));
+      if (isOtherFill) {
+        return null;
+      } else if (inValid) {
+        return 0;
+      }
+      return total;
+    }"
+    param:
+      - totalCost
+      - isOtherFill
+
+  # 成品總價 = = A.材料費 + B.二次加工費 + C.零件費 + D.管銷&利潤 -------------------------------------------------------------------------------------------------------------------
+  totalCost:
+    type: MATH
+    formula: "material_cost + secondary_processing_cost + sumAccessoryCost + cost_of_selling_and_profit"
+    label: 成品總價
+
+ # 是否有填寫 Other_Fill_ME_Remark
+  isOtherFill:
+    type: FUNC
+    formula: "(...params) => params.some(p => p === 'Other_Fill_ME_Remark')"
+    label: 材料費
+    param:
+      - FPCConductorType
+      
+  # A.材料費=單件成品攤提面積(mm²)*(材料單價(Price/m²)/1000000)*(1+ 材料lose rate)
+  material_cost:
+    type: MATH
+    formula: amortization_size * (FPCConductorTypeUnitPrice / fpcarea_unit_transfer_constant) * (1 + material_loss_rate)
+    label: 材料費
+
+
+  # 單件成品攤提面積 = 單位併版面積(mm²) / 單位併版之成品產出數
+  amortization_size:
+    type: MATH
+    formula: panel_size / FPCProductNumber
+    label: 單件成品攤提面積(mm²)
+
+  # 單位併版面積 = (成品最大尺寸L + 邊料與併版所增加尺寸L) * (成品最大尺寸W + 邊料與併版所增加尺寸W)
+  panel_size:
+    type: MATH
+    formula: (FPCCableLength + FPCCableIncreaseLength) * (FPCCableWidth + FPCCableIncreaseWidth)
+    label: 單位併版面積(mm²)
+
+  # B 二次加工費 = 組裝費+ 折彎費 + 印刷費 + 停止線 -------------------------------------------------------------------------------------------------------------------
+  secondary_processing_cost:
+    type: MATH
+    formula: assembly_cost + fpcBend_cost + fpcPrint_cost + fpcStopLine_cost
+    label: 二次加工費
+
+  # 組裝費 = 輔料總組裝秒數 / FPC時間單位換算 * 每件組裝工時花費
+  assembly_cost:
+    # type: MATH
+    # formula: sumAccessoryAssyTime / fpcassembly_spend_time * fpcassembly_cost
+    # label: 組裝費
+    type: FUNC
+    formula: "(sumAccessoryAssyTime, fpcassembly_spend_time, fpcassembly_cost) => { return sumAccessoryAssyTime / fpcassembly_spend_time * fpcassembly_cost};"
+    param:
+      - sumAccessoryAssyTime
+      - fpcassembly_spend_time
+      - fpcassembly_cost
+
+  # 輔料總組裝秒數: 所有輔料(除了Sielding)的組裝秒數
+  sumAccessoryAssyTime:
+    type: GROUPSUM
+    label: 輔料總組裝秒數(sec)
+    bykey: accessoryAssyTime
+    groups:
+      - fpcReinforcingPlate
+      - fpcLabel
+      - fpcAdhesive
+
+  # 折彎費 = 折彎(次) * 折彎單價
+  fpcBend_cost:
+    type: MATH
+    formula: FPCBendTimes * fpcBend_unit_price
+    label: 折彎費
+
+  # 印刷費 = 印刷 * 印刷單價
+  fpcPrint_cost:
+    type: MATH
+    formula: FPCPrint * fpcPrint_unit_price
+    label: 印刷費
+
+  # 停止線費用 = 停止線(條) * 停止線單價
+  fpcStopLine_cost:
+    type: MATH
+    formula: FPCStopLine * fpcStopLine_unit_price
+    label: 停止線費用
+
+  # C 零件費: 所有輔料的費用 -------------------------------------------------------------------------------------------------------------------
+  sumAccessoryCost:
+    type: GROUPFUNC
+    label: 零件費小計
+    bykey: 
+      - accessoryCost
+    func: "(values = []) => values.reduce((prev, curr) => prev + +curr.accessoryCost, 0)"
+    groups:
+      - fpcShielding
+      - fpcReinforcingPlate
+      - fpcLabel
+      - fpcAdhesive
+
+
+  # D 管銷&利潤 = 二次加工費 * 管銷利潤 -------------------------------------------------------------------------------------------------------------------
+  cost_of_selling_and_profit:
+    type: MATH
+    formula: secondary_processing_cost * fpcmanagement_and_profit
+    label: 管銷利潤
+
+scope:
+  FPCCableLength: FPCCableLength
+  FPCCableIncreaseLength: FPCCableIncreaseLength
+
+  FPCCableWidth: FPCCableWidth
+  FPCCableIncreaseWidth: FPCCableIncreaseWidth
+
+  FPCProductNumber: FPCProductNumber
+  FPCConductorTypeUnitPrice: FPCConductorTypeUnitPrice
+  FPCBendTimes: FPCBendTimes
+  FPCPrint: FPCPrint
+  FPCStopLine: FPCStopLine
+
+  FPCConductorType: FPCConductorType
+
+constant:
+  otherFillMeRemarkName:
+    label: Other_Fill_ME_Remark
+    value: Other_Fill_ME_Remark
+
+  material_loss_rate:
+    label: 材料 loss rate
+    ?getFPCCommon:
+      - cable_fpc_auxiliary_materials
+      - material_loss_rate
+    # value: 0.03
+
+  fpcBend_unit_price:
+    label: 折彎單價
+    ?getFPCCommon:
+      - cable_fpc_auxiliary_materials
+      - fpc_bend_cost
+    # value: 0.02
+
+  fpcPrint_unit_price:
+    label: 印刷單價
+    ?getFPCCommon:
+      - cable_fpc_auxiliary_materials
+      - fpc_print_cost
+    # value: 0.004
+
+  fpcStopLine_unit_price:
+    label: 停止線單價
+    ?getFPCCommon:
+      - cable_fpc_auxiliary_materials
+      - fpc_stop_line_cost
+    # value: 0.008
+
+  fpcassembly_spend_time:
+    label: FPC 時間單位換算
+    ?getFPCCommon:
+      - cable_fpc_auxiliary_materials
+      - assembly_spend_time
+    # value: 60
+
+  fpcassembly_cost:
+    label: 每件組裝工時花費
+    ?getFPCCommon:
+      - cable_fpc_auxiliary_materials
+      - assembly_cost
+    # value: 0.045
+
+  fpcarea_unit_transfer_constant:
+    label: 面積單位換算常數
+    ?getFPCCommon:
+      - cable_fpc_auxiliary_materials
+      - area_unit_transfer_constant
+    # value: 1000000
+
+  fpcmanagement_and_profit:
+    label: 管銷利潤
+    ?getFPCCommon:
+      - cable_fpc_management_and_profit
+      - management_and_profit
+    # value: 0.1

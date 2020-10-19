@@ -1,0 +1,19 @@
+values:
+ - clipMaterial: CU1100
+   clipMaterialCostPerKilogram: 4.5
+ - clipMaterial: C18400
+   clipMaterialCostPerKilogram: 4.5
+ - clipMaterial: KU400
+   clipMaterialCostPerKilogram: 1.5
+ - clipMaterial: KU400i
+   clipMaterialCostPerKilogram: 1.5
+ - clipMaterial: SECC
+   clipMaterialCostPerKilogram: 1.4
+ - clipMaterial: SGCC
+   clipMaterialCostPerKilogram: 1.37
+ - clipMaterial: SPCC
+   clipMaterialCostPerKilogram: 1
+ - clipMaterial: AL1050
+   clipMaterialCostPerKilogram: 1.35
+ - clipMaterial: AL5052
+   clipMaterialCostPerKilogram: 1.36

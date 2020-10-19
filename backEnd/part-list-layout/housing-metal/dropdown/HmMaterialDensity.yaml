@@ -1,0 +1,49 @@
+values:
+  - hmmaterial: AL1050
+    hmmaterialdensity: 2.75
+
+  - hmmaterial: AL5052
+    hmmaterialdensity: 2.75
+  - hmmaterial: SUS301
+    hmmaterialdensity: 7.93
+  - hmmaterial: SUS304
+    hmmaterialdensity: 7.93
+  - hmmaterial: SUS403
+    hmmaterialdensity: 7.93
+  - hmmaterial: SUS430
+    hmmaterialdensity: 7.93
+  - hmmaterial: SECC
+    hmmaterialdensity: 7.85
+  - hmmaterial: SGCC
+    hmmaterialdensity: 7.85
+  - hmmaterial: SPCC
+    hmmaterialdensity: 7.85
+  - hmmaterial: SGLD
+    hmmaterialdensity: 7.85
+  - hmmaterial: SPTE
+    hmmaterialdensity: 7.85
+
+  - hmmaterial: Cu3604
+    hmmaterialdensity: 8.90
+  - hmmaterial: 低碳鋼1018
+    hmmaterialdensity: 7.85
+  - hmmaterial: SUS410
+    hmmaterialdensity: 7.93
+  - hmmaterial: 磷青銅
+    hmmaterialdensity: 8.90
+  - hmmaterial: PH-CU
+    hmmaterialdensity: 8.90
+  - hmmaterial: CU1100
+    hmmaterialdensity: 8.90
+  - hmmaterial: CU01
+    hmmaterialdensity: 8.90
+  - hmmaterial: C18400
+    hmmaterialdensity: 8.80
+  - hmmaterial: AL6061
+    hmmaterialdensity: 2.71
+  - hmmaterial: AL6063
+    hmmaterialdensity: 2.71
+  - hmmaterial: KU400
+    hmmaterialdensity: 7.85
+  - hmmaterial: 皮銅
+    hmmaterialdensity: 8.80

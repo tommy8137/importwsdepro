@@ -1,0 +1,60 @@
+headers:
+  export_from:
+    label: Export From
+    $dashboard-me.header-dashboard-me.dashboardmeTemplate:
+      - dataString
+
+  project_name:
+    label: Project Name
+    $dashboard-me.header-dashboard-me.dashboardmeTemplate:
+      - dataString
+
+  project_code:
+    label: Project Code
+    $dashboard-me.header-dashboard-me.dashboardmeTemplate:
+      - dataString
+
+  stage_name:
+    label: Stage
+    $dashboard-me.header-dashboard-me.dashboardmeTemplate:
+      - dataString
+
+  version:
+    label: Version
+    $dashboard-me.header-dashboard-me.dashboardmeTemplate:
+      - dataString
+
+  create_time:
+    label: Create Time
+    $dashboard-me.header-dashboard-me.dashboardmeTemplate:
+      - dataString
+
+  export_date:
+    label: Export Date
+    $dashboard-me.header-dashboard-me.dashboardmeTemplate:
+      - dataString
+
+  total_parts_count:
+    label: Total BOM Items
+    $dashboard-me.header-dashboard-me.dashboardmeTemplate:
+      - dataFloat
+
+  sku_desc:
+    label: SKU Description
+    $dashboard-me.header-dashboard-me.dashboardmeTemplate:
+      - dataString
+  sku_cost:
+    label: SKU Cost
+    $dashboard-me.header-dashboard-me.dashboardmeTemplate:
+      - dynamicFloat
+    dynamicSite: 3
+
+  space:
+    label: null
+    $dashboard-me.header-dashboard-me.dashboardmeTemplate:
+      - dataString
+
+  space2:
+    label: null
+    $dashboard-me.header-dashboard-me.dashboardmeTemplate:
+      - dataString

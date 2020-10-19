@@ -1,0 +1,3 @@
+values:
+  - fanType: Axial(軸流扇)
+  - fanType: Blower(離心扇)

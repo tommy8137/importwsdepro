@@ -1,0 +1,21 @@
+# 沖切類型對照表
+values:
+  - stampingTypeName: 沖切
+    stampingType: 1
+    stampingTypePrice: 0.00882352941176471
+    minorStampingTypeName: 沖切
+    minorStampingType: 1
+    minorStampingTypePrice: 0.00882352941176471
+    subStampingTypeName: 沖切
+    subStampingType: 1
+    subStampingTypePrice: 0.00882352941176471
+
+  - stampingTypeName: 模切
+    stampingType: 0
+    stampingTypePrice: 0
+    minorStampingTypeName: 模切
+    minorStampingType: 0
+    minorStampingTypePrice: 0
+    subStampingTypeName: 模切
+    subStampingType: 0
+    subStampingTypePrice: 0

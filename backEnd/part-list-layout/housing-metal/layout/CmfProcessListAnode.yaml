@@ -1,0 +1,206 @@
+multiple: true
+items:
+
+  - key: cmfProcessListFirstAnodeLabel
+    label: 一陽
+    $Template:
+      - label
+    level: 2
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+      display: true
+
+  - key: cmfProcessListFirstAnodeCheckBox
+    $Template:
+      - checkBox
+    label: 一陽(Exist)
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListFirstAnodeCheckBox
+
+  - key: cmfProcessListFirstAnodeColor
+    $Template:
+      - selectorString
+    label: 一陽(color)
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: anode_color_id
+      # $housing-metal.dropdown.CmfProcessListAnodeColor:
+      #   - ^values
+      ?getAnodeColor:
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfProcessListFirstAnodeCheckBox: true
+      grids: 1
+      display: true
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfProcessListFirstAnodeCheckBox)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfProcessListFirstAnodeCheckBox
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListFirstAnodeColor
+
+  - key: cmfProcessListFirstAnodePrice
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    mapFrom:
+      - cmfProcessListFirstAnodeColor
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getAnodeColor:
+
+  - key: cmfProcessListFirstAnodeLossRate
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getAnodeColor:
+    mapFrom:
+      - cmfProcessListFirstAnodeColor
+
+  - key: cmfProcessListSecondAnodeLabel
+    label: 二陽
+    $Template:
+      - label
+    level: 2
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+      display: true
+
+  - key: cmfProcessListSecondAnodeCheckBox
+    $Template:
+      - checkBox
+    label: 二陽(Exist)
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfProcessListFirstAnodeColor: true
+      grids: 0.5
+      display: true
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListSecondAnodeCheckBox
+
+  - key: cmfProcessListSecondAnodeColor
+    $Template:
+      - selectorString
+    label: 二陽(color)
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: anode_color_id
+      # $housing-metal.dropdown.CmfProcessListAnodeColor2:
+      #   - ^values
+      ?getSecondAnodeColor:
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfProcessListSecondAnodeCheckBox: true
+      grids: 1
+      display: true
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfProcessListSecondAnodeCheckBox)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfProcessListSecondAnodeCheckBox
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListSecondAnodeColor
+
+  - key: cmfProcessListSecondAnode
+    label: 製程次數
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: id
+      ?getMetalAnodeName:
+        -
+      # $housing-metal.dropdown.CmfProcessListAnodeQty:
+      #   - ^values
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfProcessListSecondAnodeCheckBox: true
+      grids: 1
+      display: true
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfProcessListSecondAnodeCheckBox)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfProcessListSecondAnodeCheckBox
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListSecondAnode
+
+  - key: cmfProcessListSecondAnodeQty
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getMetalAnodeName:
+        -
+      # $housing-metal.dropdown.CmfProcessListAnodeQty:
+      #   - ^values
+    mapFrom:
+      - cmfProcessListSecondAnode
+
+  - key: cmfProcessListSecondAnodePrice
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getSecondAnodeColor:
+    mapFrom:
+      - cmfProcessListSecondAnodeColor
+
+
+  - key: cmfProcessListSecondAnodeLossRate
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getSecondAnodeColor:
+    mapFrom:
+      - cmfProcessListSecondAnodeColor

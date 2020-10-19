@@ -1,0 +1,1675 @@
+{
+  "xlsxName": "Test_DataV2_cablewire_NB_DT_AIO.xlsx",
+  "sheetName": "NB_Cablewire",
+  "startHorizontalCoordinates": "C",
+  "transferMode": "createPath",
+  "formate": "cable-wire",
+  "metadata": {
+    "productType": {
+      "createPath": "productType",
+      "valuekey": "productType",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "1"
+    },
+    "testLabel": {
+      "createPath": "testLabel",
+      "valuekey": "testLabel",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "2"
+    },
+    "type1": {
+      "createPath": "type1",
+      "valuekey": "type1",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "3"
+    },
+    "type2": {
+      "createPath": "type2",
+      "valuekey": "type2",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "4"
+    }
+  },
+  "transferPartlistInfo": {
+    "formData,cwTab,CWItems,partname": {
+      "createPath": "formData.cwTab.CWItems.partname",
+      "valuekey": "partname",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWItems,partnumber": {
+      "createPath": "formData.cwTab.CWItems.partnumber",
+      "valuekey": "partnumber",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWWire,0,uuid": {
+      "createPath": "formData.cwTab.CWWire.0.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWWire,0,layoutKey": {
+      "createPath": "formData.cwTab.CWWire.0.layoutKey",
+      "valuekey": "layoutKey",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 10,
+      "default": null
+    },
+    "formData,cwTab,CWWire,0,teflonQty": {
+      "createPath": "formData.cwTab.CWWire.0.teflonQty",
+      "valuekey": "teflonQty",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 6,
+      "default": null
+    },
+    "formData,cwTab,CWWire,0,teflonLength": {
+      "createPath": "formData.cwTab.CWWire.0.teflonLength",
+      "valuekey": "teflonLength",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 7,
+      "default": null
+    },
+    "formData,cwTab,CWWire,0,teflonPin": {
+      "createPath": "formData.cwTab.CWWire.0.teflonPin",
+      "valuekey": "teflonPin",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 8,
+      "default": null
+    },
+    "formData,cwTab,CWWire,0,teflonGuage": {
+      "createPath": "formData.cwTab.CWWire.0.teflonGuage",
+      "valuekey": "teflonGuage",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 9,
+      "default": null
+    },
+    "formData,cwTab,CWWire,1,uuid": {
+      "createPath": "formData.cwTab.CWWire.1.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWWire,1,layoutKey": {
+      "createPath": "formData.cwTab.CWWire.1.layoutKey",
+      "valuekey": "layoutKey",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 16,
+      "default": null
+    },
+    "formData,cwTab,CWWire,1,coaxialQty": {
+      "createPath": "formData.cwTab.CWWire.1.coaxialQty",
+      "valuekey": "coaxialQty",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 12,
+      "default": null
+    },
+    "formData,cwTab,CWWire,1,coaxialLength": {
+      "createPath": "formData.cwTab.CWWire.1.coaxialLength",
+      "valuekey": "coaxialLength",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 13,
+      "default": null
+    },
+    "formData,cwTab,CWWire,1,coaxialPin": {
+      "createPath": "formData.cwTab.CWWire.1.coaxialPin",
+      "valuekey": "coaxialPin",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 14,
+      "default": null
+    },
+    "formData,cwTab,CWWire,1,coaxialGuage": {
+      "createPath": "formData.cwTab.CWWire.1.coaxialGuage",
+      "valuekey": "coaxialGuage",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 15,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,0,uuid": {
+      "createPath": "formData.cwTab.CWConnector.0.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,0,CWConnectorLabel": {
+      "createPath": "formData.cwTab.CWConnector.0.CWConnectorLabel",
+      "valuekey": "CWConnectorLabel",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,0,cableConnectorName": {
+      "createPath": "formData.cwTab.CWConnector.0.cableConnectorName",
+      "valuekey": "cableConnectorName",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 20,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,0,cableConnectorType": {
+      "createPath": "formData.cwTab.CWConnector.0.cableConnectorType",
+      "valuekey": "cableConnectorType",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 21,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,0,cableConnectorVendorPn": {
+      "createPath": "formData.cwTab.CWConnector.0.cableConnectorVendorPn",
+      "valuekey": "cableConnectorVendorPn",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 22,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,0,cableConnectorNameRemark": {
+      "createPath": "formData.cwTab.CWConnector.0.cableConnectorNameRemark",
+      "valuekey": "cableConnectorNameRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,0,cableConnectorTypeRemark": {
+      "createPath": "formData.cwTab.CWConnector.0.cableConnectorTypeRemark",
+      "valuekey": "cableConnectorTypeRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,0,cableConnectorWorkingTime": {
+      "createPath": "formData.cwTab.CWConnector.0.cableConnectorWorkingTime",
+      "valuekey": "cableConnectorWorkingTime",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,cwTab,CWConnector,0,cableConnectorUnitPrice": {
+      "createPath": "formData.cwTab.CWConnector.0.cableConnectorUnitPrice",
+      "valuekey": "cableConnectorUnitPrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,cwTab,CWConnector,1,uuid": {
+      "createPath": "formData.cwTab.CWConnector.1.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,1,CWConnectorLabel": {
+      "createPath": "formData.cwTab.CWConnector.1.CWConnectorLabel",
+      "valuekey": "CWConnectorLabel",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,1,cableConnectorName": {
+      "createPath": "formData.cwTab.CWConnector.1.cableConnectorName",
+      "valuekey": "cableConnectorName",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 24,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,1,cableConnectorType": {
+      "createPath": "formData.cwTab.CWConnector.1.cableConnectorType",
+      "valuekey": "cableConnectorType",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 25,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,1,cableConnectorVendorPn": {
+      "createPath": "formData.cwTab.CWConnector.1.cableConnectorVendorPn",
+      "valuekey": "cableConnectorVendorPn",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 26,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,1,cableConnectorNameRemark": {
+      "createPath": "formData.cwTab.CWConnector.1.cableConnectorNameRemark",
+      "valuekey": "cableConnectorNameRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,1,cableConnectorTypeRemark": {
+      "createPath": "formData.cwTab.CWConnector.1.cableConnectorTypeRemark",
+      "valuekey": "cableConnectorTypeRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,1,cableConnectorWorkingTime": {
+      "createPath": "formData.cwTab.CWConnector.1.cableConnectorWorkingTime",
+      "valuekey": "cableConnectorWorkingTime",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,cwTab,CWConnector,1,cableConnectorUnitPrice": {
+      "createPath": "formData.cwTab.CWConnector.1.cableConnectorUnitPrice",
+      "valuekey": "cableConnectorUnitPrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,cwTab,CWConnector,2,uuid": {
+      "createPath": "formData.cwTab.CWConnector.2.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,2,CWConnectorLabel": {
+      "createPath": "formData.cwTab.CWConnector.2.CWConnectorLabel",
+      "valuekey": "CWConnectorLabel",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,2,cableConnectorName": {
+      "createPath": "formData.cwTab.CWConnector.2.cableConnectorName",
+      "valuekey": "cableConnectorName",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 28,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,2,cableConnectorType": {
+      "createPath": "formData.cwTab.CWConnector.2.cableConnectorType",
+      "valuekey": "cableConnectorType",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 29,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,2,cableConnectorVendorPn": {
+      "createPath": "formData.cwTab.CWConnector.2.cableConnectorVendorPn",
+      "valuekey": "cableConnectorVendorPn",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 30,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,2,cableConnectorNameRemark": {
+      "createPath": "formData.cwTab.CWConnector.2.cableConnectorNameRemark",
+      "valuekey": "cableConnectorNameRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,2,cableConnectorTypeRemark": {
+      "createPath": "formData.cwTab.CWConnector.2.cableConnectorTypeRemark",
+      "valuekey": "cableConnectorTypeRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,2,cableConnectorWorkingTime": {
+      "createPath": "formData.cwTab.CWConnector.2.cableConnectorWorkingTime",
+      "valuekey": "cableConnectorWorkingTime",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,cwTab,CWConnector,2,cableConnectorUnitPrice": {
+      "createPath": "formData.cwTab.CWConnector.2.cableConnectorUnitPrice",
+      "valuekey": "cableConnectorUnitPrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,cwTab,CWConnector,3,uuid": {
+      "createPath": "formData.cwTab.CWConnector.3.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,3,CWConnectorLabel": {
+      "createPath": "formData.cwTab.CWConnector.3.CWConnectorLabel",
+      "valuekey": "CWConnectorLabel",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,3,cableConnectorName": {
+      "createPath": "formData.cwTab.CWConnector.3.cableConnectorName",
+      "valuekey": "cableConnectorName",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 32,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,3,cableConnectorType": {
+      "createPath": "formData.cwTab.CWConnector.3.cableConnectorType",
+      "valuekey": "cableConnectorType",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 33,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,3,cableConnectorVendorPn": {
+      "createPath": "formData.cwTab.CWConnector.3.cableConnectorVendorPn",
+      "valuekey": "cableConnectorVendorPn",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 34,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,3,cableConnectorNameRemark": {
+      "createPath": "formData.cwTab.CWConnector.3.cableConnectorNameRemark",
+      "valuekey": "cableConnectorNameRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,3,cableConnectorTypeRemark": {
+      "createPath": "formData.cwTab.CWConnector.3.cableConnectorTypeRemark",
+      "valuekey": "cableConnectorTypeRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,3,cableConnectorWorkingTime": {
+      "createPath": "formData.cwTab.CWConnector.3.cableConnectorWorkingTime",
+      "valuekey": "cableConnectorWorkingTime",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,cwTab,CWConnector,3,cableConnectorUnitPrice": {
+      "createPath": "formData.cwTab.CWConnector.3.cableConnectorUnitPrice",
+      "valuekey": "cableConnectorUnitPrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,cwTab,CWConnector,4,uuid": {
+      "createPath": "formData.cwTab.CWConnector.4.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,4,CWConnectorLabel": {
+      "createPath": "formData.cwTab.CWConnector.4.CWConnectorLabel",
+      "valuekey": "CWConnectorLabel",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,4,cableConnectorName": {
+      "createPath": "formData.cwTab.CWConnector.4.cableConnectorName",
+      "valuekey": "cableConnectorName",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 36,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,4,cableConnectorType": {
+      "createPath": "formData.cwTab.CWConnector.4.cableConnectorType",
+      "valuekey": "cableConnectorType",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 37,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,4,cableConnectorVendorPn": {
+      "createPath": "formData.cwTab.CWConnector.4.cableConnectorVendorPn",
+      "valuekey": "cableConnectorVendorPn",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 38,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,4,cableConnectorNameRemark": {
+      "createPath": "formData.cwTab.CWConnector.4.cableConnectorNameRemark",
+      "valuekey": "cableConnectorNameRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,4,cableConnectorTypeRemark": {
+      "createPath": "formData.cwTab.CWConnector.4.cableConnectorTypeRemark",
+      "valuekey": "cableConnectorTypeRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,4,cableConnectorWorkingTime": {
+      "createPath": "formData.cwTab.CWConnector.4.cableConnectorWorkingTime",
+      "valuekey": "cableConnectorWorkingTime",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,cwTab,CWConnector,4,cableConnectorUnitPrice": {
+      "createPath": "formData.cwTab.CWConnector.4.cableConnectorUnitPrice",
+      "valuekey": "cableConnectorUnitPrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,cwTab,CWConnector,5,uuid": {
+      "createPath": "formData.cwTab.CWConnector.5.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,5,CWConnectorLabel": {
+      "createPath": "formData.cwTab.CWConnector.5.CWConnectorLabel",
+      "valuekey": "CWConnectorLabel",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,5,cableConnectorName": {
+      "createPath": "formData.cwTab.CWConnector.5.cableConnectorName",
+      "valuekey": "cableConnectorName",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 40,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,5,cableConnectorType": {
+      "createPath": "formData.cwTab.CWConnector.5.cableConnectorType",
+      "valuekey": "cableConnectorType",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 41,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,5,cableConnectorVendorPn": {
+      "createPath": "formData.cwTab.CWConnector.5.cableConnectorVendorPn",
+      "valuekey": "cableConnectorVendorPn",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 42,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,5,cableConnectorNameRemark": {
+      "createPath": "formData.cwTab.CWConnector.5.cableConnectorNameRemark",
+      "valuekey": "cableConnectorNameRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,5,cableConnectorTypeRemark": {
+      "createPath": "formData.cwTab.CWConnector.5.cableConnectorTypeRemark",
+      "valuekey": "cableConnectorTypeRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,5,cableConnectorWorkingTime": {
+      "createPath": "formData.cwTab.CWConnector.5.cableConnectorWorkingTime",
+      "valuekey": "cableConnectorWorkingTime",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,cwTab,CWConnector,5,cableConnectorUnitPrice": {
+      "createPath": "formData.cwTab.CWConnector.5.cableConnectorUnitPrice",
+      "valuekey": "cableConnectorUnitPrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,cwTab,CWConnector,6,uuid": {
+      "createPath": "formData.cwTab.CWConnector.6.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,6,CWConnectorLabel": {
+      "createPath": "formData.cwTab.CWConnector.6.CWConnectorLabel",
+      "valuekey": "CWConnectorLabel",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,6,cableConnectorName": {
+      "createPath": "formData.cwTab.CWConnector.6.cableConnectorName",
+      "valuekey": "cableConnectorName",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 44,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,6,cableConnectorType": {
+      "createPath": "formData.cwTab.CWConnector.6.cableConnectorType",
+      "valuekey": "cableConnectorType",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 45,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,6,cableConnectorVendorPn": {
+      "createPath": "formData.cwTab.CWConnector.6.cableConnectorVendorPn",
+      "valuekey": "cableConnectorVendorPn",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 46,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,6,cableConnectorNameRemark": {
+      "createPath": "formData.cwTab.CWConnector.6.cableConnectorNameRemark",
+      "valuekey": "cableConnectorNameRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,6,cableConnectorTypeRemark": {
+      "createPath": "formData.cwTab.CWConnector.6.cableConnectorTypeRemark",
+      "valuekey": "cableConnectorTypeRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,6,cableConnectorWorkingTime": {
+      "createPath": "formData.cwTab.CWConnector.6.cableConnectorWorkingTime",
+      "valuekey": "cableConnectorWorkingTime",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,cwTab,CWConnector,6,cableConnectorUnitPrice": {
+      "createPath": "formData.cwTab.CWConnector.6.cableConnectorUnitPrice",
+      "valuekey": "cableConnectorUnitPrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,cwTab,CWConnector,7,uuid": {
+      "createPath": "formData.cwTab.CWConnector.7.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,7,CWConnectorLabel": {
+      "createPath": "formData.cwTab.CWConnector.7.CWConnectorLabel",
+      "valuekey": "CWConnectorLabel",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,7,cableConnectorName": {
+      "createPath": "formData.cwTab.CWConnector.7.cableConnectorName",
+      "valuekey": "cableConnectorName",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 48,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,7,cableConnectorType": {
+      "createPath": "formData.cwTab.CWConnector.7.cableConnectorType",
+      "valuekey": "cableConnectorType",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 49,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,7,cableConnectorVendorPn": {
+      "createPath": "formData.cwTab.CWConnector.7.cableConnectorVendorPn",
+      "valuekey": "cableConnectorVendorPn",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 50,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,7,cableConnectorNameRemark": {
+      "createPath": "formData.cwTab.CWConnector.7.cableConnectorNameRemark",
+      "valuekey": "cableConnectorNameRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,7,cableConnectorTypeRemark": {
+      "createPath": "formData.cwTab.CWConnector.7.cableConnectorTypeRemark",
+      "valuekey": "cableConnectorTypeRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,7,cableConnectorWorkingTime": {
+      "createPath": "formData.cwTab.CWConnector.7.cableConnectorWorkingTime",
+      "valuekey": "cableConnectorWorkingTime",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,cwTab,CWConnector,7,cableConnectorUnitPrice": {
+      "createPath": "formData.cwTab.CWConnector.7.cableConnectorUnitPrice",
+      "valuekey": "cableConnectorUnitPrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,cwTab,CWConnector,8,uuid": {
+      "createPath": "formData.cwTab.CWConnector.8.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,8,CWConnectorLabel": {
+      "createPath": "formData.cwTab.CWConnector.8.CWConnectorLabel",
+      "valuekey": "CWConnectorLabel",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,8,cableConnectorName": {
+      "createPath": "formData.cwTab.CWConnector.8.cableConnectorName",
+      "valuekey": "cableConnectorName",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 52,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,8,cableConnectorType": {
+      "createPath": "formData.cwTab.CWConnector.8.cableConnectorType",
+      "valuekey": "cableConnectorType",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 53,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,8,cableConnectorVendorPn": {
+      "createPath": "formData.cwTab.CWConnector.8.cableConnectorVendorPn",
+      "valuekey": "cableConnectorVendorPn",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 54,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,8,cableConnectorNameRemark": {
+      "createPath": "formData.cwTab.CWConnector.8.cableConnectorNameRemark",
+      "valuekey": "cableConnectorNameRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,8,cableConnectorTypeRemark": {
+      "createPath": "formData.cwTab.CWConnector.8.cableConnectorTypeRemark",
+      "valuekey": "cableConnectorTypeRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,8,cableConnectorWorkingTime": {
+      "createPath": "formData.cwTab.CWConnector.8.cableConnectorWorkingTime",
+      "valuekey": "cableConnectorWorkingTime",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,cwTab,CWConnector,8,cableConnectorUnitPrice": {
+      "createPath": "formData.cwTab.CWConnector.8.cableConnectorUnitPrice",
+      "valuekey": "cableConnectorUnitPrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,cwTab,CWConnector,9,uuid": {
+      "createPath": "formData.cwTab.CWConnector.9.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,9,CWConnectorLabel": {
+      "createPath": "formData.cwTab.CWConnector.9.CWConnectorLabel",
+      "valuekey": "CWConnectorLabel",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,9,cableConnectorName": {
+      "createPath": "formData.cwTab.CWConnector.9.cableConnectorName",
+      "valuekey": "cableConnectorName",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 56,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,9,cableConnectorType": {
+      "createPath": "formData.cwTab.CWConnector.9.cableConnectorType",
+      "valuekey": "cableConnectorType",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 57,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,9,cableConnectorVendorPn": {
+      "createPath": "formData.cwTab.CWConnector.9.cableConnectorVendorPn",
+      "valuekey": "cableConnectorVendorPn",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 58,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,9,cableConnectorNameRemark": {
+      "createPath": "formData.cwTab.CWConnector.9.cableConnectorNameRemark",
+      "valuekey": "cableConnectorNameRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,9,cableConnectorTypeRemark": {
+      "createPath": "formData.cwTab.CWConnector.9.cableConnectorTypeRemark",
+      "valuekey": "cableConnectorTypeRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWConnector,9,cableConnectorWorkingTime": {
+      "createPath": "formData.cwTab.CWConnector.9.cableConnectorWorkingTime",
+      "valuekey": "cableConnectorWorkingTime",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,cwTab,CWConnector,9,cableConnectorUnitPrice": {
+      "createPath": "formData.cwTab.CWConnector.9.cableConnectorUnitPrice",
+      "valuekey": "cableConnectorUnitPrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,cwTab,CWDefaultSupport,CWDefaultAceticAcidClothQty": {
+      "createPath": "formData.cwTab.CWDefaultSupport.CWDefaultAceticAcidClothQty",
+      "valuekey": "CWDefaultAceticAcidClothQty",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 60,
+      "default": null
+    },
+    "formData,cwTab,CWDefaultSupport,CWDefaultConductiveClothQty": {
+      "createPath": "formData.cwTab.CWDefaultSupport.CWDefaultConductiveClothQty",
+      "valuekey": "CWDefaultConductiveClothQty",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 62,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,0,uuid": {
+      "createPath": "formData.cwTab.CWSubMertial.0.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,0,layoutKey": {
+      "createPath": "formData.cwTab.CWSubMertial.0.layoutKey",
+      "valuekey": "layoutKey",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 64,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,0,CWGroundFilmQty": {
+      "createPath": "formData.cwTab.CWSubMertial.0.CWGroundFilmQty",
+      "valuekey": "CWGroundFilmQty",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 65,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,1,uuid": {
+      "createPath": "formData.cwTab.CWSubMertial.1.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,1,layoutKey": {
+      "createPath": "formData.cwTab.CWSubMertial.1.layoutKey",
+      "valuekey": "layoutKey",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 67,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,1,CWKaptonLength": {
+      "createPath": "formData.cwTab.CWSubMertial.1.CWKaptonLength",
+      "valuekey": "CWKaptonLength",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 68,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,1,CWKaptonwidth": {
+      "createPath": "formData.cwTab.CWSubMertial.1.CWKaptonwidth",
+      "valuekey": "CWKaptonwidth",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 69,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,1,CWKaptonQty": {
+      "createPath": "formData.cwTab.CWSubMertial.1.CWKaptonQty",
+      "valuekey": "CWKaptonQty",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 70,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,2,uuid": {
+      "createPath": "formData.cwTab.CWSubMertial.2.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,2,layoutKey": {
+      "createPath": "formData.cwTab.CWSubMertial.2.layoutKey",
+      "valuekey": "layoutKey",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 72,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,2,CWAceticAcidClothLength": {
+      "createPath": "formData.cwTab.CWSubMertial.2.CWAceticAcidClothLength",
+      "valuekey": "CWAceticAcidClothLength",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 73,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,2,CWAceticAcidClothwidth": {
+      "createPath": "formData.cwTab.CWSubMertial.2.CWAceticAcidClothwidth",
+      "valuekey": "CWAceticAcidClothwidth",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 74,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,2,CWAceticAcidClothQty": {
+      "createPath": "formData.cwTab.CWSubMertial.2.CWAceticAcidClothQty",
+      "valuekey": "CWAceticAcidClothQty",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 75,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,3,uuid": {
+      "createPath": "formData.cwTab.CWSubMertial.3.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,3,layoutKey": {
+      "createPath": "formData.cwTab.CWSubMertial.3.layoutKey",
+      "valuekey": "layoutKey",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 77,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,3,CWTeflonTapeLength": {
+      "createPath": "formData.cwTab.CWSubMertial.3.CWTeflonTapeLength",
+      "valuekey": "CWTeflonTapeLength",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 78,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,3,CWTeflonTapeWidth": {
+      "createPath": "formData.cwTab.CWSubMertial.3.CWTeflonTapeWidth",
+      "valuekey": "CWTeflonTapeWidth",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 79,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,3,CWTeflonTapeQty": {
+      "createPath": "formData.cwTab.CWSubMertial.3.CWTeflonTapeQty",
+      "valuekey": "CWTeflonTapeQty",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 80,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,4,uuid": {
+      "createPath": "formData.cwTab.CWSubMertial.4.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,4,layoutKey": {
+      "createPath": "formData.cwTab.CWSubMertial.4.layoutKey",
+      "valuekey": "layoutKey",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 82,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,4,CWConductiveClothLength": {
+      "createPath": "formData.cwTab.CWSubMertial.4.CWConductiveClothLength",
+      "valuekey": "CWConductiveClothLength",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 83,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,4,CWConductiveClothWidth": {
+      "createPath": "formData.cwTab.CWSubMertial.4.CWConductiveClothWidth",
+      "valuekey": "CWConductiveClothWidth",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 84,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,4,CWConductiveClothQty": {
+      "createPath": "formData.cwTab.CWSubMertial.4.CWConductiveClothQty",
+      "valuekey": "CWConductiveClothQty",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 85,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,5,uuid": {
+      "createPath": "formData.cwTab.CWSubMertial.5.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,5,layoutKey": {
+      "createPath": "formData.cwTab.CWSubMertial.5.layoutKey",
+      "valuekey": "layoutKey",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 87,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,5,CWTwistedWireQty": {
+      "createPath": "formData.cwTab.CWSubMertial.5.CWTwistedWireQty",
+      "valuekey": "CWTwistedWireQty",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 88,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,6,uuid": {
+      "createPath": "formData.cwTab.CWSubMertial.6.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,6,layoutKey": {
+      "createPath": "formData.cwTab.CWSubMertial.6.layoutKey",
+      "valuekey": "layoutKey",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 90,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,6,CWUvGlueQty": {
+      "createPath": "formData.cwTab.CWSubMertial.6.CWUvGlueQty",
+      "valuekey": "CWUvGlueQty",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 91,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,7,uuid": {
+      "createPath": "formData.cwTab.CWSubMertial.7.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,7,layoutKey": {
+      "createPath": "formData.cwTab.CWSubMertial.7.layoutKey",
+      "valuekey": "layoutKey",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 93,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,7,CWLabelQty": {
+      "createPath": "formData.cwTab.CWSubMertial.7.CWLabelQty",
+      "valuekey": "CWLabelQty",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 94,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,8,uuid": {
+      "createPath": "formData.cwTab.CWSubMertial.8.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,8,layoutKey": {
+      "createPath": "formData.cwTab.CWSubMertial.8.layoutKey",
+      "valuekey": "layoutKey",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 96,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,8,CWHeatShrinkableTubingsQty": {
+      "createPath": "formData.cwTab.CWSubMertial.8.CWHeatShrinkableTubingsQty",
+      "valuekey": "CWHeatShrinkableTubingsQty",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 97,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,8,sumWireLength": {
+      "createPath": "formData.cwTab.CWSubMertial.8.sumWireLength",
+      "valuekey": "sumWireLength",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,9,uuid": {
+      "createPath": "formData.cwTab.CWSubMertial.9.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,9,layoutKey": {
+      "createPath": "formData.cwTab.CWSubMertial.9.layoutKey",
+      "valuekey": "layoutKey",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 99,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,9,CWDrawLineQty": {
+      "createPath": "formData.cwTab.CWSubMertial.9.CWDrawLineQty",
+      "valuekey": "CWDrawLineQty",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 100,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,10,uuid": {
+      "createPath": "formData.cwTab.CWSubMertial.10.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,10,layoutKey": {
+      "createPath": "formData.cwTab.CWSubMertial.10.layoutKey",
+      "valuekey": "layoutKey",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 102,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,10,CWConductiveDoubleSideTapeLength": {
+      "createPath": "formData.cwTab.CWSubMertial.10.CWConductiveDoubleSideTapeLength",
+      "valuekey": "CWConductiveDoubleSideTapeLength",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 103,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,10,CWConductiveDoubleSideTapewidth": {
+      "createPath": "formData.cwTab.CWSubMertial.10.CWConductiveDoubleSideTapewidth",
+      "valuekey": "CWConductiveDoubleSideTapewidth",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 104,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,10,CWConductiveDoubleSideTapeQty": {
+      "createPath": "formData.cwTab.CWSubMertial.10.CWConductiveDoubleSideTapeQty",
+      "valuekey": "CWConductiveDoubleSideTapeQty",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 105,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,11,uuid": {
+      "createPath": "formData.cwTab.CWSubMertial.11.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,11,layoutKey": {
+      "createPath": "formData.cwTab.CWSubMertial.11.layoutKey",
+      "valuekey": "layoutKey",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 107,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,11,CWMylarCY28Pet005Length": {
+      "createPath": "formData.cwTab.CWSubMertial.11.CWMylarCY28Pet005Length",
+      "valuekey": "CWMylarCY28Pet005Length",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 108,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,11,CWMylarCY28Pet005width": {
+      "createPath": "formData.cwTab.CWSubMertial.11.CWMylarCY28Pet005width",
+      "valuekey": "CWMylarCY28Pet005width",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 109,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,11,CWMylarCY28Pet005Qty": {
+      "createPath": "formData.cwTab.CWSubMertial.11.CWMylarCY28Pet005Qty",
+      "valuekey": "CWMylarCY28Pet005Qty",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 110,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,12,uuid": {
+      "createPath": "formData.cwTab.CWSubMertial.12.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,12,layoutKey": {
+      "createPath": "formData.cwTab.CWSubMertial.12.layoutKey",
+      "valuekey": "layoutKey",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 112,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,12,CWMylarPet6027D01Length": {
+      "createPath": "formData.cwTab.CWSubMertial.12.CWMylarPet6027D01Length",
+      "valuekey": "CWMylarPet6027D01Length",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 113,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,12,CWMylarPet6027D01width": {
+      "createPath": "formData.cwTab.CWSubMertial.12.CWMylarPet6027D01width",
+      "valuekey": "CWMylarPet6027D01width",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 114,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,12,CWMylarPet6027D01Qty": {
+      "createPath": "formData.cwTab.CWSubMertial.12.CWMylarPet6027D01Qty",
+      "valuekey": "CWMylarPet6027D01Qty",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 115,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,13,uuid": {
+      "createPath": "formData.cwTab.CWSubMertial.13.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,13,layoutKey": {
+      "createPath": "formData.cwTab.CWSubMertial.13.layoutKey",
+      "valuekey": "layoutKey",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 117,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,13,CWDoubleSideTapeLength": {
+      "createPath": "formData.cwTab.CWSubMertial.13.CWDoubleSideTapeLength",
+      "valuekey": "CWDoubleSideTapeLength",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 118,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,13,CWDoubleSideTapewidth": {
+      "createPath": "formData.cwTab.CWSubMertial.13.CWDoubleSideTapewidth",
+      "valuekey": "CWDoubleSideTapewidth",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 119,
+      "default": null
+    },
+    "formData,cwTab,CWSubMertial,13,CWDoubleSideTapeQty": {
+      "createPath": "formData.cwTab.CWSubMertial.13.CWDoubleSideTapeQty",
+      "valuekey": "CWDoubleSideTapeQty",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 120,
+      "default": null
+    }
+  },
+  "verifyInfo": {
+    "totalPrices": {
+      "label": "總價",
+      "excelValueLongitudinalCoordinates": "171",
+      "valuekey": "totalPrices",
+      "valueType": "totalPrices",
+      "comparisonValuePath": "totalPrices"
+    },
+    "parentGroupId": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "parentGroupId",
+      "valueType": "parentGroupId",
+      "comparisonValuePath": "forDebug.summary.cableWire.parentGroupId"
+    },
+    "supportCost": {
+      "label": "輔料小計",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "supportCost",
+      "valueType": "supportCost",
+      "comparisonValuePath": "forDebug.summary.cableWire.supportCost"
+    },
+    "timeunittransferconstant": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "timeunittransferconstant",
+      "valueType": "timeunittransferconstant",
+      "comparisonValuePath": "forDebug.summary.cableWire.timeunittransferconstant"
+    },
+    "spenginghourup": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "spenginghourup",
+      "valueType": "spenginghourup",
+      "comparisonValuePath": "forDebug.summary.cableWire.spenginghourup"
+    },
+    "a_sumCableMaterialPrice": {
+      "label": "材料費",
+      "excelValueLongitudinalCoordinates": "167",
+      "valuekey": "a_sumCableMaterialPrice",
+      "valueType": "a_sumCableMaterialPrice",
+      "comparisonValuePath": "forDebug.summary.cableWire.a_sumCableMaterialPrice"
+    },
+    "b_assembly": {
+      "label": "組裝時間",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "b_assembly",
+      "valueType": "b_assembly",
+      "comparisonValuePath": "forDebug.summary.cableWire.b_assembly"
+    },
+    "b_secondary_processing_cost": {
+      "label": "B. 二次加工費",
+      "excelValueLongitudinalCoordinates": "168",
+      "valuekey": "b_secondary_processing_cost",
+      "valueType": "b_secondary_processing_cost",
+      "comparisonValuePath": "forDebug.summary.cableWire.b_secondary_processing_cost"
+    },
+    "sumConnectorCost": {
+      "label": "connector total",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "sumConnectorCost",
+      "valueType": "sumConnectorCost",
+      "comparisonValuePath": "forDebug.summary.cableWire.sumConnectorCost"
+    },
+    "consumable_cost": {
+      "label": "耗材費用",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "consumable_cost",
+      "valueType": "consumable_cost",
+      "comparisonValuePath": "forDebug.summary.cableWire.consumable_cost"
+    },
+    "CWDefaultAceticAcidClothCost": {
+      "label": "醋酸布拉帶成本",
+      "excelValueLongitudinalCoordinates": "61",
+      "valuekey": "CWDefaultAceticAcidClothCost",
+      "valueType": "CWDefaultAceticAcidClothCost",
+      "comparisonValuePath": "forDebug.summary.cableWire.CWDefaultAceticAcidClothCost"
+    },
+    "CWDefaultConductiveClothCost": {
+      "label": "導電布成本",
+      "excelValueLongitudinalCoordinates": "63",
+      "valuekey": "CWDefaultConductiveClothCost",
+      "valueType": "CWDefaultConductiveClothCost",
+      "comparisonValuePath": "forDebug.summary.cableWire.CWDefaultConductiveClothCost"
+    },
+    "c_component_cost": {
+      "label": "C. 零件費",
+      "excelValueLongitudinalCoordinates": "169",
+      "valuekey": "c_component_cost",
+      "valueType": "c_component_cost",
+      "comparisonValuePath": "forDebug.summary.cableWire.c_component_cost"
+    },
+    "d_profit": {
+      "label": "管銷&利潤",
+      "excelValueLongitudinalCoordinates": "170",
+      "valuekey": "d_profit",
+      "valueType": "d_profit",
+      "comparisonValuePath": "forDebug.summary.cableWire.d_profit"
+    },
+    "totalCost": {
+      "label": "總費用",
+      "excelValueLongitudinalCoordinates": "171",
+      "valuekey": "totalCost",
+      "valueType": "totalCost",
+      "comparisonValuePath": "forDebug.summary.cableWire.totalCost"
+    },
+    "isOtherFill": {
+      "label": "檢查是否有connect, 線材 是否有任何欄位填寫 other fill me remark",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "isOtherFill",
+      "valueType": "isOtherFill",
+      "comparisonValuePath": "forDebug.summary.cableWire.isOtherFill"
+    },
+    "total": {
+      "label": "全部價錢啦",
+      "excelValueLongitudinalCoordinates": "171",
+      "valuekey": "total",
+      "valueType": "total",
+      "comparisonValuePath": "forDebug.summary.cableWire.total"
+    },
+    "aceticacidclothup": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "aceticacidclothup",
+      "valueType": "aceticacidclothup",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.aceticacidclothup.value"
+    },
+    "aceticacidclothlossrate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "aceticacidclothlossrate",
+      "valueType": "aceticacidclothlossrate",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.aceticacidclothlossrate.value"
+    },
+    "conductiveclothup": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "conductiveclothup",
+      "valueType": "conductiveclothup",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.conductiveclothup.value"
+    },
+    "conductiveclothlossrate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "conductiveclothlossrate",
+      "valueType": "conductiveclothlossrate",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.conductiveclothlossrate.value"
+    },
+    "heatshrinkabletubingsbigger_300_assytime": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "heatshrinkabletubingsbigger_300_assytime",
+      "valueType": "heatshrinkabletubingsbigger_300_assytime",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.heatshrinkabletubingsbigger_300_assytime.value"
+    },
+    "heatshrinkabletubingssmaller_300_assytime": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "heatshrinkabletubingssmaller_300_assytime",
+      "valueType": "heatshrinkabletubingssmaller_300_assytime",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.heatshrinkabletubingssmaller_300_assytime.value"
+    },
+    "areaunittrnsferconstant": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "areaunittrnsferconstant",
+      "valueType": "areaunittrnsferconstant",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.areaunittrnsferconstant.value"
+    },
+    "prepare_constant": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "prepare_constant",
+      "valueType": "prepare_constant",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.prepare_constant.value"
+    },
+    "CWDefaultAceticAcidClothW": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "CWDefaultAceticAcidClothW",
+      "valueType": "CWDefaultAceticAcidClothW",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.CWDefaultAceticAcidClothW.value"
+    },
+    "CWDefaultConductiveClothW": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "CWDefaultConductiveClothW",
+      "valueType": "CWDefaultConductiveClothW",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.CWDefaultConductiveClothW.value"
+    },
+    "managementAndProfit": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "managementAndProfit",
+      "valueType": "managementAndProfit",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.managementAndProfit.value"
+    },
+    "aceticacidclothbigger_300assytime": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "aceticacidclothbigger_300assytime",
+      "valueType": "aceticacidclothbigger_300assytime",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.aceticacidclothbigger_300assytime.value"
+    },
+    "aceticacidclothsmaller_300assytime": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "aceticacidclothsmaller_300assytime",
+      "valueType": "aceticacidclothsmaller_300assytime",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.aceticacidclothsmaller_300assytime.value"
+    },
+    "conductiveClothbigger_300assytime": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "conductiveClothbigger_300assytime",
+      "valueType": "conductiveClothbigger_300assytime",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.conductiveClothbigger_300assytime.value"
+    },
+    "conductiveClothsmaller_300assytime": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "conductiveClothsmaller_300assytime",
+      "valueType": "conductiveClothsmaller_300assytime",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.conductiveClothsmaller_300assytime.value"
+    },
+    "fluxup": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fluxup",
+      "valueType": "fluxup",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.fluxup.value"
+    },
+    "fluxlossrate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fluxlossrate",
+      "valueType": "fluxlossrate",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.fluxlossrate.value"
+    },
+    "alcoholup": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "alcoholup",
+      "valueType": "alcoholup",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.alcoholup.value"
+    },
+    "alcohollossrate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "alcohollossrate",
+      "valueType": "alcohollossrate",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.alcohollossrate.value"
+    },
+    "doublesidedtapesup": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "doublesidedtapesup",
+      "valueType": "doublesidedtapesup",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.doublesidedtapesup.value"
+    },
+    "doublesidedtapeslossrate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "doublesidedtapeslossrate",
+      "valueType": "doublesidedtapeslossrate",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.doublesidedtapeslossrate.value"
+    },
+    "maskingtapesup": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "maskingtapesup",
+      "valueType": "maskingtapesup",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.maskingtapesup.value"
+    },
+    "maskingtapeslossrate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "maskingtapeslossrate",
+      "valueType": "maskingtapeslossrate",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.maskingtapeslossrate.value"
+    },
+    "tissuepaperup": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "tissuepaperup",
+      "valueType": "tissuepaperup",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.tissuepaperup.value"
+    },
+    "tissuepaperlossrate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "tissuepaperlossrate",
+      "valueType": "tissuepaperlossrate",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.tissuepaperlossrate.value"
+    },
+    "pitapesup": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "pitapesup",
+      "valueType": "pitapesup",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.pitapesup.value"
+    },
+    "pitapeslossrate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "pitapeslossrate",
+      "valueType": "pitapeslossrate",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.pitapeslossrate.value"
+    },
+    "maskingtapeshightempup": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "maskingtapeshightempup",
+      "valueType": "maskingtapeshightempup",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.maskingtapeshightempup.value"
+    },
+    "maskingtapeshightemplossrate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "maskingtapeshightemplossrate",
+      "valueType": "maskingtapeshightemplossrate",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.maskingtapeshightemplossrate.value"
+    },
+    "peup": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "peup",
+      "valueType": "peup",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.peup.value"
+    },
+    "pelossrate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "pelossrate",
+      "valueType": "pelossrate",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.pelossrate.value"
+    },
+    "solderwireup": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "solderwireup",
+      "valueType": "solderwireup",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.solderwireup.value"
+    },
+    "solderwirelossrate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "solderwirelossrate",
+      "valueType": "solderwirelossrate",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.solderwirelossrate.value"
+    },
+    "CWDefaultAceticAcidClothQty": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "CWDefaultAceticAcidClothQty",
+      "valueType": "CWDefaultAceticAcidClothQty",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.CWDefaultAceticAcidClothQty.value"
+    },
+    "CWDefaultConductiveClothQty": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "CWDefaultConductiveClothQty",
+      "valueType": "CWDefaultConductiveClothQty",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.CWDefaultConductiveClothQty.value"
+    },
+    "sumConnectorAssembly": {
+      "label": "connector組裝時間總和",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "sumConnectorAssembly",
+      "valueType": "sumConnectorAssembly",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.sumConnectorAssembly.value"
+    },
+    "b_sub_assyTime": {
+      "label": "二次加工費-組裝時間加總",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "b_sub_assyTime",
+      "valueType": "b_sub_assyTime",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.b_sub_assyTime.value"
+    },
+    "sumCableMaterialLength": {
+      "label": "材料長度總和",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "sumCableMaterialLength",
+      "valueType": "sumCableMaterialLength",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.sumCableMaterialLength.value"
+    },
+    "CWDefaultAceticAcidClothAssyCoefficient": {
+      "label": "醋酸布組裝時間係數",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "CWDefaultAceticAcidClothAssyCoefficient",
+      "valueType": "CWDefaultAceticAcidClothAssyCoefficient",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.CWDefaultAceticAcidClothAssyCoefficient.value"
+    },
+    "CWDefaultAceticAcidClothAssy": {
+      "label": "醋酸布組裝時間",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "CWDefaultAceticAcidClothAssy",
+      "valueType": "CWDefaultAceticAcidClothAssy",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.CWDefaultAceticAcidClothAssy.value"
+    },
+    "CWDefaultConductiveClothAssyCoefficient": {
+      "label": "導電布組裝時間係數",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "CWDefaultConductiveClothAssyCoefficient",
+      "valueType": "CWDefaultConductiveClothAssyCoefficient",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.CWDefaultConductiveClothAssyCoefficient.value"
+    },
+    "CWDefaultConductiveClothAssy": {
+      "label": "導電布組裝時間",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "CWDefaultConductiveClothAssy",
+      "valueType": "CWDefaultConductiveClothAssy",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.CWDefaultConductiveClothAssy.value"
+    },
+    "fluxCost": {
+      "label": "助焊劑",
+      "excelValueLongitudinalCoordinates": "126",
+      "valuekey": "fluxCost",
+      "valueType": "fluxCost",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.fluxCost.value"
+    },
+    "alcoholCost": {
+      "label": "酒精",
+      "excelValueLongitudinalCoordinates": "131",
+      "valuekey": "alcoholCost",
+      "valueType": "alcoholCost",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.alcoholCost.value"
+    },
+    "doublesidedtapesCost": {
+      "label": "雙面膠紙",
+      "excelValueLongitudinalCoordinates": "136",
+      "valuekey": "doublesidedtapesCost",
+      "valueType": "doublesidedtapesCost",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.doublesidedtapesCost.value"
+    },
+    "maskingtapesCost": {
+      "label": "美紋膠紙",
+      "excelValueLongitudinalCoordinates": "141",
+      "valuekey": "maskingtapesCost",
+      "valueType": "maskingtapesCost",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.maskingtapesCost.value"
+    },
+    "issuepaperCost": {
+      "label": "棉紙",
+      "excelValueLongitudinalCoordinates": "146",
+      "valuekey": "issuepaperCost",
+      "valueType": "issuepaperCost",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.issuepaperCost.value"
+    },
+    "pitapesCost": {
+      "label": "防焊膠紙",
+      "excelValueLongitudinalCoordinates": "151",
+      "valuekey": "pitapesCost",
+      "valueType": "pitapesCost",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.pitapesCost.value"
+    },
+    "askingtapeshightempCost": {
+      "label": "美紋紙 耐高溫型",
+      "excelValueLongitudinalCoordinates": "156",
+      "valuekey": "askingtapeshightempCost",
+      "valueType": "askingtapeshightempCost",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.askingtapeshightempCost.value"
+    },
+    "peupCost": {
+      "label": "PE膜",
+      "excelValueLongitudinalCoordinates": "161",
+      "valuekey": "peupCost",
+      "valueType": "peupCost",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.peupCost.value"
+    },
+    "solderwireCost": {
+      "label": "錫絲",
+      "excelValueLongitudinalCoordinates": "166",
+      "valuekey": "solderwireCost",
+      "valueType": "solderwireCost",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.solderwireCost.value"
+    },
+    "b_sub_cost": {
+      "label": "成本小計",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "b_sub_cost",
+      "valueType": "b_sub_cost",
+      "comparisonValuePath": "forDebug.debugInfo.cableWire.b_sub_cost.value"
+    }
+  }
+}

@@ -1,0 +1,94 @@
+multiple: true
+items:
+# 可編輯的sub-title --------------------------------------------------------------------------------------------------------------------
+  - key: clipLabel
+    label: Clip for DT
+    $Template:
+      - label
+    editable: true
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+      display: true
+    default: Clip
+    emdmMultipleKey: emdmBomInfo.cmfForm.clip
+    emdmKey: clipLabel
+
+# 用量 --------------------------------------------------------------------------------------------------------------------
+  - key: clipAmount
+    label: 用量
+    $Template:
+      - inputInt
+      - ^displayConfig
+    default: 0
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.clip
+    emdmKey: clipAmount
+
+# 材料 --------------------------------------------------------------------------------------------------------------------
+  - key: clipMaterial
+    label: 材料
+    $Template:
+      - selectorString
+    selectorConfig:
+      idKey: material_id
+      $Template:
+        - selectorConfig
+      ?getClipMaterial:
+        -
+      # $thermal-module.dropdown.ClipCostPerKilogramValues:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+    emdmMultipleKey: emdmBomInfo.cmfForm.clip
+    emdmKey: clipMaterial
+
+  - key: clipMaterialCostPerKilogram
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getClipMaterial:
+        -
+      # $thermal-module.dropdown.ClipCostPerKilogramValues:
+      #   - ^values
+    mapFrom:
+      - clipMaterial
+
+# 線徑 --------------------------------------------------------------------------------------------------------------------
+  - key: clipWireDiameter
+    label: 線徑(ø)
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.clip
+    emdmKey: clipWireDiameter
+
+# 長度 --------------------------------------------------------------------------------------------------------------------
+  - key: clipProductionLength
+    label: 長度(L)
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.clip
+    emdmKey: clipProductionLength
+
+# 寬度 --------------------------------------------------------------------------------------------------------------------
+  - key: clipProductionWidth
+    label: 寬度(W)
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.clip
+    emdmKey: clipProductionWidth
+

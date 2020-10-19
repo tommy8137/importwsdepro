@@ -1,0 +1,25 @@
+sheet:
+  label: EE-Item
+  tables:
+    - key: itemSummary
+      $Template:
+        - colTable
+      headers:
+        $dashboard-item.header-dashboard-item.itemsummary-excel:
+          - headers
+      colLength: 9
+    - key: pcbDetail
+      $Template:
+        - rowTable
+      headers:
+        $dashboard-item.header-dashboard-item.pcbdetail-excel:
+          - headers
+      anchor:
+        x: A
+        y: 11
+    - key: exchangeRateDefault
+      $Template:
+        - traverseTable
+      headers:
+        $eebom-tmp.header-full-bom.fullbomexchange-excel:
+          - headers

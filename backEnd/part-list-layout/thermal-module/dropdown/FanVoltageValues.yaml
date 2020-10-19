@@ -1,0 +1,5 @@
+values:
+  - fanVoltage: 12V
+    fanVoltagePrice: 0.5
+  - fanVoltage: 5V
+    fanVoltagePrice: 0

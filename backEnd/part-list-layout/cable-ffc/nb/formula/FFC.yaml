@@ -1,0 +1,308 @@
+output:
+  total: total
+  a_material_cost: material_cost
+  b_secondary_processing_cost: secondary_processing_cost
+  b_sub_assembly_cost: assembly_cost
+  b_sub_ffcBend_cost: ffcBend_cost
+  b_sub_ffcPrint_cost: ffcPrint_cost
+  b_sub_ffc_flush_cost: ffc_flush_cost
+  b_sub_ffcGoldPlating_cost: ffcGoldPlating_cost
+  b_sub_ffcStopLine_cost: ffcStopLine_cost
+  d_components_cost: components_cost
+  e_profit: profit
+  ffcassembly_cost: ffcassembly_cost
+  sumConnectorCost: sumConnectorCost
+  sumAccessoryAssyTime: sumAccessoryAssyTime
+  sumConnectorAssyTime: sumConnectorAssyTime
+  ffcassembly_time_unit_transfer: ffcassembly_time_unit_transfer
+  sumAlFoilReinforcingPlateAssyTime: sumAlFoilReinforcingPlateAssyTime
+  isOtherFill: isOtherFill
+
+formula:
+  total:
+    label: 總價
+    type: FUNC
+    formula: "(total, isOtherFill)=>{
+      const inValid = !(total && typeof total === 'number' && isFinite(total));
+      if (isOtherFill) {
+        return null;
+      } else if (inValid) {
+        return 0;
+      }
+      return total;
+    }"
+    param:
+      - totalCost
+      - isOtherFill
+
+  totalCost:
+    type: MATH
+    formula: material_cost + secondary_processing_cost + components_cost + package_cost + profit
+    label: 計算結果
+
+  profit:
+    type: MATH
+    formula: secondary_processing_cost * ffcManagement_and_profit
+    label: 管銷&利潤
+  # 材料費 細項
+  material_cost:
+    type: MATH
+    formula: FFCCableLength * (ffc_size_width + edge_material) * (material_unit_price / ffcedge_materia_area_trans_constant) * (1 + material_loss_rate)
+  ffc_size_width:
+    type: MATH
+    formula:  (FFCPin +1) * FFCPitch
+    label: FFC尺寸(W)
+  edge_material:
+    type: MATH
+    formula:  ffcedge_materia_size_constant + ffc_flush_amount * (ffcedge_materia_add_size_constant * ffcedge_materia_two_side_constant)
+    label: 邊料
+  ffc_flush_amount:
+    type: FUNC
+    formula: (FFCFlush) => { return FFCFlush==true ? 1:0}
+    label: 沖型數量
+    param:
+     - FFCFlush
+  secondary_processing_cost:
+    type: MATH
+    formula: assembly_cost + ffcBend_cost + ffcPrint_cost + ffc_flush_cost + ffcGoldPlating_cost + ffcStopLine_cost
+    label: 二次加工費
+
+  # 二次加工費細項
+  assembly_cost:
+    type: FUNC
+    formula: "(sumAccessoryAssyTime, sumConnectorAssyTime, ffcassembly_cost, ffcassembly_time_unit_transfer) => {
+      return (sumAccessoryAssyTime + sumConnectorAssyTime) * ffcassembly_cost / ffcassembly_time_unit_transfer;
+    }"
+    label: 組裝(sec)"
+    param:
+      - sumAccessoryAssyTime
+      - sumConnectorAssyTime
+      - ffcassembly_cost
+      - ffcassembly_time_unit_transfer
+
+
+  ffcBend_cost:
+    type: MATH
+    formula:  FFCBendTImes * ffcBend_unit_price
+    label: 折彎(次) cost
+  ffcPrint_cost:
+    type: MATH
+    formula:  FFCPrint * ffcPrint_unit_price
+    label: 印刷 cost
+  ffc_flush_cost:
+    type: MATH
+    formula:  ffc_flush_amount * ffcFlush_unit_price
+    label: 沖型 cost
+
+  ffcGoldPlating_cost:
+    type: MATH
+    formula: FFCGoldPlatingValue * (FFCPin * ( FFCPitch * ffcgolden_finger_width_ratio ) * ffcgolden_finger_length * ffcgolden_finger_rack_plating_cost * ffcgolden_finger_two_side_constant)
+    label: 金手指掛鍍(鍍金）cost
+
+  FFCGoldPlatingValue:
+    type: FUNC
+    formula: "(FFCGoldPlating) => {
+      const isNumber = typeof FFCGoldPlating === 'number';
+      const isBoolean = typeof FFCGoldPlating === 'boolean';
+      if ((isNumber && FFCGoldPlating === 0) || (isBoolean && FFCGoldPlating === false)) {
+        return 0;
+      } 
+      return 1;
+    }"
+    param:
+      - FFCGoldPlating
+
+  ffcStopLine_cost:
+    type: MATH
+    formula: FFCStopLine * ffcStopLine_unit_price
+    label: 停止線(條) cost
+
+  # 零件費
+  components_cost:
+    type: FUNC
+    formula: "(sumAccessoryCost, sumConnectorCost, isOtherFill)=>{
+      if (isOtherFill) {
+        return null;
+      }
+      return sumAccessoryCost + sumConnectorCost;
+    }"
+    label: 零件費
+    param:
+      - sumAccessoryCost
+      - sumConnectorCost
+      - isOtherFill
+
+  sumConnectorAssyTime:
+    type: GROUPSUM
+    label: connector 組裝時間
+    bykey: connectorAsstTime
+    groups:
+      - cableFfcConnector
+
+  sumConnectorCost:
+    type: GROUPSUM
+    label: connector 成本小計
+    bykey: connectorCost
+    groups:
+      - cableFfcConnector
+
+  isOtherFill:
+    type: GROUPFUNC
+    label: 檢查是否有group material, materialSpec 有填 Other_Fill_ME_Remark
+    bykey:
+      - isOtherFillMeRemark
+    groups:
+      - cableFfcConnector
+    func: "(values) => values.some(obj => obj.isOtherFillMeRemark)"
+
+  sumAccessoryAssyTime:
+    type: GROUPSUM
+    label: 輔料組裝時間小計
+    bykey: accessoryAssyTime
+    groups:
+      - alfoil
+      - reinforcingPlate
+      - label1
+      - label2
+      - conductiveCloth
+      - aceticAcidCloth
+      - kapton
+      - doubleSideTape
+      - conductiveDoubleSideTape
+      - mylarCY28Pet005
+      - mylarPet6027D01
+
+  sumAccessoryCost:
+    type: GROUPSUM
+    label: 輔料 成本小計
+    bykey: accessoryCost
+    groups:
+      - alfoil
+      - reinforcingPlate
+      - label1
+      - label2
+      - conductiveCloth
+      - aceticAcidCloth
+      - kapton
+      - doubleSideTape
+      - conductiveDoubleSideTape
+      - mylarCY28Pet005
+      - mylarPet6027D01
+
+scope:
+  FFCPin: FFCPin
+  FFCPitch: FFCPitch
+  FFCCableLength: FFCCableLength
+  FFCFlush: FFCFlush
+
+  FFCBendTImes: FFCBendTImes
+  FFCPrint: FFCPrint
+  FFCGoldPlating: FFCGoldPlating
+  FFCStopLine: FFCStopLine
+constant:
+  material_unit_price:
+    label: 材料單價
+    ?getFFCCommon:
+      - cable_ffc_material
+      - material_cost
+    # value: 26.6
+  material_loss_rate:
+    label: 材料 loss rate
+    ?getFFCCommon:
+      - cable_ffc_material
+      - material_loss_rate
+    # value: 0.03
+  ffcBend_unit_price:
+    label: 折彎單價
+    ?getFFCCommon:
+      - cable_ffc_secondary_processing
+      - knee_bend_cost
+    # value: 0.0080
+  ffcPrint_unit_price:
+    label: 印刷單價
+    ?getFFCCommon:
+      - cable_ffc_secondary_processing
+      - print_cost
+    # value: 0.006
+  ffcFlush_unit_price:
+    label: 沖型單價
+    ?getFFCCommon:
+      - cable_ffc_secondary_processing
+      - punching_cost
+    # value: 0.016
+  ffcStopLine_unit_price:
+    label: 停止線單價
+    ?getFFCCommon:
+      - cable_ffc_secondary_processing
+      - stop_line_cost
+    # value: 0.008
+  package_cost:
+    label: 運包檢
+    value: 0
+  ffcManagement_and_profit:
+    label: 管銷&利潤
+    ?getFFCCommon:
+      - cable_ffc_management_and_profit
+      - management_and_profit
+    # value: 0.1
+  ffcedge_materia_area_trans_constant:
+    label: FFC面積單位換算
+    ?getFFCCommon:
+      - cable_ffc_material
+      - edge_materia_area_trans_constant
+    # value: 1000000
+  ffcedge_materia_add_size_constant:
+    label: FFC沖型單邊所增加之邊料尺寸
+    ?getFFCCommon:
+      - cable_ffc_material
+      - edge_materia_add_size_constant
+    # value: 1.25
+  ffcedge_materia_two_side_constant:
+    label: FFC沖型雙邊所增加之邊料尺寸
+    # value: 2
+    ?getFFCCommon:
+      - cable_ffc_material
+      - edge_materia_two_side_constant
+  ffcedge_materia_size_constant:
+    label: FFC基本邊料尺寸
+    # value: 2
+    ?getFFCCommon:
+      - cable_ffc_material
+      - edge_materia_size_constant
+
+  ffcassembly_time_unit_transfer:
+    label: FFC 時間單位換算
+    # value: 60
+    ?getFFCCommon:
+      - cable_ffc_secondary_processing
+      - assembly_time_unit_transfer
+  ffcassembly_cost:
+    label: FFC 組裝費
+    # value: 0.045
+    ?getFFCCommon:
+      - cable_ffc_secondary_processing
+      - assembly_cost
+  ffcgolden_finger_width_ratio:
+    label: FFC 金手指寬度比例
+    # value: 0.6
+    ?getFFCCommon:
+      - cable_ffc_secondary_processing
+      - golden_finger_width_ratio
+  ffcgolden_finger_length:
+    label: FFC 金手指長度
+    ?getFFCCommon:
+      - cable_ffc_secondary_processing
+      - golden_finger_length
+    # value: 5
+  ffcgolden_finger_rack_plating_cost:
+    label: FFC 金手指掛鍍單價
+    ?getFFCCommon:
+      - cable_ffc_secondary_processing
+      - golden_finger_rack_plating_cost
+    # value: 0.00017
+  ffcgolden_finger_two_side_constant:
+    label: FFC 金手指兩邊常數
+    ?getFFCCommon:
+      - cable_ffc_secondary_processing
+      - golden_finger_two_side_constant
+    # value: 2

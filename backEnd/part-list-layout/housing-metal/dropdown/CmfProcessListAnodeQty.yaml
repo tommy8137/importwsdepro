@@ -1,0 +1,6 @@
+values:
+  - cmfProcessListSecondAnode: 二陽
+    cmfProcessListSecondAnodeQty: 1
+
+  - cmfProcessListSecondAnode: 預陽
+    cmfProcessListSecondAnodeQty: 0.5

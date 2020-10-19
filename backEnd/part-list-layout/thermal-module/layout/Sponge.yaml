@@ -1,0 +1,158 @@
+multiple: true
+items:
+# 可編輯的sub-title --------------------------------------------------------------------------------------------------------------------
+  - key: spongeLabel
+    label: Sponge
+    $Template:
+      - label
+    editable: true
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+    default: Sponge
+    emdmMultipleKey: emdmBomInfo.cmfForm.sponge
+    emdmKey: spongeLabel
+
+# 用量 --------------------------------------------------------------------------------------------------------------------
+  - key: spongeAmount
+    label: 用量
+    $Template:
+      - inputInt
+      - ^displayConfig
+    default: 0
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.sponge
+    emdmKey: spongeAmount
+
+# 長度 --------------------------------------------------------------------------------------------------------------------
+  - key: spongeLength
+    label: 長度(L)
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.sponge
+    emdmKey: spongeLength
+
+# 寬度 --------------------------------------------------------------------------------------------------------------------
+  - key: spongeWidth
+    label: 寬度(W)
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.sponge
+    emdmKey: spongeWidth
+# 材料 --------------------------------------------------------------------------------------------------------------------
+  - key: spongeMaterialThickness
+    label: 厚度(t)
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: material_spec_id
+      ?getThermalSpongeMaterial:
+        - Sponge_of_Mylar_Sponge_Poron
+      # $thermal-module.dropdown.SpongeMaterialThicknessCostPerKilogramValues:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+      require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.sponge
+    emdmKey: spongeMaterialThickness
+
+  - key: spongeMaterial
+    label: 材料
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: material_id
+      ?getThermalSpongeMaterial:
+        - Sponge_of_Mylar_Sponge_Poron
+      # $thermal-module.dropdown.SpongeMaterialThicknessCostPerKilogramValues:
+      #   - ^values
+      depends:
+        - spongeMaterialThickness
+    displayConfig:
+      $Template:
+        - displayConfig
+      depends:
+        action: lock
+        condition:
+          # spongeMaterialThickness: true
+          spongeMaterialThickness: "(spongeMaterialThickness, props) => {
+            const { FFCConnectorFunctionName } = props;
+            const otherFillMeRemarkText = 'Other_Fill_ME_Remark';
+            const isOtherFillMeRemark = spongeMaterialThickness === otherFillMeRemarkText;
+            return !isOtherFillMeRemark;
+          }"
+      spaceConfig:
+        after: 1
+    require: true
+    constrains:
+      - function: "(val, props) => {
+          const { spongeMaterialThickness } = props;
+          const otherFillMeRemarkText = 'Other_Fill_ME_Remark';
+          const isOtherFillMeRemark = spongeMaterialThickness === otherFillMeRemarkText;
+          return (val ==='' || val === null) && !isOtherFillMeRemark
+        }"
+        message: "此欄位為必填"
+        params:
+          - spongeMaterialThickness
+    emdmMultipleKey: emdmBomInfo.cmfForm.sponge
+    emdmKey: spongeMaterial
+
+# 材料單價 --------------------------------------------------------------------------------------------------------------------
+  - key: spongeMaterialCostPerMM
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      ?getThermalSpongeMaterial:
+        - Sponge_of_Mylar_Sponge_Poron
+      # $thermal-module.dropdown.SpongeMaterialThicknessCostPerKilogramValues:
+      #   - ^values
+    mapFrom:
+      - spongeMaterial
+      - spongeMaterialThickness
+
+  - key: spongeMaterialThicknessRemark
+    label: 厚度(t) Remark
+    $Template:
+      - textarea
+    require: true
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      depends:
+        action: lock
+        condition:
+          spongeMaterialThickness: "val => val === 'Other_Fill_ME_Remark'"
+    emdmMultipleKey: emdmBomInfo.cmfForm.sponge  
+    emdmKey: spongeMaterialThicknessRemark
+
+
+  - key: spongeMaterialRemark
+    label: 材料 Remark
+    $Template:
+      - textarea
+    require: true
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      depends:
+        action: lock
+        condition:
+          spongeMaterial: "val => val === 'Other_Fill_ME_Remark'"
+    emdmMultipleKey: emdmBomInfo.cmfForm.sponge    
+    emdmKey: spongeMaterialRemark

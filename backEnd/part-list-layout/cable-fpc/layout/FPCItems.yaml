@@ -1,0 +1,139 @@
+multiple: false
+label: 不用顯示
+items:
+  - key: partname
+    label: Part Name
+    url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+    $Template:
+      - fetchData
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 2
+    emdmKey: emdmBomInfo.wistronPartName
+
+  - key: partnumber
+    label: Wistron P/N
+    url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+    $Template:
+      - fetchData
+      - ^displayConfig
+    emdmKey: emdmBomInfo.wpn
+
+  - key: FPCQty
+    label: QTY
+    $Template:
+      - inputInt
+      - ^displayConfig
+    require: true
+    constrains:
+      - function: "(val) => val ==='' || val === null"
+        message: "此欄位為必填"
+    emdmKey: emdmBomInfo.cmfForm.FPCQty
+
+  - key: FPCPin
+    label: Pin
+    $Template:
+      - inputInt
+      - ^displayConfig
+    require: true
+    constrains:
+      - function: "(val) => val ==='' || val === null"
+        message: "此欄位為必填"
+    emdmKey: emdmBomInfo.cmfForm.FPCPin
+
+  - key: FPCPitch
+    label: Pitch
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    require: true
+    constrains:
+      - function: "(val) => val ==='' || val === null"
+        message: "此欄位為必填"
+    emdmKey: emdmBomInfo.cmfForm.FPCPitch
+
+  - key: FPCCableSize
+    label: 成品最大尺寸(mm)
+    $Template:
+      - compositeInline
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    items:
+      - key: FPCCableLength
+        $Template:
+          - inputFloat
+        label: L
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1.5
+        require: true
+        constrains:
+          - function: "(val) => val ==='' || val === null"
+            message: "此欄位為必填"
+        emdmKey: emdmBomInfo.cmfForm.FPCCableLength
+
+      - key: FPCCableWidth
+        $Template:
+          - inputFloat
+        label: W
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1.5
+        require: true
+        constrains:
+          - function: "(val) => val ==='' || val === null"
+            message: "此欄位為必填"
+        emdmKey: emdmBomInfo.cmfForm.FPCCableWidth
+
+  - key: FPCIncreaseSize
+    label: 邊料與併版所增加尺寸(mm)
+    $Template:
+      - compositeInline
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    items:
+      - key: FPCCableIncreaseLength
+        $Template:
+          - inputFloat
+        label: L
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1.5
+        emdmKey: emdmBomInfo.cmfForm.FPCCableIncreaseLength
+
+      - key: FPCCableIncreaseWidth
+        $Template:
+          - inputFloat
+        label: W
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1.5
+        emdmKey: emdmBomInfo.cmfForm.FPCCableIncreaseWidth
+
+  - key: FPCProductNumber
+    label: 單位併版之成品產出數
+    $Template:
+      - selectorString
+      - ^displayConfig
+    require: true
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: id
+      ?getFPCProductNumber:
+        -
+      # $cable-fpc.dropdown.FPCProductNumberValues:
+      #   - ^values
+    constrains:
+      - function: "(val) => val ==='' || val === null"
+        message: "此欄位為必填"
+    emdmKey: emdmBomInfo.cmfForm.FPCProductNumber

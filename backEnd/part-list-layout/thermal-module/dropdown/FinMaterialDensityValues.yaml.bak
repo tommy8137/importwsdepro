@@ -1,0 +1,24 @@
+values:
+ - finMaterial: CU1100
+   finDensity: '8.9'
+ - finMaterial: C18400
+   finDensity: '8.8'
+ - finMaterial: AL1050
+   finDensity: '2.75'
+ - finMaterial: AL6061
+   finDensity: '2.75'
+ - finMaterial: AL6063
+   finDensity: '2.75'
+ - finMaterial: KU400
+   finDensity: '7.85'
+ - finMaterial: KU400i
+   finDensity: '7.85'
+ - finMaterial: 皮銅
+   finDensity: '8.8'
+ - finMaterial: SECC
+   finDensity: '7.85'
+ - finMaterial: SGCC
+   finDensity: '7.85'
+ - finMaterial: SPCC
+   finDensity: '7.85'
+

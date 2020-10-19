@@ -1,0 +1,32 @@
+multiple: true
+items:
+  - key: cmfProcessListPadPrintingCheckBox
+    $Template:
+      - checkBox
+    label: Exist
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListPadPrintingCheckBox
+
+  - key: cmfProcessListPadPrintingCount
+    $Template:
+      - inputInt
+    label: 次數
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfProcessListPadPrintingCheckBox: true
+      grids: 1
+      display: true
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfProcessListPadPrintingCheckBox)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfProcessListPadPrintingCheckBox
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListPadPrintingCount

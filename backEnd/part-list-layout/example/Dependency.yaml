@@ -1,0 +1,23 @@
+multiple: true
+items:
+  - key: needPanting
+    label: Exist
+    $Template:
+      - checkBox
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+  - key: dependsOnCheckBox
+    $Template:
+      - inputInt
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          needPanting: true
+      grids: 1
+      display: true
+    label: H
+
+

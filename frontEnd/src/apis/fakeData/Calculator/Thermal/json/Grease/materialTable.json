@@ -1,0 +1,24 @@
+{
+  "header": [
+    {
+      "key": "material",
+      "name": "材質",
+      "typeof": "string"
+    },
+    {
+      "key": "materialCost",
+      "name": "材料成本",
+      "typeof": "number"
+    }
+  ],
+  "data": [
+    {
+      "material": "7783",
+      "materialCost": 490
+    },
+    {
+      "material": "7762",
+      "materialCost": 145
+    }
+  ]
+}

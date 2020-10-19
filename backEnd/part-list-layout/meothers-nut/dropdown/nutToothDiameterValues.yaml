@@ -1,0 +1,14 @@
+# 牙徑(M) 對照表
+values:
+  - partssizemName: M1.6
+    partssizem: 1.6
+    innerDiameter: 1.25
+  - partssizemName: M2
+    partssizem: 2
+    innerDiameter: 1.6
+  - partssizemName: M2.5
+    partssizem: 2.5
+    innerDiameter: 2.05
+  - partssizemName: M3
+    partssizem: 3
+    innerDiameter: 2.5

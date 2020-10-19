@@ -1,0 +1,78 @@
+multiple: true
+items:
+  - key: cmfPProductPolishingPLExist
+    label: Exist
+    $Template:
+      - checkBox
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    emdmKey: emdmBomInfo.cmfForm.cmfPProductPolishingPLExist
+
+  - key: cmfPProductPolishingPLContent
+    label: 產品類別
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: id
+      ?getPlasticGrinding:
+        - housing_plastic_secondary_processing
+        - grinding_loss_rate
+      # $housing-plastic.dropdown.CmfPProductPolishingPLContent:
+      #   - ^values
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfPProductPolishingPLExist: true
+      grids: 1
+      display: true
+    default: null
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfPProductPolishingPLExist)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfPProductPolishingPLExist
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfPProductPolishingPLContent
+
+
+  - key: cmfPProductPolishingPLUP
+    $Template:
+      - mappedValueString
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getPlasticGrinding:
+        - housing_plastic_secondary_processing
+        - grinding_loss_rate
+      # $housing-plastic.dropdown.CmfPProductPolishingPLContent:
+      #   - ^values
+    mapFrom:
+      - cmfPProductPolishingPLContent
+
+  - key: cmfPProductPolishingPLLossRate
+    $Template:
+      - mappedValueString
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getPlasticGrinding:
+        - housing_plastic_secondary_processing
+        - grinding_loss_rate
+    mapFrom:
+      - cmfPProductPolishingPLContent
+

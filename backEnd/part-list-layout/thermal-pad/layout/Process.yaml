@@ -1,0 +1,66 @@
+items:
+  - key: process
+    label: 
+    $Template:
+      - compositeInline
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+    items:
+      # 塗黑
+      - key: appearanceProcess
+        emdmKey: emdmBomInfo.cmfForm.appearanceProcess
+        label: 塗黑
+        $Template:
+          - checkBox
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 0.5
+
+
+      # 遮噴
+      - key: maskSpray
+        emdmKey: emdmBomInfo.cmfForm.maskSpray
+        label: 遮噴
+        $Template:
+          - checkBox
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 0.5
+
+  # 雷雕
+  - key: laserMarking
+    emdmKey: emdmBomInfo.cmfForm.laserMarking
+    label: 雷雕
+    $Template:
+      - checkBox
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+
+  # 雷雕總面積(mm²)
+  - key: laserMarkingArea
+    emdmKey: emdmBomInfo.cmfForm.laserMarkingArea
+    label: 雷雕總面積(mm²)
+    $Template:
+      - inputInt
+      - ^displayConfig
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          laserMarking: true
+      grids: 1
+      display: true
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.laserMarking)
+        }"
+        message: "此欄位為必填"
+        params:
+          - laserMarking
+    require: true

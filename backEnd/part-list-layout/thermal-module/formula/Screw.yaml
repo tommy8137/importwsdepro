@@ -1,0 +1,43 @@
+output:
+  total: total
+  unit_price: screw_unit_price
+  qty: screwAmount
+  assemblyTime: assemblyTime
+
+formula:
+# screw零件費 = 單價 * 用量 * (1 + screw loss rate) -----------------------------------------------------------------------------------------------------------------
+  total:
+    type: MATH
+    formula: screw_unit_price * screwAmount * (1 + screw_loss_rate) 
+    label: screw零件費
+
+  # 組裝時間
+  assemblyTime:
+    label: screw 組裝時間
+    type: MATH
+    formula: screwAmount * worktimeSec
+
+scope:
+  screwAmount: screwAmount
+
+constant:
+  worktimeSec:
+    label: Assembly組裝工時(sec)
+    ?getThermalCommon:
+      - thermal_module_processing
+      - assembly_spend_time
+    # value: 12
+    
+  screw_unit_price:
+    label: screw單價
+    ?getThermalCommon:
+      - thermal_module_components
+      - screw_cost
+    # value: 0.0025
+
+  screw_loss_rate:
+    label: screw loss rate
+    ?getThermalCommon:
+      - thermal_module_components
+      - screw_loss_rate
+    # value: 0.015

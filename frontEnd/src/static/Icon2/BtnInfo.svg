@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+    <defs>
+        <style>
+            .cls-1{fill:#333}.cls-2{fill:#f7f7f7}.cls-3{fill:none}
+        </style>
+    </defs>
+    <g id="btn_info_p" transform="translate(-1177 -404)">
+          <rect id="Rectangle_233" width="30" height="30" class="cls-1" data-name="Rectangle 233" rx="15" transform="translate(1177 404)" />
+          <path id="Rectangle_2112" d="M0 0h12v4H0z" class="cls-2" data-name="Rectangle 2112" transform="rotate(90 388.5 805.5)" />
+          <rect id="Rectangle_2180" width="6" height="6" class="cls-2" data-name="Rectangle 2180" rx="3" transform="rotate(90 393 802)" />
+          <rect id="btn_info_p-2" width="30" height="30" class="cls-3" data-name="btn_info_p" rx="4" transform="translate(1177 404)" />
+        </g>
+</svg>

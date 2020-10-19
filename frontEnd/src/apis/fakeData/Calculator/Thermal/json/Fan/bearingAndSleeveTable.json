@@ -1,0 +1,32 @@
+{
+  "header": [
+    {
+      "key": "type",
+      "name": "軸承+套筒類別",
+      "typeof": "string"
+    },
+    {
+      "key": "price",
+      "name": "價格",
+      "typeof": "number"
+    }
+  ],
+  "data": [
+    {
+      "type": "Sleeve+塑膠_H<=7.5",
+      "price": 0
+    },
+    {
+      "type": "Sleeve+金屬_H<=7.5",
+      "price": 0
+    },
+    {
+      "type": "FDB+金屬_H<=4.5",
+      "price": 0
+    },
+    {
+      "type": "FDB+金屬_H>=5.0",
+      "price": 0.35
+    }
+  ]
+}

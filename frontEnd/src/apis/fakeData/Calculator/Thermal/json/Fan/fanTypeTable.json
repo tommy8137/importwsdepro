@@ -1,0 +1,20 @@
+{
+  "header": [
+    {
+      "key": "fanType",
+      "name": "風扇類型",
+      "typeof": "string"
+    }
+  ],
+  "data": [
+    {
+      "fanType": "Axial(軸流扇)"
+    },
+    {
+      "fanType": "Cross Flow Fan(橫流扇)"
+    },
+    {
+      "fanType": "Blower(離心扇)"
+    }
+  ]
+}

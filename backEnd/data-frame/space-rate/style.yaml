@@ -1,0 +1,38 @@
+space-sub-header-1:
+  fill: D9E1F2
+  bold: true
+  fontFamily: arial
+  horizontalAlignment: center
+  verticalAlignment: center
+  border: true
+
+space-sub-header-2:
+  fill: B4C6E7
+  bold: true
+  fontFamily: arial
+  horizontalAlignment: center
+  verticalAlignment: center
+  border: true
+
+space-sub-header-3:
+  fill: 8EA9DB
+  bold: true
+  fontFamily: arial
+  horizontalAlignment: center
+  verticalAlignment: center
+  border: true
+
+space-header-yellow:
+  fill: FFFF00
+  border: true
+  horizontalAlignment: center
+  verticalAlignment: center
+
+space-header:
+  border: true
+  horizontalAlignment: center
+  verticalAlignment: center
+
+
+space-data:
+  border: true

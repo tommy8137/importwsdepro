@@ -1,0 +1,407 @@
+output:
+  # FOR GROUP SUM START ================
+  total: total
+  type2: type2
+  stampingCost: stampingCost
+  assyCount: assyCount
+  areaTimes: areaTimes
+  material: material
+  materialspec: materialspec
+  isOtherFill: isOtherFill
+  materialSize: materialSize
+  isGasket: isGasket
+  partssizelength: partssizelength
+  partssizewidth: partssizewidth
+  machineTypeObject: machineTypeObject
+  # FOR GROUP SUM END ================
+  # for debug
+  mainMaterialLossRate: mainMaterialLossRate
+  materialPerCost: materialPerCost
+
+
+formula:
+  total:
+    type: FUNC
+    formula: "(materialPerCost, isGasket, type2, materialSize, mainMaterialLossRate, assyCount) => {
+      if (isGasket) {
+        return materialPerCost * materialSize * (1 + (mainMaterialLossRate)) / 1000000;
+      }
+      return materialPerCost * materialSize * (1 + (mainMaterialLossRate)) * assyCount / 1000000;
+    };"
+    param:
+      - materialPerCost
+      - isGasket
+      - type2
+      - materialSize
+      - mainMaterialLossRate
+      - assyCount
+
+  # 下料面積尺寸增加寬度
+  materialSizeAdderWidth:
+    type: FUNC
+    label: 下料面積尺寸增加寬度
+    formula: "(partssizewidth, materialSizeAdderPrice) => {
+      const value = Number(partssizewidth);
+      return materialSizeAdderPrice.values.reduce((prev, curr) => {
+        if (value > curr.materialSizeMin) {
+          return curr.materialSizeValue;
+        }
+        return prev;
+      }, 0);
+    };"
+    param:
+      - partssizewidth
+      - materialSizeAdderPrice
+
+  # 下料面積尺寸增加長度
+  materialSizeAdderLength:
+    type: FUNC
+    label: 下料面積尺寸增加長度
+    formula: "(partssizelength, materialSizeAdderPrice) => {
+      const value = Number(partssizelength);
+      return materialSizeAdderPrice.values.reduce((prev, curr) => {
+        if (value > curr.materialSizeMin) {
+          return curr.materialSizeValue;
+        }
+        return prev;
+      }, 0);
+    };"
+    param:
+      - partssizelength
+      - materialSizeAdderPrice
+
+  materialSize:
+    type: FUNC
+    label: 下料面積
+    formula: "(isGasket, type2, commonMaterialSize, gasketMaterialSize) => {
+      if(isGasket) {
+        return gasketMaterialSize;
+      }
+      return commonMaterialSize;
+    };"
+    param:
+      - isGasket
+      - type2
+      - commonMaterialSize
+      - gasketMaterialSize
+
+  # 類型1: 一般的下料面積公式 : ( L + 下料增加尺寸) * ( W  + 下料增加尺寸)
+  commonMaterialSize:
+    type: MATH
+    label: 下料面積
+    formula: (partssizewidth + materialSizeAdderWidth) * (partssizelength + materialSizeAdderLength)
+
+  # 類型2: Gasket下料面積公式: 2 * (W + H) * L
+  gasketMaterialSize:
+    type: MATH
+    label: Gasket下料面積
+    formula: 2 * (partssizewidth + partssizehigh) * partssizelength
+
+ 
+
+  # 判斷要不要用Gasket算法
+  isGasket:
+    type: FUNC
+    label: 下料面積
+    formula: "(ecoFormValues, type2, materialspec) => {
+      const isGasket = type2 === 'Gasket';
+      const isEco = ecoFormValues.values.reduce((prev, curr) => {
+        if(curr === materialspec) {
+          return true;
+        }
+        return prev;
+      }, false);
+      if(isGasket && !isEco) {
+        return true;
+      }
+      return false;
+    }"
+    param:
+      - ecoFormValues
+      - type2
+      - materialspec
+
+  # 判斷是不是other fill me remark
+  isOtherFill:
+    type: FUNC
+    label: 判斷是不是other fill me remark
+    formula: "(otherFillMeRemarkName, material, materialspec) => {
+      return material === otherFillMeRemarkName || materialspec === otherFillMeRemarkName;
+    }"
+    param:
+      - otherFillMeRemarkName
+      - material
+      - materialspec
+
+
+  # 沖切加工費:  Gasket不算沖切加工費
+  stampingCost:
+    type: FUNC
+    label: 沖切加工費
+    formula: "(isGasket, stampingTypePrice, areaTimes) => {
+      const result = stampingTypePrice / areaTimes;
+      if(!result || isGasket) {
+        return 0;
+      }
+      return result;
+    }"
+    param:
+      - isGasket
+      - stampingTypePrice
+      - areaTimes
+
+  # 總數量/沖
+  areaTimes:
+    type: FUNC
+    label: 數量/次
+    formula: "(machineWidthCount, machineLengthCount) => {
+      return machineWidthCount *  machineLengthCount;
+    };"
+    param:
+      - machineWidthCount
+      - machineLengthCount
+
+  stampingTypePrice:
+    type: FUNC
+    label: 沖工費(USD)
+    formula: "(machineTypeObject) => {
+      const { machinePrice } = machineTypeObject;
+      return machinePrice;
+    }"
+    param:
+      - machineTypeObject
+
+  machineWidthCount:
+    type: FUNC
+    label: 機台類型
+    formula: "(machineTypeObject, partssizewidth, materialSizeAdderWidth) => { 
+      const { length, width } = machineTypeObject;
+      const count = width / (Number(partssizewidth) + Number(materialSizeAdderWidth));
+      return parseInt(count, 10);
+    }"
+    param:
+      - machineTypeObject
+      - partssizewidth
+      - materialSizeAdderWidth
+
+  machineLengthCount:
+    type: FUNC
+    label: 機台類型
+    formula: "(machineTypeObject, partssizelength, materialSizeAdderLength) => { 
+      const { length, width } = machineTypeObject;
+      const count = length / (Number(partssizelength) + Number(materialSizeAdderLength));
+      return parseInt(count, 10);
+    }"
+    param:
+      - machineTypeObject
+      - partssizelength
+      - materialSizeAdderLength
+
+  machineType:
+    type: FUNC
+    label: 機台類型
+    formula: "(machineTypeObject) => {
+      const { machineType } = machineTypeObject;
+      return machineType;
+    }"
+    param:
+      - machineTypeObject
+      
+  machineTypeObject:
+    type: FUNC
+    label: 機台類型Object
+    formula: "(partssizelength, partssizewidth, materialSizeAdderLength, materialSizeAdderWidth, machineTypeList) => {
+      const length =  Number(partssizelength) + Number(materialSizeAdderLength);
+      const width =  Number(partssizewidth) + Number(materialSizeAdderWidth);
+      const result = machineTypeList.reduce((prev, curr) =>{
+        const { length: l, width: w } = curr;
+        const { length: prevL, width: prevW } = prev;
+        if((length < l && width < w) && (!prevL && !prevW) ) {
+          return curr;
+        }
+        return prev;
+      },{});
+      return result;
+    }"
+    param:
+      - partssizelength
+      - partssizewidth
+      - materialSizeAdderLength
+      - materialSizeAdderWidth
+      - machineTypeList
+
+
+  machineTypeList:
+    type: FUNC
+    label: 機台類型
+    formula: "(m1L, m2L, m3L, m1W, m2W, m3W, m1Price, m2Price, m3Price) => {
+      const machineTypeList = ['M1', 'M2', 'M3'];
+      const mappedAreaL = [m1L, m2L, m3L];
+      const mappedAreaW = [m1W, m2W, m3W];
+      const machinePriceList = [m1Price, m2Price, m3Price];
+
+      const result = machineTypeList.reduce((prev, machineType, i) => {
+       return [
+        ...prev,
+        {
+          machineType,
+          length: mappedAreaL[i],
+          width: mappedAreaW[i],
+          machinePrice: machinePriceList[i]
+        }
+       ];
+      }, []);
+      return result;
+    }"
+    param:
+      - m1EffectiveAreaL
+      - m2EffectiveAreaL
+      - m3EffectiveAreaL
+      - m1EffectiveAreaW
+      - m2EffectiveAreaW
+      - m3EffectiveAreaW
+      - m1MachinePrice
+      - m2MachinePrice
+      - m3MachinePrice
+
+scope:
+  partssizehigh: partssizehigh
+  partssizelength: partssizelength
+  partssizewidth: partssizewidth
+  materialPerCost: materialPerCost #filter by material & materialspec
+  type2: type2
+  material: material
+  materialspec: materialspec
+
+constant:
+  mainMaterialLossRate:
+    label: 主要材料費 loss rate
+    ?getDiecutCommon:
+      - die_cut_main_material
+      - main_material_loss_rate
+    # value: 0.05
+
+  # 機台沖工費相關 =====================
+  m1MachinePrice:
+    label: M1機台沖工費(沖)
+    ?getDiecutCommon:
+      - die_cut_machine
+      - m1_machine_price
+    # value: 0.012
+
+  m2MachinePrice:
+    label: M2機台沖工費(沖)
+    ?getDiecutCommon:
+      - die_cut_machine
+      - m2_machine_price
+    # value: 0.013
+
+  m3MachinePrice:
+    label: M3機台沖工費(沖)
+    ?getDiecutCommon:
+      - die_cut_machine
+      - m3_machine_price	
+    # value: 0.014  
+
+  m1EffectiveAreaL:
+    label: M1有效面積長度
+    ?getDiecutCommon:
+      - die_cut_machine
+      - m1_effective_area_L	
+    # value: 300
+
+  m2EffectiveAreaL:
+    label: M2有效面積長度
+    ?getDiecutCommon:
+      - die_cut_machine
+      - m2_effective_area_L	
+    # value: 600
+
+  m3EffectiveAreaL:
+    label: M3有效面積長度
+    ?getDiecutCommon:
+      - die_cut_machine
+      - m3_effective_area_L	
+    # value: 900
+
+  m1EffectiveAreaW:
+    label: M1有效面積寬度
+    ?getDiecutCommon:
+      - die_cut_machine
+      - m1_effective_area_W	
+    # value: 200
+
+  m2EffectiveAreaW:
+    label: M2有效面積寬度
+    ?getDiecutCommon:
+      - die_cut_machine
+      - m2_effective_area_W	
+    value: 400
+
+  m3EffectiveAreaW:
+    label: M3有效面積寬度
+    ?getDiecutCommon:
+      - die_cut_machine
+      - m3_effective_area_W	
+    # value: 500
+
+  # 機台沖工費相關 =====================
+
+
+
+  otherFillMeRemarkName:
+    label: Other_Fill_ME_Remark
+    value: Other_Fill_ME_Remark
+
+  ecoFormValues:
+    label: ECO_FORM_對照表
+    value: 
+      $die-cut.dropdown.ecoFormValues:
+        - ^values
+
+  # 主要材料費最多只能1
+  assyCount:
+    label: 數量
+    value: 1
+
+  lossRate:
+    label: Loss Rate
+    ?getDiecutCommon:
+      - die_cut_main_material
+      - main_material_loss_rate
+    # value: 0.05
+
+  materialSizeAdderPrice:
+    label: 下料增加尺寸對應表
+    value:
+      ?getDiecutMaterialAddeer:
+        -
+      # $die-cut.dropdown.materialSizeAdderPriceValues:
+      #  - ^values
+    # ?example:
+    #   - v1
+
+  areaTimesValues:
+    label: 沖切數量對照表
+    value:
+      ?getDiecutAreaTime:
+      -
+      # $die-cut.dropdown.areaTimesValues:
+      # - ^values
+
+  materialPerCostValues:
+    label: 材料單價對照表
+    value:
+      ?getDiecutMaterial:
+      -
+      # $die-cut.dropdown.materialPerCostValues:
+      #   - ^values
+
+  stampingTypePriceValues:
+    label: 沖切對照表
+    value:
+      ?getDiecutStampingType:
+      -
+      # $die-cut.dropdown.stampingTypeValues:
+      #   - ^values
+

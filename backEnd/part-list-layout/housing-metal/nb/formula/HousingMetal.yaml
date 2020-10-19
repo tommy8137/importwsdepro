@@ -1,0 +1,1099 @@
+output:
+  total: total
+  A_material_cost: material_cost
+  stamping_cost: stamping_cost
+  B_secondary_processing_cost: secondary_processing_cost
+  C_packageCost: packageCost
+  D_profit: profit
+  cmfProcessListCNC: cmfProcessListCNC
+  cmfProcessListCNCPL: cmfProcessListCNCPL
+  CNCProcessingSizeFormula1: CNCProcessingSizeFormula1
+  cmfProcessListCNCCycleTime: cmfProcessListCNCCycleTime
+  cmfProcessListPolishing: cmfProcessListPolishing
+  __cmfProcessListPolishingAuto: cmfProcessListPolishingAuto
+  __cmfProcessListPolishingArtificial: cmfProcessListPolishingArtificial
+  cmfProcessListPolishingArtificialCycleTime: cmfProcessListPolishingArtificialCycleTime
+  CNCPickAndPlaceSec: CNCPickAndPlaceSec
+  CNCPLPickAndPlaceSec: CNCPLPickAndPlaceSec
+  polishingAutoPickAndPlaceSec: polishingAutoPickAndPlaceSec
+  polishingArtificialPickAndPlaceSec: polishingArtificialPickAndPlaceSec
+  # for export
+  hmToolingMaterialWeight: hmToolingMaterialWeight
+  cmfProcessListThermalBondingGlueWeight: cmfProcessListThermalBondingGlueWeight
+  hmStampingList: hmStampingList
+  ultrasonicCleanUP: ultrasonicCleanUP
+  _type2: _type2
+  cmfProcessListSandBlast: cmfProcessListSandBlast
+  cmfProcessListSandBlastCycleTime: cmfProcessListSandBlastCycleTime
+  hmMaterialLossRate: hmMaterialLossRate
+  hmMaterialLossRateCE: hmMaterialLossRateCE
+  cmfProcessListLaserPrint: cmfProcessListLaserPrint
+  cmfProcessListLaserPrintArea: cmfProcessListLaserPrintArea
+  laserPrintUP: laserPrintUP
+  laserPrintLossRate: laserPrintLossRate
+  pick_and_place_and_tool_change_time: pick_and_place_and_tool_change_time
+  profit_weighting: profit_weighting
+  profit_percent: profit_percent
+
+formula:
+  total:
+    type: FUNC
+    formula: "(total, isOtherFill)=>{
+      const inValid = !(total && typeof total === 'number' && isFinite(total));
+      if (isOtherFill) {
+        return null;
+      } else if (inValid) {
+        return 0;
+      }
+      return total;
+    }"
+    label: 材料費
+    param:
+      - totalCost
+      - isOtherFill
+
+  totalCost:
+    type: MATH
+    formula: material_cost + stamping_cost + secondary_processing_cost + packageCost + profit
+    label: 計算結果
+
+  # 檢查是否有 Other_Fill_ME_Remark
+  isOtherFill:
+    type: FUNC
+    formula: "hpmaterial => (hmmaterial ===  'Other_Fill_ME_Remark')"
+    label: 材料費
+    param:
+      - hmmaterial
+
+  # 材料費loss rate
+  hmMaterialLossRate:
+    label: 材料費lossRate
+    type: MATH
+    formula: "hmMaterialLossRateCE / 100"
+
+  # 材料費
+  material_cost:
+    type: MATH
+    formula: (hmToolingMaterialExpandWidth * hmToolingMaterialExpandLength * hmthickness * hmmaterialdensity) * hmmaterialprice / 1000000 * (1 + hmMaterialLossRate)
+    label: 材料費
+
+  # 沖壓費
+  stamping_cost:
+    type: MATH
+    formula: groupStampingCost
+    label: 沖壓費
+
+  # 二次加工費
+  secondary_processing_cost:
+    type: MATH
+    formula: "cmfProcessListUltrasonicClean +
+      cmfProcessListAnode +
+      cmfProcessListSandBlast +
+      cmfProcessListHairLine +
+      cmfProcessListPatinting +
+      cmfProcessListThermalBonding +
+      cmfProcessListSingleTapping +
+      cmfProcessListMultiTapping +
+      cmfProcessListSingleSpotWelding +
+      cmfProcessListMultiSpotWelding +
+      cmfProcessListHandMakeDraw +
+      cmfProcessListScreenPrinting +
+      cmfProcessListPadPrinting +
+      cmfProcessListSilkPrint +
+      cmfProcessListCNC+
+      cmfProcessListCNCPL +
+      cmfProcessListDrillCut +
+      cmfProcessListLaserPrint +
+      cmfProcessListLaserPrintIcon +
+      cmfProcessListPolishing +
+      cmfProcessListDrilling +
+      cmfProcessListAnodizingRemoval
+    "
+    label: 二次加工費
+
+  # ==============================================
+  # 沖壓費 小計
+  groupStampingCost:
+    label: 沖壓費 小計
+    type: FUNC
+    formula: "(list) => {
+      const result = list.reduce((prev, current) => (prev + current.hmToolingStampingSingleCost), 0);
+      return result;
+    }"
+    param:
+     - hmStampingList
+
+  # 一組沖壓費: 工程數*機台費/穴數*(1+LossRate)*(1+FCST寬放值)
+  hmStampingList:
+    label: 沖壓費 小計
+    type: FUNC
+    formula: "(list, hmToolingHoleCount) => {
+        return list.map((d) => ({
+          ...d,
+          hmToolingStampingSingleCost: d.hmStampingCount * d.hmToolingModuleRate / hmToolingHoleCount * (1 + d.hmToolingStampingSingleLossRate) * (1 + d.hmToolingStampingSingleAllowance)
+        }));
+    }"
+    param:
+     - hmStampingGroupData
+     - hmToolingHoleCount # 穴數
+
+  # 一組沖壓
+  hmStampingGroupData:
+    type: GROUPFUNC
+    label: 沖壓費 group 原始資料
+    bykey:
+      - hmStampingMouldType # 機台類型
+      - hmToolingModuleRate # Module rate
+      - hmStampingCount # 工程數
+      - hmToolingStampingSingleLossRate # Loss Rate
+      - hmToolingStampingSingleAllowance # FCST 寬放值
+    groups:
+      - stamping # group 名稱
+    func: "(values) => values"
+  # ==============================================
+
+  productExpendSize:
+    type: MATH
+    formula: hmpartsexpandwidth * hmpartsexpandlength
+    label: 成品展開尺寸
+
+  # 超音波清洗
+  cmfProcessListUltrasonicClean:
+    type: MATH
+    formula: cmfProcessListultrasonicCleanExist ? ultrasonicCleanUP:0
+    label: 超音波清洗
+
+  ultrasonicCleanUP:
+    type: FUNC
+    formula: "(ultrasonicCleanUPList, _type2) => {
+      const result = ultrasonicCleanUPList.values.filter(d => d.type2 === _type2);
+      if (result.length >= 0) {
+        return result[0].ultrasonicCleanUP;
+      }
+
+      return 0;
+    }"
+    param:
+      - ultrasonicCleanUPList
+      - _type2
+
+  # 陽極
+  cmfProcessListAnode:
+    type: MATH
+    formula: cmfProcessListFirstAnode + cmfProcessListSecondAnode
+    label: 陽極
+
+  cmfProcessListFirstAnode:
+    type: MATH
+    formula: cmfProcessListFirstAnodeCheckBox ? (productExpendSize/1000000) * cmfProcessListFirstAnodePrice * (1 + cmfProcessListFirstAnodeLossRate) :0
+    label: 陽極(一陽)
+
+  cmfProcessListSecondAnode:
+    type: MATH
+    formula: cmfProcessListSecondAnodeCheckBox ? (productExpendSize / 1000000) * cmfProcessListSecondAnodePrice * (1 +cmfProcessListSecondAnodeLossRate) * cmfProcessListSecondAnodeQty :0
+    label: 陽極(二陽)
+
+  # 噴砂 = 噴砂 cycle time * 製程次數(exist 0/1) * 噴砂單價 * (1 + 噴砂loss rate) * 趟數
+  cmfProcessListSandBlast:
+    type: MATH
+    formula: "cmfProcessListSandBlastCheckBox ?
+     cmfProcessListSandBlastCycleTime * 1 * sandBlastUP * (1 + sandBlastLossRate) * hmNumberOfRuns : 0"
+    label: 噴砂
+
+  # 噴砂Cycle Time = (PartSize/length + 流水線方向工件間距) / 噴砂流水線速度
+  cmfProcessListSandBlastCycleTime:
+    label: 噴砂Cycle Time
+    type: MATH
+    formula: "(hmpartssizelength + hmWorkpieceSpacingInAssemblyLineDirection) / sandblasting_line_speed"
+
+  # 髮絲
+  cmfProcessListHairLine:
+    type: MATH
+    formula: cmfProcessListHairLineCheckBox ? (cmfProcessListHairLineArea / 1000000) * hairLineUP * (1 + hairLineLossRate) :0
+    label: 髮絲
+
+  # 噴漆
+  cmfProcessListPatinting:
+    type: MATH
+    formula: cmfProcessListPaintingCheckBox ? paintingConst1 * patintingArea * cmfProcessListPaintingCount + ( patintingArea * cmfProcessListPaintingFilmThickness *paintingConst2/1000000) * cmfProcessListPaintingCount * CmfProcessListPaintingPriceUSD *(1 + paintingLossRate) :0
+    label: 噴漆
+  patintingArea:
+    type: MATH
+    formula:  cmfProcessListPaintingArea + ce_patintingAreaConst1 * (hmpartsexpandwidth * 2 + hmpartsexpandlength * 2)
+    label: 噴塗面積
+
+  # 熱壓
+  cmfProcessListThermalBonding:
+    type: MATH
+    formula: cmfProcessListThermalBondingCheckBox ? ( glueWeight * cmfProcessListThermalBondingGluePrice + cmfProcessListThermalBondingCycleTimeValue * thermalBondingUP ) * (1+ thermalBondingLossRate) :0
+    label: Thermal Bonding 熱壓
+  glueWeight:
+    type: MATH
+    formula: cmfProcessListThermalBondingCheckBox ?3.1416 * (cmfProcessListThermalBondingGlueSyringeDiameter / 2) * (cmfProcessListThermalBondingGlueSyringeDiameter / 2) * cmfProcessListThermalBondingPathLength * cmfProcessListThermalBondingGlueDensity / 1000 :0
+    label: 膠水重量
+
+  # 單點攻牙
+  cmfProcessListSingleTapping:
+    type: MATH
+    formula: cmfProcessListSingleTappingCheckBox ? cmfProcessListSingleTappingCount * singleTappingUP * (1+ singleTappingLossRate) :0
+    label: 單點攻牙
+
+  # 多點攻牙
+  cmfProcessListMultiTapping:
+    type: MATH
+    formula: cmfProcessListMultiTappingCheckBox ? cmfProcessListMultiTappingCount * multiTappingUP * (1+ multiTappingLossRate) :0
+    label: 多點攻牙
+
+  # 單點點焊
+  cmfProcessListSingleSpotWelding:
+    type: MATH
+    formula: cmfProcessListSingleSpotWeldingCheckBox ? cmfProcessListSingleSpotWeldingCount * singleSpotWeldingUP * (1+ singleSpotWeldingLossRate) :0
+    label: 單點點焊
+
+  # 多點點焊
+  cmfProcessListMultiSpotWelding:
+    type: MATH
+    formula: cmfProcessListMultiSpotWeldingCheckBox ? cmfProcessListMultiSpotWeldingCount * multiSpotWeldingUP * (1+ multiSpotWeldingLossRate) :0
+    label: 多點點焊
+
+  # 單點鉚釘
+  cmfProcessListSingleRivet:
+    type: MATH
+    formula: cmfProcessListSingleRivetCheckBox ? cmfProcessListSingleRivetCount * singleRivetUP * (1+ singleRivetLossRate) :0
+    label: 單點鉚釘
+
+  # 多點鉚釘
+  cmfProcessListMultiRivet:
+    type: MATH
+    formula: cmfProcessListMultiRivetCheckBox ? cmfProcessListMultiRivetCount * multiRivetUP * (1+ multiRivetLossRate) :0
+    label: 多點鉚釘
+
+  # 拉鉚釘
+  cmfProcessListRivet:
+    type: MATH
+    formula: cmfProcessListRivetCheckBox ? cmfProcessListRivetCount * rivetUP * (1+ rivetLossRate) :0
+    label: 拉鉚釘
+
+  # 手工塗黑
+  cmfProcessListHandMakeDraw:
+    type: MATH
+    formula: cmfProcessListHandMakeDrawCheckBox ?cmfProcessListHandMakeDrawCycleTime / 60 * handMakeDrawUP * (1+ handMakeDrawLossRate) :0
+    label: 手工塗黑
+  cmfProcessListHandMakeDrawCycleTime:
+    type: MATH
+    formula: cmfProcessListHandMakeDrawCount *(handMakeDrawPerTime/handMakeDrawPerSize)
+
+  # Printing網印
+  cmfProcessListScreenPrinting:
+    type: MATH
+    formula: cmfProcessListScreenPrintingCheckBox ?cmfProcessListScreenPrintingCount * screenPrintingUP * (1+ screenPrintingLossRate) :0
+    label: Printing網印
+
+  # Printing移印
+  cmfProcessListPadPrinting:
+    type: MATH
+    formula: cmfProcessListPadPrintingCheckBox ?cmfProcessListPadPrintingCount * padPrintingUP * (1+ padPrintingLossRate) :0
+    label: Printing移印
+
+  # Silk Print
+  cmfProcessListSilkPrint:
+    type: MATH
+    formula: cmfProcessListSilkPrintCheckBox ?cmfProcessListSilkPrintCount * silkPrintUP * (1+ silkPrintLossRate) :0
+    label: Silk Print
+
+  # CNC(公模面) 費用 =  CNC(公模面) Cycle time *  CNC(公模面) 單價 * (1 +  CNC(公模面) loss rate)
+  cmfProcessListCNC:
+    type: MATH
+    formula: "cmfProcessListCNCCheckBox ?cmfProcessListCNCCycleTime * CNCUP * (1+ CNCLossRate) :0"
+    label: CNC(公模面)
+
+  # CNC(公模面) Cycle time = CNC(公模面)面積 / (20 *  CNC(公模面)調整加工速率之比例) + 基本取放時間
+  cmfProcessListCNCCycleTime:
+    type: MATH
+    formula: "cmfProcessListCNCArea / (20 * CNCProcessingSizeFormula1) + CNCPickAndPlaceSec"
+
+ # CNC(PL處) 費用 =  CNC(PL處) Cycle time *  CNC(PL處) 單價 * (1 +  CNC(PL處) loss rate)
+  cmfProcessListCNCPL:
+    type: MATH
+    formula: "cmfProcessListCNCPLCheckBox ?cmfProcessListCNCPLLengthCycleTime * CNCPLUP * (1+ CNCPLLossRate) :0"
+    label: CNC(PL處)
+
+  # CNC(PL處) Cycle time = 加工長度(mm) / CNC(PL處) 常數1 + 20
+  cmfProcessListCNCPLLengthCycleTime:
+    type: MATH
+    formula: "(cmfProcessListCNCPLLength / CNCPLConst1) + CNCPLPickAndPlaceSec"
+
+  # 鑽切(高光)
+  cmfProcessListDrillCut:
+    type: MATH
+    formula: cmfProcessListDrillCutPowerButton + cmfProcessListDrillCutTP + cmfProcessListDrillCutFingerprintHole + cmfProcessListDrillCutPowerHole + cmfProcessListDrillCutFourSides
+    label: 鑽切(高光)
+  cmfProcessListDrillCutPowerButton:
+    type: MATH
+    formula: cmfProcessListDrillCutPowerButtonExist ? cmfProcessListDrillCutPowerButtonCost * 1 * (1+ cmfProcessListDrillCutPowerButtonLossRate) :0
+    label: 鑽切(高光) - Power button鑽切
+  cmfProcessListDrillCutTP:
+    type: MATH
+    formula: cmfProcessListDrillCutTPExist ? cmfProcessListDrillCutTPCost * 1 * (1+ cmfProcessListDrillCutTPLossRate) :0
+    label: 鑽切(高光) - TP
+  cmfProcessListDrillCutFingerprintHole:
+    type: MATH
+    formula: cmfProcessListDrillCutFingerprintHoleExist ? cmfProcessListDrillCutFingerprintHoleCost * 1 * (1+ cmfProcessListDrillCutFingerprintHoleLossRate) :0
+    label: 鑽切(高光) - 指紋孔鑽切
+  cmfProcessListDrillCutPowerHole:
+    type: MATH
+    formula: cmfProcessListDrillCutPowerHoleExist ? cmfProcessListDrillCutPowerHoleCost * 1 * (1+ cmfProcessListDrillCutPowerHoleLossRate) :0
+    label: 鑽切(高光) - 電源孔鑽切
+  cmfProcessListDrillCutFourSides:
+    type: MATH
+    formula: cmfProcessListDrillCutFourSidesExist ? cmfProcessListDrillCutFourSidesCost * 1 * (1+ cmfProcessListFourSidesLossRate) :0
+    label: 鑽切(高光) - 全週4週邊鑽切
+
+  # cmfProcessListDrillCutCycleTime:
+  #   type: MATH
+  #   formula: cmfProcessListDrillCutArea / drillCutConst1
+
+  # 鐳雕(公模面) = (加工面積/1000000) * 製成次數(0or1) * 單價 * (1 + lossRate) + 取放時間 / 60 * 0.06
+  cmfProcessListLaserPrint:
+    type: MATH
+    formula: "cmfProcessListLaserPrintCheckBox ?
+     (cmfProcessListLaserPrintArea / 1000000) * laserPrintUP * ( 1+ laserPrintLossRate) + pick_and_place_and_tool_change_time / 60 * 0.06
+     : 0"
+    label: 鐳雕(公模面)
+
+  cmfProcessListLaserPrintIcon:
+    type: MATH
+    formula: cmfProcessListLaserPrintIconCheckBox ?cmfProcessListLaserPrintIconCount * laserPrintIconUP * (1+ laserPrintIconLossRate) :0
+    label: 鐳雕(icon)
+
+  # 打磨
+  # 打磨 = 打磨(自動) + 打磨(人工)
+  cmfProcessListPolishing:
+    type: MATH
+    formula: cmfProcessListPolishingAuto + cmfProcessListPolishingArtificial
+    label: 打磨
+
+  # 打磨(自動) 費用 = 打磨(自動) cycle time * 打磨自動單價 * (1 + 打磨自動lossRate)
+  cmfProcessListPolishingAuto:
+    type: MATH
+    formula: "cmfProcessListPolishingAutoCheckBox ? cmfProcessListPolishingAutoCycleTime * polishingAutoUP * (1 + polishingAutoLossRate) : 0"
+    label: 打磨(自動)
+
+  # 打磨(自動) cycle time = (自動/加工面積(mm^2) / 打磨(自動) 加工速度) + 自動取放時間20
+  cmfProcessListPolishingAutoCycleTime:
+    label: 打磨(自動) cycle time
+    type: MATH
+    formula: "(cmfProcessListPolishingAutoArea / polishingAutoProcessingSpeed)+ polishingAutoPickAndPlaceSec"
+
+  # 打磨(人工) 費用 = 打磨(人工) cycle time * 打磨(人工)單價 * (1 + 打磨(人工) lossRate)
+  cmfProcessListPolishingArtificial:
+    type: MATH
+    formula: cmfProcessListPolishingArtificialCheckBox ?  cmfProcessListPolishingArtificialCycleTime * polishingArtificialUP * (1 + polishingArtificialLossRate):0
+    label: 打磨(人工)
+
+  # 打磨(人工) cycle time = 人工/加工面積(mm^2) / 打磨(人工) 加工速度 + 自動取放時間20
+  cmfProcessListPolishingArtificialCycleTime:
+    label: 打磨(人工) cycle time
+    type: MATH
+    formula: "cmfProcessListPolishingArtificialArea / polishingArtificialProcessingSpeed + polishingArtificialPickAndPlaceSec"
+
+
+  # 鑽孔
+  cmfProcessListDrilling:
+    type: MATH
+    formula: cmfProcessListDrillingCheckBox ? drillingConst1 + cmfProcessListDrillingCount * drillingUP * (1+ drillingLossRate) :0
+    label: 鑽孔
+
+  # 陽極掛點切除
+  cmfProcessListAnodizingRemoval:
+    type: MATH
+    formula: cmfProcessListAnodizingRemovalCheckBox ? cmfProcessListAnodizingRemovalCount * anodizingRemovalUP * (1+ anodizingRemovalLossRate) :0
+    label: 陽極掛點切除
+
+  # 管銷&利潤 = (沖壓費 + 加權系數 * 二次加工費) * 百分比
+  profit:
+    type: MATH
+    formula: (stamping_cost + profit_weighting * secondary_processing_cost) * profit_percent
+    label: 管銷&利潤
+
+  # 管銷&利潤 加權系數
+  profit_weighting:
+    label: 管銷&利潤 加權系數
+    type: FUNC
+    formula: "(_type2, managementAndProfitAlWeighting, managementAndProfitWeighting) => {
+      if(_type2 === 'Aluminum鋁皮外觀件單件or組立') {
+        return managementAndProfitAlWeighting;
+      }
+      return managementAndProfitWeighting;
+    }"
+    param:
+      - _type2
+      - managementAndProfitAlWeighting
+      - managementAndProfitWeighting
+
+  # 管銷&利潤 百分比
+  profit_percent:
+    label: 管銷&利潤 百分比
+    type: FUNC
+    formula: "(_type2, managementAndProfitAl, managementAndProfit) => {
+      if(_type2 === 'Aluminum鋁皮外觀件單件or組立') {
+        return managementAndProfitAl;
+      }
+      return managementAndProfit;
+    }"
+    param:
+      - _type2
+      - managementAndProfitAl
+      - managementAndProfit
+
+scope:
+  hmToolingMaterialExpandWidth: hmToolingMaterialExpandWidth
+  hmToolingMaterialExpandLength: hmToolingMaterialExpandLength
+  hmthickness: hmthickness
+  hmmaterialdensity: hmmaterialdensity
+  hmmaterialprice: hmmaterialprice
+  hmmaterial: hmmaterial
+  hmToolingHoleCount: hmToolingHoleCount
+  hmpartsexpandwidth: hmpartsexpandwidth
+  hmpartsexpandlength: hmpartsexpandlength
+  hmpartssizelength: hmpartssizelength
+
+  # 陽極
+  cmfProcessListFirstAnodePrice: cmfProcessListFirstAnodePrice
+  cmfProcessListSecondAnodePrice: cmfProcessListSecondAnodePrice
+  cmfProcessListFirstAnodeLossRate: cmfProcessListFirstAnodeLossRate
+  cmfProcessListSecondAnodeLossRate: cmfProcessListSecondAnodeLossRate
+  cmfProcessListSecondAnodeQty: cmfProcessListSecondAnodeQty
+
+  cmfProcessListHairLineArea: cmfProcessListHairLineArea
+  cmfProcessListPaintingCount: cmfProcessListPaintingCount
+  cmfProcessListPaintingFilmThickness: cmfProcessListPaintingFilmThickness
+  CmfProcessListPaintingPriceUSD: CmfProcessListPaintingPriceUSD
+  cmfProcessListThermalBondingCycleTimeValue: cmfProcessListThermalBondingCycleTimeValue
+  cmfProcessListThermalBondingGlueSyringeDiameter: cmfProcessListThermalBondingGlueSyringeDiameter
+  cmfProcessListThermalBondingPathLength: cmfProcessListThermalBondingPathLength
+  cmfProcessListThermalBondingGlueDensity: cmfProcessListThermalBondingGlueDensity
+  cmfProcessListThermalBondingGluePrice: cmfProcessListThermalBondingGluePrice
+  cmfProcessListSingleTappingCount: cmfProcessListSingleTappingCount
+  cmfProcessListMultiTappingCount: cmfProcessListMultiTappingCount
+  cmfProcessListSingleSpotWeldingCount: cmfProcessListSingleSpotWeldingCount
+  cmfProcessListMultiSpotWeldingCount: cmfProcessListMultiSpotWeldingCount
+  cmfProcessListRivetCount: cmfProcessListRivetCount
+  cmfProcessListPaintingArea: cmfProcessListPaintingArea
+  cmfProcessListHandMakeDrawCount: cmfProcessListHandMakeDrawCount
+  cmfProcessListScreenPrintingCount: cmfProcessListScreenPrintingCount
+  cmfProcessListPadPrintingCount: cmfProcessListPadPrintingCount
+  cmfProcessListSilkPrintCount: cmfProcessListSilkPrintCount
+  cmfProcessListCNCArea: cmfProcessListCNCArea
+  cmfProcessListCNCPLLength: cmfProcessListCNCPLLength
+  cmfProcessListDrillCutArea: cmfProcessListDrillCutArea
+  cmfProcessListLaserPrintArea: cmfProcessListLaserPrintArea
+  cmfProcessListLaserPrintIconCount: cmfProcessListLaserPrintIconCount
+  cmfProcessListPolishingAutoArea: cmfProcessListPolishingAutoArea
+  cmfProcessListPolishingAutoCheckBox: cmfProcessListPolishingAutoCheckBox
+  cmfProcessListPolishingArtificialCheckBox: cmfProcessListPolishingArtificialCheckBox
+  cmfProcessListPolishingArtificialArea: cmfProcessListPolishingArtificialArea
+  cmfProcessListDrillingCount: cmfProcessListDrillingCount
+  cmfProcessListultrasonicCleanExist: cmfProcessListultrasonicCleanExist
+  cmfProcessListFirstAnodeCheckBox: cmfProcessListFirstAnodeCheckBox
+  cmfProcessListSecondAnodeCheckBox: cmfProcessListSecondAnodeCheckBox
+  cmfProcessListSandBlastCheckBox: cmfProcessListSandBlastCheckBox
+  cmfProcessListHairLineCheckBox: cmfProcessListHairLineCheckBox
+  cmfProcessListPaintingCheckBox: cmfProcessListPaintingCheckBox
+  cmfProcessListThermalBondingCheckBox: cmfProcessListThermalBondingCheckBox
+  cmfProcessListSingleTappingCheckBox: cmfProcessListSingleTappingCheckBox
+  cmfProcessListMultiTappingCheckBox: cmfProcessListMultiTappingCheckBox
+  cmfProcessListSingleSpotWeldingCheckBox: cmfProcessListSingleSpotWeldingCheckBox
+  cmfProcessListMultiSpotWeldingCheckBox: cmfProcessListMultiSpotWeldingCheckBox
+  cmfProcessListRivetCheckBox: cmfProcessListRivetCheckBox
+  cmfProcessListHandMakeDrawCheckBox: cmfProcessListHandMakeDrawCheckBox
+  cmfProcessListScreenPrintingCheckBox: cmfProcessListScreenPrintingCheckBox
+  cmfProcessListPadPrintingCheckBox: cmfProcessListPadPrintingCheckBox
+  cmfProcessListSilkPrintCheckBox: cmfProcessListSilkPrintCheckBox
+  cmfProcessListCNCCheckBox: cmfProcessListCNCCheckBox
+  cmfProcessListCNCPLCheckBox: cmfProcessListCNCPLCheckBox
+  cmfProcessListDrillCutCheckBox: cmfProcessListDrillCutCheckBox
+  cmfProcessListLaserPrintCheckBox: cmfProcessListLaserPrintCheckBox
+  cmfProcessListLaserPrintIconCheckBox: cmfProcessListLaserPrintIconCheckBox
+  cmfProcessListDrillingCheckBox: cmfProcessListDrillingCheckBox
+
+  cmfProcessListSingleRivetCheckBox: cmfProcessListSingleRivetCheckBox
+  cmfProcessListSingleRivetCount: cmfProcessListSingleRivetCount
+
+  cmfProcessListMultiRivetCheckBox: cmfProcessListMultiRivetCheckBox
+  cmfProcessListMultiRivetCount: cmfProcessListMultiRivetCount
+
+  cmfProcessListAnodizingRemovalCheckBox: cmfProcessListAnodizingRemovalCheckBox
+  cmfProcessListAnodizingRemovalCount: cmfProcessListAnodizingRemovalCount
+
+  ce_patintingAreaConst1: ce_patintingAreaConst1
+
+  cmfProcessListDrillCutPowerButtonCost: cmfProcessListDrillCutPowerButtonCost
+  cmfProcessListDrillCutTPCost: cmfProcessListDrillCutTPCost
+  cmfProcessListDrillCutFingerprintHoleCost: cmfProcessListDrillCutFingerprintHoleCost
+  cmfProcessListDrillCutPowerHoleCost: cmfProcessListDrillCutPowerHoleCost
+  cmfProcessListDrillCutFourSidesCost: cmfProcessListDrillCutFourSidesCost
+
+  cmfProcessListDrillCutPowerButtonExist: cmfProcessListDrillCutPowerButtonExist
+  cmfProcessListDrillCutTPExist: cmfProcessListDrillCutTPExist
+  cmfProcessListDrillCutFingerprintHoleExist: cmfProcessListDrillCutFingerprintHoleExist
+  cmfProcessListDrillCutPowerHoleExist: cmfProcessListDrillCutPowerHoleExist
+  cmfProcessListDrillCutFourSidesExist: cmfProcessListDrillCutFourSidesExist
+
+  # for export
+  hmToolingMaterialWeight: hmToolingMaterialWeight
+  cmfProcessListThermalBondingGlueWeight: cmfProcessListThermalBondingGlueWeight
+
+  # CE
+  hmWorkpieceSpacingInAssemblyLineDirection: hmWorkpieceSpacingInAssemblyLineDirection
+  hmNumberOfRuns: hmNumberOfRuns
+  hmMaterialLossRateCE: hmMaterialLossRateCE
+  pick_and_place_and_tool_change_time: hmPickAndPlaceAndToolChangeTime
+
+
+global:
+  _productType:
+    type: VARIABLE
+    label: productType
+    bykey: productType
+    groups:
+      - partItemInfo
+
+  _type2:
+    type: VARIABLE
+    label: type2
+    bykey: type2
+    groups:
+      - partItemInfo
+
+constant:
+  CNCPickAndPlaceSec:
+    label: CNC(公模面) 基本取放時間
+    # value: 20
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - cnc_core_side_trasnsfer_time
+
+  CNCPLPickAndPlaceSec:
+    label: CNC(PL處) 基本取放時間
+    # value: 20
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - cnc_PL_trasnsfer_time
+
+  polishingAutoPickAndPlaceSec:
+    label: 打磨(自動) 基本取放時間
+    # value: 20
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - grinding_auto_trasnsfer_time
+
+  polishingArtificialPickAndPlaceSec:
+    labe: 打磨(人工) 基本取放時間
+    # value: 20
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - grinding_manual_trasnsfer_time
+
+  CNCProcessingSizeFormula1:
+    label: CNC(公模面) 調整加工速率之比例(變快)
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - cnc_core_side_cycle_time
+
+  # 二次加工費
+  ## 超音波清洗
+  ultrasonicCleanUPList:
+    label: 超音波單價
+    value:
+      ?getUltrasonicCleanUP:
+      - housing_metal_secondary_processing
+  ultrasonicCleanLossRate:
+    label: 超音波 Loss Rate
+    value: 0
+
+
+  ## 噴砂
+  sandBlastLossRate:
+    label: 噴砂loss rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - sand_blast_loss_rate
+    # value: 0
+
+  # workpiece_spacing_in_assembly_line_direction:
+  #   label: 流水線方向工件間距
+  #   # value: 100
+  #   ?getCommon:
+  #     - housing_metal_secondary_processing
+  #     - workpiece_spacing_in_assembly_line_direction
+
+  # number_of_runs:
+  #   label: 趟數
+  #   # value: 2
+  #   ?getCommon:
+  #     - housing_metal_secondary_processing
+  #     - number_of_runs
+
+  sandblasting_line_speed:
+    label: 噴砂流水線速度
+    # value: 20
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - sandblasting_line_speed
+
+  sandBlastUP:
+    label: 噴砂單價
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - sand_blast_cost
+    # value: 5
+
+  ## 髮絲
+  hairLineLossRate:
+    label: 噴砂loss rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - hair_loss_rate
+    # value: 0
+  hairLineUP:
+    label: 噴砂單價
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - hair_cost
+    # value: 5
+
+  # 噴漆
+  paintingLossRate:
+    label: 噴漆 LossRate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - paint_loss_rate
+    # value: 0.15
+  paintingConst1:
+    label: 噴漆常數1
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - paint_cost_const
+    # value: 0.00000084
+  paintingConst2:
+    label: 噴漆常數2
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - paint_area_const
+    # value: 1.5
+
+  # ce_patintingAreaConst1:
+  #   label: 噴漆面積常數1
+  #   ?getCommon:
+  #     - housing_metal_secondary_processing
+  #     - spraying_const
+    # value: 35
+
+  # 熱壓
+  thermalBondingUP:
+    label: 熱壓加工費
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - thermal_bonding_heat_pressing_machining_cost
+    # value: 0.00303
+  thermalBondingLossRate:
+    label: 熱壓Loss Rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - thermal_bonding_heat_pressing_loss_rate
+    # value: 0
+
+  # 單點攻牙
+  singleTappingUP:
+    label: 單點攻牙 單價
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - single_tapping_cost
+    # value: 0.0078
+  singleTappingLossRate:
+    label: 單點攻牙 Loss Rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - single_tapping_loss_rate
+    # value: 0
+
+  # 多點攻牙
+  multiTappingUP:
+    label: 多點攻牙 單價
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - multi_tapping_cost
+    # value: 0.0039
+  multiTappingLossRate:
+    label: 多點攻牙 Loss Rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - multi_tapping_loss_rate
+    # value: 0
+
+  # 單點點焊
+  singleSpotWeldingUP:
+    label: 單點點焊 單價
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - single_spot_welding_cost
+    # value: 0.0078
+  singleSpotWeldingLossRate:
+    label: 單點點焊 Loss Rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - single_spot_welding_loss_rate
+    # value: 0
+  # 多點點焊
+  multiSpotWeldingUP:
+    label: 多點點焊 單價
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - multi_spot_welding_cost
+    # value: 0.0039
+  multiSpotWeldingLossRate:
+    label: 多點點焊 Loss Rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - multi_spot_welding_loss_rate
+    # value: 0
+  # 單點鉚釘
+  singleRivetUP:
+    label: 單點鉚釘 單價
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - single_rivet_cost
+    # value: 0.0078
+  singleRivetLossRate:
+    label: 單點鉚釘 Loss Rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - single_rivet_loss_rate
+    # value: 0
+  # 多點鉚釘
+  multiRivetUP:
+    label: 多點鉚釘 單價
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - multi_rivet_cost
+    # value: 0.0039
+  multiRivetLossRate:
+    label: 多點鉚釘 Loss Rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - multi_rivet_loss_rate
+    # value: 0
+
+  # 拉鉚釘
+  rivetUP:
+    label: 拉鉚釘 單價
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - blind_rivet_cost
+    # value: 0.0078
+  rivetLossRate:
+    label: 拉鉚釘 Loss Rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - blind_rivet_loss_rate
+    # value: 0
+
+  #手工塗黑
+  handMakeDrawUP:
+    label: 手工塗黑 單價(USD/Min.)
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - paint_black_cost
+    # value: 0.09
+  handMakeDrawLossRate:
+    label: 手工塗黑 Loss Rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - paint_black_loss_rate
+    # value: 0
+  handMakeDrawPerTime:
+    label: 手工塗黑 秒數
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - paint_black_cycle_ time_sec
+    # value: 40
+  handMakeDrawPerSize:
+    label: 手工塗黑 面積
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - paint_black_cycle_ time_area
+    # value: 2500
+
+  # Printing網印
+  screenPrintingUP:
+    label: Printing網印 單價
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - screen_printing_cost
+    # value: 0.05
+  screenPrintingLossRate:
+    label: Printing網印 Loss Rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - screen_printing_loss_rate
+    # value: 0
+  # Printing移印
+  padPrintingUP:
+    label: Printing移印 單價
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - pad_printing_cost
+    # value: 0.05
+  padPrintingLossRate:
+    label: Printing移印 Loss Rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - pad_printing_loss_rate
+    # value: 0
+  # Silk Print
+  silkPrintUP:
+    label: Silk Print 單價
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - silk_print_cost
+    # value: 0.05
+  silkPrintLossRate:
+    label: Silk Print Loss Rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - silk_print_loss_rate
+    # value: 0
+
+  # CNC(公模面)
+  CNCUP:
+    label: CNC(公模面) 單價
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - cnc_4_axis_core_side_cost
+    # value: 0.0032
+  CNCLossRate:
+    label: CNC(公模面) Loss Rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - cnc_core_side_loss_rate
+    # value: 0
+
+  # CNC(PL處)
+  CNCPLUP:
+    label: CNC(PL處) 單價
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - cnc_PL_cost
+    # value: 0.0042
+  CNCPLLossRate:
+    label: CNC(PL處) Loss Rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - cnc_PL_loss_rate
+    # value: 0
+  CNCPLConst1:
+    label: CNC(PL處) 常數1
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - cnc_PL_cycle_time_numerator
+    # value: 6
+
+  # 鑽切(高光)
+  drillCutUP:
+    label: 鑽切(高光) 單價
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - drill_cutting_cost
+    # value: 0.005
+  drillCutLossRate:
+    label: 鑽切(高光) Loss Rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - drill_cutting_loss_rate
+    # value: 0
+  drillCutConst1:
+    label: 鑽切(高光) 常數1
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - drill_cuttin_cycle_time_numerator
+    # value: 5
+
+  # 鐳雕(公模面)
+  laserPrintUP:
+    label: 鐳雕(公模面) 單價
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - laser_engraving_core_side_cost
+    # value: 25
+
+  laserPrintLossRate:
+    label: 鐳雕(公模面) Loss Rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - laser_engraving_core_side_loss_rate
+    # value: 0
+
+  # pick_and_place_and_tool_change_time:
+  #   label: 取放與換刀時間
+  #   # value: 30
+  #   ?getCommon:
+  #     - housing_metal_secondary_processing
+  #     - pick_and_place_and_tool_change_time
+
+  # 鐳雕(icon)
+  laserPrintIconUP:
+    label: 鐳雕(icon) 單價
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - laser_engraving_icon_cost
+    # value: 0.017
+  laserPrintIconLossRate:
+    label: 鐳雕(icon) Loss Rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - laser_engraving_icon_loss_rate
+    # value: 0
+
+  # 打磨(自動)
+  polishingAutoProcessingSpeed:
+    label: 打磨(自動) 加工速度
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - grinding_auto_speed
+    # value: 1738
+  polishingAutoUP:
+    label: 打磨(自動) 加工單價
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - grinding_auto_cost
+    # value: 0.0022
+  polishingAutoLossRate:
+    label: 打磨(自動) Loss Rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - grinding_auto_loss_rate
+    # value: 0
+
+  # 打磨(人工)
+  polishingArtificialProcessingSpeed:
+    label: 打磨(人工) 加工速度
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - grinding_manual_speed
+    # value: 150
+  polishingArtificialUP:
+    label: 打磨(人工) 加工單價
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - grinding_manual_cost
+    # value: 0.005
+  polishingArtificialLossRate:
+    label: 打磨(人工) Loss Rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - grinding_manual_loss_rate
+    # value: 0
+
+  # 鑽孔
+  drillingConst1:
+    label: 鑽孔 常數1
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - drilling_hole_const
+    # value: 0.2
+  drillingUP:
+    label: 鑽孔 加工單價
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - drilling_hole_cost
+    # value: 0.000071
+  drillingLossRate:
+    label: 鑽孔 Loss Rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - drilling_hole_loss_rate
+    # value: 0
+
+  # 陽極掛點切除
+  anodizingRemovalUP:
+    label: 陽極掛點切除 加工單價
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - anode_point_cutting_cost
+    # value: 0.02
+  anodizingRemovalLossRate:
+    label: 陽極掛點切除 Loss Rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - anode_point_cutting_loss_rate
+    # value: 0
+
+  packageCost:
+    label: 運包檢
+    value: 0
+
+  # profit_percent:
+  #   label: 管銷&利潤倍數
+  #   ?getCommon:
+  #     - housing_metal_management_and_profit
+  #     - management_and_profit
+
+  managementAndProfitAl:
+    label: AL管銷&利潤百分比
+    # value: 0.1
+    ?getCommon:
+      - housing_metal_management_and_profit
+      - al_management_and_profit
+
+  managementAndProfit:
+    label: Metal管銷利潤&百分比
+    # value: 0.15
+    ?getCommon:
+      - housing_metal_management_and_profit
+      - metal_management_and_profit
+
+  managementAndProfitAlWeighting:
+    label: AL管銷&利潤之二次加工費加權系數
+    # value: 1
+    ?getCommon:
+      - housing_metal_management_and_profit
+      - al_management_and_profit_weighting
+
+  managementAndProfitWeighting:
+    label: Metal管銷&利潤之二次加工費加權系數
+    # value: 0
+    ?getCommon:
+      - housing_metal_management_and_profit
+      - metal_management_and_profit_weighting
+
+  cmfProcessListDrillCutPowerButtonLossRate:
+    label: Power button鑽切 Loss Rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - drill_cutting_loss_rate
+    # value: 0
+  cmfProcessListDrillCutTPLossRate:
+    label: TP Loss Rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - drill_cutting_loss_rate
+    # value: 0
+  cmfProcessListDrillCutFingerprintHoleLossRate:
+    label: 指紋孔鑽切 Loss Rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - drill_cutting_loss_rate
+    # value: 0
+  cmfProcessListDrillCutPowerHoleLossRate:
+    label: 電源孔鑽切 Loss Rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - drill_cutting_loss_rate
+    # value: 0
+  cmfProcessListFourSidesLossRate:
+    label: 全週4週邊鑽切 Loss Rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - drill_cutting_loss_rate
+    # value: 0

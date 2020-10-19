@@ -1,0 +1,16 @@
+# materialspec , 材料單價, 密度對應表
+values:
+  - materialspec: SUS410
+    materialUnitPrice: 4.41
+    materialDensity: 7.93
+    materialHeatingUnitPrice: 2.64705882352941
+
+  - materialspec: 低碳鋼18A
+    materialUnitPrice: 2.14
+    materialDensity: 7.85
+    materialHeatingUnitPrice: 0.73529411764706
+
+  - materialspec: 快削鋼
+    materialUnitPrice: 2.14
+    materialDensity: 7.85
+    materialHeatingUnitPrice: 0.74000000000000

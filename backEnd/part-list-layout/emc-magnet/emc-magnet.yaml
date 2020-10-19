@@ -1,0 +1,38 @@
+version: 2
+layout:
+  - key: emc-magnet
+    $Template:
+      - tab
+    group:
+      - emcmagnet
+    label: default
+    visiable: false
+    items:
+      - key: magnet
+        $Template:
+          - composite
+        label: magnet
+        $emc-magnet.layout.magnet:
+          - ^items
+
+
+autoCalculation:
+  group: emcmagnet
+  keys:
+    materialLength: part_size_l
+    materialWidth: part_size_w
+    materialHeight: part_size_h
+    materialSpecId: material_spec
+  emdmKeys:
+    materialLength: partLong
+    materialWidth: partWidth
+    materialHeight: partHeight
+    materialSpecId: materialSpecId
+
+formulas:
+  emcmagnet:
+    $emc-magnet.formula.emcmagnet:
+      - ^formula
+      - ^scope
+      - ^constant
+      - ^output

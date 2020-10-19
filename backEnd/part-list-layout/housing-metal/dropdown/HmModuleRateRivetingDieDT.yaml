@@ -1,0 +1,56 @@
+values:
+  - hmToolingRivetingDiePress: 0T
+    hmToolingRivetingDieModule2Cost: 0
+    hmToolingRivetingDieModule4Cost: 0
+  - hmToolingRivetingDiePress: 25T
+    hmToolingRivetingDieModule2Cost: 0.0099009900990099
+    hmToolingRivetingDieModule4Cost: 0.0099009900990099
+  - hmToolingRivetingDiePress: 35T
+    hmToolingRivetingDieModule2Cost: 0.0099009900990099
+    hmToolingRivetingDieModule4Cost: 0.0099009900990099
+  - hmToolingRivetingDiePress: 45T
+    hmToolingRivetingDieModule2Cost: 0.0099009900990099
+    hmToolingRivetingDieModule4Cost: 0.0099009900990099
+  - hmToolingRivetingDiePress: 60T
+    hmToolingRivetingDieModule2Cost: 0.0099009900990099
+    hmToolingRivetingDieModule4Cost: 0.0099009900990099
+  - hmToolingRivetingDiePress: 80T
+    hmToolingRivetingDieModule2Cost: 0.0132013201320132
+    hmToolingRivetingDieModule4Cost: 0.0132013201320132
+  - hmToolingRivetingDiePress: 110T
+    hmToolingRivetingDieModule2Cost: 0.0132013201320132
+    hmToolingRivetingDieModule4Cost: 0.0132013201320132
+  - hmToolingRivetingDiePress: 160T
+    hmToolingRivetingDieModule2Cost: 0.0198019801980198
+    hmToolingRivetingDieModule4Cost: 0.0198019801980198
+  - hmToolingRivetingDiePress: 200T
+    hmToolingRivetingDieModule2Cost: 0.0198019801980198
+    hmToolingRivetingDieModule4Cost: 0.0198019801980198
+  - hmToolingRivetingDiePress: 250T
+    hmToolingRivetingDieModule2Cost: 0.0181518151815182
+    hmToolingRivetingDieModule4Cost: 0.0181518151815182
+  - hmToolingRivetingDiePress: 300T
+    hmToolingRivetingDieModule2Cost: 0.0181518151815182
+    hmToolingRivetingDieModule4Cost: 0.0181518151815182
+  - hmToolingRivetingDiePress: 400T
+    hmToolingRivetingDieModule2Cost: 0.0181518151815182
+    hmToolingRivetingDieModule4Cost: 0.0181518151815182
+  - hmToolingRivetingDiePress: 600T
+    hmToolingRivetingDieModule2Cost: 0.0181518151815182
+    hmToolingRivetingDieModule4Cost: 0.0181518151815182
+  - hmToolingRivetingDiePress: 800T
+    hmToolingRivetingDieModule2Cost: 0.0181518151815182
+    hmToolingRivetingDieModule4Cost: 0.0181518151815182
+  # - hmToolingRivetingDiePress: 1000T
+  #   hmToolingRivetingDieModule2Cost: 0.0210
+  #   hmToolingRivetingDieModule4Cost: 0.0210
+  # - hmToolingRivetingDiePress: 1200T
+  #   hmToolingRivetingDieModule2Cost: 0.0260
+  #   hmToolingRivetingDieModule4Cost: 0.0260
+
+
+moduleMapping:
+  - hmToolingRivetingDieModule: Module 1
+    productType: NB
+  - hmToolingRivetingDieModule: Module 2
+    productType: DT

@@ -1,0 +1,133 @@
+output:
+  total: total
+  unit_price: pipiLenThickODiaToCost
+  qty: pipeAmount
+  pipe_loss_rate: pipe_loss_rate
+
+  pipeTypeAndOuterDiameter: pipeTypeAndOuterDiameter
+  pipeLength: pipeLength
+  pipeFlatteningThickness: pipeFlatteningThickness
+  assemblyTime: assemblyTime
+  # mapping
+  # pipiLenThickODiaToCostValues: pipiLenThickODiaToCostValues
+
+formula:
+# pipe零件費 = 單價 * 用量 * (1 + pipe loss rate) -----------------------------------------------------------------------------------------------------------------
+  total:
+    type: MATH
+    formula: pipiLenThickODiaToCost * pipeAmount * (1 + pipe_loss_rate) 
+    label: pipe零件費
+  
+# pipe型式字首+外徑 -----------------------------------------------------------------------------------------------------------------
+  pipeTypeAndOuterDiameter:
+    type: FUNC
+    label: pipe型式字首+外徑
+    formula: "(pipeType, outerDiameter) => {
+            const str = pipeType.substr(0, 1);
+            const key = `${str}${outerDiameter}`;
+            return key;
+          }"
+    param:
+      - pipeType
+      - outerDiameter
+
+# Mapping單價 -----------------------------------------------------------------------------------------------------------------
+  pipiLenThickODiaToCost:
+    type: FUNC
+    label: 單價
+    formula: "(pipiLenThickODiaToCostValues, pipeTypeAndOuterDiameter, len, flth) => {
+      const OPERATOR_CONFIG = {
+        LT: (a, b) => a < b,
+        LE: (a, b) => a <= b,
+        EQ: (a, b) => a === b,
+        NE: (a, b) => a !== b,
+        GE: (a, b) => a >= b,
+        GT: (a, b) => a > b
+      };
+      const checkOperator = ({
+        minOpr = 'LT',
+        maxOpr = 'LT',
+        x = 0,
+        min = 0,
+        max = 0
+      }) => {
+        const minOprFunc =
+          min === 0 ? OPERATOR_CONFIG['LE'] : OPERATOR_CONFIG[minOpr];
+        const maxOprFunc = max === -1 ? true : OPERATOR_CONFIG[maxOpr];
+        return minOprFunc(min, x) && maxOprFunc(x, max);
+      };
+      return pipiLenThickODiaToCostValues.values.reduce((prev, curr) => {
+        const {
+          pipeType,
+          lenMin,
+          lenMax,
+          thickMin,
+          thickMax,
+          pipiLenThickODiaToCost
+        } = curr;
+        if (pipeType === pipeTypeAndOuterDiameter) {
+          const lenOprData = {
+            minOpr: 'LT',
+            maxOpr: 'LE',
+            x: len,
+            min: lenMin,
+            max: lenMax
+          };
+          const flthOprData = {
+            minOpr: 'LE',
+            maxOpr: 'LT',
+            x: flth,
+            min: thickMin,
+            max: thickMax
+          };
+          const isLenEqual = checkOperator(lenOprData);
+          const isFlthEqual = checkOperator(flthOprData);
+    
+          if (isLenEqual === true && isFlthEqual === true) {
+            return pipiLenThickODiaToCost;
+          }
+        }
+        return prev;
+      }, 0);
+    }"
+    param:
+      - pipiLenThickODiaToCostValues
+      - pipeTypeAndOuterDiameter
+      - pipeLength
+      - pipeFlatteningThickness
+
+
+  # 組裝時間
+  assemblyTime:
+    label: Pipe 組裝時間
+    type: MATH
+    formula: pipeAmount * worktimeSec
+
+scope:
+  pipeAmount: pipeAmount
+  pipeType: pipeType
+  outerDiameter: outerDiameter
+  pipeLength: pipeLength
+  pipeFlatteningThickness: pipeFlatteningThickness
+
+constant:
+  worktimeSec:
+    label: Assembly組裝工時(sec)
+    ?getThermalCommon:
+      - thermal_module_processing
+      - assembly_spend_time
+    # value: 12
+    
+  pipe_loss_rate:
+    label: pipe loss rate
+    ?getThermalCommon:
+      - thermal_module_components
+      - pipe_loss_rate
+    # value: 0.015
+
+  pipiLenThickODiaToCostValues:
+    label: pip length outerDiameter cost
+    value: 
+      ?getThermalPipeLenODiaCost:
+        -
+    

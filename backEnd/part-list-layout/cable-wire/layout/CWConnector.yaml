@@ -1,0 +1,190 @@
+multiple: false
+label: 不用顯示
+items:
+  - key: CWConnectorLabel
+    label: Connector
+    $Template:
+      - label
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+
+  - key: cableConnectorName
+    label: Function Name
+    $Template:
+      - selectorString
+      - ^displayConfig
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: connector_item_id
+      ?getCableWireConnector:
+        -
+      # $cable-wire.dropdown.CableConnectorInfo:
+      #   - ^values
+    require: true
+    constrains:
+      - function: "(val) => val == null"
+        message: "此欄位為必選"
+    emdmMultipleKey: emdmBomInfo.cmfForm.cableConnector
+    emdmKey: cableConnectorName
+
+
+
+
+
+  - key: cableConnectorType
+    emdmMultipleKey: emdmBomInfo.cmfForm.cableConnector
+    emdmKey: cableConnectorType
+    label: Connector Type
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: connector_type_id
+      ?getCableWireConnector:
+        -
+      # $cable-wire.dropdown.CableConnectorInfo:
+      #   - ^values
+      depends:
+        - cableConnectorName
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cableConnectorName: "(val, props) => {
+            const otherFillMeRemarkText = 'Other_Fill_ME_Remark';
+            const isEmpty = (val ==='' || val === null);
+            const isOtherFillMeRemark = (val === otherFillMeRemarkText);
+            return !isOtherFillMeRemark;
+          }"
+      grids: 1
+      display: true
+    require: true
+    constrains:
+      - function: "(val, props) => {
+          const { cableConnectorName } = props;
+          const otherFillMeRemarkText = 'Other_Fill_ME_Remark';
+          const isOtherFillMeRemark = cableConnectorName === otherFillMeRemarkText;
+          const isEmpty = (val ==='' || val === null);
+          return isEmpty && !isOtherFillMeRemark
+        }"
+        message: "此欄位為必填"
+        params:
+          - cableConnectorName
+
+  - key: cableConnectorVendorPn
+    emdmMultipleKey: emdmBomInfo.cmfForm.cableConnector
+    emdmKey: cableConnectorVendorPn
+    label: Vendor PN
+    $Template:
+      - selectorString
+      - ^displayConfig
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: vendor_pn_id
+      ?getCableWireConnector:
+        -
+      # $cable-wire.dropdown.CableConnectorInfo:
+      #   - ^values
+      depends:
+        - cableConnectorName
+        - cableConnectorType
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cableConnectorType: "(cableConnectorType, props) => {
+            const { cableConnectorName } = props;
+            const otherFillMeRemarkText = 'Other_Fill_ME_Remark';
+            const isOtherFillMeRemark = cableConnectorType === otherFillMeRemarkText || cableConnectorName === otherFillMeRemarkText;
+            return !isOtherFillMeRemark;
+          }"
+          cableConnectorName: true
+      grids: 1
+      display: true
+    require: true
+    constrains:
+      - function: "(val, props) => {
+          const { cableConnectorType } = props;
+          const otherFillMeRemarkText = 'Other_Fill_ME_Remark';
+          const isOtherFillMeRemark = cableConnectorType === otherFillMeRemarkText;
+          return (val ==='' || val === null) && !isOtherFillMeRemark
+        }"
+        message: "此欄位為必填"
+        params:
+          - cableConnectorType
+
+
+  - key: cableConnectorNameRemark
+    label: Function Name Remark
+    $Template:
+      - textarea
+    require: true
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      depends:
+        action: lock
+        condition:
+          cableConnectorName: "val => val === 'Other_Fill_ME_Remark'"
+    emdmMultipleKey: emdmBomInfo.cmfForm.cableConnector
+    emdmKey: cableConnectorNameRemark
+  
+  - key: cableConnectorTypeRemark
+    label: Connector Type Remark
+    $Template:
+      - textarea
+    require: true
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      depends:
+        action: lock
+        condition:
+          cableConnectorType: "val => val === 'Other_Fill_ME_Remark'"
+    emdmMultipleKey: emdmBomInfo.cmfForm.cableConnector
+    emdmKey: cableConnectorTypeRemark
+    
+  - key: cableConnectorWorkingTime
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    mapFrom:
+      - cableConnectorName
+      - cableConnectorType
+      - cableConnectorVendorPn
+    selectorConfig:
+      ?getCableWireConnector:
+        -
+      # $cable-wire.dropdown.CableConnectorInfo:
+      #   - ^values
+    needExe: false
+
+  - key: cableConnectorUnitPrice
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false 
+    mapFrom:
+      - cableConnectorName
+      - cableConnectorType
+      - cableConnectorVendorPn
+    selectorConfig:
+      ?getCableWireConnector:
+          -
+      # $cable-wire.dropdown.CableConnectorInfo:
+      #   - ^values
+    needExe: false
+
+

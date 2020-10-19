@@ -1,0 +1,23 @@
+values:
+  - SPEC03: NA
+  - SPEC03: 1+N+1
+  - SPEC03: 1+N+1+
+  - SPEC03: 2+N+2
+  - SPEC03: 2+N+2+
+  - SPEC03: 3+N+3
+  - SPEC03: 3+N+3+
+  - SPEC03: 4+N+4
+  - SPEC03: 4+N+4+
+  - SPEC03: 5+N+5
+  - SPEC03: 5+N+5+
+  - SPEC03: Anylayer
+  - SPEC03: CEM-1
+  - SPEC03: CEM-1 HF
+  - SPEC03: CEM-3
+  - SPEC03: FR-1
+  - SPEC03: FR-1 HF
+  - SPEC03: FR-4
+  - SPEC03: FR-4 HF
+  - SPEC03: Skip Via
+  - SPEC03: Blind Via
+  - SPEC03: Skip Via + N+

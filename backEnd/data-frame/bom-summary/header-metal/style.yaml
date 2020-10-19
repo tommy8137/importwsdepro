@@ -1,0 +1,34 @@
+summary-header:
+  fontColor: '2B00FF'
+  fill: 'FFFFFF'
+  fontFamily: arial
+  # horizontalAlignment: center
+  verticalAlignment: center
+  border: true
+  bold: true
+
+summary-data:
+  border: true
+  horizontalAlignment: center
+  verticalAlignment: center
+
+
+key-data:
+  border: true
+  horizontalAlignment: center
+  verticalAlignment: center
+  fontColor: 'FFFFFF'
+  fill: '000000'
+
+
+gap-data:
+  border: true
+  horizontalAlignment: center
+  verticalAlignment: center
+  fontColor: 'FFFFFF'
+  fill: 'ED7D30'
+
+percent-data:
+  border: true
+  fontColor: 'FF0000'
+  numberFormat: '0%'

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>Search/icon/Filter</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Search/icon/Filter" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(2.000000, 5.000000)">
+            <rect id="Rectangle" fill="#333333" x="0" y="1.66666667" width="20" height="1.66666667" rx="0.833333333"></rect>
+            <rect id="Rectangle-Copy" fill="#333333" x="0" y="10" width="20" height="1.66666667" rx="0.833333333"></rect>
+            <circle id="Oval" stroke="#333333" stroke-width="1.66666667" fill="#F0F0F0" cx="13.3333333" cy="2.5" r="2.5"></circle>
+            <circle id="Oval-Copy" stroke="#333333" stroke-width="1.66666667" fill="#F0F0F0" cx="6.66666667" cy="10.8333333" r="2.5"></circle>
+        </g>
+    </g>
+</svg>

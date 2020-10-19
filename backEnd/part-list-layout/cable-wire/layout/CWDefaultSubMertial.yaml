@@ -1,0 +1,16 @@
+items:
+    - key: CWDefaultAceticAcidClothQty
+      label: 預設醋酸布拉帶QTY
+      require: false
+      $Template:
+        - inputInt
+        - ^displayConfig
+      emdmKey: emdmBomInfo.cmfForm.CWDefaultAceticAcidClothQty
+
+    - key: CWDefaultConductiveClothQty
+      label: 預設導電布QTY
+      require: false
+      $Template:
+        - inputInt
+        - ^displayConfig
+      emdmKey: emdmBomInfo.cmfForm.CWDefaultConductiveClothQty

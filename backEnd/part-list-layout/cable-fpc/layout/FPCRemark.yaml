@@ -1,0 +1,12 @@
+multiple: false
+label: 備註
+items:
+  - key: FPCRemarks
+    label: 備註
+    $Template:
+      - textarea
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1.5
+    emdmKey: emdmBomInfo.cmfForm.FPCRemarks

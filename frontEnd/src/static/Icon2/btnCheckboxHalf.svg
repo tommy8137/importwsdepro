@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+    <defs>
+        <style>
+            .cls-1,.cls-3{fill:#333;stroke:#333}.cls-2,.cls-5{fill:none}.cls-2{stroke:#fff;stroke-width:2px}.cls-3{opacity:0}.cls-4{stroke:none}
+        </style>
+    </defs>
+    <g id="btn_checkbox_half" transform="translate(-702 -1213)">
+        <g id="Rectangle_203" class="cls-1" data-name="Rectangle 203" transform="translate(702 1213)">
+            <rect width="18" height="18" class="cls-4" rx="2"/>
+            <rect width="17" height="17" x=".5" y=".5" class="cls-5" rx="1.5"/>
+        </g>
+        <g id="Rectangle_1830" class="cls-2" data-name="Rectangle 1830" transform="translate(705 1216)">
+            <rect width="12" height="12" class="cls-4" rx="1"/>
+            <path d="M1 1h10v10H1z" class="cls-5"/>
+        </g>
+        <g id="btn_checkbox_half-2" class="cls-3" data-name="btn_checkbox_half" transform="translate(702 1213)">
+            <rect width="18" height="18" class="cls-4" rx="2"/>
+            <rect width="17" height="17" x=".5" y=".5" class="cls-5" rx="1.5"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,38 @@
+summary-header:
+  border: true
+  bold: true
+  topBorderStyle: 'thick'
+  bottomBorderStyle: 'thick'
+
+summary-data:
+  border: true
+
+border-header:
+  border: true
+  bold: true
+  rightBorderStyle: 'thick'
+  topBorderStyle: 'thick'
+  bottomBorderStyle: 'thick'
+  horizontalAlignment: 'justify'
+
+border-data:
+  border: true
+  rightBorderStyle: 'thick'
+
+info-left-header:
+  bold: true
+  border: true
+
+info-right-header:
+  bold: true
+  border: true
+  rightBorderStyle: 'thick'
+info-left-data:
+  border: true
+  bottomBorderStyle: 'thick'
+info-right-data:
+  border: true
+  bottomBorderStyle: 'thick'
+  rightBorderStyle: 'thick'
+
+unit-data:

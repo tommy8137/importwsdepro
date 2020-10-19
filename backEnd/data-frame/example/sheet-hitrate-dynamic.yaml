@@ -1,0 +1,23 @@
+sheet:
+  label: Hit-Rate-Dynamic
+  tables:
+    - key: hitRateDynamic
+      $Template:
+        - rowTable
+      anchor:
+        x: A
+        y: 1
+      headers:
+        $example.header-hitrate-dynamic.excel:
+          - headers
+
+    - key: sumCol
+      $Template:
+        - valTable
+      anchor:
+        x: E
+        y: 27
+      headers:
+        $example.header-hitrate.sum:
+          - headers
+       

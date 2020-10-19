@@ -1,0 +1,26 @@
+multiple: true
+items:
+  - key: ToolingSize
+    label: Tooling Size(W*L*H mm)
+    $Template:
+      - compositeInline
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+    items:
+      - key: PcbWidth
+        $Template:
+          - inputFloat
+        label: W
+
+      - key: PcbLength
+        $Template:
+          - inputFloat
+        label: L
+
+      - key: PcbHigh
+        $Template:
+          - inputFloat
+        label: H
+

@@ -1,0 +1,32 @@
+multiple: true
+items:
+  - key: cmfProcessListLaserPrintCheckBox
+    label: Exist
+    $Template:
+      - checkBox
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListLaserPrintCheckBox
+
+  - key: cmfProcessListLaserPrintArea
+    label: 加工面積(mm²)
+    $Template:
+      - inputInt
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfProcessListLaserPrintCheckBox: true
+      grids: 1
+      display: true
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfProcessListLaserPrintCheckBox)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfProcessListLaserPrintCheckBox
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListLaserPrintArea

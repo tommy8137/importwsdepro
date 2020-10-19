@@ -1,0 +1,185 @@
+import React, { Component } from 'react';
+import styled from 'styled-components';
+import Modal from '~~elements/Modal';
+import _get from 'lodash/get';
+import { connect } from 'react-redux';
+import Alert from '~~elements/Alert';
+import Button from '~~elements/Button';
+import Step1Form from './Step1Form';
+import Step2Form from './Step2Form';
+
+
+const CreateBomModal = styled(Modal.Modal)`
+  .modal-content{
+    min-height: 43rem
+  }
+  .form-box {
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    left: 0px;
+    transition: .3s ease all;
+  }
+  .hide {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease all;
+  }
+`;
+
+
+@connect(
+  (state) => {
+    return {
+      userid: state.auth.userid,
+      username: state.auth.username
+    };
+  },
+  {}
+)
+export default class BomModal extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      step: 1,
+      isAlert: false
+    };
+    this.submitStep1Form = null;
+    this.submitStep2Form = null;
+  }
+
+  handleAlert = (status) => {
+    this.setState({ isAlert: status });
+  }
+
+  handleClickCancel = (e) => {
+    this.props.onClickCancel();
+    this.setState({
+      step: 1
+    });
+  }
+
+  handleClickNext = (e) => {
+    if (this.submitStep1Form) {
+      this.submitStep1Form(e);
+    }
+  }
+
+  handleClickCreate = (e) => {
+    if (this.submitStep2Form) {
+      this.submitStep2Form(e);
+    }
+  }
+
+  bindSubmitStep1 = (step1Form) => {
+    this.submitStep1Form = step1Form;
+  }
+
+  bindSubmitStep2 = (step2Form) => {
+    this.submitStep2Form = step2Form;
+  }
+
+
+  /**
+   * step1 form 資料存檔
+   */
+  handleSubmitStep1Form = (bomProject) => {
+    console.log('step1___formvalues', bomProject);
+    this.props.onSubmitStep1({ bomProject });
+    this.setState({
+      step: 2,
+    });
+  }
+
+  /**
+   * step2 form 資料存檔
+   */
+  handleSubmitStep2Form = (bomDesignee) => {
+    console.log('step2___formvalues', bomDesignee);
+    // 送出資料
+    // this.props.onSubmitStep1({ bomDesignee });
+    this.props.onSubmitStep2(bomDesignee);
+    // 重整modal的狀態
+    this.setState({
+      step: 1,
+    });
+  }
+
+  handleClickBack = (e) => {
+    e.stopPropagation();
+    this.setState({
+      step: 1,
+    });
+  }
+
+  render() {
+    const { isOpen } = this.props;
+    const { step } = this.state;
+    const userName = sessionStorage.getItem('username');
+    const userID = sessionStorage.getItem('userid');
+    const userInfo = {
+      userID,
+      userName
+    };
+    return (
+      <div>
+        <CreateBomModal isOpen={isOpen}>
+          <Modal.ModalHeader tag="div" hasBack={step === 2} onClickBack={this.handleClickBack}>
+            {step === 2 ? 'Assign' : 'Create BOM'}
+          </Modal.ModalHeader>
+          <Modal.ModalBody>
+            <div className={`form-box ${step === 1 ? '' : 'hide'}`}>
+              <Step1Form
+                bindSubmitForm={this.bindSubmitStep1}
+                onSubmitForm={this.handleSubmitStep1Form}
+              />
+            </div>
+            <div className={`form-box ${step === 2 ? '' : 'hide'}`}><Step2Form
+              userInfo={userInfo}
+              bindSubmitForm={this.bindSubmitStep2}
+              onSubmitForm={this.handleSubmitStep2Form}
+            />
+            </div>
+          </Modal.ModalBody>
+          <Modal.ModalFooter>
+            <Button id="e2e-create_modal_cancel" color="white" onClick={() => this.handleAlert(true)}>Cancel</Button>
+            {step === 1 && <Button id="e2e-create_modal_next" color="black" onClick={this.handleClickNext}>Next Step</Button>}
+            {step === 2 && <Button id="e2e-create_modal_create" color="black" onClick={this.handleClickCreate}>Create</Button>}
+          </Modal.ModalFooter>
+        </CreateBomModal>
+
+        <Alert isOpen={this.state.isAlert} type="alarm">
+          <div className="row">請確認是否要離開?</div>
+          <div className="row">
+            <Button
+              id="e2e-create_modal_alert_comfirm"
+              color="transparentInModal"
+              border={false}
+              onClick={(e) => {
+                e.stopPropagation();
+                this.handleAlert(false);
+                this.handleClickCancel();
+              }}
+            >
+              確定
+            </Button>
+            <Button
+              id="e2e-create_modal_alert_cancel"
+              color="black"
+              onClick={(e) => {
+                e.stopPropagation();
+                this.handleAlert(false);
+              }}
+            >
+              取消
+            </Button>
+          </div>
+        </Alert>
+      </div>);
+  }
+}
+
+// [ref] formik remote submit: https://stackoverflow.com/a/53383909

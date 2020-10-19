@@ -1,0 +1,86 @@
+values:
+ - spongeMaterial: CR1015
+   spongeMaterialThickness: 0.5
+   spongeMaterialCostPerMM: 0.98
+ - spongeMaterial: CR1015
+   spongeMaterialThickness: 0.8
+   spongeMaterialCostPerMM: 1.15
+ - spongeMaterial: CR1015
+   spongeMaterialThickness: 1
+   spongeMaterialCostPerMM: 1.31
+ - spongeMaterial: CR1015
+   spongeMaterialThickness: 1.5
+   spongeMaterialCostPerMM: 2.62
+ - spongeMaterial: CR1015
+   spongeMaterialThickness: 2
+   spongeMaterialCostPerMM: 2.62
+ - spongeMaterial: CR1015
+   spongeMaterialThickness: 2.5
+   spongeMaterialCostPerMM: 3.93
+ - spongeMaterial: CR1015
+   spongeMaterialThickness: 3
+   spongeMaterialCostPerMM: 3.93
+ - spongeMaterial: CR1015
+   spongeMaterialThickness: 4
+   spongeMaterialCostPerMM: 5.25
+ - spongeMaterial: CR1015
+   spongeMaterialThickness: 5
+   spongeMaterialCostPerMM: 6.56
+ - spongeMaterial: SM55
+   spongeMaterialThickness: 2
+   spongeMaterialCostPerMM: 4.43
+ - spongeMaterial: SM55
+   spongeMaterialThickness: 2.5
+   spongeMaterialCostPerMM: 4.59
+ - spongeMaterial: SM55
+   spongeMaterialThickness: 3
+   spongeMaterialCostPerMM: 4.75
+ - spongeMaterial: SM55
+   spongeMaterialThickness: 4
+   spongeMaterialCostPerMM: 5.74
+ - spongeMaterial: SM55
+   spongeMaterialThickness: 4.5
+   spongeMaterialCostPerMM: 6.23
+ - spongeMaterial: SM55
+   spongeMaterialThickness: 5
+   spongeMaterialCostPerMM: 7.38
+ - spongeMaterial: 藍色PMP1800
+   spongeMaterialThickness: 1
+   spongeMaterialCostPerMM: 5.9
+ - spongeMaterial: 藍色PMP1800
+   spongeMaterialThickness: 1.5
+   spongeMaterialCostPerMM: 6.56
+ - spongeMaterial: 藍色PMP1800
+   spongeMaterialThickness: 2
+   spongeMaterialCostPerMM: 6.56
+ - spongeMaterial: 藍色PMP1800
+   spongeMaterialThickness: 2.5
+   spongeMaterialCostPerMM: 7.87
+ - spongeMaterial: 黑色PMP1800
+   spongeMaterialThickness: 1
+   spongeMaterialCostPerMM: 5.9
+ - spongeMaterial: 黑色PMP1800
+   spongeMaterialThickness: 2
+   spongeMaterialCostPerMM: 6.5
+ - spongeMaterial: 黑色PMP1800
+   spongeMaterialThickness: 3
+   spongeMaterialCostPerMM: 8.2
+ - spongeMaterial: E4382
+   spongeMaterialThickness: 0.5
+   spongeMaterialCostPerMM: 4.92
+ - spongeMaterial: E4382
+   spongeMaterialThickness: 1
+   spongeMaterialCostPerMM: 4.92
+ - spongeMaterial: E4382
+   spongeMaterialThickness: 1.5
+   spongeMaterialCostPerMM: 7.38
+ - spongeMaterial: E4382
+   spongeMaterialThickness: 2.5
+   spongeMaterialCostPerMM: 12.3
+ - spongeMaterial: E4382
+   spongeMaterialThickness: 3.5
+   spongeMaterialCostPerMM: 17.21
+ - spongeMaterial: E4382
+   spongeMaterialThickness: 4.5
+   spongeMaterialCostPerMM: 22.13
+

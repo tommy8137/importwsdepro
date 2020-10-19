@@ -1,0 +1,187 @@
+output:
+  total: total
+  A.production_material_cost: production_material_cost
+  B.stamping_cost: stamping_cost
+  C.secondary_processing_cost: secondary_processing_cost
+  D.profit: profit
+  # for debug
+  unit_price: unit_price
+  qty: thPlAmount
+  assemblyTime: assemblyTime
+  nickelPlating_loss_rate: nickelPlating_loss_rate
+  thPlRiveting_loss_rate: thPlRiveting_loss_rate
+  thermal_plate_loss_rate: thermal_plate_loss_rate
+  UltrasonicCleanCost: UltrasonicCleanCost
+  NickelPlatingCost: NickelPlatingCost
+  thPlRivetingCost: thPlRivetingCost
+  profit_rate: profit_rate
+
+
+formula:
+# thermal plate零件費 = 單價 * 用量 * (1 + thermal plate loss rate) -----------------------------------------------------------------------------------------------------------------
+  total:
+    type: MATH
+    label: thermal plate 總 total
+    formula: unit_price * thPlAmount * (1 + thermal_plate_loss_rate)
+
+# 單價 = 成品材料費 + 沖壓費 + 二次加工 + 管消費 -----------------------------------------------------------------------------------------------------------------
+  unit_price:
+    type: MATH
+    formula: production_material_cost + stamping_cost + secondary_processing_cost + profit
+    label: 單價
+
+# 成品材料費 = (成品展開尺寸L * 成品展開尺寸W * 材料厚度 * 密度 * 材料每公斤價格) / 1000000 * (1 + 成品材料費 loss rate) -----------------------------------------------------------------------------------------------------------------
+  production_material_cost:
+    type: MATH
+    label: 成品材料費
+    formula: (thPlProductionExpandLength * thPlProductionExpandWidth * thPlMaterialThickness * thPlDensity * thPlMaterialCostPerKilogram) / 1000000 * (1 + production_material_loss_rate)
+
+# 二次加工費 = 超音波清洗 + 鍍鎳 -----------------------------------------------------------------------------------------------------------------
+  secondary_processing_cost:
+    type: MATH
+    formula: UltrasonicCleanCost + NickelPlatingCost + thPlRivetingCost
+    label: 二次加工費
+
+  # 超音波清洗 = (成品展開L * 成品展開W * 厚 * 密度) / 1000 * 清洗單價 * (1 + 超音波清洗loss rate) / 1000
+  UltrasonicCleanCost:
+    type: MATH
+    formula: (thPlProductionExpandLength * thPlProductionExpandWidth * thPlMaterialThickness * thPlDensity) / 1000 * ultrasonicClean_unit_price * (1 + ultrasonicClean_loss_rate) / 1000
+    label: 超音波清洗
+
+  # 鍍鎳總價
+  NickelPlatingCost:
+    type: MATH
+    label: 鍍鎳總價
+    formula: "thPlNickelPlating ? NickelPlatingPrice : 0"
+
+  # 鍍鎳價格 = (成品展開L * 成品展開W * 厚 * 密度 ) / 1000 * 鍍鎳單價 * (1 + 鍍鎳loss rate) / 1000
+  NickelPlatingPrice:
+    type: MATH
+    formula: "(thPlProductionExpandLength * thPlProductionExpandWidth * thPlMaterialThickness * thPlDensity) / 1000 * nickelPlating_unit_price * (1 + nickelPlating_loss_rate) / 1000"
+    label: 鍍鎳
+
+  # 鉚接總價
+  thPlRivetingCost:
+    type: MATH
+    formula: "thPlRiveting ? thPlRivetingPrice : 0"
+    label: 鉚接
+
+  # 管銷&利潤 = 沖壓費 * 管銷利潤 -----------------------------------------------------------------------------------------------------------------
+  profit:
+    type: MATH
+    formula: stamping_cost * profit_rate
+    label: 管消費
+
+  # 組裝時間
+  assemblyTime:
+    label: thBl 組裝時間
+    type: MATH
+    formula: thPlAmount * worktimeSec
+
+  # 鉚接價格 = QTY ＊  鉚接單價 *( 1 + 鉚接loss rate) * 1 (excel上判斷式)
+  thPlRivetingPrice:
+    label: 鉚接價格
+    type: MATH
+    formula: 1 * thPlRivetingUnitPrice * (1 + thPlRiveting_loss_rate) * 1
+
+  # 鉚接單價 = 沖壓費
+  thPlRivetingUnitPrice:
+    label: 鉚接單價
+    type: MATH
+    formula: stamping_cost
+
+scope:
+  # 成品展開 長
+  thPlProductionExpandLength: thPlProductionExpandLength
+  # 成品展開 寬
+  thPlProductionExpandWidth: thPlProductionExpandWidth
+  # 厚度
+  thPlMaterialThickness: thPlMaterialThickness
+  # 密度
+  thPlDensity: thPlDensity
+  # 材料每公斤價格
+  thPlMaterialCostPerKilogram: thPlMaterialCostPerKilogram
+  # 用量
+  thPlAmount: thPlAmount
+  # 鍍鎳(開關)
+  thPlNickelPlating: thPlNickelPlating
+  # 鉚接
+  thPlRiveting: thPlRiveting
+
+constant:
+  worktimeSec:
+    label: Assembly組裝工時(sec)
+    ?getThermalCommon:
+      - thermal_module_processing
+      - assembly_spend_time
+    # value: 12
+
+  # 注意有三個loss rate
+  # loss rate
+  thermal_plate_loss_rate:
+    label: thermal plate loss rate
+    ?getThermalCommon:
+      - thermal_module_components
+      - thermal_plate_loss_rate
+    # value: 0.015
+
+  production_material_loss_rate:
+    label: 成品材料費 loss rate
+    ?getThermalCommon:
+      - thermal_module_components
+      - thermal_plate_material_loss_rate
+    # value: 0.03
+
+  stamping_cost:
+    label: 沖壓費
+    ?getThermalCommon:
+      - thermal_module_components
+      - thermal_plate_stamping_cost
+    # value: 0.018
+
+  profit_rate:
+    label: 管銷利潤15%
+    ?getThermalCommon:
+      - thermal_module_components
+      - thermal_plate_management_and_profit
+    # value: 0.15
+
+  ultrasonicClean_unit_price:
+    label: 超音波清洗單價
+    ?getThermalCommon:
+      - thermal_module_components
+      - thermal_plate_ultrasonic_cleaning_cost
+    # value:  0.3529
+
+  ultrasonicClean_loss_rate:
+    label: 超音波清洗 loss rate
+    ?getThermalCommon:
+      - thermal_module_components
+      - thermal_plate_ultrasonic_cleaning_loss_rate
+    # value: 0.03
+
+  nickelPlating_unit_price:
+    label: 鍍鎳單價
+    ?getThermalCommon:
+      - thermal_module_components
+      - thermal_plate_nickelplated_cost
+    # value: 5.71
+
+  # 鍍鎳 loss rate
+  nickelPlating_loss_rate:
+    label: 鍍鎳 loss rate
+    ?getThermalCommon:
+      - thermal_module_components
+      - thermal_plate_nickelplated_loss_rate
+    # value: 0.03
+
+  # 鉚接loss rate
+  thPlRiveting_loss_rate:
+    label: 鉚接 loss rate
+    ?getThermalCommon:
+      - thermal_module_components
+      - thermal_plate_riveting_loss_rate
+    # value: 0.03
+
+
+

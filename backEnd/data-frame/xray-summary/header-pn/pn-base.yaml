@@ -1,0 +1,262 @@
+headers:
+  no:
+    label: No.
+    $xray-summary.header-pn.pnTemplate:
+      - oriInt
+
+  purGroup:
+    label: Pur.Group
+    $xray-summary.header-pn.pnTemplate:
+      - oriString
+
+  oemODM:
+    label: OEM/ODM
+    $xray-summary.header-pn.pnTemplate:
+      - oriString
+
+  typeI:
+    label: Type I
+    $xray-summary.header-pn.pnTemplate:
+      - oriString
+
+  typeII:
+    label: Type II
+    $xray-summary.header-pn.pnTemplate:
+      - oriString
+
+  wistronPN:
+    label: Wistron P/N
+    $xray-summary.header-pn.pnTemplate:
+      - oriString
+
+  description:
+    label: Description
+    $xray-summary.header-pn.pnTemplate:
+      - oriString
+
+  vendorName:
+    label: Vendor Name
+    $xray-summary.header-pn.pnTemplate:
+      - oriString
+
+  manufacturer:
+    label: Manufacturer
+    $xray-summary.header-pn.pnTemplate:
+      - oriString
+
+  vendorPN:
+    label: Vendor P/N
+    $xray-summary.header-pn.pnTemplate:
+      - oriString
+
+  supplyType:
+    label: Supply Type
+    $xray-summary.header-pn.pnTemplate:
+      - oriString
+
+  mrp:
+    label: Last MRP
+    $xray-summary.header-pn.pnTemplate:
+      - oriFloat
+
+  currency:
+    label: Curr.
+    $xray-summary.header-pn.pnTemplate:
+      - oriString
+
+  price:
+    label: Last Price
+    $xray-summary.header-pn.pnTemplate:
+      - oriFloat
+
+  originalCurrency:
+    label: Org. Curr.
+    $xray-summary.header-pn.pnTemplate:
+      - oriString
+
+  originalPrice:
+    label: Org. Last Price
+    $xray-summary.header-pn.pnTemplate:
+      - oriFloat
+
+  validFrom:
+    label: ValidFrom
+    $xray-summary.header-pn.pnTemplate:
+      - oriString
+
+  cmp:
+    label: Org. P/N CMP
+    $xray-summary.header-pn.pnTemplate:
+      - oriBold
+
+  suggCmp:
+    label: Sugg. P/N CMP
+    $xray-summary.header-pn.pnTemplate:
+      - suggBold
+
+  suggObs:
+    label: Sugg. P/N OBS
+    $xray-summary.header-pn.pnTemplate:
+      - suggBold
+
+  suggExp:
+    label: Sugg. P/N EXP/EOL
+    $xray-summary.header-pn.pnTemplate:
+      - suggBold
+
+  suggPartNumber:
+    label: Sugg. P/N
+    $xray-summary.header-pn.pnTemplate:
+      - suggString
+
+  suggDescription:
+    label: Sugg. Description
+    $xray-summary.header-pn.pnTemplate:
+      - suggString
+
+  suggLastPrice:
+    label: Sugg. Last Price (USD)
+    $xray-summary.header-pn.pnTemplate:
+      - suggFloat
+
+  opportunity:
+    label: Opportunity(USD)
+    $xray-summary.header-pn.pnTemplate:
+      - suggFloat
+
+  opportunityPercent:
+    label: Opportunity(%)
+    $xray-summary.header-pn.pnTemplate:
+      - suggPercent
+
+  suggInAltGroup:
+    label: Sugg. in ALT Group
+    $xray-summary.header-pn.pnTemplate:
+      - suggBold
+
+  suggFrom:
+    label: Sugg. From
+    $xray-summary.header-pn.pnTemplate:
+      - suggString
+
+  spaPartNumber:
+    label: SPA P/N
+    $xray-summary.header-pn.pnTemplate:
+      - spaString
+  spaDescription:
+    label: SPA Description
+    $xray-summary.header-pn.pnTemplate:
+      - spaString
+  spaVendor:
+    label: SPA Vendor Name
+    $xray-summary.header-pn.pnTemplate:
+      - spaString
+  spaManufacturer:
+    label: SPA Manufacturer
+    $xray-summary.header-pn.pnTemplate:
+      - spaString
+  spaVendorPN:
+    label: SPA Vendor P/N
+    $xray-summary.header-pn.pnTemplate:
+      - spaString
+  spaSupplyType:
+    label: SPA Supply Type
+    $xray-summary.header-pn.pnTemplate:
+      - spaString
+  spaMrp:
+    label: SPA Last MRP
+    $xray-summary.header-pn.pnTemplate:
+      - spaFloat
+  spaCurrency:
+    label: SPA Curr.
+    $xray-summary.header-pn.pnTemplate:
+      - spaString
+  spaLastPrice:
+    label: SPA Last Price
+    $xray-summary.header-pn.pnTemplate:
+      - spaFloat
+  spaOriginalCurrency:
+    label: SPA Org. Curr.
+    $xray-summary.header-pn.pnTemplate:
+      - spaString
+  spaOriginalPrice:
+    label: SPA Org. Last Price
+    $xray-summary.header-pn.pnTemplate:
+      - spaFloat
+  spaValidFrom:
+    label: SPA ValidFrom
+    $xray-summary.header-pn.pnTemplate:
+      - spaString
+  spaCmp:
+    label: SPA CMP
+    $xray-summary.header-pn.pnTemplate:
+      - spaBold
+  spaObs:
+    label: SPA OBS
+    $xray-summary.header-pn.pnTemplate:
+      - spaBold
+  spaExp:
+    label: SPA EXP/EOL
+    $xray-summary.header-pn.pnTemplate:
+      - spaBold
+
+  altPartNumber:
+    label: ALT P/N
+    $xray-summary.header-pn.pnTemplate:
+      - altString
+  altDescription:
+    label: ALT Description
+    $xray-summary.header-pn.pnTemplate:
+      - altString
+  altVendor:
+    label: ALT Vendor Name
+    $xray-summary.header-pn.pnTemplate:
+      - altString
+  altManufacturer:
+    label: ALT Manufacturer
+    $xray-summary.header-pn.pnTemplate:
+      - altString
+  altVendorPN:
+    label: ALT Vendor P/N
+    $xray-summary.header-pn.pnTemplate:
+      - altString
+  altSupplyType:
+    label: ALT Supply Type
+    $xray-summary.header-pn.pnTemplate:
+      - altString
+  altMrp:
+    label: ALT Last MRP
+    $xray-summary.header-pn.pnTemplate:
+      - altFloat
+  altCurrency:
+    label: ALT Curr.
+    $xray-summary.header-pn.pnTemplate:
+      - altString
+  altLastPrice:
+    label: ALT Last Price
+    $xray-summary.header-pn.pnTemplate:
+      - altFloat
+  altOriginalCurrency:
+    label: ALT Org. Curr.
+    $xray-summary.header-pn.pnTemplate:
+      - altString
+  altOriginalPrice:
+    label: ALT Org. Last Price
+    $xray-summary.header-pn.pnTemplate:
+      - altFloat
+  altValidFrom:
+    label: ALT ValidFrom
+    $xray-summary.header-pn.pnTemplate:
+      - altString
+  altCmp:
+    label: ALT CMP
+    $xray-summary.header-pn.pnTemplate:
+      - altBold
+  altObs:
+    label: ALT OBS
+    $xray-summary.header-pn.pnTemplate:
+      - altBold
+  altExp:
+    label: ALT EXP/EOL
+    $xray-summary.header-pn.pnTemplate:
+      - altBold

@@ -1,0 +1,32 @@
+sheet:
+  label: BOM summary
+  tables:
+    - key: bomSummary
+      $Template:
+        - colTable
+      colLength: 7
+      headers:
+        $bom-summary.header-bom-summary.bom-summary:
+          - headers
+
+    - key: totalSummary
+      $Template:
+        - rowtable2nd
+      headers:
+        $bom-summary.header-bom-summary.total-summary:
+          - headers
+      autoFilter: false
+      anchor:
+        x: A
+        y: 8
+
+    - key: totalSummaryDetail
+      $Template:
+        - rowtable2nd
+      headers:
+        $bom-summary.header-bom-summary.total-summary-detail:
+          - headers
+      autoFilter: false
+      anchor:
+        x: A
+        y: 19

@@ -1,0 +1,101 @@
+version: 2
+showMenu: false
+layout:
+  - key: cwTab
+    $Template:
+      - tab
+    label: cwLabel
+    group:
+      - cableWire
+    items:
+      - key: CWItems
+        $Template:
+          - composite
+        label: 不用顯示的
+        $cable-wire.layout.CWItems:
+          - ^multiple
+          - ^items
+        visiable: false
+
+      - key: CWWire
+        $Template:
+          - composite
+        label: 線材
+        multiple: 新增線材
+        group:
+          - cableWireMaterial
+        $cable-wire.layout.CWWire:
+          - ^multipleItems
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 3
+        minGroupCount: 1
+
+      - key: CWConnector
+        $Template:
+          - composite
+        label: Connector
+        multiple: 新增Connector
+        group:
+          - cableConnector
+        $cable-wire.layout.CWConnector:
+          - ^items
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 3
+
+      - key: CWDefaultSupport
+        $Template:
+          - composite
+        label: 預設醋酸布拉帶和導電布
+        group:
+          - cableWire
+        $cable-wire.layout.CWDefaultSubMertial:
+          - ^items
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 3
+
+      - key: CWSubMertial
+        $Template:
+          - composite
+        label: 輔料
+        multiple: 新增輔料
+        group:
+          - cableSupport
+        $cable-wire.layout.CWSubMertial:
+          - ^multipleItems
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 3
+formulas:
+  cableWire:
+    $cable-wire.formula.CableWire:
+      - ^formula
+      - ^scope
+      - ^constant
+      - ^output
+  cableSupport:
+    $cable-wire.formula.CableSupport:
+      - ^formula
+      - ^scope
+      - ^constant
+      - ^output
+      - ^global
+  cableConnector:
+    $cable-wire.formula.CableConnector:
+      - ^formula
+      - ^scope
+      - ^constant
+      - ^output
+
+  cableWireMaterial:
+    $cable-wire.formula.CableMaterial:
+      - ^formula
+      - ^scope
+      - ^constant
+      - ^output

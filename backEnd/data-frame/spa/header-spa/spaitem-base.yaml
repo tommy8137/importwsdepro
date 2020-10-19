@@ -1,0 +1,230 @@
+headers:
+  partNumber:
+    label: Part Number
+    $Template:
+      - dataString
+
+  partDesc:
+    label: Description
+    $Template:
+      - dataString
+
+  manufacturer:
+    label: Manufacturer
+    $Template:
+      - dataString
+
+  vendor:
+    label: Vendor Name
+    $Template:
+      - dataString
+
+  vendorPN:
+    label: Vendor Part No.
+    $Template:
+      - dataString
+
+  supplyType:
+    label: Supply Type
+    $Template:
+      - dataString
+
+  mrp:
+    label: Last MRP
+    $Template:
+      - dataInt
+
+  currency:
+    label: Curr.
+    $Template:
+      - dataString
+
+  unitPrice:
+    label: Last Price
+    $Template:
+      - dataFloat
+
+  originalCurrency:
+    label: Org. Curr
+    $Template:
+      - dataString
+
+  originalPrice:
+    label: Org.Last Price
+    $Template:
+      - dataFloat
+
+  datab:
+    label: ValidFrom
+    $Template:
+      - dataString
+
+  priceDiff:
+    label: Price Diff. %
+    $Template:
+      - dataPercent
+
+  isCommonPart:
+    label: CMP
+    $Template:
+      - dataBold
+
+  obs:
+    label: OBS
+    $Template:
+      - dataBold
+
+  exp:
+    label: EXP/EOL
+    $Template:
+      - dataBold
+
+  spec01:
+    label: Spec 1
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec02:
+    label: Spec 2
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec03:
+    label: Spec 3
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec04:
+    label: Spec 4
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec05:
+    label: Spec 5
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec06:
+    label: Spec 6
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec07:
+    label: Spec 7
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec08:
+    label: Spec 8
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec09:
+    label: Spec 9
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec10:
+    label: Spec 10
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec11:
+    label: Spec 11
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec12:
+    label: Spec 12
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec13:
+    label: Spec 13
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec14:
+    label: Spec 14
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec15:
+    label: Spec 15
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec16:
+    label: Spec 16
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec17:
+    label: Spec 17
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec18:
+    label: Spec 18
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec19:
+    label: Spec 19
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec20:
+    label: Spec 20
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec21:
+    label: Spec 21
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec22:
+    label: Spec 22
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec23:
+    label: Spec 23
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec24:
+    label: Spec 24
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec25:
+    label: Spec 25
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec26:
+    label: Spec 26
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec27:
+    label: Spec 27
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec28:
+    label: Spec 28
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec29:
+    label: Spec 29
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString
+
+  spec30:
+    label: Spec 30
+    $eebom-tmp.header-pcb.pcbTemplate:
+      - specString

@@ -1,0 +1,66 @@
+summary-header:
+  fontColor: '000000'
+  fill: FFBB66
+  bold: true
+  fontFamily: arial
+  horizontalAlignment: center
+  border: true
+
+
+summary-data:
+  border: true
+  borderColor: 'ED7D31'
+
+item-header:
+  fontColor: 'FFFFFF'
+  fontFamily: arial
+  horizontalAlignment: center
+  fill: '0070C0'
+  border: true
+  bold: true
+
+item-data:
+  border: true
+  horizontalAlignment: center
+  borderColor: 'ED7D31'
+
+exchange-rate-header:
+  fontColor: '000000'
+  fill: FFBB66
+  bold: true
+  fontFamily: arial
+  horizontalAlignment: center
+  border: true
+
+
+exchange-rate-data:
+  bold: true
+  border: true
+  numberFormat: '#,##0.00000'
+
+list-header:
+  bold: true
+  border: true
+  fontColor: '000000'
+  fill: '32BBFF'
+
+list-data:
+  border: true
+
+bold-header:
+  fontColor: 'FFFFFF'
+  fill: '0070C0'
+  border: true
+  bold: true
+
+bold-data:
+  thick:
+    fontColor: '000000'
+    border: true
+    bold: true
+    borderColor: 'ED7D31'
+  thin:
+    fontColor: '000000'
+    border: true
+    borderColor: 'ED7D31'
+  

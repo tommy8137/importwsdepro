@@ -1,0 +1,108 @@
+multiple: true
+items:
+  - key: cmfPPrintingCheckBox
+    $Template:
+      - checkBox
+    label: Exist
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    emdmKey: emdmBomInfo.cmfForm.cmfPPrintingCheckBox
+
+  - key: cmfPPrintingType
+    $Template:
+      - selectorString
+    label: 類型(Type)
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: printing_id
+      ?getPlasticPrinting:
+        - housing_plastic_secondary_processing
+        - printing_loss_rate
+      # $housing-plastic.dropdown.CmfPPrintingType:
+      #   - ^values
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfPPrintingCheckBox: true
+      grids: 1
+      display: true
+    # default: N/A
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfPPrintingCheckBox)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfPPrintingCheckBox
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfPPrintingType
+
+  - key: cmfPPrintingCount
+    $Template:
+      - selectorString
+    label: 數量(特徵)
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: id
+      ?getPlasticPrintCount:
+        -
+      # $housing-plastic.dropdown.CmfPPrintingCount:
+      #   - ^values
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfPPrintingCheckBox: true
+      grids: 1
+      display: true
+    default: 0
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfPPrintingCheckBox)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfPPrintingCheckBox
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfPPrintingCount
+
+  - key: cmfPPriningUP
+    $Template:
+      - mappedValueString
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getPlasticPrinting:
+        - housing_plastic_secondary_processing
+        - printing_loss_rate
+      # $housing-plastic.dropdown.CmfPPrintingType:
+      #   - ^values
+    mapFrom:
+      - cmfPPrintingType
+
+  - key: cmfPPriningLossRate
+    $Template:
+      - mappedValueString
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getPlasticPrinting:
+        - housing_plastic_secondary_processing
+        - printing_loss_rate
+      # $housing-plastic.dropdown.CmfPPrintingType:
+      #   - ^values
+    mapFrom:
+      - cmfPPrintingType

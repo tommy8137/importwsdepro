@@ -1,0 +1,66 @@
+values:
+ - thermalPadHeatTransferCoefficient: 1.3
+   thermalPadThickness: 0.5
+   thermalPadPrice: 74
+   thermalPadShore: 24
+
+ - thermalPadHeatTransferCoefficient: 1.3
+   thermalPadThickness: 1
+   thermalPadPrice: 98
+   thermalPadShore: 24
+
+ - thermalPadHeatTransferCoefficient: 1.3
+   thermalPadThickness: 1.5
+   thermalPadPrice: 136
+   thermalPadShore: 24
+
+ - thermalPadHeatTransferCoefficient: 1.3
+   thermalPadThickness: 3
+   thermalPadPrice: 197
+   thermalPadShore: 24
+
+ - thermalPadHeatTransferCoefficient: 3
+   thermalPadThickness: 0.5
+   thermalPadPrice: 95
+   thermalPadShore: 42
+
+ - thermalPadHeatTransferCoefficient: 3
+   thermalPadThickness: 1
+  #  thermalPadPrice: 121
+   thermalPadPrice: 175
+   thermalPadShore: 42
+
+ - thermalPadHeatTransferCoefficient: 3
+   thermalPadThickness: 1.5
+   thermalPadPrice: 168
+   thermalPadShore: 42
+
+ - thermalPadHeatTransferCoefficient: 3
+   thermalPadThickness: 2.25
+   thermalPadPrice: 270
+   thermalPadShore: 42
+
+ - thermalPadHeatTransferCoefficient: 3
+   thermalPadThickness: 2.5
+   thermalPadPrice: 315
+   thermalPadShore: 42
+
+ - thermalPadHeatTransferCoefficient: 6
+   thermalPadThickness: 0.3
+   thermalPadPrice: 189
+   thermalPadShore: 45
+
+ - thermalPadHeatTransferCoefficient: 6
+   thermalPadThickness: 0.5
+   thermalPadPrice: 257
+   thermalPadShore: 45
+
+ - thermalPadHeatTransferCoefficient: 6
+   thermalPadThickness: 0.8
+   thermalPadPrice: 300
+   thermalPadShore: 45
+
+ - thermalPadHeatTransferCoefficient: 6
+   thermalPadThickness: 1
+   thermalPadPrice: 320
+   thermalPadShore: 45

@@ -1,0 +1,211 @@
+# 耐落費用 ResistantCostValues
+values:
+ - material: 低碳鋼18A
+   resistantFallColor: Blue
+   minToothDiameter: 0
+   maxToothDiameter: 2
+   toothLengthValue: 1
+   resistantFallPrice: 0.001941176
+
+ - material: 低碳鋼18A
+   resistantFallColor: Blue
+   minToothDiameter: 2.1
+   maxToothDiameter: 2.9
+   toothLengthValue: 1
+   resistantFallPrice: 0.001941176
+
+ - material: 低碳鋼18A
+   resistantFallColor: Blue
+   minToothDiameter: 2.1
+   maxToothDiameter: 2.9
+   toothLengthValue: 3
+   resistantFallPrice: 0.001544118
+
+ - material: 低碳鋼18A
+   resistantFallColor: Blue
+   minToothDiameter: 2.1
+   maxToothDiameter: 2.9
+   toothLengthValue: 10.1
+   resistantFallPrice: 0.001941176
+
+ - material: 低碳鋼18A
+   resistantFallColor: Blue
+   minToothDiameter: 3
+   maxToothDiameter: -1
+   toothLengthValue: 1
+   resistantFallPrice: 0.002558824
+
+ - material: 低碳鋼18A
+   resistantFallColor: Yellow
+   minToothDiameter: 0
+   maxToothDiameter: 2
+   toothLengthValue: 1
+   resistantFallPrice: 0.002117647
+
+ - material: 低碳鋼18A
+   resistantFallColor: Yellow
+   minToothDiameter: 2.1
+   maxToothDiameter: 2.9
+   toothLengthValue: 1
+   resistantFallPrice: 0.002294118
+
+ - material: 低碳鋼18A
+   resistantFallColor: Yellow
+   minToothDiameter: 2.1
+   maxToothDiameter: 2.9
+   toothLengthValue: 3
+   resistantFallPrice: 0.001941176
+
+ - material: 低碳鋼18A
+   resistantFallColor: Yellow
+   minToothDiameter: 2.1
+   maxToothDiameter: 2.9
+   toothLengthValue: 10.1
+   resistantFallPrice: 0.002294118
+
+ - material: 低碳鋼18A
+   resistantFallColor: Yellow
+   minToothDiameter: 3
+   maxToothDiameter: -1
+   toothLengthValue: 1
+   resistantFallPrice: 0.002735294
+
+ - material: 低碳鋼18A
+   resistantFallColor: Coffee
+   minToothDiameter: 0
+   maxToothDiameter: 2
+   toothLengthValue: 1
+   resistantFallPrice: 0.001941176
+
+ - material: 低碳鋼18A
+   resistantFallColor: Coffee
+   minToothDiameter: 2.1
+   maxToothDiameter: 2.9
+   toothLengthValue: 1
+   resistantFallPrice: 0.001941176
+
+ - material: 低碳鋼18A
+   resistantFallColor: Coffee
+   minToothDiameter: 2.1
+   maxToothDiameter: 2.9
+   toothLengthValue: 3
+   resistantFallPrice: 0.001544118
+
+ - material: 低碳鋼18A
+   resistantFallColor: Coffee
+   minToothDiameter: 2.1
+   maxToothDiameter: 2.9
+   toothLengthValue: 10.1
+   resistantFallPrice: 0.001941176
+
+ - material: 低碳鋼18A
+   resistantFallColor: Coffee
+   minToothDiameter: 3
+   maxToothDiameter: -1
+   toothLengthValue: 1
+   resistantFallPrice: 0.002558824
+
+
+ - material: SUS410
+   resistantFallColor: Blue
+   minToothDiameter: 0
+   maxToothDiameter: 2
+   toothLengthValue: 1
+   resistantFallPrice: 0.002647059
+
+ - material: SUS410
+   resistantFallColor: Blue
+   minToothDiameter: 2.1
+   maxToothDiameter: 2.9
+   toothLengthValue: 1
+   resistantFallPrice: 0.002647059
+
+ - material: SUS410
+   resistantFallColor: Blue
+   minToothDiameter: 2.1
+   maxToothDiameter: 2.9
+   toothLengthValue: 3
+   resistantFallPrice: 0.002102941
+
+ - material: SUS410
+   resistantFallColor: Blue
+   minToothDiameter: 2.1
+   maxToothDiameter: 2.9
+   toothLengthValue: 10.1
+   resistantFallPrice: 0.002647059
+ - material: SUS410
+   resistantFallColor: Blue
+   minToothDiameter: 3
+   maxToothDiameter: -1
+   toothLengthValue: 1
+   resistantFallPrice: 0.003235294
+
+ - material: SUS410
+   resistantFallColor: Yellow
+   minToothDiameter: 0
+   maxToothDiameter: 2
+   toothLengthValue: 1
+   resistantFallPrice: 0.002647059
+
+ - material: SUS410
+   resistantFallColor: Yellow
+   minToothDiameter: 2.1
+   maxToothDiameter: 2.9
+   toothLengthValue: 1
+   resistantFallPrice: 0.003176471
+
+ - material: SUS410
+   resistantFallColor: Yellow
+   minToothDiameter: 2.1
+   maxToothDiameter: 2.9
+   toothLengthValue: 3
+   resistantFallPrice: 0.002647059
+
+ - material: SUS410
+   resistantFallColor: Yellow
+   minToothDiameter: 2.1
+   maxToothDiameter: 2.9
+   toothLengthValue: 10.1
+   resistantFallPrice: 0.003176471
+
+ - material: SUS410
+   resistantFallColor: Yellow
+   minToothDiameter: 3
+   maxToothDiameter: -1
+   toothLengthValue: 1
+   resistantFallPrice: 0.003235294
+
+ - material: SUS410
+   resistantFallColor: Coffee
+   minToothDiameter: 0
+   maxToothDiameter: 2
+   toothLengthValue: 1
+   resistantFallPrice: 0.003176471
+
+ - material: SUS410
+   resistantFallColor: Coffee
+   minToothDiameter: 2.1
+   maxToothDiameter: 2.9
+   toothLengthValue: 1
+   resistantFallPrice: 0.002647059
+
+ - material: SUS410
+   resistantFallColor: Coffee
+   minToothDiameter: 2.1
+   maxToothDiameter: 2.9
+   toothLengthValue: 3
+   resistantFallPrice: 0.002647059
+
+ - material: SUS410
+   resistantFallColor: Coffee
+   minToothDiameter: 2.1
+   maxToothDiameter: 2.9
+   toothLengthValue: 10.1
+   resistantFallPrice: 0.002647059
+
+ - material: SUS410
+   resistantFallColor: Coffee
+   minToothDiameter: 3
+   maxToothDiameter: -1
+   toothLengthValue: 1
+   resistantFallPrice: 0.003794118

@@ -1,0 +1,10 @@
+summary-header:
+  fontColor: 'FFFFFF'
+  fill: '0070C0'
+  border: true
+  bold: true
+
+summary-data:
+  border: true
+  wrapText: true
+  verticalAlignment: middle

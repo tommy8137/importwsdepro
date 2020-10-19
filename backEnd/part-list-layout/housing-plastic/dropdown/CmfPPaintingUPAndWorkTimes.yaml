@@ -1,0 +1,10 @@
+values:
+  - productType: NB
+    cmfPPaintingUP: 0.055
+    cmfPPaintingWorkTime: 20
+  - productType: DT
+    cmfPPaintingUP: 0.07
+    cmfPPaintingWorkTime: 8
+  - productType: Otehrs
+    cmfPPaintingUP: 0.043
+    cmfPPaintingWorkTime: 10

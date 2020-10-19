@@ -1,0 +1,129 @@
+output:
+  # 計算結果
+  hmToolingStampingSingleLossRate: hmToolingStampingSingleLossRate
+  hmToolingStampingSingleAllowance: hmToolingStampingSingleAllowance
+  # 機台費 (Module Rate)
+  hmToolingModuleRate: hmToolingModuleRate
+  # 工程數
+  hmStampingCount: hmStampingCount
+  # 機台類型
+  hmStampingMouldType: hmStampingMouldType
+  hmMaterialLossRateCE: hmMaterialLossRateCE
+  type2: type2
+formula:
+  # # 一組沖壓費: 工程數*機台費/穴數*(1+LossRate)*(1+FCST寬放值)
+  # hmToolingStampingSingleCost:
+  #   type: MATH
+  #   label: 一組沖壓費
+  #   formula: hmStampingCount * hmToolingStampingModuleRate / hmToolingHoleCount * (1 + hmToolingStampingSingleLossRate) * (1 + hmToolingStampingSingleAllowance)
+
+  # Loss Rate
+  # hmToolingStampingSingleLossRate:
+  #   label: LossRate
+  #   type: FUNC
+  #   formula: "(hmStampingMouldType, hmToolingStageDieLossRate, hmToolingProgressiveDieLossRate) => { return hmStampingMouldType === '工程模' ? hmToolingStageDieLossRate : hmToolingProgressiveDieLossRate; }"
+  #   param:
+  #     - hmStampingMouldType
+  #     - hmToolingStageDieLossRate
+  #     - hmToolingProgressiveDieLossRate
+
+  # Loss Rate
+  hmToolingStampingSingleLossRate:
+    type: MATH
+    label: Loss Rate
+    formula: hmMaterialLossRateCE / 100
+
+  # FCST寬放值
+  hmToolingStampingSingleAllowance:
+    label: FCST 寬放值
+    type: FUNC
+    formula: "(hmStampingMouldType, hmToolingStageDieAllowance, hmToolingProgressiveDieAllowance) => { return hmStampingMouldType === '工程模' ? hmToolingStageDieAllowance : hmToolingProgressiveDieAllowance; }"
+    param:
+      - hmStampingMouldType
+      - hmToolingStageDieAllowance
+      - hmToolingProgressiveDieAllowance
+
+  # 機台費 (Module Rate)
+  hmToolingModuleRate:
+    label: 機台費 (Module Rate)
+    type: FUNC
+    formula: "(type2, hmToolingStampingModuleRateList, hmStampingMouldTypeId, hmStampingMachineTonnageId) => {
+      const { values : list = [] } = hmToolingStampingModuleRateList;
+      const result = list.find(d => 
+        d.hmStampingMouldTypeId === hmStampingMouldTypeId &&
+        d.hmStampingMachineTonnageId === hmStampingMachineTonnageId &&
+        d.type2 === type2
+      );
+      if (result && result.hmToolingModuleRate) {
+        return result.hmToolingModuleRate;
+      } 
+      return 0;
+    }"
+    param:
+      - type2
+      - hmToolingStampingModuleRateList
+      - hmStampingMouldTypeId
+      - hmStampingMachineTonnageId
+
+scope:
+  # 工程數
+  hmStampingCount: hmStampingCount
+  # 穴數
+  hmToolingHoleCount: hmToolingHoleCount
+  # 模具型式
+  hmStampingMouldType: hmStampingMouldType
+  # 模具型式 Id
+  hmStampingMouldTypeId: hmStampingMouldTypeId
+  # 沖壓機台(T) Id
+  hmStampingMachineTonnageId: hmStampingMachineTonnageId
+
+global:
+  # NB/METAL - 沖壓lossRate使用材料費lossRate計算
+  hmMaterialLossRateCE:
+    type: VARIABLE
+    label: hmMaterialLossRateCE
+    bykey: hmMaterialLossRateCE
+    groups:
+      - housingMetal
+
+  type2:
+    type: VARIABLE
+    label: type2
+    bykey: type2
+    groups:
+      - partItemInfo
+
+constant:
+  # 機台費 (Module Rate)
+  hmToolingStampingModuleRateList:
+    label: Module Rate 與 機台噸數、機台類型 對照表
+    value:
+      ?getMetalModuleMachinePressRate:
+        -
+  # 工程模 Loss Rate
+  hmToolingStageDieLossRate:
+    label: 工程模 Loss Rate
+    ?getCommon:
+      - housing_metal_stamping
+      - stage_stamping_loss_rate
+    # value: 0
+  hmToolingStageDieAllowance:
+    label: 工程模 FCST 寬放值
+    ?getCommon:
+      - housing_metal_stamping
+      - stage_stamping_fcst_allowance
+    # value: 0
+
+  # 連續模 Loss Rate
+  hmToolingProgressiveDieLossRate:
+    label: 連續模 Loss Rate
+    ?getCommon:
+      - housing_metal_stamping
+      - progressive_stamping_loss_rate
+    # value: 0
+  hmToolingProgressiveDieAllowance:
+    label: 連續模 FCST 寬放值
+    ?getCommon:
+      - housing_metal_stamping
+      - progressive_stamping_fcst_allowance
+    # value: 0

@@ -1,0 +1,25 @@
+headers:
+  sku0:
+    label: SKU0 Cost
+    $Template:
+      - dataFloat
+  sku1:
+    label: SKU1 Cost
+    $Template:
+      - dataFloat
+  sku2:
+    label: SKU2 Cost
+    $Template:
+      - dataFloat
+  sku3:
+    label: SKU3 Cost
+    $Template:
+      - dataFloat
+  sku4:
+    label: SKU4 Cost
+    $Template:
+      - dataFloat
+  sku5:
+    label: SKU5 Cost
+    $Template:
+      - dataFloat

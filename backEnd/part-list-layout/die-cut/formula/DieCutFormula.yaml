@@ -1,0 +1,343 @@
+output:
+  total: total
+  #
+  A_mainMaterialCostTotal: materialTotal
+  A-1_materialCostTotal: materialCostTotal
+  A-2_minorMaterialCostTotal: minorMaterialCostTotal
+  A-3_releasePaperTypeCost: releasePaperTypeCost
+  B_subMaterialCostTotal: subMaterialCostTotal
+  C_stampingCostTotal: stampingCostTotal
+  D_printingCost: printingCost
+  E_secondaryProcessingCost: secondaryProcessingCost
+  E-1_stickingCost: stickingCost
+  E-2_debrisCleaningCost: debrisCleaningCost
+  F_managementCost: managementCost
+  stampingTimes: stampingTimes
+  # for debug
+  releasePaperTypePrice: releasePaperTypePrice
+  secondaryProcessingPrice: secondaryProcessingPrice
+  stickingCount: stickingCount
+  isOtherFill: isOtherFill
+  managementAndProfit: managementAndProfit
+  # 
+  materialList: materialList
+
+formula:
+  # total: 若為Other fill me remark則為null, 其餘則為0
+  total:
+    label: 總價
+    type: FUNC
+    formula: "(total, isOtherFill)=>{
+      const inValid = !(total && typeof total === 'number' && isFinite(total));
+      if (isOtherFill) {
+        return null;
+      } else if (inValid) {
+        return 0;
+      }
+      return total;
+    }"
+    param:
+      - totalCost
+      - isOtherFill
+
+  # 總價 = A.主要材料費 + B.配件材料費 + C.沖切加工費: + D.印刷費 + E.二次加工費 + F.管銷
+  totalCost:
+    label: 總價
+    type: MATH
+    formula: "materialTotal + subMaterialCostTotal + stampingCostTotal + printingCost + secondaryProcessingCost + managementCost"
+
+
+  # 只要任何一個材料有填 Other_Fill_ME_Remark, 就給他null
+  isOtherFill:
+    type: GROUPFUNC
+    label: "檢查是否有group material, materialSpec 有填 Other_Fill_ME_Remark"
+    bykey:
+      - isOtherFill
+    groups:
+      - materialCost
+      - minorMaterialCost
+      - subMaterialCost
+    func: "(values) => values.some(obj => obj.isOtherFill)"
+
+
+  #  主要材料費： A-1.主要材料費 + A-2次主料材料費 + A-3離型紙/模的下料面積費用
+  materialTotal:
+    type: FUNC
+    label: "主要材料費： A-1.主要材料費 + A-2次主料材料費 + A-3離型紙/模的下料面積費用"
+    formula: "(materialCostTotal, minorMaterialCostTotal,  releasePaperTypeCost) =>{
+      return materialCostTotal + minorMaterialCostTotal + releasePaperTypeCost;
+    }"
+    param:
+      - materialCostTotal
+      - minorMaterialCostTotal
+      - releasePaperTypeCost
+
+  materialCostTotal:
+    type: GROUPSUM
+    label: 主料總total
+    bykey: total
+    groups:
+      - materialCost
+
+  minorMaterialCostTotal:
+    type: GROUPSUM
+    label: 次料總total
+    bykey: total
+    groups:
+      - minorMaterialCost
+
+  # B.配件材料費
+  subMaterialCostTotal:
+    type: GROUPSUM
+    label: B.配件材料費
+    bykey: total
+    groups:
+      - subMaterialCost
+
+  # A-3.離型紙/模 費用： 離型紙/模的下料面積價錢
+  releasePaperTypeCost:
+    type: FUNC
+    label: A-3.離型紙/模 費用： 離型紙/模的下料面積價錢
+    formula: "(mainMaterialSize, releasePaperTypePrice, releasingPaperLossRate) =>{
+      const result = (releasePaperTypePrice * mainMaterialSize * (1 + releasingPaperLossRate) * 1) / 1000000;
+      return result;
+    }"
+    param:
+      - mainMaterialSize
+      - releasePaperTypePrice
+      - releasingPaperLossRate
+
+
+  mainMaterialSize:
+    type: GROUPSUM
+    label: 主要材料 面積
+    bykey: materialSize
+    groups:
+      - materialCost
+
+  # C.沖切加工費 
+  # (相同面積只算一次沖切費用，所以會把相同長寬的分組，之後取第0筆沖切費)
+  stampingCostTotal:
+    type: FUNC
+    label: C.沖切加工費
+    formula: "(materialList) => {
+      const sum =  materialList.reduce((prev, curr) => {
+        const { stampingProcessCost = 0 } = curr;
+        return prev + curr.stampingProcessCost;
+      }, 0);
+      return sum;
+    }"
+    param:
+      - materialList
+
+  stampingTimes:
+    type: FUNC
+    label: "沖切次數For export"
+    formula: "(materialList) => {
+      const stampingCountSum =  materialList.reduce((prev, curr) => {
+        return prev + curr.stampingCount;
+      }, 0);
+      return stampingCountSum;
+    }"
+    param:
+      - materialList
+    
+  # D.印刷費
+  printingCost:
+    type: MATH
+    label: 單色印刷單價 * 印刷次數
+    formula: printingPrice * printingCount
+
+  # E.二次加工費
+  secondaryProcessingCost:
+    type: MATH
+    label: E.二次加工費
+    formula: stickingCost + debrisCleaningCost
+
+  # E.管銷費用
+  managementCost:
+    type: MATH
+    label: E.管銷費用
+    formula: (stampingCostTotal + secondaryProcessingCost) * (managementAndProfit)
+
+  # ======================================================
+
+  # 手工貼合/轉貼 費用 = 單價(USD) * Assy Time (Sec) / 60 * 數量
+  stickingCost:
+    type: MATH
+    label: 手工貼合/轉貼費
+    formula: secondaryProcessingPrice * assyTime / 60 * stickingCount
+
+  # 總貼合數量
+  stickingCount:
+    type: FUNC
+    label: "總貼合數量 = 貼合數量加總  - 1"
+    formula: "(materialList) => {
+      const countSum =  materialList.reduce((prev, curr) => {
+        return prev + curr.stickingCount;
+      }, 0);
+      return countSum > 0 ? (countSum - 1) : 0;
+    }"
+    param:
+      - materialList
+
+  # 除屑清理/ 排廢料費 費用
+  debrisCleaningCost:
+    type: MATH
+    label: 除屑清理/ 排廢料費費用
+    formula: debrisCleaningPrice * debrisCleaningCount
+
+  # 除屑清理/ 排廢料費 單價(USD)
+  debrisCleaningPrice:
+    type: MATH
+    label: 除屑清理/ 排廢料費 單價(USD)
+    formula: stampingCostTotal * debrisCleaningConstant
+
+  # 沖切費用邏輯整整理
+  # Gasket 不算沖切
+  # Gasket 的貼合數量使用assyCount(自己填寫的那個數量), 其他的則使用existCount (1)
+  # 相同面積不算沖切, 會去找前一筆，如果是 gasket就跳過
+  materialList:
+    type: GROUPFUNC
+    label: 一般材料沖工費邏輯整理
+    bykey:
+      - type2
+      - isGasket
+      - partssizelength
+      - partssizewidth
+      - stampingCost
+      - areaTimes
+      - assyCount
+    groups:
+      - materialCost
+      - minorMaterialCost
+      - subMaterialCost
+    func: "(values) => {
+      const materialValues = values.filter(obj => obj.type2);
+      function getPrevObj(array, index) {
+        const prevIndex = index - 1;
+        const prevObj = prevIndex >= 0 ? array[prevIndex] : null;
+        if (prevObj && prevObj.isGasket) {
+          return getPrevObj(array, prevIndex);
+        }
+        return prevObj;
+      }
+
+      return materialValues.reduce((prev, curr, index)=>{
+        const { isGasket, assyCount, stampingCost, partssizelength: length, partssizewidth: width } = curr;
+        const prevObj = getPrevObj(materialValues, index);
+        const hasSameSize = prevObj && (+length === +prevObj.partssizelength && +width === +prevObj.partssizewidth);
+        const stampingCount = (isGasket || hasSameSize) ? 0 : 1;
+        const stickingCount = isGasket ? assyCount : stampingCount;
+        const stampingProcessCost = (hasSameSize || isGasket) ? 0 : stampingCost;
+        return [
+          ...prev,
+          {
+            ...curr,
+            stickingCount,
+            stampingCount,
+            stampingProcessCost,
+            hasSameSize,
+            prevObj
+          }
+        ];
+      },[])
+    }"
+
+scope:
+  releasePaperTypePrice: releasePaperTypePrice
+  printingCount: printingCount
+  debrisCleaningCount: debrisCleaningCount
+
+constant:
+  mainMaterialLossRate:
+    label: 主要材料費 loss rate
+    ?getDiecutCommon:
+      - die_cut_main_material
+      - main_material_loss_rate
+
+  subMateriallossRate:
+    label: 配件材料費 loss rate
+    ?getDiecutCommon:
+      - die_cut_main_material
+      - sub_material_loss_rate
+
+  releasingPaperLossRate:
+    label: 離型紙/膜 loss rate
+    ?getDiecutCommon:
+      - die_cut_main_material
+      - releasing_paper_loss_rate
+
+  # 單色印刷單價(USD) = 0.2(RMB) /當月匯率(0.68)
+  printingPrice:
+    label: 單色印刷單價
+    ?getDiecutCommon:
+      - die_cut_single_printing
+      - single_printing_cost
+      # value: 0.029411764705882356
+
+  # 二次加工單價
+  secondaryProcessingPrice:
+    label: 二次加工單價
+    ?getDiecutCommon:
+      - die_cut_secondary_processing
+      - pasting_cost
+    # value: 0.055
+  assyTime:
+    label: Assy Time (Sec)
+    ?getDiecutCommon:
+      - die_cut_secondary_processing
+      - assy_time
+    # value: 8
+  managementAndProfit:
+    label: 管銷&利潤
+    ?getDiecutCommon:
+      - die_cut_management_and_profit
+      - management_and_profit
+    # value: 0.1
+
+  debrisCleaningConstant:
+    label: 除屑清理排廢料常數
+    ?getDiecutCommon:
+      - die_cut_secondary_processing
+      - debris_cleaning_constant
+    # value: 2
+
+global:
+  # 主要面積的下料面積價錢
+  materialSizePrice:
+    type: GROUPSUM
+    label: 主要材料費下料面積價錢
+    bykey: materialSizePrice
+    groups:
+      - materialCost
+  # 主要面積的下料面積
+  materialSize:
+    type: GROUPSUM
+    label: 主要材料費下料面積價錢
+    bykey: materialSize
+    groups:
+      - materialCost
+
+  # 次主要面積的下料面積價錢
+  minorMaterialSizePrice:
+    type: GROUPSUM
+    label: 次主要材料費下料面積價錢
+    bykey: materialSizePrice
+    groups:
+      - minorMaterialCost
+
+  # 次主要面積的下料面積
+  minorMaterialSize:
+    type: GROUPSUM
+    label: 次主要材料費下料面積價錢
+    bykey: materialSize
+    groups:
+      - minorMaterialCost
+
+
+
+
+
+
+

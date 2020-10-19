@@ -1,0 +1,14 @@
+values:
+  - FFCConnectorFunctionName: HDD Connector
+    FFCConnectorType: HDD CN FFC ST13113-11101
+    FFCConnectorVendorPn: ST13113-11101加錫
+    FFCConnectorUnitPrice: 0.136
+
+  - FFCConnectorFunctionName: ODD Connector
+    FFCConnectorType: ODD CN FFC ST12113G41100
+    FFCConnectorVendorPn: ST12113G41100
+    FFCConnectorUnitPrice: 0.117
+
+  # - FFCConnectorFunctionName:
+  #   FFCConnectorType:
+  #   FFCConnectorVendorPn:

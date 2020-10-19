@@ -1,0 +1,17 @@
+excel:
+  sheets:
+    - $eebom-tmp.sheet-2nd-summary:
+      - sheet
+
+    - $eebom-tmp.sheet-2nd-odm:
+      - sheet
+    # - $eebom-tmp.sheet-odm-part:
+    #   - sheet
+    - $eebom-tmp.sheet-full-bom:
+      - sheet
+    - $eebom-tmp.sheet-pcb:
+      - sheet
+    - $eebom-tmp.sheet-hitrate:
+      - sheet
+    - $eebom-tmp.sheet-odm-hitrate:
+      - sheet

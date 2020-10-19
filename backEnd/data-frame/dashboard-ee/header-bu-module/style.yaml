@@ -1,0 +1,13 @@
+item-header:
+  fontColor: 'FFFFFF'
+  fill: 0070C0
+  bold: true
+  fontFamily: arial
+  horizontalAlignment: center
+  border: true      
+
+item-data:
+  border: true
+  borderColor: 'ED7D31'
+
+

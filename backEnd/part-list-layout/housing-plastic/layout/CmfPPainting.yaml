@@ -1,0 +1,942 @@
+multiple: true
+items:
+  - key: cmfPPaintingCheckBox
+    $Template:
+      - checkBox
+    label: Exist
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    emdmKey: emdmBomInfo.cmfForm.cmfPPaintingCheckBox
+
+  - key: cmfPPaintingType
+    $Template:
+      - selectorString
+    label: 噴漆類型 TYPE
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: paint_type_id
+      ?getPlasticPainType:
+        -
+      # $housing-plastic.dropdown.CmfPaintingTypeAndColors:
+      #   - ^values
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfPPaintingCheckBox: true
+      grids: 1.5
+      display: true
+    # default: N/A
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfPPaintingCheckBox)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfPPaintingCheckBox
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfPPaintingType
+
+  - key: cmfPPrimerQTY
+    $Template:
+      - inputInt
+    label: 底漆Coating數
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+      depends:
+        action: lock
+        condition:
+          cmfPPaintingCheckBox: true
+          cmfPPaintingColor: true
+          cmfPPaintingType: "(value, dependsValues, values = []) => {
+            const findedObj = values.find(obj => obj.cmfPPaintingType === value);
+            if(findedObj && !findedObj.cmfPPrimerQTY) {
+              return false;
+            }
+            return true;
+          }"
+        ?getPlasticPaintVendor:
+          -
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfPPaintingCheckBox)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfPPaintingCheckBox
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfPPrimerQTY
+
+  - key: cmfPTopcoatQTY
+    $Template:
+      - inputInt
+    label: 面漆Coating數
+    displayConfig:
+      $Template:
+        - displayConfig
+      dependsMapped:
+        action: lock
+        ?getPlasticPaintVendor:
+          -
+        condition:
+          - cmfPPaintingType
+      depends:
+        action: lock
+        condition:
+          cmfPPaintingCheckBox: true
+          cmfPPaintingColor: true
+      grids: 0.5
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfPPaintingCheckBox)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfPPaintingCheckBox
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfPTopcoatQTY
+
+  - key: cmfPPaintingColor
+    $Template:
+      - selectorString
+      - ^displayConfig
+    label: Color 色系
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      # $housing-plastic.dropdown.CmfPaintingTypeAndColors:
+      #   - ^values
+      idKey: paint_color_id
+      ?getPlasticPainType:
+        -
+      depends:
+        - cmfPPaintingType
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfPPaintingCheckBox: true
+          cmfPPaintingType: true
+      grids: 1
+      display: true
+    # default: N/A
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfPPaintingCheckBox)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfPPaintingCheckBox
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfPPaintingColor
+
+  - key: cmfPPaintingVendor
+    $Template:
+      - selectorString
+      - ^displayConfig
+    label: 塗料廠商
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: cmfPPaintingVendorId
+      depends:
+        - cmfPPaintingType
+        - cmfPPaintingColor
+      ?getPlasticPaintVendor:
+        -
+      # $housing-plastic.dropdown.CmfPaintingTypeAndVendors:
+      #   - ^values
+      filter:
+        func: "(options = [], props) => {
+          const { cmfPPrimerQTY: primer, cmfPTopcoatQTY: topcoat } = props; 
+          return options.filter(option => {
+            const { cmfPPrimerQTY: optPrimer, cmfPTopcoatQTY: optTopcoat } = option; 
+
+            if ((!optPrimer && primer) || (!optTopcoat && topcoat)) {
+              return false;
+            } else if (optPrimer && primer || optTopcoat && topcoat) {
+              return true;
+            }
+            return false;
+          })   
+        }"
+        depends:
+          - cmfPPrimerQTY
+          - cmfPTopcoatQTY
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfPPaintingCheckBox: true
+      grids: 1
+      display: true
+    # default: N/A
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfPPaintingCheckBox)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfPPaintingCheckBox
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfPPaintingVendor
+
+  # - key: cmfPPaintingPrice
+  #   $Template:
+  #     - mappedValueFloat
+  #   displayConfig:
+  #     $Template:
+  #       - displayConfig
+  #     display: false
+  #   mapFrom:
+  #     - cmfPPaintingColor
+  #     - cmfPPaintingVendor
+  #     - cmfPPaintingType
+  #   selectorConfig:
+  #     $Template:
+  #       - selectorConfig
+  #     $housing-plastic.dropdown.CmfPaintingPrice:
+  #       - ^values
+
+  # 底漆單價
+  - key: cmfPPaintingPrimerPrice
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      # $housing-plastic.dropdown.CmfPaintingPrice:
+      #   - ^values
+      ?getPlasticPainPrice:
+        -
+    mapFrom:
+      - cmfPPaintingColor
+      - cmfPPaintingVendor
+      - cmfPPaintingType
+
+  - key: cmfPPaintingTopcoatPrice
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      # $housing-plastic.dropdown.CmfPaintingPrice:
+      #   - ^values
+      ?getPlasticPainPrice:
+        -
+    mapFrom:
+      - cmfPPaintingColor
+      - cmfPPaintingVendor
+      - cmfPPaintingType
+
+  # - key: cmfPPaintingPreprocessor
+  #   $Template:
+  #     - mappedValueFloat
+  #   label: 前處理員
+  #   displayConfig:
+  #     $Template:
+  #       - displayConfig
+  #     display: false
+  #   mapFrom:
+  #     - cmfPPaintingType
+  #   selectorConfig:
+  #     $Template:
+  #       - selectorConfig
+  #     $housing-plastic.dropdown.CmfPaintingTypeVendorColorValues:
+  #       - ^values
+
+  # - key: cmfPPaintingPrimerPreprocessor
+  #   $Template:
+  #     - mappedValueFloat
+  #   label: 前處理員
+  #   displayConfig:
+  #     $Template:
+  #       - displayConfig
+  #     display: false
+  #   mapFrom:
+  #     - cmfPPaintingType
+  #   selectorConfig:
+  #     $Template:
+  #       - selectorConfig
+  #     $housing-plastic.dropdown.CmfPaintingTypeVendorColorValues:
+  #       - ^values
+
+  # - key: cmfPPaintingTopcoatPreprocessor
+  #   $Template:
+  #     - mappedValueFloat
+  #   label: 前處理員
+  #   displayConfig:
+  #     $Template:
+  #       - displayConfig
+  #     display: false
+  #   mapFrom:
+  #     - cmfPPaintingType
+  #   selectorConfig:
+  #     $Template:
+  #       - selectorConfig
+  #     $housing-plastic.dropdown.CmfPaintingTypeVendorColorValues:
+  #       - ^values
+
+  # - key: cmfPPaintingGrinder
+  #   $Template:
+  #     - mappedValueFloat
+  #   label: 磨修人員
+  #   displayConfig:
+  #     $Template:
+  #       - displayConfig
+  #     display: false
+  #   mapFrom:
+  #     - cmfPPaintingType
+  #   selectorConfig:
+  #     $Template:
+  #       - selectorConfig
+  #     $housing-plastic.dropdown.CmfPaintingTypeVendorColorValues:
+  #       - ^values
+
+  # - key: cmfPPaintingPrimerGrinder
+  #   $Template:
+  #     - mappedValueFloat
+  #   label: 磨修人員
+  #   displayConfig:
+  #     $Template:
+  #       - displayConfig
+  #     display: false
+  #   mapFrom:
+  #     - cmfPPaintingType
+  #   selectorConfig:
+  #     $Template:
+  #       - selectorConfig
+  #     $housing-plastic.dropdown.CmfPaintingTypeVendorColorValues:
+  #       - ^values
+
+  # - key: cmfPPaintingTopcoatGrinder
+  #   $Template:
+  #     - mappedValueFloat
+  #   label: 磨修人員
+  #   displayConfig:
+  #     $Template:
+  #       - displayConfig
+  #     display: false
+  #   mapFrom:
+  #     - cmfPPaintingType
+  #   selectorConfig:
+  #     $Template:
+  #       - selectorConfig
+  #     $housing-plastic.dropdown.CmfPaintingTypeVendorColorValues:
+  #       - ^values
+
+  # - key: cmfPPaintingPainter
+  #   $Template:
+  #     - mappedValueFloat
+  #   label: 噴漆技員
+  #   displayConfig:
+  #     $Template:
+  #       - displayConfig
+  #     display: false
+  #   mapFrom:
+  #     - cmfPPaintingType
+  #   selectorConfig:
+  #     $Template:
+  #       - selectorConfig
+  #     $housing-plastic.dropdown.CmfPaintingTypeVendorColorValues:
+  #       - ^values
+
+  # - key: cmfPPaintingPrimerPainter
+  #   $Template:
+  #     - mappedValueFloat
+  #   label: 噴漆技員
+  #   displayConfig:
+  #     $Template:
+  #       - displayConfig
+  #     display: false
+  #   mapFrom:
+  #     - cmfPPaintingType
+  #   selectorConfig:
+  #     $Template:
+  #       - selectorConfig
+  #     $housing-plastic.dropdown.CmfPaintingTypeVendorColorValues:
+  #       - ^values
+
+  # - key: cmfPPaintingTopcoatPainter
+  #   $Template:
+  #     - mappedValueFloat
+  #   label: 噴漆技員
+  #   displayConfig:
+  #     $Template:
+  #       - displayConfig
+  #     display: false
+  #   mapFrom:
+  #     - cmfPPaintingType
+  #   selectorConfig:
+  #     $Template:
+  #       - selectorConfig
+  #     $housing-plastic.dropdown.CmfPaintingTypeVendorColorValues:
+  #       - ^values
+
+  # - key: cmfPPaintingValidator
+  #   $Template:
+  #     - mappedValueFloat
+  #   label: 檢包人員
+  #   displayConfig:
+  #     $Template:
+  #       - displayConfig
+  #     display: false
+  #   mapFrom:
+  #     - cmfPPaintingType
+  #   selectorConfig:
+  #     $Template:
+  #       - selectorConfig
+  #     $housing-plastic.dropdown.CmfPaintingTypeVendorColorValues:
+  #       - ^values
+
+  # - key: cmfPPaintingPrimerValidator
+  #   $Template:
+  #     - mappedValueFloat
+  #   label: 檢包人員
+  #   displayConfig:
+  #     $Template:
+  #       - displayConfig
+  #     display: false
+  #   mapFrom:
+  #     - cmfPPaintingType
+  #   selectorConfig:
+  #     $Template:
+  #       - selectorConfig
+  #     $housing-plastic.dropdown.CmfPaintingTypeVendorColorValues:
+  #       - ^values
+
+  # - key: cmfPPaintingTopcoatValidator
+  #   $Template:
+  #     - mappedValueFloat
+  #   label: 檢包人員
+  #   displayConfig:
+  #     $Template:
+  #       - displayConfig
+  #     display: false
+  #   mapFrom:
+  #     - cmfPPaintingType
+  #   selectorConfig:
+  #     $Template:
+  #       - selectorConfig
+  #     $housing-plastic.dropdown.CmfPaintingTypeVendorColorValues:
+  #       - ^values
+
+  # - key: cmfPPaintingLaborCost
+  #   $Template:
+  #     - mappedValueFloat
+  #   label: 人力費用
+  #   displayConfig:
+  #     $Template:
+  #       - displayConfig
+  #     display: false
+  #   mapFrom:
+  #     - cmfPPaintingType
+  #   selectorConfig:
+  #     $Template:
+  #       - selectorConfig
+  #     $housing-plastic.dropdown.CmfPaintingTypeVendorColorValues:
+  #       - ^values
+
+  # - key: cmfPPaintingPrimerLaborCost
+  #   $Template:
+  #     - mappedValueFloat
+  #   label: 人力費用
+  #   displayConfig:
+  #     $Template:
+  #       - displayConfig
+  #     display: false
+  #   mapFrom:
+  #     - cmfPPaintingType
+  #   selectorConfig:
+  #     $Template:
+  #       - selectorConfig
+  #     $housing-plastic.dropdown.CmfPaintingTypeVendorColorValues:
+  #       - ^values
+
+  # - key: cmfPPaintingTopcoatLaborCost
+  #   $Template:
+  #     - mappedValueFloat
+  #   label: 人力費用
+  #   displayConfig:
+  #     $Template:
+  #       - displayConfig
+  #     display: false
+  #   mapFrom:
+  #     - cmfPPaintingType
+  #   selectorConfig:
+  #     $Template:
+  #       - selectorConfig
+  #     $housing-plastic.dropdown.CmfPaintingTypeVendorColorValues:
+  #       - ^values
+
+  # - key: cmfPInch
+  #   $Template:
+  #     - inputFloat
+  #   label: 吋別
+  #   require: false
+  #   displayConfig:
+  #     depends:
+  #       action: lock
+  #       condition:
+  #         cmfPPaintingCheckBox: true
+  #     grids: 1
+  #     display: true
+
+  - key: cmfPaintingThickness
+    $Template:
+      - selectorString
+    label: 噴漆膜厚上限值(um)
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: id
+      ?getPlasticPaintingThickness:
+        -
+#      $housing-plastic.dropdown.CmfPaintingThickness:
+#        - ^values
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfPPaintingCheckBox: true
+      grids: 1
+      display: true
+    default: 0
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfPPaintingCheckBox)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfPPaintingCheckBox
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfPaintingThickness
+
+
+  - key: cmfPaintingLength
+    $Template:
+      - inputFloat
+    label: 噴塗面-長 (L/mm)
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfPPaintingCheckBox: true
+      grids: 1
+      display: true
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfPPaintingCheckBox)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfPPaintingCheckBox
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfPaintingLength
+
+  - key: cmfPaintingWidth
+    $Template:
+      - inputFloat
+    label: 噴塗面-寬 (W/mm)
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfPPaintingCheckBox: true
+      grids: 1
+      display: true
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfPPaintingCheckBox)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfPPaintingCheckBox
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfPaintingWidth
+
+  - key: cmfPaintingHeight
+    $Template:
+      - inputFloat
+    label: 噴塗面-高 (H/mm)
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfPPaintingCheckBox: true
+      grids: 1
+      display: true
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfPPaintingCheckBox)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfPPaintingCheckBox
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfPaintingHeight
+
+
+  - key: cmfPaintingMachinePrice
+    label: 噴漆機台費用單價
+    $Template:
+      - mappedValueString
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getPlasticPainMachine:
+        -
+        # $housing-plastic.dropdown.CmfPaintingMachineType:
+      # - ^values
+    mapFrom:
+      - cmfPaintingMachineType
+
+  - key: cmfPPaintingUP
+    label: 噴漆單價
+    $Template:
+      - mappedValueString
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getPlasticPaintProcess:
+        -
+      # $housing-plastic.dropdown.CmfPPaintingUPAndWorkTimes:
+      #   - ^values
+    mapFrom:
+      - productType
+
+  - key: cmfPPaintingWorkTime
+    label: 噴漆工時
+    $Template:
+      - mappedValueString
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getPlasticPaintProcess:
+        -
+      # $housing-plastic.dropdown.CmfPPaintingUPAndWorkTimes:
+      #   - ^values
+    mapFrom:
+      - productType
+
+  - key: cmfPPrintingWorkers
+    label: 噴漆人力
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getPlasticPaintManpower:
+        -
+      # $housing-plastic.dropdown.CmfPPaintingWorkers:
+      #   - ^values
+    mapFrom:
+      - productType
+      - type2
+
+  - key: cmfPPrintingWorkersForNCVM
+    label: NCVM噴漆人力
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getPlasticPaintManpowerForNCVM:
+        -
+      # $housing-plastic.dropdown.CmfPPaintingWorkers:
+      #   - ^values
+    mapFrom:
+      - productType
+      - cmfPPaintingType
+
+
+  # 面漆 主劑單價 (USD/kg)
+  - key: cmfPPaintingTopcoatMainUnitPrice
+    label:  面漆 主劑單價 (USD/kg
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      # $housing-plastic.dropdown.CmfPPaintingAgentValues:
+      #   - ^values
+      ?getPlasticPainPrice:
+        -
+    mapFrom:
+      - cmfPPaintingType
+      - cmfPPaintingColor
+      - cmfPPaintingVendor
+
+  # 面漆 硬化劑/固化劑單價 (USD/kg)
+  - key: cmfPPaintingTopcoatHardenerUnitPrice
+    label: 面漆 硬化劑/固化劑單價 (USD/kg)
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      # $housing-plastic.dropdown.CmfPPaintingAgentValues:
+      #   - ^values
+      ?getPlasticPainPrice:
+        -
+    mapFrom:
+      - cmfPPaintingType
+      - cmfPPaintingColor
+      - cmfPPaintingVendor
+
+
+  # 面漆  溶劑/稀釋劑單價 (USD/kg)
+  - key: cmfPPaintingTopcoatSolventUnitPrice
+    label: 面漆  溶劑/稀釋劑單價 (USD/kg)
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      # $housing-plastic.dropdown.CmfPPaintingAgentValues:
+      #   - ^values
+      ?getPlasticPainPrice:
+        -
+    mapFrom:
+      - cmfPPaintingType
+      - cmfPPaintingColor
+      - cmfPPaintingVendor
+
+
+  # 面漆 主劑比例
+  - key: cmfPPaintingTopcoatMainAmount
+    label: 面漆 主劑比例
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      # $housing-plastic.dropdown.CmfPPaintingAgentValues:
+      #   - ^values
+      ?getPlasticPainPrice:
+        -
+    mapFrom:
+      - cmfPPaintingType
+      - cmfPPaintingColor
+      - cmfPPaintingVendor
+
+  # 面漆 硬化劑/固化劑 比例
+  - key: cmfPPaintingTopcoatHardenerAmount
+    label: 面漆 硬化劑/固化劑 比例
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      # $housing-plastic.dropdown.CmfPPaintingAgentValues:
+      #   - ^values
+      ?getPlasticPainPrice:
+        -
+    mapFrom:
+      - cmfPPaintingType
+      - cmfPPaintingColor
+      - cmfPPaintingVendor
+
+  # 面漆 溶劑/稀釋劑 比例
+  - key: cmfPPaintingTopcoatSolventAmount
+    label: 面漆 溶劑/稀釋劑 比例
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      # $housing-plastic.dropdown.CmfPPaintingAgentValues:
+      #   - ^values
+      ?getPlasticPainPrice:
+        -
+    mapFrom:
+      - cmfPPaintingType
+      - cmfPPaintingColor
+      - cmfPPaintingVendor
+
+
+    # 底漆 =========================================
+    # 底漆 主劑單價 (USD/kg)
+  - key: cmfPPaintingPrimerMainUnitPrice
+    label: 底漆 主劑單價 (USD/kg)
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      # $housing-plastic.dropdown.CmfPPaintingAgentValues:
+      #   - ^values
+      ?getPlasticPainPrice:
+        -
+    mapFrom:
+      - cmfPPaintingType
+      - cmfPPaintingColor
+      - cmfPPaintingVendor
+
+  # 底漆 硬化劑/固化劑單價 (USD/kg)
+  - key: cmfPPaintingPrimerHardenerUnitPrice
+    label: 底漆 硬化劑/固化劑單價 (USD/kg)
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      # $housing-plastic.dropdown.CmfPPaintingAgentValues:
+      #   - ^values
+      ?getPlasticPainPrice:
+        -
+    mapFrom:
+      - cmfPPaintingType
+      - cmfPPaintingColor
+      - cmfPPaintingVendor
+
+
+  # 底漆  溶劑/稀釋劑單價 (USD/kg)
+  - key: cmfPPaintingPrimerSolventUnitPrice
+    label: 底漆  溶劑/稀釋劑單價 (USD/kg)
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      # $housing-plastic.dropdown.CmfPPaintingAgentValues:
+      #   - ^values
+      ?getPlasticPainPrice:
+        -
+    mapFrom:
+      - cmfPPaintingType
+      - cmfPPaintingColor
+      - cmfPPaintingVendor
+
+
+  # 底漆 主劑比例
+  - key: cmfPPaintingPrimerMainAmount
+    label: 底漆 主劑比例
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      # $housing-plastic.dropdown.CmfPPaintingAgentValues:
+      #   - ^values
+      ?getPlasticPainPrice:
+        -
+    mapFrom:
+      - cmfPPaintingType
+      - cmfPPaintingColor
+      - cmfPPaintingVendor
+
+  # 底漆 硬化劑/固化劑 比例
+  - key: cmfPPaintingPrimerHardenerAmount
+    label:  底漆 硬化劑/固化劑 比例
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      # $housing-plastic.dropdown.CmfPPaintingAgentValues:
+      #   - ^values
+      ?getPlasticPainPrice:
+        -
+    mapFrom:
+      - cmfPPaintingType
+      - cmfPPaintingColor
+      - cmfPPaintingVendor
+
+  # 底漆 溶劑/稀釋劑 比例
+  - key: cmfPPaintingPrimerSolventAmount
+    label: 底漆 溶劑/稀釋劑 比例
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      # $housing-plastic.dropdown.CmfPPaintingAgentValues:
+      #   - ^values
+      ?getPlasticPainPrice:
+        -
+    mapFrom:
+      - cmfPPaintingType
+      - cmfPPaintingColor
+      - cmfPPaintingVendor

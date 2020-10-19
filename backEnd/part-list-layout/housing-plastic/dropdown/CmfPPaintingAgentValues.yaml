@@ -1,0 +1,681 @@
+values: 
+  - cmfPPaintingVendor: Akzo
+    cmfPPaintingType: PU_painting
+    cmfPPaintingColor: N/A
+    cmfPPaintingTopcoatPrice: '15.53'
+    cmfPPaintingPrimerPrice: '9.72'
+    cmfPPaintingTopcoatMainUnitPrice: 20.77
+    cmfPPaintingTopcoatMainAmount:  1
+    cmfPPaintingTopcoatHardenerUnitPrice: 20
+    cmfPPaintingTopcoatHardenerAmount: 0.05
+    cmfPPaintingTopcoatSolventUnitPrice: 4.62
+    cmfPPaintingTopcoatSolventAmount: 0.5
+    cmfPPaintingPrimerMainUnitPrice: 14.31
+    cmfPPaintingPrimerMainAmount: 1
+    cmfPPaintingPrimerHardenerUnitPrice: 20
+    cmfPPaintingPrimerHardenerAmount: 1
+    cmfPPaintingPrimerSolventUnitPrice: 4.62
+    cmfPPaintingPrimerSolventAmount: 1
+  - cmfPPaintingVendor: 東端
+    cmfPPaintingType: PU_painting
+    cmfPPaintingColor: N/A
+    cmfPPaintingTopcoatPrice: '8.6'
+    cmfPPaintingPrimerPrice: '8.05'
+    cmfPPaintingTopcoatMainUnitPrice: 20.77
+    cmfPPaintingTopcoatMainAmount:  1
+    cmfPPaintingTopcoatHardenerUnitPrice: 20
+    cmfPPaintingTopcoatHardenerAmount: 0.05
+    cmfPPaintingTopcoatSolventUnitPrice: 4.62
+    cmfPPaintingTopcoatSolventAmount: 0.5
+    cmfPPaintingPrimerMainUnitPrice: 14.31
+    cmfPPaintingPrimerMainAmount: 1
+    cmfPPaintingPrimerHardenerUnitPrice: 20
+    cmfPPaintingPrimerHardenerAmount: 1
+    cmfPPaintingPrimerSolventUnitPrice: 4.62
+    cmfPPaintingPrimerSolventAmount: 1
+  - cmfPPaintingVendor: 協承昌
+    cmfPPaintingType: PU_painting
+    cmfPPaintingColor: N/A
+    cmfPPaintingTopcoatPrice: '8.92'
+    cmfPPaintingPrimerPrice: '7.32'
+    cmfPPaintingTopcoatMainUnitPrice: 20.77
+    cmfPPaintingTopcoatMainAmount:  1
+    cmfPPaintingTopcoatHardenerUnitPrice: 20
+    cmfPPaintingTopcoatHardenerAmount: 0.05
+    cmfPPaintingTopcoatSolventUnitPrice: 4.62
+    cmfPPaintingTopcoatSolventAmount: 0.5
+    cmfPPaintingPrimerMainUnitPrice: 14.31
+    cmfPPaintingPrimerMainAmount: 1
+    cmfPPaintingPrimerHardenerUnitPrice: 20
+    cmfPPaintingPrimerHardenerAmount: 1
+    cmfPPaintingPrimerSolventUnitPrice: 4.62
+    cmfPPaintingPrimerSolventAmount: 1
+  - cmfPPaintingVendor: 新政豐
+    cmfPPaintingType: PU_painting
+    cmfPPaintingColor: N/A
+    cmfPPaintingTopcoatPrice: '8.24'
+    cmfPPaintingPrimerPrice: '8.24'
+    cmfPPaintingTopcoatMainUnitPrice: 20.77
+    cmfPPaintingTopcoatMainAmount:  1
+    cmfPPaintingTopcoatHardenerUnitPrice: 20
+    cmfPPaintingTopcoatHardenerAmount: 0.05
+    cmfPPaintingTopcoatSolventUnitPrice: 4.62
+    cmfPPaintingTopcoatSolventAmount: 0.5
+    cmfPPaintingPrimerMainUnitPrice: 14.31
+    cmfPPaintingPrimerMainAmount: 1
+    cmfPPaintingPrimerHardenerUnitPrice: 20
+    cmfPPaintingPrimerHardenerAmount: 1
+    cmfPPaintingPrimerSolventUnitPrice: 4.62
+    cmfPPaintingPrimerSolventAmount: 1
+  - cmfPPaintingVendor: 台贏
+    cmfPPaintingType: PU_painting
+    cmfPPaintingColor: N/A
+    cmfPPaintingTopcoatPrice: '9.08'
+    cmfPPaintingPrimerPrice: '8.63'
+    cmfPPaintingTopcoatMainUnitPrice: 20.77
+    cmfPPaintingTopcoatMainAmount:  1
+    cmfPPaintingTopcoatHardenerUnitPrice: 20
+    cmfPPaintingTopcoatHardenerAmount: 0.05
+    cmfPPaintingTopcoatSolventUnitPrice: 4.62
+    cmfPPaintingTopcoatSolventAmount: 0.5
+    cmfPPaintingPrimerMainUnitPrice: 14.31
+    cmfPPaintingPrimerMainAmount: 1
+    cmfPPaintingPrimerHardenerUnitPrice: 20
+    cmfPPaintingPrimerHardenerAmount: 1
+    cmfPPaintingPrimerSolventUnitPrice: 4.62
+    cmfPPaintingPrimerSolventAmount: 1
+  - cmfPPaintingVendor: 皇冠
+    cmfPPaintingType: PU_painting
+    cmfPPaintingColor: N/A
+    cmfPPaintingTopcoatPrice: '0'
+    cmfPPaintingPrimerPrice: '0'
+    cmfPPaintingTopcoatMainUnitPrice: 20.77
+    cmfPPaintingTopcoatMainAmount:  1
+    cmfPPaintingTopcoatHardenerUnitPrice: 20
+    cmfPPaintingTopcoatHardenerAmount: 0.05
+    cmfPPaintingTopcoatSolventUnitPrice: 4.62
+    cmfPPaintingTopcoatSolventAmount: 0.5
+    cmfPPaintingPrimerMainUnitPrice: 14.31
+    cmfPPaintingPrimerMainAmount: 1
+    cmfPPaintingPrimerHardenerUnitPrice: 20
+    cmfPPaintingPrimerHardenerAmount: 1
+    cmfPPaintingPrimerSolventUnitPrice: 4.62
+    cmfPPaintingPrimerSolventAmount: 1
+  - cmfPPaintingVendor: 歐歷
+    cmfPPaintingType: PU_painting
+    cmfPPaintingColor: N/A
+    cmfPPaintingTopcoatPrice: '13.16'
+    cmfPPaintingPrimerPrice: '13.16'
+    cmfPPaintingTopcoatMainUnitPrice: 20.77
+    cmfPPaintingTopcoatMainAmount:  1
+    cmfPPaintingTopcoatHardenerUnitPrice: 20
+    cmfPPaintingTopcoatHardenerAmount: 0.05
+    cmfPPaintingTopcoatSolventUnitPrice: 4.62
+    cmfPPaintingTopcoatSolventAmount: 0.5
+    cmfPPaintingPrimerMainUnitPrice: 14.31
+    cmfPPaintingPrimerMainAmount: 1
+    cmfPPaintingPrimerHardenerUnitPrice: 20
+    cmfPPaintingPrimerHardenerAmount: 1
+    cmfPPaintingPrimerSolventUnitPrice: 4.62
+    cmfPPaintingPrimerSolventAmount: 1
+  - cmfPPaintingVendor: Others
+    cmfPPaintingType: PU_painting
+    cmfPPaintingColor: N/A
+    cmfPPaintingTopcoatPrice: '31'
+    cmfPPaintingPrimerPrice: '25'
+    cmfPPaintingTopcoatMainUnitPrice: 20.77
+    cmfPPaintingTopcoatMainAmount:  1
+    cmfPPaintingTopcoatHardenerUnitPrice: 20
+    cmfPPaintingTopcoatHardenerAmount: 0.05
+    cmfPPaintingTopcoatSolventUnitPrice: 4.62
+    cmfPPaintingTopcoatSolventAmount: 0.5
+    cmfPPaintingPrimerMainUnitPrice: 14.31
+    cmfPPaintingPrimerMainAmount: 1
+    cmfPPaintingPrimerHardenerUnitPrice: 20
+    cmfPPaintingPrimerHardenerAmount: 1
+    cmfPPaintingPrimerSolventUnitPrice: 4.62
+    cmfPPaintingPrimerSolventAmount: 1
+  - cmfPPaintingVendor: Akzo
+    cmfPPaintingType: Rubber_painting
+    cmfPPaintingColor: N/A
+    cmfPPaintingTopcoatPrice: '22.75'
+    cmfPPaintingPrimerPrice: '22.75'
+    cmfPPaintingTopcoatMainUnitPrice: 20.77
+    cmfPPaintingTopcoatMainAmount:  1
+    cmfPPaintingTopcoatHardenerUnitPrice: 20
+    cmfPPaintingTopcoatHardenerAmount: 0.05
+    cmfPPaintingTopcoatSolventUnitPrice: 4.62
+    cmfPPaintingTopcoatSolventAmount: 0.5
+    cmfPPaintingPrimerMainUnitPrice: 14.31
+    cmfPPaintingPrimerMainAmount: 1
+    cmfPPaintingPrimerHardenerUnitPrice: 20
+    cmfPPaintingPrimerHardenerAmount: 1
+    cmfPPaintingPrimerSolventUnitPrice: 4.62
+    cmfPPaintingPrimerSolventAmount: 1
+  - cmfPPaintingVendor: 東端
+    cmfPPaintingType: Rubber_painting
+    cmfPPaintingColor: N/A
+    cmfPPaintingTopcoatPrice: '13.85'
+    cmfPPaintingPrimerPrice: '9.11'
+    cmfPPaintingTopcoatMainUnitPrice: 20.77
+    cmfPPaintingTopcoatMainAmount:  1
+    cmfPPaintingTopcoatHardenerUnitPrice: 20
+    cmfPPaintingTopcoatHardenerAmount: 0.05
+    cmfPPaintingTopcoatSolventUnitPrice: 4.62
+    cmfPPaintingTopcoatSolventAmount: 0.5
+    cmfPPaintingPrimerMainUnitPrice: 14.31
+    cmfPPaintingPrimerMainAmount: 1
+    cmfPPaintingPrimerHardenerUnitPrice: 20
+    cmfPPaintingPrimerHardenerAmount: 1
+    cmfPPaintingPrimerSolventUnitPrice: 4.62
+    cmfPPaintingPrimerSolventAmount: 1
+  - cmfPPaintingVendor: 協承昌
+    cmfPPaintingType: Rubber_painting
+    cmfPPaintingColor: N/A
+    cmfPPaintingTopcoatPrice: '9.85'
+    cmfPPaintingPrimerPrice: '7.96'
+    cmfPPaintingTopcoatMainUnitPrice: 20.77
+    cmfPPaintingTopcoatMainAmount:  1
+    cmfPPaintingTopcoatHardenerUnitPrice: 20
+    cmfPPaintingTopcoatHardenerAmount: 0.05
+    cmfPPaintingTopcoatSolventUnitPrice: 4.62
+    cmfPPaintingTopcoatSolventAmount: 0.5
+    cmfPPaintingPrimerMainUnitPrice: 14.31
+    cmfPPaintingPrimerMainAmount: 1
+    cmfPPaintingPrimerHardenerUnitPrice: 20
+    cmfPPaintingPrimerHardenerAmount: 1
+    cmfPPaintingPrimerSolventUnitPrice: 4.62
+    cmfPPaintingPrimerSolventAmount: 1
+  - cmfPPaintingVendor: 新政豐
+    cmfPPaintingType: Rubber_painting
+    cmfPPaintingColor: N/A
+    cmfPPaintingTopcoatPrice: '14.04'
+    cmfPPaintingPrimerPrice: '6.19'
+    cmfPPaintingTopcoatMainUnitPrice: 20.77
+    cmfPPaintingTopcoatMainAmount:  1
+    cmfPPaintingTopcoatHardenerUnitPrice: 20
+    cmfPPaintingTopcoatHardenerAmount: 0.05
+    cmfPPaintingTopcoatSolventUnitPrice: 4.62
+    cmfPPaintingTopcoatSolventAmount: 0.5
+    cmfPPaintingPrimerMainUnitPrice: 14.31
+    cmfPPaintingPrimerMainAmount: 1
+    cmfPPaintingPrimerHardenerUnitPrice: 20
+    cmfPPaintingPrimerHardenerAmount: 1
+    cmfPPaintingPrimerSolventUnitPrice: 4.62
+    cmfPPaintingPrimerSolventAmount: 1
+  - cmfPPaintingVendor: 台贏
+    cmfPPaintingType: Rubber_painting
+    cmfPPaintingColor: N/A
+    cmfPPaintingTopcoatPrice: '18.47'
+    cmfPPaintingPrimerPrice: '9.55'
+    cmfPPaintingTopcoatMainUnitPrice: 20.77
+    cmfPPaintingTopcoatMainAmount:  1
+    cmfPPaintingTopcoatHardenerUnitPrice: 20
+    cmfPPaintingTopcoatHardenerAmount: 0.05
+    cmfPPaintingTopcoatSolventUnitPrice: 4.62
+    cmfPPaintingTopcoatSolventAmount: 0.5
+    cmfPPaintingPrimerMainUnitPrice: 14.31
+    cmfPPaintingPrimerMainAmount: 1
+    cmfPPaintingPrimerHardenerUnitPrice: 20
+    cmfPPaintingPrimerHardenerAmount: 1
+    cmfPPaintingPrimerSolventUnitPrice: 4.62
+    cmfPPaintingPrimerSolventAmount: 1
+  - cmfPPaintingVendor: 皇冠
+    cmfPPaintingType: Rubber_painting
+    cmfPPaintingColor: N/A
+    cmfPPaintingTopcoatPrice: '15.98'
+    cmfPPaintingPrimerPrice: '7.16'
+    cmfPPaintingTopcoatMainUnitPrice: 20.77
+    cmfPPaintingTopcoatMainAmount:  1
+    cmfPPaintingTopcoatHardenerUnitPrice: 20
+    cmfPPaintingTopcoatHardenerAmount: 0.05
+    cmfPPaintingTopcoatSolventUnitPrice: 4.62
+    cmfPPaintingTopcoatSolventAmount: 0.5
+    cmfPPaintingPrimerMainUnitPrice: 14.31
+    cmfPPaintingPrimerMainAmount: 1
+    cmfPPaintingPrimerHardenerUnitPrice: 20
+    cmfPPaintingPrimerHardenerAmount: 1
+    cmfPPaintingPrimerSolventUnitPrice: 4.62
+    cmfPPaintingPrimerSolventAmount: 1
+  - cmfPPaintingVendor: 歐歷
+    cmfPPaintingType: Rubber_painting
+    cmfPPaintingColor: N/A
+    cmfPPaintingTopcoatPrice: '15.9'
+    cmfPPaintingPrimerPrice: '7.96'
+    cmfPPaintingTopcoatMainUnitPrice: 20.77
+    cmfPPaintingTopcoatMainAmount:  1
+    cmfPPaintingTopcoatHardenerUnitPrice: 20
+    cmfPPaintingTopcoatHardenerAmount: 0.05
+    cmfPPaintingTopcoatSolventUnitPrice: 4.62
+    cmfPPaintingTopcoatSolventAmount: 0.5
+    cmfPPaintingPrimerMainUnitPrice: 14.31
+    cmfPPaintingPrimerMainAmount: 1
+    cmfPPaintingPrimerHardenerUnitPrice: 20
+    cmfPPaintingPrimerHardenerAmount: 1
+    cmfPPaintingPrimerSolventUnitPrice: 4.62
+    cmfPPaintingPrimerSolventAmount: 1
+  - cmfPPaintingVendor: Others
+    cmfPPaintingType: Rubber_painting
+    cmfPPaintingColor: N/A
+    cmfPPaintingTopcoatPrice: '35'
+    cmfPPaintingPrimerPrice: '35'
+    cmfPPaintingTopcoatMainUnitPrice: 20.77
+    cmfPPaintingTopcoatMainAmount:  1
+    cmfPPaintingTopcoatHardenerUnitPrice: 20
+    cmfPPaintingTopcoatHardenerAmount: 0.05
+    cmfPPaintingTopcoatSolventUnitPrice: 4.62
+    cmfPPaintingTopcoatSolventAmount: 0.5
+    cmfPPaintingPrimerMainUnitPrice: 14.31
+    cmfPPaintingPrimerMainAmount: 1
+    cmfPPaintingPrimerHardenerUnitPrice: 20
+    cmfPPaintingPrimerHardenerAmount: 1
+    cmfPPaintingPrimerSolventUnitPrice: 4.62
+    cmfPPaintingPrimerSolventAmount: 1
+  - cmfPPaintingVendor: Akzo
+    cmfPPaintingType: NCVM
+    cmfPPaintingColor: N/A
+    cmfPPaintingTopcoatPrice: '15.53'
+    cmfPPaintingPrimerPrice: '9.72'
+    cmfPPaintingTopcoatMainUnitPrice: 20.77
+    cmfPPaintingTopcoatMainAmount:  1
+    cmfPPaintingTopcoatHardenerUnitPrice: 20
+    cmfPPaintingTopcoatHardenerAmount: 0.05
+    cmfPPaintingTopcoatSolventUnitPrice: 4.62
+    cmfPPaintingTopcoatSolventAmount: 0.5
+    cmfPPaintingPrimerMainUnitPrice: 14.31
+    cmfPPaintingPrimerMainAmount: 1
+    cmfPPaintingPrimerHardenerUnitPrice: 20
+    cmfPPaintingPrimerHardenerAmount: 1
+    cmfPPaintingPrimerSolventUnitPrice: 4.62
+    cmfPPaintingPrimerSolventAmount: 1
+  - cmfPPaintingVendor: 東端
+    cmfPPaintingType: NCVM
+    cmfPPaintingColor: N/A
+    cmfPPaintingTopcoatPrice: '8.6'
+    cmfPPaintingPrimerPrice: '8.05'
+    cmfPPaintingTopcoatMainUnitPrice: 20.77
+    cmfPPaintingTopcoatMainAmount:  1
+    cmfPPaintingTopcoatHardenerUnitPrice: 20
+    cmfPPaintingTopcoatHardenerAmount: 0.05
+    cmfPPaintingTopcoatSolventUnitPrice: 4.62
+    cmfPPaintingTopcoatSolventAmount: 0.5
+    cmfPPaintingPrimerMainUnitPrice: 14.31
+    cmfPPaintingPrimerMainAmount: 1
+    cmfPPaintingPrimerHardenerUnitPrice: 20
+    cmfPPaintingPrimerHardenerAmount: 1
+    cmfPPaintingPrimerSolventUnitPrice: 4.62
+    cmfPPaintingPrimerSolventAmount: 1
+  - cmfPPaintingVendor: 協承昌
+    cmfPPaintingType: NCVM
+    cmfPPaintingColor: N/A
+    cmfPPaintingTopcoatPrice: '8.92'
+    cmfPPaintingPrimerPrice: '7.32'
+    cmfPPaintingTopcoatMainUnitPrice: 20.77
+    cmfPPaintingTopcoatMainAmount:  1
+    cmfPPaintingTopcoatHardenerUnitPrice: 20
+    cmfPPaintingTopcoatHardenerAmount: 0.05
+    cmfPPaintingTopcoatSolventUnitPrice: 4.62
+    cmfPPaintingTopcoatSolventAmount: 0.5
+    cmfPPaintingPrimerMainUnitPrice: 14.31
+    cmfPPaintingPrimerMainAmount: 1
+    cmfPPaintingPrimerHardenerUnitPrice: 20
+    cmfPPaintingPrimerHardenerAmount: 1
+    cmfPPaintingPrimerSolventUnitPrice: 4.62
+    cmfPPaintingPrimerSolventAmount: 1
+  - cmfPPaintingVendor: 新政豐
+    cmfPPaintingType: NCVM
+    cmfPPaintingColor: N/A
+    cmfPPaintingTopcoatPrice: '8.24'
+    cmfPPaintingPrimerPrice: '8.24'
+    cmfPPaintingTopcoatMainUnitPrice: 20.77
+    cmfPPaintingTopcoatMainAmount:  1
+    cmfPPaintingTopcoatHardenerUnitPrice: 20
+    cmfPPaintingTopcoatHardenerAmount: 0.05
+    cmfPPaintingTopcoatSolventUnitPrice: 4.62
+    cmfPPaintingTopcoatSolventAmount: 0.5
+    cmfPPaintingPrimerMainUnitPrice: 14.31
+    cmfPPaintingPrimerMainAmount: 1
+    cmfPPaintingPrimerHardenerUnitPrice: 20
+    cmfPPaintingPrimerHardenerAmount: 1
+    cmfPPaintingPrimerSolventUnitPrice: 4.62
+    cmfPPaintingPrimerSolventAmount: 1
+  - cmfPPaintingVendor: 台贏
+    cmfPPaintingType: NCVM
+    cmfPPaintingColor: N/A
+    cmfPPaintingTopcoatPrice: '9.08'
+    cmfPPaintingPrimerPrice: '8.63'
+    cmfPPaintingTopcoatMainUnitPrice: 20.77
+    cmfPPaintingTopcoatMainAmount:  1
+    cmfPPaintingTopcoatHardenerUnitPrice: 20
+    cmfPPaintingTopcoatHardenerAmount: 0.05
+    cmfPPaintingTopcoatSolventUnitPrice: 4.62
+    cmfPPaintingTopcoatSolventAmount: 0.5
+    cmfPPaintingPrimerMainUnitPrice: 14.31
+    cmfPPaintingPrimerMainAmount: 1
+    cmfPPaintingPrimerHardenerUnitPrice: 20
+    cmfPPaintingPrimerHardenerAmount: 1
+    cmfPPaintingPrimerSolventUnitPrice: 4.62
+    cmfPPaintingPrimerSolventAmount: 1
+  - cmfPPaintingVendor: 皇冠
+    cmfPPaintingType: NCVM
+    cmfPPaintingColor: N/A
+    cmfPPaintingTopcoatPrice: '0'
+    cmfPPaintingPrimerPrice: '0'
+    cmfPPaintingTopcoatMainUnitPrice: 20.77
+    cmfPPaintingTopcoatMainAmount:  1
+    cmfPPaintingTopcoatHardenerUnitPrice: 20
+    cmfPPaintingTopcoatHardenerAmount: 0.05
+    cmfPPaintingTopcoatSolventUnitPrice: 4.62
+    cmfPPaintingTopcoatSolventAmount: 0.5
+    cmfPPaintingPrimerMainUnitPrice: 14.31
+    cmfPPaintingPrimerMainAmount: 1
+    cmfPPaintingPrimerHardenerUnitPrice: 20
+    cmfPPaintingPrimerHardenerAmount: 1
+    cmfPPaintingPrimerSolventUnitPrice: 4.62
+    cmfPPaintingPrimerSolventAmount: 1
+  - cmfPPaintingVendor: 歐歷
+    cmfPPaintingType: NCVM
+    cmfPPaintingColor: N/A
+    cmfPPaintingTopcoatPrice: '13.16'
+    cmfPPaintingPrimerPrice: '13.16'
+    cmfPPaintingTopcoatMainUnitPrice: 20.77
+    cmfPPaintingTopcoatMainAmount:  1
+    cmfPPaintingTopcoatHardenerUnitPrice: 20
+    cmfPPaintingTopcoatHardenerAmount: 0.05
+    cmfPPaintingTopcoatSolventUnitPrice: 4.62
+    cmfPPaintingTopcoatSolventAmount: 0.5
+    cmfPPaintingPrimerMainUnitPrice: 14.31
+    cmfPPaintingPrimerMainAmount: 1
+    cmfPPaintingPrimerHardenerUnitPrice: 20
+    cmfPPaintingPrimerHardenerAmount: 1
+    cmfPPaintingPrimerSolventUnitPrice: 4.62
+    cmfPPaintingPrimerSolventAmount: 1
+  - cmfPPaintingVendor: Others
+    cmfPPaintingType: NCVM
+    cmfPPaintingColor: N/A
+    cmfPPaintingTopcoatPrice: '31'
+    cmfPPaintingPrimerPrice: '25'
+    cmfPPaintingTopcoatMainUnitPrice: 20.77
+    cmfPPaintingTopcoatMainAmount:  1
+    cmfPPaintingTopcoatHardenerUnitPrice: 20
+    cmfPPaintingTopcoatHardenerAmount: 0.05
+    cmfPPaintingTopcoatSolventUnitPrice: 4.62
+    cmfPPaintingTopcoatSolventAmount: 0.5
+    cmfPPaintingPrimerMainUnitPrice: 14.31
+    cmfPPaintingPrimerMainAmount: 1
+    cmfPPaintingPrimerHardenerUnitPrice: 20
+    cmfPPaintingPrimerHardenerAmount: 1
+    cmfPPaintingPrimerSolventUnitPrice: 4.62
+    cmfPPaintingPrimerSolventAmount: 1
+  - cmfPPaintingVendor: 歐歷
+    cmfPPaintingType: UV_painting
+    cmfPPaintingColor: 一般或霧面(黑/灰/銀)
+    cmfPPaintingTopcoatPrice: '11.69'
+    cmfPPaintingPrimerPrice: 
+    cmfPPaintingTopcoatMainUnitPrice: 20.77
+    cmfPPaintingTopcoatMainAmount:  1
+    cmfPPaintingTopcoatHardenerUnitPrice: 20
+    cmfPPaintingTopcoatHardenerAmount: 0.05
+    cmfPPaintingTopcoatSolventUnitPrice: 4.62
+    cmfPPaintingTopcoatSolventAmount: 0.5
+    cmfPPaintingPrimerMainUnitPrice: 14.31
+    cmfPPaintingPrimerMainAmount: 1
+    cmfPPaintingPrimerHardenerUnitPrice: 20
+    cmfPPaintingPrimerHardenerAmount: 1
+    cmfPPaintingPrimerSolventUnitPrice: 4.62
+    cmfPPaintingPrimerSolventAmount: 1
+  - cmfPPaintingVendor: Akzo
+    cmfPPaintingType: UV_painting
+    cmfPPaintingColor: 一般或霧面(黑/灰/銀)
+    cmfPPaintingTopcoatPrice: '11.2'
+    cmfPPaintingPrimerPrice: 
+    cmfPPaintingTopcoatMainUnitPrice: 20.77
+    cmfPPaintingTopcoatMainAmount:  1
+    cmfPPaintingTopcoatHardenerUnitPrice: 20
+    cmfPPaintingTopcoatHardenerAmount: 0.05
+    cmfPPaintingTopcoatSolventUnitPrice: 4.62
+    cmfPPaintingTopcoatSolventAmount: 0.5
+    cmfPPaintingPrimerMainUnitPrice: 14.31
+    cmfPPaintingPrimerMainAmount: 1
+    cmfPPaintingPrimerHardenerUnitPrice: 20
+    cmfPPaintingPrimerHardenerAmount: 1
+    cmfPPaintingPrimerSolventUnitPrice: 4.62
+    cmfPPaintingPrimerSolventAmount: 1
+  - cmfPPaintingVendor: 歐歷
+    cmfPPaintingType: UV_painting
+    cmfPPaintingColor: 彩色或高光(金/紅/藍)
+    cmfPPaintingTopcoatPrice: '14.03'
+    cmfPPaintingPrimerPrice: 
+    cmfPPaintingTopcoatMainUnitPrice: 20.77
+    cmfPPaintingTopcoatMainAmount:  1
+    cmfPPaintingTopcoatHardenerUnitPrice: 20
+    cmfPPaintingTopcoatHardenerAmount: 0.05
+    cmfPPaintingTopcoatSolventUnitPrice: 4.62
+    cmfPPaintingTopcoatSolventAmount: 0.5
+    cmfPPaintingPrimerMainUnitPrice: 14.31
+    cmfPPaintingPrimerMainAmount: 1
+    cmfPPaintingPrimerHardenerUnitPrice: 20
+    cmfPPaintingPrimerHardenerAmount: 1
+    cmfPPaintingPrimerSolventUnitPrice: 4.62
+    cmfPPaintingPrimerSolventAmount: 1
+  - cmfPPaintingVendor: Akzo
+    cmfPPaintingType: UV_painting
+    cmfPPaintingColor: 彩色或高光(金/紅/藍)
+    cmfPPaintingTopcoatPrice: '23.47'
+    cmfPPaintingPrimerPrice: 
+    cmfPPaintingTopcoatMainUnitPrice: 20.77
+    cmfPPaintingTopcoatMainAmount:  1
+    cmfPPaintingTopcoatHardenerUnitPrice: 20
+    cmfPPaintingTopcoatHardenerAmount: 0.05
+    cmfPPaintingTopcoatSolventUnitPrice: 4.62
+    cmfPPaintingTopcoatSolventAmount: 0.5
+    cmfPPaintingPrimerMainUnitPrice: 14.31
+    cmfPPaintingPrimerMainAmount: 1
+    cmfPPaintingPrimerHardenerUnitPrice: 20
+    cmfPPaintingPrimerHardenerAmount: 1
+    cmfPPaintingPrimerSolventUnitPrice: 4.62
+    cmfPPaintingPrimerSolventAmount: 1
+  - cmfPPaintingVendor: 歐歷
+    cmfPPaintingType: UV_painting
+    cmfPPaintingColor: Soft Touch
+    cmfPPaintingTopcoatPrice: '17.52'
+    cmfPPaintingPrimerPrice: 
+    cmfPPaintingTopcoatMainUnitPrice: 20.77
+    cmfPPaintingTopcoatMainAmount:  1
+    cmfPPaintingTopcoatHardenerUnitPrice: 20
+    cmfPPaintingTopcoatHardenerAmount: 0.05
+    cmfPPaintingTopcoatSolventUnitPrice: 4.62
+    cmfPPaintingTopcoatSolventAmount: 0.5
+    cmfPPaintingPrimerMainUnitPrice: 14.31
+    cmfPPaintingPrimerMainAmount: 1
+    cmfPPaintingPrimerHardenerUnitPrice: 20
+    cmfPPaintingPrimerHardenerAmount: 1
+    cmfPPaintingPrimerSolventUnitPrice: 4.62
+    cmfPPaintingPrimerSolventAmount: 1
+  - cmfPPaintingVendor: Akzo
+    cmfPPaintingType: UV_painting
+    cmfPPaintingColor: Soft Touch
+    cmfPPaintingTopcoatPrice: '17.89'
+    cmfPPaintingPrimerPrice: 
+    cmfPPaintingTopcoatMainUnitPrice: 20.77
+    cmfPPaintingTopcoatMainAmount:  1
+    cmfPPaintingTopcoatHardenerUnitPrice: 20
+    cmfPPaintingTopcoatHardenerAmount: 0.05
+    cmfPPaintingTopcoatSolventUnitPrice: 4.62
+    cmfPPaintingTopcoatSolventAmount: 0.5
+    cmfPPaintingPrimerMainUnitPrice: 14.31
+    cmfPPaintingPrimerMainAmount: 1
+    cmfPPaintingPrimerHardenerUnitPrice: 20
+    cmfPPaintingPrimerHardenerAmount: 1
+    cmfPPaintingPrimerSolventUnitPrice: 4.62
+    cmfPPaintingPrimerSolventAmount: 1
+  - cmfPPaintingVendor: 歐歷
+    cmfPPaintingType: UV_painting
+    cmfPPaintingColor: N/A
+    cmfPPaintingTopcoatPrice: 
+    cmfPPaintingPrimerPrice: 
+    cmfPPaintingTopcoatMainUnitPrice: 20.77
+    cmfPPaintingTopcoatMainAmount:  1
+    cmfPPaintingTopcoatHardenerUnitPrice: 20
+    cmfPPaintingTopcoatHardenerAmount: 0.05
+    cmfPPaintingTopcoatSolventUnitPrice: 4.62
+    cmfPPaintingTopcoatSolventAmount: 0.5
+    cmfPPaintingPrimerMainUnitPrice: 14.31
+    cmfPPaintingPrimerMainAmount: 1
+    cmfPPaintingPrimerHardenerUnitPrice: 20
+    cmfPPaintingPrimerHardenerAmount: 1
+    cmfPPaintingPrimerSolventUnitPrice: 4.62
+    cmfPPaintingPrimerSolventAmount: 1
+  - cmfPPaintingVendor: Akzo
+    cmfPPaintingType: UV_painting
+    cmfPPaintingColor: N/A
+    cmfPPaintingTopcoatPrice: 
+    cmfPPaintingPrimerPrice: 
+    cmfPPaintingTopcoatMainUnitPrice: 20.77
+    cmfPPaintingTopcoatMainAmount:  1
+    cmfPPaintingTopcoatHardenerUnitPrice: 20
+    cmfPPaintingTopcoatHardenerAmount: 0.05
+    cmfPPaintingTopcoatSolventUnitPrice: 4.62
+    cmfPPaintingTopcoatSolventAmount: 0.5
+    cmfPPaintingPrimerMainUnitPrice: 14.31
+    cmfPPaintingPrimerMainAmount: 1
+    cmfPPaintingPrimerHardenerUnitPrice: 20
+    cmfPPaintingPrimerHardenerAmount: 1
+    cmfPPaintingPrimerSolventUnitPrice: 4.62
+    cmfPPaintingPrimerSolventAmount: 1
+  - cmfPPaintingVendor: Akzo
+    cmfPPaintingType: Powder coating
+    cmfPPaintingColor: N/A
+    cmfPPaintingTopcoatPrice: 
+    cmfPPaintingPrimerPrice: 
+    cmfPPaintingTopcoatMainUnitPrice: 20.77
+    cmfPPaintingTopcoatMainAmount:  1
+    cmfPPaintingTopcoatHardenerUnitPrice: 20
+    cmfPPaintingTopcoatHardenerAmount: 0.05
+    cmfPPaintingTopcoatSolventUnitPrice: 4.62
+    cmfPPaintingTopcoatSolventAmount: 0.5
+    cmfPPaintingPrimerMainUnitPrice: 14.31
+    cmfPPaintingPrimerMainAmount: 1
+    cmfPPaintingPrimerHardenerUnitPrice: 20
+    cmfPPaintingPrimerHardenerAmount: 1
+    cmfPPaintingPrimerSolventUnitPrice: 4.62
+    cmfPPaintingPrimerSolventAmount: 1
+  - cmfPPaintingVendor: PPG
+    cmfPPaintingType: Powder coating
+    cmfPPaintingColor: N/A
+    cmfPPaintingTopcoatPrice: 
+    cmfPPaintingPrimerPrice: 
+    cmfPPaintingTopcoatMainUnitPrice: 20.77
+    cmfPPaintingTopcoatMainAmount:  1
+    cmfPPaintingTopcoatHardenerUnitPrice: 20
+    cmfPPaintingTopcoatHardenerAmount: 0.05
+    cmfPPaintingTopcoatSolventUnitPrice: 4.62
+    cmfPPaintingTopcoatSolventAmount: 0.5
+    cmfPPaintingPrimerMainUnitPrice: 14.31
+    cmfPPaintingPrimerMainAmount: 1
+    cmfPPaintingPrimerHardenerUnitPrice: 20
+    cmfPPaintingPrimerHardenerAmount: 1
+    cmfPPaintingPrimerSolventUnitPrice: 4.62
+    cmfPPaintingPrimerSolventAmount: 1
+  - cmfPPaintingVendor: Akzo
+    cmfPPaintingType: Powder coating
+    cmfPPaintingColor: 粉烤砂紋漆
+    cmfPPaintingTopcoatPrice: '5.35'
+    cmfPPaintingPrimerPrice: 
+    cmfPPaintingTopcoatMainUnitPrice: 20.77
+    cmfPPaintingTopcoatMainAmount:  1
+    cmfPPaintingTopcoatHardenerUnitPrice: 20
+    cmfPPaintingTopcoatHardenerAmount: 0.05
+    cmfPPaintingTopcoatSolventUnitPrice: 4.62
+    cmfPPaintingTopcoatSolventAmount: 0.5
+    cmfPPaintingPrimerMainUnitPrice: 14.31
+    cmfPPaintingPrimerMainAmount: 1
+    cmfPPaintingPrimerHardenerUnitPrice: 20
+    cmfPPaintingPrimerHardenerAmount: 1
+    cmfPPaintingPrimerSolventUnitPrice: 4.62
+    cmfPPaintingPrimerSolventAmount: 1
+  - cmfPPaintingVendor: PPG
+    cmfPPaintingType: Powder coating
+    cmfPPaintingColor: 粉烤砂紋漆
+    cmfPPaintingTopcoatPrice: '5.15'
+    cmfPPaintingPrimerPrice: 
+    cmfPPaintingTopcoatMainUnitPrice: 20.77
+    cmfPPaintingTopcoatMainAmount:  1
+    cmfPPaintingTopcoatHardenerUnitPrice: 20
+    cmfPPaintingTopcoatHardenerAmount: 0.05
+    cmfPPaintingTopcoatSolventUnitPrice: 4.62
+    cmfPPaintingTopcoatSolventAmount: 0.5
+    cmfPPaintingPrimerMainUnitPrice: 14.31
+    cmfPPaintingPrimerMainAmount: 1
+    cmfPPaintingPrimerHardenerUnitPrice: 20
+    cmfPPaintingPrimerHardenerAmount: 1
+    cmfPPaintingPrimerSolventUnitPrice: 4.62
+    cmfPPaintingPrimerSolventAmount: 1
+  - cmfPPaintingVendor: Akzo
+    cmfPPaintingType: Powder coating
+    cmfPPaintingColor: 粉烤平光漆
+    cmfPPaintingTopcoatPrice: 
+    cmfPPaintingPrimerPrice: 
+    cmfPPaintingTopcoatMainUnitPrice: 20.77
+    cmfPPaintingTopcoatMainAmount:  1
+    cmfPPaintingTopcoatHardenerUnitPrice: 20
+    cmfPPaintingTopcoatHardenerAmount: 0.05
+    cmfPPaintingTopcoatSolventUnitPrice: 4.62
+    cmfPPaintingTopcoatSolventAmount: 0.5
+    cmfPPaintingPrimerMainUnitPrice: 14.31
+    cmfPPaintingPrimerMainAmount: 1
+    cmfPPaintingPrimerHardenerUnitPrice: 20
+    cmfPPaintingPrimerHardenerAmount: 1
+    cmfPPaintingPrimerSolventUnitPrice: 4.62
+    cmfPPaintingPrimerSolventAmount: 1
+  - cmfPPaintingVendor: PPG
+    cmfPPaintingType: Powder coating
+    cmfPPaintingColor: 粉烤平光漆
+    cmfPPaintingTopcoatPrice: 
+    cmfPPaintingPrimerPrice: 
+    cmfPPaintingTopcoatMainUnitPrice: 20.77
+    cmfPPaintingTopcoatMainAmount:  1
+    cmfPPaintingTopcoatHardenerUnitPrice: 20
+    cmfPPaintingTopcoatHardenerAmount: 0.05
+    cmfPPaintingTopcoatSolventUnitPrice: 4.62
+    cmfPPaintingTopcoatSolventAmount: 0.5
+    cmfPPaintingPrimerMainUnitPrice: 14.31
+    cmfPPaintingPrimerMainAmount: 1
+    cmfPPaintingPrimerHardenerUnitPrice: 20
+    cmfPPaintingPrimerHardenerAmount: 1
+    cmfPPaintingPrimerSolventUnitPrice: 4.62
+    cmfPPaintingPrimerSolventAmount: 1
+  - cmfPPaintingVendor: Akzo
+    cmfPPaintingType: Powder coating
+    cmfPPaintingColor: 粉烤消光漆
+    cmfPPaintingTopcoatPrice: '8.31'
+    cmfPPaintingPrimerPrice: 
+    cmfPPaintingTopcoatMainUnitPrice: 20.77
+    cmfPPaintingTopcoatMainAmount:  1
+    cmfPPaintingTopcoatHardenerUnitPrice: 20
+    cmfPPaintingTopcoatHardenerAmount: 0.05
+    cmfPPaintingTopcoatSolventUnitPrice: 4.62
+    cmfPPaintingTopcoatSolventAmount: 0.5
+    cmfPPaintingPrimerMainUnitPrice: 14.31
+    cmfPPaintingPrimerMainAmount: 1
+    cmfPPaintingPrimerHardenerUnitPrice: 20
+    cmfPPaintingPrimerHardenerAmount: 1
+    cmfPPaintingPrimerSolventUnitPrice: 4.62
+    cmfPPaintingPrimerSolventAmount: 1
+  - cmfPPaintingVendor: PPG
+    cmfPPaintingType: Powder coating
+    cmfPPaintingColor: 粉烤消光漆
+    cmfPPaintingTopcoatPrice: '8.31'
+    cmfPPaintingPrimerPrice: 
+    cmfPPaintingTopcoatMainUnitPrice: 20.77
+    cmfPPaintingTopcoatMainAmount:  1
+    cmfPPaintingTopcoatHardenerUnitPrice: 20
+    cmfPPaintingTopcoatHardenerAmount: 0.05
+    cmfPPaintingTopcoatSolventUnitPrice: 4.62
+    cmfPPaintingTopcoatSolventAmount: 0.5
+    cmfPPaintingPrimerMainUnitPrice: 14.31
+    cmfPPaintingPrimerMainAmount: 1
+    cmfPPaintingPrimerHardenerUnitPrice: 20
+    cmfPPaintingPrimerHardenerAmount: 1
+    cmfPPaintingPrimerSolventUnitPrice: 4.62
+    cmfPPaintingPrimerSolventAmount: 1

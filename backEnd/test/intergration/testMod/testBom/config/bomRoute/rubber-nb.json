@@ -1,0 +1,933 @@
+{
+  "xlsxName": "Test_Data_NB_Rubber.xlsx",
+  "sheetName": "NB_Rubber",
+  "startHorizontalCoordinates": "C",
+  "transferMode": "createPath",
+  "formate": "meothers-rubber",
+  "metadata": {
+    "productType": {
+      "createPath": "productType",
+      "valuekey": "productType",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "1"
+    },
+    "testLabel": {
+      "createPath": "testLabel",
+      "valuekey": "testLabel",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "2"
+    },
+    "type1": {
+      "createPath": "type1",
+      "valuekey": "type1",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "3"
+    },
+    "type2": {
+      "createPath": "type2",
+      "valuekey": "type2",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "4"
+    }
+  },
+  "transferPartlistInfo": {
+    "formData,rubberPartlistTab,rubberPartItemInfo,partname": {
+      "createPath": "formData.rubberPartlistTab.rubberPartItemInfo.partname",
+      "valuekey": "partname",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 7,
+      "default": null
+    },
+    "formData,rubberPartlistTab,rubberPartItemInfo,partnumber": {
+      "createPath": "formData.rubberPartlistTab.rubberPartItemInfo.partnumber",
+      "valuekey": "partnumber",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": 8,
+      "default": null
+    },
+    "formData,rubberPartlistTab,rubberPartItemInfo,materialspec": {
+      "createPath": "formData.rubberPartlistTab.rubberPartItemInfo.materialspec",
+      "valuekey": "materialspec",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 9,
+      "default": null
+    },
+    "formData,rubberPartlistTab,rubberPartItemInfo,material": {
+      "createPath": "formData.rubberPartlistTab.rubberPartItemInfo.material",
+      "valuekey": "material",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 10,
+      "default": null
+    },
+    "formData,rubberPartlistTab,rubberPartItemInfo,materialColor": {
+      "createPath": "formData.rubberPartlistTab.rubberPartItemInfo.materialColor",
+      "valuekey": "materialColor",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 11,
+      "default": ""
+    },
+    "formData,rubberPartlistTab,rubberPartItemInfo,density": {
+      "createPath": "formData.rubberPartlistTab.rubberPartItemInfo.density",
+      "valuekey": "density",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,rubberPartlistTab,rubberPartItemInfo,rubberMaterialPerCost": {
+      "createPath": "formData.rubberPartlistTab.rubberPartItemInfo.rubberMaterialPerCost",
+      "valuekey": "rubberMaterialPerCost",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,rubberPartlistTab,rubberPartItemInfo,materialSize,partssizelength": {
+      "createPath": "formData.rubberPartlistTab.rubberPartItemInfo.materialSize.partssizelength",
+      "valuekey": "partssizelength",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 12,
+      "default": null
+    },
+    "formData,rubberPartlistTab,rubberPartItemInfo,materialSize,partssizewidth": {
+      "createPath": "formData.rubberPartlistTab.rubberPartItemInfo.materialSize.partssizewidth",
+      "valuekey": "partssizewidth",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 13,
+      "default": null
+    },
+    "formData,rubberPartlistTab,rubberPartItemInfo,materialSize,partssizehigh": {
+      "createPath": "formData.rubberPartlistTab.rubberPartItemInfo.materialSize.partssizehigh",
+      "valuekey": "partssizehigh",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 14,
+      "default": null
+    },
+    "formData,rubberPartlistTab,rubberPartItemInfo,rubberStampingTypeName": {
+      "createPath": "formData.rubberPartlistTab.rubberPartItemInfo.rubberStampingTypeName",
+      "valuekey": "rubberStampingTypeName",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 16,
+      "default": null
+    },
+    "formData,rubberPartlistTab,rubberPartItemInfo,rubberStampingTypePrice": {
+      "createPath": "formData.rubberPartlistTab.rubberPartItemInfo.rubberStampingTypePrice",
+      "valuekey": "rubberStampingTypePrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,rubberPartlistTab,rubberPartItemInfo,rubberStampingTypeCycleTime": {
+      "createPath": "formData.rubberPartlistTab.rubberPartItemInfo.rubberStampingTypeCycleTime",
+      "valuekey": "rubberStampingTypeCycleTime",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,rubberPartlistTab,rubberPartItemInfo,rubberStampingTypeAmount": {
+      "createPath": "formData.rubberPartlistTab.rubberPartItemInfo.rubberStampingTypeAmount",
+      "valuekey": "rubberStampingTypeAmount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,rubberPartlistTab,rubberPartItemInfo,rubberPrintingType,rubberPrintingName": {
+      "createPath": "formData.rubberPartlistTab.rubberPartItemInfo.rubberPrintingType.rubberPrintingName",
+      "valuekey": "rubberPrintingName",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 17,
+      "default": null
+    },
+    "formData,rubberPartlistTab,rubberPartItemInfo,rubberPrintingType,rubberPrintingAmount": {
+      "createPath": "formData.rubberPartlistTab.rubberPartItemInfo.rubberPrintingType.rubberPrintingAmount",
+      "valuekey": "rubberPrintingAmount",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 18,
+      "default": null
+    },
+    "formData,rubberPartlistTab,rubberPartItemInfo,rubberPrintingPrice": {
+      "createPath": "formData.rubberPartlistTab.rubberPartItemInfo.rubberPrintingPrice",
+      "valuekey": "rubberPrintingPrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,rubberPartlistTab,rubberPartItemInfo,rubberCycleTime": {
+      "createPath": "formData.rubberPartlistTab.rubberPartItemInfo.rubberCycleTime",
+      "valuekey": "rubberCycleTime",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,rubberPartlistTab,rubberPartItemInfo,rubberAdhesiveLabel,rubberAdhesiveTypeName": {
+      "createPath": "formData.rubberPartlistTab.rubberPartItemInfo.rubberAdhesiveLabel.rubberAdhesiveTypeName",
+      "valuekey": "rubberAdhesiveTypeName",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,rubberPartlistTab,rubberPartItemInfo,rubberAdhesiveLabel,rubberAdhesiveTypePrice": {
+      "createPath": "formData.rubberPartlistTab.rubberPartItemInfo.rubberAdhesiveLabel.rubberAdhesiveTypePrice",
+      "valuekey": "rubberAdhesiveTypePrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,rubberPartlistTab,rubberPartItemInfo,rubberAdhesiveLabel,rubberAdhesiveTypeCycleTime": {
+      "createPath": "formData.rubberPartlistTab.rubberPartItemInfo.rubberAdhesiveLabel.rubberAdhesiveTypeCycleTime",
+      "valuekey": "rubberAdhesiveTypeCycleTime",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,rubberPartlistTab,rubberPartItemInfo,rubberAdhesiveLabel,rubberAdhesiveTypeAmount": {
+      "createPath": "formData.rubberPartlistTab.rubberPartItemInfo.rubberAdhesiveLabel.rubberAdhesiveTypeAmount",
+      "valuekey": "rubberAdhesiveTypeAmount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,rubberPartlistTab,rubberPartItemInfo,rubberAdhesiveLabel,rubberAdhesiveThickness": {
+      "createPath": "formData.rubberPartlistTab.rubberPartItemInfo.rubberAdhesiveLabel.rubberAdhesiveThickness",
+      "valuekey": "rubberAdhesiveThickness",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 25,
+      "default": null
+    },
+    "formData,rubberPartlistTab,rubberPartItemInfo,rubberAdhesiveLabel,rubberAdhesiveMaterial": {
+      "createPath": "formData.rubberPartlistTab.rubberPartItemInfo.rubberAdhesiveLabel.rubberAdhesiveMaterial",
+      "valuekey": "rubberAdhesiveMaterial",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 26,
+      "default": null
+    },
+    "formData,rubberPartlistTab,rubberPartItemInfo,rubberAdhesiveLabel,rubberAdhesiveMaterialPrice": {
+      "createPath": "formData.rubberPartlistTab.rubberPartItemInfo.rubberAdhesiveLabel.rubberAdhesiveMaterialPrice",
+      "valuekey": "rubberAdhesiveMaterialPrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,rubberPartlistTab,rubberPartItemInfo,rubberRemark": {
+      "createPath": "formData.rubberPartlistTab.rubberPartItemInfo.rubberRemark",
+      "valuekey": "rubberRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,rubberPartlistTab,rubberPartItemInfo,materialSpecRemark": {
+      "createPath": "formData.rubberPartlistTab.rubberPartItemInfo.materialSpecRemark",
+      "valuekey": "materialSpecRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,rubberPartlistTab,rubberPartItemInfo,materialRemark": {
+      "createPath": "formData.rubberPartlistTab.rubberPartItemInfo.materialRemark",
+      "valuekey": "materialRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,rubberCeParametersTab,rubberCeParameters,rubberFcstAllowance": {
+      "createPath": "formData.rubberCeParametersTab.rubberCeParameters.rubberFcstAllowance",
+      "valuekey": "rubberFcstAllowance",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 33,
+      "default": null
+    },
+    "formData,rubberCeParametersTab,rubberCeParameters,rubberAllowance": {
+      "createPath": "formData.rubberCeParametersTab.rubberCeParameters.rubberAllowance",
+      "valuekey": "rubberAllowance",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 34,
+      "default": null
+    },
+    "formData,rubberCeParametersTab,rubberCeParameters,rubberMachineTon": {
+      "createPath": "formData.rubberCeParametersTab.rubberCeParameters.rubberMachineTon",
+      "valuekey": "rubberMachineTon",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 35,
+      "default": null
+    },
+    "formData,rubberCeParametersTab,rubberCeParameters,rubberMachineTonPrice": {
+      "createPath": "formData.rubberCeParametersTab.rubberCeParameters.rubberMachineTonPrice",
+      "valuekey": "rubberMachineTonPrice",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,rubberCeParametersTab,rubberCeParameters,rubberToolingSizeLength": {
+      "createPath": "formData.rubberCeParametersTab.rubberCeParameters.rubberToolingSizeLength",
+      "valuekey": "rubberToolingSizeLength",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,rubberCeParametersTab,rubberCeParameters,rubberToolingSizeWidth": {
+      "createPath": "formData.rubberCeParametersTab.rubberCeParameters.rubberToolingSizeWidth",
+      "valuekey": "rubberToolingSizeWidth",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    }
+  },
+  "verifyInfo": {
+    "totalPrices": {
+      "label": "總價格",
+      "excelValueLongitudinalCoordinates": "40",
+      "valuekey": "totalPrices",
+      "valueType": "totalPrices",
+      "comparisonValuePath": "totalPrices"
+    },
+    "parentGroupId": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "parentGroupId",
+      "valueType": "parentGroupId",
+      "comparisonValuePath": "forDebug.summary.rubber.parentGroupId"
+    },
+    "5.formingLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "5.formingLossRate",
+      "valueType": "5.formingLossRate",
+      "comparisonValuePath": "forDebug.summary.rubber.5.formingLossRate"
+    },
+    "_adhesiveTypeLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "_adhesiveTypeLossRate",
+      "valueType": "_adhesiveTypeLossRate",
+      "comparisonValuePath": "forDebug.summary.rubber._adhesiveTypeLossRate"
+    },
+    "brushingLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "brushingLossRate",
+      "valueType": "brushingLossRate",
+      "comparisonValuePath": "forDebug.summary.rubber.brushingLossRate"
+    },
+    "_brushingPrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "_brushingPrice",
+      "valueType": "_brushingPrice",
+      "comparisonValuePath": "forDebug.summary.rubber._brushingPrice"
+    },
+    "_brushingCycleTime": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "_brushingCycleTime",
+      "valueType": "_brushingCycleTime",
+      "comparisonValuePath": "forDebug.summary.rubber._brushingCycleTime"
+    },
+    "_brushingAmount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "_brushingAmount",
+      "valueType": "_brushingAmount",
+      "comparisonValuePath": "forDebug.summary.rubber._brushingAmount"
+    },
+    "_debrisCleaningCycleTime": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "_debrisCleaningCycleTime",
+      "valueType": "_debrisCleaningCycleTime",
+      "comparisonValuePath": "forDebug.summary.rubber._debrisCleaningCycleTime"
+    },
+    "_debrisCleaningPrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "_debrisCleaningPrice",
+      "valueType": "_debrisCleaningPrice",
+      "comparisonValuePath": "forDebug.summary.rubber._debrisCleaningPrice"
+    },
+    "_debrisCleaningAmount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "_debrisCleaningAmount",
+      "valueType": "_debrisCleaningAmount",
+      "comparisonValuePath": "forDebug.summary.rubber._debrisCleaningAmount"
+    },
+    "_adhesivePrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "_adhesivePrice",
+      "valueType": "_adhesivePrice",
+      "comparisonValuePath": "forDebug.summary.rubber._adhesivePrice"
+    },
+    "_fullSizeLength": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "_fullSizeLength",
+      "valueType": "_fullSizeLength",
+      "comparisonValuePath": "forDebug.summary.rubber._fullSizeLength"
+    },
+    "_fullSizeWidth": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "_fullSizeWidth",
+      "valueType": "_fullSizeWidth",
+      "comparisonValuePath": "forDebug.summary.rubber._fullSizeWidth"
+    },
+    "_management_percentage": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "_management_percentage",
+      "valueType": "_management_percentage",
+      "comparisonValuePath": "forDebug.summary.rubber._management_percentage"
+    },
+    "rubberMaterialPerCost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "rubberMaterialPerCost",
+      "valueType": "rubberMaterialPerCost",
+      "comparisonValuePath": "forDebug.summary.rubber.rubberMaterialPerCost"
+    },
+    "density": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "density",
+      "valueType": "density",
+      "comparisonValuePath": "forDebug.summary.rubber.density"
+    },
+    "1.rubberCycleTime": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "1.rubberCycleTime",
+      "valueType": "1.rubberCycleTime",
+      "comparisonValuePath": "forDebug.summary.rubber.1.rubberCycleTime"
+    },
+    "2.rubberAdhesiveMaterialPrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "2.rubberAdhesiveMaterialPrice",
+      "valueType": "2.rubberAdhesiveMaterialPrice",
+      "comparisonValuePath": "forDebug.summary.rubber.2.rubberAdhesiveMaterialPrice"
+    },
+    "rubberAdhesiveTypeName": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "rubberAdhesiveTypeName",
+      "valueType": "rubberAdhesiveTypeName",
+      "comparisonValuePath": "forDebug.summary.rubber.rubberAdhesiveTypeName"
+    },
+    "6.rubberAdhesiveTypePrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "6.rubberAdhesiveTypePrice",
+      "valueType": "6.rubberAdhesiveTypePrice",
+      "comparisonValuePath": "forDebug.summary.rubber.6.rubberAdhesiveTypePrice"
+    },
+    "7.rubberAdhesiveTypeCycleTime": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "7.rubberAdhesiveTypeCycleTime",
+      "valueType": "7.rubberAdhesiveTypeCycleTime",
+      "comparisonValuePath": "forDebug.summary.rubber.7.rubberAdhesiveTypeCycleTime"
+    },
+    "_rubberAdhesiveTypeAmount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "_rubberAdhesiveTypeAmount",
+      "valueType": "_rubberAdhesiveTypeAmount",
+      "comparisonValuePath": "forDebug.summary.rubber._rubberAdhesiveTypeAmount"
+    },
+    "productType": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "productType",
+      "valueType": "productType",
+      "comparisonValuePath": "forDebug.summary.rubber.productType"
+    },
+    "A_1_materialSizeCost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "A_1_materialSizeCost",
+      "valueType": "A_1_materialSizeCost",
+      "comparisonValuePath": "forDebug.summary.rubber.A_1_materialSizeCost"
+    },
+    "materialArea": {
+      "label": "成品面積(mm^2)",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "materialArea",
+      "valueType": "materialArea",
+      "comparisonValuePath": "forDebug.summary.rubber.materialArea"
+    },
+    "fullSizeArea": {
+      "label": "整版面積(mm^2)",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fullSizeArea",
+      "valueType": "fullSizeArea",
+      "comparisonValuePath": "forDebug.summary.rubber.fullSizeArea"
+    },
+    "A_2_adhesiveMaterialCost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "A_2_adhesiveMaterialCost",
+      "valueType": "A_2_adhesiveMaterialCost",
+      "comparisonValuePath": "forDebug.summary.rubber.A_2_adhesiveMaterialCost"
+    },
+    "A_materialCost": {
+      "label": "A.材料費",
+      "excelValueLongitudinalCoordinates": "36",
+      "valuekey": "A_materialCost",
+      "valueType": "A_materialCost",
+      "comparisonValuePath": "forDebug.summary.rubber.A_materialCost"
+    },
+    "3.moldCavityCount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "3.moldCavityCount",
+      "valueType": "3.moldCavityCount",
+      "comparisonValuePath": "forDebug.summary.rubber.3.moldCavityCount"
+    },
+    "4.rubberAllowanceValue": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "4.rubberAllowanceValue",
+      "valueType": "4.rubberAllowanceValue",
+      "comparisonValuePath": "forDebug.summary.rubber.4.rubberAllowanceValue"
+    },
+    "B_formingCost": {
+      "label": "B.成型費",
+      "excelValueLongitudinalCoordinates": "37",
+      "valuekey": "B_formingCost",
+      "valueType": "B_formingCost",
+      "comparisonValuePath": "forDebug.summary.rubber.B_formingCost"
+    },
+    "C_1.stampingTypeCost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "C_1.stampingTypeCost",
+      "valueType": "C_1.stampingTypeCost",
+      "comparisonValuePath": "forDebug.summary.rubber.C_1.stampingTypeCost"
+    },
+    "C_2.adhesiveCost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "C_2.adhesiveCost",
+      "valueType": "C_2.adhesiveCost",
+      "comparisonValuePath": "forDebug.summary.rubber.C_2.adhesiveCost"
+    },
+    "C_3.printingCost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "C_3.printingCost",
+      "valueType": "C_3.printingCost",
+      "comparisonValuePath": "forDebug.summary.rubber.C_3.printingCost"
+    },
+    "C_4.brushingCost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "C_4.brushingCost",
+      "valueType": "C_4.brushingCost",
+      "comparisonValuePath": "forDebug.summary.rubber.C_4.brushingCost"
+    },
+    "C_5.debrisCleaningCost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "C_5.debrisCleaningCost",
+      "valueType": "C_5.debrisCleaningCost",
+      "comparisonValuePath": "forDebug.summary.rubber.C_5.debrisCleaningCost"
+    },
+    "C_secondaryProcessingCost": {
+      "label": "C.二次加工費",
+      "excelValueLongitudinalCoordinates": "38",
+      "valuekey": "C_secondaryProcessingCost",
+      "valueType": "C_secondaryProcessingCost",
+      "comparisonValuePath": "forDebug.summary.rubber.C_secondaryProcessingCost"
+    },
+    "D_managementCost": {
+      "label": "D.管銷與利潤",
+      "excelValueLongitudinalCoordinates": "39",
+      "valuekey": "D_managementCost",
+      "valueType": "D_managementCost",
+      "comparisonValuePath": "forDebug.summary.rubber.D_managementCost"
+    },
+    "total": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "total",
+      "valueType": "total",
+      "comparisonValuePath": "forDebug.summary.rubber.total"
+    },
+    "materialLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "materialLossRate",
+      "valueType": "materialLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.materialLossRate.value"
+    },
+    "adhesiveMaterialLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "adhesiveMaterialLossRate",
+      "valueType": "adhesiveMaterialLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.adhesiveMaterialLossRate.value"
+    },
+    "formingLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "formingLossRate",
+      "valueType": "formingLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.formingLossRate.value"
+    },
+    "stampingTypeLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "stampingTypeLossRate",
+      "valueType": "stampingTypeLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.stampingTypeLossRate.value"
+    },
+    "adhesiveTypeLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "adhesiveTypeLossRate",
+      "valueType": "adhesiveTypeLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.adhesiveTypeLossRate.value"
+    },
+    "printingLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "printingLossRate",
+      "valueType": "printingLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.printingLossRate.value"
+    },
+    "debrisCleaningLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "debrisCleaningLossRate",
+      "valueType": "debrisCleaningLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.debrisCleaningLossRate.value"
+    },
+    "brushingPrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "brushingPrice",
+      "valueType": "brushingPrice",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.brushingPrice.value"
+    },
+    "brushingCycleTime": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "brushingCycleTime",
+      "valueType": "brushingCycleTime",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.brushingCycleTime.value"
+    },
+    "brushingAmount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "brushingAmount",
+      "valueType": "brushingAmount",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.brushingAmount.value"
+    },
+    "debrisCleaningCycleTime": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "debrisCleaningCycleTime",
+      "valueType": "debrisCleaningCycleTime",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.debrisCleaningCycleTime.value"
+    },
+    "debrisCleaningPrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "debrisCleaningPrice",
+      "valueType": "debrisCleaningPrice",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.debrisCleaningPrice.value"
+    },
+    "debrisCleaningAmount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "debrisCleaningAmount",
+      "valueType": "debrisCleaningAmount",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.debrisCleaningAmount.value"
+    },
+    "adhesivePrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "adhesivePrice",
+      "valueType": "adhesivePrice",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.adhesivePrice.value"
+    },
+    "fullSizeLength": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fullSizeLength",
+      "valueType": "fullSizeLength",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.fullSizeLength.value"
+    },
+    "fullSizeWidth": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fullSizeWidth",
+      "valueType": "fullSizeWidth",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.fullSizeWidth.value"
+    },
+    "management_percentage": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "management_percentage",
+      "valueType": "management_percentage",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.management_percentage.value"
+    },
+    "materialspec": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "materialspec",
+      "valueType": "materialspec",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.materialspec.value"
+    },
+    "partssizelength": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "partssizelength",
+      "valueType": "partssizelength",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.partssizelength.value"
+    },
+    "partssizewidth": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "partssizewidth",
+      "valueType": "partssizewidth",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.partssizewidth.value"
+    },
+    "partssizehigh": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "partssizehigh",
+      "valueType": "partssizehigh",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.partssizehigh.value"
+    },
+    "rubberCycleTime": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "rubberCycleTime",
+      "valueType": "rubberCycleTime",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.rubberCycleTime.value"
+    },
+    "rubberStampingTypeCycleTime": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "rubberStampingTypeCycleTime",
+      "valueType": "rubberStampingTypeCycleTime",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.rubberStampingTypeCycleTime.value"
+    },
+    "rubberStampingTypePrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "rubberStampingTypePrice",
+      "valueType": "rubberStampingTypePrice",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.rubberStampingTypePrice.value"
+    },
+    "rubberStampingTypeAmount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "rubberStampingTypeAmount",
+      "valueType": "rubberStampingTypeAmount",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.rubberStampingTypeAmount.value"
+    },
+    "rubberPrintingPrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "rubberPrintingPrice",
+      "valueType": "rubberPrintingPrice",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.rubberPrintingPrice.value"
+    },
+    "rubberPrintingAmount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "rubberPrintingAmount",
+      "valueType": "rubberPrintingAmount",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.rubberPrintingAmount.value"
+    },
+    "rubberAdhesiveMaterialPrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "rubberAdhesiveMaterialPrice",
+      "valueType": "rubberAdhesiveMaterialPrice",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.rubberAdhesiveMaterialPrice.value"
+    },
+    "rubberAdhesiveTypePrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "rubberAdhesiveTypePrice",
+      "valueType": "rubberAdhesiveTypePrice",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.rubberAdhesiveTypePrice.value"
+    },
+    "rubberAdhesiveTypeCycleTime": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "rubberAdhesiveTypeCycleTime",
+      "valueType": "rubberAdhesiveTypeCycleTime",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.rubberAdhesiveTypeCycleTime.value"
+    },
+    "rubberAdhesiveTypeAmount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "rubberAdhesiveTypeAmount",
+      "valueType": "rubberAdhesiveTypeAmount",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.rubberAdhesiveTypeAmount.value"
+    },
+    "rubberMachineTon": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "rubberMachineTon",
+      "valueType": "rubberMachineTon",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.rubberMachineTon.value"
+    },
+    "rubberAllowance": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "rubberAllowance",
+      "valueType": "rubberAllowance",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.rubberAllowance.value"
+    },
+    "rubberMachineTonPrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "rubberMachineTonPrice",
+      "valueType": "rubberMachineTonPrice",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.rubberMachineTonPrice.value"
+    },
+    "rubberToolingSizeLength": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "rubberToolingSizeLength",
+      "valueType": "rubberToolingSizeLength",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.rubberToolingSizeLength.value"
+    },
+    "rubberToolingSizeWidth": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "rubberToolingSizeWidth",
+      "valueType": "rubberToolingSizeWidth",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.rubberToolingSizeWidth.value"
+    },
+    "materialVolume": {
+      "label": "體積 V",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "materialVolume",
+      "valueType": "materialVolume",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.materialVolume.value"
+    },
+    "materialWeight": {
+      "label": "成品重量",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "materialWeight",
+      "valueType": "materialWeight",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.materialWeight.value"
+    },
+    "materialSizeCost": {
+      "label": "A-1.材料面積費用",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "materialSizeCost",
+      "valueType": "materialSizeCost",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.materialSizeCost.value"
+    },
+    "adhesiveMaterialCost": {
+      "label": "A-2.背膠面積價格",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "adhesiveMaterialCost",
+      "valueType": "adhesiveMaterialCost",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.adhesiveMaterialCost.value"
+    },
+    "materialCost": {
+      "label": "A.材料費 = A-1.材料面積費用 + A-2.背膠面積價格",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "materialCost",
+      "valueType": "materialCost",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.materialCost.value"
+    },
+    "toolingSizeArea": {
+      "label": "有效面積(mm^2)",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "toolingSizeArea",
+      "valueType": "toolingSizeArea",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.toolingSizeArea.value"
+    },
+    "moldCavityCount": {
+      "label": "模穴數",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "moldCavityCount",
+      "valueType": "moldCavityCount",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.moldCavityCount.value"
+    },
+    "rubberAllowanceValue": {
+      "label": "成型寬寬 value",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "rubberAllowanceValue",
+      "valueType": "rubberAllowanceValue",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.rubberAllowanceValue.value"
+    },
+    "formingCost": {
+      "label": "B.成型費",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "formingCost",
+      "valueType": "formingCost",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.formingCost.value"
+    },
+    "stampingTypeCost": {
+      "label": "C-1.成品沖型",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "stampingTypeCost",
+      "valueType": "stampingTypeCost",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.stampingTypeCost.value"
+    },
+    "adhesiveCost": {
+      "label": "C-2.貼背膠",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "adhesiveCost",
+      "valueType": "adhesiveCost",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.adhesiveCost.value"
+    },
+    "printingCost": {
+      "label": "C-3.外觀印刷",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "printingCost",
+      "valueType": "printingCost",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.printingCost.value"
+    },
+    "brushingCost": {
+      "label": "C-4.刷膠製程",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "brushingCost",
+      "valueType": "brushingCost",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.brushingCost.value"
+    },
+    "debrisCleaningCost": {
+      "label": "C-3.去毛邊/排廢",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "debrisCleaningCost",
+      "valueType": "debrisCleaningCost",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.debrisCleaningCost.value"
+    },
+    "secondaryProcessingCost": {
+      "label": "B.二次加工費",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "secondaryProcessingCost",
+      "valueType": "secondaryProcessingCost",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.secondaryProcessingCost.value"
+    },
+    "managementCost": {
+      "label": "D.管銷費",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "managementCost",
+      "valueType": "managementCost",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.managementCost.value"
+    },
+    "totalCost": {
+      "label": "total",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "totalCost",
+      "valueType": "totalCost",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.totalCost.value"
+    },
+    "isOtherFill": {
+      "label": "材料費",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "isOtherFill",
+      "valueType": "isOtherFill",
+      "comparisonValuePath": "forDebug.debugInfo.rubber.isOtherFill.value"
+    }
+  }
+}

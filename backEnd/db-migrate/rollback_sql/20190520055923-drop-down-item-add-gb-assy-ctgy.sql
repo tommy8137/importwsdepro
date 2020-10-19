@@ -1,0 +1,2 @@
+delete FROM wiprocurement.drop_down_item WHERE path='OTHERPART' and field_name='gb_assy_ctgy' and layout_name='bom_item';
+delete FROM wiprocurement.drop_down_item WHERE path='OTHER60ASSY' and field_name='gb_assy_ctgy' and layout_name='bom_item';

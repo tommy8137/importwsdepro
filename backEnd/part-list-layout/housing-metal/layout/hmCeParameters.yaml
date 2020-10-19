@@ -1,0 +1,140 @@
+items:
+  - key: ce_patintingAreaConst1
+    label: 噴塗面積計算係數
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    default:
+      ?getCommon:
+        byKey: value
+        params:
+          - housing_metal_secondary_processing
+          - spraying_const
+
+  - key: hmToolingMaterialWidth
+    label: 邊料尺寸 - W
+    $Template:
+      - inputFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    defaultValues:
+      ?getMaterialSideConstant:
+        byKey: values
+        params:
+          - housing_metal_material
+          - w
+    defaultCalc: "(val, partItemInfo, defaultValues) => {
+      const { type2 } = partItemInfo;
+      const matchList = defaultValues.filter(d => d.type2 === type2);
+      let result = null;
+      if (matchList.length > 0) {
+        result = matchList[0].hmToolingMaterialWidth;
+      }
+      return result;
+    }"
+    constrains:
+      - function: "(val) => val ==='' || val === null"
+        message: "此欄位為必填"
+    require: true
+
+  - key: hmToolingMaterialLength
+    $Template:
+      - inputFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    mapFrom:
+      - type2
+    defaultCalc: "(list, partItemInfo) => {
+      const { type2 } = partItemInfo;
+      const matchList = list.filter(d => d.type2 === type2);
+      let result = null;
+      if (matchList.length > 0) {
+        result = matchList[0].hmToolingMaterialLength;
+      }
+      return result;
+    }"
+    default:
+      ?getMaterialSideConstant:
+        byKey: values
+        params:
+          - housing_metal_material
+          - l
+    label: 邊料尺寸 - L
+    constrains:
+      - function: "(val) => val ==='' || val === null"
+        message: "此欄位為必填"
+    require: true
+
+  - key: hmWorkpieceSpacingInAssemblyLineDirection
+    label: 流水線方向工件間距(mm)
+    $Template:
+      - inputFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    default:
+      ?getCommon:
+        byKey: value
+        params:
+          - housing_metal_secondary_processing
+          - workpiece_spacing_in_assembly_line_direction
+    require: true
+
+  - key: hmNumberOfRuns
+    label: 趟數
+    $Template:
+      - inputInt
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    default:
+      ?getCommon:
+        byKey: value
+        params:
+          - housing_metal_secondary_processing
+          - number_of_runs
+    require: true
+
+  - key: hmMaterialLossRateCE
+    label: "材料費loss rate(%)"
+    $Template:
+      - inputFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    defaultValues:
+     ?getMaterialLossRate:
+        - housing_metal_material
+    defaultCalc: "(val, partItemInfo, defaultValues) => {
+      const lossRate = defaultValues.values.reduce((prev, curr) => {
+        if(curr.type2 === partItemInfo.type2){
+          return curr.hmMaterialLossRate;
+        }
+        return prev;
+      }, 0);
+      return lossRate * 100;
+    }"
+    require: true
+
+  - key: hmPickAndPlaceAndToolChangeTime
+    label: 取放與換刀時間(sec)
+    $Template:
+      - inputInt
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    default:
+      ?getCommon:
+        byKey: value
+        params:
+          - housing_metal_secondary_processing
+          - pick_and_place_and_tool_change_time
+    require: true

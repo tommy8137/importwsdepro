@@ -1,0 +1,21 @@
+summary-header:
+  fontColor: '000000'
+  fill: FFBB66
+  bold: true
+  fontFamily: arial
+  horizontalAlignment: center
+  border: true      
+
+summary-data:
+  border: true
+
+cost-header:
+  fontColor: 'FFFFFF'
+  fill: '0070C0'
+  horizontalAlignment: center
+  fontFamily: arial
+  border: true
+  bold: true
+
+cost-data:
+  border: true

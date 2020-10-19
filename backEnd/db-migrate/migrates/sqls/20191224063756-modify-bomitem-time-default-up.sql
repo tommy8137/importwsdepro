@@ -1,0 +1,2 @@
+ALTER TABLE wiprocurement.bom_item alter column created_time set default (now() at time zone 'utc');
+ALTER TABLE wiprocurement.bom_item alter column modified_time set default (now() at time zone 'utc');

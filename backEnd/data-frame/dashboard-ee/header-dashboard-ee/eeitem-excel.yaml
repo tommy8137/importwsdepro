@@ -1,0 +1,3 @@
+headers:
+  $dashboard-ee.header-dashboard-ee.eeitem-base:
+    - headers

@@ -1,0 +1,1 @@
+DROP TABLE wiprocurement.all_rfqproject_for_dashboard;

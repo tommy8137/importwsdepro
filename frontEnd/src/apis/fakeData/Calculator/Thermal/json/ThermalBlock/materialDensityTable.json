@@ -1,0 +1,32 @@
+{
+  "header": [
+    {
+      "key": "material",
+      "name": "材料",
+      "typeof": "string"
+    },
+    {
+      "key": "density",
+      "name": "密度",
+      "typeof": "number"
+    }
+  ],
+  "data": [
+    {
+      "material": "CU1100",
+      "density": 8.9
+    },
+    {
+      "material": "皮銅",
+      "density": 8.8
+    },
+    {
+      "material": "AL1050",
+      "density": 2.75
+    },
+    {
+      "material": "AL1052",
+      "density": 2.71
+    }
+  ]
+}

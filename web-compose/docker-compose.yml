@@ -1,0 +1,43 @@
+version: '2.4'
+x-environment: &default-environment
+  POSTGRES_PORT: 5432
+  POSTGRES_DB: docker
+  POSTGRES_USER: swpc-user
+  POSTGRES_SCHEMA: wiprocurement
+services:
+  web:
+    # overwrite
+    container_name: __CONTAINER_NAME__
+    # overwrite
+    image: __IMAGE__
+    # cpu_percent: 50
+    # mem_limit: 1024m
+    command: ["sit"]
+    # overwrite
+    ports:
+     - "__PORT__:3000"
+    restart: on-failure:3
+    volumes:
+      - "/etc/localtime:/etc/localtime"
+      # 記得要放憑證到vm的/etc/ssl
+      - "/etc/ssl:/usr/local/wi-procurement/ssl"
+      - "/home/swpc-user/WiEProcureStatic/uploadImage:/usr/local/wi-procurement/server/utils/uploadImage"
+      - "/home/swpc-user/WiEProcureV/ga:/usr/local/wi-procurement/static/ga"
+      - "/home/swpc-user/WiEProcureStatic/avl:/usr/local/wi-procurement/server/utils/database/AVL"
+      - "/home/swpc-user/WiEProcureStatic/connectorcommonpool:/usr/local/wi-procurement/server/utils/database/CONNECTORCOMMONPOOL"
+      - "/home/swpc-user/WiEProcureStatic/temporaryfile:/usr/local/wi-procurement/server/utils/database/TEMPORARYFILE"
+    environment:
+      WISTRONAD: 10.37.31.16
+      DB_MIGRATE_USERNAME: swpc-user
+      << : *default-environment
+    env_file:
+      - dev.env
+    networks:
+      - wiprocure
+    extra_hosts:
+      - "hqnhudc1.whq.wistron:10.37.31.16"
+
+networks:
+  wiprocure:
+    driver: bridge
+

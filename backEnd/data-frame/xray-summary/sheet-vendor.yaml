@@ -1,0 +1,31 @@
+sheet:
+  label: Summary - Vendor
+  tables:
+    - key: summaryByVendor
+      $Template:
+        - xraySummaryTable
+      headers:
+        $xray-summary.header-vendor.vendor-excel:
+          - headers
+      totalMergeLength: 4
+
+    - key: fileInfo
+      $Template:
+        - rowTable
+      headers:
+        $xray-summary.header-type.info-excel:
+          - headers
+      anchor:
+        x: A
+        y: 1
+      autoFilter: false
+
+    - key: fileInfo
+      $Template:
+        - unitTable
+      headers:
+        $xray-summary.header-type.unit-excel:
+          - headers
+      anchor:
+        x: H
+        y: 3

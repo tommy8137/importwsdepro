@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+    <defs>
+        <style>
+            .cls-1{fill:#e93823}.cls-2{fill:none;stroke:#fff;stroke-linecap:round}
+        </style>
+    </defs>
+    <g id="ico_red_fail_0" transform="translate(10813 -1531)">
+        <g id="btn_reset_n" transform="translate(-11130 1197)">
+            <circle id="Ellipse_6" cx="9" cy="9" r="9" class="cls-1" data-name="Ellipse 6" transform="translate(317 334)"/>
+        </g>
+        <g id="Group_5958" data-name="Group 5958" transform="translate(-185 -246)">
+            <path id="Line_270" d="M0 0l7 7" class="cls-2" data-name="Line 270" transform="translate(-10622.5 1782.5)"/>
+            <path id="Line_271" d="M7 0L0 7" class="cls-2" data-name="Line 271" transform="translate(-10622.5 1782.5)"/>
+        </g>
+    </g>
+</svg>

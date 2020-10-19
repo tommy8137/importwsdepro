@@ -1,0 +1,116 @@
+multiple: true
+items:
+  - key: cmfPCNCFeederCheckBox
+    $Template:
+      - checkBox
+    label: Exist
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    emdmKey: emdmBomInfo.cmfForm.cmfPCNCFeederCheckBox
+
+
+  - key: cmfPCNCFeederType
+    label: 除料頭(TYPE)
+    $Template:
+      - realtimeFormulaString
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0
+      display: false
+    func: "() => {
+      return '人工';
+    }"
+
+  # - key: cmfPCNCFeederType
+  #   $Template:
+  #     - selectorString
+  #   label: 除料頭(TYPE)
+  #   selectorConfig:
+  #     $Template:
+  #       - selectorConfig
+  #     idKey: cmfPCNCProcessingAreaId
+  #     ?getPlasticCNCRemove:
+  #       - housing_plastic_secondary_processing
+  #     # $housing-plastic.dropdown.CmfPCNCFeederType:
+  #     #   - ^values
+  #   displayConfig:
+  #     depends:
+  #       action: lock
+  #       condition:
+  #         cmfPCNCFeederCheckBox: true
+  #     grids: 1
+  #     display: true
+  #   default: N/A
+  #   constrains:
+  #     - function: "(val, props) => {
+  #         return (val ==='' || val === null) && (props.cmfPCNCProcessingAreaCheckBox)
+  #       }"
+  #       message: "此欄位為必填"
+  #       params:
+  #         - cmfPCNCProcessingAreaCheckBox
+  #   require: true
+  #   emdmKey: emdmBomInfo.cmfForm.cmfPCNCFeederType
+
+  - key: cmfPCNCFeederCount
+    $Template:
+      - selectorFloat
+    label: 次數
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      $housing-plastic.dropdown.CmfPCNCFeederCount:
+        - ^values
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfPCNCFeederCheckBox: true
+      grids: 1
+      display: true
+    default: 0
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfPCNCProcessingAreaCheckBox)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfPCNCProcessingAreaCheckBox
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfPCNCFeederCount
+
+  - key: cmfPCNCFeederUP
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getPlasticCNCRemove:
+        - housing_plastic_secondary_processing
+      # $housing-plastic.dropdown.CmfPCNCFeederType:
+      #   - ^values
+    mapFrom:
+      - cmfPCNCFeederType
+
+  - key: cmfPCNCFeederLossRate
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getPlasticCNCRemove:
+        - housing_plastic_secondary_processing
+      # $housing-plastic.dropdown.CmfPCNCFeederType:
+      #   - ^values
+    mapFrom:
+      - cmfPCNCFeederType

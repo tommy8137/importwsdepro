@@ -1,0 +1,43 @@
+output:
+  total: total
+  unit_price: spring_unit_price
+  qty: springAmount
+  assemblyTime: assemblyTime
+
+formula:
+# spring零件費 = 單價 * 用量 * (1 + spring loss rate) -----------------------------------------------------------------------------------------------------------------
+  total:
+    type: MATH
+    formula: spring_unit_price * springAmount * (1 + spring_loss_rate)
+    label: spring零件費
+
+  # 組裝時間
+  assemblyTime:
+    label: spring 組裝時間
+    type: MATH
+    formula: springAmount * worktimeSec
+
+scope:
+  springAmount: springAmount
+
+constant:
+  worktimeSec:
+    label: Assembly組裝工時(sec)
+    ?getThermalCommon:
+      - thermal_module_processing
+      - assembly_spend_time
+    # value: 12
+
+  spring_unit_price:
+    label: spring單價
+    ?getThermalCommon:
+      - thermal_module_components
+      - spring_cost
+    # value: 0.009
+
+  spring_loss_rate:
+    label: spring loss rate
+    ?getThermalCommon:
+      - thermal_module_components
+      - spring_loss_rate
+    # value: 0.015

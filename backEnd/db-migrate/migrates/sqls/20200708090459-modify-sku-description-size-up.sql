@@ -1,0 +1,1 @@
+ALTER TABLE wiprocurement.bom_projects ALTER COLUMN sku_desc type varchar(2000);

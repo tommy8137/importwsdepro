@@ -1,0 +1,54 @@
+values:
+  - cmfProcessListFirstAnodeColor: 鋁本色
+    cmfProcessListFirstAnodeTime: 30
+    cmfProcessListFirstAnodeRatio: 1.00
+    cmfProcessListFirstAnodePrice: 15.00
+    cmfProcessListFirstAnodeLossRate: 0.15
+
+  - cmfProcessListFirstAnodeColor: 紅色
+    cmfProcessListFirstAnodeTime: 45
+    cmfProcessListFirstAnodeRatio: 1.50
+    cmfProcessListFirstAnodePrice: 18.00
+    cmfProcessListFirstAnodeLossRate: 0.25
+
+  - cmfProcessListFirstAnodeColor: 黑色
+    cmfProcessListFirstAnodeTime: 50
+    cmfProcessListFirstAnodeRatio: 1.67
+    cmfProcessListFirstAnodePrice: 21.00
+    cmfProcessListFirstAnodeLossRate: 0.25
+
+  - cmfProcessListFirstAnodeColor: 銀色
+    cmfProcessListFirstAnodeTime: 30
+    cmfProcessListFirstAnodeRatio: 1.00
+    cmfProcessListFirstAnodePrice: 15.00
+    cmfProcessListFirstAnodeLossRate: 0.15
+
+  - cmfProcessListFirstAnodeColor: 灰色
+    cmfProcessListFirstAnodeTime: 30
+    cmfProcessListFirstAnodeRatio: 1.00
+    cmfProcessListFirstAnodePrice: 18.00
+    cmfProcessListFirstAnodeLossRate: 0.20
+
+  - cmfProcessListFirstAnodeColor: 香檳金
+    cmfProcessListFirstAnodeTime: 45
+    cmfProcessListFirstAnodeRatio: 1.00
+    cmfProcessListFirstAnodePrice: 18.00
+    cmfProcessListFirstAnodeLossRate: 0.25
+
+  - cmfProcessListFirstAnodeColor: 紫色
+    cmfProcessListFirstAnodeTime: 45
+    cmfProcessListFirstAnodeRatio: 1.50
+    cmfProcessListFirstAnodePrice: 18.00
+    cmfProcessListFirstAnodeLossRate: 0.25
+
+  - cmfProcessListFirstAnodeColor: 綠色
+    cmfProcessListFirstAnodeTime: 45
+    cmfProcessListFirstAnodeRatio: 1.50
+    cmfProcessListFirstAnodePrice: 18.00
+    cmfProcessListFirstAnodeLossRate: 0.30
+
+  - cmfProcessListFirstAnodeColor: 粉色
+    cmfProcessListFirstAnodeTime: 45
+    cmfProcessListFirstAnodeRatio: 1.50
+    cmfProcessListFirstAnodePrice: 18.00
+    cmfProcessListFirstAnodeLossRate: 0.30

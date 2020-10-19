@@ -1,0 +1,52 @@
+values:
+  - productType: NB
+    type2: Plastic
+    hpToolingModule: Module_1
+  - productType: NB
+    type2: Painting
+    hpToolingModule: Module_1
+  - productType: NB
+    type2: Double_Injection
+    hpToolingModule: Module_7
+  - productType: NB
+    type2: Insert_Molding
+    hpToolingModule: Module_1
+  - productType: NB
+    type2: RHCM
+    hpToolingModule: Module_4
+  - productType: NB
+    type2: IMR
+    hpToolingModule: Module_6
+
+  - productType: DT
+    type2: Plastic
+    hpToolingModule: Module_2
+  - productType: DT
+    type2: Painting
+    hpToolingModule: Module_2
+  - productType: DT
+    type2: Double_Injection
+    hpToolingModule: Module_2
+  - productType: DT
+    type2: Insert_Molding
+    hpToolingModule: Module_2
+  - productType: DT
+    type2: RHCM
+    hpToolingModule: Module_5
+
+  - productType: Others
+    type2: Plastic
+    hpToolingModule: Module_3
+  - productType: Others
+    type2: Painting
+    hpToolingModule: Module_3
+  - productType: Others
+    type2: Double_Injection
+    hpToolingModule: Module_3
+  - productType: Others
+    type2: Insert_Molding
+    hpToolingModule: Module_3
+
+
+
+

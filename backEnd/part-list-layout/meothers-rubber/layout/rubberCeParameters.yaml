@@ -1,0 +1,98 @@
+multiple: false
+label: CE可調整係數
+items:
+  - key: rubberFcstAllowance
+    label: FCST寬放值(%)(月<25K)
+    $Template:
+      - inputFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    require: false
+
+  - key: rubberAllowance
+    label: 成型寬放(%)
+    require: false
+    $Template:
+      - inputFloat
+    default:
+      ?getCommon:
+        byKey: value
+        params:
+          - me_others_rubber_forming
+          - forming_wider
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+
+  - key: rubberMachineTon
+    label: "Machine/T"
+    $Template:
+      - selectorString
+    default: "200T"
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      # $meothers-rubber.dropdown.rubberMachineTonValues:
+      #   - ^values
+      ?getRubberMachineRate:
+        -
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    require: true
+
+  # Machine/T Price
+  - key: rubberMachineTonPrice
+    label: Machine/T Price
+    $Template:
+      - mappedValueString
+    mapFrom:
+      - rubberMachineTon
+    selectorConfig:
+      # $meothers-rubber.dropdown.rubberMachineTonValues:
+      #   - ^values
+      ?getRubberMachineRate:
+        -
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+      grids: 1
+
+  - key: rubberToolingSizeLength
+    label: Tooling Size Length
+    $Template:
+      - mappedValueFloat
+    mapFrom:
+      - rubberMachineTon
+    selectorConfig:
+      # $meothers-rubber.dropdown.rubberMachineTonValues:
+      #   - ^values
+      ?getRubberMachineRate:
+        -
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+      grids: 1
+
+  - key: rubberToolingSizeWidth
+    label: Tooling Size Width
+    $Template:
+      - mappedValueFloat
+    mapFrom:
+      - rubberMachineTon
+    selectorConfig:
+      # $meothers-rubber.dropdown.rubberMachineTonValues:
+      #   - ^values
+      ?getRubberMachineRate:
+        -
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+      grids: 1

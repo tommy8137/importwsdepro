@@ -1,0 +1,133 @@
+multiple: true
+items:
+# 可編輯的sub-title --------------------------------------------------------------------------------------------------------------------
+  - key: thermalPadLabel
+    label: Thermal Pad
+    $Template:
+      - label
+    editable: true
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+    default: Thermal Pad
+    emdmMultipleKey: emdmBomInfo.cmfForm.thpd
+    emdmKey: thermalPadLabel
+# 用量 --------------------------------------------------------------------------------------------------------------------
+  - key: thermalPadAmount
+    label: 用量
+    $Template:
+      - inputInt
+      - ^displayConfig
+    default: 0
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.thpd
+    emdmKey: thermalPadAmount
+
+# 熱傳係數 --------------------------------------------------------------------------------------------------------------------
+  - key: thermalPadHeatTransferCoefficient
+    label: 熱傳係數(K值)
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: heat_transfer_id
+      ?getThermalPad:
+        -
+      # $thermal-pad.dropdown.ThermalPadCoefShoreThicknessValues:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.thpd
+    emdmKey: thermalPadHeatTransferCoefficient
+
+# 硬度 --------------------------------------------------------------------------------------------------------------------
+  - key: thermalPadShore
+    label: 硬度
+    $Template:
+      - selectorString
+    selectorConfig:
+      idKey: hardness_id
+      ?getThermalPad:
+        -
+      # $thermal-pad.dropdown.ThermalPadCoefShoreThicknessValues:
+      #   - ^values
+      depends:
+        - thermalPadHeatTransferCoefficient
+    displayConfig:
+      $Template:
+        - displayConfig
+      depends:
+        action: lock
+        condition:
+          thermalPadHeatTransferCoefficient: true
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.thpd
+    emdmKey: thermalPadShore
+
+# 厚度 --------------------------------------------------------------------------------------------------------------------
+  - key: thermalPadThickness
+    label: 厚度(t)
+    $Template:
+      - selectorString
+    selectorConfig:
+      idKey: thickness_id
+      ?getThermalPad:
+        -
+      # $thermal-pad.dropdown.ThermalPadCoefShoreThicknessValues:
+      #   - ^values
+      depends:
+        - thermalPadHeatTransferCoefficient
+        - thermalPadShore
+    displayConfig:
+      $Template:
+        - displayConfig
+      depends:
+        action: lock
+        condition:
+          thermalPadHeatTransferCoefficient: true
+          thermalPadShore: true
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.thpd
+    emdmKey: thermalPadThickness
+
+# 長度 --------------------------------------------------------------------------------------------------------------------
+  - key: thermalPadLength
+    label: 長度(L)
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.thpd
+    emdmKey: thermalPadLength
+
+# 寬度 --------------------------------------------------------------------------------------------------------------------
+  - key: thermalPadWidth
+    label: 寬度(W)
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.thpd
+    emdmKey: thermalPadWidth
+
+# 單價 --------------------------------------------------------------------------------------------------------------------
+  - key: thermalPadPrice
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      ?getThermalPad:
+        -
+      # $thermal-pad.dropdown.ThermalPadCoefShoreThicknessValues:
+        - ^values
+    mapFrom:
+      - thermalPadHeatTransferCoefficient
+      - thermalPadThickness
+      - thermalPadShore

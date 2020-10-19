@@ -1,0 +1,43 @@
+version: 2
+layout :
+  - key: pcbTab
+    label: pcbLabel
+    group:
+      - pcb
+    $Template:
+      - tab
+    items:
+
+      - key: PcbInfo
+        $Template:
+          - composite
+        label: Info
+        $pcbCleanSheet.layout.PcbPartNumber:
+          - ^multiple
+          - ^items
+        visiable: false
+
+      - key: PcbManufacturer
+        $Template:
+          - composite
+        label: Select Manufacturer
+        $pcb.layout.PcbManufacturer:
+          - ^multiple
+          - ^items
+
+      - key: PcbContent
+        $Template:
+          - composite
+        label: Set Spec
+        $pcbCleanSheet.layout.PcbContent:
+          - ^multiple
+          - ^items
+
+      - key: PcbRemarks
+        $Template:
+          - composite
+        label: Remarks
+        $pcbCleanSheet.layout.PcbRemarks:
+          - ^multiple
+          - ^items
+fomulas: []

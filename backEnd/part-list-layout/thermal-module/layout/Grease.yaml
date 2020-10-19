@@ -1,0 +1,96 @@
+multiple: true
+items:
+# 可編輯的sub-title --------------------------------------------------------------------------------------------------------------------
+  - key: greaseLabel
+    label: Grease
+    $Template:
+      - label
+    editable: true
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+    default: Grease
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.grease
+    emdmKey: greaseLabel
+
+# 用量 --------------------------------------------------------------------------------------------------------------------
+  - key: greaseAmount
+    label: 用量
+    $Template:
+      - inputInt
+      - ^displayConfig
+    default: 0
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.grease
+    emdmKey: greaseAmount
+
+# 材質 --------------------------------------------------------------------------------------------------------------------
+  - key: greaseMaterial
+    $Template:
+      - selectorString
+    label: 材質
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: id
+      ?getThermalGrease:
+        -
+      # $thermal-module.dropdown.GreaseMaterialCostValues:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.grease
+    emdmKey: greaseMaterial
+
+# 材質單價 --------------------------------------------------------------------------------------------------------------------
+  - key: greaseMaterialCost
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getThermalGrease:
+        -
+      # $thermal-module.dropdown.GreaseMaterialCostValues:
+      #   - ^values
+    mapFrom:
+      - greaseMaterial
+
+# 長度 --------------------------------------------------------------------------------------------------------------------
+  - key: greaseLength
+    label: 長度(L)
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.grease
+    emdmKey: greaseLength
+
+# 寬度 --------------------------------------------------------------------------------------------------------------------
+  - key: greaseWidth
+    label: 寬度(W)
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.grease
+    emdmKey: greaseWidth
+
+# 厚度 --------------------------------------------------------------------------------------------------------------------
+  - key: greaseThickness
+    label: 厚度(t)
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.grease
+    emdmKey: greaseThickness
+

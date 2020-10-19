@@ -1,0 +1,1 @@
+update wiprocurement.drop_down_item set item_name='Electro-Mechanical', update_time = now() where path='ELECTRO-MECHANICAL' and field_name='parts_ctgy_1' and layout_name='bom_item';

@@ -1,0 +1,63 @@
+multiple: true
+items:
+  - key: cmfProcessListPolishingAutoCheckBox
+    $Template:
+      - checkBox
+    label: 自動/Exist
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListPolishingAutoCheckBox
+
+  - key: cmfProcessListPolishingAutoArea
+    $Template:
+      - realtimeFormulaFloat
+    label: 自動/加工面積(mm²)
+    require: true
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListPolishingAutoArea
+    # =2*(PartW*PartH+PartL*PartH)+PartW*PartL
+    func: "(cmfProcessListPolishingAutoCheckBox, hmpartssizewidth, hmpartssizelength, hmpartssizehigh) => {
+      if(!cmfProcessListPolishingAutoCheckBox ) { return 0;}
+      return 2*(Number(hmpartssizewidth)*Number(hmpartssizehigh)+Number(hmpartssizelength)*Number(hmpartssizehigh))+Number(hmpartssizewidth)*Number(hmpartssizelength)
+    }"
+    replaceBy:
+      - cmfProcessListPolishingAutoCheckBox
+      - hmpartssizewidth
+      - hmpartssizelength
+      - hmpartssizehigh
+
+  - key: cmfProcessListPolishingArtificialCheckBox
+    $Template:
+      - checkBox
+    label: 人工/Exist
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListPolishingArtificialCheckBox
+
+  - key: cmfProcessListPolishingArtificialArea
+    $Template:
+      - realtimeFormulaFloat
+    label: 人工/加工面積(mm²)
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    # =2*(PartW*PartH+PartL*PartH)+2*5(PartW+PartL)
+    func: "(cmfProcessListPolishingArtificialCheckBox, hmpartssizewidth, hmpartssizelength, hmpartssizehigh) => {
+      if(!cmfProcessListPolishingArtificialCheckBox ) { return 0;}
+      return 2*(Number(hmpartssizewidth)*Number(hmpartssizehigh)+Number(hmpartssizelength)*Number(hmpartssizehigh))+
+      2*5*(Number(hmpartssizewidth)+Number(hmpartssizelength))
+    }"
+    replaceBy:
+      - cmfProcessListPolishingArtificialCheckBox
+      - hmpartssizewidth
+      - hmpartssizelength
+      - hmpartssizehigh
+

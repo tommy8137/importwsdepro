@@ -1,0 +1,2 @@
+INSERT INTO wiprocurement.drop_down_item VALUES ('53b3c0f6-7612-11e9-a410-0242ac110002', 'ODM', 'ODM', 'supply_type', 'bom_item');
+INSERT INTO wiprocurement.drop_down_item VALUES ('53b3ca1a-7612-11e9-a410-0242ac110002', 'OEM', 'OEM', 'supply_type', 'bom_item');

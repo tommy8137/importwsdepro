@@ -1,0 +1,1 @@
+update wiprocurement.drop_down_item set item_name=TRIM(item_name);

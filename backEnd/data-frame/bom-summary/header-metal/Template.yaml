@@ -1,0 +1,36 @@
+dataFloat:
+  $Template:
+    - dataFloat
+  style:
+    header:
+      $bom-summary.header-metal.style:
+        - summary-header
+    value:
+      $bom-summary.header-metal.style:
+        - summary-data
+      numberFormat: '#,##0.00000'
+
+dataString:
+  $Template:
+    - dataString
+  style:
+    header:
+      $bom-summary.header-metal.style:
+        - summary-header
+    value:
+      $bom-summary.header-metal.style:
+        - summary-data
+
+keyString:
+  $Template:
+    - dataString
+  style:
+    header:
+      $bom-summary.header-metal.style:
+        - summary-header
+    value:
+      $bom-summary.header-metal.style:
+        - key-data
+    gap_style:
+      $bom-summary.header-metal.style:
+        - gap-data

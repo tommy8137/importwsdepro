@@ -1,0 +1,79 @@
+headers:
+  no:
+    label: No
+    subHeader: Project Information
+    subHeaderSite: 1
+    subHeaderMerge: 10
+    $space-rate.spaceRateTemplate:
+      - dataStringProject
+
+  product:
+    label: Product
+    $space-rate.spaceRateTemplate:
+      - dataStringProject
+
+  project_name:
+    label: Project name
+    $space-rate.spaceRateTemplate:
+      - dataStringProject
+
+  project_code:
+    label: Project code
+    $space-rate.spaceRateTemplate:
+      - dataStringProject
+
+  customer:
+    label: Customer
+    $space-rate.spaceRateTemplate:
+      - dataStringProject
+
+  stage_name:
+    label: Stage
+    $space-rate.spaceRateTemplate:
+      - dataStringProject
+
+  site_name:
+    label: Site
+    $space-rate.spaceRateTemplate:
+      - dataStringProject
+
+  emdm_version:
+    label: EMDM ver.
+    $space-rate.spaceRateTemplate:
+      - dataStringProject
+
+  version:
+    label: Cost ver.
+    $space-rate.spaceRateTemplate:
+      - dataStringProject
+
+  create_time:
+    label: Create time
+    $space-rate.spaceRateTemplate:
+      - dataStringProject
+
+  space_rate:
+    label: Cleansheet 空格率
+    subHeader: 空格數量
+    subHeaderSite: 1
+    subHeaderMerge: 3
+    $space-rate.spaceRateTemplate:
+      - dataPercentSpace
+
+  rd_space_count:
+    label: RD 空格數
+    $space-rate.spaceRateTemplate:
+      - dataFloatSpace
+
+  other_fill_me_remark_count:
+    label: 新材料&製程
+    $space-rate.spaceRateTemplate:
+      - dataFloatSpace
+
+  remark:
+    label: null
+    subHeader: Remark
+    subHeaderSite: 1
+    subHeaderMerge: 1
+    $space-rate.spaceRateTemplate:
+      - dataStringRemark

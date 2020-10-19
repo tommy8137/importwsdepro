@@ -1,0 +1,8 @@
+# 密度對應表
+values:
+  - materialspec: Silicon(矽膠)
+    density: 1.6
+  - materialspec: TPU
+    density: 1.25
+  - materialspec: TPEE
+    density: 1.15

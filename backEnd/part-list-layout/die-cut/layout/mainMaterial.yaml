@@ -1,0 +1,157 @@
+multiple: false
+label: 主要材料
+items:
+  - key: type2
+    label: Part Category II
+    url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+    $Template:
+      - fetchData
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    require: false
+    emdmKey: emdmBomInfo.partcategory2
+
+  - key: materialspec
+    label: Material Spec.
+    url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+    $Template:
+      - fetchData
+    constrains:
+      - function: "(val) => val === '' || val === null"
+        message: "此欄位為必填"
+    require: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: materialspec
+      ?getDiecutMaterial:
+        -
+      # $die-cut.dropdown.materialPerCostValues:
+      #   - ^values
+      depends:
+        - type2
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    emdmKey: emdmBomInfo.materialspec
+
+  - key: material
+    label: Material
+    url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+    $Template:
+      - fetchData
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: material
+      ?getDiecutMaterial:
+        -
+      # $die-cut.dropdown.materialPerCostValues:
+      #   - ^values
+      depends:
+        - type2
+        - materialspec
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    require: false
+    emdmKey: emdmBomInfo.material
+
+  - key: mainMaterialSize
+    label: 主材料尺寸
+    $Template:
+      - compositeInline
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1.5
+      spaceConfig:
+        after: 1
+    items:
+      - key: partssizelength
+        label: L(mm)
+        url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+        $Template:
+          - fetchData
+          - ^displayConfig
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1
+        require: true
+        emdmKey: emdmBomInfo.partLong
+
+      - key: partssizewidth
+        label: W(mm)
+        url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+        $Template:
+          - fetchData
+          - ^displayConfig
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1
+        require: true
+        emdmKey: emdmBomInfo.partWidth
+
+      - key: partssizehigh
+        label: H(mm)
+        require: false
+        url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+        $Template:
+          - fetchData
+          - ^displayConfig
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1
+        emdmKey: emdmBomInfo.partHeight
+
+  - key: materialPerCost
+    label: 主材料單價
+    $Template:
+      - mappedValueFloat
+    mapFrom:
+      - material
+      - materialspec
+    selectorConfig:
+      ?getDiecutMaterial:
+        -
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+
+  - key: materialspecRemark
+    label: Material Spec Remark
+    $Template:
+      - textarea
+    require: true
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      depends:
+        action: lock
+        condition:
+          materialspec: "val => val === 'Other_Fill_ME_Remark'"
+    emdmKey: emdmBomInfo.materialspec1Remark
+
+  - key: materialRemark
+    label: Material Remark
+    $Template:
+      - textarea
+    require: true
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      depends:
+        action: lock
+        condition:
+          material: "val => val === 'Other_Fill_ME_Remark'"
+    emdmKey: emdmBomInfo.materialRemark

@@ -1,0 +1,3 @@
+values:
+  - cmfProcessListThermalBondingCycleTime: 90sec
+    cmfProcessListThermalBondingCycleTimeValue: 90

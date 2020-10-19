@@ -1,0 +1,4 @@
+update formula.parameter_value set value = '0.005' where parameter_id in
+(select id from formula.common_parameter where part_type = 'housing_metal_secondary_processing' and "label" = 'sand_blast_cost' and product_type_id = (select id from formula.product_type where type_name = 'NB'));
+update formula.parameter_value set value = '20' where parameter_id in (select id from formula.common_parameter where part_type = 'housing_metal_secondary_processing' and "label" = 'sandblasting_line_speed' and product_type_id = (select id from formula.product_type where type_name = 'NB'));
+update formula.parameter_value set value = '0.2' where parameter_id in (select id from formula.common_parameter where  part_type = 'housing_metal_secondary_processing' and "label" = 'sand_blast_loss_rate' and product_type_id = (select id from formula.product_type where type_name = 'NB'));

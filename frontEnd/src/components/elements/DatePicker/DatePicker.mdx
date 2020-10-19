@@ -1,0 +1,54 @@
+---
+name: DatePicker
+---
+
+import { Playground, Props } from 'docz'
+import DatePicker from '~~elements/DatePicker';
+import { compose, withState, withStateHandlers } from 'recompose';
+import moment from 'moment';
+
+
+##  引用方式
+```js
+import DatePicker from '~~elements/DatePicker';
+```
+
+## Props
+
+<Props of={DatePicker}/>
+
+--- 
+
+## 
+
+
+<Playground>
+  {() => {
+    const enhance = compose(
+    withState('disabledDays', 'setDisabledDays', {
+        after: moment(new Date()).toDate(),
+        before: moment(new Date()).subtract(3, 'years').toDate()
+    }),
+    withStateHandlers(
+        ({ selectedDate = moment(new Date()).toDate() }) => ({
+        selectedDate,
+        }),
+        {
+        onDayClick: (props) => (date, option) => {
+            if (!option.disabled) {
+            return {
+                selectedDate: date
+            };
+            }
+            return {
+            selectedDate: props.props
+            };
+        },
+        }
+    )
+    );
+    const EnhanceDatePicker = enhance(DatePicker)
+    return <EnhanceDatePicker />
+  }}
+</Playground>
+

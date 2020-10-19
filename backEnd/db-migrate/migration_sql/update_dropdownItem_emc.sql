@@ -1,0 +1,1 @@
+update wiprocurement.drop_down_item set item_name='EMC' where id='48bb3134-43a9-11e9-b34d-0242ac110002';

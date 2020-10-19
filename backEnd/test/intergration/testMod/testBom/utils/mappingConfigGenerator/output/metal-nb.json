@@ -1,0 +1,2606 @@
+{
+  "xlsxName": "",
+  "sheetName": "",
+  "startHorizontalCoordinates": "C",
+  "transferMode": "createPath",
+  "formate": "",
+  "metadata": {
+    "productType": {
+      "createPath": "productType",
+      "valuekey": "productType",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "1"
+    },
+    "testLabel": {
+      "createPath": "testLabel",
+      "valuekey": "testLabel",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "2"
+    },
+    "type1": {
+      "createPath": "type1",
+      "valuekey": "type1",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "3"
+    },
+    "type2": {
+      "createPath": "type2",
+      "valuekey": "type2",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "4"
+    }
+  },
+  "transferPartlistInfo": {
+    "level": {
+      "createPath": "formData.toolingPartList.hmUser.level",
+      "valuekey": "level",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hmpartname": {
+      "createPath": "formData.toolingPartList.hmUser.hmpartname",
+      "valuekey": "hmpartname",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hmpartnumber": {
+      "createPath": "formData.toolingPartList.hmUser.hmpartnumber",
+      "valuekey": "hmpartnumber",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hmmaterial": {
+      "createPath": "formData.toolingPartList.hmUser.hmmaterial",
+      "valuekey": "hmmaterial",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hmmaterialdensity": {
+      "createPath": "formData.toolingPartList.hmUser.hmmaterialdensity",
+      "valuekey": "hmmaterialdensity",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hmmaterialprice": {
+      "createPath": "formData.toolingPartList.hmUser.hmmaterialprice",
+      "valuekey": "hmmaterialprice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "hmthickness": {
+      "createPath": "formData.toolingPartList.hmUser.hmthickness",
+      "valuekey": "hmthickness",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hmpartssizewidth": {
+      "createPath": "formData.toolingPartList.hmUser.hmpartssizespec.hmpartssizewidth",
+      "valuekey": "hmpartssizewidth",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hmpartssizelength": {
+      "createPath": "formData.toolingPartList.hmUser.hmpartssizespec.hmpartssizelength",
+      "valuekey": "hmpartssizelength",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hmpartssizehigh": {
+      "createPath": "formData.toolingPartList.hmUser.hmpartssizespec.hmpartssizehigh",
+      "valuekey": "hmpartssizehigh",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hmpartsexpandwidth": {
+      "createPath": "formData.toolingPartList.hmUser.hmpartsexpandsize.hmpartsexpandwidth",
+      "valuekey": "hmpartsexpandwidth",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hmpartsexpandlength": {
+      "createPath": "formData.toolingPartList.hmUser.hmpartsexpandsize.hmpartsexpandlength",
+      "valuekey": "hmpartsexpandlength",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hmStandOff": {
+      "createPath": "formData.toolingPartList.hmUser.hmSecondProcess.hmStandOff",
+      "valuekey": "hmStandOff",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hmRivetCount": {
+      "createPath": "formData.toolingPartList.hmUser.hmSecondProcess.hmRivetCount",
+      "valuekey": "hmRivetCount",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hmTappingCount": {
+      "createPath": "formData.toolingPartList.hmUser.hmSecondProcess.hmTappingCount",
+      "valuekey": "hmTappingCount",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hmSelfriveCount": {
+      "createPath": "formData.toolingPartList.hmUser.hmSecondProcess.hmSelfriveCount",
+      "valuekey": "hmSelfriveCount",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hmHoleCount": {
+      "createPath": "formData.toolingPartList.hmUser.hmSecondProcess.hmHoleCount",
+      "valuekey": "hmHoleCount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "hmMaterialLossRate": {
+      "createPath": "formData.toolingPartList.hmUser.hmMaterialLossRate",
+      "valuekey": "hmMaterialLossRate",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "hmToolingMaterialWidth": {
+      "createPath": "formData.toolingPartList.hmTooling.hmToolingMaterialSize.hmToolingMaterialWidth",
+      "valuekey": "hmToolingMaterialWidth",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hmToolingMaterialLength": {
+      "createPath": "formData.toolingPartList.hmTooling.hmToolingMaterialSize.hmToolingMaterialLength",
+      "valuekey": "hmToolingMaterialLength",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hmToolingMaterialExpandWidth": {
+      "createPath": "formData.toolingPartList.hmTooling.hmToolingMaterialExpandSize.hmToolingMaterialExpandWidth",
+      "valuekey": "hmToolingMaterialExpandWidth",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hmToolingMaterialExpandLength": {
+      "createPath": "formData.toolingPartList.hmTooling.hmToolingMaterialExpandSize.hmToolingMaterialExpandLength",
+      "valuekey": "hmToolingMaterialExpandLength",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hmToolingIntervalPrice": {
+      "createPath": "formData.toolingPartList.hmTooling.hmToolingIntervalPrice",
+      "valuekey": "hmToolingIntervalPrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hmToolingWeight": {
+      "createPath": "formData.toolingPartList.hmTooling.hmToolingWeight",
+      "valuekey": "hmToolingWeight",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hmToolingMaterialWeight": {
+      "createPath": "formData.toolingPartList.hmTooling.hmToolingMaterialWeight",
+      "valuekey": "hmToolingMaterialWeight",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hmToolingHoleCount": {
+      "createPath": "formData.toolingPartList.hmTooling.hmToolingHoleCount",
+      "valuekey": "hmToolingHoleCount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hmToolingStageDieCount": {
+      "createPath": "formData.toolingPartList.hmTooling.hmToolingStageDie.hmToolingStageDieCount",
+      "valuekey": "hmToolingStageDieCount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hmToolingStageDiePress": {
+      "createPath": "formData.toolingPartList.hmTooling.hmToolingStageDie.hmToolingStageDiePress",
+      "valuekey": "hmToolingStageDiePress",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hmToolingStageDieModule": {
+      "createPath": "formData.toolingPartList.hmTooling.hmToolingStageDie.hmToolingStageDieModule",
+      "valuekey": "hmToolingStageDieModule",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hmToolingStageDieModuleCost": {
+      "createPath": "formData.toolingPartList.hmTooling.hmToolingStageDie.hmToolingStageDieModuleCost",
+      "valuekey": "hmToolingStageDieModuleCost",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "hmToolingProgressiveDieCount": {
+      "createPath": "formData.toolingPartList.hmTooling.hmToolingProgressiveDie.hmToolingProgressiveDieCount",
+      "valuekey": "hmToolingProgressiveDieCount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hmToolingProgressiveDieStation": {
+      "createPath": "formData.toolingPartList.hmTooling.hmToolingProgressiveDie.hmToolingProgressiveDieStation",
+      "valuekey": "hmToolingProgressiveDieStation",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hmToolingProgressiveDiePress": {
+      "createPath": "formData.toolingPartList.hmTooling.hmToolingProgressiveDie.hmToolingProgressiveDiePress",
+      "valuekey": "hmToolingProgressiveDiePress",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hmToolingProgressiveDieModule": {
+      "createPath": "formData.toolingPartList.hmTooling.hmToolingProgressiveDie.hmToolingProgressiveDieModule",
+      "valuekey": "hmToolingProgressiveDieModule",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hmToolingProgressiveDieModuleCost": {
+      "createPath": "formData.toolingPartList.hmTooling.hmToolingProgressiveDie.hmToolingProgressiveDieModuleCost",
+      "valuekey": "hmToolingProgressiveDieModuleCost",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "hmToolingRivetingDieCount": {
+      "createPath": "formData.toolingPartList.hmTooling.hmToolingRivetingDie.hmToolingRivetingDieCount",
+      "valuekey": "hmToolingRivetingDieCount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hmToolingRivetingDiePress": {
+      "createPath": "formData.toolingPartList.hmTooling.hmToolingRivetingDie.hmToolingRivetingDiePress",
+      "valuekey": "hmToolingRivetingDiePress",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hmToolingRivetingDieModule": {
+      "createPath": "formData.toolingPartList.hmTooling.hmToolingRivetingDie.hmToolingRivetingDieModule",
+      "valuekey": "hmToolingRivetingDieModule",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hmToolingRivetingDieModuleCost": {
+      "createPath": "formData.toolingPartList.hmTooling.hmToolingRivetingDie.hmToolingRivetingDieModuleCost",
+      "valuekey": "hmToolingRivetingDieModuleCost",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "hmToolingTotalCount": {
+      "createPath": "formData.toolingPartList.hmTooling.hmToolingTotalCount",
+      "valuekey": "hmToolingTotalCount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hmToolingModuleMode": {
+      "createPath": "formData.toolingPartList.hmTooling.hmToolingModuleMode",
+      "valuekey": "hmToolingModuleMode",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hmToolingModuleFeature": {
+      "createPath": "formData.toolingPartList.hmTooling.hmToolingModuleFeature",
+      "valuekey": "hmToolingModuleFeature",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hmToolingModuleFactory": {
+      "createPath": "formData.toolingPartList.hmTooling.hmToolingModuleFactory",
+      "valuekey": "hmToolingModuleFactory",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hmToolingMoldingManufacturer": {
+      "createPath": "formData.toolingPartList.hmTooling.hmToolingMoldingManufacturer",
+      "valuekey": "hmToolingMoldingManufacturer",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "site": {
+      "createPath": "formData.toolingPartList.hmTooling.site",
+      "valuekey": "site",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "payoutSite": {
+      "createPath": "formData.toolingPartList.hmTooling.payoutSite",
+      "valuekey": "payoutSite",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hpToolingBonded": {
+      "createPath": "formData.toolingPartList.hmTooling.hpToolingBonded",
+      "valuekey": "hpToolingBonded",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hmToolingTSDate": {
+      "createPath": "formData.toolingPartList.hmTooling.hmToolingTSDate",
+      "valuekey": "hmToolingTSDate",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hmToolingT1Date": {
+      "createPath": "formData.toolingPartList.hmTooling.hmToolingT1Date",
+      "valuekey": "hmToolingT1Date",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "hmToolingRemark": {
+      "createPath": "formData.toolingPartList.hmTooling.hmToolingRemark",
+      "valuekey": "hmToolingRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfProcessListultrasonicCleanExist": {
+      "createPath": "formData.CMFProcessList.cmfProcessListUltrasonicClean.cmfProcessListultrasonicCleanExist",
+      "valuekey": "cmfProcessListultrasonicCleanExist",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": null,
+      "default": true
+    },
+    "cmfProcessListFirstAnodeLabel": {
+      "createPath": "formData.CMFProcessList.cmfProcessListAnode.cmfProcessListFirstAnodeLabel",
+      "valuekey": "cmfProcessListFirstAnodeLabel",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfProcessListFirstAnodeCheckBox": {
+      "createPath": "formData.CMFProcessList.cmfProcessListAnode.cmfProcessListFirstAnodeCheckBox",
+      "valuekey": "cmfProcessListFirstAnodeCheckBox",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": null,
+      "default": true
+    },
+    "cmfProcessListFirstAnodeColor": {
+      "createPath": "formData.CMFProcessList.cmfProcessListAnode.cmfProcessListFirstAnodeColor",
+      "valuekey": "cmfProcessListFirstAnodeColor",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfProcessListFirstAnodePrice": {
+      "createPath": "formData.CMFProcessList.cmfProcessListAnode.cmfProcessListFirstAnodePrice",
+      "valuekey": "cmfProcessListFirstAnodePrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "cmfProcessListFirstAnodeLossRate": {
+      "createPath": "formData.CMFProcessList.cmfProcessListAnode.cmfProcessListFirstAnodeLossRate",
+      "valuekey": "cmfProcessListFirstAnodeLossRate",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "cmfProcessListSecondAnodeLabel": {
+      "createPath": "formData.CMFProcessList.cmfProcessListAnode.cmfProcessListSecondAnodeLabel",
+      "valuekey": "cmfProcessListSecondAnodeLabel",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfProcessListSecondAnodeCheckBox": {
+      "createPath": "formData.CMFProcessList.cmfProcessListAnode.cmfProcessListSecondAnodeCheckBox",
+      "valuekey": "cmfProcessListSecondAnodeCheckBox",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": null,
+      "default": true
+    },
+    "cmfProcessListSecondAnodeColor": {
+      "createPath": "formData.CMFProcessList.cmfProcessListAnode.cmfProcessListSecondAnodeColor",
+      "valuekey": "cmfProcessListSecondAnodeColor",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfProcessListSecondAnode": {
+      "createPath": "formData.CMFProcessList.cmfProcessListAnode.cmfProcessListSecondAnode",
+      "valuekey": "cmfProcessListSecondAnode",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfProcessListSecondAnodeQty": {
+      "createPath": "formData.CMFProcessList.cmfProcessListAnode.cmfProcessListSecondAnodeQty",
+      "valuekey": "cmfProcessListSecondAnodeQty",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "cmfProcessListSecondAnodePrice": {
+      "createPath": "formData.CMFProcessList.cmfProcessListAnode.cmfProcessListSecondAnodePrice",
+      "valuekey": "cmfProcessListSecondAnodePrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "cmfProcessListSecondAnodeLossRate": {
+      "createPath": "formData.CMFProcessList.cmfProcessListAnode.cmfProcessListSecondAnodeLossRate",
+      "valuekey": "cmfProcessListSecondAnodeLossRate",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "cmfProcessListSandBlastCheckBox": {
+      "createPath": "formData.CMFProcessList.cmfProcessListSandBlast.cmfProcessListSandBlastCheckBox",
+      "valuekey": "cmfProcessListSandBlastCheckBox",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": null,
+      "default": true
+    },
+    "cmfProcessListSandBlastSide": {
+      "createPath": "formData.CMFProcessList.cmfProcessListSandBlast.cmfProcessListSandBlastSide",
+      "valuekey": "cmfProcessListSandBlastSide",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfProcessListSandBlastSideCount": {
+      "createPath": "formData.CMFProcessList.cmfProcessListSandBlast.cmfProcessListSandBlastSideCount",
+      "valuekey": "cmfProcessListSandBlastSideCount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "cmfProcessListHairLineCheckBox": {
+      "createPath": "formData.CMFProcessList.cmfProcessListHairLine.cmfProcessListHairLineCheckBox",
+      "valuekey": "cmfProcessListHairLineCheckBox",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": null,
+      "default": true
+    },
+    "cmfProcessListHairLineArea": {
+      "createPath": "formData.CMFProcessList.cmfProcessListHairLine.cmfProcessListHairLineArea",
+      "valuekey": "cmfProcessListHairLineArea",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfProcessListPaintingCheckBox": {
+      "createPath": "formData.CMFProcessList.cmfProcessListPainting.cmfProcessListPaintingCheckBox",
+      "valuekey": "cmfProcessListPaintingCheckBox",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": null,
+      "default": true
+    },
+    "cmfProcessListPaintingTypeAndColor": {
+      "createPath": "formData.CMFProcessList.cmfProcessListPainting.cmfProcessListPaintingTypeAndColor",
+      "valuekey": "cmfProcessListPaintingTypeAndColor",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "CmfProcessListPaintingPriceUSD": {
+      "createPath": "formData.CMFProcessList.cmfProcessListPainting.CmfProcessListPaintingPriceUSD",
+      "valuekey": "CmfProcessListPaintingPriceUSD",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "CmfProcessListPaintingPriceRMB": {
+      "createPath": "formData.CMFProcessList.cmfProcessListPainting.CmfProcessListPaintingPriceRMB",
+      "valuekey": "CmfProcessListPaintingPriceRMB",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "cmfProcessListPaintingArea": {
+      "createPath": "formData.CMFProcessList.cmfProcessListPainting.cmfProcessListPaintingArea",
+      "valuekey": "cmfProcessListPaintingArea",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfProcessListPaintingFilmThickness": {
+      "createPath": "formData.CMFProcessList.cmfProcessListPainting.cmfProcessListPaintingFilmThickness",
+      "valuekey": "cmfProcessListPaintingFilmThickness",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfProcessListPaintingCount": {
+      "createPath": "formData.CMFProcessList.cmfProcessListPainting.cmfProcessListPaintingCount",
+      "valuekey": "cmfProcessListPaintingCount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfProcessListPaintingColor": {
+      "createPath": "formData.CMFProcessList.cmfProcessListPainting.cmfProcessListPaintingColor",
+      "valuekey": "cmfProcessListPaintingColor",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfProcessListThermalBondingCheckBox": {
+      "createPath": "formData.CMFProcessList.cmfProcessListThermalBonding.cmfProcessListThermalBondingCheckBox",
+      "valuekey": "cmfProcessListThermalBondingCheckBox",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": null,
+      "default": true
+    },
+    "cmfProcessListThermalBondingGlueType": {
+      "createPath": "formData.CMFProcessList.cmfProcessListThermalBonding.cmfProcessListThermalBondingGlueType",
+      "valuekey": "cmfProcessListThermalBondingGlueType",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfProcessListThermalBondingGluePrice": {
+      "createPath": "formData.CMFProcessList.cmfProcessListThermalBonding.cmfProcessListThermalBondingGluePrice",
+      "valuekey": "cmfProcessListThermalBondingGluePrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "cmfProcessListThermalBondingGlueDensity": {
+      "createPath": "formData.CMFProcessList.cmfProcessListThermalBonding.cmfProcessListThermalBondingGlueDensity",
+      "valuekey": "cmfProcessListThermalBondingGlueDensity",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfProcessListThermalBondingPathLength": {
+      "createPath": "formData.CMFProcessList.cmfProcessListThermalBonding.cmfProcessListThermalBondingPathLength",
+      "valuekey": "cmfProcessListThermalBondingPathLength",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfProcessListThermalBondingGlueSyringeDiameter": {
+      "createPath": "formData.CMFProcessList.cmfProcessListThermalBonding.cmfProcessListThermalBondingGlueSyringeDiameter",
+      "valuekey": "cmfProcessListThermalBondingGlueSyringeDiameter",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfProcessListThermalBondingGlueWeight": {
+      "createPath": "formData.CMFProcessList.cmfProcessListThermalBonding.cmfProcessListThermalBondingGlueWeight",
+      "valuekey": "cmfProcessListThermalBondingGlueWeight",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfProcessListThermalBondingCycleTime": {
+      "createPath": "formData.CMFProcessList.cmfProcessListThermalBonding.cmfProcessListThermalBondingCycleTime",
+      "valuekey": "cmfProcessListThermalBondingCycleTime",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfProcessListThermalBondingCycleTimeValue": {
+      "createPath": "formData.CMFProcessList.cmfProcessListThermalBonding.cmfProcessListThermalBondingCycleTimeValue",
+      "valuekey": "cmfProcessListThermalBondingCycleTimeValue",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfProcessListSingleTappingCheckBox": {
+      "createPath": "formData.CMFProcessList.cmfProcessListSingleTapping.cmfProcessListSingleTappingCheckBox",
+      "valuekey": "cmfProcessListSingleTappingCheckBox",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": null,
+      "default": true
+    },
+    "cmfProcessListSingleTappingCount": {
+      "createPath": "formData.CMFProcessList.cmfProcessListSingleTapping.cmfProcessListSingleTappingCount",
+      "valuekey": "cmfProcessListSingleTappingCount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfProcessListMultiTappingCheckBox": {
+      "createPath": "formData.CMFProcessList.cmfProcessListMultiTapping.cmfProcessListMultiTappingCheckBox",
+      "valuekey": "cmfProcessListMultiTappingCheckBox",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": null,
+      "default": true
+    },
+    "cmfProcessListMultiTappingCount": {
+      "createPath": "formData.CMFProcessList.cmfProcessListMultiTapping.cmfProcessListMultiTappingCount",
+      "valuekey": "cmfProcessListMultiTappingCount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfProcessListSingleSpotWeldingCheckBox": {
+      "createPath": "formData.CMFProcessList.cmfProcessListSingleSpotWelding.cmfProcessListSingleSpotWeldingCheckBox",
+      "valuekey": "cmfProcessListSingleSpotWeldingCheckBox",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": null,
+      "default": true
+    },
+    "cmfProcessListSingleSpotWeldingCount": {
+      "createPath": "formData.CMFProcessList.cmfProcessListSingleSpotWelding.cmfProcessListSingleSpotWeldingCount",
+      "valuekey": "cmfProcessListSingleSpotWeldingCount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfProcessListMultiSpotWeldingCheckBox": {
+      "createPath": "formData.CMFProcessList.cmfProcessListMultiSpotWelding.cmfProcessListMultiSpotWeldingCheckBox",
+      "valuekey": "cmfProcessListMultiSpotWeldingCheckBox",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": null,
+      "default": true
+    },
+    "cmfProcessListMultiSpotWeldingCount": {
+      "createPath": "formData.CMFProcessList.cmfProcessListMultiSpotWelding.cmfProcessListMultiSpotWeldingCount",
+      "valuekey": "cmfProcessListMultiSpotWeldingCount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfProcessListSingleRivetCheckBox": {
+      "createPath": "formData.CMFProcessList.cmfProcessListSingleRivet.cmfProcessListSingleRivetCheckBox",
+      "valuekey": "cmfProcessListSingleRivetCheckBox",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": null,
+      "default": true
+    },
+    "cmfProcessListSingleRivetCount": {
+      "createPath": "formData.CMFProcessList.cmfProcessListSingleRivet.cmfProcessListSingleRivetCount",
+      "valuekey": "cmfProcessListSingleRivetCount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfProcessListMultiRivetCheckBox": {
+      "createPath": "formData.CMFProcessList.cmfProcessListMultiRivet.cmfProcessListMultiRivetCheckBox",
+      "valuekey": "cmfProcessListMultiRivetCheckBox",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": null,
+      "default": true
+    },
+    "cmfProcessListMultiRivetCount": {
+      "createPath": "formData.CMFProcessList.cmfProcessListMultiRivet.cmfProcessListMultiRivetCount",
+      "valuekey": "cmfProcessListMultiRivetCount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfProcessListRivetCheckBox": {
+      "createPath": "formData.CMFProcessList.cmfProcessListRivet.cmfProcessListRivetCheckBox",
+      "valuekey": "cmfProcessListRivetCheckBox",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": null,
+      "default": true
+    },
+    "cmfProcessListRivetCount": {
+      "createPath": "formData.CMFProcessList.cmfProcessListRivet.cmfProcessListRivetCount",
+      "valuekey": "cmfProcessListRivetCount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfProcessListHandMakeDrawCheckBox": {
+      "createPath": "formData.CMFProcessList.cmfProcessListHandMakeDraw.cmfProcessListHandMakeDrawCheckBox",
+      "valuekey": "cmfProcessListHandMakeDrawCheckBox",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": null,
+      "default": true
+    },
+    "cmfProcessListHandMakeDrawCount": {
+      "createPath": "formData.CMFProcessList.cmfProcessListHandMakeDraw.cmfProcessListHandMakeDrawCount",
+      "valuekey": "cmfProcessListHandMakeDrawCount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfProcessListScreenPrintingCheckBox": {
+      "createPath": "formData.CMFProcessList.cmfProcessListScreenPrinting.cmfProcessListScreenPrintingCheckBox",
+      "valuekey": "cmfProcessListScreenPrintingCheckBox",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": null,
+      "default": true
+    },
+    "cmfProcessListScreenPrintingCount": {
+      "createPath": "formData.CMFProcessList.cmfProcessListScreenPrinting.cmfProcessListScreenPrintingCount",
+      "valuekey": "cmfProcessListScreenPrintingCount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfProcessListPadPrintingCheckBox": {
+      "createPath": "formData.CMFProcessList.cmfProcessListPadPrinting.cmfProcessListPadPrintingCheckBox",
+      "valuekey": "cmfProcessListPadPrintingCheckBox",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": null,
+      "default": true
+    },
+    "cmfProcessListPadPrintingCount": {
+      "createPath": "formData.CMFProcessList.cmfProcessListPadPrinting.cmfProcessListPadPrintingCount",
+      "valuekey": "cmfProcessListPadPrintingCount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfProcessListSilkPrintCheckBox": {
+      "createPath": "formData.CMFProcessList.cmfProcessListSilkPrint.cmfProcessListSilkPrintCheckBox",
+      "valuekey": "cmfProcessListSilkPrintCheckBox",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": null,
+      "default": true
+    },
+    "cmfProcessListSilkPrintCount": {
+      "createPath": "formData.CMFProcessList.cmfProcessListSilkPrint.cmfProcessListSilkPrintCount",
+      "valuekey": "cmfProcessListSilkPrintCount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfProcessListCNCCheckBox": {
+      "createPath": "formData.CMFProcessList.cmfProcessListCNC.cmfProcessListCNCCheckBox",
+      "valuekey": "cmfProcessListCNCCheckBox",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": null,
+      "default": true
+    },
+    "cmfProcessListCNCArea": {
+      "createPath": "formData.CMFProcessList.cmfProcessListCNC.cmfProcessListCNCArea",
+      "valuekey": "cmfProcessListCNCArea",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfProcessListCNCPLCheckBox": {
+      "createPath": "formData.CMFProcessList.cmfProcessListCNCPL.cmfProcessListCNCPLCheckBox",
+      "valuekey": "cmfProcessListCNCPLCheckBox",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": null,
+      "default": true
+    },
+    "cmfProcessListCNCPLLength": {
+      "createPath": "formData.CMFProcessList.cmfProcessListCNCPL.cmfProcessListCNCPLLength",
+      "valuekey": "cmfProcessListCNCPLLength",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfProcessListDrillCutPowerButtonExist": {
+      "createPath": "formData.CMFProcessList.cmfProcessListDrillCutPowerButton.cmfProcessListDrillCutPowerButtonExist",
+      "valuekey": "cmfProcessListDrillCutPowerButtonExist",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": null,
+      "default": true
+    },
+    "cmfProcessListDrillCutPowerButtonType": {
+      "createPath": "formData.CMFProcessList.cmfProcessListDrillCutPowerButton.cmfProcessListDrillCutPowerButtonType",
+      "valuekey": "cmfProcessListDrillCutPowerButtonType",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfProcessListDrillCutPowerButtonCost": {
+      "createPath": "formData.CMFProcessList.cmfProcessListDrillCutPowerButton.cmfProcessListDrillCutPowerButtonCost",
+      "valuekey": "cmfProcessListDrillCutPowerButtonCost",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "cmfProcessListDrillCutTPExist": {
+      "createPath": "formData.CMFProcessList.cmfProcessListDrillCutTP.cmfProcessListDrillCutTPExist",
+      "valuekey": "cmfProcessListDrillCutTPExist",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": null,
+      "default": true
+    },
+    "cmfProcessListDrillCutTPType": {
+      "createPath": "formData.CMFProcessList.cmfProcessListDrillCutTP.cmfProcessListDrillCutTPType",
+      "valuekey": "cmfProcessListDrillCutTPType",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfProcessListDrillCutTPCost": {
+      "createPath": "formData.CMFProcessList.cmfProcessListDrillCutTP.cmfProcessListDrillCutTPCost",
+      "valuekey": "cmfProcessListDrillCutTPCost",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "cmfProcessListDrillCutFingerprintHoleExist": {
+      "createPath": "formData.CMFProcessList.cmfProcessListDrillCutFingerprintHole.cmfProcessListDrillCutFingerprintHoleExist",
+      "valuekey": "cmfProcessListDrillCutFingerprintHoleExist",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": null,
+      "default": true
+    },
+    "cmfProcessListDrillCutFingerprintHoleType": {
+      "createPath": "formData.CMFProcessList.cmfProcessListDrillCutFingerprintHole.cmfProcessListDrillCutFingerprintHoleType",
+      "valuekey": "cmfProcessListDrillCutFingerprintHoleType",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfProcessListDrillCutFingerprintHoleCost": {
+      "createPath": "formData.CMFProcessList.cmfProcessListDrillCutFingerprintHole.cmfProcessListDrillCutFingerprintHoleCost",
+      "valuekey": "cmfProcessListDrillCutFingerprintHoleCost",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "cmfProcessListDrillCutPowerHoleExist": {
+      "createPath": "formData.CMFProcessList.cmfProcessListDrillCutPowerHole.cmfProcessListDrillCutPowerHoleExist",
+      "valuekey": "cmfProcessListDrillCutPowerHoleExist",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": null,
+      "default": true
+    },
+    "cmfProcessListDrillCutPowerHoleType": {
+      "createPath": "formData.CMFProcessList.cmfProcessListDrillCutPowerHole.cmfProcessListDrillCutPowerHoleType",
+      "valuekey": "cmfProcessListDrillCutPowerHoleType",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfProcessListDrillCutPowerHoleCost": {
+      "createPath": "formData.CMFProcessList.cmfProcessListDrillCutPowerHole.cmfProcessListDrillCutPowerHoleCost",
+      "valuekey": "cmfProcessListDrillCutPowerHoleCost",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "cmfProcessListDrillCutFourSidesExist": {
+      "createPath": "formData.CMFProcessList.cmfProcessListDrillCutFourSides.cmfProcessListDrillCutFourSidesExist",
+      "valuekey": "cmfProcessListDrillCutFourSidesExist",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": null,
+      "default": true
+    },
+    "cmfProcessListDrillCutFourSidesType": {
+      "createPath": "formData.CMFProcessList.cmfProcessListDrillCutFourSides.cmfProcessListDrillCutFourSidesType",
+      "valuekey": "cmfProcessListDrillCutFourSidesType",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfProcessListDrillCutFourSidesCost": {
+      "createPath": "formData.CMFProcessList.cmfProcessListDrillCutFourSides.cmfProcessListDrillCutFourSidesCost",
+      "valuekey": "cmfProcessListDrillCutFourSidesCost",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "cmfProcessListLaserPrintCheckBox": {
+      "createPath": "formData.CMFProcessList.cmfProcessListLaserPrint.cmfProcessListLaserPrintCheckBox",
+      "valuekey": "cmfProcessListLaserPrintCheckBox",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": null,
+      "default": true
+    },
+    "cmfProcessListLaserPrintArea": {
+      "createPath": "formData.CMFProcessList.cmfProcessListLaserPrint.cmfProcessListLaserPrintArea",
+      "valuekey": "cmfProcessListLaserPrintArea",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfProcessListLaserPrintIconCheckBox": {
+      "createPath": "formData.CMFProcessList.cmfProcessListLaserPrintIcon.cmfProcessListLaserPrintIconCheckBox",
+      "valuekey": "cmfProcessListLaserPrintIconCheckBox",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": null,
+      "default": true
+    },
+    "cmfProcessListLaserPrintIconCount": {
+      "createPath": "formData.CMFProcessList.cmfProcessListLaserPrintIcon.cmfProcessListLaserPrintIconCount",
+      "valuekey": "cmfProcessListLaserPrintIconCount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfProcessListPolishingAutoCheckBox": {
+      "createPath": "formData.CMFProcessList.cmfProcessListPolishing.cmfProcessListPolishingAutoCheckBox",
+      "valuekey": "cmfProcessListPolishingAutoCheckBox",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": null,
+      "default": true
+    },
+    "cmfProcessListPolishingAutoArea": {
+      "createPath": "formData.CMFProcessList.cmfProcessListPolishing.cmfProcessListPolishingAutoArea",
+      "valuekey": "cmfProcessListPolishingAutoArea",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfProcessListPolishingArtificialCheckBox": {
+      "createPath": "formData.CMFProcessList.cmfProcessListPolishing.cmfProcessListPolishingArtificialCheckBox",
+      "valuekey": "cmfProcessListPolishingArtificialCheckBox",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": null,
+      "default": true
+    },
+    "cmfProcessListPolishingArtificialArea": {
+      "createPath": "formData.CMFProcessList.cmfProcessListPolishing.cmfProcessListPolishingArtificialArea",
+      "valuekey": "cmfProcessListPolishingArtificialArea",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfProcessListDrillingCheckBox": {
+      "createPath": "formData.CMFProcessList.cmfProcessListDrilling.cmfProcessListDrillingCheckBox",
+      "valuekey": "cmfProcessListDrillingCheckBox",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": null,
+      "default": true
+    },
+    "cmfProcessListDrillingCount": {
+      "createPath": "formData.CMFProcessList.cmfProcessListDrilling.cmfProcessListDrillingCount",
+      "valuekey": "cmfProcessListDrillingCount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "cmfProcessListAnodizingRemovalCheckBox": {
+      "createPath": "formData.CMFProcessList.cmfProcessListAnodizingRemoval.cmfProcessListAnodizingRemovalCheckBox",
+      "valuekey": "cmfProcessListAnodizingRemovalCheckBox",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": null,
+      "default": true
+    },
+    "cmfProcessListAnodizingRemovalCount": {
+      "createPath": "formData.CMFProcessList.cmfProcessListAnodizingRemoval.cmfProcessListAnodizingRemovalCount",
+      "valuekey": "cmfProcessListAnodizingRemovalCount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "ce_patintingAreaConst1": {
+      "createPath": "formData.hmCeParametersTab.hmCeParameters.ce_patintingAreaConst1",
+      "valuekey": "ce_patintingAreaConst1",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    }
+  },
+  "verifyInfo": {
+    "totalPrices": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "totalPrices",
+      "valueType": "totalPrices",
+      "comparisonValuePath": "totalPrices"
+    },
+    "parentGroupId": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "parentGroupId",
+      "valueType": "parentGroupId",
+      "comparisonValuePath": "forDebug.summary.housingMetal.parentGroupId"
+    },
+    "CNCPickAndPlaceSec": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "CNCPickAndPlaceSec",
+      "valueType": "CNCPickAndPlaceSec",
+      "comparisonValuePath": "forDebug.summary.housingMetal.CNCPickAndPlaceSec"
+    },
+    "CNCPLPickAndPlaceSec": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "CNCPLPickAndPlaceSec",
+      "valueType": "CNCPLPickAndPlaceSec",
+      "comparisonValuePath": "forDebug.summary.housingMetal.CNCPLPickAndPlaceSec"
+    },
+    "polishingAutoPickAndPlaceSec": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "polishingAutoPickAndPlaceSec",
+      "valueType": "polishingAutoPickAndPlaceSec",
+      "comparisonValuePath": "forDebug.summary.housingMetal.polishingAutoPickAndPlaceSec"
+    },
+    "polishingArtificialPickAndPlaceSec": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "polishingArtificialPickAndPlaceSec",
+      "valueType": "polishingArtificialPickAndPlaceSec",
+      "comparisonValuePath": "forDebug.summary.housingMetal.polishingArtificialPickAndPlaceSec"
+    },
+    "CNCProcessingSizeFormula1": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "CNCProcessingSizeFormula1",
+      "valueType": "CNCProcessingSizeFormula1",
+      "comparisonValuePath": "forDebug.summary.housingMetal.CNCProcessingSizeFormula1"
+    },
+    "packageCost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "packageCost",
+      "valueType": "packageCost",
+      "comparisonValuePath": "forDebug.summary.housingMetal.packageCost"
+    },
+    "material_cost": {
+      "label": "材料費",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "material_cost",
+      "valueType": "material_cost",
+      "comparisonValuePath": "forDebug.summary.housingMetal.material_cost"
+    },
+    "stamping_cost": {
+      "label": "沖壓費",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "stamping_cost",
+      "valueType": "stamping_cost",
+      "comparisonValuePath": "forDebug.summary.housingMetal.stamping_cost"
+    },
+    "cmfProcessListCNCCycleTime": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListCNCCycleTime",
+      "valueType": "cmfProcessListCNCCycleTime",
+      "comparisonValuePath": "forDebug.summary.housingMetal.cmfProcessListCNCCycleTime"
+    },
+    "cmfProcessListCNC": {
+      "label": "CNC(公模面)",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListCNC",
+      "valueType": "cmfProcessListCNC",
+      "comparisonValuePath": "forDebug.summary.housingMetal.cmfProcessListCNC"
+    },
+    "cmfProcessListCNCPL": {
+      "label": "CNC(PL處)",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListCNCPL",
+      "valueType": "cmfProcessListCNCPL",
+      "comparisonValuePath": "forDebug.summary.housingMetal.cmfProcessListCNCPL"
+    },
+    "__cmfProcessListPolishingAuto": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "__cmfProcessListPolishingAuto",
+      "valueType": "__cmfProcessListPolishingAuto",
+      "comparisonValuePath": "forDebug.summary.housingMetal.__cmfProcessListPolishingAuto"
+    },
+    "cmfProcessListPolishingArtificialCycleTime": {
+      "label": "打磨(人工) cycle time",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListPolishingArtificialCycleTime",
+      "valueType": "cmfProcessListPolishingArtificialCycleTime",
+      "comparisonValuePath": "forDebug.summary.housingMetal.cmfProcessListPolishingArtificialCycleTime"
+    },
+    "__cmfProcessListPolishingArtificial": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "__cmfProcessListPolishingArtificial",
+      "valueType": "__cmfProcessListPolishingArtificial",
+      "comparisonValuePath": "forDebug.summary.housingMetal.__cmfProcessListPolishingArtificial"
+    },
+    "cmfProcessListPolishing": {
+      "label": "打磨",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListPolishing",
+      "valueType": "cmfProcessListPolishing",
+      "comparisonValuePath": "forDebug.summary.housingMetal.cmfProcessListPolishing"
+    },
+    "secondary_processing_cost": {
+      "label": "二次加工費",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "secondary_processing_cost",
+      "valueType": "secondary_processing_cost",
+      "comparisonValuePath": "forDebug.summary.housingMetal.secondary_processing_cost"
+    },
+    "profit": {
+      "label": "管銷&利潤",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "profit",
+      "valueType": "profit",
+      "comparisonValuePath": "forDebug.summary.housingMetal.profit"
+    },
+    "total": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "total",
+      "valueType": "total",
+      "comparisonValuePath": "forDebug.summary.housingMetal.total"
+    },
+    "stageDieLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "stageDieLossRate",
+      "valueType": "stageDieLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.stageDieLossRate.value"
+    },
+    "progressiveDieLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "progressiveDieLossRate",
+      "valueType": "progressiveDieLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.progressiveDieLossRate.value"
+    },
+    "rivetingDieLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "rivetingDieLossRate",
+      "valueType": "rivetingDieLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.rivetingDieLossRate.value"
+    },
+    "ultrasonicCleanUP": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "ultrasonicCleanUP",
+      "valueType": "ultrasonicCleanUP",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.ultrasonicCleanUP.value"
+    },
+    "ultrasonicCleanLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "ultrasonicCleanLossRate",
+      "valueType": "ultrasonicCleanLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.ultrasonicCleanLossRate.value"
+    },
+    "sandBlastLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "sandBlastLossRate",
+      "valueType": "sandBlastLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.sandBlastLossRate.value"
+    },
+    "sandBlastUP": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "sandBlastUP",
+      "valueType": "sandBlastUP",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.sandBlastUP.value"
+    },
+    "hairLineLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "hairLineLossRate",
+      "valueType": "hairLineLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.hairLineLossRate.value"
+    },
+    "hairLineUP": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "hairLineUP",
+      "valueType": "hairLineUP",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.hairLineUP.value"
+    },
+    "paintingLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "paintingLossRate",
+      "valueType": "paintingLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.paintingLossRate.value"
+    },
+    "paintingConst1": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "paintingConst1",
+      "valueType": "paintingConst1",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.paintingConst1.value"
+    },
+    "paintingConst2": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "paintingConst2",
+      "valueType": "paintingConst2",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.paintingConst2.value"
+    },
+    "thermalBondingUP": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "thermalBondingUP",
+      "valueType": "thermalBondingUP",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.thermalBondingUP.value"
+    },
+    "thermalBondingLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "thermalBondingLossRate",
+      "valueType": "thermalBondingLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.thermalBondingLossRate.value"
+    },
+    "singleTappingUP": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "singleTappingUP",
+      "valueType": "singleTappingUP",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.singleTappingUP.value"
+    },
+    "singleTappingLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "singleTappingLossRate",
+      "valueType": "singleTappingLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.singleTappingLossRate.value"
+    },
+    "multiTappingUP": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "multiTappingUP",
+      "valueType": "multiTappingUP",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.multiTappingUP.value"
+    },
+    "multiTappingLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "multiTappingLossRate",
+      "valueType": "multiTappingLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.multiTappingLossRate.value"
+    },
+    "singleSpotWeldingUP": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "singleSpotWeldingUP",
+      "valueType": "singleSpotWeldingUP",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.singleSpotWeldingUP.value"
+    },
+    "singleSpotWeldingLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "singleSpotWeldingLossRate",
+      "valueType": "singleSpotWeldingLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.singleSpotWeldingLossRate.value"
+    },
+    "multiSpotWeldingUP": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "multiSpotWeldingUP",
+      "valueType": "multiSpotWeldingUP",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.multiSpotWeldingUP.value"
+    },
+    "multiSpotWeldingLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "multiSpotWeldingLossRate",
+      "valueType": "multiSpotWeldingLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.multiSpotWeldingLossRate.value"
+    },
+    "singleRivetUP": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "singleRivetUP",
+      "valueType": "singleRivetUP",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.singleRivetUP.value"
+    },
+    "singleRivetLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "singleRivetLossRate",
+      "valueType": "singleRivetLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.singleRivetLossRate.value"
+    },
+    "multiRivetUP": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "multiRivetUP",
+      "valueType": "multiRivetUP",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.multiRivetUP.value"
+    },
+    "multiRivetLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "multiRivetLossRate",
+      "valueType": "multiRivetLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.multiRivetLossRate.value"
+    },
+    "rivetUP": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "rivetUP",
+      "valueType": "rivetUP",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.rivetUP.value"
+    },
+    "rivetLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "rivetLossRate",
+      "valueType": "rivetLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.rivetLossRate.value"
+    },
+    "handMakeDrawUP": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "handMakeDrawUP",
+      "valueType": "handMakeDrawUP",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.handMakeDrawUP.value"
+    },
+    "handMakeDrawLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "handMakeDrawLossRate",
+      "valueType": "handMakeDrawLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.handMakeDrawLossRate.value"
+    },
+    "handMakeDrawPerTime": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "handMakeDrawPerTime",
+      "valueType": "handMakeDrawPerTime",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.handMakeDrawPerTime.value"
+    },
+    "handMakeDrawPerSize": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "handMakeDrawPerSize",
+      "valueType": "handMakeDrawPerSize",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.handMakeDrawPerSize.value"
+    },
+    "screenPrintingUP": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "screenPrintingUP",
+      "valueType": "screenPrintingUP",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.screenPrintingUP.value"
+    },
+    "screenPrintingLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "screenPrintingLossRate",
+      "valueType": "screenPrintingLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.screenPrintingLossRate.value"
+    },
+    "padPrintingUP": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "padPrintingUP",
+      "valueType": "padPrintingUP",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.padPrintingUP.value"
+    },
+    "padPrintingLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "padPrintingLossRate",
+      "valueType": "padPrintingLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.padPrintingLossRate.value"
+    },
+    "silkPrintUP": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "silkPrintUP",
+      "valueType": "silkPrintUP",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.silkPrintUP.value"
+    },
+    "silkPrintLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "silkPrintLossRate",
+      "valueType": "silkPrintLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.silkPrintLossRate.value"
+    },
+    "CNCUP": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "CNCUP",
+      "valueType": "CNCUP",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.CNCUP.value"
+    },
+    "CNCLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "CNCLossRate",
+      "valueType": "CNCLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.CNCLossRate.value"
+    },
+    "CNCPLUP": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "CNCPLUP",
+      "valueType": "CNCPLUP",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.CNCPLUP.value"
+    },
+    "CNCPLLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "CNCPLLossRate",
+      "valueType": "CNCPLLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.CNCPLLossRate.value"
+    },
+    "CNCPLConst1": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "CNCPLConst1",
+      "valueType": "CNCPLConst1",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.CNCPLConst1.value"
+    },
+    "drillCutUP": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "drillCutUP",
+      "valueType": "drillCutUP",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.drillCutUP.value"
+    },
+    "drillCutLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "drillCutLossRate",
+      "valueType": "drillCutLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.drillCutLossRate.value"
+    },
+    "drillCutConst1": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "drillCutConst1",
+      "valueType": "drillCutConst1",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.drillCutConst1.value"
+    },
+    "laserPrintUP": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "laserPrintUP",
+      "valueType": "laserPrintUP",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.laserPrintUP.value"
+    },
+    "laserPrintLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "laserPrintLossRate",
+      "valueType": "laserPrintLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.laserPrintLossRate.value"
+    },
+    "laserPrintIconUP": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "laserPrintIconUP",
+      "valueType": "laserPrintIconUP",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.laserPrintIconUP.value"
+    },
+    "laserPrintIconLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "laserPrintIconLossRate",
+      "valueType": "laserPrintIconLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.laserPrintIconLossRate.value"
+    },
+    "polishingAutoProcessingSpeed": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "polishingAutoProcessingSpeed",
+      "valueType": "polishingAutoProcessingSpeed",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.polishingAutoProcessingSpeed.value"
+    },
+    "polishingAutoUP": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "polishingAutoUP",
+      "valueType": "polishingAutoUP",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.polishingAutoUP.value"
+    },
+    "polishingAutoLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "polishingAutoLossRate",
+      "valueType": "polishingAutoLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.polishingAutoLossRate.value"
+    },
+    "polishingArtificialProcessingSpeed": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "polishingArtificialProcessingSpeed",
+      "valueType": "polishingArtificialProcessingSpeed",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.polishingArtificialProcessingSpeed.value"
+    },
+    "polishingArtificialUP": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "polishingArtificialUP",
+      "valueType": "polishingArtificialUP",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.polishingArtificialUP.value"
+    },
+    "polishingArtificialLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "polishingArtificialLossRate",
+      "valueType": "polishingArtificialLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.polishingArtificialLossRate.value"
+    },
+    "drillingConst1": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "drillingConst1",
+      "valueType": "drillingConst1",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.drillingConst1.value"
+    },
+    "drillingUP": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "drillingUP",
+      "valueType": "drillingUP",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.drillingUP.value"
+    },
+    "drillingLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "drillingLossRate",
+      "valueType": "drillingLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.drillingLossRate.value"
+    },
+    "anodizingRemovalUP": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "anodizingRemovalUP",
+      "valueType": "anodizingRemovalUP",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.anodizingRemovalUP.value"
+    },
+    "anodizingRemovalLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "anodizingRemovalLossRate",
+      "valueType": "anodizingRemovalLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.anodizingRemovalLossRate.value"
+    },
+    "profit_percent": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "profit_percent",
+      "valueType": "profit_percent",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.profit_percent.value"
+    },
+    "cmfProcessListDrillCutPowerButtonLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListDrillCutPowerButtonLossRate",
+      "valueType": "cmfProcessListDrillCutPowerButtonLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListDrillCutPowerButtonLossRate.value"
+    },
+    "cmfProcessListDrillCutTPLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListDrillCutTPLossRate",
+      "valueType": "cmfProcessListDrillCutTPLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListDrillCutTPLossRate.value"
+    },
+    "cmfProcessListDrillCutFingerprintHoleLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListDrillCutFingerprintHoleLossRate",
+      "valueType": "cmfProcessListDrillCutFingerprintHoleLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListDrillCutFingerprintHoleLossRate.value"
+    },
+    "cmfProcessListDrillCutPowerHoleLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListDrillCutPowerHoleLossRate",
+      "valueType": "cmfProcessListDrillCutPowerHoleLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListDrillCutPowerHoleLossRate.value"
+    },
+    "cmfProcessListFourSidesLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListFourSidesLossRate",
+      "valueType": "cmfProcessListFourSidesLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListFourSidesLossRate.value"
+    },
+    "hmMaterialLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "hmMaterialLossRate",
+      "valueType": "hmMaterialLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.hmMaterialLossRate.value"
+    },
+    "hmToolingMaterialExpandWidth": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "hmToolingMaterialExpandWidth",
+      "valueType": "hmToolingMaterialExpandWidth",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.hmToolingMaterialExpandWidth.value"
+    },
+    "hmToolingMaterialExpandLength": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "hmToolingMaterialExpandLength",
+      "valueType": "hmToolingMaterialExpandLength",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.hmToolingMaterialExpandLength.value"
+    },
+    "hmthickness": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "hmthickness",
+      "valueType": "hmthickness",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.hmthickness.value"
+    },
+    "hmmaterialdensity": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "hmmaterialdensity",
+      "valueType": "hmmaterialdensity",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.hmmaterialdensity.value"
+    },
+    "hmmaterialprice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "hmmaterialprice",
+      "valueType": "hmmaterialprice",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.hmmaterialprice.value"
+    },
+    "hmmaterial": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "hmmaterial",
+      "valueType": "hmmaterial",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.hmmaterial.value"
+    },
+    "hmToolingHoleCount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "hmToolingHoleCount",
+      "valueType": "hmToolingHoleCount",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.hmToolingHoleCount.value"
+    },
+    "hmToolingStageDieCount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "hmToolingStageDieCount",
+      "valueType": "hmToolingStageDieCount",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.hmToolingStageDieCount.value"
+    },
+    "hmToolingProgressiveDieCount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "hmToolingProgressiveDieCount",
+      "valueType": "hmToolingProgressiveDieCount",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.hmToolingProgressiveDieCount.value"
+    },
+    "hmToolingRivetingDieCount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "hmToolingRivetingDieCount",
+      "valueType": "hmToolingRivetingDieCount",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.hmToolingRivetingDieCount.value"
+    },
+    "hmpartsexpandwidth": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "hmpartsexpandwidth",
+      "valueType": "hmpartsexpandwidth",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.hmpartsexpandwidth.value"
+    },
+    "hmpartsexpandlength": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "hmpartsexpandlength",
+      "valueType": "hmpartsexpandlength",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.hmpartsexpandlength.value"
+    },
+    "cmfProcessListFirstAnodePrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListFirstAnodePrice",
+      "valueType": "cmfProcessListFirstAnodePrice",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListFirstAnodePrice.value"
+    },
+    "cmfProcessListSecondAnodePrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListSecondAnodePrice",
+      "valueType": "cmfProcessListSecondAnodePrice",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListSecondAnodePrice.value"
+    },
+    "cmfProcessListFirstAnodeLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListFirstAnodeLossRate",
+      "valueType": "cmfProcessListFirstAnodeLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListFirstAnodeLossRate.value"
+    },
+    "cmfProcessListSecondAnodeLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListSecondAnodeLossRate",
+      "valueType": "cmfProcessListSecondAnodeLossRate",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListSecondAnodeLossRate.value"
+    },
+    "cmfProcessListSecondAnodeQty": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListSecondAnodeQty",
+      "valueType": "cmfProcessListSecondAnodeQty",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListSecondAnodeQty.value"
+    },
+    "cmfProcessListHairLineArea": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListHairLineArea",
+      "valueType": "cmfProcessListHairLineArea",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListHairLineArea.value"
+    },
+    "cmfProcessListPaintingCount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListPaintingCount",
+      "valueType": "cmfProcessListPaintingCount",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListPaintingCount.value"
+    },
+    "cmfProcessListPaintingFilmThickness": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListPaintingFilmThickness",
+      "valueType": "cmfProcessListPaintingFilmThickness",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListPaintingFilmThickness.value"
+    },
+    "CmfProcessListPaintingPriceUSD": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "CmfProcessListPaintingPriceUSD",
+      "valueType": "CmfProcessListPaintingPriceUSD",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.CmfProcessListPaintingPriceUSD.value"
+    },
+    "cmfProcessListThermalBondingCycleTimeValue": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListThermalBondingCycleTimeValue",
+      "valueType": "cmfProcessListThermalBondingCycleTimeValue",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListThermalBondingCycleTimeValue.value"
+    },
+    "cmfProcessListThermalBondingGlueSyringeDiameter": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListThermalBondingGlueSyringeDiameter",
+      "valueType": "cmfProcessListThermalBondingGlueSyringeDiameter",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListThermalBondingGlueSyringeDiameter.value"
+    },
+    "cmfProcessListThermalBondingPathLength": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListThermalBondingPathLength",
+      "valueType": "cmfProcessListThermalBondingPathLength",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListThermalBondingPathLength.value"
+    },
+    "cmfProcessListThermalBondingGlueDensity": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListThermalBondingGlueDensity",
+      "valueType": "cmfProcessListThermalBondingGlueDensity",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListThermalBondingGlueDensity.value"
+    },
+    "cmfProcessListThermalBondingGluePrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListThermalBondingGluePrice",
+      "valueType": "cmfProcessListThermalBondingGluePrice",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListThermalBondingGluePrice.value"
+    },
+    "cmfProcessListSingleTappingCount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListSingleTappingCount",
+      "valueType": "cmfProcessListSingleTappingCount",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListSingleTappingCount.value"
+    },
+    "cmfProcessListMultiTappingCount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListMultiTappingCount",
+      "valueType": "cmfProcessListMultiTappingCount",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListMultiTappingCount.value"
+    },
+    "cmfProcessListSingleSpotWeldingCount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListSingleSpotWeldingCount",
+      "valueType": "cmfProcessListSingleSpotWeldingCount",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListSingleSpotWeldingCount.value"
+    },
+    "cmfProcessListMultiSpotWeldingCount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListMultiSpotWeldingCount",
+      "valueType": "cmfProcessListMultiSpotWeldingCount",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListMultiSpotWeldingCount.value"
+    },
+    "cmfProcessListRivetCount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListRivetCount",
+      "valueType": "cmfProcessListRivetCount",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListRivetCount.value"
+    },
+    "cmfProcessListPaintingArea": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListPaintingArea",
+      "valueType": "cmfProcessListPaintingArea",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListPaintingArea.value"
+    },
+    "cmfProcessListHandMakeDrawCount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListHandMakeDrawCount",
+      "valueType": "cmfProcessListHandMakeDrawCount",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListHandMakeDrawCount.value"
+    },
+    "cmfProcessListScreenPrintingCount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListScreenPrintingCount",
+      "valueType": "cmfProcessListScreenPrintingCount",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListScreenPrintingCount.value"
+    },
+    "cmfProcessListPadPrintingCount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListPadPrintingCount",
+      "valueType": "cmfProcessListPadPrintingCount",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListPadPrintingCount.value"
+    },
+    "cmfProcessListSilkPrintCount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListSilkPrintCount",
+      "valueType": "cmfProcessListSilkPrintCount",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListSilkPrintCount.value"
+    },
+    "cmfProcessListCNCArea": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListCNCArea",
+      "valueType": "cmfProcessListCNCArea",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListCNCArea.value"
+    },
+    "cmfProcessListCNCPLLength": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListCNCPLLength",
+      "valueType": "cmfProcessListCNCPLLength",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListCNCPLLength.value"
+    },
+    "cmfProcessListDrillCutArea": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListDrillCutArea",
+      "valueType": "string",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListDrillCutArea.label"
+    },
+    "cmfProcessListLaserPrintArea": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListLaserPrintArea",
+      "valueType": "cmfProcessListLaserPrintArea",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListLaserPrintArea.value"
+    },
+    "cmfProcessListLaserPrintIconCount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListLaserPrintIconCount",
+      "valueType": "cmfProcessListLaserPrintIconCount",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListLaserPrintIconCount.value"
+    },
+    "cmfProcessListPolishingAutoArea": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListPolishingAutoArea",
+      "valueType": "cmfProcessListPolishingAutoArea",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListPolishingAutoArea.value"
+    },
+    "cmfProcessListPolishingAutoCheckBox": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListPolishingAutoCheckBox",
+      "valueType": "cmfProcessListPolishingAutoCheckBox",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListPolishingAutoCheckBox.value"
+    },
+    "cmfProcessListPolishingArtificialCheckBox": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListPolishingArtificialCheckBox",
+      "valueType": "cmfProcessListPolishingArtificialCheckBox",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListPolishingArtificialCheckBox.value"
+    },
+    "cmfProcessListPolishingArtificialArea": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListPolishingArtificialArea",
+      "valueType": "cmfProcessListPolishingArtificialArea",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListPolishingArtificialArea.value"
+    },
+    "cmfProcessListDrillingCount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListDrillingCount",
+      "valueType": "cmfProcessListDrillingCount",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListDrillingCount.value"
+    },
+    "cmfProcessListSandBlastSideCount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListSandBlastSideCount",
+      "valueType": "cmfProcessListSandBlastSideCount",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListSandBlastSideCount.value"
+    },
+    "cmfProcessListultrasonicCleanExist": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListultrasonicCleanExist",
+      "valueType": "cmfProcessListultrasonicCleanExist",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListultrasonicCleanExist.value"
+    },
+    "cmfProcessListFirstAnodeCheckBox": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListFirstAnodeCheckBox",
+      "valueType": "cmfProcessListFirstAnodeCheckBox",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListFirstAnodeCheckBox.value"
+    },
+    "cmfProcessListSecondAnodeCheckBox": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListSecondAnodeCheckBox",
+      "valueType": "cmfProcessListSecondAnodeCheckBox",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListSecondAnodeCheckBox.value"
+    },
+    "cmfProcessListSandBlastCheckBox": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListSandBlastCheckBox",
+      "valueType": "cmfProcessListSandBlastCheckBox",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListSandBlastCheckBox.value"
+    },
+    "cmfProcessListHairLineCheckBox": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListHairLineCheckBox",
+      "valueType": "cmfProcessListHairLineCheckBox",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListHairLineCheckBox.value"
+    },
+    "cmfProcessListPaintingCheckBox": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListPaintingCheckBox",
+      "valueType": "cmfProcessListPaintingCheckBox",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListPaintingCheckBox.value"
+    },
+    "cmfProcessListThermalBondingCheckBox": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListThermalBondingCheckBox",
+      "valueType": "cmfProcessListThermalBondingCheckBox",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListThermalBondingCheckBox.value"
+    },
+    "cmfProcessListSingleTappingCheckBox": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListSingleTappingCheckBox",
+      "valueType": "cmfProcessListSingleTappingCheckBox",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListSingleTappingCheckBox.value"
+    },
+    "cmfProcessListMultiTappingCheckBox": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListMultiTappingCheckBox",
+      "valueType": "cmfProcessListMultiTappingCheckBox",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListMultiTappingCheckBox.value"
+    },
+    "cmfProcessListSingleSpotWeldingCheckBox": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListSingleSpotWeldingCheckBox",
+      "valueType": "cmfProcessListSingleSpotWeldingCheckBox",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListSingleSpotWeldingCheckBox.value"
+    },
+    "cmfProcessListMultiSpotWeldingCheckBox": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListMultiSpotWeldingCheckBox",
+      "valueType": "cmfProcessListMultiSpotWeldingCheckBox",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListMultiSpotWeldingCheckBox.value"
+    },
+    "cmfProcessListRivetCheckBox": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListRivetCheckBox",
+      "valueType": "cmfProcessListRivetCheckBox",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListRivetCheckBox.value"
+    },
+    "cmfProcessListHandMakeDrawCheckBox": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListHandMakeDrawCheckBox",
+      "valueType": "cmfProcessListHandMakeDrawCheckBox",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListHandMakeDrawCheckBox.value"
+    },
+    "cmfProcessListScreenPrintingCheckBox": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListScreenPrintingCheckBox",
+      "valueType": "cmfProcessListScreenPrintingCheckBox",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListScreenPrintingCheckBox.value"
+    },
+    "cmfProcessListPadPrintingCheckBox": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListPadPrintingCheckBox",
+      "valueType": "cmfProcessListPadPrintingCheckBox",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListPadPrintingCheckBox.value"
+    },
+    "cmfProcessListSilkPrintCheckBox": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListSilkPrintCheckBox",
+      "valueType": "cmfProcessListSilkPrintCheckBox",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListSilkPrintCheckBox.value"
+    },
+    "cmfProcessListCNCCheckBox": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListCNCCheckBox",
+      "valueType": "cmfProcessListCNCCheckBox",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListCNCCheckBox.value"
+    },
+    "cmfProcessListCNCPLCheckBox": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListCNCPLCheckBox",
+      "valueType": "cmfProcessListCNCPLCheckBox",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListCNCPLCheckBox.value"
+    },
+    "cmfProcessListDrillCutCheckBox": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListDrillCutCheckBox",
+      "valueType": "string",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListDrillCutCheckBox.label"
+    },
+    "cmfProcessListLaserPrintCheckBox": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListLaserPrintCheckBox",
+      "valueType": "cmfProcessListLaserPrintCheckBox",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListLaserPrintCheckBox.value"
+    },
+    "cmfProcessListLaserPrintIconCheckBox": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListLaserPrintIconCheckBox",
+      "valueType": "cmfProcessListLaserPrintIconCheckBox",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListLaserPrintIconCheckBox.value"
+    },
+    "cmfProcessListDrillingCheckBox": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListDrillingCheckBox",
+      "valueType": "cmfProcessListDrillingCheckBox",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListDrillingCheckBox.value"
+    },
+    "cmfProcessListSingleRivetCheckBox": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListSingleRivetCheckBox",
+      "valueType": "cmfProcessListSingleRivetCheckBox",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListSingleRivetCheckBox.value"
+    },
+    "cmfProcessListSingleRivetCount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListSingleRivetCount",
+      "valueType": "cmfProcessListSingleRivetCount",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListSingleRivetCount.value"
+    },
+    "cmfProcessListMultiRivetCheckBox": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListMultiRivetCheckBox",
+      "valueType": "cmfProcessListMultiRivetCheckBox",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListMultiRivetCheckBox.value"
+    },
+    "cmfProcessListMultiRivetCount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListMultiRivetCount",
+      "valueType": "cmfProcessListMultiRivetCount",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListMultiRivetCount.value"
+    },
+    "cmfProcessListAnodizingRemovalCheckBox": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListAnodizingRemovalCheckBox",
+      "valueType": "cmfProcessListAnodizingRemovalCheckBox",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListAnodizingRemovalCheckBox.value"
+    },
+    "cmfProcessListAnodizingRemovalCount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListAnodizingRemovalCount",
+      "valueType": "cmfProcessListAnodizingRemovalCount",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListAnodizingRemovalCount.value"
+    },
+    "hmToolingStageDiePress": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "hmToolingStageDiePress",
+      "valueType": "hmToolingStageDiePress",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.hmToolingStageDiePress.value"
+    },
+    "hmToolingStageDieModule": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "hmToolingStageDieModule",
+      "valueType": "hmToolingStageDieModule",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.hmToolingStageDieModule.value"
+    },
+    "hmToolingStageDieModuleCost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "hmToolingStageDieModuleCost",
+      "valueType": "hmToolingStageDieModuleCost",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.hmToolingStageDieModuleCost.value"
+    },
+    "hmToolingProgressiveDiePress": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "hmToolingProgressiveDiePress",
+      "valueType": "hmToolingProgressiveDiePress",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.hmToolingProgressiveDiePress.value"
+    },
+    "hmToolingProgressiveDieModule": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "hmToolingProgressiveDieModule",
+      "valueType": "hmToolingProgressiveDieModule",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.hmToolingProgressiveDieModule.value"
+    },
+    "hmToolingProgressiveDieModuleCost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "hmToolingProgressiveDieModuleCost",
+      "valueType": "hmToolingProgressiveDieModuleCost",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.hmToolingProgressiveDieModuleCost.value"
+    },
+    "hmToolingRivetingDiePress": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "hmToolingRivetingDiePress",
+      "valueType": "hmToolingRivetingDiePress",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.hmToolingRivetingDiePress.value"
+    },
+    "hmToolingRivetingDieModule": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "hmToolingRivetingDieModule",
+      "valueType": "hmToolingRivetingDieModule",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.hmToolingRivetingDieModule.value"
+    },
+    "hmToolingRivetingDieModuleCost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "hmToolingRivetingDieModuleCost",
+      "valueType": "hmToolingRivetingDieModuleCost",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.hmToolingRivetingDieModuleCost.value"
+    },
+    "ce_patintingAreaConst1": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "ce_patintingAreaConst1",
+      "valueType": "ce_patintingAreaConst1",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.ce_patintingAreaConst1.value"
+    },
+    "cmfProcessListDrillCutPowerButtonCost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListDrillCutPowerButtonCost",
+      "valueType": "cmfProcessListDrillCutPowerButtonCost",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListDrillCutPowerButtonCost.value"
+    },
+    "cmfProcessListDrillCutTPCost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListDrillCutTPCost",
+      "valueType": "cmfProcessListDrillCutTPCost",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListDrillCutTPCost.value"
+    },
+    "cmfProcessListDrillCutFingerprintHoleCost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListDrillCutFingerprintHoleCost",
+      "valueType": "cmfProcessListDrillCutFingerprintHoleCost",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListDrillCutFingerprintHoleCost.value"
+    },
+    "cmfProcessListDrillCutPowerHoleCost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListDrillCutPowerHoleCost",
+      "valueType": "cmfProcessListDrillCutPowerHoleCost",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListDrillCutPowerHoleCost.value"
+    },
+    "cmfProcessListDrillCutFourSidesCost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListDrillCutFourSidesCost",
+      "valueType": "cmfProcessListDrillCutFourSidesCost",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListDrillCutFourSidesCost.value"
+    },
+    "cmfProcessListDrillCutPowerButtonExist": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListDrillCutPowerButtonExist",
+      "valueType": "cmfProcessListDrillCutPowerButtonExist",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListDrillCutPowerButtonExist.value"
+    },
+    "cmfProcessListDrillCutTPExist": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListDrillCutTPExist",
+      "valueType": "cmfProcessListDrillCutTPExist",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListDrillCutTPExist.value"
+    },
+    "cmfProcessListDrillCutFingerprintHoleExist": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListDrillCutFingerprintHoleExist",
+      "valueType": "cmfProcessListDrillCutFingerprintHoleExist",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListDrillCutFingerprintHoleExist.value"
+    },
+    "cmfProcessListDrillCutPowerHoleExist": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListDrillCutPowerHoleExist",
+      "valueType": "cmfProcessListDrillCutPowerHoleExist",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListDrillCutPowerHoleExist.value"
+    },
+    "cmfProcessListDrillCutFourSidesExist": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListDrillCutFourSidesExist",
+      "valueType": "cmfProcessListDrillCutFourSidesExist",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListDrillCutFourSidesExist.value"
+    },
+    "_productType": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "_productType",
+      "valueType": "_productType",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal._productType.value"
+    },
+    "_type2": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "_type2",
+      "valueType": "_type2",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal._type2.value"
+    },
+    "isMetal": {
+      "label": "Metal and other type2",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "isMetal",
+      "valueType": "isMetal",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.isMetal.value"
+    },
+    "isAluminum": {
+      "label": "aluminum",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "isAluminum",
+      "valueType": "isAluminum",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.isAluminum.value"
+    },
+    "hmToolingStageDieModuleCostFunc": {
+      "label": "工程模機台費",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "hmToolingStageDieModuleCostFunc",
+      "valueType": "hmToolingStageDieModuleCostFunc",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.hmToolingStageDieModuleCostFunc.value"
+    },
+    "hmToolingStageDieCost": {
+      "label": "工程模",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "hmToolingStageDieCost",
+      "valueType": "hmToolingStageDieCost",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.hmToolingStageDieCost.value"
+    },
+    "hmToolingProgressiveDieCost": {
+      "label": "連續模",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "hmToolingProgressiveDieCost",
+      "valueType": "hmToolingProgressiveDieCost",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.hmToolingProgressiveDieCost.value"
+    },
+    "hmToolingRivetingDieCost": {
+      "label": "鉚合模",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "hmToolingRivetingDieCost",
+      "valueType": "hmToolingRivetingDieCost",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.hmToolingRivetingDieCost.value"
+    },
+    "productExpendSize": {
+      "label": "成品展開尺寸",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "productExpendSize",
+      "valueType": "productExpendSize",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.productExpendSize.value"
+    },
+    "cmfProcessListUltrasonicClean": {
+      "label": "超音波清洗",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListUltrasonicClean",
+      "valueType": "cmfProcessListUltrasonicClean",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListUltrasonicClean.value"
+    },
+    "cmfProcessListFirstAnode": {
+      "label": "陽極(一陽)",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListFirstAnode",
+      "valueType": "cmfProcessListFirstAnode",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListFirstAnode.value"
+    },
+    "cmfProcessListSecondAnode": {
+      "label": "陽極(二陽)",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListSecondAnode",
+      "valueType": "cmfProcessListSecondAnode",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListSecondAnode.value"
+    },
+    "cmfProcessListAnode": {
+      "label": "陽極",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListAnode",
+      "valueType": "cmfProcessListAnode",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListAnode.value"
+    },
+    "cmfProcessListSandBlast": {
+      "label": "噴砂",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListSandBlast",
+      "valueType": "cmfProcessListSandBlast",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListSandBlast.value"
+    },
+    "cmfProcessListHairLine": {
+      "label": "髮絲",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListHairLine",
+      "valueType": "cmfProcessListHairLine",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListHairLine.value"
+    },
+    "patintingArea": {
+      "label": "噴塗面積",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "patintingArea",
+      "valueType": "patintingArea",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.patintingArea.value"
+    },
+    "cmfProcessListPatinting": {
+      "label": "噴漆",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListPatinting",
+      "valueType": "cmfProcessListPatinting",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListPatinting.value"
+    },
+    "glueWeight": {
+      "label": "膠水重量",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "glueWeight",
+      "valueType": "glueWeight",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.glueWeight.value"
+    },
+    "cmfProcessListThermalBonding": {
+      "label": "Thermal Bonding 熱壓",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListThermalBonding",
+      "valueType": "cmfProcessListThermalBonding",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListThermalBonding.value"
+    },
+    "cmfProcessListSingleTapping": {
+      "label": "單點攻牙",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListSingleTapping",
+      "valueType": "cmfProcessListSingleTapping",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListSingleTapping.value"
+    },
+    "cmfProcessListMultiTapping": {
+      "label": "多點攻牙",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListMultiTapping",
+      "valueType": "cmfProcessListMultiTapping",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListMultiTapping.value"
+    },
+    "cmfProcessListSingleSpotWelding": {
+      "label": "單點點焊",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListSingleSpotWelding",
+      "valueType": "cmfProcessListSingleSpotWelding",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListSingleSpotWelding.value"
+    },
+    "cmfProcessListMultiSpotWelding": {
+      "label": "多點點焊",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListMultiSpotWelding",
+      "valueType": "cmfProcessListMultiSpotWelding",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListMultiSpotWelding.value"
+    },
+    "cmfProcessListSingleRivet": {
+      "label": "單點鉚釘",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListSingleRivet",
+      "valueType": "cmfProcessListSingleRivet",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListSingleRivet.value"
+    },
+    "cmfProcessListMultiRivet": {
+      "label": "多點鉚釘",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListMultiRivet",
+      "valueType": "cmfProcessListMultiRivet",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListMultiRivet.value"
+    },
+    "cmfProcessListRivet": {
+      "label": "拉鉚釘",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListRivet",
+      "valueType": "cmfProcessListRivet",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListRivet.value"
+    },
+    "cmfProcessListHandMakeDrawCycleTime": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListHandMakeDrawCycleTime",
+      "valueType": "cmfProcessListHandMakeDrawCycleTime",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListHandMakeDrawCycleTime.value"
+    },
+    "cmfProcessListHandMakeDraw": {
+      "label": "手工塗黑",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListHandMakeDraw",
+      "valueType": "cmfProcessListHandMakeDraw",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListHandMakeDraw.value"
+    },
+    "cmfProcessListScreenPrinting": {
+      "label": "Printing網印",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListScreenPrinting",
+      "valueType": "cmfProcessListScreenPrinting",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListScreenPrinting.value"
+    },
+    "cmfProcessListPadPrinting": {
+      "label": "Printing移印",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListPadPrinting",
+      "valueType": "cmfProcessListPadPrinting",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListPadPrinting.value"
+    },
+    "cmfProcessListSilkPrint": {
+      "label": "Silk Print",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListSilkPrint",
+      "valueType": "cmfProcessListSilkPrint",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListSilkPrint.value"
+    },
+    "cmfProcessListCNCPLLengthCycleTime": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListCNCPLLengthCycleTime",
+      "valueType": "cmfProcessListCNCPLLengthCycleTime",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListCNCPLLengthCycleTime.value"
+    },
+    "cmfProcessListDrillCutPowerButton": {
+      "label": "鑽切(高光) - Power button鑽切",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListDrillCutPowerButton",
+      "valueType": "cmfProcessListDrillCutPowerButton",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListDrillCutPowerButton.value"
+    },
+    "cmfProcessListDrillCutTP": {
+      "label": "鑽切(高光) - TP",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListDrillCutTP",
+      "valueType": "cmfProcessListDrillCutTP",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListDrillCutTP.value"
+    },
+    "cmfProcessListDrillCutFingerprintHole": {
+      "label": "鑽切(高光) - 指紋孔鑽切",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListDrillCutFingerprintHole",
+      "valueType": "cmfProcessListDrillCutFingerprintHole",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListDrillCutFingerprintHole.value"
+    },
+    "cmfProcessListDrillCutPowerHole": {
+      "label": "鑽切(高光) - 電源孔鑽切",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListDrillCutPowerHole",
+      "valueType": "cmfProcessListDrillCutPowerHole",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListDrillCutPowerHole.value"
+    },
+    "cmfProcessListDrillCutFourSides": {
+      "label": "鑽切(高光) - 全週4週邊鑽切",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListDrillCutFourSides",
+      "valueType": "cmfProcessListDrillCutFourSides",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListDrillCutFourSides.value"
+    },
+    "cmfProcessListDrillCut": {
+      "label": "鑽切(高光)",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListDrillCut",
+      "valueType": "cmfProcessListDrillCut",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListDrillCut.value"
+    },
+    "cmfProcessListLaserPrint": {
+      "label": "鐳雕(公模面)",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListLaserPrint",
+      "valueType": "cmfProcessListLaserPrint",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListLaserPrint.value"
+    },
+    "cmfProcessListLaserPrintIcon": {
+      "label": "鐳雕(icon)",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListLaserPrintIcon",
+      "valueType": "cmfProcessListLaserPrintIcon",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListLaserPrintIcon.value"
+    },
+    "cmfProcessListPolishingAutoCycleTime": {
+      "label": "打磨(自動) cycle time",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListPolishingAutoCycleTime",
+      "valueType": "cmfProcessListPolishingAutoCycleTime",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListPolishingAutoCycleTime.value"
+    },
+    "cmfProcessListPolishingAuto": {
+      "label": "打磨(自動)",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListPolishingAuto",
+      "valueType": "cmfProcessListPolishingAuto",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListPolishingAuto.value"
+    },
+    "cmfProcessListPolishingArtificial": {
+      "label": "打磨(人工)",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListPolishingArtificial",
+      "valueType": "cmfProcessListPolishingArtificial",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListPolishingArtificial.value"
+    },
+    "cmfProcessListDrilling": {
+      "label": "鑽孔",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListDrilling",
+      "valueType": "cmfProcessListDrilling",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListDrilling.value"
+    },
+    "cmfProcessListAnodizingRemoval": {
+      "label": "陽極掛點切除",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "cmfProcessListAnodizingRemoval",
+      "valueType": "cmfProcessListAnodizingRemoval",
+      "comparisonValuePath": "forDebug.debugInfo.housingMetal.cmfProcessListAnodizingRemoval.value"
+    }
+  }
+}

@@ -1,0 +1,62 @@
+multiple: false
+label: 主材料
+items:
+  - key: FPCConductor
+    label: 導體
+    $Template:
+      - label
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+
+  - key: FPCConductorType
+    label: Type
+    $Template:
+      - selectorString
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1.5
+    require: true
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: material_id
+      ?getFpcMaterial:
+        -
+      # $cable-fpc.dropdown.FPCConductorTypeValues:
+      #   - ^values
+    constrains:
+      - function: "(val) => val == null"
+        message: "此欄位為必選"
+    emdmKey: emdmBomInfo.cmfForm.FPCConductorType
+
+  - key: FPCConductorTypeRemark
+    label: Type Remark
+    $Template:
+      - textarea
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1.5
+      depends:
+        action: lock
+        condition:
+          FPCConductorType: "(val) => val === 'Other_Fill_ME_Remark'"
+    emdmKey: emdmBomInfo.cmfForm.fpcConductorTypeRemark
+
+  - key: FPCConductorTypeUnitPrice
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    mapFrom:
+      - FPCConductorType
+    selectorConfig:
+      ?getFpcMaterial:
+        -
+      # $cable-fpc.dropdown.FPCConductorTypeValues:
+      #   - ^values

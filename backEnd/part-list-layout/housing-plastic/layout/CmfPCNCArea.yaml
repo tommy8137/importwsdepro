@@ -1,0 +1,96 @@
+multiple: true
+items:
+  - key: cmfPCNCProcessingAreaCheckBox
+    $Template:
+      - checkBox
+    label: Exist
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    emdmKey: emdmBomInfo.cmfForm.cmfPCNCProcessingAreaCheckBox
+
+  - key: cmfPCNCProcessingAreaType
+    $Template:
+      - selectorString
+    label: 局部加工(TYPE)
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: cmfPCNCProcessingAreaId
+      ?getPlasticCNCArea:
+        - housing_plastic_secondary_processing
+      # $housing-plastic.dropdown.CmfPCNCProcessingAreaType:
+      #   - ^values
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfPCNCProcessingAreaCheckBox: true
+      grids: 1
+      display: true
+    default: N/A
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfPCNCProcessingAreaCheckBox)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfPCNCProcessingAreaCheckBox
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfPCNCProcessingAreaType
+
+  - key: cmfPCNCProcessingAreaCount
+    $Template:
+      - inputInt
+    label: 數量
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfPCNCProcessingAreaCheckBox: true
+      grids: 1
+      display: true
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfPCNCProcessingAreaCheckBox)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfPCNCProcessingAreaCheckBox
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfPCNCProcessingAreaCount
+
+  - key: cmfPCNCProcessingAreaUP
+    $Template:
+      - mappedValueString
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getPlasticCNCArea:
+        - housing_plastic_secondary_processing
+      # $housing-plastic.dropdown.CmfPCNCProcessingAreaType:
+      #   - ^values
+    mapFrom:
+      - cmfPCNCProcessingAreaType
+
+  - key: cmfPCNCProcessingAreaLossRate
+    $Template:
+      - mappedValueString
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getPlasticCNCArea:
+        - housing_plastic_secondary_processing
+      # $housing-plastic.dropdown.CmfPCNCProcessingAreaType:
+      #   - ^values
+    mapFrom:
+      - cmfPCNCProcessingAreaType

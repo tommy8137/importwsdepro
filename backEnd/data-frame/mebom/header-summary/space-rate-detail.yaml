@@ -1,0 +1,45 @@
+headers:
+  part_category1:
+    label: Part Category I
+    subHeader: Itme info
+    subHeaderSite: 1
+    subHeaderMerge: 3
+    mainHeader: Total Summary Detail
+    mainHeaderSite: 2
+    mainHeaderMerge: 7
+    $mebom.header-summary.Template:
+      - dataStringType1
+
+  part_category2:
+    label: Part Category II
+    $mebom.header-summary.Template:
+      - dataStringSummaryBold
+
+  part_name:
+    label: Part Name
+    $mebom.header-summary.Template:
+      - dataStringSummary
+
+  sku1_total:
+    label: 加總 - SKU 1 (QTY)
+    subHeader: 數值
+    subHeaderSite: 1
+    subHeaderMerge: 4
+    $mebom.header-summary.Template:
+      - dataFloatCost
+
+  ce_cost_total:
+    label: 加總 - CE Cost (SKU 1 Amount)
+    $mebom.header-summary.Template:
+      - dataFloat
+
+  sourcer_cost_total:
+    label: 加總 - Sourcer Cost (SKU 1 Amount)
+    $mebom.header-summary.Template:
+      - dataFloat
+
+  gap:
+    label: 加總 - Gap(CE-Sourcer)
+    discolor: true
+    $mebom.header-summary.Template:
+      - dataFloat

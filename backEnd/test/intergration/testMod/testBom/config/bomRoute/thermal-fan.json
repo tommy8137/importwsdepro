@@ -1,0 +1,611 @@
+{
+  "xlsxName": "Test_Data_Thermal_Fan_NB.xlsx",
+  "sheetName": "NB_Thermal_Fan",
+  "startHorizontalCoordinates": "C",
+  "transferMode": "createPath",
+  "formate": "thermal-fan",
+  "metadata": {
+    "productType": {
+      "createPath": "productType",
+      "valuekey": "productType",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "1"
+    },
+    "testLabel": {
+      "createPath": "testLabel",
+      "valuekey": "testLabel",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "2"
+    },
+    "type1": {
+      "createPath": "type1",
+      "valuekey": "type1",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "3"
+    },
+    "type2": {
+      "createPath": "type2",
+      "valuekey": "type2",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "4"
+    }
+  },
+  "transferPartlistInfo": {
+    "formData,thermal-fan,Process,process,appearanceProcess": {
+      "createPath": "formData.thermal-fan.Process.process.appearanceProcess",
+      "valuekey": "appearanceProcess",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": 29,
+      "default": true
+    },
+    "formData,thermal-fan,Process,process,maskSpray": {
+      "createPath": "formData.thermal-fan.Process.process.maskSpray",
+      "valuekey": "maskSpray",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": 30,
+      "default": true
+    },
+    "formData,thermal-fan,Process,laserMarking": {
+      "createPath": "formData.thermal-fan.Process.laserMarking",
+      "valuekey": "laserMarking",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": 35,
+      "default": true
+    },
+    "formData,thermal-fan,Process,laserMarkingArea": {
+      "createPath": "formData.thermal-fan.Process.laserMarkingArea",
+      "valuekey": "laserMarkingArea",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 37,
+      "default": null
+    },
+    "formData,thermal-fan,Fan,0,uuid": {
+      "createPath": "formData.thermal-fan.Fan.0.uuid",
+      "valuekey": "uuid",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    },
+    "formData,thermal-fan,Fan,0,fanLabel": {
+      "createPath": "formData.thermal-fan.Fan.0.fanLabel",
+      "valuekey": "fanLabel",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 4,
+      "default": null
+    },
+    "formData,thermal-fan,Fan,0,fanAmount": {
+      "createPath": "formData.thermal-fan.Fan.0.fanAmount",
+      "valuekey": "fanAmount",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 25,
+      "default": null
+    },
+    "formData,thermal-fan,Fan,0,fanType": {
+      "createPath": "formData.thermal-fan.Fan.0.fanType",
+      "valuekey": "fanType",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 12,
+      "default": null
+    },
+    "formData,thermal-fan,Fan,0,fanSizePanel,fanSizeX": {
+      "createPath": "formData.thermal-fan.Fan.0.fanSizePanel.fanSizeX",
+      "valuekey": "fanSizeX",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 53,
+      "default": null
+    },
+    "formData,thermal-fan,Fan,0,fanSizePanel,fanSizeY": {
+      "createPath": "formData.thermal-fan.Fan.0.fanSizePanel.fanSizeY",
+      "valuekey": "fanSizeY",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 54,
+      "default": null
+    },
+    "formData,thermal-fan,Fan,0,fanSizePanel,fanSize": {
+      "createPath": "formData.thermal-fan.Fan.0.fanSizePanel.fanSize",
+      "valuekey": "fanSize",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 55,
+      "default": null
+    },
+    "formData,thermal-fan,Fan,0,fanSizePanel,fanSizePrice": {
+      "createPath": "formData.thermal-fan.Fan.0.fanSizePanel.fanSizePrice",
+      "valuekey": "fanSizePrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,thermal-fan,Fan,0,fanSizePanel,fanArea": {
+      "createPath": "formData.thermal-fan.Fan.0.fanSizePanel.fanArea",
+      "valuekey": "fanArea",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 58,
+      "default": null
+    },
+    "formData,thermal-fan,Fan,0,fanSizePanel,fanCostAdder": {
+      "createPath": "formData.thermal-fan.Fan.0.fanSizePanel.fanCostAdder",
+      "valuekey": "fanCostAdder",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 59,
+      "default": null
+    },
+    "formData,thermal-fan,Fan,0,motorArchitecture": {
+      "createPath": "formData.thermal-fan.Fan.0.motorArchitecture",
+      "valuekey": "motorArchitecture",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 15,
+      "default": null
+    },
+    "formData,thermal-fan,Fan,0,motorArchitecturePrice": {
+      "createPath": "formData.thermal-fan.Fan.0.motorArchitecturePrice",
+      "valuekey": "motorArchitecturePrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 16,
+      "default": 0
+    },
+    "formData,thermal-fan,Fan,0,bearingAndSleeve": {
+      "createPath": "formData.thermal-fan.Fan.0.bearingAndSleeve",
+      "valuekey": "bearingAndSleeve",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 17,
+      "default": null
+    },
+    "formData,thermal-fan,Fan,0,bearingAndSleevePrice": {
+      "createPath": "formData.thermal-fan.Fan.0.bearingAndSleevePrice",
+      "valuekey": "bearingAndSleevePrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 18,
+      "default": 0
+    },
+    "formData,thermal-fan,Fan,0,fanBladeMaterial": {
+      "createPath": "formData.thermal-fan.Fan.0.fanBladeMaterial",
+      "valuekey": "fanBladeMaterial",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 19,
+      "default": 0
+    },
+    "formData,thermal-fan,Fan,0,fanBladeMaterialPrice": {
+      "createPath": "formData.thermal-fan.Fan.0.fanBladeMaterialPrice",
+      "valuekey": "fanBladeMaterialPrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 20,
+      "default": 0
+    },
+    "formData,thermal-fan,Fan,0,magnetMaterialAndSize": {
+      "createPath": "formData.thermal-fan.Fan.0.magnetMaterialAndSize",
+      "valuekey": "magnetMaterialAndSize",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 21,
+      "default": null
+    },
+    "formData,thermal-fan,Fan,0,magnetMaterialAndSizePrice": {
+      "createPath": "formData.thermal-fan.Fan.0.magnetMaterialAndSizePrice",
+      "valuekey": "magnetMaterialAndSizePrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 22,
+      "default": 0
+    },
+    "formData,thermal-fan,Fan,0,fanVoltage": {
+      "createPath": "formData.thermal-fan.Fan.0.fanVoltage",
+      "valuekey": "fanVoltage",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 56,
+      "default": null
+    },
+    "formData,thermal-fan,Fan,0,fanVoltagePrice": {
+      "createPath": "formData.thermal-fan.Fan.0.fanVoltagePrice",
+      "valuekey": "fanVoltagePrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,thermal-fan,Fan,0,hasHalogen": {
+      "createPath": "formData.thermal-fan.Fan.0.hasHalogen",
+      "valuekey": "hasHalogen",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": 24,
+      "default": true
+    },
+    "formData,thermal-fan,Fan,0,poundOut": {
+      "createPath": "formData.thermal-fan.Fan.0.poundOut",
+      "valuekey": "poundOut",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": 57,
+      "default": true
+    }
+  },
+  "verifyInfo": {
+    "totalPrices": {
+      "label": "總價",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "totalPrices",
+      "valueType": "totalPrices",
+      "comparisonValuePath": "totalPrices"
+    },
+    "parentGroupId": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "parentGroupId",
+      "valueType": "parentGroupId",
+      "comparisonValuePath": "forDebug.summary.thermalFan.parentGroupId"
+    },
+    "id": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "id",
+      "valueType": "id",
+      "comparisonValuePath": "forDebug.summary.Fan-f9565dfe-68c2-4b7b-a25e-d766082adb55.fanSizePriceValues.values.18.id"
+    },
+    "fanSize": {
+      "label": "fanSize",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fanSize",
+      "valueType": "fanSize",
+      "comparisonValuePath": "forDebug.summary.Fan-f9565dfe-68c2-4b7b-a25e-d766082adb55.fanSize"
+    },
+    "fanSizePrice": {
+      "label": "Fan unit price",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fanSizePrice",
+      "valueType": "fanSizePrice",
+      "comparisonValuePath": "forDebug.summary.Fan-f9565dfe-68c2-4b7b-a25e-d766082adb55.fanSizePrice"
+    },
+    "activate_date": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "activate_date",
+      "valueType": "activate_date",
+      "comparisonValuePath": "forDebug.summary.Fan-f9565dfe-68c2-4b7b-a25e-d766082adb55.fanSizePriceValues.values.18.activate_date"
+    },
+    "qty": {
+      "label": "用量",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "qty",
+      "valueType": "qty",
+      "comparisonValuePath": "forDebug.summary.Fan-f9565dfe-68c2-4b7b-a25e-d766082adb55.qty"
+    },
+    "poundOut": {
+      "label": "打凸",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "poundOut",
+      "valueType": "poundOut",
+      "comparisonValuePath": "forDebug.summary.Fan-f9565dfe-68c2-4b7b-a25e-d766082adb55.poundOut"
+    },
+    "fanVoltagePrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fanVoltagePrice",
+      "valueType": "fanVoltagePrice",
+      "comparisonValuePath": "forDebug.summary.Fan-f9565dfe-68c2-4b7b-a25e-d766082adb55.fanVoltagePrice"
+    },
+    "unit_price": {
+      "label": "單價",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "unit_price",
+      "valueType": "unit_price",
+      "comparisonValuePath": "forDebug.summary.Fan-f9565dfe-68c2-4b7b-a25e-d766082adb55.unit_price"
+    },
+    "total": {
+      "label": "總價",
+      "excelValueLongitudinalCoordinates": "52",
+      "valuekey": "total",
+      "valueType": "total",
+      "comparisonValuePath": "forDebug.summary.thermalFan.total"
+    },
+    "fanLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fanLossRate",
+      "valueType": "fanLossRate",
+      "comparisonValuePath": "forDebug.summary.Fan-f9565dfe-68c2-4b7b-a25e-d766082adb55.fanLossRate"
+    },
+    "assemblyTime": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "assemblyTime",
+      "valueType": "assemblyTime",
+      "comparisonValuePath": "forDebug.summary.Fan-f9565dfe-68c2-4b7b-a25e-d766082adb55.assemblyTime"
+    },
+    "A.component_cost": {
+      "label": "A.零件費用  ",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "A.component_cost",
+      "valueType": "A.component_cost",
+      "comparisonValuePath": "forDebug.summary.thermalFan.A.component_cost"
+    },
+    "B-2.painting_cost": {
+      "label": "B.2 噴漆費用",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "B-2.painting_cost",
+      "valueType": "B-2.painting_cost",
+      "comparisonValuePath": "forDebug.summary.thermalFan.B-2.painting_cost"
+    },
+    "B-3.maskSpray_cost": {
+      "label": "B.3 遮噴費用",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "B-3.maskSpray_cost",
+      "valueType": "B-3.maskSpray_cost",
+      "comparisonValuePath": "forDebug.summary.thermalFan.B-3.maskSpray_cost"
+    },
+    "B-4.laserMarking_cost": {
+      "label": "雷雕費用",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "B-4.laserMarking_cost",
+      "valueType": "B-4.laserMarking_cost",
+      "comparisonValuePath": "forDebug.summary.thermalFan.B-4.laserMarking_cost"
+    },
+    "B.processing_cost": {
+      "label": "B.加工費",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "B.processing_cost",
+      "valueType": "B.processing_cost",
+      "comparisonValuePath": "forDebug.summary.thermalFan.B.processing_cost"
+    },
+    "C.profit_cost": {
+      "label": "C.管銷&利潤",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "C.profit_cost",
+      "valueType": "C.profit_cost",
+      "comparisonValuePath": "forDebug.summary.thermalFan.C.profit_cost"
+    },
+    "fanSizePriceValues": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fanSizePriceValues",
+      "valueType": "string",
+      "comparisonValuePath": "forDebug.debugInfo.Fan-f9565dfe-68c2-4b7b-a25e-d766082adb55.fanSizePriceValues.label"
+    },
+    "worktimeSec": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "worktimeSec",
+      "valueType": "worktimeSec",
+      "comparisonValuePath": "forDebug.debugInfo.thermalFan.worktimeSec.value"
+    },
+    "fanAssemblyTimeNumber": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fanAssemblyTimeNumber",
+      "valueType": "fanAssemblyTimeNumber",
+      "comparisonValuePath": "forDebug.debugInfo.Fan-f9565dfe-68c2-4b7b-a25e-d766082adb55.fanAssemblyTimeNumber.value"
+    },
+    "fan_loss_rate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fan_loss_rate",
+      "valueType": "fan_loss_rate",
+      "comparisonValuePath": "forDebug.debugInfo.Fan-f9565dfe-68c2-4b7b-a25e-d766082adb55.fan_loss_rate.value"
+    },
+    "fanLossRateValues": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fanLossRateValues",
+      "valueType": "string",
+      "comparisonValuePath": "forDebug.debugInfo.Fan-f9565dfe-68c2-4b7b-a25e-d766082adb55.fanLossRateValues.label"
+    },
+    "fanAmount": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fanAmount",
+      "valueType": "fanAmount",
+      "comparisonValuePath": "forDebug.debugInfo.Fan-f9565dfe-68c2-4b7b-a25e-d766082adb55.fanAmount.value"
+    },
+    "bearingAndSleevePrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "bearingAndSleevePrice",
+      "valueType": "bearingAndSleevePrice",
+      "comparisonValuePath": "forDebug.debugInfo.Fan-f9565dfe-68c2-4b7b-a25e-d766082adb55.bearingAndSleevePrice.value"
+    },
+    "fanVoltage": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fanVoltage",
+      "valueType": "fanVoltage",
+      "comparisonValuePath": "forDebug.debugInfo.Fan-f9565dfe-68c2-4b7b-a25e-d766082adb55.fanVoltage.value"
+    },
+    "motorArchitecturePrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "motorArchitecturePrice",
+      "valueType": "motorArchitecturePrice",
+      "comparisonValuePath": "forDebug.debugInfo.Fan-f9565dfe-68c2-4b7b-a25e-d766082adb55.motorArchitecturePrice.value"
+    },
+    "fanBladeMaterialPrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fanBladeMaterialPrice",
+      "valueType": "fanBladeMaterialPrice",
+      "comparisonValuePath": "forDebug.debugInfo.Fan-f9565dfe-68c2-4b7b-a25e-d766082adb55.fanBladeMaterialPrice.value"
+    },
+    "magnetMaterialAndSizePrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "magnetMaterialAndSizePrice",
+      "valueType": "magnetMaterialAndSizePrice",
+      "comparisonValuePath": "forDebug.debugInfo.Fan-f9565dfe-68c2-4b7b-a25e-d766082adb55.magnetMaterialAndSizePrice.value"
+    },
+    "fanAppearanceProcess1Qty": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fanAppearanceProcess1Qty",
+      "valueType": "string",
+      "comparisonValuePath": "forDebug.debugInfo.Fan-f9565dfe-68c2-4b7b-a25e-d766082adb55.fanAppearanceProcess1Qty.label"
+    },
+    "fanAppearanceProcess2Qty": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fanAppearanceProcess2Qty",
+      "valueType": "string",
+      "comparisonValuePath": "forDebug.debugInfo.Fan-f9565dfe-68c2-4b7b-a25e-d766082adb55.fanAppearanceProcess2Qty.label"
+    },
+    "fanCostAdder": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "fanCostAdder",
+      "valueType": "fanCostAdder",
+      "comparisonValuePath": "forDebug.debugInfo.Fan-f9565dfe-68c2-4b7b-a25e-d766082adb55.fanCostAdder.value"
+    },
+    "assemblyVariable": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "assemblyVariable",
+      "valueType": "assemblyVariable",
+      "comparisonValuePath": "forDebug.debugInfo.thermalFan.assemblyVariable.value"
+    },
+    "worktimeCost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "worktimeCost",
+      "valueType": "worktimeCost",
+      "comparisonValuePath": "forDebug.debugInfo.thermalFan.worktimeCost.value"
+    },
+    "painting_unit_price": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "painting_unit_price",
+      "valueType": "painting_unit_price",
+      "comparisonValuePath": "forDebug.debugInfo.thermalFan.painting_unit_price.value"
+    },
+    "maskSpray_unit_price": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "maskSpray_unit_price",
+      "valueType": "maskSpray_unit_price",
+      "comparisonValuePath": "forDebug.debugInfo.thermalFan.maskSpray_unit_price.value"
+    },
+    "laserMarking_unit_price": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "laserMarking_unit_price",
+      "valueType": "laserMarking_unit_price",
+      "comparisonValuePath": "forDebug.debugInfo.thermalFan.laserMarking_unit_price.value"
+    },
+    "profit_percent": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "profit_percent",
+      "valueType": "profit_percent",
+      "comparisonValuePath": "forDebug.debugInfo.thermalFan.profit_percent.value"
+    },
+    "laserMarking_area_unit_price": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "laserMarking_area_unit_price",
+      "valueType": "laserMarking_area_unit_price",
+      "comparisonValuePath": "forDebug.debugInfo.thermalFan.laserMarking_area_unit_price.value"
+    },
+    "laserMarking_area": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "laserMarking_area",
+      "valueType": "laserMarking_area",
+      "comparisonValuePath": "forDebug.debugInfo.thermalFan.laserMarking_area.value"
+    },
+    "appearanceProcess": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "appearanceProcess",
+      "valueType": "appearanceProcess",
+      "comparisonValuePath": "forDebug.debugInfo.thermalFan.appearanceProcess.value"
+    },
+    "maskSpray": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "maskSpray",
+      "valueType": "maskSpray",
+      "comparisonValuePath": "forDebug.debugInfo.thermalFan.maskSpray.value"
+    },
+    "laserMarking": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "laserMarking",
+      "valueType": "laserMarking",
+      "comparisonValuePath": "forDebug.debugInfo.thermalFan.laserMarking.value"
+    },
+    "laserMarkingArea": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "laserMarkingArea",
+      "valueType": "laserMarkingArea",
+      "comparisonValuePath": "forDebug.debugInfo.thermalFan.laserMarkingArea.value"
+    },
+    "component_cost": {
+      "label": "總零件費用",
+      "excelValueLongitudinalCoordinates": "48",
+      "valuekey": "component_cost",
+      "valueType": "component_cost",
+      "comparisonValuePath": "forDebug.debugInfo.thermalFan.component_cost"
+    },
+    "sumAssemblyTime": {
+      "label": "assemblyTime 總和",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "sumAssemblyTime",
+      "valueType": "sumAssemblyTime",
+      "comparisonValuePath": "forDebug.debugInfo.thermalFan.sumAssemblyTime.value"
+    },
+    "totalAssemblyTime": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "totalAssemblyTime",
+      "valueType": "totalAssemblyTime",
+      "comparisonValuePath": "forDebug.debugInfo.thermalFan.totalAssemblyTime.value"
+    },
+    "assembly_cost": {
+      "label": "Assembly組裝",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "assembly_cost",
+      "valueType": "assembly_cost",
+      "comparisonValuePath": "forDebug.debugInfo.thermalFan.assembly_cost.value"
+    },
+    "painting_cost": {
+      "label": "噴漆",
+      "excelValueLongitudinalCoordinates": "47",
+      "valuekey": "painting_cost",
+      "valueType": "painting_cost",
+      "comparisonValuePath": "forDebug.debugInfo.thermalFan.painting_cost.value"
+    },
+    "maskSpray_cost": {
+      "label": "遮噴費用",
+      "excelValueLongitudinalCoordinates": "34",
+      "valuekey": "maskSpray_cost",
+      "valueType": "maskSpray_cost",
+      "comparisonValuePath": "forDebug.debugInfo.thermalFan.maskSpray_cost.value"
+    },
+    "laserMarkingVariable": {
+      "label": "雷雕固定參數",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "laserMarkingVariable",
+      "valueType": "laserMarkingVariable",
+      "comparisonValuePath": "forDebug.debugInfo.thermalFan.laserMarkingVariable.value"
+    },
+    "laserMarking_cost": {
+      "label": "雷雕費用",
+      "excelValueLongitudinalCoordinates": "42",
+      "valuekey": "laserMarking_cost",
+      "valueType": "laserMarking_cost",
+      "comparisonValuePath": "forDebug.debugInfo.thermalFan.laserMarking_cost.value"
+    },
+    "processing_cost": {
+      "label": "加工費",
+      "excelValueLongitudinalCoordinates": "28",
+      "valuekey": "processing_cost",
+      "valueType": "processing_cost",
+      "comparisonValuePath": "forDebug.debugInfo.thermalFan.processing_cost.value"
+    },
+    "profit_cost": {
+      "label": "管銷&利潤",
+      "excelValueLongitudinalCoordinates": "51",
+      "valuekey": "profit_cost",
+      "valueType": "profit_cost",
+      "comparisonValuePath": "forDebug.debugInfo.thermalFan.profit_cost.value"
+    },
+    "totalCost": {
+      "label": "D. 成品總價(USD)",
+      "excelValueLongitudinalCoordinates": "52",
+      "valuekey": "totalCost",
+      "valueType": "totalCost",
+      "comparisonValuePath": "forDebug.debugInfo.thermalFan.totalCost"
+    }
+  }
+}

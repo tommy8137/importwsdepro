@@ -1,0 +1,9 @@
+values:
+- FPCShieldingType: NA
+  FPCShieldingTypeUnitPrice: 0
+
+- FPCShieldingType: 銀漿+mask
+  FPCShieldingTypeUnitPrice: 26
+
+- FPCShieldingType: 銀箔
+  FPCShieldingTypeUnitPrice: 53

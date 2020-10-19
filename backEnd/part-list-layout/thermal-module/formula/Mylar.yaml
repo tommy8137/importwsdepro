@@ -1,0 +1,123 @@
+output:
+  total: total
+  unit_price: unit_price
+  qty: mylarAmount
+  profit_rate: profit_rate
+  assemblyTime: assemblyTime
+  isOtherFill: isOtherFill
+
+formula:
+  # mylar零件費 = 單價 * 用量 * (1 + mylar loss rate) -----------------------------------------------------------------------------------------------------------------
+  total:
+    type: MATH
+    formula: unit_price * mylarAmount * (1 + mylar_loss_rate)
+    label: mylar零件費
+
+  # 是否有填寫 Other_Fill_ME_Remark
+  isOtherFill:
+    type: FUNC
+    formula: "(...params) => params.some(p => p === 'Other_Fill_ME_Remark')"
+    label: 材料費
+    param:
+      - mylarMaterialThickness
+      - mylarMaterial
+      - mylarAdhesiveThickness
+      - mylarAdhesiveMaterial
+
+  # 單價 = 成品材料費 + 二次加工費 + 運包檢 + 管銷&利潤 -----------------------------------------------------------------------------------------------------------------
+  unit_price:
+    type: MATH
+    formula: production_material_cost + secondary_processing_cost + package_cost + profit
+    label: 單價
+
+  # 成品材料費 = = (長 + 邊料) * (寬 + 邊料) * mylar材料每M²費用 / 1000000 * (1+ 成品材料費loss rate) -----------------------------------------------------------------------------------------------------------------
+  production_material_cost:
+    type: MATH
+    formula: (mylarLength + edge_material_size) * (mylarWidth + edge_material_size) * mylarMaterialCostPerMM / 1000000 * (1 + production_material_loss_rate)
+    label: 成品材料費
+
+  # 二次加工費 = (長 + 邊料) * (寬 + 邊料) * 背膠材料每M²費用 / 1000000 * (1+ 二次加工費loss rate) -----------------------------------------------------------------------------------------------------------------
+  secondary_processing_cost:
+    type: MATH
+    formula: (mylarLength + edge_material_size) * (mylarWidth + edge_material_size) * mylarAdhesiveCostPerMM / 1000000 * (1 + secondary_processing_loss_rate)
+    label: 二次加工費
+
+  # 運包檢 =  成品材料費 / 運包檢參數 -----------------------------------------------------------------------------------------------------------------
+  package_cost:
+    type: MATH
+    formula: production_material_cost / package_cost_param
+    label: 運包檢
+
+  # 管銷&利潤 = 二次加工費 * 管銷利潤 -----------------------------------------------------------------------------------------------------------------
+  profit:
+    type: MATH
+    formula: secondary_processing_cost * profit_rate
+    label: 管銷&利潤
+
+  # 組裝時間
+  assemblyTime:
+    label: mylar 組裝時間
+    type: MATH
+    formula: mylarAmount * worktimeSec
+
+scope:
+  mylarLength: mylarLength
+  mylarWidth: mylarWidth
+  mylarMaterialCostPerMM: mylarMaterialCostPerMM
+  mylarAdhesiveCostPerMM: mylarAdhesiveCostPerMM
+  mylarAmount: mylarAmount
+
+  mylarMaterialThickness: mylarMaterialThickness
+  mylarMaterial: mylarMaterial
+  mylarAdhesiveThickness: mylarAdhesiveThickness
+  mylarAdhesiveMaterial: mylarAdhesiveMaterial
+
+constant:
+  worktimeSec:
+    label: Assembly組裝工時(sec)
+    ?getThermalCommon:
+      - thermal_module_processing
+      - assembly_spend_time
+    # value: 12
+
+  mylar_loss_rate:
+    label: mylar loss rate
+    ?getThermalCommon:
+      - thermal_module_components
+      - mylar_loss_rate
+    # value: 0.015
+
+  production_material_loss_rate:
+    label: 成品材料費loss rate
+    ?getThermalCommon:
+      - thermal_module_components
+      - mylar_material_loss_rate
+    # value: 0.05
+
+  secondary_processing_loss_rate:
+    label: 二次加工費loss_rate
+    ?getThermalCommon:
+      - thermal_module_components
+      - mylar_secondary_processing_loss_rate
+    # value: 0.05
+
+  package_cost_param:
+    label: 運包檢參數
+    ?getThermalCommon:
+      - thermal_module_components
+      - mylar_shipping_check_divisor
+    # value: 5
+
+  edge_material_size:
+    label: 邊料
+    ?getThermalCommon:
+      - thermal_module_components
+      - mylar_material_edge_size
+    # value: 6
+
+  profit_rate:
+    label: 管銷利潤
+    ?getThermalCommon:
+      - thermal_module_components
+      - mylar_management_and_profit
+    # value: 0.15

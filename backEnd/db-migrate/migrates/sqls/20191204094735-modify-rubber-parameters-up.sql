@@ -1,0 +1,12 @@
+update formula.parameter_value set value=0.066 where parameter_id = (select id from formula.common_parameter where part_type='me_others_rubber_second_process' and label='glue_unit_price');
+update formula.parameter_value set value=0.066 where parameter_id = (select id from formula.common_parameter where part_type='me_others_rubber_second_process' and label='burring_unit_price');
+update formula.parameter_value set value=0.03 where parameter_id = (select id from formula.common_parameter where part_type='me_others_rubber_second_process' and label='burring_loss_rate');
+update formula.parameter_value set value=0.1 where parameter_id = (select id from formula.common_parameter where part_type='me_others_rubber_forming' and label='forming_loss_rate');
+update formula.parameter_value set value = 0.0124 where parameter_id in (select unit_price from formula.rubber_stamping where stamping_name in ('大版下料', '小版下料'));
+
+
+INSERT INTO formula.common_parameter (formula_type_id, part_type, sub_type, label, unit, label_name, system_remark) VALUES ((SELECT id FROM formula.formula_type WHERE (name= 'me_others_screw' )), 'me_others_screw_second_process', '', 'turning_heattreatment_unit_price', 'USD', '加工費(熱處理) 單位費用', '加工_加工費(熱處理) 單位費用');
+INSERT INTO formula.parameter_value (parameter_id, activate_date_id, value, value_type, source_table, create_time) VALUES ((SELECT id FROM formula.common_parameter WHERE (part_type = 'me_others_screw_second_process') AND (label='turning_heattreatment_unit_price')), (SELECT id FROM formula.schedule_date WHERE (formula_type_id= (SELECT id FROM formula.formula_type WHERE (name= 'me_others_screw' )) ) AND (name = 'me_others_screw_init')), 0.74, 'number', 'common_parameter', now());
+
+INSERT INTO formula.common_parameter (formula_type_id, part_type, sub_type, label, unit, label_name, system_remark) VALUES ((SELECT id FROM formula.formula_type WHERE (name= 'me_others_screw' )), 'me_others_screw_shipping_check', '', 'turning_shippingcheck_unit_price', 'USD', '全檢包裝運輸', '全檢包裝運輸費用');
+INSERT INTO formula.parameter_value (parameter_id, activate_date_id, value, value_type, source_table, create_time) VALUES ((SELECT id FROM formula.common_parameter WHERE (part_type = 'me_others_screw_shipping_check') AND (label='turning_shippingcheck_unit_price')), (SELECT id FROM formula.schedule_date WHERE (formula_type_id= (SELECT id FROM formula.formula_type WHERE (name= 'me_others_screw' )) ) AND (name = 'me_others_screw_init')), 0.0002, 'number', 'common_parameter', now());

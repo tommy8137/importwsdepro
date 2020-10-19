@@ -1,0 +1,26 @@
+headers:
+  mlcc:
+    label: MLCC - ODM
+    $Template:
+      - dataString
+  mlcc_1:
+    label: MLCC - ODM
+    $Template:
+      - dataString
+
+  lowest:
+    label: Lowest
+    $eebom-tmp.header-2nd-summary.2ndTemplate:
+      - typeDataFloat
+
+  highest_2nd:
+    label: 2nd Hightest
+    $eebom-tmp.header-2nd-summary.2ndTemplate:
+      - typeDataFloat
+
+  highest:
+    label: Hightest
+    $eebom-tmp.header-2nd-summary.2ndTemplate:
+      - typeDataFloat
+
+  

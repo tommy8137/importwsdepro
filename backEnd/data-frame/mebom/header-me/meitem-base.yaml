@@ -1,0 +1,221 @@
+headers:
+  sku_qty:
+    label: SKU (QTY)
+    $mebom.header-me.meTemplate:
+      - dynamicFloat
+    dynamicSite: 3
+
+  level:
+    label: Level
+    $mebom.header-me.meTemplate:
+      - meDataInt
+
+  part_number:
+    label: Part Number
+    $mebom.header-me.meTemplate:
+      - meDataString
+
+  part_name:
+    label: Part Name
+    $mebom.header-me.meTemplate:
+      - meDataString
+
+  last_price_up:
+    label: Last Price
+    deleteLine: true
+    $Template:
+      - strikeThrough
+
+  valid_from:
+    label: ValidFrom
+    $mebom.header-me.meTemplate:
+      - meDataInt
+  clean_sheet_cost_up:
+    label: CleanSheet Cost (U/P)
+    $mebom.header-me.meTemplate:
+      - meDataFloat
+  spa_cost_up:
+    label: SPA Cost (U/P)
+    $mebom.header-me.meTemplate:
+      - meDataFloat
+
+  spa_part_number:
+    label: SPA P/N
+    $mebom.header-me.meTemplate:
+      - meDataString
+
+  sourcer_shipping:
+    label: Sourcer 運包
+    $mebom.header-me.meTemplate:
+      - meDataFloat
+
+  sourcer_pl:
+    label: Sourcer P/L
+    $mebom.header-me.meTemplate:
+      - meDataFloat
+  
+  sourcer_assembly:
+    label: Sourcer 組工
+    $mebom.header-me.meTemplate:
+      - meDataFloat
+
+  sourcer_cost_up:
+    label: Sourcer Cost (U/P)
+    $mebom.header-me.meTemplate:
+      - meDataFloat
+    
+  sourcer_cost_sku_amount:
+    label: Sourcer Cost (SKU Amount)
+    $mebom.header-me.meTemplate:
+      - meDataFloat
+    dynamicSite: 17
+  
+  sourcer_remark:
+    label: Sourcer Remark
+    $mebom.header-me.meTemplate:
+      - meDataFloat
+
+  ce_shipping:
+    label: CE 運包
+    $mebom.header-me.meTemplate:
+      - meDataFloat
+
+  ce_pl:
+    label: CE P/L
+    $mebom.header-me.meTemplate:
+      - meDataFloat
+  
+  ce_assembly:
+    label: CE 組工
+    $mebom.header-me.meTemplate:
+      - meDataFloat
+
+  inquiry_cost_up:
+    label: Inquiry Cost (U/P)
+    $mebom.header-me.meTemplate:
+      - meDataFloat
+
+  ce_cost_up:
+    label: CE Cost (U/P)
+    $mebom.header-me.meTemplate:
+      - meDataFloat
+
+  ce_cost_sku_amount:
+    label: CE Cost (SKU Amount)
+    $mebom.header-me.meTemplate:
+      - meDataFloat
+    dynamicSite: 12
+  
+  ce_remark:
+    label: CE Remark
+    $mebom.header-me.meTemplate:
+      - meDataString
+
+  initaddmodidel:
+    label: Initial/Add/ Modify/Delete
+    $mebom.header-me.meTemplate:
+      - meDataString
+
+  owner:
+    label: Owner
+    $mebom.header-me.meTemplate:
+      - meDataString
+
+  odm_oem:
+    label: ODM/OEM
+    $mebom.header-me.meTemplate:
+      - meDataString
+
+  gb_assy_ctgy:
+    label: Assy Category
+    $mebom.header-me.meTemplate:
+      - meDataString
+
+  func_ctgy:
+    label: Function Category
+    $mebom.header-me.meTemplate:
+      - meDataString
+
+  parts_ctgy_1:
+    label: Part Category I
+    $mebom.header-me.meTemplate:
+      - meDataString
+
+  parts_ctgy_2:
+    label: Part Category II
+    $mebom.header-me.meTemplate:
+      - meDataString
+
+  material_spec:
+    label: Material Spec.
+    $mebom.header-me.meTemplate:
+      - meDataString
+
+  material:
+    label: Material
+    $mebom.header-me.meTemplate:
+      - meDataString
+
+  part_size_l:
+    label: L(mm)
+    $mebom.header-me.meTemplate:
+      - meDataFloat
+
+  part_size_w:
+    label: W(mm)
+    $mebom.header-me.meTemplate:
+      - meDataFloat
+
+  part_size_h:
+    label: H(mm)
+    $mebom.header-me.meTemplate:
+      - meDataFloat
+
+  part_size_ef:
+    label: Ф(mm)
+    $mebom.header-me.meTemplate:
+      - meDataFloat
+
+  part_size_m:
+    label: M(mm)
+    $mebom.header-me.meTemplate:
+      - meDataFloat
+
+  part_size_l2:
+    label: L2(成品展開) (mm)
+    $mebom.header-me.meTemplate:
+      - meDataFloat
+
+  part_size_w2:
+    label: W2(成品展開) (mm)
+    $mebom.header-me.meTemplate:
+      - meDataFloat
+
+  thickness:
+    label: Thickness (mm)
+    $mebom.header-me.meTemplate:
+      - meDataFloat
+
+  part_weight:
+    label: Weight(g)
+    $mebom.header-me.meTemplate:
+      - meDataFloat
+
+  remark:
+    label: Remark
+    $mebom.header-me.meTemplate:
+      - meDataString
+
+  update_time:
+    label: Update Time (月/日/年)
+    $mebom.header-me.meTemplate:
+      - meDataString
+  id:
+    label: UUID
+    $mebom.header-me.meTemplate:
+      - meDataString
+
+  emdm_id:
+    label: eMDM ID
+    $mebom.header-me.meTemplate:
+      - meDataString

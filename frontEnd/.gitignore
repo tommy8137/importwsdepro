@@ -1,0 +1,6 @@
+node_modules/
+dist/
+coverage/
+reports/
+.docz/
+i18nHelper/錯誤代碼.xlsx

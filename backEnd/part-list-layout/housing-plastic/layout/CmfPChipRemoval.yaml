@@ -1,0 +1,13 @@
+# CMF TAB: 除屑(IMR)
+
+multiple: true
+items:
+  - key: cmfPChipRemovalExist
+    label: Exist
+    $Template:
+      - checkBox
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    emdmKey: emdmBomInfo.cmfForm.cmfPChipRemovalExist

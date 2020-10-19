@@ -1,0 +1,1060 @@
+output:
+  total: total
+  A_material_cost: material_cost
+  B_stamping_cost: stamping_cost
+  C_secondary_processing_cost: secondary_processing_cost
+  D_painting_cost: painting_cost
+  E_packageCost: packageCost
+  F_profit: profit
+  G_other_cost: other_cost
+  # for export
+  hmToolingMaterialWeight: hmToolingMaterialWeight
+  cmfProcessListThermalBondingGlueWeight: cmfProcessListThermalBondingGlueWeight
+  hmStampingList: hmStampingList
+  hmToolingHoleCount: hmToolingHoleCount
+
+formula:
+  total:
+    type: FUNC
+    formula: "(total, isOtherFill)=>{
+      const inValid = !(total && typeof total === 'number' && isFinite(total));
+      if (isOtherFill) {
+        return null;
+      } else if (inValid) {
+        return 0;
+      }
+      return total;
+    }"
+    label: 材料費
+    param:
+      - totalCost
+      - isOtherFill
+
+  totalCost:
+    type: MATH
+    formula: material_cost + stamping_cost + secondary_processing_cost + painting_cost + packageCost + profit + other_cost
+    label: 計算結果
+
+    # 材料費 
+  isOtherFill:
+    type: FUNC
+    formula: "hpmaterial => (hmmaterial ===  'Other_Fill_ME_Remark')"
+    label: 材料費
+    param:
+      - hmmaterial
+
+  # A. 材料費
+  material_cost:
+    type: MATH
+    formula: (hmToolingMaterialExpandWidth * hmToolingMaterialExpandLength * hmthickness * hmmaterialdensity) * hmmaterialprice / 1000000 * (1 + hmMaterialLossRate)
+    label: 材料費
+
+  # B. 沖壓費
+  stamping_cost:
+    type: MATH
+    formula: groupStampingCost
+    label: 沖壓費
+
+  # C. 二次加工費 = CMF各項加總
+  secondary_processing_cost:
+    type: MATH
+    formula: cmfProcessListAnode + cmfProcessListSandBlast + cmfProcessListHairLine + cmfProcessListThermalBonding + cmfProcessListSingleTapping + cmfProcessListSingleSpotWelding + cmfProcessListSingleRivet + cmfProcessListRivet + cmfProcessListScreenPrinting + cmfProcessListPadPrinting + cmfProcessListSilkPrint + cmfProcessListCNC + cmfProcessListLaserPrint + cmfProcessListPolishing + cmfProcessListLaserWelding + cmfProcessListNormalClean
+    label: 二次加工費
+
+  # F. 管銷&利潤 = 沖壓費 * 管銷&利潤倍數
+  profit:
+    type: MATH
+    formula: stamping_cost * profit_percent
+    label: 管銷&利潤
+
+  # ==============================================
+  # 沖壓費 小計
+  groupStampingCost:
+    label: 沖壓費 小計
+    type: FUNC
+    formula: "(list) => {
+      const result = list.reduce((prev, current) => (prev + current.hmToolingStampingSingleCost), 0);
+      return result;
+    }"
+    param:
+     - hmStampingList
+
+  # 一組沖壓費: 工程數*機台費/穴數*(1+LossRate)*(1+FCST寬放值)
+  hmStampingList:
+    label: 沖壓費 小計
+    type: FUNC
+    formula: "(list, hmToolingHoleCount) => {
+        return list.map((d) => ({
+          ...d,
+          hmToolingStampingSingleCost: d.hmStampingCount * d.hmToolingModuleRate / hmToolingHoleCount * (1 + d.hmToolingStampingSingleLossRate) * (1 + d.hmToolingStampingSingleAllowance)
+        }));
+    }"
+    param:
+     - hmStampingGroupData
+     - hmToolingHoleCount # 穴數
+
+  # 一組沖壓
+  hmStampingGroupData:
+    type: GROUPFUNC
+    label: 沖壓費 group 原始資料
+    bykey:
+      - hmStampingMouldType # 機台類型
+      - hmToolingModuleRate # Module rate
+      - hmStampingCount # 工程數
+      - hmToolingStampingSingleLossRate # Loss Rate
+      - hmToolingStampingSingleAllowance # FCST 寬放值
+    groups:
+      - stamping # group 名稱
+    func: "(values) => values"
+  # ==============================================
+
+
+  productExpendSize:
+    type: MATH
+    formula: hmpartsexpandwidth * hmpartsexpandlength
+    label: 成品展開尺寸
+
+  # 陽極
+  cmfProcessListAnode:
+    type: MATH
+    formula: cmfProcessListFirstAnode + cmfProcessListSecondAnode
+    label: 陽極
+
+  cmfProcessListFirstAnode:
+    type: MATH
+    formula: cmfProcessListFirstAnodeCheckBox ? (productExpendSize/1000000) * cmfProcessListFirstAnodePrice * (1 + cmfProcessListFirstAnodeLossRate) :0
+    label: 陽極(一陽)
+
+  cmfProcessListSecondAnode:
+    type: MATH
+    formula: cmfProcessListSecondAnodeCheckBox ? (productExpendSize / 1000000) * cmfProcessListSecondAnodePrice * (1 +cmfProcessListSecondAnodeLossRate) * cmfProcessListSecondAnodeQty :0
+    label: 陽極(二陽)
+
+  # 噴砂
+  cmfProcessListSandBlast:
+    type: MATH
+    formula: cmfProcessListSandBlastCheckBox ? ( productExpendSize / 1000000 * cmfProcessListSandBlastSideCount * sandBlastUP * (1 + sandBlastLossRate)) :0
+    label: 噴砂
+
+  # 髮絲
+  cmfProcessListHairLine:
+    type: MATH
+    formula: cmfProcessListHairLineCheckBox ? (cmfProcessListHairLineArea / 1000000) * hairLineUP * (1 + hairLineLossRate) :0
+    label: 髮絲
+
+  # 熱壓
+  cmfProcessListThermalBonding:
+    type: MATH
+    formula: cmfProcessListThermalBondingCheckBox ? ( glueWeight * cmfProcessListThermalBondingGluePrice + cmfProcessListThermalBondingCycleTimeValue * thermalBondingUP ) * (1+ thermalBondingLossRate) :0
+    label: Thermal Bonding 熱壓
+  glueWeight:
+    type: MATH
+    formula: cmfProcessListThermalBondingCheckBox ?3.1416 * (cmfProcessListThermalBondingGlueSyringeDiameter / 2) * (cmfProcessListThermalBondingGlueSyringeDiameter / 2) * cmfProcessListThermalBondingPathLength * cmfProcessListThermalBondingGlueDensity / 1000 :0
+    label: 膠水重量
+
+  # 攻牙
+  cmfProcessListSingleTapping:
+    type: MATH
+    formula: cmfProcessListSingleTappingCheckBox ? cmfProcessListSingleTappingCount * singleTappingUP * (1+ singleTappingLossRate) :0
+    label: 攻牙
+
+  # 點焊
+  cmfProcessListSingleSpotWelding:
+    type: MATH
+    formula: cmfProcessListSingleSpotWeldingCheckBox ? cmfProcessListSingleSpotWeldingCount * singleSpotWeldingUP * (1+ singleSpotWeldingLossRate) :0
+    label: 點焊
+
+  # 鉚釘
+  cmfProcessListSingleRivet:
+    type: MATH
+    formula: cmfProcessListSingleRivetCheckBox ? cmfProcessListSingleRivetCount * singleRivetUP * (1+ singleRivetLossRate) :0
+    label: 鉚釘
+
+  # 拉鉚釘
+  cmfProcessListRivet:
+    type: MATH
+    formula: cmfProcessListRivetCheckBox ? cmfProcessListRivetCount * rivetUP * (1+ rivetLossRate) :0
+    label: 拉鉚釘
+
+  # Printing網印
+  cmfProcessListScreenPrinting:
+    type: MATH
+    formula: cmfProcessListScreenPrintingCheckBox ?cmfProcessListScreenPrintingCount * screenPrintingUP * (1+ screenPrintingLossRate) :0
+    label: Printing網印
+
+  # Printing移印
+  cmfProcessListPadPrinting:
+    type: MATH
+    formula: cmfProcessListPadPrintingCheckBox ?cmfProcessListPadPrintingCount * padPrintingUP * (1+ padPrintingLossRate) :0
+    label: Printing移印
+
+  # Silk Print
+  cmfProcessListSilkPrint:
+    type: MATH
+    formula: cmfProcessListSilkPrintCheckBox ?cmfProcessListSilkPrintCount * silkPrintUP * (1+ silkPrintLossRate) :0
+    label: Silk Print
+
+  # CNC
+  cmfProcessListCNC:
+    type: MATH
+    formula: cmfProcessListCNCCheckBox ?cmfProcessListCNCCycleTime * CNCUP * (1+ CNCLossRate) :0
+    label: CNC
+  cmfProcessListCNCCycleTime:
+    type: MATH
+    formula: cmfProcessListCNCArea / CNCProcessingSpeed + CNCTransferTime
+    label: CNC Cycle Time
+
+  # cmfProcessListDrillCutCycleTime:
+  #   type: MATH
+  #   formula: cmfProcessListDrillCutArea / drillCutConst1
+
+  # 鐳雕
+  cmfProcessListLaserPrint:
+    type: MATH
+    formula: cmfProcessListLaserPrintCheckBox ? (cmfProcessListLaserPrintArea/1000000) * laserPrintUP * (1+ laserPrintLossRate) :0
+    label: 鐳雕
+  # 打磨
+  cmfProcessListPolishing:
+    type: MATH
+    formula: cmfProcessListPolishingAutoCheckBox ? cmfProcessListPolishingAutoCycleTime * polishingAutoUP * (1 + polishingAutoLossRate):0
+    label: 打磨
+  cmfProcessListPolishingAutoCycleTime:
+    type: MATH
+    formula: cmfProcessListPolishingAutoArea / polishingProcessingSpeed + polishingTrasnsferTime
+    label: 打磨 Cycle Time
+
+  # 雷焊費用
+  cmfProcessListLaserWelding:
+    type: MATH
+    formula: cmfProcessListLaserWeldingExist ? cmfProcessListLaserWeldingCount * cmfProcessListLaserWeldingPrice * (1 + cmfProcessListLaserWeldingLossRate) :0
+    label: 雷焊費用
+
+  # 清洗費用
+  cmfProcessListNormalClean:
+    type: MATH
+    formula: cmfProcessListNormalCleanExist ? cmfProcessListNormalCleanPrice * (1 + cmfProcessListNormalCleanLossRate) :0
+    label: 雷焊費用
+
+  # 新增 D. 塗裝噴漆費
+   # ============= 塗裝 ============
+  #  噴漆塗料耗損: ce小天地拿來的 paintingLossRate / 100
+  paintingLossRateValue:
+    label: 噴漆塗料耗損(%)
+    type: MATH
+    formula: "paintingLossRate / 100"
+  # D. 塗裝噴漆費
+  painting_cost:
+    type: MATH
+    formula: cmfPPaintingCheckBox ? single_part_labor_cost + machine_painting_cost + single_part_primer_cost + single_part_topcat_cost :0
+    label: 塗裝噴漆費
+
+  # 單件人工費用
+  # type2 = IMR 或 噴漆類型為N/A 時，不算噴塗費
+  single_part_labor_cost:
+    type: FUNC
+    formula: "(_type2, cmfPPaintingType, single_part_labor_normal) => {
+      if (_type2.toUpperCase() ==='IMR' || cmfPPaintingType === 'N/A') {
+        return 0;
+      }
+      if(!single_part_labor_normal || single_part_labor_normal === Infinity) {
+        return 0;
+      }
+      return single_part_labor_normal;
+    }"
+    label: 單件人工費用
+    param:
+     - _type2
+     - cmfPPaintingType
+     - single_part_labor_normal
+
+  # 單件人工費用 算式
+  single_part_labor_normal:
+    type: MATH
+    formula: labor_cost_per_day / production_capacity_per_day
+    label: 一般單件人工費用算式
+
+  # 總人工費用 = 噴塗單價 * 60 * 噴漆工時 * 噴塗人力 
+  labor_cost_per_day:
+    type: MATH
+    formula: cmfPPaintingUP * 60 * cmfPPaintingWorkTime * printing_workers
+    label: 日(總)人工費用
+
+  # 噴塗人力 = 用 productType, cmfPPaintingType 查表得來 
+  printing_workers:
+    type: FUNC
+    label: 噴塗人力
+    formula: "(cmfPPaintingType, cmfPPrintingWorkersForNCVM, cmfPPrintingWorkers) => { 
+      if (cmfPPaintingType === 'NCVM') {
+        return cmfPPrintingWorkersForNCVM;
+      } else {
+        return cmfPPrintingWorkers;
+      }
+    }"
+    param:
+      - cmfPPaintingType
+      - cmfPPrintingWorkersForNCVM
+      - cmfPPrintingWorkers
+
+  # 固含量比例
+  paintingSolidContentRatioValue:
+    label: 固含量比例
+    type: FUNC
+    formula: "(cmfPPaintingType, paintingSolidContentRatio, UV_paintingSolidContentRatio, PC_paintingSolidContentRatio ) => {
+      switch(cmfPPaintingType) {
+        case 'Powder coating':
+          return PC_paintingSolidContentRatio;
+        case 'UV_painting':
+          return UV_paintingSolidContentRatio;
+        default:
+          return paintingSolidContentRatio;
+      }
+    }"
+    param:
+      - cmfPPaintingType
+      - paintingSolidContentRatio
+      - UV_paintingSolidContentRatio
+      - PC_paintingSolidContentRatio
+
+ # 噴漆產能 = (60 * 60) / 噴塗Cycle Time / 一次可噴成品數量 (pcs)
+  painting_production_capacity:
+    type: MATH
+    formula: "(60 * 60) / (cmfPaintingCycleTime / cmfPPaintingPcs)"
+    label: 噴漆產能
+
+  # 噴漆機台費用: 帶入 cmfPPaintingType, _type2, _productType 判斷機台費用
+  machine_painting_cost:
+    type: FUNC
+    formula: "(_type2, _productType, cmfPPaintingType, machine_painting_cost_cal) => { 
+      if(cmfPPaintingType==='N/A' || _type2.toUpperCase()==='IMR') {
+        return 0;
+      }
+      if(!machine_painting_cost_cal || machine_painting_cost_cal === Infinity) {
+        return 0;
+      }
+      return machine_painting_cost_cal;
+    }"
+    label: 噴漆機台費用
+    param:
+      - _type2
+      - _productType
+      - cmfPPaintingType
+      - machine_painting_cost_cal
+
+  # 噴漆機台費用 算式 = 噴漆機台單價 * 60 * 噴漆工時 / 日產能
+  # 噴漆機台單價 = DT, AIO, N/A 為 0
+  machine_painting_cost_cal:
+    type: MATH
+    formula: cmfPaintingMachinePrice * 60 * cmfPPaintingWorkTime/production_capacity_per_day
+    label: 噴漆機台計算
+
+  # 日產能 = 噴漆產能 * 噴漆工時 ＊ (1 - 噴漆不良率)
+  production_capacity_per_day:
+    type: MATH
+    formula: painting_production_capacity * cmfPPaintingWorkTime * (1 - paintingDefectRateValue)
+    label: 日產能
+
+  # 噴塗不良率 
+  # Powder coating -> 
+  paintingDefectRateValue:
+    label: 噴塗不良率
+    type: FUNC
+    formula: "(cmfPPaintingType, paintingDefectRate, PC_paintingDefectRate) => {
+      if(cmfPPaintingType === 'Powder coating') {
+        return PC_paintingDefectRate;
+      }
+      return paintingDefectRate;
+    }"
+    param:
+      - cmfPPaintingType
+      - paintingDefectRate
+      - PC_paintingDefectRate
+  
+  # 單面底漆費用
+  single_part_primer_cost:
+    type: FUNC
+    formula: "(_type2, cmfPPaintingType, single_part_primer_cost_cal) => { 
+      if (_type2.toUpperCase()==='IMR' || cmfPPaintingType==='N/A') {
+        return 0;
+      }
+      if(!single_part_primer_cost_cal || single_part_primer_cost_cal === Infinity) {
+        return 0;
+      }
+      return single_part_primer_cost_cal || 0;
+    }"
+    label: 單件底漆費用
+    param:
+      - _type2
+      - cmfPPaintingType
+      - single_part_primer_cost_cal
+
+  # 單面底漆費用
+  single_part_primer_cost_cal:
+    type: MATH
+    formula: "cmfPPaintingPrimerPrice ? cmfPPaintingPrimerPrice / printingable_amount * cmfPPrimerQTY * paintingSolidContentRatioValue * (1 + paintingDefectRate) :0"
+    label: 單件底漆費用計算
+
+  # Printingable amount (pcs/kg)
+   # excel這邊有取整數, 但Plastic 沒有取整數
+  printingable_amount:
+    label: printingable amount
+    type: FUNC
+    formula: "(_type2, usage_amount, paintingLossRateValue) =>{
+      const result = parseInt((1 * 1000 / usage_amount), 10) * (1 - paintingLossRateValue);
+      if (!result || !isFinite(result)) {
+        return 0;
+      }
+      return result;
+    }"
+    param:
+      - _type2
+      - usage_amount
+      - paintingLossRateValue
+
+ 
+  usage_amount:
+    type: FUNC
+    label: usage_amount
+    formula: "(_type2, total_painting_area, cmfPaintingThickness, paintingSolidContentRatioValue, paintingDensityValue) => {
+      return (total_painting_area / 100) * (cmfPaintingThickness / 10000) * paintingDensityValue / paintingSolidContentRatioValue;
+    }"
+    param:
+      - _type2
+      - total_painting_area
+      - cmfPaintingThickness
+      - paintingSolidContentRatioValue
+      - paintingDensityValue
+
+
+  # 取得噴塗密度: Powder coating 不一樣
+  paintingDensityValue: 
+    type: FUNC
+    label: usage_amount
+    formula: "(cmfPPaintingType, paintingDensity, PC_paintingDensity) => {
+      if(cmfPPaintingType === 'Powder coating') {
+        return PC_paintingDensity;
+      }
+      return paintingDensity;
+    }"
+    param:
+      - cmfPPaintingType
+      - paintingDensity
+      - PC_paintingDensity
+
+  # 噴塗總面積 = LxW + L*H + W*H 面積加總
+  total_painting_area:
+    type: MATH
+    formula: painting_area_l_w + painting_area_l_h + painting_area_w_h
+
+
+  # 噴塗面積 (L * W)
+  painting_area_l_w:
+    type: FUNC
+    formula: "(cmfPaintingLength, cmfPaintingWidth, paintingAreaLengthAllowance, paintingAreaWidthAllowance, cmfPaintingAreaLW) => {
+      return cmfPaintingLength<=0||cmfPaintingWidth<=0 ?0 :(cmfPaintingLength + paintingAreaLengthAllowance * 2) * (cmfPaintingWidth + paintingAreaWidthAllowance * 2) * cmfPaintingAreaLW
+    }"
+    label: 1.頂(正)面積
+    param:
+      - cmfPaintingLength
+      - cmfPaintingWidth
+      - paintingAreaLengthAllowance
+      - paintingAreaWidthAllowance
+      - cmfPaintingAreaLW
+
+  # 噴塗面積 (L * H)
+  painting_area_l_h:
+    type: FUNC
+    formula: "(cmfPaintingLength, cmfPaintingHeight, paintingAreaLengthAllowance, paintingAreaWidthAllowance, cmfPaintingAreaLH) => {
+      return cmfPaintingLength<=0||cmfPaintingHeight<=0 ?0 :(cmfPaintingLength + paintingAreaLengthAllowance * 2) * (cmfPaintingHeight + paintingAreaWidthAllowance * 2) * cmfPaintingAreaLH
+    }"
+    label: 2.長側面x幾道
+    param:
+      - cmfPaintingLength
+      - cmfPaintingHeight
+      - paintingAreaLengthAllowance
+      - paintingAreaWidthAllowance
+      - cmfPaintingAreaLH
+
+  # 側面(W*H) 面積
+  painting_area_w_h:
+    type: FUNC
+    formula: (cmfPaintingWidth, cmfPaintingHeight, paintingAreaLengthAllowance, paintingAreaWidthAllowance, cmfPaintingAreaWH) => {return cmfPaintingWidth<=0||cmfPaintingWidth<=0 ?0 :(cmfPaintingWidth + paintingAreaLengthAllowance * 2) * (cmfPaintingHeight + paintingAreaWidthAllowance * 2) * cmfPaintingAreaWH }
+    label: 3.寬側面x幾道
+    param:
+      - cmfPaintingWidth
+      - cmfPaintingHeight
+      - paintingAreaLengthAllowance
+      - paintingAreaWidthAllowance
+      - cmfPaintingAreaWH
+
+  # 單件面漆費用
+  single_part_topcat_cost:
+    type: FUNC
+    formula: "(_type2, cmfPPaintingType, single_part_topcat_cost_cal) => {
+      if (cmfPPaintingType==='N/A' || _type2.toUpperCase()==='IMR') {
+        return 0;
+      } 
+      if(!single_part_topcat_cost_cal || single_part_topcat_cost_cal === Infinity) {
+        return 0;
+      }
+      return single_part_topcat_cost_cal;
+    }"
+    label: 單件面漆費用
+    param:
+      - _type2
+      - cmfPPaintingType
+      - single_part_topcat_cost_cal
+
+  # 單件面漆費用  = 面塗油漆單價 / printingable_amount * 面漆Coating數 * (1 + 不良率)
+  single_part_topcat_cost_cal:
+    label: 單件面漆費用計算
+    type: FUNC
+    formula: "(usage_amount, cmfPPaintingTopcoatPrice, printingable_amount,cmfPTopcoatQTY, paintingDefectRateValue, paintingSolidContentRatioValue) => {
+      if (usage_amount < 1000) {
+         return cmfPPaintingTopcoatPrice / printingable_amount * cmfPTopcoatQTY *  paintingSolidContentRatioValue * (1 + paintingDefectRateValue);
+      }
+      return usage_amount / 1000 / (1 - paintingLossRate) * cmfPPaintingTopcoatPrice * cmfPTopcoatQTY * paintingSolidContentRatioValue * (1 + paintingDefectRateValue);
+    }"
+
+    param:
+      - usage_amount
+      - cmfPPaintingTopcoatPrice
+      - printingable_amount
+      - cmfPTopcoatQTY
+      - paintingDefectRateValue
+      - paintingSolidContentRatioValue
+
+  # # NCVM 費用
+  # cmfPNCVM_cost:
+  #   type: FUNC
+  #   label: NCVM 成本
+  #   formula: "(cmfPPaintingType, cmfPNCVM_cost_cal) => { 
+  #     return cmfPPaintingType === 'NCVM' ? cmfPNCVM_cost_cal :0 
+  #   }"
+  #   param:
+  #     - cmfPPaintingType
+  #     - cmfPNCVM_cost_cal
+
+  # # NCVM 費用公式
+  # cmfPNCVM_cost_cal:
+  #   type: MATH
+  #   label: NCVM 成本
+  #   formula: ncvm_area_l_w * 1 * cmfPNCVMUP * ( 1 + cmfPNCVMLossRate)
+
+  # NCVM 面積
+  ncvm_area_l_w:
+    type: FUNC
+    formula: "(cmfPaintingLength, cmfPaintingWidth, NCVMAreaLengthAllowance, NCVMAreaWidthAllowance, cmfPaintingAreaLW) => {
+      return cmfPaintingLength <= 0||cmfPaintingWidth <= 0 ? 0 :(cmfPaintingLength + NCVMAreaLengthAllowance * 2) * (cmfPaintingWidth + NCVMAreaWidthAllowance * 2) * cmfPaintingAreaLW
+    }"
+    label: 1.頂(正)面x幾道
+    param:
+      - cmfPaintingLength
+      - cmfPaintingWidth
+      - NCVMAreaLengthAllowance
+      - NCVMAreaWidthAllowance
+      - cmfPaintingAreaLW
+  # ============= 塗裝噴漆費 END ============
+
+scope:
+  hmMaterialLossRate: hmMaterialLossRate
+  hmToolingMaterialExpandWidth: hmToolingMaterialExpandWidth
+  hmToolingMaterialExpandLength: hmToolingMaterialExpandLength
+  hmthickness: hmthickness
+  hmmaterialdensity: hmmaterialdensity
+  hmmaterialprice: hmmaterialprice
+  hmmaterial: hmmaterial
+  hmpartsexpandwidth: hmpartsexpandwidth
+  hmpartsexpandlength: hmpartsexpandlength
+
+  # 沖壓
+  # 穴數
+  hmToolingHoleCount: hmToolingHoleCount
+
+  # 陽極
+  cmfProcessListFirstAnodePrice: cmfProcessListFirstAnodePrice
+  cmfProcessListSecondAnodePrice: cmfProcessListSecondAnodePrice
+  cmfProcessListFirstAnodeLossRate: cmfProcessListFirstAnodeLossRate
+  cmfProcessListSecondAnodeLossRate: cmfProcessListSecondAnodeLossRate
+  cmfProcessListSecondAnodeQty: cmfProcessListSecondAnodeQty
+
+  cmfProcessListHairLineArea: cmfProcessListHairLineArea
+  cmfProcessListThermalBondingCycleTimeValue: cmfProcessListThermalBondingCycleTimeValue
+  cmfProcessListThermalBondingGlueSyringeDiameter: cmfProcessListThermalBondingGlueSyringeDiameter
+  cmfProcessListThermalBondingPathLength: cmfProcessListThermalBondingPathLength
+  cmfProcessListThermalBondingGlueDensity: cmfProcessListThermalBondingGlueDensity
+  cmfProcessListThermalBondingGluePrice: cmfProcessListThermalBondingGluePrice
+  cmfProcessListSingleTappingCount: cmfProcessListSingleTappingCount
+  cmfProcessListSingleSpotWeldingCount: cmfProcessListSingleSpotWeldingCount
+  cmfProcessListRivetCount: cmfProcessListRivetCount
+  cmfProcessListPaintingArea: cmfProcessListPaintingArea
+  cmfProcessListScreenPrintingCount: cmfProcessListScreenPrintingCount
+  cmfProcessListPadPrintingCount: cmfProcessListPadPrintingCount
+  cmfProcessListSilkPrintCount: cmfProcessListSilkPrintCount
+  cmfProcessListCNCArea: cmfProcessListCNCArea
+  cmfProcessListCNCPLLength: cmfProcessListCNCPLLength
+  cmfProcessListLaserPrintArea: cmfProcessListLaserPrintArea
+  cmfProcessListPolishingAutoCheckBox: cmfProcessListPolishingAutoCheckBox
+  cmfProcessListPolishingAutoArea: cmfProcessListPolishingAutoArea
+  cmfProcessListDrillingCount: cmfProcessListDrillingCount
+  cmfProcessListSandBlastSideCount: cmfProcessListSandBlastSideCount
+  cmfProcessListFirstAnodeCheckBox: cmfProcessListFirstAnodeCheckBox
+  cmfProcessListSecondAnodeCheckBox: cmfProcessListSecondAnodeCheckBox
+  cmfProcessListSandBlastCheckBox: cmfProcessListSandBlastCheckBox
+  cmfProcessListHairLineCheckBox: cmfProcessListHairLineCheckBox
+  cmfProcessListThermalBondingCheckBox: cmfProcessListThermalBondingCheckBox
+  cmfProcessListSingleTappingCheckBox: cmfProcessListSingleTappingCheckBox
+  cmfProcessListSingleSpotWeldingCheckBox: cmfProcessListSingleSpotWeldingCheckBox
+  cmfProcessListRivetCheckBox: cmfProcessListRivetCheckBox
+  cmfProcessListScreenPrintingCheckBox: cmfProcessListScreenPrintingCheckBox
+  cmfProcessListPadPrintingCheckBox: cmfProcessListPadPrintingCheckBox
+  cmfProcessListSilkPrintCheckBox: cmfProcessListSilkPrintCheckBox
+  cmfProcessListCNCCheckBox: cmfProcessListCNCCheckBox
+  cmfProcessListLaserPrintCheckBox: cmfProcessListLaserPrintCheckBox
+
+  cmfProcessListSingleRivetCheckBox: cmfProcessListSingleRivetCheckBox
+  cmfProcessListSingleRivetCount: cmfProcessListSingleRivetCount
+
+  # CMF 雷焊
+  cmfProcessListLaserWeldingExist: cmfProcessListLaserWeldingExist
+  cmfProcessListLaserWeldingCount: cmfProcessListLaserWeldingCount
+
+  # CMF 清洗
+  cmfProcessListNormalCleanExist: cmfProcessListNormalCleanExist
+  
+
+  # ========================= 噴塗 =========================
+  cmfPPaintingWorkTime: cmfPPaintingWorkTime
+  cmfPPaintingCheckBox: cmfPPaintingCheckBox
+  # 塗裝噴漆費
+  cmfPPaintingType: cmfPPaintingType
+  cmfPPaintingUP: cmfPPaintingUP
+  cmfPPrintingWorkersForNCVM: cmfPPrintingWorkersForNCVM
+  cmfPPrintingWorkers: cmfPPrintingWorkers
+  cmfPaintingMachineType: cmfPaintingMachineType
+  # 噴漆機台費用單價
+  cmfPaintingMachinePrice: cmfPaintingMachinePrice
+  # 底漆Coating數
+  cmfPPrimerQTY: cmfPPrimerQTY
+  # 面漆Coating數
+  cmfPTopcoatQTY: cmfPTopcoatQTY
+  # 底漆單價
+  cmfPPaintingPrimerPrice: cmfPPaintingPrimerPrice
+  # 面漆單價
+  cmfPPaintingTopcoatPrice: cmfPPaintingTopcoatPrice
+  cmfPaintingThickness: cmfPaintingThickness
+  cmfPaintingLength: cmfPaintingLength
+  cmfPaintingWidth: cmfPaintingWidth
+  cmfPaintingHeight: cmfPaintingHeight
+  cmfPaintingAreaLW: cmfPaintingAreaLW
+  cmfPaintingAreaLH: cmfPaintingAreaLH
+  cmfPaintingAreaWH: cmfPaintingAreaWH
+  # 噴塗CE小天地
+  paintingLossRate: paintingLossRate
+  cmfPaintingCycleTime: cmfPaintingCycleTime
+  paintingAreaLengthAllowance: paintingAreaLengthAllowance
+  paintingAreaWidthAllowance: paintingAreaWidthAllowance
+  NCVMAreaLengthAllowance: NCVMAreaLengthAllowance
+  NCVMAreaWidthAllowance: NCVMAreaWidthAllowance
+  # ===== 噴漆12個新參數 =====
+  # 面漆 主劑單價 (USD/kg)
+  cmfPPaintingTopcoatMainUnitPrice: cmfPPaintingTopcoatMainUnitPrice 
+  # 面漆 硬化劑/固化劑單價 (USD/kg) 
+  cmfPPaintingTopcoatHardenerUnitPrice: cmfPPaintingTopcoatHardenerUnitPrice 
+  # 面漆 溶劑/稀釋劑單價 (USD/kg)
+  cmfPPaintingTopcoatSolventUnitPrice: cmfPPaintingTopcoatSolventUnitPrice 
+  # 面漆 主劑 比例
+  cmfPPaintingTopcoatMainAmount: cmfPPaintingTopcoatMainAmount 
+  # 面漆 硬化劑/固化劑 比例
+  cmfPPaintingTopcoatHardenerAmount: cmfPPaintingTopcoatHardenerAmount 
+  # 面漆 溶劑/稀釋劑 比例
+  cmfPPaintingTopcoatSolventAmount: cmfPPaintingTopcoatSolventAmount 
+
+  # 底漆 主劑單價 (USD/kg)
+  cmfPPaintingPrimerMainUnitPrice: cmfPPaintingPrimerMainUnitPrice
+  # 底漆 硬化劑/固化劑單價 (USD/kg) 
+  cmfPPaintingPrimerHardenerUnitPrice: cmfPPaintingPrimerHardenerUnitPrice
+  # 底漆 溶劑/稀釋劑單價 (USD/kg)
+  cmfPPaintingPrimerSolventUnitPrice: cmfPPaintingPrimerSolventUnitPrice
+  # 底漆 主劑 比例
+  cmfPPaintingPrimerMainAmount: cmfPPaintingPrimerMainAmount
+  # 底漆 硬化劑/固化劑 比例
+  cmfPPaintingPrimerHardenerAmount: cmfPPaintingPrimerHardenerAmount
+  # 底漆 溶劑/稀釋劑 比例
+  cmfPPaintingPrimerSolventAmount: cmfPPaintingPrimerSolventAmount
+  
+  # 一次可噴成品數量 (pcs) - CE小天地
+  cmfPPaintingPcs: cmfPPaintingPcs
+  # ========================= 噴塗 =========================
+  # for export
+  hmToolingMaterialWeight: hmToolingMaterialWeight
+  cmfProcessListThermalBondingGlueWeight: cmfProcessListThermalBondingGlueWeight
+
+
+global:
+  _productType:
+    type: VARIABLE
+    label: productType
+    bykey: productType
+    groups:
+      - partItemInfo
+
+  _type2:
+    type: VARIABLE
+    label: type2
+    bykey: type2
+    groups:
+      - partItemInfo
+
+
+constant:
+  # 二次加工費
+
+  ## 噴砂
+  sandBlastLossRate:
+    label: 噴砂loss rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - sand_blast_loss_rate
+    # value: 0
+  sandBlastUP:
+    label: 噴砂單價
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - sand_blast_cost
+    # value: 5
+
+  ## 髮絲
+  hairLineLossRate:
+    label: 噴砂loss rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - hair_loss_rate
+    # value: 0
+  hairLineUP:
+    label: 噴砂單價
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - hair_cost
+    # value: 5
+
+  # 熱壓
+  thermalBondingUP:
+    label: 熱壓加工費
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - thermal_bonding_heat_pressing_machining_cost
+    # value: 0.00303
+  thermalBondingLossRate:
+    label: 熱壓Loss Rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - thermal_bonding_heat_pressing_loss_rate
+    # value: 0
+
+  # 攻牙
+  singleTappingUP:
+    label: 攻牙 單價
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - single_tapping_cost
+    # value: 0.0078
+  singleTappingLossRate:
+    label: 攻牙 Loss Rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - single_tapping_loss_rate
+    # value: 0
+
+  # 點焊
+  singleSpotWeldingUP:
+    label: 點焊 單價
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - single_spot_welding_cost
+    # value: 0.0078
+  singleSpotWeldingLossRate:
+    label: 點焊 Loss Rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - single_spot_welding_loss_rate
+    # value: 0
+  # 鉚釘
+  singleRivetUP:
+    label: 鉚釘 單價
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - single_rivet_cost
+    # value: 0.0078
+  singleRivetLossRate:
+    label: 鉚釘 Loss Rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - single_rivet_loss_rate
+    # value: 0
+
+  # 拉鉚釘
+  rivetUP:
+    label: 拉鉚釘 單價
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - blind_rivet_cost
+    # value: 0.0078
+  rivetLossRate:
+    label: 拉鉚釘 Loss Rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - blind_rivet_loss_rate
+    # value: 0
+
+  # Printing網印
+  screenPrintingUP:
+    label: Printing網印 單價
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - screen_printing_cost
+    # value: 0.05
+  screenPrintingLossRate:
+    label: Printing網印 Loss Rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - screen_printing_loss_rate
+    # value: 0
+  # Printing移印
+  padPrintingUP:
+    label: Printing移印 單價
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - pad_printing_cost
+    # value: 0.05
+  padPrintingLossRate:
+    label: Printing移印 Loss Rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - pad_printing_loss_rate
+    # value: 0
+  # Silk Print
+  silkPrintUP:
+    label: Silk Print 單價
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - silk_print_cost
+    # value: 0.05
+  silkPrintLossRate:
+    label: Silk Print Loss Rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - silk_print_loss_rate
+    # value: 0
+
+  # CNC
+  CNCUP:
+    label: CNC 單價
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - cnc_4_axis_core_side_cost
+    # value: 0.0032
+  CNCLossRate:
+    label: CNC Loss Rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - cnc_core_side_loss_rate
+    # value: 0
+  CNCProcessingSpeed:
+    label: CNC 加工速率
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - cnc_cycle_time_numerator
+    # value: 0
+  CNCTransferTime:
+    label: CNC 取放時間
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - cnc_trasnsfer_time
+    # value: 0
+  
+
+  # 鐳雕
+  laserPrintUP:
+    label: 鐳雕 單價
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - laser_engraving_core_side_cost
+    # value: 25
+  laserPrintLossRate:
+    label: 鐳雕 Loss Rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - laser_engraving_core_side_loss_rate
+    # value: 0
+
+  # 打磨
+  polishingProcessingSpeed:
+    label: 打磨 加工速率
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - grinding_cycle_time_numerator
+    # value: 1738
+  polishingTrasnsferTime:
+    label: 打磨 取放時間
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - grinding_trasnsfer_time
+    # value: 1738
+  polishingAutoUP:
+    label: 打磨 加工單價
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - grinding_auto_cost
+    # value: 0.0022
+  polishingAutoLossRate:
+    label: 打磨 Loss Rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - grinding_auto_loss_rate
+    # value: 0
+
+  # E. 運包撿
+  packageCost:
+    label: 運包檢
+    value: 0
+
+  profit_percent:
+    label: 管銷&利潤倍數
+    ?getCommon:
+      - housing_metal_management_and_profit
+      - management_and_profit
+
+  # 新增雷焊費用
+  cmfProcessListLaserWeldingPrice:
+    label: 雷焊費用 單價
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - laser_welding_cost
+    # value: 0.0141176470588235
+  # 雷焊Loss Rate
+  cmfProcessListLaserWeldingLossRate:
+    label: 雷焊 Loss Rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - laser_welding_loss_rate
+    # value: 0
+
+  # 清洗費用
+  cmfProcessListNormalCleanPrice:
+    label: 清洗費用
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - washing_cost
+    # value: 0.00735294117647059
+  # 清洗Loss Rate
+  cmfProcessListNormalCleanLossRate:
+    label: 清洗 Loss Rate
+    ?getCommon:
+      - housing_metal_secondary_processing
+      - washing_loss_rate
+    # value: 0
+
+  # Others
+  other_cost:
+    label: Others (成品總價)
+    value: 0
+
+ # ============  噴塗  ==================
+  # 噴塗不良率
+  paintingDefectRate:
+    label: 噴塗不良率
+    ?getCommon:
+      - housing_metal_painting
+      - paint_failure_rate
+    # value: 0.2
+    # NB/DT/AIO: 0.2
+
+  PC_paintingDefectRate:
+    label: Powder coating 噴塗不良率
+    ?getCommon:
+      - housing_metal_painting
+      - paint_power_coating_failure_rate
+    # value: 0.1
+    # NB/DT/AIO: 0.1
+    
+  
+  # 固含量
+  paintingSolidContentRatio:
+    label: 固含量比例
+    ?getCommon:
+      - housing_metal_painting
+      - paint_printingable_amount_ratio
+    # value: 0.25
+    # NB/DT/AIO: 0.25
+
+  UV_paintingSolidContentRatio:
+    label: UV固含量比例
+    ?getCommon:
+      - housing_metal_painting
+      - paint_uv_painting_ratio
+    # NB/DT/AIO: 0.3
+
+  PC_paintingSolidContentRatio:
+    label: Powder coating 固含量比例
+    ?getCommon:
+      - housing_metal_painting
+      - paint_power_coating_ratio
+    # NB/DT/AIO: 1
+
+  paintingDensity:
+    label: 噴漆密度
+    ?getCommon:
+      - housing_metal_painting
+      - paint_printingable_amount_density
+    # value: 1.05
+    # NB: 1.052  DT: 1.052  AIO: 1.05
+
+  PC_paintingDensity:
+    label: Powder coating密度
+    ?getCommon:
+      - housing_metal_painting
+      - paint_power_coating_density
+    # value: 1.5
+
+   # NCVM
+  cmfPNCVMUP:
+    label: NCVM 單價
+    ?getPlasticCommon:
+      - housing_plastic_secondary_processing
+      - NCVM_cost
+    value: 0.0004
+  cmfPNCVMLossRate:
+    label: NCVM loss rate
+    ?getPlasticCommon:
+      - housing_plastic_secondary_processing
+      - NCVM_loss_rate
+    # value: 0
+
+  # 噴塗ce小天地
+  cycleTime:
+    label: cycle time
+    ?getCommon:
+      - housing_metal_painting
+      - paint_cycle_time
+      # value: 1.5
+
+  paintingAreaLengthAllowance_default:
+    label: 噴塗面積寬放(L)
+    value:      
+      ?getCommon:
+        - housing_metal_painting
+        - paint_top_area_L
+  
+  paintingAreaWidthAllowance_default:
+    label: 噴塗面積寬放(W)
+    value:      
+      ?getCommon:
+        - housing_metal_painting
+        - paint_top_area_W
+
+  paintingLossRate_default:
+    label: paintingLossRate 噴漆塗料耗損    
+    ?getCommon:
+      - housing_metal_painting
+      - paint_single_finishing_loss_rate
+  # ============  噴塗 END ============

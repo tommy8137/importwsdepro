@@ -1,0 +1,328 @@
+multiple: false
+items:
+  # header ----------------------------------------
+  - key: graphiteLabel
+    $Template:
+      - label
+    label: Screw
+    editable: true
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+      display: true
+    default: 0
+  # Material ----------------------------------------
+  - key: materialspec
+    label: Material
+    url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+    $Template:
+      - fetchData
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getScrewMaterialSpec:
+        -
+    emdmKey: emdmBomInfo.materialspec
+
+  # 單價
+  - key: materialUnitPrice
+    $Template:
+      - mappedValueFloat
+    label: 單價
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      ?getTurningMaterial:
+        -
+      # $meothers-screw.dropdown.MaterialValues:
+      #   - ^values
+    mapFrom:
+      - material
+    require: true
+
+  # 密度
+  - key: materialDensity
+    $Template:
+      - mappedValueFloat
+    label: 密度
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      ?getTurningMaterial:
+        -
+      # $meothers-screw.dropdown.MaterialValues:
+      #   - ^values
+    mapFrom:
+      - material
+    require: true
+
+  # 熱處理單價
+  - key: materialHeatingUnitPrice
+    $Template:
+      - mappedValueFloat
+    label: 熱處理單價
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      ?getTurningMaterial:
+        -
+      # $meothers-screw.dropdown.MaterialValues:
+      #   - ^values
+    mapFrom:
+      - material
+
+  # 耐落顏色 ----------------------------------------
+  # 耐落顏色
+  - key: resistantFallColor
+    $Template:
+      - ^displayConfig
+      - selectorString
+    label: 耐落顏色
+
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      depends:
+        - materialspec
+      idKey: id
+      ?getScrewNylokColor:
+        -
+      # $meothers-screw.dropdown.ResistantFallColorValues:
+      #     - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.resistantFallColor
+
+  # 牙徑 ----------------------------------------
+  # 牙徑
+  - key: toothDiameterName
+    $Template:
+      - ^displayConfig
+      - selectorString
+    label: 牙徑
+    selectorConfig:
+      idKey: id
+      $Template:
+        - selectorConfig
+      #TODO
+      ?getScrewToothDiameter:
+        -
+      #$meothers-screw.dropdown.ToothDiameterValues:
+      #  - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.toothDiameterName
+
+  # 牙徑真實值
+  - key: toothDiameter
+    $Template:
+      - mappedValueFloat
+    label: 牙徑真實值
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $meothers-screw.dropdown.ToothDiameterValues:
+        - ^values
+    mapFrom:
+      - toothDiameterName
+
+  # 牙徑起始值
+  - key: minToothDiameter
+    $Template:
+      - mappedValueFloat
+    label: 牙徑起始值
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      ?getScrewToothDiameter:
+        -
+      #$meothers-screw.dropdown.ToothDiameterValues:
+      #  - ^values
+    mapFrom:
+      - toothDiameterName
+
+  # 牙徑結束值
+  - key: maxToothDiameter
+    $Template:
+      - mappedValueFloat
+    label: 牙徑結束值
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      ?getScrewToothDiameter:
+        -
+      #$meothers-screw.dropdown.ToothDiameterValues:
+      #  - ^values
+    mapFrom:
+      - toothDiameterName
+
+  # 頭徑 ----------------------------------------
+  - key: headDiameter
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    label: 頭徑
+    default: 0
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.headDiameter
+
+  # 頭厚 ----------------------------------------
+  - key: headThickness
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    label: 頭厚
+    default: 0
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.headThickness
+
+  # 牙長 ----------------------------------------
+  - key: toothLength
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    label: 牙長
+    default: 0
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.toothLength
+
+  - key: materialSpecRemark
+    label: Material Remark # 雖然是顯示material remark, 但其實是顯示 material spec remark
+    $Template:
+      - textarea
+    require: true
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+      depends:
+        action: lock
+        condition:
+          materialspec: "val => val === 'Other_Fill_ME_Remark'"
+    emdmKey: emdmBomInfo.materialspec1Remark
+
+  # 光桿 ----------------------------------------
+  - key: mainMaterialSize
+    # label: 光桿
+    $Template:
+      - compositeInline
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+    items:
+      # 光桿 Y/N
+      - key: isPolishedRod
+        label: 光桿
+        $Template:
+          - checkBox
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 0.5
+        emdmKey: emdmBomInfo.cmfForm.isPolishedRod
+
+      # 頸徑
+      - key: neckDiameter
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        label: 頸徑
+        displayConfig:
+          depends:
+            action: lock
+            condition:
+              isPolishedRod: true
+          grids: 1
+          display: true
+        require: true
+        emdmKey: emdmBomInfo.cmfForm.neckDiameter
+
+      # 頸長
+      - key: neckLength
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        label: 頸長
+        displayConfig:
+          depends:
+            action: lock
+            condition:
+              isPolishedRod: true
+          grids: 1
+          display: true
+        require: true
+        emdmKey: emdmBomInfo.cmfForm.neckLength
+
+  # 同心圓 ----------------------------------------
+  # 同心圓 Y/N
+  - key: isConcentricCircle
+    label: 同心圓
+    $Template:
+      - checkBox
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    emdmKey: emdmBomInfo.cmfForm.isConcentricCircle
+
+  # 電鍍方式 ----------------------------------------
+  # 電鍍方式
+  - key: plating
+    $Template:
+      - ^displayConfig
+      - selectorString
+    label: 電鍍方式
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: id
+      ?getScrewPlating:
+        -
+      # $meothers-screw.dropdown.PlatingValues:
+      #     - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.plating
+
+  # 電鍍費用
+  - key: platingPrice
+    $Template:
+      - mappedValueString
+    label: 電鍍費用
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      ?getScrewPlating:
+        -
+      # $meothers-screw.dropdown.PlatingValues:
+      #   - ^values
+    mapFrom:
+      - plating

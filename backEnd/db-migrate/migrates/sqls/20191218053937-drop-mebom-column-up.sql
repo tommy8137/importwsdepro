@@ -1,0 +1,1 @@
+ALTER TABLE bom_item DROP COLUMN IF EXISTS ce_shipping;

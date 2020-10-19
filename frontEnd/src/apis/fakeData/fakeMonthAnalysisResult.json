@@ -1,0 +1,84 @@
+{
+    "query": {
+        "plants": [ "F601", "F232", "F130", "F131", "F715", "F230" ],
+        "scodes": [ "S99", "S81", "S60", "S77", "S65", "S98", "L04", "100", "S01" ],
+        "dateFrom": "2017-12-31T16:00:00.000Z",
+        "dateTo": "2018-04-29T16:00:00.000Z",
+        "type1": [ "Capacitor", "CONVERTER", "BTY" ],
+        "type2": [ "CONVERTER" ],
+        "supplyType": [ 1, 3 ],
+        "selection": "group"
+    },
+    "data": [
+        {
+            "key": 1,
+            "name": "WISTRON",
+            "amountNTD": 1000,
+            "amountUSD": 34.4828,
+            "percentage": 15.38
+        },
+        {
+            "key": 2,
+            "name": "ACER",
+            "amountNTD": 900,
+            "amountUSD": 31.0345,
+            "percentage": 13.85
+        },
+        {
+            "key": 3,
+            "name": "VENDOR03",
+            "amountNTD": 800,
+            "amountUSD": 27.5862,
+            "percentage": 12.31
+        },
+        {
+            "key": 4,
+            "name": "VENDOR04",
+            "amountNTD": 600,
+            "amountUSD": 20.6897,
+            "percentage": 9.23
+        },
+        {
+            "key": 5,
+            "name": "VENDOR05",
+            "amountNTD": 600,
+            "amountUSD": 20.6897,
+            "percentage": 9.23
+        },
+        {
+            "key": 6,
+            "name": "VENDOR06",
+            "amountNTD": 500,
+            "amountUSD": 17.2414,
+            "percentage": 7.69
+        },
+        {
+            "key": 7,
+            "name": "VENDOR07",
+            "amountNTD": 400,
+            "amountUSD": 13.7931,
+            "percentage": 6.15
+        },
+        {
+            "key": 8,
+            "name": "VENDOR08",
+            "amountNTD": 300,
+            "amountUSD": 10.3448,
+            "percentage": 4.62
+        },
+        {
+            "key": 9,
+            "name": "VENDOR09",
+            "amountNTD": 200,
+            "amountUSD": 6.8966,
+            "percentage": 3.08
+        },
+        {
+            "key": 10,
+            "name": "Others",
+            "amountNTD": 1200,
+            "amountUSD": 41.3793,
+            "percentage": 18.46
+        }
+    ]
+  }

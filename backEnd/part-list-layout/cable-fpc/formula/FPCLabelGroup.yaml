@@ -1,0 +1,45 @@
+output:
+  accessoryAssyTime: fpcLabel_AssyTime_Sum
+  accessoryCost: fpcLabel_cost
+
+formula:
+# Label組裝時間總和 = Qty * Label組裝時間 -------------------------------------------------------------------------------------------------------------------
+  fpcLabel_AssyTime_Sum:
+    type: MATH
+    formula: FPCLabelQty * fpcLabel_assy_time
+    label: Label組裝時間總和(sec)
+
+# label費用 = Qty * Label單價 * (1 + Label loss rate) -------------------------------------------------------------------------------------------------------------------
+  fpcLabel_cost:
+    type: MATH
+    formula: FPCLabelQty * fpcLabel_unit_price * (1 + fpcLabel_loss_rate)
+    label: label費用
+
+scope:
+  FPCLabelQty: FPCLabelQty
+
+constant:
+  fpcLabel_assy_time:
+    label: Label組裝時間
+    ?getFPCCommon:
+      - cable_fpc_auxiliary_materials
+      - label_assy_time
+    # value: 12
+
+  fpcLabel_unit_price:
+    label: Label單價
+    ?getFPCCommon:
+      - cable_fpc_auxiliary_materials
+      - label_cost
+    # value: 0.001
+
+  fpcLabel_loss_rate:
+    label: Label loss rate
+    ?getFPCCommon:
+      - cable_fpc_auxiliary_materials
+      - label_loss_rate
+    # value: 0.015
+
+
+
+

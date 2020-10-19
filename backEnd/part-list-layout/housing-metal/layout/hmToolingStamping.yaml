@@ -1,0 +1,134 @@
+multiple: true
+items:
+  # 可編輯的sub-title --------------------------------------------------------------------------------------------------------------------
+  - key: stampingLabel
+    label: 沖壓
+    $Template:
+      - label
+    editable: true
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+    default: 沖壓
+  # 模具型式 --------------------------------------------------------------------------------------------------------------------
+  - key: hmStampingMouldType
+    label: 模具型式
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: hmStampingMouldTypeId
+      ?getMetalPressType:
+        -
+      # $housing-metal.dropdown.HmStampingType:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+    require: true
+    emdmMultipleKey: emdmBomInfo.toolingHmStampingList
+    emdmKey: hmStampingMouldType
+
+  - key: hmStampingMouldTypeId
+    $Template:
+      - mappedValueString
+    label: hmStampingMouldTypeId
+    displayConfig:
+      $Template:
+        - displayConfig
+      # display: false
+      grids: 0
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getMetalPressType:
+        -
+      # $housing-metal.dropdown.HmStampingType:
+      #   - ^values
+    mapFrom:
+      - hmStampingMouldType
+    emdmMultipleKey: emdmBomInfo.toolingHmStampingList
+    emdmKey: hmStampingMouldType
+
+  # 沖壓機台 --------------------------------------------------------------------------------------------------------------------
+  - key: hmStampingMachineTonnage
+    label: 沖壓機台(T)
+    $Template:
+      - selectorString
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    default: 0T
+    selectorConfig:
+      idKey: hmStampingMachineTonnageId
+      $Template:
+        - selectorConfig
+      ?getMetalTonnes:
+        -
+      # $housing-metal.dropdown.HmStampingTonnage:
+      #   - ^values
+      depends:
+        - hmStampingMouldTypeId
+    require: true
+    emdmMultipleKey: emdmBomInfo.toolingHmStampingList
+    emdmKey: hmStampingMachineTonnage
+
+  - key: hmStampingMachineTonnageId
+    $Template:
+      - mappedValueString
+    label: hmStampingMachineTonnageId
+    displayConfig:
+      $Template:
+        - displayConfig
+      # display: false
+      grids: 0
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getMetalTonnes:
+        -
+      # $housing-metal.dropdown.HmStampingType:
+      #   - ^values
+    mapFrom:
+      - hmStampingMachineTonnage
+    emdmMultipleKey: emdmBomInfo.toolingHmStampingList
+    emdmKey: hmStampingMachineTonnage
+  # Module Rate --------------------------------------------------------------------------------------------------------------------
+
+  # # ModuleRate 移到公式計算 for TestBOM
+  # - key: hmToolingModuleRate
+  #   $Template:
+  #     - mappedValueFloat
+  #   label: Module Rate
+  #   displayConfig:
+  #     $Template:
+  #       - displayConfig
+  #     # display: false
+  #     grids: 0
+  #   selectorConfig:
+  #     $Template:
+  #       - selectorConfig
+  #     ?getMetalModuleMachinePressRate:
+  #       -
+  #     # $housing-metal.dropdown.HmStampingTonnage:
+  #     #   - ^values
+  #   mapFrom:
+  #     - hmStampingMouldTypeId
+  #     - hmStampingMachineTonnageId
+  #   emdmMultipleKey: emdmBomInfo.toolingHmStampingList
+
+  - key: hmStampingCount
+    label: 工程數
+    $Template:
+      - inputInt
+    displayConfig:
+      $Template:
+        - displayConfig
+      spaceConfig:
+        after: 3
+    require: true
+    emdmMultipleKey: emdmBomInfo.toolingHmStampingList
+    emdmKey: hmStampingCount

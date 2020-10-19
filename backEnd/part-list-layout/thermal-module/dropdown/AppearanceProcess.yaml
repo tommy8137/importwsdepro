@@ -1,0 +1,20 @@
+values:
+  - fanAppearanceProcess1: 塗黑
+    fanAppearanceProcess1Qty: 1
+  - fanAppearanceProcess2: 塗黑
+    fanAppearanceProcess2Qty: 1
+
+  - finAppearanceProcess1: 塗黑
+    finAppearanceProcess1Qty: 1
+  - finAppearanceProcess2: 塗黑
+    finAppearanceProcess2Qty: 1
+
+  - pipeAppearanceProcess1: 塗黑
+    pipeAppearanceProcess1Qty: 1
+  - pipeAppearanceProcess2: 塗黑
+    pipeAppearanceProcess2Qty: 1
+
+  - thPlAppearanceProcess1: 塗黑
+    thPlAppearanceProcess1Qty: 1
+  - thPlAppearanceProcess2: 塗黑
+    thPlAppearanceProcess2Qty: 1

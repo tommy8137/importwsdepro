@@ -1,0 +1,42 @@
+summary-header:
+  fontColor: '000000'
+  fill: FFBB66
+  bold: true
+  fontFamily: arial
+  horizontalAlignment: center
+  border: true      
+
+summary-data:
+  border: true
+
+exchange-rate-header:
+  fontColor: '000000'
+  fill: FFBB66
+  bold: true
+  fontFamily: arial
+  horizontalAlignment: center
+  border: true
+
+
+exchange-rate-data:
+  bold: true
+  border: true
+  numberFormat: '#,##0.00000'
+
+list-header:
+  bold: true
+  border: true
+  fontColor: '000000'
+  fill: '32BBFF'
+
+list-data:
+  border: true
+
+spec-header:
+  fontColor: 'FFFFFF'
+  fill: A6A6A6
+  bold: true
+  border: true
+
+spec-data:
+  border: true

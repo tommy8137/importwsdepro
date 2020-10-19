@@ -1,0 +1,28 @@
+{
+  "header": [
+    {
+      "key": "heatTransferCoefficient",
+      "name": "熱傳係數(K值)",
+      "typeof": "number"
+    },
+    {
+      "key": "shore",
+      "name": "硬度",
+      "typeof": "number"
+    }
+  ],
+  "data": [
+    {
+      "heatTransferCoefficient": 1.3,
+      "shore": 24
+    },
+    {
+      "heatTransferCoefficient": 3,
+      "shore": 42
+    },
+    {
+      "heatTransferCoefficient": 6,
+      "shore": 45
+    }
+  ]
+}

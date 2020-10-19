@@ -1,0 +1,92 @@
+# 埋釘
+multiple: true
+items:
+  - key: cmfPEmbedNailCheckBox
+    label: Exist
+    $Template:
+      - checkBox
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    emdmKey: emdmBomInfo.cmfForm.cmfPEmbedNailCheckBox
+
+  # - key: cmfPEmbedNailAuto
+  #   label: 人工或自動
+  #   $Template:
+  #     - selectorString
+  #   selectorConfig:
+  #     $Template:
+  #       - selectorConfig
+  #     idKey: nail_id
+  #     ?getPlasticEmbedNail:
+  #       -
+  #     # $housing-plastic.dropdown.CmfPEmbedNailAuto:
+  #     #   - ^values
+  #   displayConfig:
+  #     depends:
+  #       action: lock
+  #       condition:
+  #         cmfPEmbedNailCheckBox: true
+  #     grids: 1
+  #     display: true
+  #   constrains:
+  #     - function: "(val, props) => {
+  #         return (val ==='' || val === null) && (props.cmfPEmbedNailCheckBox)
+  #       }"
+  #       message: "此欄位為必填"
+  #       params:
+  #         - cmfPEmbedNailCheckBox
+  #   require: true
+  #   emdmKey: emdmBomInfo.cmfForm.cmfPEmbedNailAuto
+
+  - key: cmfPEmbedNailAuto
+    label: 人工或自動
+    $Template:
+      - realtimeFormulaString
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0
+      display: false
+    func: "() => {
+      return '人工';
+    }"
+
+  - key: cmfPEmbedNailCount
+    label: 數量
+    $Template:
+      - inputInt
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfPEmbedNailCheckBox: true
+      grids: 1
+      display: true
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfPEmbedNailCheckBox)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfPEmbedNailCheckBox
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfPEmbedNailCount
+
+  - key: cmfPEmbedNailPrice
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      ?getPlasticEmbedNail:
+        -
+      # $housing-plastic.dropdown.CmfPEmbedNailAuto:
+      #   - ^values
+    mapFrom:
+      - cmfPEmbedNailAuto

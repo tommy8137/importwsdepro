@@ -1,0 +1,32 @@
+multiple: true
+items:
+  - key: cmfProcessListLaserWeldingExist
+    label: Exist
+    $Template:
+      - checkBox
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListLaserWeldingExist
+
+  - key: cmfProcessListLaserWeldingCount
+    label: 數量
+    $Template:
+      - inputInt
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfProcessListLaserWeldingExist: true
+      grids: 1
+      display: true
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfProcessListLaserWeldingExist)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfProcessListLaserWeldingExist
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfProcessListLaserWeldingCount

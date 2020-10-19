@@ -1,0 +1,2 @@
+INSERT INTO wiprocurement.drop_down_item (item_name, path, field_name, layout_name) VALUES ('OTHER PART', 'OTHERPART', 'gb_assy_ctgy', 'bom_item');
+INSERT INTO wiprocurement.drop_down_item (item_name, path, field_name, layout_name) VALUES ('OTHER 60 ASSY', 'OTHER60ASSY', 'gb_assy_ctgy', 'bom_item');

@@ -1,0 +1,362 @@
+tab:
+  fieldType: tab
+  items: []
+  visiable: false
+  label: default
+  needExe: true
+
+compositeMultiUpload:
+  fieldType: compositeMultiUpload
+  multiple: false
+  items: []
+  needExe: true
+  maxGroupCount: null
+  level: 1
+
+composite:
+  fieldType: composite
+  multiple: false
+  items: []
+  needExe: true
+  switchable: false
+  visiable: true
+  maxGroupCount: null
+  minGroupCount: 1
+  inline: false
+  level: 1
+
+compositeInline:
+  fieldType: compositeInline
+  multiple: false
+  items: []
+  needExe: true
+  switchable: false
+  visiable: true
+  maxGroupCount: null
+  inline: true
+  level: 1
+
+textarea:
+  fieldType: textarea
+  dataType: string
+  multiple: false
+  require: false
+  default: null
+  needExe: true
+  placeholder: ""
+  enableDefault: true
+  maxLength: 500
+
+inputString:
+  fieldType: input
+  dataType: string
+  multiple: false
+  require: false
+  constrains: []
+  disabledConfig:
+    func: "() => {}"
+    params: []
+  default: null
+  needExe: true
+  placeholder: ""
+  enableDefault: true
+  maxLength: 15
+
+inputInt:
+  fieldType: input
+  dataType: int
+  multiple: false
+  require: false
+  constrains: []
+  disabledConfig:
+    func: "() => {}"
+    params: []
+  default: 0
+  needExe: true
+  placeholder: ""
+  enableDefault: true
+  maxLength: 15
+
+inputFloat:
+  fieldType: input
+  dataType: float
+  multiple: false
+  require: false
+  constrains: []
+  disabledConfig:
+    func: "() => {}"
+    params: []
+  default: 0
+  needExe: true
+  placeholder: ""
+  enableDefault: true
+  maxLength: 15
+
+inputDate:
+  fieldType: inputDate
+  dataType: string
+  multiple: false
+  require: false
+  constrains: []
+  default: null
+  needExe: true
+  enableDefault: true
+
+uploadImage:
+  fieldType: uploadImage
+  multiple: false
+  require: false
+  constrains: []
+  needExe: true
+
+selectorString:
+  fieldType: selector
+  dataType: string
+  multiple: false
+  require: false
+  constrains: []
+  default: null
+  needExe: true
+  enableDefault: true
+
+selectorInt:
+  fieldType: selector
+  dataType: int
+  multiple: false
+  require: false
+  constrains: []
+  default: 0
+  needExe: true
+  enableDefault: true
+
+selectorFloat:
+  fieldType: selector
+  dataType: float
+  multiple: false
+  require: false
+  constrains: []
+  default: 0
+  needExe: true
+  enableDefault: true
+
+mappedValueFloat:
+  fieldType: mappedValue
+  dataType: float
+  mapFrom: []
+  default: 0
+  needExe: false
+
+mappedValueInt:
+  fieldType: mappedValue
+  dataType: int
+  mapFrom: []
+  default: 0
+  needExe: false
+
+mappedValueString:
+  fieldType: mappedValue
+  dataType: string
+  mapFrom: []
+  default: null
+  needExe: false
+
+mappedFuncFloat:
+  fieldType: mappedFunc
+  dataType: float
+  func: ""
+  mapFrom: []
+  default: 0
+  needExe: false
+
+mappedFuncInt:
+  fieldType: mappedFunc
+  dataType: int
+  func: ""
+  mapFrom: []
+  default: 0
+  needExe: false
+
+checkBox:
+  fieldType: checkBox
+  dataType: boolean
+  multiple: false
+  require: false
+  default: false
+  needExe: true
+  values:
+    true: true
+    false: false
+  displayConfig:
+    grids: 0.5
+    display: true
+    depends:
+      action: lock
+      condition: {}
+  enableDefault: true
+
+displayConfigFalse:
+  display: false
+  grids: 1
+  depends:
+    action: lock
+    condition: {}
+
+displayConfig:
+  display: true
+  grids: 1
+
+selectorConfig:
+  depends: []
+
+fetchData:
+  fieldType: fetch
+  dataType: string
+  multiple: false
+  require: false
+  edit: false
+  constrains: []
+  default: null
+  needExe: true
+  enableDefault: true
+
+fetchSelector:
+  fieldType: fetch-selector
+  multiple: false
+  depends: []
+  constrains: []
+  default: null
+  needExe: true
+  require: false
+  responseKey: values
+  enableDefault: true
+
+fetchHidden:
+  fieldType: fetch-hidden
+  multiple: false
+  constrains: []
+  default: null
+  needExe: true
+  enableDefault: true
+
+variableString:
+  fieldType: variable
+  dataType: string
+  require: false
+  default: null
+  variableName: null
+  needExe: true
+  enableDefault: true
+
+variableInt:
+  fieldType: variable
+  dataType: int
+  require: false
+  default: 0
+  variableName: null
+  needExe: true
+  enableDefault: true
+
+variableFloat:
+  fieldType: variable
+  dataType: float
+  require: false
+  default: 0
+  variableName: null
+  needExe: true
+  enableDefault: true
+
+variableBoolean:
+  fieldType: variable
+  dataType: boolean
+  require: false
+  default: null
+  variableName: null
+  needExe: true
+  enableDefault: true
+
+realtimeFormulaString:
+  fieldType: realtimeFormula
+  dataType: string
+  func: ""
+  replaceBy: []
+  default: ""
+  parameters: []
+  needExe: true
+  enableDefault: true
+
+realtimeFormulaFloat:
+  fieldType: realtimeFormula
+  dataType: float
+  func: ""
+  replaceBy: []
+  default: 0
+  parameters: []
+  needExe: true
+  enableDefault: true
+
+realtimeFormulaInt:
+  fieldType: realtimeFormula
+  dataType: int
+  func: ""
+  replaceBy: []
+  default: 0
+  parameters: []
+  needExe: true
+  enableDefault: true
+
+realtimeFormulaBoolean:
+  fieldType: realtimeFormula
+  dataType: boolean
+  func: ""
+  replaceBy: []
+  default: null
+  parameters: []
+  needExe: true
+  enableDefault: true
+
+multiSelectorString:
+  fieldType: multiSelector
+  dataType: string
+  multiple: false
+  require: false
+  constrain: []
+  default: []
+  needExe: true
+  hover: true
+  enableDefault: true
+
+multiSelectorInt:
+  fieldType: multiSelector
+  dataType: int
+  multiple: false
+  require: false
+  constrains: []
+  default: []
+  needExe: true
+  hover: true
+  enableDefault: true
+
+multiSelectorFloat:
+  fieldType: multiSelector
+  dataType: float
+  multiple: false
+  require: false
+  constrains: []
+  default: []
+  needExe: true
+  hover: true
+  enableDefault: true
+
+label:
+  fieldType: label
+  editable: false
+  dataType: string
+  multiple: false
+  require: false
+  constrains: []
+  default: null
+  needExe: true
+  level: 2
+  switchable: false
+  maxGroupCount: null
+  visiable: true

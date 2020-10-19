@@ -1,0 +1,214 @@
+multiple: true
+items:
+  # 可編輯的sub-title --------------------------------------------------------------------------------------------------------------------
+  - key: finLabel
+    label: Fin
+    $Template:
+      - label
+    editable: true
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+    default: Fin
+    emdmMultipleKey: emdmBomInfo.cmfForm.fin
+    emdmKey: finLabel
+
+  # 用量 --------------------------------------------------------------------------------------------------------------------
+  - key: finAmount
+    label: 用量
+    $Template:
+      - inputInt
+      - ^displayConfig
+    default: 0
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.fin
+    emdmKey: finAmount
+
+  # 材料 --------------------------------------------------------------------------------------------------------------------
+  - key: finMaterial
+    label: 材料
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: material_id
+      ?getFinMaterialThickness:
+        - thermal_fin
+      # $thermal-module.dropdown.FinMaterialThicknessCostPerKilogramValues:
+      #   - ^values
+    displayConfig:
+      $Template:
+        - displayConfig
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.fin
+    emdmKey: finMaterial
+
+  - key: finMaterialThickness
+    label: 材料厚度
+    $Template:
+      - selectorString
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: id
+      ?getFinMaterialThickness:
+        - thermal_fin
+      # $thermal-module.dropdown.FinMaterialThicknessCostPerKilogramValues:
+      #   - ^values
+      depends:
+        - finMaterial
+    displayConfig:
+      $Template:
+        - displayConfig
+      depends:
+        action: lock
+        condition:
+          finMaterial: true
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.fin
+    emdmKey: finMaterialThickness
+
+  - key: finDensity
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      ?getFinMaterialDensity:
+        -
+      # $thermal-module.dropdown.FinMaterialDensityValues:
+      #   - ^values
+    mapFrom:
+      - finMaterial
+
+  # 材料單價 --------------------------------------------------------------------------------------------------------------------
+  - key: finMaterialCostPerKilogram
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      ?getFinMaterialThickness:
+        - thermal_fin
+      # $thermal-module.dropdown.FinMaterialThicknessCostPerKilogramValues:
+      #   - ^values
+    mapFrom:
+      - finMaterial
+      - finMaterialThickness
+
+  # 成品尺寸 --------------------------------------------------------------------------------------------------------------------
+  - key: finProductionSize
+    label: 成品尺寸
+    $Template:
+      - compositeInline
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+    items:
+      # 成品尺寸 - 長度(L)
+      - key: finProductionLength
+        label: 長度(L)
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.fin
+        emdmKey: finProductionLength
+
+      # 成品尺寸 - 寬度(W)
+      - key: finProductionWidth
+        label: 寬度(W)
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.fin
+        emdmKey: finProductionWidth
+
+      # 成品尺寸 - 高度(H)
+      - key: finProductionHigh
+        label: 高度(H)
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.fin
+        emdmKey: finProductionHigh
+
+  # 成品展開尺寸 --------------------------------------------------------------------------------------------------------------------
+  - key: finProductionExpandSize
+    label: 成品展開尺寸
+    $Template:
+      - compositeInline
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    items:
+      # 成品展開尺寸 長度(L) = 高度 + (Pitch*2) + 5
+      - key: finProductionExpandLength
+        label: 長度(L)
+        $Template:
+          - realtimeFormulaFloat
+          - ^displayConfig
+        func: "(finProductionHigh, finPitch)=>{
+          let fpel = +finProductionHigh + finPitch*2 + 5;
+          return fpel;
+          }"
+        replaceBy:
+          - finProductionHigh
+          - finPitch
+
+      # 成品展開尺寸 寬度(W) = 寬度 + 10
+      - key: finProductionExpandWidth
+        label: 寬度(W)
+        $Template:
+          - realtimeFormulaFloat
+          - ^displayConfig
+        func: "(finProductionWidth)=>{
+          let fpew = +finProductionWidth + 10;
+          return fpew;
+          }"
+        replaceBy:
+          - finProductionWidth
+
+  # Pitch --------------------------------------------------------------------------------------------------------------------
+  - key: finPitch
+    label: Pitch
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    require: true
+    emdmMultipleKey: emdmBomInfo.cmfForm.fin
+    emdmKey: finPitch
+
+  # 鍍鎳 --------------------------------------------------------------------------------------------------------------------
+  - key: finNickelPlating
+    label: 鍍鎳
+    $Template:
+      - checkBox
+      - ^displayConfig
+    emdmMultipleKey: emdmBomInfo.cmfForm.fin
+    emdmKey: finNickelPlating
+  # 片數 --------------------------------------------------------------------------------------------------------------------
+  # 片數 = 長度(L) / Pitch
+  - key: finPiece
+    label: 片數
+    $Template:
+      - realtimeFormulaInt
+      - ^displayConfig
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    func: "(finProductionLength, finPitch) => Math.ceil(finProductionLength / finPitch)"
+    replaceBy:
+      - finProductionLength
+      - finPitch

@@ -1,0 +1,85 @@
+dataStringType1:
+  $Template:
+    - dataString
+  twoHeader: true
+  threeHeader: true
+  style:
+    header:
+      $mebom.header-summary.style:
+        - space-header
+    subHeader:
+      $mebom.header-summary.style:
+        - space-sub-header-1
+    mainHeader:
+      $mebom.header-summary.style:
+        - space-main-header
+    value:
+      $mebom.header-summary.style:
+        - space-data-bold
+
+
+dataStringSummary:
+  $Template:
+    - dataString
+  style:
+    header:
+      $mebom.header-summary.style:
+        - space-header
+    value:
+      $mebom.header-summary.style:
+        - space-data
+
+dataStringSummaryBold:
+  $Template:
+    - dataString
+  style:
+    header:
+      $mebom.header-summary.style:
+        - space-header
+    value:
+      $mebom.header-summary.style:
+        - space-data-bold
+
+dataFloatCost:
+  $Template:
+    - dataFloat
+  twoHeader: true
+  style:
+    header:
+      $mebom.header-summary.style:
+        - space-header
+    subHeader:
+      $mebom.header-summary.style:
+        - space-sub-header-2
+    value:
+      $mebom.header-summary.style:
+        - space-data
+
+dataFloat:
+  $Template:
+    - dataFloat
+  style:
+    header:
+      $mebom.header-summary.style:
+        - space-header
+    value:
+      $mebom.header-summary.style:
+        - space-data
+
+
+odmString:
+  $Template:
+    - dataString
+  style:
+    header:
+      $mebom.header-summary.style:
+        - odm-header
+    value:
+      $mebom.header-summary.style:
+        - odm-data
+
+
+
+
+
+

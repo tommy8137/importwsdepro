@@ -1,0 +1,86 @@
+multiple: true
+items:
+  - key: cmfPEMISputteringCheckBox
+    $Template:
+      - checkBox
+    label: Exist
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+    emdmKey: emdmBomInfo.cmfForm.cmfPEMISputteringCheckBox
+
+  - key: cmfPEMISputtering
+    $Template:
+      - selectorString
+    label: 吋別
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: id
+      ?getPlasticSize:
+        -
+      # $housing-plastic.dropdown.CmfEMIsputtering:
+      #   - ^values
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfPEMISputteringCheckBox: true
+      grids: 1
+      display: true
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfPEMISputteringCheckBox)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfPEMISputteringCheckBox
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfPEMISputtering
+
+  - key: cmfPEMISputteringBaseMaterial
+    $Template:
+      - selectorString
+    label: 本體材質
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      idKey: id
+      ?getPlasticBase:
+        -
+      # $housing-plastic.dropdown.CmfPEMISputteringBaseMaterial:
+      #   - ^values
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          cmfPEMISputteringCheckBox: true
+      grids: 1
+      display: true
+    constrains:
+      - function: "(val, props) => {
+          return (val ==='' || val === null) && (props.cmfPEMISputteringCheckBox)
+        }"
+        message: "此欄位為必填"
+        params:
+          - cmfPEMISputteringCheckBox
+    require: true
+    emdmKey: emdmBomInfo.cmfForm.cmfPEMISputteringBaseMaterial
+
+  - key: cmfEMIsputteringPrice
+    $Template:
+      - mappedValueFloat
+    displayConfig:
+      $Template:
+        - displayConfig
+      display: false
+    selectorConfig:
+      ?getPlasticEmiPrice:
+        -
+      # $housing-plastic.dropdown.CmfEMIsputteringPrices:
+      #   - ^values
+    mapFrom:
+      - cmfPEMISputtering
+      - cmfPEMISputteringBaseMaterial
+      - site

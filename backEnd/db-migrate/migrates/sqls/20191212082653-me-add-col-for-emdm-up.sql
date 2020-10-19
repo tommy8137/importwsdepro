@@ -1,0 +1,1 @@
+alter table wiprocurement.bom_item add column if not exists source_item_id varchar default null;

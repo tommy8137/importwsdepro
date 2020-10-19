@@ -1,0 +1,10 @@
+values:
+  - FPCConductorType: Single side
+    FPCConductorTypeUnitPrice: 170
+
+  - FPCConductorType: Double side 
+    FPCConductorTypeUnitPrice: 300
+
+  - FPCConductorType: 3層板 
+    FPCConductorTypeUnitPrice: 670
+  

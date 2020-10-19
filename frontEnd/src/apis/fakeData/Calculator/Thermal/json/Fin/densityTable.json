@@ -1,0 +1,31 @@
+{
+  "header": [
+    {
+      "key": "material",
+      "name": "材料",
+      "typeof": "string"
+    },
+    {
+      "key": "density",
+      "name": "密度",
+      "typeof": "number"
+    },
+    {
+      "key": "price",
+      "name": "Price USD",
+      "typeof": "number"
+    }
+  ],
+  "data": [
+    {
+      "material": "AL1050",
+      "density": 2.75,
+      "price": 2.75
+    },
+    {
+      "material": "CU1100",
+      "density": 8.9,
+      "price": 8.9
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+values:
+  - cmfPCNCFeederType: N/A
+    cmfPCNCFeederUP: 0
+    cmfPCNCFeederLossRate: 0
+
+  - cmfPCNCFeederType: CNC
+    cmfPCNCFeederUP: 0.1
+    cmfPCNCFeederLossRate: 0
+
+  - cmfPCNCFeederType: 人工
+    cmfPCNCFeederUP: 0.1
+    cmfPCNCFeederLossRate: 0

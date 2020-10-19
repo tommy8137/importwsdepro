@@ -1,0 +1,67 @@
+headers:
+  parts_ctgy_1:
+    label: Parts Category I
+    $dashboard-me.header-dashboard-me.dashboardmeTemplate:
+      - meDataString
+
+  gb_assy_ctgy:
+    label: GB Assy Category
+    $dashboard-me.header-dashboard-me.dashboardmeTemplate:
+      - meDataString
+
+  part_number:
+    label: Part Number
+    $dashboard-me.header-dashboard-me.dashboardmeTemplate:
+      - meDataString
+
+  part_name:
+    label: Part Name
+    $dashboard-me.header-dashboard-me.dashboardmeTemplate:
+      - meDataString
+
+  sku:
+    label: SKU
+    $dashboard-me.header-dashboard-me.dashboardmeTemplate:
+      - meDataString
+
+  func_ctgy:
+    label: Function Category
+    $dashboard-me.header-dashboard-me.dashboardmeTemplate:
+      - meDataString
+
+  qty:
+    label: QTY
+    $dashboard-me.header-dashboard-me.dashboardmeTemplate:
+      - meDataFloat
+
+  bu_target_cost:
+    label: 單價
+    $dashboard-me.header-dashboard-me.dashboardmeTemplate:
+      - meDataFloat
+  bu_target_total_cost:
+    label: 總價
+    $dashboard-me.header-dashboard-me.dashboardmeTemplate:
+      - meDataFloat
+
+  ce_cost:
+    label: 單價
+    $dashboard-me.header-dashboard-me.dashboardmeTemplate:
+      - meDataFloat
+  ce_total_cost:
+    label: 總價
+    $dashboard-me.header-dashboard-me.dashboardmeTemplate:
+      - meDataFloat
+
+  cm_cost:
+    label: 單價
+    $dashboard-me.header-dashboard-me.dashboardmeTemplate:
+      - meDataFloat
+  cm_total_cost:
+    label: 總價
+    $dashboard-me.header-dashboard-me.dashboardmeTemplate:
+      - meDataFloat
+
+  remark:
+    label: Remark
+    $dashboard-me.header-dashboard-me.dashboardmeTemplate:
+      - meDataString

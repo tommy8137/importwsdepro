@@ -1,0 +1,342 @@
+multiple: true
+label: 輔料
+multipleItems:
+  - item: Other_Fill_ME_Remark
+    emdmMultipleKey: emdmBomInfo.cmfForm.otherFillMeRemark
+    layout:
+      - key: otherFillMeRemarkLabel
+        label: Other_Fill_ME_Remark
+        $Template:
+          - label
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 3
+
+      - key: otherFillMeRemarkExist
+        emdmKey: otherFillMeRemarkExist
+        label: Other_Fill_ME_Remark_Exist
+        $Template:
+          - checkBox
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 0
+          # display: false
+        default: true
+
+      - key: otherFillMeRemark
+        label: Remark
+        $Template:
+          - textarea
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1.5
+        emdmMultipleKey: emdmBomInfo.cmfForm.otherFillMeRemark
+        emdmKey: otherFillMeRemark
+
+  - item: 鐵氟龍線
+    emdmMultipleKey: emdmBomInfo.cmfForm.teflon
+    layout:
+      - key: CWWireTeflon
+        label: 鐵氟龍線
+        $Template:
+          - label
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 3
+
+      - key: teflonQty
+        label: QTY
+        $Template:
+          - inputInt
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.teflon
+        emdmKey: teflonQty
+
+        # constrains:
+        #   - function: "(val) => val ==='' || val === null"
+        #     message: "此欄位為必填"
+      - key: teflonLength
+        label: Cable Length(mm)
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.teflon
+        emdmKey: teflonLength
+
+        # constrains:
+        #   - function: "(val) => val ==='' || val === null"
+        #     message: "此欄位為必填"
+      - key: teflonPin
+        label: Pin
+        $Template:
+          - inputInt
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 0.5
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.teflon
+        emdmKey: teflonPin
+
+        # constrains:
+        #   - function: "(val) => val ==='' || val === null"
+        #     message: "此欄位為必填"
+      - key: teflonGuage
+        label: Guage
+        $Template:
+          - selectorString
+        selectorConfig:
+          $Template:
+            - selectorConfig
+          idKey: gauge_id
+          ?getCableWireteflonGuage:
+            - 鐵氟龍線
+          # $cable-wire.dropdown.CableMaterialInfoTeflon:
+          #   - ^values
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 0.5
+          display: true
+        require: true
+        constrains:
+          - function: "(val) => val == null"
+            message: "此欄位為必選"
+        emdmMultipleKey: emdmBomInfo.cmfForm.teflon
+        emdmKey: teflonGuage
+
+      - key: teflonUnitPrice
+        $Template:
+          - mappedValueFloat
+        displayConfig:
+          $Template:
+            - displayConfig
+          display: false
+        mapFrom:
+          - teflonGuage
+        selectorConfig:
+          ?getCableWireteflonGuage:
+            - 鐵氟龍線
+          # $cable-wire.dropdown.CableMaterialInfoTeflon:
+          #   - ^values
+
+  - item: 同軸線
+    emdmMultipleKey: emdmBomInfo.cmfForm.coaxial
+    layout:
+      - key: CWWireCoaxial
+        label: 同軸線
+        $Template:
+          - label
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 3
+
+      - key: coaxialQty
+        label: QTY
+        $Template:
+          - inputInt
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.coaxial
+        emdmKey: coaxialQty
+        # constrains:
+        #   - function: "(val) => val ==='' || val === null"
+        #     message: "此欄位為必填"
+      - key: coaxialLength
+        label: Cable Length(mm)
+        $Template:
+          - inputFloat
+          - ^displayConfig
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.coaxial
+        emdmKey: coaxialLength
+
+        # constrains:
+        #   - function: "(val) => val ==='' || val === null"
+        #     message: "此欄位為必填"
+      - key: coaxialPin
+        label: Pin
+        $Template:
+          - inputInt
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 0.5
+        require: true
+        emdmMultipleKey: emdmBomInfo.cmfForm.coaxial
+        emdmKey: coaxialPin
+
+        # constrains:
+        #   - function: "(val) => val ==='' || val === null"
+        #     message: "此欄位為必填"
+      - key: coaxialGuage
+        label: Guage
+        $Template:
+          - selectorString
+        selectorConfig:
+          $Template:
+            - selectorConfig
+          idKey: gauge_id
+          ?getCableWireCoaxialGuage:
+            - 同軸線
+          # $cable-wire.dropdown.CableMaterialInfoCoaxial:
+          #   - ^values
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 0.5
+          display: true
+        require: true
+        constrains:
+          - function: "(val) => val == null"
+            message: "此欄位為必選"
+        emdmMultipleKey: emdmBomInfo.cmfForm.coaxial
+        emdmKey: coaxialGuage
+
+      - key: coaxialUnitPrice
+        $Template:
+          - mappedValueFloat
+        displayConfig:
+          $Template:
+            - displayConfig
+          display: false
+        mapFrom:
+          - coaxialGuage
+        selectorConfig:
+          ?getCableWireCoaxialGuage:
+            - 同軸線
+          # $cable-wire.dropdown.CableMaterialInfoCoaxial:
+          #   - ^values
+
+  # FFC 區塊 ============================================================
+  - item: FFC
+    emdmMultipleKey: emdmBomInfo.cmfForm.CWFFC
+    layout:
+      - key: CWFFCLabel
+        label: FFC
+        $Template:
+          - label
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 3
+
+      - key: CWFFCQty
+        label: QTY
+        $Template:
+          - inputInt
+        emdmMultipleKey: emdmBomInfo.cmfForm.CWFFC
+        emdmKey: CWFFCQty
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1
+        default: 1
+        require: true
+
+      - key: CWFFCLength
+        label: Cable Length(mm)
+        $Template:
+          - inputFloat
+        emdmMultipleKey: emdmBomInfo.cmfForm.CWFFC
+        emdmKey: CWFFCLength
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 1
+        require: true
+
+      - key: CWFFCPin
+        label: Pin
+        $Template:
+          - inputFloat
+        emdmMultipleKey: emdmBomInfo.cmfForm.CWFFC
+        emdmKey: CWFFCPin
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 0.5
+        require: true
+
+      - key: CWFFCPitch
+        label: Pitch
+        $Template:
+          - inputFloat
+        emdmMultipleKey: emdmBomInfo.cmfForm.CWFFC
+        emdmKey: CWFFCPitch
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 0.5
+        require: true
+
+      - key: CWFFCBendTImes
+        label: 折彎(次)
+        $Template:
+          - inputInt
+        emdmMultipleKey: emdmBomInfo.cmfForm.CWFFC
+        emdmKey: CWFFCBendTImes
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 0.6
+        require: true
+
+      - key: CWFFCPrint
+        label: 印刷(面)
+        $Template:
+          - inputInt
+        emdmMultipleKey: emdmBomInfo.cmfForm.CWFFC
+        emdmKey: CWFFCPrint
+        default: 1
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 0.6
+        require: true
+
+      - key: CWFFCFlushCount
+        label: 沖型(次)
+        $Template:
+          - inputInt
+        emdmMultipleKey: emdmBomInfo.cmfForm.CWFFC
+        emdmKey: CWFFCFlushCount
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 0.6
+        default: 1
+        require: true
+
+      - key: CWFFCGoldPlating
+        label: 金手指掛鍍(鍍金)
+        $Template:
+          - inputInt
+        emdmMultipleKey: emdmBomInfo.cmfForm.CWFFC
+        emdmKey: CWFFCGoldPlating
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 0.6
+        default: 1
+        require: true
+
+      - key: CWFFCStopLine
+        label: 停止線(條)
+        $Template:
+          - inputInt
+        emdmMultipleKey: emdmBomInfo.cmfForm.CWFFC
+        emdmKey: CWFFCStopLine
+        displayConfig:
+          $Template:
+            - displayConfig
+          grids: 0.6
+        default: 1
+        require: true

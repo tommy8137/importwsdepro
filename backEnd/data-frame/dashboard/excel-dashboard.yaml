@@ -1,0 +1,33 @@
+excel:
+  sheets:
+    - $dashboard-me.sheet-dashboard-me:
+      - sheet
+
+    - $eebom-tmp.sheet-odm-part:
+      - sheet
+      label: EE-ODM Part Bom
+
+    - $eebom-tmp.sheet-pcb:
+      - sheet
+      label: EE-PCB
+
+    - $eebom-tmp.sheet-full-bom:
+      - sheet
+      label: EE-Full Bom
+      
+    - $dashboard-ee.sheet-bu:
+      - sheet
+
+    - $dashboard-ee.sheet-module:
+      - sheet
+
+    - $eebom-tmp.sheet-hitrate:
+      - sheet
+      label: EE-CMP Hit-Rate
+
+    - $eebom-tmp.sheet-odm-hitrate:
+      - sheet
+      label: EE-ODM Hit-Rate
+
+    - $eebom-tmp.sheet-exchange-rate:
+      - sheet

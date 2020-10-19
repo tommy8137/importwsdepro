@@ -1,0 +1,170 @@
+{
+  "header": [
+    {
+      "key": "outerDiameter",
+      "name": "外徑",
+      "typeof": "string"
+    },
+    {
+      "key": "flatteningThickness",
+      "name": "打扁",
+      "typeof": "string"
+    },
+    {
+      "key": "math",
+      "name": "數學",
+      "typeof": "number"
+    },
+    {
+      "key": "cost",
+      "name": "Cost",
+      "typeof": "number"
+    }
+  ],
+  "data": [
+    {
+      "outerDiameter": "D4_",
+      "flatteningThickness": ">=2.0mm",
+      "math": 2,
+      "cost": 0
+    },
+    {
+      "outerDiameter": "D4_",
+      "flatteningThickness": ">=1.8mm",
+      "math": 1.8,
+      "cost": 0.15
+    },
+    {
+      "outerDiameter": "D4_",
+      "flatteningThickness": ">=1.6mm",
+      "math": 1.6,
+      "cost": 0.2
+    },
+    {
+      "outerDiameter": "D4_",
+      "flatteningThickness": ">=1.4mm",
+      "math": 1.4,
+      "cost": 0.25
+    },
+    {
+      "outerDiameter": "D4_",
+      "flatteningThickness": ">=1.2mm",
+      "math": 1.2,
+      "cost": 0.35
+    },
+    {
+      "outerDiameter": "D4_",
+      "flatteningThickness": ">=1.0mm",
+      "math": 1,
+      "cost": 0.45
+    },
+    {
+      "outerDiameter": "D4_",
+      "flatteningThickness": ">=0.8mm",
+      "math": 0.8,
+      "cost": 0.6
+    },
+    {
+      "outerDiameter": "D4_",
+      "flatteningThickness": ">=0.6mm",
+      "math": 0.6,
+      "cost": 0.8
+    },
+    {
+      "outerDiameter": "D4_",
+      "flatteningThickness": ">=0mm",
+      "math": 0,
+      "cost": 1
+    },
+    {
+      "outerDiameter": "D6_",
+      "flatteningThickness": ">=2.0mm",
+      "math": 2,
+      "cost": 0
+    },
+    {
+      "outerDiameter": "D6_",
+      "flatteningThickness": ">=1.8mm",
+      "math": 1.8,
+      "cost": 0.15
+    },
+    {
+      "outerDiameter": "D6_",
+      "flatteningThickness": ">=1.6mm",
+      "math": 1.6,
+      "cost": 0.2
+    },
+    {
+      "outerDiameter": "D6_",
+      "flatteningThickness": ">=1.4mm",
+      "math": 1.4,
+      "cost": 0.25
+    },
+    {
+      "outerDiameter": "D6_",
+      "flatteningThickness": ">=1.2mm",
+      "math": 1.2,
+      "cost": 0.35
+    },
+    {
+      "outerDiameter": "D6_",
+      "flatteningThickness": ">=1.0mm",
+      "math": 1,
+      "cost": 0.45
+    },
+    {
+      "outerDiameter": "D6_",
+      "flatteningThickness": ">=0.8mm",
+      "math": 0.8,
+      "cost": 0.6
+    },
+    {
+      "outerDiameter": "D6_",
+      "flatteningThickness": ">=0mm",
+      "math": 0,
+      "cost": 1
+    },
+    {
+      "outerDiameter": "D8_",
+      "flatteningThickness": ">=2.0mm",
+      "math": 2,
+      "cost": 0
+    },
+    {
+      "outerDiameter": "D8_",
+      "flatteningThickness": ">=1.8mm",
+      "math": 1.8,
+      "cost": 0.25
+    },
+    {
+      "outerDiameter": "D8_",
+      "flatteningThickness": ">=1.6mm",
+      "math": 1.6,
+      "cost": 0.3
+    },
+    {
+      "outerDiameter": "D8_",
+      "flatteningThickness": ">=1.4mm",
+      "math": 1.4,
+      "cost": 0.4
+    },
+    {
+      "outerDiameter": "D8_",
+      "flatteningThickness": ">=1.2mm",
+      "math": 1.2,
+      "cost": 0.5
+    },
+    {
+      "outerDiameter": "D8_",
+      "flatteningThickness": ">=1.0mm",
+      "math": 1,
+      "cost": 0.6
+    },
+    {
+      "outerDiameter": "D8_",
+      "flatteningThickness": ">=0mm",
+      "math": 0,
+      "cost": 1
+    }
+  ]
+}

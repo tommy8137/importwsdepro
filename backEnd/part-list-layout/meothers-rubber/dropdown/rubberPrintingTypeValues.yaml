@@ -1,0 +1,10 @@
+# 外觀印刷 TYPE 價格對照表
+values:
+  - rubberPrintingName: N/A
+    rubberPrintingPrice: 0
+  - rubberPrintingName: 網印
+    rubberPrintingPrice: 0.0400
+  - rubberPrintingName: 移印
+    rubberPrintingPrice: 0.0450
+  - rubberPrintingName: 套印
+    rubberPrintingPrice: 1.26

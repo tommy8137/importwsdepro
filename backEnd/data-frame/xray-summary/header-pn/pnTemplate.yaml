@@ -1,0 +1,199 @@
+oriInt:
+  $Template:
+    - dataInt
+  fieldType: noStyle
+  style:
+    header:
+      $xray-summary.header-pn.style:
+        - ori-header
+    value:
+      $xray-summary.header-pn.style:
+        - item-data
+
+oriFloat:
+  $Template:
+    - dataFloat
+  fieldType: noStyle
+  style:
+    header:
+      $xray-summary.header-pn.style:
+        - ori-header
+    value:
+      $xray-summary.header-pn.style:
+        - item-data
+
+oriString:
+  $Template:
+    - dataString
+  fieldType: noStyle
+  style:
+    header:
+      $xray-summary.header-pn.style:
+        - ori-header
+    value:
+      $xray-summary.header-pn.style:
+        - item-data
+oriBold:
+  $Template:
+    - dataBold
+  style:
+    header:
+      $xray-summary.header-pn.style:
+        - ori-header
+    value:
+      $xray-summary.header-pn.style:
+        - bold-data
+suggInt:
+  $Template:
+    - dataInt
+  fieldType: noStyle
+  style:
+    header:
+      $xray-summary.header-pn.style:
+        - sugg-header
+    value:
+      $xray-summary.header-pn.style:
+        - item-data
+
+suggFloat:
+  $Template:
+    - dataFloat
+  fieldType: noStyle
+  style:
+    header:
+      $xray-summary.header-pn.style:
+        - sugg-header
+    value:
+      $xray-summary.header-pn.style:
+        - item-data
+
+suggString:
+  $Template:
+    - dataString
+  fieldType: noStyle
+  style:
+    header:
+      $xray-summary.header-pn.style:
+        - sugg-header
+    value:
+      $xray-summary.header-pn.style:
+        - item-data
+
+
+suggBold:
+  $Template:
+    - dataBold
+  style:
+    header:
+      $xray-summary.header-pn.style:
+        - sugg-header
+    value:
+      $xray-summary.header-pn.style:
+        - bold-data
+
+suggPercent:
+  $Template:
+    - dataFloat
+  fieldType: noStyle
+  style:
+    header:
+      $xray-summary.header-pn.style:
+        - sugg-header
+    value:
+      $xray-summary.header-pn.style:
+        - item-data
+      numberFormat: '#,##0.00'
+
+
+spaInt:
+  $Template:
+    - dataInt
+  fieldType: noStyle
+  style:
+    header:
+      $xray-summary.header-pn.style:
+        - spa-header
+    value:
+      $xray-summary.header-pn.style:
+        - item-data
+
+spaFloat:
+  $Template:
+    - dataFloat
+  fieldType: noStyle
+  style:
+    header:
+      $xray-summary.header-pn.style:
+        - spa-header
+    value:
+      $xray-summary.header-pn.style:
+        - item-data
+
+spaString:
+  $Template:
+    - dataString
+  fieldType: noStyle
+  style:
+    header:
+      $xray-summary.header-pn.style:
+        - spa-header
+    value:
+      $xray-summary.header-pn.style:
+        - item-data
+
+spaBold:
+  $Template:
+    - dataBold
+  style:
+    header:
+      $xray-summary.header-pn.style:
+        - spa-header
+    value:
+      $xray-summary.header-pn.style:
+        - bold-data
+altInt:
+  $Template:
+    - dataInt
+  fieldType: noStyle
+  style:
+    header:
+      $xray-summary.header-pn.style:
+        - alt-header
+    value:
+      $xray-summary.header-pn.style:
+        - item-data
+
+altFloat:
+  $Template:
+    - dataFloat
+  fieldType: noStyle
+  style:
+    header:
+      $xray-summary.header-pn.style:
+        - alt-header
+    value:
+      $xray-summary.header-pn.style:
+        - item-data
+
+altString:
+  $Template:
+    - dataString
+  fieldType: noStyle
+  style:
+    header:
+      $xray-summary.header-pn.style:
+        - alt-header
+    value:
+      $xray-summary.header-pn.style:
+        - item-data
+
+altBold:
+  $Template:
+    - dataBold
+  style:
+    header:
+      $xray-summary.header-pn.style:
+        - alt-header
+    value:
+      $xray-summary.header-pn.style:
+        - bold-data

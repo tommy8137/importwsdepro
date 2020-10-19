@@ -1,0 +1,46 @@
+version: 2
+showMenu: false
+layout:
+  # Partlist Tab
+  - key: rubberPartlistTab
+    $Template:
+      - tab
+    label: Rubber Partlist
+    group:
+      - rubber
+    items:
+      - key: rubberPartItemInfo
+        $Template:
+          - composite
+        label: 我不應該被顯示出來
+        $meothers-rubber.layout.rubberPartItemInfo:
+          - ^multiple
+          - ^items
+        visiable: false
+
+  # CE 可調整係數
+  - key: rubberCeParametersTab
+    $Template:
+      - tab
+    label: CE 可調整係數
+    group:
+      - rubber
+    items:
+      - key: rubberCeParameters
+        $Template:
+          - composite
+        $meothers-rubber.layout.rubberCeParameters:
+          - ^multiple
+          - ^items
+        multiple: false
+        visiable: false
+    needCePolicy: true
+
+formulas:
+  rubber:
+    $meothers-rubber.formula.rubberFormula:
+      - ^formula
+      - ^output
+      - ^scope
+      - ^constant
+      - ^global

@@ -1,0 +1,175 @@
+values:
+  # module 1
+  - hmToolingStageDiePress: 0T
+    hmToolingStageDieModule: Module 1
+    hmToolingStageDieModuleCost: 0
+  - hmToolingStageDiePress: 25T
+    hmToolingStageDieModule: Module 1
+    hmToolingStageDieModuleCost: 0.0081
+  - hmToolingStageDiePress: 35T
+    hmToolingStageDieModule: Module 1
+    hmToolingStageDieModuleCost: 0.0081
+  - hmToolingStageDiePress: 45T
+    hmToolingStageDieModule: Module 1
+    hmToolingStageDieModuleCost: 0.0081
+  - hmToolingStageDiePress: 60T
+    hmToolingStageDieModule: Module 1
+    hmToolingStageDieModuleCost: 0.0124
+  - hmToolingStageDiePress: 80T
+    hmToolingStageDieModule: Module 1
+    hmToolingStageDieModuleCost: 0.0124
+  - hmToolingStageDiePress: 110T
+    hmToolingStageDieModule: Module 1
+    hmToolingStageDieModuleCost: 0.0124
+  - hmToolingStageDiePress: 160T
+    hmToolingStageDieModule: Module 1
+    hmToolingStageDieModuleCost: 0.0124
+  - hmToolingStageDiePress: 200T
+    hmToolingStageDieModule: Module 1
+    hmToolingStageDieModuleCost: 0.0159
+  - hmToolingStageDiePress: 250T
+    hmToolingStageDieModule: Module 1
+    hmToolingStageDieModuleCost: 0.0159
+  - hmToolingStageDiePress: 300T
+    hmToolingStageDieModule: Module 1
+    hmToolingStageDieModuleCost: 0.0180
+  - hmToolingStageDiePress: 400T
+    hmToolingStageDieModule: Module 1
+    hmToolingStageDieModuleCost: 0.0180
+  - hmToolingStageDiePress: 600T
+    hmToolingStageDieModule: Module 1
+    hmToolingStageDieModuleCost: 0.0180
+  - hmToolingStageDiePress: 800T
+    hmToolingStageDieModule: Module 1
+    hmToolingStageDieModuleCost: 0.0180
+  - hmToolingStageDiePress: 1000T
+    hmToolingStageDieModule: Module 1
+    hmToolingStageDieModuleCost: 0
+  - hmToolingStageDiePress: 1200T
+    hmToolingStageDieModule: Module 1
+    hmToolingStageDieModuleCost: 0
+
+
+  # module 2
+  - hmToolingStageDiePress: 0T
+    hmToolingStageDieModule: Module 2
+    hmToolingStageDieModuleCost: 0
+  - hmToolingStageDiePress: 25T
+    hmToolingStageDieModule: Module 2
+    hmToolingStageDieModuleCost: 0.0120
+  - hmToolingStageDiePress: 35T
+    hmToolingStageDieModule: Module 2
+    hmToolingStageDieModuleCost: 0.0120
+  - hmToolingStageDiePress: 45T
+    hmToolingStageDieModule: Module 2
+    hmToolingStageDieModuleCost: 0.0120
+  - hmToolingStageDiePress: 60T
+    hmToolingStageDieModule: Module 2
+    hmToolingStageDieModuleCost: 0.0120
+  - hmToolingStageDiePress: 80T
+    hmToolingStageDieModule: Module 2
+    hmToolingStageDieModuleCost: 0.0160
+  - hmToolingStageDiePress: 110T
+    hmToolingStageDieModule: Module 2
+    hmToolingStageDieModuleCost: 0.0160
+  - hmToolingStageDiePress: 160T
+    hmToolingStageDieModule: Module 2
+    hmToolingStageDieModuleCost: 0.0240
+  - hmToolingStageDiePress: 200T
+    hmToolingStageDieModule: Module 2
+    hmToolingStageDieModuleCost: 0.0240
+  - hmToolingStageDiePress: 250T
+    hmToolingStageDieModule: Module 2
+    hmToolingStageDieModuleCost: 0.0240
+  - hmToolingStageDiePress: 300T
+    hmToolingStageDieModule: Module 2
+    hmToolingStageDieModuleCost: 0.0400
+  - hmToolingStageDiePress: 400T
+    hmToolingStageDieModule: Module 2
+    hmToolingStageDieModuleCost: 0.0400
+  - hmToolingStageDiePress: 600T
+    hmToolingStageDieModule: Module 2
+    hmToolingStageDieModuleCost: 0.0500
+  - hmToolingStageDiePress: 800T
+    hmToolingStageDieModule: Module 2
+    hmToolingStageDieModuleCost: 0.0500
+  - hmToolingStageDiePress: 1000T
+    hmToolingStageDieModule: Module 2
+    hmToolingStageDieModuleCost: 0.0210
+  - hmToolingStageDiePress: 1200T
+    hmToolingStageDieModule: Module 2
+    hmToolingStageDieModuleCost: 0.0260
+
+    # module 2
+  - hmToolingStageDiePress: 0T
+    hmToolingStageDieModule: Module 4
+    hmToolingStageDieModuleCost: 0
+  - hmToolingStageDiePress: 25T
+    hmToolingStageDieModule: Module 4
+    hmToolingStageDieModuleCost: 0.0120
+  - hmToolingStageDiePress: 35T
+    hmToolingStageDieModule: Module 4
+    hmToolingStageDieModuleCost: 0.0120
+  - hmToolingStageDiePress: 45T
+    hmToolingStageDieModule: Module 4
+    hmToolingStageDieModuleCost: 0.0120
+  - hmToolingStageDiePress: 60T
+    hmToolingStageDieModule: Module 4
+    hmToolingStageDieModuleCost: 0.0120
+  - hmToolingStageDiePress: 80T
+    hmToolingStageDieModule: Module 4
+    hmToolingStageDieModuleCost: 0.0160
+  - hmToolingStageDiePress: 110T
+    hmToolingStageDieModule: Module 4
+    hmToolingStageDieModuleCost: 0.0160
+  - hmToolingStageDiePress: 160T
+    hmToolingStageDieModule: Module 4
+    hmToolingStageDieModuleCost: 0.0240
+  - hmToolingStageDiePress: 200T
+    hmToolingStageDieModule: Module 4
+    hmToolingStageDieModuleCost: 0.0240
+  - hmToolingStageDiePress: 250T
+    hmToolingStageDieModule: Module 4
+    hmToolingStageDieModuleCost: 0.0240
+  - hmToolingStageDiePress: 300T
+    hmToolingStageDieModule: Module 4
+    hmToolingStageDieModuleCost: 0.0400
+  - hmToolingStageDiePress: 400T
+    hmToolingStageDieModule: Module 4
+    hmToolingStageDieModuleCost: 0.0400
+  - hmToolingStageDiePress: 600T
+    hmToolingStageDieModule: Module 4
+    hmToolingStageDieModuleCost: 0.0500
+  - hmToolingStageDiePress: 800T
+    hmToolingStageDieModule: Module 4
+    hmToolingStageDieModuleCost: 0.0500
+  - hmToolingStageDiePress: 1000T
+    hmToolingStageDieModule: Module 4
+    hmToolingStageDieModuleCost: 0.0210
+  - hmToolingStageDiePress: 1200T
+    hmToolingStageDieModule: Module 4
+    hmToolingStageDieModuleCost: 0.0260
+
+
+moduleMapping:
+  - hmToolingStageDieModule: Module 1
+    productType: NB
+    type2: Metal
+  - hmToolingStageDieModule: Module 1
+    productType: NB
+    type2: Shielding_can
+  - hmToolingStageDieModule: Module 2
+    productType: DT
+    type2: Metal
+  - hmToolingStageDieModule: Module 2
+    productType: DT
+    type2: Shielding_can
+    - hmToolingStageDieModule: Module 3
+    productType: DT
+    type2: Metal
+  - hmToolingStageDieModule: Module 3
+    productType: DT
+    type2: Shielding_can
+    - hmToolingStageDieModule: Module 4
+    productType: DT
+    type2: Alumiun

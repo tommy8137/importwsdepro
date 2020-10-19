@@ -1,0 +1,11 @@
+specString:
+  $Template:
+    - dataString
+  data: true
+  style:
+    header:
+      $pcb-cls.header-pcb.style:
+        - spec-header
+    value:
+      $pcb-cls.header-pcb.style:
+        - spec-data

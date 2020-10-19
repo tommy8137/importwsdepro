@@ -1,0 +1,104 @@
+{
+  "header": [
+    {
+      "key": "heatTransferCoefficient",
+      "name": "熱傳係數(K值)",
+      "typeof": "number"
+    },
+    {
+      "key": "thickness",
+      "name": "厚度",
+      "typeof": "number"
+    },
+    {
+      "key": "price",
+      "name": "價格",
+      "typeof": "number"
+    },
+    {
+      "key": "shore",
+      "name": "硬度",
+      "typeof": "number"
+    }
+  ],
+  "data": [
+    {
+      "heatTransferCoefficient": 6,
+      "thickness": 0.5,
+      "price": 257,
+      "shore": 45
+    },
+    {
+      "heatTransferCoefficient": 6,
+      "thickness": 0.8,
+      "price": 300,
+      "shore": 45
+    },
+    {
+      "heatTransferCoefficient": 6,
+      "thickness": 1,
+      "price": 320,
+      "shore": 45
+    },
+    {
+      "heatTransferCoefficient": 1.3,
+      "thickness": 0.5,
+      "price": 74,
+      "shore": 24
+    },
+    {
+      "heatTransferCoefficient": 1.3,
+      "thickness": 1,
+      "price": 98,
+      "shore": 24
+    },
+    {
+      "heatTransferCoefficient": 1.3,
+      "thickness": 1.5,
+      "price": 136,
+      "shore": 24
+    },
+    {
+      "heatTransferCoefficient": 1.3,
+      "thickness": 3,
+      "price": 197,
+      "shore": 24
+    },
+    {
+      "heatTransferCoefficient": 3,
+      "thickness": 0.5,
+      "price": 95,
+      "shore": 42
+    },
+    {
+      "heatTransferCoefficient": 3,
+      "thickness": 1,
+      "price": 121,
+      "shore": 42
+    },
+    {
+      "heatTransferCoefficient": 3,
+      "thickness": 1.5,
+      "price": 168,
+      "shore": 42
+    },
+    {
+      "heatTransferCoefficient": 3,
+      "thickness": 2.25,
+      "price": 270,
+      "shore": 42
+    },
+    {
+      "heatTransferCoefficient": 3,
+      "thickness": 2.5,
+      "price": 315,
+      "shore": 42
+    },
+    {
+      "heatTransferCoefficient": 6,
+      "thickness": 0.3,
+      "price": 189,
+      "shore": 45
+    }
+  ]
+}

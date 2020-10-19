@@ -1,0 +1,499 @@
+{
+  "xlsxName": "Test_Data_NB_Nut.xlsx",
+  "sheetName": "NB_Nut",
+  "startHorizontalCoordinates": "C",
+  "transferMode": "createPath",
+  "formate": "meothers-nut",
+  "metadata": {
+    "productType": {
+      "createPath": "productType",
+      "valuekey": "productType",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "1"
+    },
+    "testLabel": {
+      "createPath": "testLabel",
+      "valuekey": "testLabel",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "2"
+    },
+    "type1": {
+      "createPath": "type1",
+      "valuekey": "type1",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "3"
+    },
+    "type2": {
+      "createPath": "type2",
+      "valuekey": "type2",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": "4"
+    }
+  },
+  "transferPartlistInfo": {
+    "formData,nutPartlistTab,nutPartItemInfo,nutType": {
+      "createPath": "formData.nutPartlistTab.nutPartItemInfo.nutType",
+      "valuekey": "nutType",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 10,
+      "default": null
+    },
+    "formData,nutPartlistTab,nutPartItemInfo,materialspec": {
+      "createPath": "formData.nutPartlistTab.nutPartItemInfo.materialspec",
+      "valuekey": "materialspec",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 11,
+      "default": null
+    },
+    "formData,nutPartlistTab,nutPartItemInfo,material": {
+      "createPath": "formData.nutPartlistTab.nutPartItemInfo.material",
+      "valuekey": "material",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 11,
+      "default": null
+    },
+    "formData,nutPartlistTab,nutPartItemInfo,materialUnitPrice": {
+      "createPath": "formData.nutPartlistTab.nutPartItemInfo.materialUnitPrice",
+      "valuekey": "materialUnitPrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,nutPartlistTab,nutPartItemInfo,materialHeatingUnitPrice": {
+      "createPath": "formData.nutPartlistTab.nutPartItemInfo.materialHeatingUnitPrice",
+      "valuekey": "materialHeatingUnitPrice",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,nutPartlistTab,nutPartItemInfo,materialDensity": {
+      "createPath": "formData.nutPartlistTab.nutPartItemInfo.materialDensity",
+      "valuekey": "materialDensity",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,nutPartlistTab,nutPartItemInfo,partssizemName": {
+      "createPath": "formData.nutPartlistTab.nutPartItemInfo.partssizemName",
+      "valuekey": "partssizemName",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 12,
+      "default": null
+    },
+    "formData,nutPartlistTab,nutPartItemInfo,partssizem": {
+      "createPath": "formData.nutPartlistTab.nutPartItemInfo.partssizem",
+      "valuekey": "partssizem",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": null,
+      "default": 0
+    },
+    "formData,nutPartlistTab,nutPartItemInfo,d1OutterDiameter": {
+      "createPath": "formData.nutPartlistTab.nutPartItemInfo.d1OutterDiameter",
+      "valuekey": "d1OutterDiameter",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 13,
+      "default": null
+    },
+    "formData,nutPartlistTab,nutPartItemInfo,d1Height": {
+      "createPath": "formData.nutPartlistTab.nutPartItemInfo.d1Height",
+      "valuekey": "d1Height",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 14,
+      "default": 0
+    },
+    "formData,nutPartlistTab,nutPartItemInfo,d2Diameter": {
+      "createPath": "formData.nutPartlistTab.nutPartItemInfo.d2Diameter",
+      "valuekey": "d2Diameter",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 15,
+      "default": 0
+    },
+    "formData,nutPartlistTab,nutPartItemInfo,d2Height": {
+      "createPath": "formData.nutPartlistTab.nutPartItemInfo.d2Height",
+      "valuekey": "d2Height",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 16,
+      "default": 0
+    },
+    "formData,nutPartlistTab,nutPartItemInfo,innerDiameter": {
+      "createPath": "formData.nutPartlistTab.nutPartItemInfo.innerDiameter",
+      "valuekey": "innerDiameter",
+      "valueType": "string",
+      "excelValueLongitudinalCoordinates": 17,
+      "default": null
+    },
+    "formData,nutPartlistTab,nutPartItemInfo,innerDiameterHeight": {
+      "createPath": "formData.nutPartlistTab.nutPartItemInfo.innerDiameterHeight",
+      "valuekey": "innerDiameterHeight",
+      "valueType": "number",
+      "excelValueLongitudinalCoordinates": 18,
+      "default": 0
+    },
+    "formData,nutPartlistTab,nutPartItemInfo,enabledPlating": {
+      "createPath": "formData.nutPartlistTab.nutPartItemInfo.enabledPlating",
+      "valuekey": "enabledPlating",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": 23,
+      "default": false
+    },
+    "formData,nutPartlistTab,nutPartItemInfo,enabledHeat": {
+      "createPath": "formData.nutPartlistTab.nutPartItemInfo.enabledHeat",
+      "valuekey": "enabledHeat",
+      "valueType": "boolean",
+      "excelValueLongitudinalCoordinates": 24,
+      "default": false
+    },
+    "formData,nutPartlistTab,nutPartItemInfo,materialSpecRemark": {
+      "createPath": "formData.nutPartlistTab.nutPartItemInfo.materialSpecRemark",
+      "valuekey": "materialSpecRemark",
+      "valueType": null,
+      "excelValueLongitudinalCoordinates": null,
+      "default": null
+    }
+  },
+  "verifyInfo": {
+    "totalPrices": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "totalPrices",
+      "valueType": "totalPrices",
+      "comparisonValuePath": "totalPrices"
+    },
+    "parentGroupId": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "parentGroupId",
+      "valueType": "parentGroupId",
+      "comparisonValuePath": "forDebug.summary.nut.parentGroupId"
+    },
+    "tappingUnitPrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "tappingUnitPrice",
+      "valueType": "tappingUnitPrice",
+      "comparisonValuePath": "forDebug.summary.nut.tappingUnitPrice"
+    },
+    "tappingCapacity": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "tappingCapacity",
+      "valueType": "tappingCapacity",
+      "comparisonValuePath": "forDebug.summary.nut.tappingCapacity"
+    },
+    "tappingLossRate": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "tappingLossRate",
+      "valueType": "tappingLossRate",
+      "comparisonValuePath": "forDebug.summary.nut.tappingLossRate"
+    },
+    "turningPlatingUnitPrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "turningPlatingUnitPrice",
+      "valueType": "turningPlatingUnitPrice",
+      "comparisonValuePath": "forDebug.summary.nut.turningPlatingUnitPrice"
+    },
+    "_packageCost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "_packageCost",
+      "valueType": "_packageCost",
+      "comparisonValuePath": "forDebug.summary.nut._packageCost"
+    },
+    "management_percentage": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "management_percentage",
+      "valueType": "management_percentage",
+      "comparisonValuePath": "forDebug.summary.nut.management_percentage"
+    },
+    "materialspec": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "materialspec",
+      "valueType": "materialspec",
+      "comparisonValuePath": "forDebug.summary.nut.materialspec"
+    },
+    "material": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "material",
+      "valueType": "material",
+      "comparisonValuePath": "forDebug.summary.nut.material"
+    },
+    "materialHeatingUnitPrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "materialHeatingUnitPrice",
+      "valueType": "materialHeatingUnitPrice",
+      "comparisonValuePath": "forDebug.summary.nut.materialHeatingUnitPrice"
+    },
+    "materialUnitPrice": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "materialUnitPrice",
+      "valueType": "materialUnitPrice",
+      "comparisonValuePath": "forDebug.summary.nut.materialUnitPrice"
+    },
+    "_________enabledPlating": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "_________enabledPlating",
+      "valueType": "_________enabledPlating",
+      "comparisonValuePath": "forDebug.summary.nut._________enabledPlating"
+    },
+    "_________enabledHeat": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "_________enabledHeat",
+      "valueType": "_________enabledHeat",
+      "comparisonValuePath": "forDebug.summary.nut._________enabledHeat"
+    },
+    "nutType": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "nutType",
+      "valueType": "nutType",
+      "comparisonValuePath": "forDebug.summary.nut.nutType"
+    },
+    "partWeightD1": {
+      "label": "partWeightD1",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "partWeightD1",
+      "valueType": "partWeightD1",
+      "comparisonValuePath": "forDebug.summary.nut.partWeightD1"
+    },
+    "partWeightD2": {
+      "label": "partWeightD2",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "partWeightD2",
+      "valueType": "partWeightD2",
+      "comparisonValuePath": "forDebug.summary.nut.partWeightD2"
+    },
+    "partWeightD3": {
+      "label": "partWeightD3",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "partWeightD3",
+      "valueType": "partWeightD3",
+      "comparisonValuePath": "forDebug.summary.nut.partWeightD3"
+    },
+    "partWeight": {
+      "label": "Part Weight(g)",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "partWeight",
+      "valueType": "partWeight",
+      "comparisonValuePath": "forDebug.summary.nut.partWeight"
+    },
+    "A.materialCost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "A.materialCost",
+      "valueType": "A.materialCost",
+      "comparisonValuePath": "forDebug.summary.nut.A.materialCost"
+    },
+    "B.tappingCost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "B.tappingCost",
+      "valueType": "B.tappingCost",
+      "comparisonValuePath": "forDebug.summary.nut.B.tappingCost"
+    },
+    "____platingProcessingCost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "____platingProcessingCost",
+      "valueType": "____platingProcessingCost",
+      "comparisonValuePath": "forDebug.summary.nut.____platingProcessingCost"
+    },
+    "____heatTreamentCost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "____heatTreamentCost",
+      "valueType": "____heatTreamentCost",
+      "comparisonValuePath": "forDebug.summary.nut.____heatTreamentCost"
+    },
+    "C.processingCost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "C.processingCost",
+      "valueType": "C.processingCost",
+      "comparisonValuePath": "forDebug.summary.nut.C.processingCost"
+    },
+    "D.packageCost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "D.packageCost",
+      "valueType": "D.packageCost",
+      "comparisonValuePath": "forDebug.summary.nut.D.packageCost"
+    },
+    "E.managementCost": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "E.managementCost",
+      "valueType": "E.managementCost",
+      "comparisonValuePath": "forDebug.summary.nut.E.managementCost"
+    },
+    "total": {
+      "label": "成品總價",
+      "excelValueLongitudinalCoordinates": "33",
+      "valuekey": "total",
+      "valueType": "total",
+      "comparisonValuePath": "forDebug.summary.nut.total"
+    },
+    "turningMaterialValues": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "turningMaterialValues",
+      "valueType": "string",
+      "comparisonValuePath": "forDebug.debugInfo.nut.turningMaterialValues.label"
+    },
+    "category_1_name": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "category_1_name",
+      "valueType": "category_1_name",
+      "comparisonValuePath": "forDebug.debugInfo.nut.turningMaterialValues.value.values.22.category_1_name"
+    },
+    "category_2_name": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "category_2_name",
+      "valueType": "category_2_name",
+      "comparisonValuePath": "forDebug.debugInfo.nut.turningMaterialValues.value.values.22.category_2_name"
+    },
+    "materialDensity": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "materialDensity",
+      "valueType": "materialDensity",
+      "comparisonValuePath": "forDebug.debugInfo.nut.materialDensity.value"
+    },
+    "activate_date": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "activate_date",
+      "valueType": "activate_date",
+      "comparisonValuePath": "forDebug.debugInfo.nut.turningMaterialValues.value.values.22.activate_date"
+    },
+    "d1OutterDiameter": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "d1OutterDiameter",
+      "valueType": "d1OutterDiameter",
+      "comparisonValuePath": "forDebug.debugInfo.nut.d1OutterDiameter.value"
+    },
+    "d2Diameter": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "d2Diameter",
+      "valueType": "d2Diameter",
+      "comparisonValuePath": "forDebug.debugInfo.nut.d2Diameter.value"
+    },
+    "d1Height": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "d1Height",
+      "valueType": "d1Height",
+      "comparisonValuePath": "forDebug.debugInfo.nut.d1Height.value"
+    },
+    "d2Height": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "d2Height",
+      "valueType": "d2Height",
+      "comparisonValuePath": "forDebug.debugInfo.nut.d2Height.value"
+    },
+    "innerDiameter": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "innerDiameter",
+      "valueType": "innerDiameter",
+      "comparisonValuePath": "forDebug.debugInfo.nut.innerDiameter.value"
+    },
+    "innerDiameterHeight": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "innerDiameterHeight",
+      "valueType": "innerDiameterHeight",
+      "comparisonValuePath": "forDebug.debugInfo.nut.innerDiameterHeight.value"
+    },
+    "enabledPlating": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "enabledPlating",
+      "valueType": "enabledPlating",
+      "comparisonValuePath": "forDebug.debugInfo.nut.enabledPlating.value"
+    },
+    "enabledHeat": {
+      "label": "",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "enabledHeat",
+      "valueType": "enabledHeat",
+      "comparisonValuePath": "forDebug.debugInfo.nut.enabledHeat.value"
+    },
+    "materialCost": {
+      "label": "A.材料費",
+      "excelValueLongitudinalCoordinates": "28",
+      "valuekey": "materialCost",
+      "valueType": "materialCost",
+      "comparisonValuePath": "forDebug.debugInfo.nut.materialCost.value"
+    },
+    "tappingCost": {
+      "label": "B.成型費",
+      "excelValueLongitudinalCoordinates": "29",
+      "valuekey": "tappingCost",
+      "valueType": "tappingCost",
+      "comparisonValuePath": "forDebug.debugInfo.nut.tappingCost.value"
+    },
+    "platingProcessingCost": {
+      "label": "電鍍加工費用",
+      "excelValueLongitudinalCoordinates": "24",
+      "valuekey": "platingProcessingCost",
+      "valueType": "platingProcessingCost",
+      "comparisonValuePath": "forDebug.debugInfo.nut.platingProcessingCost.value"
+    },
+    "heatTreamentCost": {
+      "label": "熱處理加工費用",
+      "excelValueLongitudinalCoordinates": "26",
+      "valuekey": "heatTreamentCost",
+      "valueType": "heatTreamentCost",
+      "comparisonValuePath": "forDebug.debugInfo.nut.heatTreamentCost.value"
+    },
+    "processingCost": {
+      "label": "C.加工費",
+      "excelValueLongitudinalCoordinates": "30",
+      "valuekey": "processingCost",
+      "valueType": "processingCost",
+      "comparisonValuePath": "forDebug.debugInfo.nut.processingCost.value"
+    },
+    "packageCost": {
+      "label": "D.全檢包裝運輸",
+      "excelValueLongitudinalCoordinates": "31",
+      "valuekey": "packageCost",
+      "valueType": "packageCost",
+      "comparisonValuePath": "forDebug.debugInfo.nut.packageCost.value"
+    },
+    "managementCost": {
+      "label": "E.管銷10%",
+      "excelValueLongitudinalCoordinates": "32",
+      "valuekey": "managementCost",
+      "valueType": "managementCost",
+      "comparisonValuePath": "forDebug.debugInfo.nut.managementCost.value"
+    },
+    "totalCost": {
+      "label": "計算結果",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "totalCost",
+      "valueType": "totalCost",
+      "comparisonValuePath": "forDebug.debugInfo.nut.totalCost.value"
+    },
+    "isOtherFill": {
+      "label": "檢查是否有 Other_Fill_ME_Remark",
+      "excelValueLongitudinalCoordinates": "",
+      "valuekey": "isOtherFill",
+      "valueType": "isOtherFill",
+      "comparisonValuePath": "forDebug.debugInfo.nut.isOtherFill.value"
+    }
+  }
+}

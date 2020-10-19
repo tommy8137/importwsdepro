@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>ico_green_check_0 copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="40" cy="40" r="40"></circle>
+        <filter x="-20.0%" y="-17.5%" width="140.0%" height="140.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="UI-Components" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style-Guide" transform="translate(-3185.000000, -2946.000000)">
+            <g id="Group-12" transform="translate(3000.000000, 2954.000000)">
+                <g id="ico_green_check_0-copy" transform="translate(195.000000, 0.000000)">
+                    <g id="Ellipse_311" fill-rule="nonzero">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#00A99D" xlink:href="#path-1"></use>
+                    </g>
+                    <polyline id="Path_1431" stroke="#FFFFFF" stroke-width="4.44444444" stroke-linecap="round" stroke-linejoin="round" points="18.88 40 36.6577778 57.7777778 64.08 30.3555556"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

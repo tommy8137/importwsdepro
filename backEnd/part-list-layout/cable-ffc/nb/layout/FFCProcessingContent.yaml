@@ -1,0 +1,53 @@
+multiple: false
+label: 加工內容
+items:
+  - key: FFCBendTImes
+    label: 折彎(次)
+    require: false
+    $Template:
+      - inputInt
+      - ^displayConfig
+    emdmKey: emdmBomInfo.cmfForm.FFCBendTImes
+
+  - key: FFCPrint
+    label: 印刷(面)
+    require: false
+    $Template:
+      - inputInt
+      - ^displayConfig
+    emdmKey: emdmBomInfo.cmfForm.FFCPrint
+
+  - key: FFCFlush
+    label: 有沖型
+    require: false
+    $Template:
+      - checkBox
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 1
+    emdmKey: emdmBomInfo.cmfForm.FFCFlush
+
+  - key: FFCGoldPlating
+    label: 金手指掛鍍(鍍金)
+    require: false
+    $Template:
+      - checkBox
+      - ^displayConfig
+    checkboxConfig:
+      label:
+        true: 'Y'
+        false: 'N'
+      mapped: 
+        true: '(val) => val !== 0'
+        false: 0
+    default: false
+    emdmKey: emdmBomInfo.cmfForm.FFCGoldPlating
+
+  - key: FFCStopLine
+    label: 停止線(條)
+    require: false
+    $Template:
+      - inputInt
+      - ^displayConfig
+    emdmKey: emdmBomInfo.cmfForm.FFCStopLine

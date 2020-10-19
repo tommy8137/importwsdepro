@@ -1,0 +1,12 @@
+multiple: true
+items:
+  - key: multiUploadImage
+    $Template:
+      - uploadImage
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 3
+      display: true
+    uploadUrl: ooo/xxx
+    getUrl: ooo/xxx

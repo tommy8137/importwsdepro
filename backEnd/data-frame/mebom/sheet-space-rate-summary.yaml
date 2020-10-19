@@ -1,0 +1,35 @@
+sheet:
+  label: Summary
+  tables:
+    - key: spaceRateSummary
+      $Template:
+        - rowtable2nd
+      headers:
+        $mebom.header-summary.space-rate-summary:
+          - headers
+      lastColor: true
+      autoFilter: false
+      anchor:
+        x: A
+        y: 6
+
+    - key: spaceRateDetail
+      $Template:
+        - rowtable2nd
+      adjustSite: true
+      baseSite: 8
+      headers:
+        $mebom.header-summary.space-rate-detail:
+          - headers
+      lastColor: true
+      autoFilter: false
+      anchor:
+        x: A
+        y: 6
+
+    - key: odmoem
+      $Template:
+        - odmoem
+      headers:
+        $mebom.header-summary.space-rate-odmoem:
+          - headers

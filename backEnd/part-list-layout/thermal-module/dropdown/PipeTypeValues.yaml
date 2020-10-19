@@ -1,0 +1,16 @@
+values:
+  - pipeType: Powder(結燒管)
+    outerDiameter: D4
+  - pipeType: Powder(結燒管)
+    outerDiameter: D6
+  - pipeType: Powder(結燒管)
+    outerDiameter: D8
+
+  - pipeType: Complex(複合管)
+    outerDiameter: D4
+  - pipeType: Complex(複合管)
+    outerDiameter: D6
+  
+  - pipeType: Groove(溝槽管)
+  - pipeType: VC(均熱管)
+

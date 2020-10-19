@@ -1,0 +1,48 @@
+multiple: true
+items:
+  - key: needPanting
+    label: Exist
+    $Template:
+      - checkBox
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 0.5
+
+  - key: material
+    $Template:
+      - selectorString
+    label: Material
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      $example.MaterialMaterialThicknessValues:
+        - ^values
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          materialThickness: "(value) => { return value==='double_injection' ? true : false}"
+      grids: 1
+      display: true
+
+  - key: materialThickness
+    $Template:
+      - selectorInt
+    label: Material Thickness
+    selectorConfig:
+      $Template:
+        - selectorConfig
+      $example.MaterialMaterialThicknessValues:
+        - ^values
+      depends:
+        - material
+    displayConfig:
+      depends:
+        action: lock
+        condition:
+          needPanting: true
+          material: true
+      grids: 1
+      display: true
+

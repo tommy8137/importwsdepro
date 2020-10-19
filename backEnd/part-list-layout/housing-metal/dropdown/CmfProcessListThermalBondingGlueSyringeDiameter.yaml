@@ -1,0 +1,5 @@
+values:
+  - cmfProcessListThermalBondingGlueSyringeDiameter: 0.2
+  - cmfProcessListThermalBondingGlueSyringeDiameter: 0.4
+  - cmfProcessListThermalBondingGlueSyringeDiameter: 0.6
+  - cmfProcessListThermalBondingGlueSyringeDiameter: 0.8

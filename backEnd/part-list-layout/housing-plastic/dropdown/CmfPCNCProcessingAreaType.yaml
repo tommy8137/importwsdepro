@@ -1,0 +1,12 @@
+values:
+  - cmfPCNCProcessingAreaType: N/A
+    cmfPCNCProcessingAreaUP: 0
+    cmfPCNCProcessingAreaLossRate: 0
+
+  - cmfPCNCProcessingAreaType: CNC Area
+    cmfPCNCProcessingAreaUP: 0.065
+    cmfPCNCProcessingAreaLossRate: 0
+
+  - cmfPCNCProcessingAreaType: 人工
+    cmfPCNCProcessingAreaUP: 0.065
+    cmfPCNCProcessingAreaLossRate: 0

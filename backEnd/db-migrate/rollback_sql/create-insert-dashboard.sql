@@ -1,0 +1,1 @@
+DROP TABLE wiprocurement.dashboard_version;

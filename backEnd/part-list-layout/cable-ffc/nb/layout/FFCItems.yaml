@@ -1,0 +1,67 @@
+multiple: false
+label: 不用顯示
+items:
+  - key: partname
+    label: Part Name
+    require: false
+    url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+    $Template:
+      - fetchData
+    displayConfig:
+      $Template:
+        - displayConfig
+      grids: 2
+    emdmKey: emdmBomInfo.wistronPartName
+
+  - key: partnumber
+    label: Part Number
+    require: false
+    url: bom/partlist/getInfo/:{version}/:{bom_id}/:{type1}/:{type2}/:{key}
+    $Template:
+      - fetchData
+      - ^displayConfig
+    emdmKey: emdmBomInfo.wpn
+
+  - key: FFCQty
+    label: QTY
+    $Template:
+      - inputInt
+      - ^displayConfig
+    require: true
+    constrains:
+      - function: "(val) => val ==='' || val === null"
+        message: "此欄位為必填"
+    emdmKey: emdmBomInfo.cmfForm.FFCQty
+
+  - key: FFCPin
+    label: Pin
+    $Template:
+      - inputInt
+      - ^displayConfig
+    require: true
+    constrains:
+      - function: "(val) => val ==='' || val === null"
+        message: "此欄位為必填"
+    emdmKey: emdmBomInfo.cmfForm.FFCPin
+
+  - key: FFCPitch
+    label: Pitch
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    require: true
+    constrains:
+      - function: "(val) => val ==='' || val === null"
+        message: "此欄位為必填"
+    emdmKey: emdmBomInfo.cmfForm.FFCPitch
+
+  - key: FFCCableLength
+    label: Cable Length(mm)
+    $Template:
+      - inputFloat
+      - ^displayConfig
+    require: true
+    constrains:
+      - function: "(val) => val ==='' || val === null"
+        message: "此欄位為必填"
+    emdmKey: emdmBomInfo.cmfForm.FFCCableLength
